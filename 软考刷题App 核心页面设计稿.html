@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软考刷题 App 核心原型</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f3f4f6; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        
+        .device-mockup {
+            width: 390px;
+            height: 844px; /* iPhone 13/14/15 size */
+            background-color: #ffffff;
+            border-radius: 45px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            position: relative;
+            border: 8px solid #1f2937;
+        }
+
+        .notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 30px;
+            background-color: #1f2937;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            z-index: 50;
+        }
+
+        .home-indicator {
+            position: absolute;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 130px;
+            height: 5px;
+            background-color: #1f2937;
+            border-radius: 100px;
+            z-index: 50;
+        }
+
+        /* Views */
+        .view {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            background: #FAFAFC;
+        }
+
+        .view.active {
+            display: flex;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Glassmorphism Tab Bar */
+        .tab-bar {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding-bottom: 24px; /* safe area */
+            z-index: 40;
+        }
+
+        /* Gradients */
+        .bg-gradient-premium {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        
+        .bg-gradient-login {
+            background: linear-gradient(180deg, #FAFAFC 0%, #E0E7FF 100%);
+        }
+
+        /* Hide scrollbar */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body>
+
+<div class="device-mockup">
+    <div class="notch"></div>
+    
+    <!-- View 1: Login / Onboarding -->
+    <div id="view-login" class="view active bg-gradient-login">
+        <div class="flex-1 flex flex-col justify-center items-center px-8 text-center pt-20">
+            <div class="w-24 h-24 bg-gradient-premium rounded-3xl shadow-2xl flex items-center justify-center mb-8">
+                <i data-lucide="graduation-cap" class="text-white w-12 h-12"></i>
+            </div>
+            <h1 class="text-3xl font-bold text-gray-900 mb-3 tracking-tight">软考通关 App</h1>
+            <p class="text-gray-500 mb-12">高级信息系统项目管理师<br>每日计划 · 智能刷题 · 错题精练</p>
+        </div>
+        
+        <div class="px-8 pb-16 space-y-4 w-full">
+            <button onclick="switchView('view-home')" class="w-full bg-black text-white rounded-2xl py-4 font-semibold text-[17px] flex items-center justify-center gap-2 transition transform active:scale-95 shadow-lg">
+                <svg viewBox="0 0 384 512" class="w-5 h-5 fill-current"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                通过 Apple 登录
+            </button>
+            <button onclick="switchView('view-home')" class="w-full bg-white text-gray-700 border border-gray-200 rounded-2xl py-4 font-semibold text-[17px] flex items-center justify-center gap-2 transition transform active:scale-95 shadow-sm">
+                游客模式先逛逛
+            </button>
+            <p class="text-center text-xs text-gray-400 mt-4">登录即代表同意用户协议与隐私政策</p>
+        </div>
+    </div>
+
+    <!-- View 2: Home (Learning) -->
+    <div id="view-home" class="view">
+        <div class="flex-1 overflow-y-auto no-scrollbar pb-24">
+            <!-- Header -->
+            <div class="bg-gradient-premium pt-14 pb-6 px-6 rounded-b-[40px] text-white shadow-lg">
+                <div class="flex justify-between items-center mb-6">
+                    <div>
+                        <p class="text-sm opacity-80 font-medium">早上好，Leo</p>
+                        <h2 class="text-2xl font-bold mt-1">今天该复习了</h2>
+                    </div>
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-md">
+                        <i data-lucide="bell" class="w-5 h-5 text-white"></i>
+                    </div>
+                </div>
+                
+                <!-- Countdown -->
+                <div class="bg-white/10 rounded-2xl p-4 backdrop-blur-md border border-white/20 flex justify-between items-center">
+                    <div>
+                        <p class="text-xs opacity-80 mb-1">距离高项考试还剩</p>
+                        <p class="text-3xl font-bold font-mono">182 <span class="text-sm font-normal">天</span></p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-xs opacity-80 mb-1">今日进度</div>
+                        <div class="w-12 h-12 rounded-full border-4 border-emerald-400 flex items-center justify-center text-sm font-bold">0%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-6 mt-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">今日计划</h3>
+                <!-- Task Card 1 -->
+                <div class="bg-white rounded-3xl p-5 shadow-sm border border-gray-100 mb-4 flex gap-4 items-center">
+                    <div class="w-12 h-12 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 flex-shrink-0">
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-bold text-gray-900">学习进度</h4>
+                        <p class="text-sm text-gray-500 line-clamp-1">项目整合管理 - 制定章程</p>
+                    </div>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-md active:scale-95 transition">去学习</button>
+                </div>
+
+                <!-- Task Card 2 -->
+                <div class="bg-white rounded-3xl p-5 shadow-sm border border-gray-100 mb-6 flex gap-4 items-center">
+                    <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-500 flex-shrink-0">
+                        <i data-lucide="pen-tool" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-bold text-gray-900">每日一练</h4>
+                        <p class="text-sm text-gray-500">10道好题 · 预计 15 分</p>
+                    </div>
+                    <button onclick="switchView('view-quiz')" class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-md active:scale-95 transition">去刷题</button>
+                </div>
+
+                <h3 class="text-lg font-bold text-gray-900 mb-4">快捷入口</h3>
+                <div class="grid grid-cols-4 gap-4 mb-6">
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-blue-500 border border-gray-50">
+                            <i data-lucide="layers" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-medium text-gray-600">章节目录</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-purple-500 border border-gray-50">
+                            <i data-lucide="history" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-medium text-gray-600">历年真题</span>
+                    </div>
+                    <div onclick="switchView('view-wrong')" class="flex flex-col items-center gap-2 cursor-pointer">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-red-500 border border-gray-50">
+                            <i data-lucide="x-circle" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-medium text-gray-600">错题本</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-emerald-500 border border-gray-50">
+                            <i data-lucide="star" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-medium text-gray-600">我的收藏</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Tab Bar -->
+        <div class="tab-bar px-6 pt-4 flex justify-between items-center">
+            <div class="flex flex-col items-center text-indigo-600 gap-1 cursor-pointer">
+                <i data-lucide="compass" class="w-6 h-6"></i>
+                <span class="text-[10px] font-semibold">学习</span>
+            </div>
+            <div onclick="switchView('view-wrong')" class="flex flex-col items-center text-gray-400 gap-1 cursor-pointer hover:text-indigo-600 transition">
+                <i data-lucide="layout-list" class="w-6 h-6"></i>
+                <span class="text-[10px] font-semibold">复习</span>
+            </div>
+            <div onclick="switchView('view-profile')" class="flex flex-col items-center text-gray-400 gap-1 cursor-pointer hover:text-indigo-600 transition">
+                <i data-lucide="user" class="w-6 h-6"></i>
+                <span class="text-[10px] font-semibold">我的</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- View 3: Quiz -->
+    <div id="view-quiz" class="view">
+        <div class="pt-12 pb-4 px-4 bg-white/80 backdrop-blur-md border-b border-gray-100 flex items-center justify-between z-10 sticky top-0">
+            <button onclick="switchView('view-home')" class="text-indigo-600 flex items-center gap-1 active:opacity-70">
+                <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                <span class="text-[17px]">退出</span>
+            </button>
+            <div class="font-semibold text-[17px] text-gray-900">每日一练 (4/10)</div>
+            <div class="w-16"></div>
+        </div>
+
+        <div class="flex-1 overflow-y-auto p-6 bg-white">
+            <div class="flex gap-2 mb-6">
+                <span class="bg-indigo-50 text-indigo-600 text-xs font-bold px-2 py-1 rounded-md">单选</span>
+                <span class="bg-gray-100 text-gray-600 text-xs font-medium px-2 py-1 rounded-md">项目整合管理</span>
+            </div>
+            
+            <p class="text-lg text-gray-900 leading-relaxed font-medium mb-8">
+                在制定项目章程时，项目经理发现两位关键干系人对项目的商业目标存在严重分歧。此时项目经理应该如何处理？
+            </p>
+
+            <div class="space-y-4">
+                <button class="w-full text-left p-4 rounded-2xl border border-gray-200 bg-white active:scale-[0.98] transition flex gap-4 items-start">
+                    <div class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5">A</div>
+                    <span class="text-gray-700">根据项目发起人的意见直接确定商业目标。</span>
+                </button>
+                
+                <button class="w-full text-left p-4 rounded-2xl border-2 border-emerald-500 bg-emerald-50 active:scale-[0.98] transition flex gap-4 items-start">
+                    <div class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                        <i data-lucide="check" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-emerald-900 font-medium">组织干系人会议，澄清商业论证，达成共识后再发布项目章程。</span>
+                </button>
+
+                <button class="w-full text-left p-4 rounded-2xl border border-gray-200 bg-white active:scale-[0.98] transition flex gap-4 items-start">
+                    <div class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5">C</div>
+                    <span class="text-gray-700">将冲突记录在问题日志中。</span>
+                </button>
+                
+                <button class="w-full text-left p-4 rounded-2xl border border-gray-200 bg-white active:scale-[0.98] transition flex gap-4 items-start">
+                    <div class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center flex-shrink-0 mt-0.5">D</div>
+                    <span class="text-gray-700">暂停项目，直到分歧解决。</span>
+                </button>
+            </div>
+
+            <div class="mt-8 bg-gray-50 rounded-3xl p-5 border border-gray-100 mb-8">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-1 h-4 bg-emerald-500 rounded-full"></div>
+                    <h4 class="font-bold text-gray-900">解析</h4>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    在项目启动阶段，项目章程的批准标志着立项。如果关键干系人存在分歧，应当主动使用引导技术（如会议）来解决冲突，确保对项目商业论证达成一致理解。
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-white border-t border-gray-100 p-4 pb-10 flex justify-between gap-4">
+            <button class="flex-1 py-4 bg-gray-100 text-gray-700 rounded-2xl font-semibold active:opacity-70 transition">上一题</button>
+            <button class="flex-1 py-4 bg-indigo-600 text-white rounded-2xl font-semibold shadow-lg shadow-indigo-200 active:opacity-70 transition">下一题</button>
+        </div>
+    </div>
+
+    <!-- View 4: Wrong Book -->
+    <div id="view-wrong" class="view">
+        <div class="pt-14 pb-4 px-6 bg-white border-b border-gray-100 sticky top-0 z-10">
+            <h2 class="text-2xl font-bold text-gray-900">错题本</h2>
+            <div class="flex gap-2 mt-4 overflow-x-auto no-scrollbar pb-1">
+                <span class="bg-gray-900 text-white px-4 py-1.5 rounded-full text-sm font-semibold flex-shrink-0">高优先级 (12)</span>
+                <span class="bg-gray-100 text-gray-600 px-4 py-1.5 rounded-full text-sm font-medium flex-shrink-0 border border-gray-200">全部错题</span>
+                <span class="bg-gray-100 text-gray-600 px-4 py-1.5 rounded-full text-sm font-medium flex-shrink-0 border border-gray-200">已掌握</span>
+            </div>
+        </div>
+
+        <div class="flex-1 overflow-y-auto p-4 space-y-4 pb-24">
+            <div class="bg-white rounded-3xl p-5 shadow-sm border border-gray-100">
+                <div class="flex justify-between items-start mb-3">
+                    <span class="bg-red-50 text-red-500 text-xs font-bold px-2 py-1 rounded border border-red-100">错误 3 次</span>
+                    <span class="text-xs text-gray-400">上次复习: 昨天</span>
+                </div>
+                <p class="text-gray-900 font-medium mb-4 line-clamp-2">关于敏捷项目管理的描述，以下哪项是不正确的？</p>
+                <button onclick="switchView('view-quiz')" class="w-full py-3 bg-indigo-50 text-indigo-600 rounded-xl font-semibold text-sm active:bg-indigo-100 transition">重新挑战</button>
+            </div>
+            
+            <div class="bg-white rounded-3xl p-5 shadow-sm border border-gray-100">
+                <div class="flex justify-between items-start mb-3">
+                    <span class="bg-red-50 text-red-500 text-xs font-bold px-2 py-1 rounded border border-red-100">错误 1 次</span>
+                    <span class="text-xs text-gray-400">上次复习: 3天前</span>
+                </div>
+                <p class="text-gray-900 font-medium mb-4 line-clamp-2">在进行项目成本估算时，采用自下而上估算方法的优点是？</p>
+                <button class="w-full py-3 bg-indigo-50 text-indigo-600 rounded-xl font-semibold text-sm active:bg-indigo-100 transition">重新挑战</button>
+            </div>
+        </div>
+
+        <div class="tab-bar px-6 pt-4 flex justify-between items-center">
+            <div onclick="switchView('view-home')" class="flex flex-col items-center text-gray-400 gap-1 cursor-pointer hover:text-indigo-600 transition">
+                <i data-lucide="compass" class="w-6 h-6"></i>
+                <span class="text-[10px] font-semibold">学习</span>
+            </div>
+            <div class="flex flex-col items-center text-indigo-600 gap-1 cursor-pointer">
+                <i data-lucide="layout-list" class="w-6 h-6"></i>
+                <span class="text-[10px] font-semibold">复习</span>
+            </div>
+            <div onclick="switchView('view-profile')" class="flex flex-col items-center text-gray-400 gap-1 cursor-pointer hover:text-indigo-600 transition">
+                <i data-lucide="user" class="w-6 h-6"></i>
+                <span class="text-[10px] font-semibold">我的</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- View 5: Profile -->
+    <div id="view-profile" class="view">
+        <div class="flex-1 overflow-y-auto no-scrollbar pb-24">
+            <div class="pt-16 pb-8 px-6 bg-white shadow-sm rounded-b-3xl mb-4 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-premium opacity-10 rounded-full -mr-10 -mt-10 blur-2xl"></div>
+                
+                <div class="flex items-center gap-4 relative z-10">
+                    <img src="https://i.pravatar.cc/150?img=11" alt="Avatar" class="w-16 h-16 rounded-full border-2 border-white shadow-md">
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">Leo Wang</h2>
+                        <div class="flex items-center gap-1 mt-1 text-amber-500 bg-amber-50 px-2 py-0.5 rounded text-xs font-semibold w-max">
+                            <i data-lucide="crown" class="w-3 h-3"></i> Pro 会员
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 mt-8">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-gray-900">32</div>
+                        <div class="text-xs text-gray-500 mt-1">坚持天数</div>
+                    </div>
+                    <div class="text-center border-x border-gray-100">
+                        <div class="text-2xl font-bold text-gray-900">842</div>
+                        <div class="text-xs text-gray-500 mt-1">刷题量</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-gray-900">76<span class="text-sm text-gray-400">%</span></div>
+                        <div class="text-xs text-gray-500 mt-1">正确率</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-4 space-y-2">
+                <div class="bg-white rounded-2xl p-4 flex justify-between items-center shadow-sm">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center">
+                            <i data-lucide="calendar" class="w-4 h-4"></i>
+                        </div>
+                        <span class="font-medium text-gray-800">学习计划设置</span>
+                    </div>
+                    <i data-lucide="chevron-right" class="w-5 h-5 text-gray-300"></i>
+                </div>
+                
+                <div onclick="switchView('view-paywall')" class="bg-white rounded-2xl p-4 flex justify-between items-center shadow-sm cursor-pointer active:bg-gray-50 transition">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-purple-50 text-purple-500 flex items-center justify-center">
+                            <i data-lucide="award" class="w-4 h-4"></i>
+                        </div>
+                        <span class="font-medium text-gray-800">会员中心 (升级 Pro)</span>
+                    </div>
+                    <i data-lucide="chevron-right" class="w-5 h-5 text-gray-300"></i>
+                </div>
+
+                <div onclick="switchView('view-widget')" class="bg-white rounded-2xl p-4 flex justify-between items-center shadow-sm cursor-pointer active:bg-gray-50 transition">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-indigo-50 text-indigo-500 flex items-center justify-center">
+                            <i data-lucide="layout-template" class="w-4 h-4"></i>
+                        </div>
+                        <span class="font-medium text-gray-800">小组件与推送设置</span>
+                    </div>
+                    <i data-lucide="chevron-right" class="w-5 h-5 text-gray-300"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-bar px-6 pt-4 flex justify-between items-center">
+            <div onclick="switchView('view-home')" class="flex flex-col items-center text-gray-400 gap-1 cursor-pointer hover:text-indigo-600 transition">
+                <i data-lucide="compass" class="w-6 h-6"></i>
+                <span class="text-[10px] font-semibold">学习</span>
+            </div>
+            <div onclick="switchView('view-wrong')" class="flex flex-col items-center text-gray-400 gap-1 cursor-pointer hover:text-indigo-600 transition">
+                <i data-lucide="layout-list" class="w-6 h-6"></i>
+                <span class="text-[10px] font-semibold">复习</span>
+            </div>
+            <div class="flex flex-col items-center text-indigo-600 gap-1 cursor-pointer">
+                <i data-lucide="user" class="w-6 h-6"></i>
+                <span class="text-[10px] font-semibold">我的</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- View 6: IAP Paywall -->
+    <div id="view-paywall" class="view bg-black">
+        <div class="relative h-2/5 w-full">
+            <div class="absolute inset-0 bg-gradient-premium opacity-50"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+            <button onclick="switchView('view-profile')" class="absolute top-14 right-6 w-8 h-8 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white z-10 active:scale-95">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="absolute bottom-6 left-6 right-6">
+                <h2 class="text-3xl font-bold text-white mb-2">解锁 AtomQ Pro</h2>
+                <p class="text-gray-300 text-sm">获取智能计划、全量题库与深度解析</p>
+            </div>
+        </div>
+        
+        <div class="flex-1 px-6 pb-20 pt-4 overflow-y-auto no-scrollbar relative z-10 bg-black">
+            <div class="space-y-4 mb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-6 h-6 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400"><i data-lucide="check" class="w-4 h-4"></i></div>
+                    <span class="text-gray-200 text-sm">解锁全部 5000+ 历年真题与模拟题</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-6 h-6 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400"><i data-lucide="check" class="w-4 h-4"></i></div>
+                    <span class="text-gray-200 text-sm">考前冲刺密卷及 AI 智能组卷</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-6 h-6 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400"><i data-lucide="check" class="w-4 h-4"></i></div>
+                    <span class="text-gray-200 text-sm">全离线模式，无网也能顺畅刷题</span>
+                </div>
+            </div>
+
+            <!-- Subscription Options -->
+            <div class="space-y-3 mb-8">
+                <div class="border border-indigo-500 bg-indigo-900/20 rounded-2xl p-4 relative cursor-pointer">
+                    <div class="absolute -top-3 right-4 bg-indigo-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">最受欢迎</div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <div class="font-bold text-white mb-1">连续包季</div>
+                            <div class="text-xs text-indigo-300">折合 ￥22/月</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xl font-bold text-white">￥68</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-800 bg-gray-900/50 rounded-2xl p-4 cursor-pointer hover:bg-gray-800/50 transition">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <div class="font-bold text-white mb-1">连续包月</div>
+                            <div class="text-xs text-gray-400">随时取消</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xl font-bold text-white">￥28</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl shadow-lg shadow-indigo-500/30 active:scale-95 transition mb-4">
+                立即订阅
+            </button>
+            <div class="flex justify-center gap-4 text-xs text-gray-500 mb-6">
+                <a href="#" class="underline hover:text-gray-300">服务条款</a>
+                <a href="#" class="underline hover:text-gray-300">隐私政策</a>
+                <a href="#" class="underline hover:text-gray-300">恢复购买</a>
+            </div>
+            <p class="text-[10px] text-gray-600 text-center leading-relaxed">
+                订阅将通过您的 Apple ID 账户扣款。如需取消订阅，请在当前订阅期结束前至少 24 小时在 App Store 账户设置中关闭自动续订。
+            </p>
+        </div>
+    </div>
+
+    <!-- View 7: Widget Setup -->
+    <div id="view-widget" class="view bg-[#FAFAFC]">
+        <div class="pt-14 pb-4 px-6 sticky top-0 bg-white/80 backdrop-blur-md z-10 border-b border-gray-100 flex items-center justify-between">
+            <button onclick="switchView('view-profile')" class="text-indigo-600 flex items-center gap-1 active:opacity-70 transition">
+                <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                <span class="text-[17px]">返回</span>
+            </button>
+            <div class="font-semibold text-[17px] text-gray-900">小组件与推送</div>
+            <div class="w-16"></div>
+        </div>
+        
+        <div class="flex-1 p-6 overflow-y-auto no-scrollbar pb-20">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">桌面小组件效果预览</h3>
+            
+            <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl p-6 mb-8 flex justify-center items-center h-48 border border-indigo-100/50 relative overflow-hidden">
+                <!-- Mock Widget -->
+                <div class="w-36 h-36 bg-white/80 backdrop-blur-lg rounded-3xl shadow-xl border border-white p-4 flex flex-col justify-between absolute z-10 transform scale-110">
+                    <div class="flex justify-between items-start">
+                        <i data-lucide="clock" class="w-4 h-4 text-indigo-500"></i>
+                        <span class="text-[10px] font-bold text-indigo-500 bg-indigo-50 px-1.5 py-0.5 rounded">高项</span>
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-gray-500 font-medium mb-0.5">距考试还有</div>
+                        <div class="text-3xl font-black text-gray-900 font-mono tracking-tighter">182<span class="text-sm text-gray-400 font-medium">天</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">本地推送设置</h3>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
+                    <div>
+                        <div class="font-semibold text-gray-900">每日复习提醒</div>
+                        <div class="text-xs text-gray-500 mt-1">到达设定的时间自动推送学习任务</div>
+                    </div>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" checked>
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+                    </label>
+                </div>
+                
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
+                    <div>
+                        <div class="font-semibold text-gray-900">提醒时间</div>
+                        <div class="text-xs text-gray-500 mt-1">默认晚上黄金学习时间</div>
+                    </div>
+                    <div class="bg-gray-100 px-3 py-1.5 rounded-lg text-sm font-medium text-gray-700">20:00</div>
+                </div>
+                
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
+                    <div>
+                        <div class="font-semibold text-gray-900">离线数据包自动更新</div>
+                        <div class="text-xs text-gray-500 mt-1">Wi-Fi 下自动下载最新题库以供离线使用</div>
+                    </div>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" checked>
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-gray-100 rounded-2xl p-4 text-center">
+                <i data-lucide="info" class="w-5 h-5 text-gray-400 mx-auto mb-2"></i>
+                <p class="text-xs text-gray-500">长按手机桌面空白处，点击左上角 "+" 号，搜索 "软考通关" 即可添加小组件至桌面。</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="home-indicator"></div>
+</div>
+
+<script>
+    lucide.createIcons();
+
+    function switchView(viewId) {
+        document.querySelectorAll('.view').forEach(el => el.classList.remove('active'));
+        document.getElementById(viewId).classList.add('active');
+    }
+</script>
+</body>
+</html>
