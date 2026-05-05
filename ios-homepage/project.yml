@@ -1,0 +1,30 @@
+name: AtomQHomeStatic
+options:
+  bundleIdPrefix: com.atomq
+settings:
+  base:
+    SWIFT_VERSION: 5.10
+    IPHONEOS_DEPLOYMENT_TARGET: 17.0
+targets:
+  AtomQHomeStatic:
+    type: application
+    platform: iOS
+    sources:
+      - AtomQHomeStatic
+    resources:
+      - AtomQHomeStatic/Resources/SVG
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.atomq.home.static
+        INFOPLIST_FILE: AtomQHomeStatic/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        TARGETED_DEVICE_FAMILY: 1
+        SUPPORTS_MACCATALYST: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+schemes:
+  AtomQHomeStatic:
+    build:
+      targets:
+        AtomQHomeStatic: all
+    run:
+      config: Debug

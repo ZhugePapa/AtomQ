@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="uncheck">
+<circle id="Ellipse 1" cx="12" cy="12" r="10" stroke="var(--stroke-0, #FFE5CF)" stroke-width="2"/>
+<path id="Ellipse 2" d="M12 2C13.6792 2 15.3315 2.42288 16.8042 3.22962C18.277 4.03637 19.5229 5.201 20.427 6.6161C21.331 8.03119 21.8642 9.65117 21.9773 11.3266C22.0904 13.002 21.7797 14.679 21.074 16.2027C20.3682 17.7265 19.2901 19.048 17.9391 20.0453C16.5881 21.0426 15.0077 21.6837 13.3437 21.9093C11.6797 22.135 9.98567 21.9379 8.41786 21.3364C6.85005 20.7349 5.45896 19.7482 4.37292 18.4674" stroke="var(--stroke-1, #FD5E0D)" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>

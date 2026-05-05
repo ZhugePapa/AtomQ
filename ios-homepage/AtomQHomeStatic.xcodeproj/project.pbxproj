@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0051B7F3DBC82CBBC7FF8436 /* icon-bar-chart.svg in Resources */ = {isa = PBXBuildFile; fileRef = E7D3BC157E9E6C87B6B990B6 /* icon-bar-chart.svg */; };
+		095BF19EB1A3663D5A7E5D09 /* icon-home-line.svg in Resources */ = {isa = PBXBuildFile; fileRef = FD962F5B1898B2B57275B06C /* icon-home-line.svg */; };
+		0D6F42FD44D7B7E360EF1D11 /* icon-uncheck-outline.svg in Resources */ = {isa = PBXBuildFile; fileRef = 111DE58F61B75C7615CF5190 /* icon-uncheck-outline.svg */; };
+		10782B5802A14C9E47D4213A /* icon-chevron-forward.svg in Resources */ = {isa = PBXBuildFile; fileRef = 683077A709D8CE03B2876994 /* icon-chevron-forward.svg */; };
+		19152D193001A955B071F0AD /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CE8B283340DB2449EF118 /* DesignTokens.swift */; };
+		1BD02A69ACD64F4A1EE11E18 /* icon-hero-spark.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7F32D075C42E865FB05D31DD /* icon-hero-spark.svg */; };
+		263588E27846ADA0DD7F8752 /* icon-user.svg in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8C4B033E2C352FB55FBA /* icon-user.svg */; };
+		42E8DCEDFD57BFE4A84B371B /* icon-check-circle.svg in Resources */ = {isa = PBXBuildFile; fileRef = DD1592A8DDD278F147BF3BF8 /* icon-check-circle.svg */; };
+		5E25B4090B5C1B443579C933 /* icon-arrow-forward.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0507C6689818BC30094AC473 /* icon-arrow-forward.svg */; };
+		5F0F2F8873A50CD4EDAC691D /* status-levels.svg in Resources */ = {isa = PBXBuildFile; fileRef = B9ADB2D8D84F130995E537C6 /* status-levels.svg */; };
+		6213BB64BC34E798C22C69F7 /* icon-beaker.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5412C8132F588B7F1A8265A0 /* icon-beaker.svg */; };
+		7682C35822130AE3811A600E /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E0C09BA6EA85CA10DD333E /* HomePageView.swift */; };
+		77B0AAB5A688E3669C78248E /* icon-play-circle.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2570CD3B1D6BF67D9B81DA89 /* icon-play-circle.svg */; };
+		7DB42BE7E6A6EB758D3FB0F3 /* SVGAssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCC36FDD046771F1C90B43 /* SVGAssetView.swift */; };
+		89B836D1FE5F9A3433D59A56 /* icon-uncheck-progress.svg in Resources */ = {isa = PBXBuildFile; fileRef = D92DEBB5DFAA7D166A8E2419 /* icon-uncheck-progress.svg */; };
+		936977C49E6305EB7C89F7F2 /* bg-hero-subtract.svg in Resources */ = {isa = PBXBuildFile; fileRef = C4F57AAD5C296A5101E52278 /* bg-hero-subtract.svg */; };
+		C7D6A10004B6F0A28E1A979B /* icon-graduation-hat.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2A230AEB80663F902B737563 /* icon-graduation-hat.svg */; };
+		D8C90BCEFF8F0C6596C5F3B8 /* icon-certificate.svg in Resources */ = {isa = PBXBuildFile; fileRef = 40AE4BF6FDBEFC2B95902309 /* icon-certificate.svg */; };
+		E95F6960B5A26F9D65FA35B0 /* icon-atom.svg in Resources */ = {isa = PBXBuildFile; fileRef = 34187CFA37B1F7D24ECBC083 /* icon-atom.svg */; };
+		F60304BCAE3E756118910B51 /* icon-red-dot.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5F6F3D2D169F09EBD9702514 /* icon-red-dot.svg */; };
+		FC78CBD3396EB1F6F0817409 /* icon-notification.svg in Resources */ = {isa = PBXBuildFile; fileRef = 152094449A174E1F62673F37 /* icon-notification.svg */; };
+		FE5F5C8E1B5589044BE1DCED /* AtomQHomeStaticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481AAD408129A8CB960FEC09 /* AtomQHomeStaticApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0507C6689818BC30094AC473 /* icon-arrow-forward.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-arrow-forward.svg"; sourceTree = "<group>"; };
+		111DE58F61B75C7615CF5190 /* icon-uncheck-outline.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-uncheck-outline.svg"; sourceTree = "<group>"; };
+		14DC8C4B033E2C352FB55FBA /* icon-user.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-user.svg"; sourceTree = "<group>"; };
+		152094449A174E1F62673F37 /* icon-notification.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-notification.svg"; sourceTree = "<group>"; };
+		2570CD3B1D6BF67D9B81DA89 /* icon-play-circle.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-play-circle.svg"; sourceTree = "<group>"; };
+		2A230AEB80663F902B737563 /* icon-graduation-hat.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-graduation-hat.svg"; sourceTree = "<group>"; };
+		34187CFA37B1F7D24ECBC083 /* icon-atom.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-atom.svg"; sourceTree = "<group>"; };
+		40AE4BF6FDBEFC2B95902309 /* icon-certificate.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-certificate.svg"; sourceTree = "<group>"; };
+		481AAD408129A8CB960FEC09 /* AtomQHomeStaticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomQHomeStaticApp.swift; sourceTree = "<group>"; };
+		520CE8B283340DB2449EF118 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		5412C8132F588B7F1A8265A0 /* icon-beaker.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-beaker.svg"; sourceTree = "<group>"; };
+		5F6F3D2D169F09EBD9702514 /* icon-red-dot.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-red-dot.svg"; sourceTree = "<group>"; };
+		683077A709D8CE03B2876994 /* icon-chevron-forward.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-chevron-forward.svg"; sourceTree = "<group>"; };
+		69E0C09BA6EA85CA10DD333E /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		6C1F24705302C2AE13CD2E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7F32D075C42E865FB05D31DD /* icon-hero-spark.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-hero-spark.svg"; sourceTree = "<group>"; };
+		922B70DB5B2B2F4C7DD5186D /* AtomQHomeStatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtomQHomeStatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CCC36FDD046771F1C90B43 /* SVGAssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGAssetView.swift; sourceTree = "<group>"; };
+		B9ADB2D8D84F130995E537C6 /* status-levels.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "status-levels.svg"; sourceTree = "<group>"; };
+		C4F57AAD5C296A5101E52278 /* bg-hero-subtract.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "bg-hero-subtract.svg"; sourceTree = "<group>"; };
+		D92DEBB5DFAA7D166A8E2419 /* icon-uncheck-progress.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-uncheck-progress.svg"; sourceTree = "<group>"; };
+		DD1592A8DDD278F147BF3BF8 /* icon-check-circle.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-check-circle.svg"; sourceTree = "<group>"; };
+		E7D3BC157E9E6C87B6B990B6 /* icon-bar-chart.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-bar-chart.svg"; sourceTree = "<group>"; };
+		FD962F5B1898B2B57275B06C /* icon-home-line.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-home-line.svg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0EA7B2ED51794094163E300D /* AtomQHomeStatic */ = {
+			isa = PBXGroup;
+			children = (
+				481AAD408129A8CB960FEC09 /* AtomQHomeStaticApp.swift */,
+				6C1F24705302C2AE13CD2E9D /* Info.plist */,
+				869DC065CFB0E282D814B749 /* Design */,
+				AA52FC55D179E7FBE6AE5F24 /* Infrastructure */,
+				9698AF3AF46DD4BF18F6C7CC /* Resources */,
+				57D3B24CCAAFA17F5D5B3831 /* Views */,
+			);
+			path = AtomQHomeStatic;
+			sourceTree = "<group>";
+		};
+		11434375BFB69DD785AABAF8 = {
+			isa = PBXGroup;
+			children = (
+				0EA7B2ED51794094163E300D /* AtomQHomeStatic */,
+				A78D0E68E5C8843A184ABE81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33B2C7C5FEDECF1208F6D9F6 /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				C4F57AAD5C296A5101E52278 /* bg-hero-subtract.svg */,
+				0507C6689818BC30094AC473 /* icon-arrow-forward.svg */,
+				34187CFA37B1F7D24ECBC083 /* icon-atom.svg */,
+				E7D3BC157E9E6C87B6B990B6 /* icon-bar-chart.svg */,
+				5412C8132F588B7F1A8265A0 /* icon-beaker.svg */,
+				40AE4BF6FDBEFC2B95902309 /* icon-certificate.svg */,
+				DD1592A8DDD278F147BF3BF8 /* icon-check-circle.svg */,
+				683077A709D8CE03B2876994 /* icon-chevron-forward.svg */,
+				2A230AEB80663F902B737563 /* icon-graduation-hat.svg */,
+				7F32D075C42E865FB05D31DD /* icon-hero-spark.svg */,
+				FD962F5B1898B2B57275B06C /* icon-home-line.svg */,
+				152094449A174E1F62673F37 /* icon-notification.svg */,
+				2570CD3B1D6BF67D9B81DA89 /* icon-play-circle.svg */,
+				5F6F3D2D169F09EBD9702514 /* icon-red-dot.svg */,
+				111DE58F61B75C7615CF5190 /* icon-uncheck-outline.svg */,
+				D92DEBB5DFAA7D166A8E2419 /* icon-uncheck-progress.svg */,
+				14DC8C4B033E2C352FB55FBA /* icon-user.svg */,
+				B9ADB2D8D84F130995E537C6 /* status-levels.svg */,
+			);
+			path = SVG;
+			sourceTree = "<group>";
+		};
+		57D3B24CCAAFA17F5D5B3831 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69E0C09BA6EA85CA10DD333E /* HomePageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		869DC065CFB0E282D814B749 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				520CE8B283340DB2449EF118 /* DesignTokens.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		9698AF3AF46DD4BF18F6C7CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				33B2C7C5FEDECF1208F6D9F6 /* SVG */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A78D0E68E5C8843A184ABE81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				922B70DB5B2B2F4C7DD5186D /* AtomQHomeStatic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA52FC55D179E7FBE6AE5F24 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B7CCC36FDD046771F1C90B43 /* SVGAssetView.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E014E7C004B3C2749E4CB1BA /* AtomQHomeStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9B4C141A5C5B1F5C2FF2F2 /* Build configuration list for PBXNativeTarget "AtomQHomeStatic" */;
+			buildPhases = (
+				67C70D973EA0FF44D48AB82B /* Sources */,
+				419C4542F70AA821A0F8C690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtomQHomeStatic;
+			packageProductDependencies = (
+			);
+			productName = AtomQHomeStatic;
+			productReference = 922B70DB5B2B2F4C7DD5186D /* AtomQHomeStatic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27845A9E89FA84CA0590F277 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 068ECC02CFA211CB2B7900BE /* Build configuration list for PBXProject "AtomQHomeStatic" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 11434375BFB69DD785AABAF8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A78D0E68E5C8843A184ABE81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E014E7C004B3C2749E4CB1BA /* AtomQHomeStatic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		419C4542F70AA821A0F8C690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936977C49E6305EB7C89F7F2 /* bg-hero-subtract.svg in Resources */,
+				5E25B4090B5C1B443579C933 /* icon-arrow-forward.svg in Resources */,
+				E95F6960B5A26F9D65FA35B0 /* icon-atom.svg in Resources */,
+				0051B7F3DBC82CBBC7FF8436 /* icon-bar-chart.svg in Resources */,
+				6213BB64BC34E798C22C69F7 /* icon-beaker.svg in Resources */,
+				D8C90BCEFF8F0C6596C5F3B8 /* icon-certificate.svg in Resources */,
+				42E8DCEDFD57BFE4A84B371B /* icon-check-circle.svg in Resources */,
+				10782B5802A14C9E47D4213A /* icon-chevron-forward.svg in Resources */,
+				C7D6A10004B6F0A28E1A979B /* icon-graduation-hat.svg in Resources */,
+				1BD02A69ACD64F4A1EE11E18 /* icon-hero-spark.svg in Resources */,
+				095BF19EB1A3663D5A7E5D09 /* icon-home-line.svg in Resources */,
+				FC78CBD3396EB1F6F0817409 /* icon-notification.svg in Resources */,
+				77B0AAB5A688E3669C78248E /* icon-play-circle.svg in Resources */,
+				F60304BCAE3E756118910B51 /* icon-red-dot.svg in Resources */,
+				0D6F42FD44D7B7E360EF1D11 /* icon-uncheck-outline.svg in Resources */,
+				89B836D1FE5F9A3433D59A56 /* icon-uncheck-progress.svg in Resources */,
+				263588E27846ADA0DD7F8752 /* icon-user.svg in Resources */,
+				5F0F2F8873A50CD4EDAC691D /* status-levels.svg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67C70D973EA0FF44D48AB82B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5F5C8E1B5589044BE1DCED /* AtomQHomeStaticApp.swift in Sources */,
+				19152D193001A955B071F0AD /* DesignTokens.swift in Sources */,
+				7682C35822130AE3811A600E /* HomePageView.swift in Sources */,
+				7DB42BE7E6A6EB758D3FB0F3 /* SVGAssetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3429745685DFD6A15F95CEC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6737R5Z8X7;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AtomQHomeStatic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomq.home.static;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7FFB12D0852504DF5871EE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		8711BB7247F82A1B3838C3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6737R5Z8X7;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AtomQHomeStatic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomq.home.static;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CBB454968EA93CBD978D0046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		068ECC02CFA211CB2B7900BE /* Build configuration list for PBXProject "AtomQHomeStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB454968EA93CBD978D0046 /* Debug */,
+				7FFB12D0852504DF5871EE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AE9B4C141A5C5B1F5C2FF2F2 /* Build configuration list for PBXNativeTarget "AtomQHomeStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3429745685DFD6A15F95CEC5 /* Debug */,
+				8711BB7247F82A1B3838C3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27845A9E89FA84CA0590F277 /* Project object */;
+}
