@@ -1,14 +1,29 @@
 import SwiftUI
+import UIKit
 import WebKit
 
-struct SVGAssetView: UIViewRepresentable {
+struct SVGAssetView: View {
     let name: String
     let cssVariables: [String: Color]
+    let cssValues: [String: String]
 
-    init(name: String, cssVariables: [String: Color] = [:]) {
+    init(name: String, cssVariables: [String: Color] = [:], cssValues: [String: String] = [:]) {
         self.name = name
         self.cssVariables = cssVariables
+        self.cssValues = cssValues
     }
+
+    var body: some View {
+        SVGWebAssetView(name: name, cssVariables: cssVariables, cssValues: cssValues)
+            .allowsHitTesting(false)
+    }
+}
+
+private struct SVGWebAssetView: UIViewRepresentable {
+    let name: String
+    let cssVariables: [String: Color]
+    let cssValues: [String: String]
+    private static var resolvedURLCache: [String: URL] = [:]
 
     final class SVGRenderWebView: WKWebView {
         var svgSource: String = ""
@@ -22,7 +37,7 @@ struct SVGAssetView: UIViewRepresentable {
             renderIfNeeded()
         }
 
-        func renderIfNeeded() {
+        func renderIfNeeded(force: Bool = false) {
             guard !svgSource.isEmpty else { return }
             let width = max(1, bounds.width)
             let height = max(1, bounds.height)
@@ -30,7 +45,7 @@ struct SVGAssetView: UIViewRepresentable {
             let normalizedHeight = (height * 1000).rounded() / 1000
             let variableSignature = cssVariables.keys.sorted().map { "\($0)=\(cssVariables[$0] ?? "")" }.joined(separator: ";")
             let signature = "\(svgKey)#\(normalizedWidth)x\(normalizedHeight)#\(variableSignature)"
-            guard signature != lastSignature else { return }
+            guard force || signature != lastSignature else { return }
             lastSignature = signature
 
             let widthPx = String(format: "%.3f", normalizedWidth)
@@ -81,11 +96,30 @@ struct SVGAssetView: UIViewRepresentable {
         }
     }
 
+    final class Coordinator: NSObject, WKNavigationDelegate {
+        func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+            (webView as? SVGRenderWebView)?.renderIfNeeded(force: true)
+        }
+
+        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: any Error) {
+            (webView as? SVGRenderWebView)?.renderIfNeeded(force: true)
+        }
+
+        func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: any Error) {
+            (webView as? SVGRenderWebView)?.renderIfNeeded(force: true)
+        }
+    }
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
+
     func makeUIView(context: Context) -> SVGRenderWebView {
         let config = WKWebViewConfiguration()
         config.allowsInlineMediaPlayback = true
 
         let webView = SVGRenderWebView(frame: .zero, configuration: config)
+        webView.navigationDelegate = context.coordinator
         webView.isOpaque = false
         webView.backgroundColor = .clear
         webView.scrollView.isScrollEnabled = false
@@ -102,17 +136,84 @@ struct SVGAssetView: UIViewRepresentable {
             return
         }
 
+        let colorScheme = context.environment.colorScheme
+        let style: UIUserInterfaceStyle = colorScheme == .dark ? .dark : .light
+        let forcedTrait = UITraitCollection(userInterfaceStyle: style)
+        webView.overrideUserInterfaceStyle = style
+
         webView.svgSource = svg
-        webView.svgBaseURL = url.deletingLastPathComponent()
+        webView.svgBaseURL = nil
         webView.svgKey = "\(name)-\(url.lastPathComponent)"
-        webView.cssVariables = resolveCssVariables(for: webView.traitCollection)
+        var resolvedVariables = resolveCssVariables(for: forcedTrait)
+        for (name, value) in cssValues {
+            resolvedVariables[name] = value
+        }
+        webView.cssVariables = resolvedVariables
         webView.renderIfNeeded()
     }
 
     private func resolveURL(for name: String) -> URL? {
-        if let url = Bundle.main.url(forResource: name, withExtension: "svg") { return url }
-        if let url = Bundle.main.url(forResource: name, withExtension: "svg", subdirectory: "SVG") { return url }
-        if let url = Bundle.main.url(forResource: name, withExtension: "svg", subdirectory: "Resources/SVG") { return url }
+        if let cached = Self.resolvedURLCache[name] {
+            return cached
+        }
+
+        let fileName = "\(name).svg"
+        let candidateBundles = Array(
+            Set(
+                [Bundle.main, Bundle(for: SVGRenderWebView.self)] +
+                Bundle.allBundles +
+                Bundle.allFrameworks
+            )
+        )
+
+        for bundle in candidateBundles {
+            if let url = bundle.url(forResource: name, withExtension: "svg") {
+                Self.resolvedURLCache[name] = url
+                return url
+            }
+            if let url = bundle.url(forResource: name, withExtension: "svg", subdirectory: "SVG") {
+                Self.resolvedURLCache[name] = url
+                return url
+            }
+            if let url = bundle.url(forResource: name, withExtension: "svg", subdirectory: "Resources/SVG") {
+                Self.resolvedURLCache[name] = url
+                return url
+            }
+
+            guard let resourceURL = bundle.resourceURL else { continue }
+            let direct = resourceURL.appendingPathComponent(fileName)
+            if FileManager.default.fileExists(atPath: direct.path) {
+                Self.resolvedURLCache[name] = direct
+                return direct
+            }
+
+            let svgDir = resourceURL.appendingPathComponent("SVG").appendingPathComponent(fileName)
+            if FileManager.default.fileExists(atPath: svgDir.path) {
+                Self.resolvedURLCache[name] = svgDir
+                return svgDir
+            }
+
+            let nestedDir = resourceURL
+                .appendingPathComponent("Resources")
+                .appendingPathComponent("SVG")
+                .appendingPathComponent(fileName)
+            if FileManager.default.fileExists(atPath: nestedDir.path) {
+                Self.resolvedURLCache[name] = nestedDir
+                return nestedDir
+            }
+        }
+
+        let sourceRootResourcePath = URL(fileURLWithPath: #filePath)
+            .deletingLastPathComponent()
+            .deletingLastPathComponent()
+            .appendingPathComponent("Resources")
+            .appendingPathComponent("SVG")
+            .appendingPathComponent(fileName)
+        if FileManager.default.fileExists(atPath: sourceRootResourcePath.path) {
+            Self.resolvedURLCache[name] = sourceRootResourcePath
+            return sourceRootResourcePath
+        }
+
         return nil
     }
 
@@ -132,10 +233,34 @@ private extension UIColor {
         var g: CGFloat = 0
         var b: CGFloat = 0
         var a: CGFloat = 0
-        getRed(&r, green: &g, blue: &b, alpha: &a)
-        let red = Int((r * 255).rounded())
-        let green = Int((g * 255).rounded())
-        let blue = Int((b * 255).rounded())
-        return "rgba(\(red), \(green), \(blue), \(a))"
+        if getRed(&r, green: &g, blue: &b, alpha: &a) {
+            let red = Int((r * 255).rounded())
+            let green = Int((g * 255).rounded())
+            let blue = Int((b * 255).rounded())
+            return "rgba(\(red), \(green), \(blue), \(a))"
+        }
+
+        guard
+            let sRGB = CGColorSpace(name: CGColorSpace.sRGB),
+            let converted = cgColor.converted(to: sRGB, intent: .defaultIntent, options: nil),
+            let components = converted.components
+        else {
+            return "rgba(0, 0, 0, 1)"
+        }
+
+        switch components.count {
+        case 4:
+            let red = Int((components[0] * 255).rounded())
+            let green = Int((components[1] * 255).rounded())
+            let blue = Int((components[2] * 255).rounded())
+            let alpha = max(0, min(1, components[3]))
+            return "rgba(\(red), \(green), \(blue), \(alpha))"
+        case 2:
+            let gray = Int((components[0] * 255).rounded())
+            let alpha = max(0, min(1, components[1]))
+            return "rgba(\(gray), \(gray), \(gray), \(alpha))"
+        default:
+            return "rgba(0, 0, 0, 1)"
+        }
     }
 }

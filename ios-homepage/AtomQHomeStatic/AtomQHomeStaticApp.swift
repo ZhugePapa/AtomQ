@@ -8,8 +8,8 @@ struct AtomQHomeStaticApp: App {
     var body: some Scene {
         WindowGroup {
             HomePageView(selectedTab: $selectedTab, isDarkMode: $isDarkMode)
-                .background(Token.bgCanvas)
-                .preferredColorScheme(isDarkMode ? .dark : .light)
+            .background(Token.bgCanvas)
+            .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

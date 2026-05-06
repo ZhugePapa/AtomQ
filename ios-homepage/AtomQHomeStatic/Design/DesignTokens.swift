@@ -7,9 +7,9 @@ enum Token {
     static let bgSubtle = Color(lightHex: "#f7f9fb", darkHex: "#1b2533")
     static let bgTaskSubtle = Color(lightHex: "#ffffff", darkHex: "#0b111a")
     static let textPrimary = Color(lightHex: "#121b26", darkHex: "#f3f4f6")
-    static let textSecondary = Color(lightHex: "#404c63", darkHex: "#c2ccd8")
-    static let textTertiary = Color(lightHex: "#6e7e94", darkHex: "#6e7e94")
-    static let textDisabled = Color(lightHex: "#c2ccd8", darkHex: "#404c63")
+    static let textSecondary = Color(lightHex: "#404c63", darkHex: "#d9e0e8")
+    static let textTertiary = Color(lightHex: "#6e7e94", darkHex: "#97a6b8")
+    static let textDisabled = Color(lightHex: "#c2ccd8", darkHex: "#536279")
     static let textWhite = Color(lightHex: "#ffffff", darkHex: "#ffffff")
     static let textBrand = Color(lightHex: "#1362fe", darkHex: "#1362fe")
 
@@ -28,7 +28,14 @@ enum Token {
     static let fgWhiteInverse = Color(lightHex: "#ffffff", darkHex: "#1b2533")
     static let focusRing = Color(lightHex: "#071947", darkHex: "#1c2839")
 
-    static let overlayHeroMask = Color(lightHex: "#000000", darkHex: "#000000").opacity(0.20)
+    static let overlayHeroMask = Color(
+        UIColor { trait in
+            if trait.userInterfaceStyle == .dark {
+                return UIColor(red: 0, green: 0, blue: 0, alpha: 0.40)
+            }
+            return UIColor(red: 1, green: 1, blue: 1, alpha: 0.12)
+        }
+    )
     static let overlaySoft = Color.black.opacity(0.05)
     static let shadowDownSm = ShadowSpec(color: overlaySoft, x: 0, y: 5, radius: 12)
 

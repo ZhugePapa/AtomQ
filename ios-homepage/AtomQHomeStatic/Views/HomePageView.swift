@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 enum AppTab: String {
     case study
@@ -12,7 +13,7 @@ struct HomePageView: View {
 
     var body: some View {
         GeometryReader { geometry in
-            let canvasWidth = min(geometry.size.width, 390)
+            let canvasWidth = geometry.size.width
 
             ZStack {
                 Token.bgCanvas
@@ -40,6 +41,7 @@ struct HomePageView: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: 64)
                 }
+                .ignoresSafeArea(.all, edges: .top)
                 .frame(width: canvasWidth)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             }
@@ -63,6 +65,7 @@ private struct FigmaIconView: View {
     let innerInsets: PercentInsets
     let imageInsets: PercentInsets
     let cssVariables: [String: Color]
+    let cssValues: [String: String]
 
     init(
         name: String,
@@ -70,7 +73,8 @@ private struct FigmaIconView: View {
         outerHeight: CGFloat,
         innerInsets: PercentInsets = .zero,
         imageInsets: PercentInsets = .zero,
-        cssVariables: [String: Color] = [:]
+        cssVariables: [String: Color] = [:],
+        cssValues: [String: String] = [:]
     ) {
         self.name = name
         self.outerWidth = outerWidth
@@ -78,6 +82,7 @@ private struct FigmaIconView: View {
         self.innerInsets = innerInsets
         self.imageInsets = imageInsets
         self.cssVariables = cssVariables
+        self.cssValues = cssValues
     }
 
     var body: some View {
@@ -95,7 +100,7 @@ private struct FigmaIconView: View {
             let imageWidth = max(0, innerWidth * (1 - imageInsets.left - imageInsets.right))
             let imageHeight = max(0, innerHeight * (1 - imageInsets.top - imageInsets.bottom))
 
-            SVGAssetView(name: name, cssVariables: cssVariables)
+            SVGAssetView(name: name, cssVariables: cssVariables, cssValues: cssValues)
                 .frame(width: imageWidth, height: imageHeight)
                 .position(x: imageX + imageWidth / 2, y: imageY + imageHeight / 2)
         }
@@ -134,12 +139,16 @@ private struct HeaderView: View {
                     imageInsets: PercentInsets(top: -0.0513, right: -0.0611, bottom: -0.0513, left: -0.0612),
                     cssVariables: ["stroke-0": Token.fgPrimary]
                 )
-                Circle()
-                    .fill(Token.fgDanger)
-                    .overlay(
-                        Circle().stroke(Token.fgWhiteInverse, lineWidth: 1)
-                    )
-                    .frame(width: 8, height: 8)
+                FigmaIconView(
+                    name: "icon-red-dot",
+                    outerWidth: 8,
+                    outerHeight: 8,
+                    imageInsets: PercentInsets(top: -0.125, right: -0.125, bottom: -0.125, left: -0.125),
+                    cssVariables: [
+                        "fill-0": Token.fgDanger,
+                        "stroke-0": Token.fgWhiteInverse,
+                    ]
+                )
                     .offset(x: -1, y: 1)
             }
             .frame(width: 24, height: 24)
@@ -154,9 +163,80 @@ private struct ContentAreaView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 0) {
-                HeroCardView()
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 192)
+                GeometryReader { geometry in
+                    let ctaWidth: CGFloat = 144
+                    let ctaHeight: CGFloat = 48
+                    let iconSize: CGFloat = 24
+
+                    ZStack(alignment: .topLeading) {
+                        HeroCardCutoutShape()
+                            .fill(Token.focusRing)
+                            .shadow(
+                                color: Token.shadowDownSm.color,
+                                radius: Token.shadowDownSm.radius,
+                                x: Token.shadowDownSm.x,
+                                y: Token.shadowDownSm.y
+                            )
+
+                        HeroDecorativeOverlay()
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+
+                        HStack(spacing: 8) {
+                            SVGAssetView(name: "icon-hero-spark")
+                                .frame(width: 24, height: 24)
+                            Text("已完成全部任务，太棒了！")
+                                .font(.custom("PingFang SC", size: 16).weight(.medium))
+                                .foregroundStyle(Token.textWhite)
+                                .lineLimit(1)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.top, 20)
+                        .padding(.horizontal, 20)
+
+                        Text("学有余力？去【学习统计】看看您的知识雷达盲区，或者刷一套历年真题吧。")
+                            .font(.custom("PingFang SC", size: 12).weight(.regular))
+                            .foregroundStyle(Token.textDisabled)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 8)
+                            .background(Token.overlayHeroMask)
+                            .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                            .padding(.top, 56)
+                            .padding(.horizontal, 20)
+
+                        HStack(spacing: 24) {
+                            HeroMetric(title: "今日学习", value: "24", unit: "min")
+                            HeroMetric(title: "连续打卡", value: "27", unit: "day")
+                        }
+                        .frame(width: 136, alignment: .leading)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+                        .padding(.leading, 20)
+                        .padding(.bottom, 16)
+
+                        Button {
+                        } label: {
+                            HStack(spacing: 8) {
+                                Text("继续学习")
+                                    .font(.custom("PingFang SC", size: 16).weight(.medium))
+                                    .foregroundStyle(Token.textWhite)
+                                FigmaIconView(
+                                    name: "icon-play-circle",
+                                    outerWidth: iconSize,
+                                    outerHeight: iconSize,
+                                    innerInsets: PercentInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
+                                    imageInsets: PercentInsets(top: -0.0375, right: -0.0375, bottom: -0.0375, left: -0.0375)
+                                )
+                            }
+                            .frame(width: ctaWidth, height: ctaHeight)
+                            .background(Token.fgBrand)
+                            .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
+                        }
+                        .buttonStyle(.plain)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                    }
+                }
+                .frame(maxWidth: .infinity)
+                .frame(height: 192)
 
                 Spacer().frame(height: 24)
 
@@ -177,72 +257,98 @@ private struct ContentAreaView: View {
     }
 }
 
-private struct HeroCardView: View {
+private struct HeroCardCutoutShape: Shape {
+    var cornerRadius: CGFloat = Token.radiusMd
+    var notchWidth: CGFloat = 152
+    var notchHeight: CGFloat = 56
+
+    func path(in rect: CGRect) -> Path {
+        let notchW = max(0, min(rect.width, notchWidth))
+        let notchH = max(0, min(rect.height, notchHeight))
+        let radius = min(
+            cornerRadius,
+            notchW / 2,
+            notchH / 2,
+            rect.width / 2,
+            rect.height / 2
+        )
+
+        let x0 = rect.minX
+        let y0 = rect.minY
+        let x1 = rect.maxX
+        let y1 = rect.maxY
+
+        let notchTopY = y1 - notchH
+        let notchLeftX = x1 - notchW
+
+        var path = Path()
+        path.move(to: CGPoint(x: x0 + radius, y: y0))
+
+        // 外轮廓：上边 -> 右上角 -> 右边
+        path.addLine(to: CGPoint(x: x1 - radius, y: y0))
+        path.addQuadCurve(
+            to: CGPoint(x: x1, y: y0 + radius),
+            control: CGPoint(x: x1, y: y0)
+        )
+        path.addLine(to: CGPoint(x: x1, y: notchTopY - radius))
+
+        // 凹口：右侧拐入 -> 顶边向左 -> 左侧向下（内凹两角）
+        path.addQuadCurve(
+            to: CGPoint(x: x1 - radius, y: notchTopY),
+            control: CGPoint(x: x1, y: notchTopY)
+        )
+        path.addLine(to: CGPoint(x: notchLeftX + radius, y: notchTopY))
+        path.addQuadCurve(
+            to: CGPoint(x: notchLeftX, y: notchTopY + radius),
+            control: CGPoint(x: notchLeftX, y: notchTopY)
+        )
+        path.addLine(to: CGPoint(x: notchLeftX, y: y1 - radius))
+
+        // 外轮廓：下边 -> 左下角 -> 左边 -> 左上角闭合
+        path.addQuadCurve(
+            to: CGPoint(x: notchLeftX - radius, y: y1),
+            control: CGPoint(x: notchLeftX, y: y1)
+        )
+        path.addLine(to: CGPoint(x: x0 + radius, y: y1))
+        path.addQuadCurve(
+            to: CGPoint(x: x0, y: y1 - radius),
+            control: CGPoint(x: x0, y: y1)
+        )
+        path.addLine(to: CGPoint(x: x0, y: y0 + radius))
+        path.addQuadCurve(
+            to: CGPoint(x: x0 + radius, y: y0),
+            control: CGPoint(x: x0, y: y0)
+        )
+        path.closeSubpath()
+        return path
+    }
+}
+
+private struct HeroDecorativeOverlay: View {
     var body: some View {
-        ZStack(alignment: .topLeading) {
-            SVGAssetView(
-                name: "bg-hero-subtract",
-                cssVariables: ["fill-0": Token.focusRing]
-            )
-                .frame(width: 374, height: 216)
-                .offset(x: -12, y: -7)
-
-            HStack(spacing: 8) {
-                SVGAssetView(name: "icon-hero-spark")
-                    .frame(width: 24, height: 24)
-                Text("学习中，坚持就是胜利！")
-                    .font(.custom("PingFang SC", size: 16).weight(.medium))
-                    .foregroundStyle(Token.textWhite)
-                    .lineLimit(1)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.top, 20)
-            .padding(.horizontal, 20)
-
-            Text("上次停留：[刷题任务] 十大管理域综合\n进度：第 8 题 / 共 15 题")
-                .font(.custom("PingFang SC", size: 12).weight(.regular))
-                .foregroundStyle(Token.textDisabled)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 12)
-                .padding(.vertical, 8)
-                .background(Token.overlayHeroMask)
-                .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
-                .padding(.top, 56)
-                .padding(.horizontal, 20)
-
-            HStack(spacing: 24) {
-                HeroMetric(title: "今日学习", value: "24", unit: "min")
-                HeroMetric(title: "连续打卡", value: "27", unit: "day")
-            }
-            .frame(width: 136, alignment: .leading)
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
-            .padding(.leading, 20)
-            .padding(.bottom, 20)
-
-            Button {
-            } label: {
-                HStack(spacing: 8) {
-                    Text("继续学习")
-                        .font(.custom("PingFang SC", size: 16).weight(.medium))
-                        .foregroundStyle(Token.textWhite)
-                    FigmaIconView(
-                        name: "icon-play-circle",
-                        outerWidth: 24,
-                        outerHeight: 24,
-                        innerInsets: PercentInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
-                        imageInsets: PercentInsets(top: -0.0375, right: -0.0375, bottom: -0.0375, left: -0.0375)
-                    )
-                }
-                .frame(height: Token.spacing48)
-                .padding(.horizontal, 24)
-                .background(Token.fgBrand)
-                .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
-            }
-            .buttonStyle(.plain)
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-        }
+        SVGAssetView(name: "hero-decor-frame-146")
+        .frame(width: 255, height: 136)
+        .clipped()
         .clipShape(RoundedRectangle(cornerRadius: Token.radiusMd, style: .continuous))
-        .shadow(color: Token.shadowDownSm.color, radius: Token.shadowDownSm.radius, x: Token.shadowDownSm.x, y: Token.shadowDownSm.y)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+    }
+}
+
+private enum FigmaFont {
+    static func dataXlgDINBold() -> Font {
+        let size: CGFloat = 20
+        let candidates = [
+            "DIN-Bold",
+            "DINAlternate-Bold",
+            "DIN Alternate Bold",
+            "DINCondensed-Bold",
+            "DIN Condensed Bold",
+            "DIN",
+        ]
+        for name in candidates where UIFont(name: name, size: size) != nil {
+            return .custom(name, size: size)
+        }
+        return .system(size: size, weight: .bold)
     }
 }
 
@@ -261,7 +367,7 @@ private struct HeroMetric: View {
 
             HStack(alignment: .lastTextBaseline, spacing: 6) {
                 Text(value)
-                    .font(.custom("DIN", size: 20).weight(.medium))
+                    .font(FigmaFont.dataXlgDINBold())
                     .foregroundStyle(Token.textWhite)
                     .frame(height: 28, alignment: .bottom)
                 Text(unit)
@@ -362,9 +468,9 @@ private struct TaskSectionView: View {
 
                 HStack(spacing: 6) {
                     Text("1/3")
-                    Text("已完成")
+                    Text("进行中")
                 }
-                .font(.custom("PingFang SC", size: 14).weight(.medium))
+                .font(.custom("PingFang SC", size: 14).weight(.regular))
                 .foregroundStyle(Token.textTertiary)
                 .padding(.horizontal, 12)
                 .frame(height: 28)
@@ -553,8 +659,11 @@ private struct TabItem: View {
                         outerWidth: 24,
                         outerHeight: 24,
                         innerInsets: PercentInsets(top: 0.0945, right: 0.1250, bottom: 0.1250, left: 0.1250),
-                        imageInsets: PercentInsets(top: -0.0534, right: -0.0556, bottom: -0.0534, left: -0.0556),
-                        cssVariables: ["stroke-0": active ? Token.fgPrimary : Token.fgDisabled]
+                        imageInsets: active
+                            ? PercentInsets(top: -0.0534, right: -0.0556, bottom: -0.0534, left: -0.0556)
+                            : PercentInsets(top: -0.0400, right: -0.0417, bottom: -0.0400, left: -0.0417),
+                        cssVariables: ["stroke-0": active ? Token.fgPrimary : Token.fgDisabled],
+                        cssValues: ["stroke-width-0": active ? "2" : "1.5"]
                     )
                 case "icon-bar-chart":
                     FigmaIconView(
@@ -562,8 +671,11 @@ private struct TabItem: View {
                         outerWidth: 24,
                         outerHeight: 24,
                         innerInsets: PercentInsets(top: 0.1250, right: 0.1250, bottom: 0.1250, left: 0.1250),
-                        imageInsets: PercentInsets(top: -0.0417, right: -0.0417, bottom: -0.0417, left: -0.0417),
-                        cssVariables: ["stroke-0": active ? Token.fgPrimary : Token.fgDisabled]
+                        imageInsets: active
+                            ? PercentInsets(top: -0.0556, right: -0.0556, bottom: -0.0556, left: -0.0556)
+                            : PercentInsets(top: -0.0417, right: -0.0417, bottom: -0.0417, left: -0.0417),
+                        cssVariables: ["stroke-0": active ? Token.fgPrimary : Token.fgDisabled],
+                        cssValues: ["stroke-width-0": active ? "2" : "1.5"]
                     )
                 case "icon-user":
                     FigmaIconView(
@@ -571,8 +683,11 @@ private struct TabItem: View {
                         outerWidth: 24,
                         outerHeight: 24,
                         innerInsets: PercentInsets(top: 0.1250, right: 0.1667, bottom: 0.1250, left: 0.1667),
-                        imageInsets: PercentInsets(top: -0.0417, right: -0.0469, bottom: -0.0417, left: -0.0469),
-                        cssVariables: ["stroke-0": active ? Token.fgPrimary : Token.fgDisabled]
+                        imageInsets: active
+                            ? PercentInsets(top: -0.0556, right: -0.0625, bottom: -0.0556, left: -0.0625)
+                            : PercentInsets(top: -0.0417, right: -0.0469, bottom: -0.0417, left: -0.0469),
+                        cssVariables: ["stroke-0": active ? Token.fgPrimary : Token.fgDisabled],
+                        cssValues: ["stroke-width-0": active ? "2" : "1.5"]
                     )
                 default:
                     SVGAssetView(name: icon)

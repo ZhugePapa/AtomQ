@@ -2,7 +2,7 @@
 
 - source: `https://www.figma.com/design/IJ94IJOoh9DN4D8dAGEAoi/AtomQ`
 - file_key: `IJ94IJOoh9DN4D8dAGEAoi`
-- generated_at: `2026-05-04`
+- generated_at: `2026-05-05`
 - total_collections: `4`
 - total_variables: `148`
 - total_rows_by_mode: `199`
@@ -147,6 +147,8 @@
 | border/warning | var(--ios-color-border-brand) | @alias(warning/700) | STROKE_COLOR | Dark | Colors | VariableID:7769:205 |
 | components/card | var(--ios-color-focus-ring) | #071947 | FRAME_FILL,SHAPE_FILL | Light | Colors | VariableID:7862:6563 |
 | components/card | var(--ios-color-focus-ring) | #1c2839 | FRAME_FILL,SHAPE_FILL | Dark | Colors | VariableID:7862:6563 |
+| components/overlay_hero_mask |  | #ffffff@0.12 | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Light | Colors | VariableID:7891:31 |
+| components/overlay_hero_mask |  | #000000@0.40 | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Dark | Colors | VariableID:7891:31 |
 | components/task_subtle | var(--ios-color-focus-ring) | @alias(neutral/0) | FRAME_FILL,SHAPE_FILL | Light | Colors | VariableID:7866:7604 |
 | components/task_subtle | var(--ios-color-focus-ring) | @alias(neutral/975) | FRAME_FILL,SHAPE_FILL | Dark | Colors | VariableID:7866:7604 |
 | fg/assist | var(--ios-color-fg-danger) | @alias(assist/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7836:4639 |
@@ -206,14 +208,14 @@
 | text/danger | var(--ios-color-text-brand) | @alias(danger/500) | TEXT_FILL | Dark | Colors | VariableID:7769:203 |
 | text/danger | var(--ios-color-text-brand) | @alias(danger/500) | TEXT_FILL | Light | Colors | VariableID:7769:203 |
 | text/disabled | var(--ios-color-text-disabled) | @alias(neutral/300) | TEXT_FILL | Light | Colors | VariableID:7769:142 |
-| text/disabled | var(--ios-color-text-disabled) | @alias(neutral/700) | TEXT_FILL | Dark | Colors | VariableID:7769:142 |
+| text/disabled | var(--ios-color-text-disabled) | @alias(neutral/600) | TEXT_FILL | Dark | Colors | VariableID:7769:142 |
 | text/primary | var(--ios-color-text-primary) | @alias(neutral/50) | TEXT_FILL | Dark | Colors | VariableID:7697:68 |
 | text/primary | var(--ios-color-text-primary) | @alias(neutral/950) | TEXT_FILL | Light | Colors | VariableID:7697:68 |
-| text/secondary | var(--ios-color-text-secondary) | @alias(neutral/300) | TEXT_FILL | Dark | Colors | VariableID:7697:69 |
+| text/secondary | var(--ios-color-text-secondary) | @alias(neutral/200) | TEXT_FILL | Dark | Colors | VariableID:7697:69 |
 | text/secondary | var(--ios-color-text-secondary) | @alias(neutral/700) | TEXT_FILL | Light | Colors | VariableID:7697:69 |
 | text/success | var(--ios-color-text-brand) | @alias(success/500) | TEXT_FILL | Dark | Colors | VariableID:7769:201 |
 | text/success | var(--ios-color-text-brand) | @alias(success/500) | TEXT_FILL | Light | Colors | VariableID:7769:201 |
-| text/tertiary | var(--ios-color-text-tertiary) | @alias(neutral/500) | TEXT_FILL | Dark | Colors | VariableID:7697:70 |
+| text/tertiary | var(--ios-color-text-tertiary) | @alias(neutral/400) | TEXT_FILL | Dark | Colors | VariableID:7697:70 |
 | text/tertiary | var(--ios-color-text-tertiary) | @alias(neutral/500) | TEXT_FILL | Light | Colors | VariableID:7697:70 |
 | text/warning | var(--ios-color-text-brand) | @alias(warning/500) | TEXT_FILL | Dark | Colors | VariableID:7769:202 |
 | text/warning | var(--ios-color-text-brand) | @alias(warning/500) | TEXT_FILL | Light | Colors | VariableID:7769:202 |
