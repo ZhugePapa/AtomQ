@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "软考刷题App PRD V1.7.md",
+                "file": "软考刷题App 情感化设计方案 V1.0.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "软考刷题App PRD V1.7"
+              "title": "软考刷题App 情感化设计方案 V1.0"
             }
           }
         ]
@@ -185,7 +185,35 @@
   },
   "active": "fc5eda435db7b106",
   "lastOpenFiles": [
-    "ios-homepage/AtomQHomeStatic/Resources/SVG/hero-decor-frame-146.svg",
-    "ios-homepage/AtomQHomeStatic/Infrastructure/SVGAssetView.swift"
+    "outputs/knowledge-card-data-dictionary/软考刷题App_知识卡片数据字典.xlsx",
+    "outputs/knowledge-card-data-dictionary",
+    "outputs",
+    "数据设计文档 V1.2.md",
+    "知识卡片/未命名.md",
+    "知识卡片",
+    "软考刷题App PRD V1.7.md",
+    "ios-homepage/project.yml",
+    "ios-homepage/AtomQHomeStatic/Resources/SVG/status-levels.svg",
+    "ios-homepage/AtomQHomeStatic/Resources/SVG/icon-uncheck-progress.svg",
+    "ios-homepage/AtomQHomeStatic/Resources/SVG/icon-user.svg",
+    "ios-homepage/AtomQHomeStatic/Resources/SVG/icon-uncheck-outline.svg",
+    "ios-homepage/AtomQHomeStatic/Resources/SVG/icon-red-dot.svg",
+    "ios-homepage/AtomQHomeStatic/Resources/SVG/icon-play-circle.svg",
+    "ios-homepage/AtomQHomeStatic/Resources/SVG/icon-notification.svg",
+    "ios-homepage/AtomQHomeStatic/Resources/SVG/icon-home-line.svg",
+    "ios-homepage/AtomQHomeStatic/Resources/SVG/icon-hero-spark.svg",
+    "ios-homepage/AtomQHomeStatic/Resources/SVG/icon-graduation-hat.svg",
+    "ios-homepage/AtomQHomeStatic/Views/HomePageView.swift",
+    "ios-homepage/AtomQHomeStatic/Resources/SVG",
+    "ios-homepage/AtomQHomeStatic/Infrastructure/SVGAssetView.swift",
+    "ios-homepage/AtomQHomeStatic/Design/DesignTokens.swift",
+    "ios-homepage/AtomQHomeStatic/Views",
+    "ios-homepage/AtomQHomeStatic/Resources",
+    "docs/homepage-variable-audit-report.md",
+    "docs/codex-execution-spec.md",
+    "软考刷题App PRD V1.5.md",
+    "知识卡片/kp_ch01_001.md.md",
+    "数据设计文档 V1.1.md",
+    "数据设计文档 V1.0.md"
   ]
 }
