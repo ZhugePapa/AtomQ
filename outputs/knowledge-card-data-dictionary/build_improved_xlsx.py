@@ -9,7 +9,7 @@ from datetime import datetime
 SRC = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                    '软考刷题App_知识卡片数据字典.xlsx')
 DST = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                   '软考刷题App_知识卡片数据字典_V1.1.xlsx')
+                   '软考刷题App_知识卡片数据字典_V1.4.xlsx')
 
 NS = 'http://schemas.openxmlformats.org/spreadsheetml/2006/main'
 NS_R = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
@@ -203,13 +203,15 @@ def build_sheet2():
          ('subject_id', 'string', '是', '否', '-', '所属科目 ID，预留多科目扩展 (PRD 11.5)', '设计 1.3 ★ V1.1新增', ''),
          ('title', 'string', '是', '否', '-', '章节标题', '设计 1.3 / 1.4 / 2.1', ''),
          ('description', 'string', '否', '否', '-', '章节描述', '设计 1.3 / 1.4 / 2.1', ''),
-         ('sort_no', 'int', '是', '否', '>= 0', '章节排序号', '设计 1.3 / 1.4 / 2.1', '')])
+         ('sort_no', 'int', '是', '否', '>= 0', '章节排序号', '设计 1.3 / 1.4 / 2.1', ''),
+         ('sections', 'array<section_summary>', '是', '否', '数组项含 section_id / title / sort_no / description / card_count', '子章节摘要列表，用于章节目录树三级渲染 ★ V1.4 新增', '数据字典 V1.4', '')])
 
     # Knowledge card meta — unchanged structure
     add_data('静态知识卡片', 'knowledge_card_meta (kp_*.json)', '知识卡片元数据，描述单张知识卡片的可检索属性、关联关系和正文引用。',
         [('point_id', 'string', '是', '是', '-', '知识点唯一标识', '设计 1.3 / 1.4 / 2.1', ''),
          ('subject_id', 'string', '是', '否', '-', '科目 ID', '设计 1.3 / 1.4 / 2.1', ''),
          ('chapter_id', 'string', '是', '否', '-', '所属章节 ID', '设计 1.3 / 1.4 / 2.1', ''),
+         ('section_id', 'string', '是', '否', '如 sec_01_01', '所属子章节 ID，与 chapter_meta.sections[].section_id 对应 ★ V1.4 新增', '数据字典 V1.4', ''),
          ('title', 'string', '是', '否', '<= 30 字', '卡片标题', '设计 1.3 / 1.4 / 2.1', ''),
          ('card_type', 'enum', '是', '否', 'concept / process / comparison / formula / definition', '卡片类型', '设计 1.3 / 1.4 / 2.1', ''),
          ('difficulty', 'int', '是', '否', '1-3', '内容难度，与题目难度对齐', '设计 1.3 / 1.4 / 2.1', ''),
@@ -218,6 +220,9 @@ def build_sheet2():
          ('is_free', 'bool', '是', '否', 'true / false', '是否免费可见', '设计 1.3 / 1.4 / 2.1', ''),
          ('sort_no', 'int', '是', '否', '>= 0', '章节内排序序号', '设计 1.3 / 1.4 / 2.1', ''),
          ('content_file', 'string', '是', '否', '如 kp_ch04_001.md', '正文 MD 文件名', '设计 1.3 / 1.4 / 2.1', ''),
+         ('tags', 'string[]', '否', '否', '数组，如 ["信息","信息化"]', '关键词标签，用于分类检索与智能推荐 ★ V1.2 新增', '数据字典 V1.2', ''),
+         ('key_points', 'string', '否', '否', 'Markdown 格式', '高频考点，渲染为正文下方独立蓝色卡片 ★ V1.5 新增', '数据字典 V1.4', '支持粗体、列表等基础 MD 语法'),
+         ('mnemonics', 'string', '否', '否', 'Markdown 格式', '记忆口诀，渲染为考点卡片下方独立绿色卡片 ★ V1.5 新增', '数据字典 V1.4', '支持粗体、列表等基础 MD 语法'),
          ('prerequisite_point_ids', 'string[]', '否', '否', '数组', '前置知识点 ID', '设计 1.3 / 1.4 / 2.1', ''),
          ('related_point_ids', 'string[]', '否', '否', '数组', '关联知识点 ID', '设计 1.3 / 1.4 / 2.1', ''),
          ('related_question_ids', 'string[]', '否', '否', '数组', '关联题目 ID', '设计 1.3 / 1.4 / 2.1', ''),
@@ -445,8 +450,8 @@ def build_xlsx():
             zf_out.writestr('xl/workbook.xml', zf_in.read('xl/workbook.xml'))
 
     print(f'✅ 已生成: {DST}')
-    print(f'   Sheet 1 (评估): 更新评估结论，标注 V1.1 改进项')
-    print(f'   Sheet 2 (数据字典): 新增 users (6字段)、exam_paper (7字段)、chapter_meta.subject_id、kp_*.schema_version')
+    print(f'   Sheet 1 (评估): 更新评估结论，标注改进项')
+    print(f'   Sheet 2 (数据字典): 新增 users (6字段)、exam_paper (7字段)、chapter_meta.subject_id、kp_*.schema_version、kp_*.tags')
     print(f'   Sheet 2 (数据字典): 细化 knowledge_point_ids → [{{"point_id","is_primary"}}]、options → [{{"key","text"}}]')
     print(f'   Sheet 3 (对象总览): 新增 users、exam_paper 对象')
     print(f'   Sheet 4 (关系): 新增 7 条用户和真题卷相关关系')

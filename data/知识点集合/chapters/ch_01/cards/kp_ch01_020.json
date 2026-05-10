@@ -1,0 +1,38 @@
+{
+  "point_id": "kp_ch01_020",
+  "subject_id": "subj_high_level",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01_04",
+  "title": "数据价值化",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 180,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 20,
+  "content_file": "kp_ch01_020.md",
+  "tags": [
+    "数据价值化",
+    "数据资源化",
+    "数据资产化",
+    "数据资本化",
+    "三化框架",
+    "数据确权",
+    "数据交易"
+  ],
+  "key_points": "`(23上2)(25上2批)` 数据价值化三阶段：\n1. 资源化 → 变有序\n2. 资产化 → 变有价值（核心）\n3. 资本化 → 变可流通",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "kp_ch01_018"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "高项三色笔记 1.4",
+  "source_type": "official",
+  "author": "内容运营",
+  "reviewer": "",
+  "created_at": "2026-05-10T00:00:00Z",
+  "updated_at": "2026-05-10T00:00:00Z",
+  "version": 1,
+  "schema_version": 1
+}

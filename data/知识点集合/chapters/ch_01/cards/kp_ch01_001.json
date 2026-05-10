@@ -1,0 +1,37 @@
+{
+  "point_id": "kp_ch01_001",
+  "subject_id": "subj_high_level",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01_01",
+  "title": "信息的定义",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 120,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 1,
+  "content_file": "kp_ch01_001.md",
+  "tags": [
+    "信息",
+    "物质",
+    "能量",
+    "属性",
+    "确定性"
+  ],
+  "key_points": "信息 = 物质、能量及其属性的标示的集合 = 确定性的增加",
+  "mnemonics": "信息是属性的标示，确定性增加是本质。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [
+    "kp_ch01_002",
+    "kp_ch01_003"
+  ],
+  "related_question_ids": [],
+  "source": "高项三色笔记 1.1",
+  "source_type": "official",
+  "author": "内容运营",
+  "reviewer": "",
+  "created_at": "2026-05-10T00:00:00Z",
+  "updated_at": "2026-05-10T00:00:00Z",
+  "version": 1,
+  "schema_version": 1
+}

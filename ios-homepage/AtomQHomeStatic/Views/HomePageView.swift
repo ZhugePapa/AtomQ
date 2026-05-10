@@ -10,6 +10,11 @@ enum AppTab: String {
 struct HomePageView: View {
     @Binding var selectedTab: AppTab
     @Binding var isDarkMode: Bool
+    @State private var showingKnowledgeCardStudy = false
+    private let studyPageTransition = AnyTransition.asymmetric(
+        insertion: .move(edge: .trailing),
+        removal: .move(edge: .leading)
+    )
 
     var body: some View {
         GeometryReader { geometry in
@@ -23,29 +28,66 @@ struct HomePageView: View {
                     Spacer().frame(height: 56)
 
                     if selectedTab == .study {
-                        HeaderView()
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 62)
+                        ZStack {
+                            if showingKnowledgeCardStudy {
+                                KnowledgeCardStudyView(
+                                    onBack: {
+                                        withAnimation(.easeInOut(duration: 0.25)) {
+                                            showingKnowledgeCardStudy = false
+                                        }
+                                    }
+                                )
+                                .transition(studyPageTransition)
+                            } else {
+                                VStack(spacing: 0) {
+                                    HeaderView()
+                                        .frame(maxWidth: .infinity)
+                                        .frame(height: 62)
 
-                        ContentAreaView()
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    ContentAreaView(
+                                        onOpenKnowledgeCardStudy: {
+                                            withAnimation(.easeInOut(duration: 0.25)) {
+                                                showingKnowledgeCardStudy = true
+                                            }
+                                        }
+                                    )
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+                                    BottomTabBarView(selectedTab: $selectedTab)
+                                        .frame(maxWidth: .infinity)
+                                        .frame(height: 64)
+                                }
+                                .transition(studyPageTransition)
+                            }
+                        }
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .clipped()
                     } else if selectedTab == .profile {
-                        ProfileCenterView(isDarkMode: $isDarkMode)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    } else {
-                        StatsPlaceholderView()
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    }
+                        VStack(spacing: 0) {
+                            ProfileCenterView(isDarkMode: $isDarkMode)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
 
-                    BottomTabBarView(selectedTab: $selectedTab)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 64)
+                            BottomTabBarView(selectedTab: $selectedTab)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 64)
+                        }
+                    } else {
+                        VStack(spacing: 0) {
+                            StatsPlaceholderView()
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+                            BottomTabBarView(selectedTab: $selectedTab)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 64)
+                        }
+                    }
                 }
                 .ignoresSafeArea(.all, edges: .top)
                 .frame(width: canvasWidth)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             }
         }
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 
@@ -160,6 +202,8 @@ private struct HeaderView: View {
 }
 
 private struct ContentAreaView: View {
+    let onOpenKnowledgeCardStudy: () -> Void
+
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 0) {
@@ -246,7 +290,9 @@ private struct ContentAreaView: View {
 
                 Spacer().frame(height: 32)
 
-                TaskSectionView()
+                TaskSectionView(
+                    onOpenKnowledgeCardStudy: onOpenKnowledgeCardStudy
+                )
                     .frame(maxWidth: .infinity)
 
                 Spacer().frame(height: 24)
@@ -457,6 +503,61 @@ private struct QuickActionItem: View {
 }
 
 private struct TaskSectionView: View {
+    let onOpenKnowledgeCardStudy: () -> Void
+
+    private enum TaskType: Int {
+        case learning = 0
+        case practice = 1
+        case review = 2
+    }
+
+    private struct TaskItem: Identifiable {
+        let id: String
+        let type: TaskType
+        let status: TaskCardStatus
+        let title: String
+        let subtitle: String
+        let onTap: (() -> Void)?
+    }
+
+    private var tasks: [TaskItem] {
+        let initial: [TaskItem] = [
+            TaskItem(
+                id: "learning-task",
+                type: .learning,
+                status: .notStarted,
+                title: "学习任务：项目可行性分析",
+                subtitle: "已完成学习",
+                onTap: onOpenKnowledgeCardStudy
+            ),
+            TaskItem(
+                id: "practice-task",
+                type: .practice,
+                status: .notStarted,
+                title: "刷题任务",
+                subtitle: "进度：17/24",
+                onTap: nil
+            ),
+            TaskItem(
+                id: "review-task",
+                type: .review,
+                status: .notStarted,
+                title: "复习任务",
+                subtitle: "15 题丨艾宾浩斯濒危错题",
+                onTap: nil
+            ),
+        ]
+
+        return initial.sorted { lhs, rhs in
+            let lhsCompleted = lhs.status == .completed
+            let rhsCompleted = rhs.status == .completed
+            if lhsCompleted != rhsCompleted {
+                return !lhsCompleted
+            }
+            return lhs.type.rawValue < rhs.type.rawValue
+        }
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             HStack {
@@ -479,140 +580,15 @@ private struct TaskSectionView: View {
             }
             .frame(height: 30)
 
-            TaskCardInProgress()
-            TaskCardPending()
-            TaskCardCompleted()
-        }
-    }
-}
-
-private struct TaskCardInProgress: View {
-    var body: some View {
-        HStack(spacing: 16) {
-            SVGAssetView(
-                name: "icon-uncheck-progress",
-                cssVariables: [
-                    "stroke-0": Token.borderWarning,
-                    "stroke-1": Token.fgWarning,
-                ]
-            )
-                .frame(width: 24, height: 24)
-
-            VStack(alignment: .leading, spacing: 4) {
-                Text("刷题任务")
-                    .font(.custom("PingFang SC", size: 16).weight(.semibold))
-                    .foregroundStyle(Token.textPrimary)
-                Text("进度：17/24")
-                    .font(.custom("PingFang SC", size: 14).weight(.regular))
-                    .foregroundStyle(Token.textTertiary)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-
-            HStack(spacing: 8) {
-                Text("继续")
-                    .font(.custom("PingFang SC", size: 16).weight(.medium))
-                    .foregroundStyle(Token.textWhite)
-                FigmaIconView(
-                    name: "icon-arrow-forward",
-                    outerWidth: 16,
-                    outerHeight: 16,
-                    innerInsets: PercentInsets(top: 0.2188, right: 0.1953, bottom: 0.2188, left: 0.1953),
-                    imageInsets: PercentInsets(top: -0.0833, right: -0.0769, bottom: -0.0833, left: -0.0769)
+            ForEach(tasks) { task in
+                TaskCardView(
+                    status: task.status,
+                    title: task.title,
+                    subtitle: task.subtitle,
+                    onTap: task.onTap
                 )
             }
-            .padding(.horizontal, 16)
-            .frame(height: 36)
-            .background(Token.fgWarning)
-            .clipShape(Capsule())
         }
-        .padding(.horizontal, 20)
-        .frame(maxWidth: .infinity)
-        .frame(height: 82)
-        .background(Token.fgWarningSubtle)
-        .overlay(
-            RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous)
-                .stroke(Token.borderWarning, lineWidth: 1)
-        )
-        .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
-    }
-}
-
-private struct TaskCardPending: View {
-    var body: some View {
-        HStack(spacing: 16) {
-            FigmaIconView(
-                name: "icon-uncheck-outline",
-                outerWidth: 24,
-                outerHeight: 24,
-                innerInsets: PercentInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
-                imageInsets: PercentInsets(top: -0.0500, right: -0.0500, bottom: -0.0500, left: -0.0500),
-                cssVariables: ["stroke-0": Token.borderStrong]
-            )
-
-            VStack(alignment: .leading, spacing: 4) {
-                Text("复习任务")
-                    .font(.custom("PingFang SC", size: 16).weight(.semibold))
-                    .foregroundStyle(Token.textPrimary)
-                Text("15 题丨艾宾浩斯濒危错题")
-                    .font(.custom("PingFang SC", size: 14).weight(.regular))
-                    .foregroundStyle(Token.textTertiary)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-
-            FigmaIconView(
-                name: "icon-chevron-forward",
-                outerWidth: 16,
-                outerHeight: 16,
-                innerInsets: PercentInsets(top: 0.2188, right: 0.3594, bottom: 0.2188, left: 0.3594),
-                imageInsets: PercentInsets(top: -0.0833, right: -0.1667, bottom: -0.0833, left: -0.1667),
-                cssVariables: ["stroke-0": Token.fgTertiary]
-            )
-        }
-        .padding(.horizontal, 20)
-        .frame(maxWidth: .infinity)
-        .frame(height: 82)
-        .background(Token.bgSurface)
-        .overlay(
-            RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous)
-                .stroke(Token.borderDefault, lineWidth: 1)
-        )
-        .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
-    }
-}
-
-private struct TaskCardCompleted: View {
-    var body: some View {
-        HStack(spacing: 16) {
-            FigmaIconView(
-                name: "icon-check-circle",
-                outerWidth: 24,
-                outerHeight: 24,
-                innerInsets: PercentInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
-                imageInsets: PercentInsets(top: -0.0500, right: -0.0500, bottom: -0.0500, left: -0.0500),
-                cssVariables: ["stroke-0": Token.fgSuccessSecondary]
-            )
-
-            VStack(alignment: .leading, spacing: 4) {
-                Text("学习任务：项目可行性分析")
-                    .font(.custom("PingFang SC", size: 16).weight(.semibold))
-                    .foregroundStyle(Token.textDisabled)
-                    .strikethrough(true, color: Token.textDisabled)
-                    .lineLimit(1)
-                Text("已完成学习")
-                    .font(.custom("PingFang SC", size: 14).weight(.regular))
-                    .foregroundStyle(Token.textDisabled)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        .padding(.horizontal, 20)
-        .frame(maxWidth: .infinity)
-        .frame(height: 82)
-        .background(Token.bgTaskSubtle)
-        .overlay(
-            RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous)
-                .stroke(Token.borderDefault, lineWidth: 1)
-        )
-        .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
     }
 }
 

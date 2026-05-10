@@ -1,0 +1,38 @@
+{
+  "chapter_id": "ch_01",
+  "subject_id": "subj_high_level",
+  "title": "信息化发展",
+  "description": "第 1 章涵盖信息与信息化的基础概念、现代化基础设施、现代化创新发展及数字中国战略。本章是理解整个信息系统项目管理知识体系的入口，在考试中占比重大。",
+  "sort_no": 1,
+  "sections": [
+    {
+      "section_id": "sec_01_01",
+      "title": "信息与信息化",
+      "sort_no": 1,
+      "description": "信息的基本概念与特征、信息系统组成与生命周期、信息化内涵与国家信息化体系",
+      "card_count": 11
+    },
+    {
+      "section_id": "sec_01_02",
+      "title": "现代化基础设施",
+      "sort_no": 2,
+      "description": "新型基础设施建设（信息/融合/创新）、工业互联网平台体系、车联网端管云架构",
+      "card_count": 3
+    },
+    {
+      "section_id": "sec_01_03",
+      "title": "现代化创新发展",
+      "sort_no": 3,
+      "description": "两化融合、智能制造与成熟度模型（GB/T39116）、消费互联网",
+      "card_count": 3
+    },
+    {
+      "section_id": "sec_01_04",
+      "title": "数字中国",
+      "sort_no": 4,
+      "description": "数字经济（数字产业化/产业数字化/数据价值化）、数字政府、智慧城市、数字乡村与数字生活",
+      "card_count": 6
+    }
+  ],
+  "schema_version": 1
+}

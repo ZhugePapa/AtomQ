@@ -3,8 +3,12 @@ import UIKit
 
 enum Token {
     static let bgCanvas = Color(lightHex: "#ffffff", darkHex: "#0b111a")
+    static let bgSecondary = Color(lightHex: "#f7f9fb", darkHex: "#1b2533")
     static let bgSurface = Color(lightHex: "#ffffff", darkHex: "#121b26")
     static let bgSubtle = Color(lightHex: "#f7f9fb", darkHex: "#1b2533")
+    static let bgSubtleAlt = Color(lightHex: "#f8fafc", darkHex: "#1b2533")
+    static let bgSubtle2 = Color(lightHex: "#f3f4f6", darkHex: "#1b2533")
+    static let bgTertiary = Color(lightHex: "#f7f9fb", darkHex: "#1b2533")
     static let bgTaskSubtle = Color(lightHex: "#ffffff", darkHex: "#0b111a")
     static let textPrimary = Color(lightHex: "#121b26", darkHex: "#f3f4f6")
     static let textSecondary = Color(lightHex: "#404c63", darkHex: "#d9e0e8")
@@ -12,6 +16,7 @@ enum Token {
     static let textDisabled = Color(lightHex: "#c2ccd8", darkHex: "#536279")
     static let textWhite = Color(lightHex: "#ffffff", darkHex: "#ffffff")
     static let textBrand = Color(lightHex: "#1362fe", darkHex: "#1362fe")
+    static let textWarning = Color(lightHex: "#fd5e0d", darkHex: "#fd5e0d")
 
     static let borderDefault = Color(lightHex: "#e9edf2", darkHex: "#2f3c4f")
     static let borderStrong = Color(lightHex: "#d9e0e8", darkHex: "#404c63")
@@ -21,12 +26,31 @@ enum Token {
     static let fgWarning = Color(lightHex: "#fd5e0d", darkHex: "#fd5e0d")
     static let fgWarningSubtle = Color(lightHex: "#fff5ec", darkHex: "#452019")
     static let fgBrand = Color(lightHex: "#1362fe", darkHex: "#1362fe")
+    static let fgBrandSubtle = Color(lightHex: "#ecf5ff", darkHex: "#0f2d56")
+    static let fgBrandSecondary = Color(lightHex: "#3d7afe", darkHex: "#3d7afe")
+    static let fgSuccess = Color(lightHex: "#1fbe65", darkHex: "#1fbe65")
     static let fgSuccessSecondary = Color(lightHex: "#a5e5bb", darkHex: "#1c7c4e")
     static let fgDanger = Color(lightHex: "#f6285f", darkHex: "#f6285f")
+    static let fgAssist = Color(lightHex: "#894cf3", darkHex: "#894cf3")
     static let fgDisabled = Color(lightHex: "#d9e0e8", darkHex: "#404c63")
     static let fgTertiary = Color(lightHex: "#6e7e94", darkHex: "#6e7e94")
     static let fgWhiteInverse = Color(lightHex: "#ffffff", darkHex: "#1b2533")
     static let focusRing = Color(lightHex: "#071947", darkHex: "#1c2839")
+    static let componentsAlpha0 = Color(
+        UIColor { trait in
+            trait.userInterfaceStyle == .dark
+                ? UIColor(red: 11 / 255, green: 17 / 255, blue: 26 / 255, alpha: 0)
+                : UIColor(red: 1, green: 1, blue: 1, alpha: 0)
+        }
+    )
+    static let componentsAlpha100 = Color(
+        UIColor { trait in
+            trait.userInterfaceStyle == .dark
+                ? UIColor(red: 11 / 255, green: 17 / 255, blue: 26 / 255, alpha: 1)
+                : UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+        }
+    )
+    static let componentsEmphasisInvisible = Color(lightHex: "#e9edf2", darkHex: "#404c63")
 
     static let overlayHeroMask = Color(
         UIColor { trait in

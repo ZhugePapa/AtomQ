@@ -1,0 +1,45 @@
+{
+  "point_id": "kp_ch01_003",
+  "subject_id": "subj_high_level",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01_01",
+  "title": "信息的特征",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 150,
+  "has_key_content": false,
+  "is_free": true,
+  "sort_no": 3,
+  "content_file": "kp_ch01_003.md",
+  "tags": [
+    "信息特征",
+    "客观性",
+    "普遍性",
+    "无限性",
+    "动态性",
+    "相对性",
+    "依附性",
+    "变换性",
+    "传递性",
+    "层次性",
+    "系统性",
+    "转化性"
+  ],
+  "key_points": "",
+  "mnemonics": "客普无动相，依变传层系转（客观、普遍、无限、动态、相对、依附、变换、传递、层次、系统、转化）",
+  "prerequisite_point_ids": [
+    "kp_ch01_001"
+  ],
+  "related_point_ids": [
+    "kp_ch01_004"
+  ],
+  "related_question_ids": [],
+  "source": "高项三色笔记 1.1",
+  "source_type": "official",
+  "author": "内容运营",
+  "reviewer": "",
+  "created_at": "2026-05-10T00:00:00Z",
+  "updated_at": "2026-05-10T00:00:00Z",
+  "version": 1,
+  "schema_version": 1
+}
