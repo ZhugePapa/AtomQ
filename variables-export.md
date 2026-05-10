@@ -87,7 +87,7 @@
 | neutral/25 | var(--ios-primitive-neutral-25) | #f7f9fb |  | Base | _Primitives | VariableID:7697:7 |
 | neutral/300 | var(--ios-primitive-neutral-300) | #c2ccd8 |  | Base | _Primitives | VariableID:7697:11 |
 | neutral/400 | var(--ios-primitive-neutral-400) | #97a6b8 |  | Base | _Primitives | VariableID:7697:12 |
-| neutral/50 | var(--ios-primitive-neutral-50) | #f3f4f6 |  | Base | _Primitives | VariableID:7697:8 |
+| neutral/50 | var(--ios-primitive-neutral-50) | #f3f5f8 |  | Base | _Primitives | VariableID:7697:8 |
 | neutral/500 | var(--ios-primitive-neutral-500) | #6e7e94 |  | Base | _Primitives | VariableID:7697:13 |
 | neutral/600 | var(--ios-primitive-neutral-600) | #536279 |  | Base | _Primitives | VariableID:7697:14 |
 | neutral/700 | var(--ios-primitive-neutral-700) | #404c63 |  | Base | _Primitives | VariableID:7697:15 |

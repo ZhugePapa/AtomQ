@@ -7,7 +7,15 @@ struct KnowledgeCardStudyView: View {
     @State private var pageData = KnowledgeCardDataStore.loadStudyContent()
     @State private var focusHighlightVisible = true
     @State private var topBarCollapseProgress: CGFloat = 0
+    @State private var edgeSwipeBackTriggered = false
     private let topBarHeight: CGFloat = 56
+    
+    private var resolvedBackAction: () -> Void {
+        if let onBack {
+            return onBack
+        }
+        return { dismiss() }
+    }
 
     var body: some View {
         ZStack {
@@ -22,19 +30,14 @@ struct KnowledgeCardStudyView: View {
 
                 TopActionBar(
                     title: pageData.headerTitle,
-                    onBack: {
-                        if let onBack {
-                            onBack()
-                        } else {
-                            dismiss()
-                        }
-                    }
+                    onBack: resolvedBackAction
                 )
                 .frame(height: topBarHeight)
                 .opacity(1 - topBarCollapseProgress)
                 .offset(y: -24 * topBarCollapseProgress)
                 .padding(.bottom, -topBarHeight * topBarCollapseProgress)
                 .clipped()
+                .zIndex(10)
 
                 GeometryReader { _ in
                     ZStack {
@@ -52,7 +55,8 @@ struct KnowledgeCardStudyView: View {
                                         iconBackground: Token.fgBrandSubtle,
                                         title: "高频考点",
                                         titleColor: Token.textBrand,
-                                        markdown: keyPoints
+                                        markdown: keyPoints,
+                                        focusHighlightVisible: focusHighlightVisible
                                     )
                                 }
 
@@ -63,7 +67,8 @@ struct KnowledgeCardStudyView: View {
                                         iconBackground: Token.fgWarningSubtle,
                                         title: "记忆口诀",
                                         titleColor: Token.textWarning,
-                                        markdown: mnemonics
+                                        markdown: mnemonics,
+                                        focusHighlightVisible: focusHighlightVisible
                                     )
                                 }
 
@@ -139,6 +144,45 @@ struct KnowledgeCardStudyView: View {
                     focusHighlightVisible: $focusHighlightVisible
                 )
             }
+
+            // Hard fallback hit area for back action.
+            VStack(spacing: 0) {
+                Color.black.opacity(0.001).frame(height: 24)
+                HStack {
+                    Button(action: resolvedBackAction) {
+                        Color.black.opacity(0.001).frame(width: 88, height: 56)
+                    }
+                    .buttonStyle(.plain)
+                    Spacer(minLength: 0)
+                }
+                Spacer(minLength: 0)
+            }
+            .zIndex(1000)
+
+            // Left-edge swipe back: drag right from screen edge to go back.
+            HStack(spacing: 0) {
+                Color.black.opacity(0.001)
+                    .frame(width: 20)
+                    .contentShape(Rectangle())
+                    .gesture(
+                        DragGesture(minimumDistance: 8)
+                            .onChanged { value in
+                                guard !edgeSwipeBackTriggered else { return }
+                                let movedRight = value.translation.width > 56
+                                let stableVertical = abs(value.translation.height) < 40
+                                if movedRight && stableVertical {
+                                    edgeSwipeBackTriggered = true
+                                    resolvedBackAction()
+                                }
+                            }
+                            .onEnded { _ in
+                                edgeSwipeBackTriggered = false
+                            }
+                    )
+                Spacer(minLength: 0)
+            }
+            .allowsHitTesting(true)
+            .zIndex(999)
         }
     }
 }
@@ -181,42 +225,63 @@ private struct TopActionBar: View {
     let onBack: () -> Void
 
     var body: some View {
-        HStack {
-            Button(action: onBack) {
-                IconWrapper(
-                    name: "icon-arrow-left",
-                    outerWidth: 24,
-                    outerHeight: 24,
-                    innerInsets: IconInsets(top: 0.2083, right: 0.2083, bottom: 0.2083, left: 0.2083),
-                    imageInsets: IconInsets(top: -0.0714, right: -0.0714, bottom: -0.0714, left: -0.0714),
-                    cssVariables: ["stroke-0": Token.fgPrimary]
-                )
+        ZStack {
+            HStack {
+                Button(action: onBack) {
+                    ZStack {
+                        Color.black.opacity(0.001)
+                        IconWrapper(
+                            name: "icon-arrow-left",
+                            outerWidth: 24,
+                            outerHeight: 24,
+                            innerInsets: IconInsets(top: 0.2083, right: 0.2083, bottom: 0.2083, left: 0.2083),
+                            imageInsets: IconInsets(top: -0.0714, right: -0.0714, bottom: -0.0714, left: -0.0714),
+                            cssVariables: ["stroke-0": Token.fgPrimary]
+                        )
+                    }
+                    .frame(width: 44, height: 44, alignment: .center)
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+
+                Spacer()
+
+                Text(title)
+                    .font(.custom("PingFang SC", size: 16).weight(.semibold))
+                    .foregroundStyle(Token.textPrimary)
+                    .lineLimit(1)
+
+                Spacer()
+
+                Button(action: {}) {
+                    ZStack {
+                        Color.black.opacity(0.001)
+                        IconWrapper(
+                            name: "icon-menu-03",
+                            outerWidth: 24,
+                            outerHeight: 24,
+                            innerInsets: IconInsets(top: 0.2500, right: 0.1250, bottom: 0.2500, left: 0.1250),
+                            imageInsets: IconInsets(top: -0.0833, right: -0.0556, bottom: -0.0833, left: -0.0556),
+                            cssVariables: ["stroke-0": Token.fgPrimary]
+                        )
+                    }
+                    .frame(width: 44, height: 44, alignment: .center)
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
             }
-            .buttonStyle(.plain)
-
-            Spacer()
-
-            Text(title)
-                .font(.custom("PingFang SC", size: 16).weight(.semibold))
-                .foregroundStyle(Token.textPrimary)
-                .lineLimit(1)
-
-            Spacer()
-
-            Button(action: {}) {
-                IconWrapper(
-                    name: "icon-menu-03",
-                    outerWidth: 24,
-                    outerHeight: 24,
-                    innerInsets: IconInsets(top: 0.2500, right: 0.1250, bottom: 0.2500, left: 0.1250),
-                    imageInsets: IconInsets(top: -0.0833, right: -0.0556, bottom: -0.0833, left: -0.0556),
-                    cssVariables: ["stroke-0": Token.fgPrimary]
-                )
+            
+            // Fallback touch target: guarantees back action even when overlay/clip layering shifts.
+            HStack {
+                Button(action: onBack) {
+                    Color.black.opacity(0.001).frame(width: 64, height: 56)
+                }
+                .buttonStyle(.plain)
+                Spacer()
             }
-            .buttonStyle(.plain)
         }
         .padding(.horizontal, 20)
-        .padding(.vertical, 16)
+        .frame(height: 56)
     }
 }
 
@@ -247,6 +312,7 @@ private struct NoteCard: View {
     let title: String
     let titleColor: Color
     let markdown: String
+    let focusHighlightVisible: Bool
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -257,18 +323,20 @@ private struct NoteCard: View {
 
                     IconWrapper(
                         name: icon,
-                        outerWidth: 14,
-                        outerHeight: 14,
+                        outerWidth: 16,
+                        outerHeight: 16,
                         innerInsets: IconInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
-                        imageInsets: IconInsets(top: -0.0514, right: -0.0514, bottom: -0.0514, left: -0.0514),
-                        cssVariables: ["stroke-0": iconStrokeColor]
+                        imageInsets: IconInsets(top: -0.0563, right: -0.0562, bottom: -0.0562, left: -0.0563),
+                        cssVariables: ["stroke-0": iconStrokeColor],
+                        cssValues: ["stroke-width-0": "1.2"]
                     )
                 }
-                .frame(width: 24, height: 24)
+                .frame(width: 32, height: 32)
 
                 Text(title)
-                    .font(.custom("PingFang SC", size: 16).weight(.medium))
+                    .font(.custom("PingFang SC", size: 18).weight(.semibold))
                     .foregroundStyle(titleColor)
+                    .lineLimit(1)
 
                 Spacer(minLength: 0)
             }
@@ -276,7 +344,8 @@ private struct NoteCard: View {
             LeoMarkdownView(
                 content: markdown,
                 theme: .automatic,
-                variant: .studyNote
+                variant: .studyNote,
+                focusHighlightVisible: focusHighlightVisible
             )
         }
         .padding(20)
@@ -337,14 +406,22 @@ private struct FocusVisibilityToggleButton: View {
             RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous)
                 .fill(isVisible ? Token.fgWarningSubtle : Token.bgSubtle2)
 
-            IconWrapper(
-                name: isVisible ? "icon-lightbulb-02" : "icon-lightbulb-01",
-                outerWidth: 24,
-                outerHeight: 24,
-                innerInsets: IconInsets(top: 0.0833, right: isVisible ? 0.0833 : 0.1875, bottom: 0.0833, left: isVisible ? 0.0833 : 0.1875),
-                imageInsets: IconInsets(top: -0.05, right: isVisible ? -0.05 : -0.0667, bottom: -0.05, left: isVisible ? -0.05 : -0.0667),
-                cssVariables: ["stroke-0": isVisible ? Token.fgWarning : Token.fgTertiary]
-            )
+            ZStack {
+                SVGAssetView(
+                    name: "icon-lightbulb-02",
+                    cssVariables: ["stroke-0": Token.fgWarning]
+                )
+                .frame(width: 22, height: 22)
+                .opacity(isVisible ? 1 : 0)
+
+                SVGAssetView(
+                    name: "icon-lightbulb-03",
+                    cssVariables: ["stroke-0": Token.fgTertiary]
+                )
+                .frame(width: 24, height: 24)
+                .opacity(isVisible ? 0 : 1)
+            }
+            .animation(.easeInOut(duration: 0.12), value: isVisible)
         }
         .frame(width: 48, height: 48)
     }
@@ -367,6 +444,7 @@ private struct IconWrapper: View {
     let imageInsets: IconInsets
     let cssVariables: [String: Color]
     let cssValues: [String: String]
+    let shouldClip: Bool
 
     init(
         name: String,
@@ -375,7 +453,8 @@ private struct IconWrapper: View {
         innerInsets: IconInsets = .zero,
         imageInsets: IconInsets = .zero,
         cssVariables: [String: Color] = [:],
-        cssValues: [String: String] = [:]
+        cssValues: [String: String] = [:],
+        shouldClip: Bool = true
     ) {
         self.name = name
         self.outerWidth = outerWidth
@@ -384,6 +463,7 @@ private struct IconWrapper: View {
         self.imageInsets = imageInsets
         self.cssVariables = cssVariables
         self.cssValues = cssValues
+        self.shouldClip = shouldClip
     }
 
     var body: some View {
@@ -406,7 +486,20 @@ private struct IconWrapper: View {
                 .position(x: imageX + imageWidth / 2, y: imageY + imageHeight / 2)
         }
         .frame(width: outerWidth, height: outerHeight)
-        .clipped()
+        .modifier(ClipModifier(isEnabled: shouldClip))
+    }
+}
+
+private struct ClipModifier: ViewModifier {
+    let isEnabled: Bool
+
+    @ViewBuilder
+    func body(content: Content) -> some View {
+        if isEnabled {
+            content.clipped()
+        } else {
+            content
+        }
     }
 }
 

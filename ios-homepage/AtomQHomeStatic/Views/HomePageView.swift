@@ -8,13 +8,24 @@ enum AppTab: String {
 }
 
 struct HomePageView: View {
+    private enum StudyNavDirection {
+        case push
+        case pop
+    }
+
     @Binding var selectedTab: AppTab
     @Binding var isDarkMode: Bool
     @State private var showingKnowledgeCardStudy = false
-    private let studyPageTransition = AnyTransition.asymmetric(
-        insertion: .move(edge: .trailing),
-        removal: .move(edge: .leading)
-    )
+    @State private var studyNavDirection: StudyNavDirection = .push
+
+    private var studyPageTransition: AnyTransition {
+        switch studyNavDirection {
+        case .push:
+            return .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
+        case .pop:
+            return .asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .trailing))
+        }
+    }
 
     var body: some View {
         GeometryReader { geometry in
@@ -32,8 +43,11 @@ struct HomePageView: View {
                             if showingKnowledgeCardStudy {
                                 KnowledgeCardStudyView(
                                     onBack: {
-                                        withAnimation(.easeInOut(duration: 0.25)) {
-                                            showingKnowledgeCardStudy = false
+                                        DispatchQueue.main.async {
+                                            studyNavDirection = .pop
+                                            withAnimation(.easeInOut(duration: 0.25)) {
+                                                showingKnowledgeCardStudy = false
+                                            }
                                         }
                                     }
                                 )
@@ -46,6 +60,7 @@ struct HomePageView: View {
 
                                     ContentAreaView(
                                         onOpenKnowledgeCardStudy: {
+                                            studyNavDirection = .push
                                             withAnimation(.easeInOut(duration: 0.25)) {
                                                 showingKnowledgeCardStudy = true
                                             }

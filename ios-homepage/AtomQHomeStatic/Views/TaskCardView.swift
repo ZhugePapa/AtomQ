@@ -11,6 +11,7 @@ struct TaskCardView: View {
     let title: String
     let subtitle: String
     var onTap: (() -> Void)? = nil
+    @GestureState private var isPressed = false
 
     var body: some View {
         Button {
@@ -37,7 +38,7 @@ struct TaskCardView: View {
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity)
             .frame(height: 82)
-            .background(cardBackground)
+            .background(effectiveCardBackground)
             .overlay(
                 RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous)
                     .stroke(cardBorder, lineWidth: 1)
@@ -45,6 +46,12 @@ struct TaskCardView: View {
             .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
         }
         .buttonStyle(.plain)
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 0)
+                .updating($isPressed) { _, state, _ in
+                    state = true
+                }
+        )
     }
 
     @ViewBuilder
@@ -133,6 +140,13 @@ struct TaskCardView: View {
         }
     }
 
+    private var effectiveCardBackground: Color {
+        if status == .notStarted && isPressed {
+            return Token.bgSubtle
+        }
+        return cardBackground
+    }
+
     private var cardBorder: Color {
         status == .inProgress ? Token.borderWarning : Token.borderDefault
     }
@@ -197,4 +211,3 @@ private struct TaskFigmaIconView: View {
         .clipped()
     }
 }
-

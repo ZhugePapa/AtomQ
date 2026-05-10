@@ -131,22 +131,26 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
         let textSize: String
         let textLineHeight: String
         let variantClass: String
+        let hideAllContent: Bool
         switch variant {
         case .knowledgeCard:
             textColor = "var(--ios-color-text-primary)"
             textSize = "16px"
-            textLineHeight = "26px"
+            textLineHeight = "28px"
             variantClass = "leo-markdown--knowledge-card"
+            hideAllContent = false
         case .keyPoints:
-            textColor = "var(--ios-color-text-tertiary)"
-            textSize = "12px"
-            textLineHeight = "22px"
+            textColor = "var(--ios-color-text-secondary)"
+            textSize = "16px"
+            textLineHeight = "24px"
             variantClass = "leo-markdown--key-points"
+            hideAllContent = !focusHighlightVisible
         case .studyNote:
             textColor = "var(--ios-color-text-secondary)"
-            textSize = "14px"
-            textLineHeight = "22px"
+            textSize = "16px"
+            textLineHeight = "24px"
             variantClass = "leo-markdown--study-note"
+            hideAllContent = !focusHighlightVisible
         }
 
         let script = """
@@ -381,7 +385,7 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
             .leo-markdown ul > li { list-style: disc; }
 
             .leo-markdown li {
-              color: var(--ios-color-text-secondary);
+              color: inherit;
               margin: 0 0 8px 0;
               position: relative;
             }
@@ -540,12 +544,12 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
             }
 
             .leo-markdown__focus--visible {
-              background: var(--ios-color-fg-warning-subtle);
+              background: var(--ios-color-fg-danger-subtle);
               border-color: transparent;
             }
 
             .leo-markdown__focus--visible .leo-markdown__focus-text {
-              color: var(--ios-color-text-warning);
+              color: var(--ios-color-text-danger);
               opacity: 1;
             }
 
@@ -559,35 +563,25 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
               opacity: 0;
             }
 
-            .leo-markdown--knowledge-card .leo-markdown__focus {
+            .leo-markdown__focus {
               height: 24px;
               padding-inline: 6px;
             }
 
-            .leo-markdown--knowledge-card .leo-markdown__focus-text {
+            .leo-markdown__focus-text {
               font-size: 16px;
               line-height: 24px;
             }
 
-            .leo-markdown--key-points .leo-markdown__focus {
-              height: 20px;
-              padding-inline: 4px;
+            .leo-markdown--all-hidden p,
+            .leo-markdown--all-hidden li {
+              background: var(--ios-color-bg-subtle-2);
+              border-radius: 8px;
+              color: transparent !important;
             }
 
-            .leo-markdown--key-points .leo-markdown__focus-text {
-              font-size: 12px;
-              line-height: 20px;
-            }
-
-            .leo-markdown--study-note .leo-markdown__focus {
-              height: 20px;
-              padding-inline: 4px;
-            }
-
-            .leo-markdown--study-note .leo-markdown__focus-text {
-              font-size: 12px;
-              line-height: 20px;
-            }
+            .leo-markdown--all-hidden p *,
+            .leo-markdown--all-hidden li * { color: transparent !important; }
 
             .leo-markdown__tail {
               animation: leo-markdown-tail-blink 1s steps(2, start) infinite;
@@ -615,7 +609,7 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
         </head>
         <body>
           <div id=\"leo-markdown-root\">
-            <div id=\"leo-markdown-content\" class=\"leo-markdown leo-markdown--\(resolvedTheme) \(variantClass)\"></div>
+            <div id=\"leo-markdown-content\" class=\"leo-markdown leo-markdown--\(resolvedTheme) \(variantClass) \(hideAllContent ? "leo-markdown--all-hidden" : "")\"></div>
           </div>
           <script>\(script)</script>
         </body>
@@ -634,10 +628,12 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
             "ios-color-fg-primary": Token.fgPrimary,
             "ios-color-fg-disabled": Token.fgDisabled,
             "ios-color-fg-warning-subtle": Token.fgWarningSubtle,
+            "ios-color-fg-danger-subtle": Token.fgDangerSubtle,
             "ios-color-text-primary": Token.textPrimary,
             "ios-color-text-secondary": Token.textSecondary,
             "ios-color-text-disabled": Token.textDisabled,
             "ios-color-text-warning": Token.textWarning,
+            "ios-color-text-danger": Token.fgDanger,
             "ios-color-fg-brand": Token.fgBrand,
             "ios-color-fg-brand-secondary": Token.fgBrandSecondary,
             "ios-color-fg-success": Token.fgSuccess,

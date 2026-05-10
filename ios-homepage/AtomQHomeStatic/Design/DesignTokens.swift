@@ -25,6 +25,7 @@ enum Token {
     static let fgPrimary = Color(lightHex: "#121b26", darkHex: "#f3f4f6")
     static let fgWarning = Color(lightHex: "#fd5e0d", darkHex: "#fd5e0d")
     static let fgWarningSubtle = Color(lightHex: "#fff5ec", darkHex: "#452019")
+    static let fgDangerSubtle = Color(lightHex: "#feeef0", darkHex: "#45202b")
     static let fgBrand = Color(lightHex: "#1362fe", darkHex: "#1362fe")
     static let fgBrandSubtle = Color(lightHex: "#ecf5ff", darkHex: "#0f2d56")
     static let fgBrandSecondary = Color(lightHex: "#3d7afe", darkHex: "#3d7afe")
