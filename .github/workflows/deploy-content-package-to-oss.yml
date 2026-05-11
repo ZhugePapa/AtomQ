@@ -47,7 +47,7 @@ jobs:
         run: |
           sudo -v
           curl -fsSL https://gosspublic.alicdn.com/ossutil/install.sh | sudo bash
-          ossutil version
+          ossutil help >/dev/null
 
       - name: Configure ossutil
         env:
@@ -67,4 +67,4 @@ jobs:
           else
             TARGET="oss://${OSS_BUCKET}/"
           fi
-          ossutil sync "$CONTENT_PACKAGE_DIR/" "$TARGET" --delete --force --no-progress
+          ossutil sync "$CONTENT_PACKAGE_DIR/" "$TARGET" --delete --force
