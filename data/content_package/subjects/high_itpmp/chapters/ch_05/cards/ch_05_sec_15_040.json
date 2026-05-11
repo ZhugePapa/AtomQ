@@ -1,0 +1,41 @@
+{
+  "point_id": "040",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_15",
+  "title": "信息安全系统三维空间包括安全机制网络参考模型",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 97,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 40,
+  "content_file": "ch_05_sec_15_040.md",
+  "tags": [
+    "信息系统工程",
+    "安全工程",
+    "信息安全系统三维空间包括安全机制"
+  ],
+  "key_points": "1. 1、信息安全系统三维空间包括安全机制、网络参考模型和安全服务\n2. (1)X轴是\"安全机制\"。安全机制可以理解为提供某些安全服务，利用各种安全技术和技巧，所形成\n3. (2)Y轴是\"OSI 网络参考模型\"",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "039"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

@@ -1,0 +1,24 @@
+{
+  "chapter_id": "ch_08",
+  "subject_id": "high_itpmp",
+  "title": "整合管理",
+  "description": "整合管理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "sort_no": 8,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "管理基础",
+      "sort_no": 1,
+      "description": "整合管理 - 管理基础",
+      "card_count": 3
+    },
+    {
+      "section_id": "sec_02",
+      "title": "管理过程",
+      "sort_no": 2,
+      "description": "整合管理 - 管理过程",
+      "card_count": 28
+    }
+  ],
+  "schema_version": 2
+}

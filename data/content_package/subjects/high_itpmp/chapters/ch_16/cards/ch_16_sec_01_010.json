@@ -1,0 +1,41 @@
+{
+  "point_id": "010",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "根据可信度相关资质经验专业知识专长领域和参考",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 300,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 10,
+  "content_file": "ch_16_sec_01_010.md",
+  "tags": [
+    "采购管理",
+    "【管理基础】",
+    "根据可信度相关资质经验专业知识专"
+  ],
+  "key_points": "1. 经过谈判，证明它们的财务建议书是可接受的，那么就会选择技术建议书得分最高的卖方\n2. ⑦是否需要编制独立估算，以及是否应将其作为评价标准；\n3. ⑧风险管理事项，包括对履约保函或保险合同的要求，以减轻某些项目风险；",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "009"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

@@ -1,0 +1,41 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "数据管理",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 141,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 11,
+  "content_file": "ch_04_sec_01_011.md",
+  "tags": [
+    "信息系统管理",
+    "管理方法",
+    "数据管理"
+  ],
+  "key_points": "1. 18、数据管理：是与数据的获取、处理、存储、使用和处置相关的一组活动。\n2. 19、传统的改进是 PDCA 循环是将持续改进分为四个阶段，即Plan(计划)、Do(执行)、Check(检\n3. 20、优化和持续改进基于有效的变更管理，使用六西格玛倡导的五阶段方法 DMAIC/DMADV，是对",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "010"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

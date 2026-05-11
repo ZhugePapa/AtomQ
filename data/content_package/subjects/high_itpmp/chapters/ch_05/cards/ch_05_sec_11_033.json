@@ -1,0 +1,41 @@
+{
+  "point_id": "033",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_11",
+  "title": "数据库安全机制包括用户的身份认证",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 60,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 33,
+  "content_file": "ch_05_sec_11_033.md",
+  "tags": [
+    "信息系统工程",
+    "网络集成",
+    "数据库安全机制包括用户的身份认证"
+  ],
+  "key_points": "1. 2、数据库安全机制包括用户的身份认证、\n2. 1. 常用的无线传输介质主要包括无线电波、微波、红外线等\n3. 2. 常用的有线传输介质主要包括双绞线、同轴电缆、光纤等",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "032"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

@@ -1,0 +1,41 @@
+{
+  "point_id": "012",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_09",
+  "title": "流程评价是流程管理最重要的环节",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 131,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 12,
+  "content_file": "ch_23_sec_09_012.md",
+  "tags": [
+    "组织通用管理",
+    "流程评价",
+    "流程评价是流程管理最重要的环节"
+  ],
+  "key_points": "1. 1、流程评价是流程管理最重要的环节，它承上启下，对上促进流程设计的优化，确保设计更加符合战略\n2. 2、流程检查方法主要有流稈稽查、流程绩效评估、满意度评估和流程审计等\n3. 对单个流程的稽查，主要是稽查流程的安排(主要表现为组织的流程制度)是否得到了执",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "011"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

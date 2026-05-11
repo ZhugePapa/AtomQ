@@ -1,0 +1,41 @@
+{
+  "point_id": "021",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_16",
+  "title": "市场营销的运行环境复杂多变",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 60,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 21,
+  "content_file": "ch_23_sec_16_021.md",
+  "tags": [
+    "组织通用管理",
+    "营销环境",
+    "市场营销的运行环境复杂多变"
+  ],
+  "key_points": "1. 1、市场营销的运行环境复杂多变，包括微观环境和宏观环境。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "020"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

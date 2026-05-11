@@ -1,0 +1,70 @@
+name: Deploy content package to Aliyun OSS
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/content_package/**"
+      - "data/scripts/validate_content.py"
+      - ".github/workflows/deploy-content-package-to-oss.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-content-package-to-oss
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Sync content_package
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      CONTENT_PACKAGE_DIR: data/content_package
+      OSS_BUCKET: ${{ vars.ALIYUN_OSS_BUCKET }}
+      OSS_ENDPOINT: ${{ vars.ALIYUN_OSS_ENDPOINT }}
+      OSS_PREFIX: ${{ vars.ALIYUN_OSS_PREFIX }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate content package
+        run: python3 data/scripts/validate_content.py
+
+      - name: Validate OSS configuration
+        env:
+          ALIYUN_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          ALIYUN_ACCESS_KEY_SECRET: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        run: |
+          test -n "$ALIYUN_ACCESS_KEY_ID"
+          test -n "$ALIYUN_ACCESS_KEY_SECRET"
+          test -n "$OSS_BUCKET"
+          test -n "$OSS_ENDPOINT"
+
+      - name: Install ossutil
+        run: |
+          sudo -v
+          curl -fsSL https://gosspublic.alicdn.com/ossutil/install.sh | sudo bash
+          ossutil version
+
+      - name: Configure ossutil
+        env:
+          ALIYUN_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          ALIYUN_ACCESS_KEY_SECRET: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        run: |
+          ossutil config \
+            -e "$OSS_ENDPOINT" \
+            -i "$ALIYUN_ACCESS_KEY_ID" \
+            -k "$ALIYUN_ACCESS_KEY_SECRET" \
+            -L CH
+
+      - name: Sync to OSS
+        run: |
+          if [ -n "$OSS_PREFIX" ]; then
+            TARGET="oss://${OSS_BUCKET}/${OSS_PREFIX%/}/"
+          else
+            TARGET="oss://${OSS_BUCKET}/"
+          fi
+          ossutil sync "$CONTENT_PACKAGE_DIR/" "$TARGET" --delete --force --no-progress

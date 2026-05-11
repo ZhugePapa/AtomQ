@@ -1,0 +1,40 @@
+{
+  "point_id": "032",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_06",
+  "title": "引机会应对策略",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 174,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 32,
+  "content_file": "ch_15_sec_06_032.md",
+  "tags": [
+    "风险管理",
+    "引机会应对策略"
+  ],
+  "key_points": "1. 人员必须愿意承担应对责任\n2. 将应对机会的责任转務给第三方建立合伙关系、合作团队，特殊必须仔细为已分享的机会安排新\n3. 采用此技术制订的风险应对计划通常称为应急计划，其中包括己识别的，用于启动计划的触发事件。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "031"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

@@ -1,0 +1,41 @@
+{
+  "point_id": "023",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_02",
+  "title": "质量改进方法",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 112,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 23,
+  "content_file": "ch_12_sec_02_023.md",
+  "tags": [
+    "质量管理",
+    "管理过程",
+    "质量改进方法"
+  ],
+  "key_points": "1. 程的问题解决。计划-实施-检查-行动和六西格玛是最常用于分析和评估改进机会的两种质量改进工具。\n2. 11.质量报告：可能是图形、数据或定性文件，其中包含的信息可帮助其他过程和部门采取纠正措施，以\n3. 纠正措施建议(包括返工、缺陷/漏洞补救、100%检查等)，以及在控制质量过程中发现的情况的概述。女女*",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "022"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

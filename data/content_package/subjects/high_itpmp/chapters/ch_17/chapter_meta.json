@@ -1,0 +1,24 @@
+{
+  "chapter_id": "ch_17",
+  "subject_id": "high_itpmp",
+  "title": "干系人管理",
+  "description": "干系人管理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "sort_no": 17,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "管理基础",
+      "sort_no": 1,
+      "description": "干系人管理 - 管理基础",
+      "card_count": 2
+    },
+    {
+      "section_id": "sec_02",
+      "title": "管理过程",
+      "sort_no": 2,
+      "description": "干系人管理 - 管理过程",
+      "card_count": 17
+    }
+  ],
+  "schema_version": 2
+}

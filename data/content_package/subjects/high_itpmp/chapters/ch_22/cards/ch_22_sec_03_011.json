@@ -1,0 +1,41 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_03",
+  "title": "绩效沟通应当贯穿于整个绩效管理的过程中",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 60,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 11,
+  "content_file": "ch_22_sec_03_011.md",
+  "tags": [
+    "组织通用治理",
+    "绩效实施",
+    "绩效沟通应当贯穿于整个绩效管理的"
+  ],
+  "key_points": "1. 6、记录和收集绩效信息的目的是为在绩效评估及绩效改进时提供事实依据，在绩效实施中及时发现问题\n2. 7、记录和收集绩效信息的方法包括观察法、工作记录法、他人反馈法。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "010"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

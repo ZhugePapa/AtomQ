@@ -1,0 +1,41 @@
+{
+  "point_id": "009",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_02",
+  "title": "治理与决策制定监管控制和整合有关",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 84,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 9,
+  "content_file": "ch_20_sec_02_009.md",
+  "tags": [
+    "高级项目管理",
+    "项目组合管理",
+    "治理与决策制定监管控制和整合有关"
+  ],
+  "key_points": "1. 决策制定职能包括一组过程与活动，提供整体的治理结构，为项目组合及其组件授予管理权\n2. 以一系列指导原则为基础建立的综合框架，包括以一系列的工具与实践来识别、分配和优化",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "008"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

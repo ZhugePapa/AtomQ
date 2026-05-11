@@ -1,0 +1,41 @@
+{
+  "point_id": "045",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_27",
+  "title": "预期目标",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 81,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 45,
+  "content_file": "ch_18_sec_27_045.md",
+  "tags": [
+    "项目绩效域",
+    "执行效果检查",
+    "预期目标"
+  ],
+  "key_points": "1. 度量结果和报告：通过审计度量结果和报告，可表明数据是否可靠\n2. 度量结果：度量结果可表明项目是否按预期进行，或者是否存在偏差\n3. 工作绩效数据：回顾过去的预测和当前的工作绩效数据可发现，以前的预测是",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "044"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

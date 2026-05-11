@@ -1,0 +1,41 @@
+{
+  "point_id": "034",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_21",
+  "title": "需求启发",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 134,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 34,
+  "content_file": "ch_18_sec_21_034.md",
+  "tags": [
+    "项目绩效域",
+    "绩效要点",
+    "需求启发"
+  ],
+  "key_points": "1. 1.需求启发：是指引导说出、产生或唤起干系人的需求，包括记录相关需求并征得干系人\n2. 同意。记录需求的要求包括：清晰、可核实、一致性、完整、可跟踪。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "033"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

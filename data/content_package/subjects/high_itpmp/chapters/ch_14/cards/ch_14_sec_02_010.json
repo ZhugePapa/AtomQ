@@ -1,0 +1,41 @@
+{
+  "point_id": "010",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_14",
+  "section_id": "sec_02",
+  "title": "沟通模型",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 130,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 10,
+  "content_file": "ch_14_sec_02_010.md",
+  "tags": [
+    "沟通管理",
+    "管理过程",
+    "沟通模型"
+  ],
+  "key_points": "1. 沟通模型可以是最基本的线性(发送方和接收方)沟通过程，也可以是增加了反馈元素(发送方、接收方\n2. 和反馈)更具互动性的沟通形式，甚至可以是融合了发送方或接收方的人性因素、试图考虑沟通复杂性的更加",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "009"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

@@ -1,0 +1,40 @@
+{
+  "point_id": "031",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_06",
+  "title": "数据收集(访谈)",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 299,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 31,
+  "content_file": "ch_15_sec_06_031.md",
+  "tags": [
+    "风险管理",
+    "数据收集(访谈)"
+  ],
+  "key_points": "1. 次生风险。次生风险是实施风险应对措施直接导致的风险。\n2. 品上根相关人员必须愿意承担应对责仟\n3. 保险、使用履约保函、担保转秘风险是把风险管理责任简单地",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "030"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

@@ -1,0 +1,41 @@
+{
+  "point_id": "049",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_15",
+  "title": "常见的备份策略主要有三种",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 96,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 49,
+  "content_file": "ch_05_sec_15_049.md",
+  "tags": [
+    "信息系统工程",
+    "安全工程",
+    "常见的备份策略主要有三种"
+  ],
+  "key_points": "1. 29、常见的备份策略主要有三种：完全备份、差分备份和增量备份。\n2. 30、根据容灾系统保护对象的不同，容灾系统分为应用容灾和数据容灾两类\n3. 31、数据质量评价方法分为直接评价法和间接评价法。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "048"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

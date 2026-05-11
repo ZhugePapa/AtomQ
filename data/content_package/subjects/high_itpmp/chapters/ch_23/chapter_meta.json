@@ -1,0 +1,150 @@
+{
+  "chapter_id": "ch_23",
+  "subject_id": "high_itpmp",
+  "title": "组织通用管理",
+  "description": "组织通用管理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "sort_no": 23,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "人力资源管理基础",
+      "sort_no": 1,
+      "description": "组织通用管理 - 人力资源管理基础",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_02",
+      "title": "工作分析与岗位设计",
+      "sort_no": 2,
+      "description": "组织通用管理 - 工作分析与岗位设计",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_03",
+      "title": "人力资源战略与计划",
+      "sort_no": 3,
+      "description": "组织通用管理 - 人力资源战略与计划",
+      "card_count": 3
+    },
+    {
+      "section_id": "sec_04",
+      "title": "人员招聘和录用",
+      "sort_no": 4,
+      "description": "组织通用管理 - 人员招聘和录用",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_05",
+      "title": "人员培训",
+      "sort_no": 5,
+      "description": "组织通用管理 - 人员培训",
+      "card_count": 2
+    },
+    {
+      "section_id": "sec_06",
+      "title": "组织薪酬管理",
+      "sort_no": 6,
+      "description": "组织通用管理 - 组织薪酬管理",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_07",
+      "title": "流程基础",
+      "sort_no": 7,
+      "description": "组织通用管理 - 流程基础",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_08",
+      "title": "流程规划",
+      "sort_no": 8,
+      "description": "组织通用管理 - 流程规划",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_09",
+      "title": "流程评价",
+      "sort_no": 9,
+      "description": "组织通用管理 - 流程评价",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_10",
+      "title": "流程持续改进",
+      "sort_no": 10,
+      "description": "组织通用管理 - 流程持续改进",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_11",
+      "title": "知识价值链",
+      "sort_no": 11,
+      "description": "组织通用管理 - 知识价值链",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_12",
+      "title": "显性知识和隐性知识",
+      "sort_no": 12,
+      "description": "组织通用管理 - 显性知识和隐性知识",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_13",
+      "title": "知识管理过程",
+      "sort_no": 13,
+      "description": "组织通用管理 - 知识管理过程",
+      "card_count": 3
+    },
+    {
+      "section_id": "sec_14",
+      "title": "知识传播与服务",
+      "sort_no": 14,
+      "description": "组织通用管理 - 知识传播与服务",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_15",
+      "title": "营销基础",
+      "sort_no": 15,
+      "description": "组织通用管理 - 营销基础",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_16",
+      "title": "营销环境",
+      "sort_no": 16,
+      "description": "组织通用管理 - 营销环境",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_17",
+      "title": "营销分析",
+      "sort_no": 17,
+      "description": "组织通用管理 - 营销分析",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_18",
+      "title": "营销管控",
+      "sort_no": 18,
+      "description": "组织通用管理 - 营销管控",
+      "card_count": 10
+    },
+    {
+      "section_id": "sec_19",
+      "title": "投资收益率计算(ROI)--越大越好",
+      "sort_no": 19,
+      "description": "组织通用管理 - 投资收益率计算(ROI)--越大越好",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_20",
+      "title": "投资回收期-一越短越好",
+      "sort_no": 20,
+      "description": "组织通用管理 - 投资回收期-一越短越好",
+      "card_count": 2
+    }
+  ],
+  "schema_version": 2
+}

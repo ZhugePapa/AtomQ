@@ -228,19 +228,14 @@ private struct TopActionBar: View {
         ZStack {
             HStack {
                 Button(action: onBack) {
-                    ZStack {
-                        Color.black.opacity(0.001)
-                        IconWrapper(
-                            name: "icon-arrow-left",
-                            outerWidth: 24,
-                            outerHeight: 24,
-                            innerInsets: IconInsets(top: 0.2083, right: 0.2083, bottom: 0.2083, left: 0.2083),
-                            imageInsets: IconInsets(top: -0.0714, right: -0.0714, bottom: -0.0714, left: -0.0714),
-                            cssVariables: ["stroke-0": Token.fgPrimary]
-                        )
-                    }
-                    .frame(width: 44, height: 44, alignment: .center)
-                    .contentShape(Rectangle())
+                    IconWrapper(
+                        name: "icon-arrow-left",
+                        outerWidth: 24,
+                        outerHeight: 24,
+                        innerInsets: IconInsets(top: 0.2083, right: 0.2083, bottom: 0.2083, left: 0.2083),
+                        imageInsets: IconInsets(top: -0.0714, right: -0.0714, bottom: -0.0714, left: -0.0714),
+                        cssVariables: ["stroke-0": Token.fgPrimary]
+                    )
                 }
                 .buttonStyle(.plain)
 
@@ -254,19 +249,14 @@ private struct TopActionBar: View {
                 Spacer()
 
                 Button(action: {}) {
-                    ZStack {
-                        Color.black.opacity(0.001)
-                        IconWrapper(
-                            name: "icon-menu-03",
-                            outerWidth: 24,
-                            outerHeight: 24,
-                            innerInsets: IconInsets(top: 0.2500, right: 0.1250, bottom: 0.2500, left: 0.1250),
-                            imageInsets: IconInsets(top: -0.0833, right: -0.0556, bottom: -0.0833, left: -0.0556),
-                            cssVariables: ["stroke-0": Token.fgPrimary]
-                        )
-                    }
-                    .frame(width: 44, height: 44, alignment: .center)
-                    .contentShape(Rectangle())
+                    IconWrapper(
+                        name: "icon-menu-03",
+                        outerWidth: 24,
+                        outerHeight: 24,
+                        innerInsets: IconInsets(top: 0.2500, right: 0.1250, bottom: 0.2500, left: 0.1250),
+                        imageInsets: IconInsets(top: -0.0833, right: -0.0556, bottom: -0.0833, left: -0.0556),
+                        cssVariables: ["stroke-0": Token.fgPrimary]
+                    )
                 }
                 .buttonStyle(.plain)
             }

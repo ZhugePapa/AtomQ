@@ -3,11 +3,11 @@ import UIKit
 
 enum Token {
     static let bgCanvas = Color(lightHex: "#ffffff", darkHex: "#0b111a")
-    static let bgSecondary = Color(lightHex: "#f7f9fb", darkHex: "#1b2533")
+    static let bgSecondary = Color(lightHex: "#f8fafc", darkHex: "#1b2533")
     static let bgSurface = Color(lightHex: "#ffffff", darkHex: "#121b26")
-    static let bgSubtle = Color(lightHex: "#f7f9fb", darkHex: "#1b2533")
+    static let bgSubtle = Color(lightHex: "#f8fafc", darkHex: "#1b2533")
     static let bgSubtleAlt = Color(lightHex: "#f8fafc", darkHex: "#1b2533")
-    static let bgSubtle2 = Color(lightHex: "#f3f4f6", darkHex: "#1b2533")
+    static let bgSubtle2 = Color(lightHex: "#f3f5f8", darkHex: "#1b2533")
     static let bgTertiary = Color(lightHex: "#f7f9fb", darkHex: "#1b2533")
     static let bgTaskSubtle = Color(lightHex: "#ffffff", darkHex: "#0b111a")
     static let textPrimary = Color(lightHex: "#121b26", darkHex: "#f3f4f6")
@@ -25,12 +25,12 @@ enum Token {
     static let fgPrimary = Color(lightHex: "#121b26", darkHex: "#f3f4f6")
     static let fgWarning = Color(lightHex: "#fd5e0d", darkHex: "#fd5e0d")
     static let fgWarningSubtle = Color(lightHex: "#fff5ec", darkHex: "#452019")
-    static let fgDangerSubtle = Color(lightHex: "#feeef0", darkHex: "#45202b")
+    static let fgDangerSubtle = Color(lightHex: "#feeef0", darkHex: "#441b2e")
     static let fgBrand = Color(lightHex: "#1362fe", darkHex: "#1362fe")
     static let fgBrandSubtle = Color(lightHex: "#ecf5ff", darkHex: "#0f2d56")
-    static let fgBrandSecondary = Color(lightHex: "#3d7afe", darkHex: "#3d7afe")
+    static let fgBrandSecondary = Color(lightHex: "#71aafe", darkHex: "#153aa4")
     static let fgSuccess = Color(lightHex: "#1fbe65", darkHex: "#1fbe65")
-    static let fgSuccessSecondary = Color(lightHex: "#a5e5bb", darkHex: "#1c7c4e")
+    static let fgSuccessSecondary = Color(lightHex: "#79d89d", darkHex: "#1c7c4e")
     static let fgDanger = Color(lightHex: "#f6285f", darkHex: "#f6285f")
     static let fgAssist = Color(lightHex: "#894cf3", darkHex: "#894cf3")
     static let fgDisabled = Color(lightHex: "#d9e0e8", darkHex: "#404c63")
@@ -40,14 +40,14 @@ enum Token {
     static let componentsAlpha0 = Color(
         UIColor { trait in
             trait.userInterfaceStyle == .dark
-                ? UIColor(red: 11 / 255, green: 17 / 255, blue: 26 / 255, alpha: 0)
+                ? UIColor(red: 7 / 255, green: 25 / 255, blue: 71 / 255, alpha: 0)
                 : UIColor(red: 1, green: 1, blue: 1, alpha: 0)
         }
     )
     static let componentsAlpha100 = Color(
         UIColor { trait in
             trait.userInterfaceStyle == .dark
-                ? UIColor(red: 11 / 255, green: 17 / 255, blue: 26 / 255, alpha: 1)
+                ? UIColor(red: 7 / 255, green: 25 / 255, blue: 71 / 255, alpha: 1)
                 : UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         }
     )
@@ -56,7 +56,7 @@ enum Token {
     static let overlayHeroMask = Color(
         UIColor { trait in
             if trait.userInterfaceStyle == .dark {
-                return UIColor(red: 0, green: 0, blue: 0, alpha: 0.40)
+                return UIColor(red: 0, green: 0, blue: 0, alpha: 0.24)
             }
             return UIColor(red: 1, green: 1, blue: 1, alpha: 0.12)
         }

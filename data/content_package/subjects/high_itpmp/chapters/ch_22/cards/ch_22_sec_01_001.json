@@ -1,0 +1,39 @@
+{
+  "point_id": "001",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_01",
+  "title": "键词进行记忆如果确实不想看",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 90,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 1,
+  "content_file": "ch_22_sec_01_001.md",
+  "tags": [
+    "组织通用治理",
+    "组织战略",
+    "键词进行记忆如果确实不想看"
+  ],
+  "key_points": "1. 键词进行记忆！如果确实不想看，我觉得本章也是可以放弃的！或者考前把发的考点看看就好！\n2. 组织治理是协调组织利益相关者之间关系的一种制度安排，目标是为了确保组织的高效决策，实现利\n3. 1、组织战略是组织高质量发展的总体谋略，是组织相关干系方就其发展达成一致认识的重要基础。组织战",
+  "mnemonics": "",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

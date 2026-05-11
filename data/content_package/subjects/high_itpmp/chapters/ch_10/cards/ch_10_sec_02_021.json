@@ -1,0 +1,41 @@
+{
+  "point_id": "021",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_02",
+  "title": "进度数据",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 169,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 21,
+  "content_file": "ch_10_sec_02_021.md",
+  "tags": [
+    "进度管理",
+    "管理过程",
+    "进度数据"
+  ],
+  "key_points": "1. 1. 制定进度计划：制订可行的项目进度计划是一个反复进行的过程。编制进度计划时，需要审查和修正\n2. 点持续时间最长的路径就是关键路径，关键路径可能有多条；太**(17 下 37-38/18上 37-38/18上 66-67/18\n3. 自由浮动时间：就是指在不延误任何紧后活动的最早开始日期或不违反进度制约因素的前提下，某进",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "020"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

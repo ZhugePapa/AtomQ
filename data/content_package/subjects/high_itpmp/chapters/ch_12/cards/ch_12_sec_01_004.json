@@ -1,0 +1,41 @@
+{
+  "point_id": "004",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "全面质量管理(TQM)是一种全员全过程全组织",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 107,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 4,
+  "content_file": "ch_12_sec_01_004.md",
+  "tags": [
+    "质量管理",
+    "管理基础",
+    "全面质量管理(TQM)是一种全员"
+  ],
+  "key_points": "1. 9、全面质量管理(TQM)是一种全员、全过程、全组织的品质管理。\n2. 10、全面质量管理有4个核心的特征包括：全员参加的质量管理、全过程的质量管理、全面方法的质量管\n3. 休哈特提出并经戴明完善的\"计划-实施-检查-行动(PDCA)\"循环是质量改进的基",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "003"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

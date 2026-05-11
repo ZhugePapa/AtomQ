@@ -1,0 +1,41 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_02",
+  "title": "软件需求就是系统必须完成的事以及必须具备的品",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 85,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "content_file": "ch_05_sec_02_003.md",
+  "tags": [
+    "信息系统工程",
+    "需求分析",
+    "软件需求就是系统必须完成的事以及"
+  ],
+  "key_points": "1. 1、软件需求就是系统必须完成的事以及必须具备的品质，需求层次包括业务需求、用户需求和系统需\n2. 2、质量功能部署(QFD)是一种将用户要求转化成软件需求的技术，其目的是最大限度地提升软件工程过\n3. 程中用户的满意度。为了达到这个目标，QFD 将软件需求分为三类，分别是常规需求、期望需求和意外",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "002"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

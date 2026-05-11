@@ -1,0 +1,45 @@
+{
+  "point_id": "007",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "软件生命周期",
+  "card_type": "process",
+  "difficulty": 1,
+  "estimated_read_seconds": 120,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 7,
+  "content_file": "ch_01_sec_01_007.md",
+  "tags": [
+    "软件生命周期",
+    "需求分析",
+    "设计",
+    "测试",
+    "维护"
+  ],
+  "key_points": "软件生命周期依次覆盖可行性分析与项目开发计划、需求分析、概要设计、详细设计、编码、测试、维护。",
+  "mnemonics": "可需概详编测维。",
+  "prerequisite_point_ids": [
+    "005"
+  ],
+  "related_point_ids": [
+    "008"
+  ],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "第1页"
+    }
+  ],
+  "author": "Codex 内容整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

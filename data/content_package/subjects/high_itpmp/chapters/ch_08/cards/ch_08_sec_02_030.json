@@ -1,0 +1,41 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_02",
+  "title": "结束",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 183,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 30,
+  "content_file": "ch_08_sec_02_030.md",
+  "tags": [
+    "整合管理",
+    "管理过程",
+    "结束"
+  ],
+  "key_points": "1. 1.结束项目或阶段过程所需执行的活动包括：大、\n2. 为达到阶段或项目的完工或退出标准所必须的行动和活动；\n3. 为关闭项目合同协议或项目阶段合同协议所必须开展的活动；",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "029"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

@@ -1,0 +1,48 @@
+{
+  "point_id": "024",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_04",
+  "title": "智慧城市能力与成熟度",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 240,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 24,
+  "content_file": "ch_01_sec_04_024.md",
+  "tags": [
+    "智慧城市",
+    "数据治理",
+    "城市孪生",
+    "成熟度"
+  ],
+  "key_points": "智慧城市核心能力包括数据治理、城市孪生、边际决策、多元融合、态势感知；成熟度从规划级到引领级共 5 级。",
+  "mnemonics": "数城边多态；规管协优引。",
+  "prerequisite_point_ids": [
+    "023"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [
+    "q_ch01_007"
+  ],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "第8页"
+    },
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "第9页"
+    }
+  ],
+  "author": "Codex 内容整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

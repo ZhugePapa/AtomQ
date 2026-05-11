@@ -1,0 +1,40 @@
+{
+  "point_id": "018",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_13",
+  "title": "绩效要点",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 239,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 18,
+  "content_file": "ch_18_sec_13_018.md",
+  "tags": [
+    "项目绩效域",
+    "绩效要点"
+  ],
+  "key_points": "1. 部分规划都是预先进行的。在整个项目期间，最初的计划会渐进明细地制订，但\n2. 监管机构或法规有时要求必须先提供特定的规划文件，然后才能得到授权实施，\n3. 是指估算的正确性。准确度与区间相关，准确度越低，估算值的潜在区间就越大。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "017"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

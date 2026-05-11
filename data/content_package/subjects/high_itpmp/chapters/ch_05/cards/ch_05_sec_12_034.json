@@ -1,0 +1,41 @@
+{
+  "point_id": "034",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_12",
+  "title": "数据集成是将参与数据库的有关信息在逻辑上集成",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 147,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 34,
+  "content_file": "ch_05_sec_12_034.md",
+  "tags": [
+    "信息系统工程",
+    "数据集成",
+    "数据集成是将参与数据库的有关信息"
+  ],
+  "key_points": "1. 1、数据集成是将参与数据库的有关信息在逻辑上集成为一个属于异构分布式数据库的全局概念模式，\n2. 以达到信息共享的目的。数据集成可以分为基本数据集成、多级视图集成、模式集成和多粒度数据集成四\n3. 由于同一业务实体存在于多个系统源中，并且没有明确的办法确认这些实体是同一实体",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "033"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

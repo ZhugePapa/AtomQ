@@ -1,0 +1,154 @@
+{
+  "package_id": "atomq_high_itpmp_2026_full_ocr_draft",
+  "subject_id": "high_itpmp",
+  "content_version": "2026.05.full-ocr-draft.1",
+  "generated_at": "2026-05-11T00:00:00+08:00",
+  "source_ids": [
+    "pdf_2026_tricolor_high"
+  ],
+  "chapters": [
+    {
+      "chapter_id": "ch_01",
+      "title": "信息化发展",
+      "card_count": 25,
+      "question_count": 7
+    },
+    {
+      "chapter_id": "ch_02",
+      "title": "信息技术发展",
+      "card_count": 34,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_03",
+      "title": "信息系统治理",
+      "card_count": 17,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_04",
+      "title": "信息系统管理",
+      "card_count": 28,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_05",
+      "title": "信息系统工程",
+      "card_count": 59,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_06",
+      "title": "项目管理概论",
+      "card_count": 30,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_07",
+      "title": "立项管理",
+      "card_count": 9,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_08",
+      "title": "整合管理",
+      "card_count": 31,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_09",
+      "title": "范围管理",
+      "card_count": 27,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_10",
+      "title": "进度管理",
+      "card_count": 30,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_11",
+      "title": "成本管理",
+      "card_count": 19,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_12",
+      "title": "质量管理",
+      "card_count": 29,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_13",
+      "title": "资源管理",
+      "card_count": 38,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_14",
+      "title": "沟通管理",
+      "card_count": 18,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_15",
+      "title": "风险管理",
+      "card_count": 35,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_16",
+      "title": "采购管理",
+      "card_count": 25,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_17",
+      "title": "干系人管理",
+      "card_count": 19,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_18",
+      "title": "项目绩效域",
+      "card_count": 50,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_19",
+      "title": "配置与变更管理",
+      "card_count": 21,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_20",
+      "title": "高级项目管理",
+      "card_count": 19,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_21",
+      "title": "项目管理科学基础",
+      "card_count": 2,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_22",
+      "title": "组织通用治理",
+      "card_count": 20,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_23",
+      "title": "组织通用管理",
+      "card_count": 35,
+      "question_count": 0
+    }
+  ],
+  "storage_policy": {
+    "static_content": "CDN or app bundle fallback",
+    "dynamic_user_data": "SQLite locally, Supabase/Postgres for cloud sync"
+  },
+  "schema_version": 2
+}

@@ -1,0 +1,39 @@
+{
+  "point_id": "kp_ch01_004",
+  "subject_id": "subj_high_level",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01_01",
+  "title": "信息的质量属性",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 150,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 4,
+  "content_file": "kp_ch01_004.md",
+  "tags": [
+    "信息质量",
+    "精确性",
+    "完整性",
+    "可靠性",
+    "及时性",
+    "经济性",
+    "可验证性",
+    "安全性"
+  ],
+  "key_points": "- 对**金融信息**而言，最重要的特性是**安全性**\n- 对**经济与社会信息**而言，最重要的特性是**及时性**",
+  "mnemonics": "精完可及经可安（精确、完整、可靠、及时、经济、可验证、安全）",
+  "prerequisite_point_ids": [
+    "kp_ch01_003"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "高项三色笔记 1.1",
+  "source_type": "official",
+  "author": "内容运营",
+  "reviewer": "",
+  "created_at": "2026-05-10T00:00:00Z",
+  "updated_at": "2026-05-10T00:00:00Z",
+  "version": 1,
+  "schema_version": 1
+}

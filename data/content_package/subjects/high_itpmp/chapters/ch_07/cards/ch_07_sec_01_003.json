@@ -1,0 +1,41 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_07",
+  "section_id": "sec_01",
+  "title": "信息系统项目进行可行性研究包括",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 271,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "content_file": "ch_07_sec_01_003.md",
+  "tags": [
+    "立项管理",
+    "章节核心考点",
+    "信息系统项目进行可行性研究包括"
+  ],
+  "key_points": "1. 5、信息系统项目进行可行性研究包括：技术可行性分析、经济可行性分析、杜会效益可行性分析、运行\n2. 是指在当前的技术、产品条件限制下，能否利用现在拥有的以及可能拥有的技术能力、产品功\n3. 是对整个项目的投资及所产生的经济效益和对项目的社会效益进行分析，具体包括支出分析、",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "002"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

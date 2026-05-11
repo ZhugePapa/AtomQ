@@ -1,0 +1,43 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "信息化趋势与数字化发展方向",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 180,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 11,
+  "content_file": "ch_01_sec_01_011.md",
+  "tags": [
+    "信息化趋势",
+    "数字中国",
+    "十四五规划"
+  ],
+  "key_points": "信息化呈现产品、产业、社会生活、国民经济四类趋势；当前进入加快数字化发展、建设数字中国阶段。",
+  "mnemonics": "产品嵌信息，产业用技术，生活上平台，经济成大流动。",
+  "prerequisite_point_ids": [
+    "009"
+  ],
+  "related_point_ids": [
+    "021"
+  ],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "第2页"
+    }
+  ],
+  "author": "Codex 内容整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

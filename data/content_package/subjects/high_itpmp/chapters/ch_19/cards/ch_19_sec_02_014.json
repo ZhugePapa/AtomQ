@@ -1,0 +1,40 @@
+{
+  "point_id": "014",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_02",
+  "title": "变更管理",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 127,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 14,
+  "content_file": "ch_19_sec_02_014.md",
+  "tags": [
+    "配置与变更管理",
+    "变更管理"
+  ],
+  "key_points": "1. 4、变更管理，即是为使得项目基准与项目实际执行情况相一致，应对项目变化的一套管理方法。(21上\n2. 5、变更管理的原则是项目基准化、变更管理过程规范化。包括：①基准管理、②变更控制流程化、③明\n3. (1)基准管理：基准是变更的依据。在项目实施过程中，基准计划确定并经过评审后(通常用户应参与部",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "013"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

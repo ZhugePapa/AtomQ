@@ -1,0 +1,41 @@
+{
+  "point_id": "016",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "审计",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 166,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 16,
+  "content_file": "ch_16_sec_01_016.md",
+  "tags": [
+    "采购管理",
+    "【管理基础】",
+    "审计"
+  ],
+  "key_points": "1. 买方和卖方都出于相似的目的来管理采购合同，每方都必须确保双方履行合同义务，确保各自的合法权\n2. 利得到保护。合同关系的法律性质，要求项目管理团队必须了解在控制采购期间所采取的任何行动的法律后\n3. 对于有多个供应商的较大项目，合同管理的一个重要方面就是管理各个供应商之间的沟通。鉴于其法律",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "015"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

@@ -1,0 +1,41 @@
+{
+  "point_id": "049",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_30",
+  "title": "从产品或可交付物角度看",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 97,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 49,
+  "content_file": "ch_18_sec_30_049.md",
+  "tags": [
+    "项目绩效域",
+    "与其他绩效域的相互作用",
+    "从产品或可交付物角度看"
+  ],
+  "key_points": "1. 从产品或可交付物角度看，不确定性绩效域与其他7个绩效域都相互作用：\n2. ①随着规划的进行，可将减少不确定性和风险的活动纳入计划。这些活动是在交付绩效域中执行的，度\n3. 量可以表明随着时间的推移风险级别是否会有所变化。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "048"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

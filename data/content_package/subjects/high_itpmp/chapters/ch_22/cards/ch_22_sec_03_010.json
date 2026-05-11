@@ -1,0 +1,41 @@
+{
+  "point_id": "010",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_03",
+  "title": "绩效实施是指员工根据已经制订好的绩效计划开展",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 85,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 10,
+  "content_file": "ch_22_sec_03_010.md",
+  "tags": [
+    "组织通用治理",
+    "绩效实施",
+    "绩效实施是指员工根据已经制订好的"
+  ],
+  "key_points": "1. 1、绩效实施是指员工根据已经制订好的绩效计划开展工作，组织管理者对员工的工作进行指导、监督和\n2. 来说，绩效实施就是指对已制订好的绩效目标进行实施的过程。\n3. 3、绩效实施的主要特征包括：",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "009"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

@@ -1,0 +1,41 @@
+{
+  "point_id": "015",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_10",
+  "title": "开发方法和生命周期绩效域与干系人绩效域规划绩",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 169,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 15,
+  "content_file": "ch_18_sec_10_015.md",
+  "tags": [
+    "项目绩效域",
+    "与其他绩效域的相互作用(了解)",
+    "开发方法和生命周期绩效域与干系人"
+  ],
+  "key_points": "1. 效域和团队绩效域相互作用：\n2. ③开发方法和交付节奏是减少项目不确定性的方法，如果一个可交付物存在与监管要求相关的大量风险，\n3. 付节奏是确保实际项目的价值交付和可行性规划保持一致的主要因素之一；",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "014"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

@@ -1,0 +1,41 @@
+{
+  "point_id": "017",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_03",
+  "title": "项目管理原则包括",
+  "card_type": "process",
+  "difficulty": 3,
+  "estimated_read_seconds": 299,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 17,
+  "content_file": "ch_06_sec_03_017.md",
+  "tags": [
+    "项目管理概论",
+    "价值驱动的项目管理知识体系",
+    "项目管理原则包括"
+  ],
+  "key_points": "1. 1、项目管理原则包括：①勤勉、尊重和关心他人：②营造协作的项目团队环境；③促进干系人有效参与；\n2. 针对项目是否符合商业目标以及预\n3. ①项目是由项目团队交付的；②项目团队在组织文",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "016"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

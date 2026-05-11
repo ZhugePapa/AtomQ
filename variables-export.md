@@ -2,7 +2,7 @@
 
 - source: `https://www.figma.com/design/IJ94IJOoh9DN4D8dAGEAoi/AtomQ`
 - file_key: `IJ94IJOoh9DN4D8dAGEAoi`
-- generated_at: `2026-05-10`
+- generated_at: `2026-05-11`
 - total_collections: `4`
 - total_variables: `151`
 - total_rows_by_mode: `205`
@@ -84,7 +84,7 @@
 | neutral/0 | var(--ios-primitive-neutral-0) | #ffffff |  | Base | _Primitives | VariableID:7697:6 |
 | neutral/100 | var(--ios-primitive-neutral-100) | #e9edf2 |  | Base | _Primitives | VariableID:7697:9 |
 | neutral/200 | var(--ios-primitive-neutral-200) | #d9e0e8 |  | Base | _Primitives | VariableID:7697:10 |
-| neutral/25 | var(--ios-primitive-neutral-25) | #f7f9fb |  | Base | _Primitives | VariableID:7697:7 |
+| neutral/25 | var(--ios-primitive-neutral-25) | #f8fafc |  | Base | _Primitives | VariableID:7697:7 |
 | neutral/300 | var(--ios-primitive-neutral-300) | #c2ccd8 |  | Base | _Primitives | VariableID:7697:11 |
 | neutral/400 | var(--ios-primitive-neutral-400) | #97a6b8 |  | Base | _Primitives | VariableID:7697:12 |
 | neutral/50 | var(--ios-primitive-neutral-50) | #f3f5f8 |  | Base | _Primitives | VariableID:7697:8 |
@@ -154,24 +154,24 @@
 | components/emphasis_invisible | var(--ios-color-components-emphasis-invisible) | @alias(neutral/100) | FRAME_FILL,SHAPE_FILL | Light | Colors | VariableID:7979:872 |
 | components/emphasis_invisible | var(--ios-color-components-emphasis-invisible) | @alias(neutral/700) | FRAME_FILL,SHAPE_FILL | Dark | Colors | VariableID:7979:872 |
 | components/overlay_hero_mask | var(--ios-color-components-overlay-hero-mask) | #ffffff@0.12 | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Light | Colors | VariableID:7891:31 |
-| components/overlay_hero_mask | var(--ios-color-components-overlay-hero-mask) | #000000@0.40 | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Dark | Colors | VariableID:7891:31 |
+| components/overlay_hero_mask | var(--ios-color-components-overlay-hero-mask) | #000000@0.24 | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Dark | Colors | VariableID:7891:31 |
 | components/task_subtle | var(--ios-color-components-task-subtle) | @alias(neutral/0) | FRAME_FILL,SHAPE_FILL | Light | Colors | VariableID:7866:7604 |
 | components/task_subtle | var(--ios-color-components-task-subtle) | @alias(neutral/975) | FRAME_FILL,SHAPE_FILL | Dark | Colors | VariableID:7866:7604 |
 | fg/assist | var(--ios-color-fg-assist) | @alias(assist/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7836:4639 |
 | fg/assist | var(--ios-color-fg-assist) | @alias(assist/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7836:4639 |
-| fg/assist_secondary | var(--ios-color-fg-assist-secondary) | @alias(assist/200) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7836:4640 |
+| fg/assist_secondary | var(--ios-color-fg-assist-secondary) | @alias(assist/300) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7836:4640 |
 | fg/assist_secondary | var(--ios-color-fg-assist-secondary) | @alias(assist/700) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7836:4640 |
 | fg/assist_subtle | var(--ios-color-fg-assist-subtle) | @alias(assist/50) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7836:4641 |
 | fg/assist_subtle | var(--ios-color-fg-assist-subtle) | @alias(assist/900) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7836:4641 |
 | fg/brand | var(--ios-color-fg-brand) | @alias(brand/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7769:174 |
 | fg/brand | var(--ios-color-fg-brand) | @alias(brand/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7769:174 |
-| fg/brand_secondary | var(--ios-color-fg-brand-secondary) | @alias(brand/200) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7769:725 |
+| fg/brand_secondary | var(--ios-color-fg-brand-secondary) | @alias(brand/300) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7769:725 |
 | fg/brand_secondary | var(--ios-color-fg-brand-secondary) | @alias(brand/700) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7769:725 |
 | fg/brand_subtle | var(--ios-color-fg-brand-subtle) | @alias(brand/50) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7769:175 |
 | fg/brand_subtle | var(--ios-color-fg-brand-subtle) | @alias(brand/900) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7769:175 |
 | fg/danger | var(--ios-color-fg-danger) | @alias(danger/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7697:84 |
 | fg/danger | var(--ios-color-fg-danger) | @alias(danger/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7697:84 |
-| fg/danger_secondary | var(--ios-color-fg-danger-secondary) | @alias(danger/200) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7769:728 |
+| fg/danger_secondary | var(--ios-color-fg-danger-secondary) | @alias(danger/300) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7769:728 |
 | fg/danger_secondary | var(--ios-color-fg-danger-secondary) | @alias(danger/700) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7769:728 |
 | fg/danger_subtle | var(--ios-color-fg-danger-subtle) | @alias(danger/50) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7697:85 |
 | fg/danger_subtle | var(--ios-color-fg-danger-subtle) | @alias(danger/900) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7697:85 |
@@ -185,7 +185,7 @@
 | fg/subtle | var(--ios-color-fg-subtle) | @alias(neutral/900) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7769:719 |
 | fg/success | var(--ios-color-fg-success) | @alias(success/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7697:80 |
 | fg/success | var(--ios-color-fg-success) | @alias(success/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7697:80 |
-| fg/success_secondary | var(--ios-color-fg-success-secondary) | @alias(success/200) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7769:726 |
+| fg/success_secondary | var(--ios-color-fg-success-secondary) | @alias(success/300) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7769:726 |
 | fg/success_secondary | var(--ios-color-fg-success-secondary) | @alias(success/700) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7769:726 |
 | fg/success_subtle | var(--ios-color-fg-success-subtle) | @alias(success/50) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7697:81 |
 | fg/success_subtle | var(--ios-color-fg-success-subtle) | @alias(success/900) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7697:81 |
@@ -193,7 +193,7 @@
 | fg/tertiary | var(--ios-color-fg-tertiary) | @alias(neutral/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7769:149 |
 | fg/warning | var(--ios-color-fg-warning) | @alias(warning/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7697:82 |
 | fg/warning | var(--ios-color-fg-warning) | @alias(warning/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7697:82 |
-| fg/warning_secondary | var(--ios-color-fg-warning-secondary) | @alias(warning/200) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7769:727 |
+| fg/warning_secondary | var(--ios-color-fg-warning-secondary) | @alias(warning/300) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7769:727 |
 | fg/warning_secondary | var(--ios-color-fg-warning-secondary) | @alias(warning/700) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7769:727 |
 | fg/warning_subtle | var(--ios-color-fg-warning-subtle) | @alias(warning/50) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Light | Colors | VariableID:7697:83 |
 | fg/warning_subtle | var(--ios-color-fg-warning-subtle) | @alias(warning/900) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7697:83 |

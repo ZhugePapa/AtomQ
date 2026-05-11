@@ -1,0 +1,41 @@
+{
+  "point_id": "024",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_18",
+  "title": "人员销售包括7个步骤",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 300,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 24,
+  "content_file": "ch_23_sec_18_024.md",
+  "tags": [
+    "组织通用管理",
+    "营销管控",
+    "人员销售包括7个步骤"
+  ],
+  "key_points": "1. 4、人员销售包括7个步骤：发掘潜在客户和核查资格、销售准备、接近客户、介绍和示范、处理异议、\n2. 紧后工作是关键工作◎ 自由时差=总时差\n3. 5 紧后工作不是关键工作或者",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "023"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

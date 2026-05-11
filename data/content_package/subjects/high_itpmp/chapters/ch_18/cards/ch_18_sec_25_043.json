@@ -1,0 +1,41 @@
+{
+  "point_id": "043",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_25",
+  "title": "基于度量进行诊断",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 105,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 43,
+  "content_file": "ch_18_sec_25_043.md",
+  "tags": [
+    "项目绩效域",
+    "绩效要点",
+    "基于度量进行诊断"
+  ],
+  "key_points": "1. 突破临界值才采取行动，如果可以通过趋势或新信息进行预测则项目团队能主动提前解决偏差。诊断计划是\n2. 后持续跟进确保计划得到实施并确定计划是否有效。\n3. 6.持续改进：度量、展示度量信息和度量结果的目的是为了持续改进，为了优化项目绩效和效率。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "042"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

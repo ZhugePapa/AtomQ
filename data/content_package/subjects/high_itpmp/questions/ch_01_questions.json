@@ -1,0 +1,275 @@
+[
+  {
+    "question_id": "q_ch01_001",
+    "subject_id": "high_itpmp",
+    "chapter_id": "ch_01",
+    "knowledge_point_ids": [
+      {
+        "point_id": "002",
+        "is_primary": true
+      }
+    ],
+    "difficulty": 1,
+    "year": null,
+    "stem": "“信息是能够用来消除不确定性的东西”这一观点通常对应哪位学者？",
+    "options": [
+      {
+        "key": "A",
+        "text": "维纳"
+      },
+      {
+        "key": "B",
+        "text": "香农"
+      },
+      {
+        "key": "C",
+        "text": "德鲁克"
+      },
+      {
+        "key": "D",
+        "text": "戴明"
+      }
+    ],
+    "answer": "B",
+    "analysis": "香农从信息论角度强调信息用于消除不确定性；维纳强调信息既不是物质，也不是能量。",
+    "is_free": true,
+    "domain_tags": [
+      "信息化发展",
+      "信息定义"
+    ]
+  },
+  {
+    "question_id": "q_ch01_002",
+    "subject_id": "high_itpmp",
+    "chapter_id": "ch_01",
+    "knowledge_point_ids": [
+      {
+        "point_id": "004",
+        "is_primary": true
+      }
+    ],
+    "difficulty": 2,
+    "year": null,
+    "stem": "对于金融信息而言，通常最应优先关注的信息质量属性是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "安全性"
+      },
+      {
+        "key": "B",
+        "text": "经济性"
+      },
+      {
+        "key": "C",
+        "text": "层次性"
+      },
+      {
+        "key": "D",
+        "text": "变换性"
+      }
+    ],
+    "answer": "A",
+    "analysis": "金融信息对泄露、篡改和未授权访问高度敏感，因此安全性是关键质量属性。",
+    "is_free": true,
+    "domain_tags": [
+      "信息质量",
+      "信息化发展"
+    ]
+  },
+  {
+    "question_id": "q_ch01_003",
+    "subject_id": "high_itpmp",
+    "chapter_id": "ch_01",
+    "knowledge_point_ids": [
+      {
+        "point_id": "012",
+        "is_primary": true
+      }
+    ],
+    "difficulty": 2,
+    "year": null,
+    "stem": "智能交通基础设施、智慧能源基础设施更接近新型基础设施中的哪一类？",
+    "options": [
+      {
+        "key": "A",
+        "text": "信息基础设施"
+      },
+      {
+        "key": "B",
+        "text": "融合基础设施"
+      },
+      {
+        "key": "C",
+        "text": "创新基础设施"
+      },
+      {
+        "key": "D",
+        "text": "传统基础设施"
+      }
+    ],
+    "answer": "B",
+    "analysis": "融合基础设施强调互联网、大数据、人工智能等技术对传统基础设施的转型升级。",
+    "is_free": true,
+    "domain_tags": [
+      "新型基础设施",
+      "现代化基础设施"
+    ]
+  },
+  {
+    "question_id": "q_ch01_004",
+    "subject_id": "high_itpmp",
+    "chapter_id": "ch_01",
+    "knowledge_point_ids": [
+      {
+        "point_id": "014",
+        "is_primary": true
+      }
+    ],
+    "difficulty": 3,
+    "year": null,
+    "stem": "工业互联网平台体系通常包括边缘层、IaaS、PaaS 和哪一层？",
+    "options": [
+      {
+        "key": "A",
+        "text": "SaaS"
+      },
+      {
+        "key": "B",
+        "text": "TCP"
+      },
+      {
+        "key": "C",
+        "text": "BIOS"
+      },
+      {
+        "key": "D",
+        "text": "ERP"
+      }
+    ],
+    "answer": "A",
+    "analysis": "工业互联网平台体系包括边缘层、IaaS、PaaS、SaaS 四个层级。",
+    "is_free": false,
+    "domain_tags": [
+      "工业互联网",
+      "现代化基础设施"
+    ]
+  },
+  {
+    "question_id": "q_ch01_005",
+    "subject_id": "high_itpmp",
+    "chapter_id": "ch_01",
+    "knowledge_point_ids": [
+      {
+        "point_id": "018",
+        "is_primary": true
+      }
+    ],
+    "difficulty": 2,
+    "year": null,
+    "stem": "智能制造能力成熟度模型的最高等级是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "规划级"
+      },
+      {
+        "key": "B",
+        "text": "规范级"
+      },
+      {
+        "key": "C",
+        "text": "优化级"
+      },
+      {
+        "key": "D",
+        "text": "引领级"
+      }
+    ],
+    "answer": "D",
+    "analysis": "智能制造能力成熟度从规划级、规范级、集成级、优化级到引领级，最高为引领级。",
+    "is_free": false,
+    "domain_tags": [
+      "智能制造",
+      "现代化创新发展"
+    ]
+  },
+  {
+    "question_id": "q_ch01_006",
+    "subject_id": "high_itpmp",
+    "chapter_id": "ch_01",
+    "knowledge_point_ids": [
+      {
+        "point_id": "021",
+        "is_primary": true
+      }
+    ],
+    "difficulty": 3,
+    "year": null,
+    "stem": "从数字经济的产业构成看，数字经济主要包括哪两部分？",
+    "options": [
+      {
+        "key": "A",
+        "text": "数字政府和数字社会"
+      },
+      {
+        "key": "B",
+        "text": "数字产业化和产业数字化"
+      },
+      {
+        "key": "C",
+        "text": "数据治理和城市孪生"
+      },
+      {
+        "key": "D",
+        "text": "信息网络和信息资源"
+      }
+    ],
+    "answer": "B",
+    "analysis": "从产业构成看，数字经济包括数字产业化和产业数字化；整体构成才扩展到数字化治理和数据价值化。",
+    "is_free": false,
+    "domain_tags": [
+      "数字经济",
+      "数字中国"
+    ]
+  },
+  {
+    "question_id": "q_ch01_007",
+    "subject_id": "high_itpmp",
+    "chapter_id": "ch_01",
+    "knowledge_point_ids": [
+      {
+        "point_id": "024",
+        "is_primary": true
+      }
+    ],
+    "difficulty": 2,
+    "year": null,
+    "stem": "智慧城市能力要素中，用于描述现实世界与信息世界互动融合的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "城市孪生"
+      },
+      {
+        "key": "B",
+        "text": "消费互联网"
+      },
+      {
+        "key": "C",
+        "text": "边缘层"
+      },
+      {
+        "key": "D",
+        "text": "产业衍生"
+      }
+    ],
+    "answer": "A",
+    "analysis": "城市孪生围绕现实世界与信息世界互动融合进行能力构建。",
+    "is_free": false,
+    "domain_tags": [
+      "智慧城市",
+      "数字中国"
+    ]
+  }
+]

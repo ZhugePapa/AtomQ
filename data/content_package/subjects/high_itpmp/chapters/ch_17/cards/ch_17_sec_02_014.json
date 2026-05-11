@@ -1,0 +1,41 @@
+{
+  "point_id": "014",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_17",
+  "section_id": "sec_02",
+  "title": "干系人登记册",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 85,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 14,
+  "content_file": "ch_17_sec_02_014.md",
+  "tags": [
+    "干系人管理",
+    "管理过程",
+    "干系人登记册"
+  ],
+  "key_points": "1. 5、干系人登记册：记录已识别干系人的信息，主要包括：***(17下43)(19上44)(20下43)(23下2批\n2. 评估信息：主要需求、期望、影响项项目生命目成果的潜力，以及干系人最能影响或冲击的周期阶段。\n3. 干系人分类：用内部或外部，作用、影响、权力或利益，上级、下级、外围或横向，或者项目经理选择的",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "013"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

@@ -1,0 +1,39 @@
+{
+  "source_id": "pdf_2026_tricolor_high",
+  "full_pdf_path": "/Users/leiwang/Downloads/三色笔记/2026新版高项三色笔记（信息系统项目管理师）.pdf",
+  "extraction_pdf_path": "/Users/leiwang/Downloads/三色笔记/拆分/2026新版高项三色笔记（信息系统项目管理师）（拖移项目 01）.pdf",
+  "chapter_id": "ch_01",
+  "raw_extract_chars": 9476,
+  "raw_extract_pages_detected": 18,
+  "notes": [
+    "Full PDF text layer uses a custom encoding that is not directly extractable by pypdf.",
+    "The split PDF contains ToUnicode maps and was used only as the Chapter 1 extraction source.",
+    "Generated cards are structured, edited study notes rather than verbatim PDF transcription.",
+    "Chapters 2+ were generated from macOS Vision OCR output as ai_draft cards."
+  ],
+  "ocr_text_path_used_for_bulk_build": "/private/tmp/atomq_all_ocr.txt",
+  "generated_chapters": [
+    "ch_02",
+    "ch_03",
+    "ch_04",
+    "ch_05",
+    "ch_06",
+    "ch_07",
+    "ch_08",
+    "ch_09",
+    "ch_10",
+    "ch_11",
+    "ch_12",
+    "ch_13",
+    "ch_14",
+    "ch_15",
+    "ch_16",
+    "ch_17",
+    "ch_18",
+    "ch_19",
+    "ch_20",
+    "ch_21",
+    "ch_22",
+    "ch_23"
+  ]
+}

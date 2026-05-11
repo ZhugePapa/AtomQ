@@ -1,0 +1,41 @@
+{
+  "point_id": "015",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_14",
+  "section_id": "sec_02",
+  "title": "项目报告",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 165,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 15,
+  "content_file": "ch_14_sec_02_015.md",
+  "tags": [
+    "沟通管理",
+    "管理过程",
+    "项目报告"
+  ],
+  "key_points": "1. 10、项目报告：发布是收集和发布项目信息的行为。项目信息应发布给众多干系人群体。应针对每种干\n2. 不相同。可以定期准备信息或基于例外情况准备。虽然工作绩效报告是监控项目工作过程的输出，但是本过\n3. 包括告知已收到、澄清与确认信息、理解，以及消除妨碍理解的障碍",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "014"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

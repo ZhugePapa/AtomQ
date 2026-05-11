@@ -1,0 +1,41 @@
+{
+  "point_id": "008",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "IT服务管理由若干不同的活动组成",
+  "card_type": "process",
+  "difficulty": 3,
+  "estimated_read_seconds": 280,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 8,
+  "content_file": "ch_04_sec_01_008.md",
+  "tags": [
+    "信息系统管理",
+    "管理方法",
+    "IT服务管理由若干不同的活动组成"
+  ],
+  "key_points": "1. 服务台是服务中与服务干系人沟通和交互的重要界面，负责对服务干系人遇到的问题\n2. 事件可能是服务中断、服务速度变慢、软件缺陷以及其他任何组件发生故障，目标就\n3. 是快速解决事件，恢复业务。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "007"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

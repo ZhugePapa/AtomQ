@@ -1,0 +1,41 @@
+{
+  "point_id": "004",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_03",
+  "title": "人力资源需求预测一般有集体预测回归分析和转换",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 122,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 4,
+  "content_file": "ch_23_sec_03_004.md",
+  "tags": [
+    "组织通用管理",
+    "人力资源战略与计划",
+    "人力资源需求预测一般有集体预测回"
+  ],
+  "key_points": "1. 1. 当把人力资源的提供给预测和需求预测结果相互比照，有3种可能的结果：一是需求和提供给\n2. 彼此适应；二是需求超过提供给，这意味着组织在人力方面存在短缺；三是需求小于供给，这意",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "003"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

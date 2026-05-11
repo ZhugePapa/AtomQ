@@ -1,0 +1,41 @@
+{
+  "point_id": "005",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_07",
+  "section_id": "sec_01",
+  "title": "初步可行性研究一般是在对市场或者客户情况进行",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 87,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 5,
+  "content_file": "ch_07_sec_01_005.md",
+  "tags": [
+    "立项管理",
+    "章节核心考点",
+    "初步可行性研究一般是在对市场或者"
+  ],
+  "key_points": "1. 6、初步可行性研究一般是在对市场或者客户情况进行调查后，对项目进行的初步评估。详细可行性研\n2. 究需要对项目在技术、经济、社会、运行环境、法律等方面进行深入的调查研究和分析，是一项费时、费\n3. 7、进行初步可行性评估，可以从如下方面进行衡量，以便决定是否开始详细可行性研究：",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "004"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

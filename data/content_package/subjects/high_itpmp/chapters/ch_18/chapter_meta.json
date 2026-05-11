@@ -1,0 +1,227 @@
+{
+  "chapter_id": "ch_18",
+  "subject_id": "high_itpmp",
+  "title": "项目绩效域",
+  "description": "项目绩效域，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "sort_no": 18,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "绩效要点",
+      "sort_no": 1,
+      "description": "项目绩效域 - 绩效要点",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_02",
+      "title": "与其它绩效域的相互作用",
+      "sort_no": 2,
+      "description": "项目绩效域 - 与其它绩效域的相互作用",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_03",
+      "title": "执行效果检查",
+      "sort_no": 3,
+      "description": "项目绩效域 - 执行效果检查",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_04",
+      "title": "团队绩效域",
+      "sort_no": 4,
+      "description": "项目绩效域 - 团队绩效域",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_05",
+      "title": "绩效要点",
+      "sort_no": 5,
+      "description": "项目绩效域 - 绩效要点",
+      "card_count": 3
+    },
+    {
+      "section_id": "sec_06",
+      "title": "与其他绩效域的相互作用",
+      "sort_no": 6,
+      "description": "项目绩效域 - 与其他绩效域的相互作用",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_07",
+      "title": "执行效果检查",
+      "sort_no": 7,
+      "description": "项目绩效域 - 执行效果检查",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_08",
+      "title": "开发方法和生命周期绩效域",
+      "sort_no": 8,
+      "description": "项目绩效域 - 开发方法和生命周期绩效域",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_09",
+      "title": "绩效要点",
+      "sort_no": 9,
+      "description": "项目绩效域 - 绩效要点",
+      "card_count": 4
+    },
+    {
+      "section_id": "sec_10",
+      "title": "与其他绩效域的相互作用(了解)",
+      "sort_no": 10,
+      "description": "项目绩效域 - 与其他绩效域的相互作用(了解)",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_11",
+      "title": "执行效果检查",
+      "sort_no": 11,
+      "description": "项目绩效域 - 执行效果检查",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_12",
+      "title": "规划绩效域",
+      "sort_no": 12,
+      "description": "项目绩效域 - 规划绩效域",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_13",
+      "title": "绩效要点",
+      "sort_no": 13,
+      "description": "项目绩效域 - 绩效要点",
+      "card_count": 4
+    },
+    {
+      "section_id": "sec_14",
+      "title": "与其他绩效域的相互作用",
+      "sort_no": 14,
+      "description": "项目绩效域 - 与其他绩效域的相互作用",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_15",
+      "title": "执行效果检查",
+      "sort_no": 15,
+      "description": "项目绩效域 - 执行效果检查",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_16",
+      "title": "项目工作绩效域",
+      "sort_no": 16,
+      "description": "项目绩效域 - 项目工作绩效域",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_17",
+      "title": "绩效要点：。",
+      "sort_no": 17,
+      "description": "项目绩效域 - 绩效要点：。",
+      "card_count": 5
+    },
+    {
+      "section_id": "sec_18",
+      "title": "与其他绩效域的相互作用",
+      "sort_no": 18,
+      "description": "项目绩效域 - 与其他绩效域的相互作用",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_19",
+      "title": "执行效果检查",
+      "sort_no": 19,
+      "description": "项目绩效域 - 执行效果检查",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_20",
+      "title": "交付绩效域",
+      "sort_no": 20,
+      "description": "项目绩效域 - 交付绩效域",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_21",
+      "title": "绩效要点",
+      "sort_no": 21,
+      "description": "项目绩效域 - 绩效要点",
+      "card_count": 2
+    },
+    {
+      "section_id": "sec_22",
+      "title": "与其他绩效域的相互作用",
+      "sort_no": 22,
+      "description": "项目绩效域 - 与其他绩效域的相互作用",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_23",
+      "title": "执行效果检查",
+      "sort_no": 23,
+      "description": "项目绩效域 - 执行效果检查",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_24",
+      "title": "度量绩效域",
+      "sort_no": 24,
+      "description": "项目绩效域 - 度量绩效域",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_25",
+      "title": "绩效要点",
+      "sort_no": 25,
+      "description": "项目绩效域 - 绩效要点",
+      "card_count": 6
+    },
+    {
+      "section_id": "sec_26",
+      "title": "与其他绩效域的相互作用",
+      "sort_no": 26,
+      "description": "项目绩效域 - 与其他绩效域的相互作用",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_27",
+      "title": "执行效果检查",
+      "sort_no": 27,
+      "description": "项目绩效域 - 执行效果检查",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_28",
+      "title": "不确定性绩效域",
+      "sort_no": 28,
+      "description": "项目绩效域 - 不确定性绩效域",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_29",
+      "title": "绩效要点",
+      "sort_no": 29,
+      "description": "项目绩效域 - 绩效要点",
+      "card_count": 2
+    },
+    {
+      "section_id": "sec_30",
+      "title": "与其他绩效域的相互作用",
+      "sort_no": 30,
+      "description": "项目绩效域 - 与其他绩效域的相互作用",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_31",
+      "title": "执行效果检查",
+      "sort_no": 31,
+      "description": "项目绩效域 - 执行效果检查",
+      "card_count": 1
+    }
+  ],
+  "schema_version": 2
+}

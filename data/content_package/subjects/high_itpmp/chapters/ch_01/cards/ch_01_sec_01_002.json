@@ -1,0 +1,46 @@
+{
+  "point_id": "002",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "维纳与香农的信息观点",
+  "card_type": "comparison",
+  "difficulty": 1,
+  "estimated_read_seconds": 90,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 2,
+  "content_file": "ch_01_sec_01_002.md",
+  "tags": [
+    "维纳",
+    "香农",
+    "控制论",
+    "信息论"
+  ],
+  "key_points": "维纳强调信息独立于物质和能量；香农强调信息用于消除不确定性。",
+  "mnemonics": "维纳说“非物非能”，香农说“消除不确定”。",
+  "prerequisite_point_ids": [
+    "001"
+  ],
+  "related_point_ids": [
+    "001"
+  ],
+  "related_question_ids": [
+    "q_ch01_001"
+  ],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "第1页"
+    }
+  ],
+  "author": "Codex 内容整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

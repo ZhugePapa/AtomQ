@@ -1,0 +1,41 @@
+{
+  "point_id": "026",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_17",
+  "title": "制约因素包括最后交付日期法律法规固定预算和质",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 130,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 26,
+  "content_file": "ch_18_sec_17_026.md",
+  "tags": [
+    "项目绩效域",
+    "绩效要点：。",
+    "制约因素包括最后交付日期法律法规"
+  ],
+  "key_points": "1. 1. 制约因素包括最后交付日期、法律法规、固定预算和质量政策等，在整个项目生命周期过\n2. 2. 平衡不断变化的制约因素，同时维护干系人的满意度是一项持续进行的项目工作需要在整\n3. 始终了解项目的进展情况，包括何时发生潜在问题、进度是否延迟和成本是否超支等。因此，",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "025"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

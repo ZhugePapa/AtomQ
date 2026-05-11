@@ -1,0 +1,41 @@
+{
+  "point_id": "031",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_02",
+  "title": "验收的可交付成果",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 76,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 31,
+  "content_file": "ch_08_sec_02_031.md",
+  "tags": [
+    "整合管理",
+    "管理过程",
+    "验收的可交付成果"
+  ],
+  "key_points": "1. 2.验收的可交付成果：可包括批准的产品规范、交货收据和工作绩效文件。对于分阶段实施的项目或提\n2. 前取消的项目，还可能包括部分完成或中间的可交付成果。\n3. 作用于项目结果的不同项目变量之间的相互关系，以提高未来项目的绩效",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "030"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

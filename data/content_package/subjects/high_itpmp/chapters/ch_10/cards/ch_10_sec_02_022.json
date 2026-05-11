@@ -1,0 +1,41 @@
+{
+  "point_id": "022",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_02",
+  "title": "资源优化",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 100,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 22,
+  "content_file": "ch_10_sec_02_022.md",
+  "tags": [
+    "进度管理",
+    "管理过程",
+    "资源优化"
+  ],
+  "key_points": "1. 资源平衡：是为了在资源需求与资源供给之间取得平衡，根据资源制约因素对开始日期和完成日期进\n2. 相对于资源平衡而言，资源平滑不会改变项目的关键路径，完工日期也不会延迟。也就是说，活动只在其",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "021"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}

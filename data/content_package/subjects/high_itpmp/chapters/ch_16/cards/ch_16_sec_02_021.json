@@ -1,0 +1,41 @@
+{
+  "point_id": "021",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_02",
+  "title": "合同的内容",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 123,
+  "has_key_content": true,
+  "is_free": false,
+  "sort_no": 21,
+  "content_file": "ch_16_sec_02_021.md",
+  "tags": [
+    "采购管理",
+    "合同管理",
+    "合同的内容"
+  ],
+  "key_points": "1. 4、合同管理包括：合同签订管理、合同履行管理、合同变更管理、合同档案管理、合同违约索赔管理。\n2. (1)首先，应当做好市场调查。主要了解产品的技术发展状况，市场供需情况和市场价格等。(2)其次，",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "020"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}
