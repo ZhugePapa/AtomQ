@@ -1,0 +1,42 @@
+{
+  "point_id": "016",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_02",
+  "title": "需求跟踪矩阵(23下3批)",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 126,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 16,
+  "content_file": "ch_09_sec_02_016.md",
+  "tags": [
+    "范围管理",
+    "管理过程",
+    "需求跟踪矩阵(23下3批)"
+  ],
+  "key_points": "1. 需求跟踪矩阵是把产品需求从其来源连接到能满足需求的可交付成果的一种表格。(18下40)\n2. 跟踪需求的内容包括：\n3. 需求踪矩阵中记录的典型属性包括唯一标识、需求的文字描述、收录该需求的理由、所有者、来源、优",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "015"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

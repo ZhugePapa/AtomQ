@@ -1,0 +1,42 @@
+{
+  "point_id": "013",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_02",
+  "title": "人际关系与团队技能",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 152,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 13,
+  "content_file": "ch_08_sec_02_013.md",
+  "tags": [
+    "整合管理",
+    "管理过程",
+    "人际关系与团队技能"
+  ],
+  "key_points": "1. 包括准备议程，确保邀请每个关键干系人代表，以及准备和发送后续的会议纪要和\n2. 主要可交付成果；④整体项目风险；⑤总体里程碑进度计划；⑥预先批准的财务资源；⑦关键干系人名单；",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "012"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

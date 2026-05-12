@@ -18,6 +18,8 @@
   <string>1.0</string>
   <key>CFBundleVersion</key>
   <string>1</string>
+  <key>ATOMQ_PUBLIC_CONTENT_BASE_URL</key>
+  <string>https://leoht.oss-cn-beijing.aliyuncs.com/content_package/public/</string>
   <key>LSRequiresIPhoneOS</key>
   <true/>
   <key>UIApplicationSceneManifest</key>

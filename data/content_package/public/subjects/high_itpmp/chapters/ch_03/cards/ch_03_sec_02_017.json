@@ -1,0 +1,42 @@
+{
+  "point_id": "017",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_02",
+  "title": "IT审计风险主要包括固有风险控制风险检查风险",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 98,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 17,
+  "content_file": "ch_03_sec_02_017.md",
+  "tags": [
+    "信息系统治理",
+    "IT审计",
+    "IT审计风险主要包括固有风险控制"
+  ],
+  "key_points": "1. 10、IT 审计风险主要包括固有风险、控制风险、检查风险和总体审计风险。\n2. 11、常用审计方法包括：访谈法、调查法、检查法、观察法、测试法和程序代码检查法等。\n3. 14、审计工作底稿一般分为综合类工作底稿、业务类工作底稿和备查类工作底稿。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "016"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

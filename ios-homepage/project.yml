@@ -1,4 +1,4 @@
-name: AtomQHomeStatic
+name: AtomQ
 options:
   bundleIdPrefix: com.atomq
 settings:
@@ -6,11 +6,13 @@ settings:
     SWIFT_VERSION: 5.10
     IPHONEOS_DEPLOYMENT_TARGET: 17.0
 targets:
-  AtomQHomeStatic:
+  AtomQ:
     type: application
     platform: iOS
     sources:
-      - AtomQHomeStatic
+      - path: AtomQHomeStatic
+        excludes:
+          - Resources/default_cards/**
     resources:
       - AtomQHomeStatic/Resources/SVG
     settings:
@@ -22,9 +24,9 @@ targets:
         SUPPORTS_MACCATALYST: NO
         ASSETCATALOG_COMPILER_APPICON_NAME: ""
 schemes:
-  AtomQHomeStatic:
+  AtomQ:
     build:
       targets:
-        AtomQHomeStatic: all
+        AtomQ: all
     run:
       config: Debug

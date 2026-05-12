@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PACKAGE_ROOT = ROOT / "content_package"
+PACKAGE_ROOT = ROOT / "content_package" / "public"
 
 
 def load_json(path: Path):

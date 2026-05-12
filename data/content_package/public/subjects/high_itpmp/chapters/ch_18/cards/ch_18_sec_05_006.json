@@ -1,0 +1,42 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_05",
+  "title": "管理态度",
+  "card_type": "process",
+  "difficulty": 1,
+  "estimated_read_seconds": 107,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "content_file": "ch_18_sec_05_006.md",
+  "tags": [
+    "项目绩效域",
+    "绩效要点",
+    "管理态度"
+  ],
+  "key_points": "1. 人的感受的能力，包括读懂非语言暗示和肢体语\n2. ④社交技能：是情商的高阶境界，它涉及管理项目团队、建立社交网络、寻找与干系人\n3. ⑤动机：某些情商模型还包括第5个方面，即动机。动机是理解驱动和激励人的因素。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "005"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

@@ -1,0 +1,42 @@
+{
+  "point_id": "016",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_17",
+  "section_id": "sec_02",
+  "title": "数据分析",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 274,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 16,
+  "content_file": "ch_17_sec_02_016.md",
+  "tags": [
+    "干系人管理",
+    "管理过程",
+    "数据分析"
+  ],
+  "key_points": "1. 识别是什么根本原因导致了干系人对项目的某种支持水平，以便选择\n2. 参与水平可分为如下：\n3. C代表每个干系人的当前参与水平，而D是项",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "015"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

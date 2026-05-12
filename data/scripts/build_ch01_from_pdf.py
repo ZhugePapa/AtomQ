@@ -17,13 +17,14 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CONTENT_ROOT = ROOT / "content_package"
+CONTENT_ROOT = ROOT / "content_package" / "public"
 SUBJECT_ID = "high_itpmp"
 CHAPTER_ID = "ch_01"
 SOURCE_ID = "pdf_2026_tricolor_high"
 FULL_PDF = Path("/Users/leiwang/Downloads/三色笔记/2026新版高项三色笔记（信息系统项目管理师）.pdf")
 SPLIT_PDF = Path("/Users/leiwang/Downloads/三色笔记/拆分/2026新版高项三色笔记（信息系统项目管理师）（拖移项目 01）.pdf")
 BUILD_TIME = "2026-05-11T00:00:00+08:00"
+CALLOUT_RE = re.compile(r"(?ms)^:::(key|tip|warning)[^\n]*\n(.*?)\n:::\s*")
 
 
 @dataclass(frozen=True)
@@ -1052,6 +1053,31 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text.strip() + "\n", encoding="utf-8")
 
 
+def merge_text(existing: str, incoming: str) -> str:
+    existing = (existing or "").strip()
+    incoming = (incoming or "").strip()
+    if not incoming:
+        return existing
+    if not existing:
+        return incoming
+    if existing == incoming or incoming in existing:
+        return existing
+    if existing in incoming:
+        return incoming
+    return f"{existing}\n\n{incoming}"
+
+
+def split_callouts(markdown: str) -> tuple[str, dict[str, str]]:
+    extracted: dict[str, list[str]] = {"key": [], "tip": [], "warning": []}
+    for match in CALLOUT_RE.finditer(markdown):
+        body = match.group(2).strip()
+        if body:
+            extracted[match.group(1)].append(body)
+    clean = CALLOUT_RE.sub("", markdown)
+    clean = re.sub(r"\n{3,}", "\n\n", clean).strip() + "\n"
+    return clean, {kind: "\n\n".join(parts) for kind, parts in extracted.items()}
+
+
 def point_id(value: str) -> str:
     return value.split("_")[-1]
 
@@ -1070,6 +1096,7 @@ def point_ids(values: list[str]) -> list[str]:
 
 
 def card_meta(card: Card, sort_no: int, question_ids: list[str]) -> dict[str, object]:
+    clean_markdown, callouts = split_callouts(card.markdown)
     return {
         "point_id": point_id(card.point_id),
         "subject_id": SUBJECT_ID,
@@ -1079,13 +1106,14 @@ def card_meta(card: Card, sort_no: int, question_ids: list[str]) -> dict[str, ob
         "card_type": card.card_type,
         "difficulty": card.difficulty,
         "estimated_read_seconds": card.estimated_read_seconds,
-        "has_key_content": "==" in card.markdown,
-        "is_free": card.is_free,
+        "has_key_content": "==" in clean_markdown,
+        "is_free": True,
         "sort_no": sort_no,
         "content_file": f"{card_file_stem(card)}.md",
         "tags": card.tags,
-        "key_points": card.key_points,
-        "mnemonics": card.mnemonics,
+        "key_points": merge_text(card.key_points, callouts["key"]),
+        "mnemonics": merge_text(card.mnemonics, callouts["tip"]),
+        "warnings": callouts["warning"],
         "prerequisite_point_ids": point_ids(card.prerequisites),
         "related_point_ids": point_ids(card.related),
         "related_question_ids": question_ids,
@@ -1137,7 +1165,7 @@ def build() -> None:
         section_counts[normalized_section_id] += 1
         stem = card_file_stem(card)
         write_json(cards_dir / f"{stem}.json", card_meta(card, index, question_by_point.get(normalized_point_id, [])))
-        write_text(cards_dir / f"{stem}.md", card.markdown)
+        write_text(cards_dir / f"{stem}.md", split_callouts(card.markdown)[0])
 
     subject_index = {
         "subject_id": SUBJECT_ID,
@@ -1166,9 +1194,9 @@ def build() -> None:
     }
 
     package_manifest = {
-        "package_id": "atomq_high_level_2026_ch01_preview",
+        "package_id": "atomq_high_itpmp_2026_public_full",
         "subject_id": SUBJECT_ID,
-        "content_version": "2026.05.ch01-preview.1",
+        "content_version": "2026.05.ch01-preview.1.public-full",
         "generated_at": BUILD_TIME,
         "source_ids": [SOURCE_ID],
         "chapters": [
@@ -1180,8 +1208,16 @@ def build() -> None:
             }
         ],
         "storage_policy": {
-            "static_content": "CDN or app bundle fallback",
+            "static_content": "Aliyun OSS public-read now, Aliyun CDN after ICP approval",
             "dynamic_user_data": "SQLite locally, Supabase/Postgres for cloud sync",
+            "paid_content": "Not separated in the current package; all static content is public-free.",
+        },
+        "distribution": {
+            "mode": "public_read_full",
+            "origin": "aliyun_oss",
+            "cdn": "aliyun_cdn_after_icp",
+            "file_index": "file_index.json",
+            "app_cache_path": "Documents/cache/cards/content_package/public",
         },
         "schema_version": 2,
     }
@@ -1190,7 +1226,7 @@ def build() -> None:
     write_json(CONTENT_ROOT / "manifest.json", package_manifest)
     write_json(CONTENT_ROOT / "subjects" / SUBJECT_ID / "subject_index.json", subject_index)
     write_json(CONTENT_ROOT / "subjects" / SUBJECT_ID / "chapters" / CHAPTER_ID / "chapter_meta.json", chapter_meta)
-    write_json(questions_path, QUESTIONS)
+    write_json(questions_path, [{**question, "is_free": True} for question in QUESTIONS])
 
     write_text(
         ROOT / "local_store" / "schema.sql",
@@ -1276,12 +1312,12 @@ CREATE INDEX IF NOT EXISTS idx_daily_tasks_user_date ON daily_tasks(user_id, tas
 当前目录采用新结构：
 
 - `.old/`：旧脚本、旧样例、旧 SQLite，保留作参考但不再作为可发布数据源。
-- `content_package/`：可下发的静态内容包，包含科目索引、章节元数据、知识卡片 JSON/Markdown、章节题目 JSON。
+- `content_package/public/`：唯一可发布静态内容包，所有卡片和题目均为公开免费内容。
 - `local_store/`：客户端本地动态库 schema，存用户学习记录、错题、掌握度和每日任务。
 - `sources/`：内容来源与抽取说明。
 - `scripts/`：内容构建与校验脚本。
 
-静态内容继续使用 JSON + Markdown；动态用户数据进入 SQLite。后续同步到云端时，`content_package` 走 CDN/Storage，`local_store` 对应表走 Supabase/Postgres。
+静态内容继续使用 JSON + Markdown；动态用户数据进入 SQLite。后续同步到云端时，只发布 `content_package/public` 到阿里 OSS/CDN，`local_store` 对应表走 Supabase/Postgres。
 """,
     )
 

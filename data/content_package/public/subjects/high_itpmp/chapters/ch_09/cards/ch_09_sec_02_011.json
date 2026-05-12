@@ -1,0 +1,42 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_02",
+  "title": "数据收集太大",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 207,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 11,
+  "content_file": "ch_09_sec_02_011.md",
+  "tags": [
+    "范围管理",
+    "管理过程",
+    "数据收集太大"
+  ],
+  "key_points": "1. 通过与干系人直接交谈，来获取信息的正式或非正式的方法；访谈的典型做法是向\n2. 被访者提出预设和即兴的问题，并记录他们的回答。访谈经常是一个访谈者和一个\n3. 被访者之间的\"一对一\"谈话，但也可包括多个访谈者或多个被访者。访谈有经验",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "010"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

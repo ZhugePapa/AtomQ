@@ -1,0 +1,42 @@
+{
+  "point_id": "026",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_02",
+  "title": "组织的数据架构能力域通常包括数据模型数据分布",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 85,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 26,
+  "content_file": "ch_04_sec_02_026.md",
+  "tags": [
+    "信息系统管理",
+    "管理要点",
+    "组织的数据架构能力域通常包括数据"
+  ],
+  "key_points": "1. 16、组织的数据架构能力域通常包括数据模型、数据分布、数据集成与共享和元数据管理四个能力项。\n2. 17、数据应用能力域通常包括数据分析、数据开放共享和数据服务三个能力项。\n3. 18、组织的数据安全能力域通常包括数据安全策略、数据安全管理和数据安全审计三个能力项。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "025"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

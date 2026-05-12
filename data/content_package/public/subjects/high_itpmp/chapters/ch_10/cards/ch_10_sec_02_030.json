@@ -1,0 +1,42 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_02",
+  "title": "数据分析大(23下4批)",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 178,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 30,
+  "content_file": "ch_10_sec_02_030.md",
+  "tags": [
+    "进度管理",
+    "管理过程",
+    "数据分析大(23下4批)"
+  ],
+  "key_points": "1. 检查项目绩效随时间的变化情况，以确定绩效是在改善还是在恶化(23上32)\n2. 基于项目风险管理过程的输出，对各种不同的情景进行评估，促使进度模型符合项\n3. 这块必考计算题的，这个必须掌握的，主要是一些网络图、关键路径、六标时、PERT 等其他的计算题，资",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "029"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

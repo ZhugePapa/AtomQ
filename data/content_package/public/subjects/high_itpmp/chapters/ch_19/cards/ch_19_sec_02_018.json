@@ -1,0 +1,42 @@
+{
+  "point_id": "018",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_02",
+  "title": "变更审查过程是项目所有者根据变更申请及评估方",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 140,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 18,
+  "content_file": "ch_19_sec_02_018.md",
+  "tags": [
+    "配置与变更管理",
+    "变更管理",
+    "变更审查过程是项目所有者根据变更"
+  ],
+  "key_points": "1. 1.变更审查过程是项目所有者根据变更申请及评估方案，决定是否变更项目基\n2. 准。通常包括客户、相关领域的专业人士等。审查通常采用文档、会签形式，\n3. 果的变更，客户和服务对象的意见应放在核心位置。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "017"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

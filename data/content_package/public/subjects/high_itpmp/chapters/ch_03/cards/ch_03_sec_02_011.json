@@ -1,0 +1,42 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_02",
+  "title": "常用的IT审计技术包括风险评估技术审计抽样技",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 225,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 11,
+  "content_file": "ch_03_sec_02_011.md",
+  "tags": [
+    "信息系统治理",
+    "IT审计",
+    "常用的IT审计技术包括风险评估技"
+  ],
+  "key_points": "1. 7、常用的IT 审计技术包括风险评估技术、审计抽样技术、计算机辅助审计技术及大数据审计\n2. 1.风险识别技术：用以识别可能影响一个或多个目标的不确定性，包括德尔菲法、头脑风\n3. 2.风险分析技术：是对风险影响和后果进行评价和估量，包括定性分析和定量分析。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "010"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

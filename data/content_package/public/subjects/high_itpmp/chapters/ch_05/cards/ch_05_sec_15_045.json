@@ -1,0 +1,42 @@
+{
+  "point_id": "045",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_15",
+  "title": "在00A方法中",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 89,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 45,
+  "content_file": "ch_05_sec_15_045.md",
+  "tags": [
+    "信息系统工程",
+    "安全工程",
+    "在00A方法中"
+  ],
+  "key_points": "1. 7、在00A 方法中，构建用例模型一般需要经历四个阶段，分别是识别参与者、合并需求获得用例、细\n2. 10、类之间的主要关系有关联、依赖、泛化、聚合、组合和实现等。\n3. 11、结构化设计是一种面向数据流的方法，是一个自顶向下、逐步求精和模块化的过程。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "044"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

@@ -1,0 +1,40 @@
+{
+  "point_id": "001",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "小型项目中",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 172,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 1,
+  "content_file": "ch_10_sec_01_001.md",
+  "tags": [
+    "进度管理",
+    "管理基础",
+    "小型项目中"
+  ],
+  "key_points": "1. 目特定数据，如活动、计划日期、持续时间、资源、依赖关系和制约因素等输入进度计划编制工具，创建\n2. 按需进行的进度计划：不依赖于预先定义好的进度计划，而是在资源可用时立即从未完成项和工作序列中",
+  "mnemonics": "",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

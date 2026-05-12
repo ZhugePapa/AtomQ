@@ -28,6 +28,7 @@
 		5F0F2F8873A50CD4EDAC691D /* status-levels.svg in Resources */ = {isa = PBXBuildFile; fileRef = B9ADB2D8D84F130995E537C6 /* status-levels.svg */; };
 		602D146793D0524111C5E9C0 /* icon-lightbulb-01.svg in Resources */ = {isa = PBXBuildFile; fileRef = A09E2A79809E60B1ED88D01F /* icon-lightbulb-01.svg */; };
 		6213BB64BC34E798C22C69F7 /* icon-beaker.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5412C8132F588B7F1A8265A0 /* icon-beaker.svg */; };
+		6FA4A9AB93D444C8A7E92810 /* ContentPackageRemoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6C2CDB6C24A96A2C43F14 /* ContentPackageRemoteStore.swift */; };
 		7682C35822130AE3811A600E /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E0C09BA6EA85CA10DD333E /* HomePageView.swift */; };
 		7ACBB4B17A0A388D9EAF162A /* KnowledgeCardDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F8A27491B7E51A364F95C5 /* KnowledgeCardDataStore.swift */; };
 		77B0AAB5A688E3669C78248E /* icon-play-circle.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2570CD3B1D6BF67D9B81DA89 /* icon-play-circle.svg */; };
@@ -55,6 +56,7 @@
 		2570CD3B1D6BF67D9B81DA89 /* icon-play-circle.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-play-circle.svg"; sourceTree = "<group>"; };
 		2D3E4F5061728394A5B6C7D8 /* LeoMarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeoMarkdownView.swift; sourceTree = "<group>"; };
 		2A230AEB80663F902B737563 /* icon-graduation-hat.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-graduation-hat.svg"; sourceTree = "<group>"; };
+		34C6C2CDB6C24A96A2C43F14 /* ContentPackageRemoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPackageRemoteStore.swift; sourceTree = "<group>"; };
 		34187CFA37B1F7D24ECBC083 /* icon-atom.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-atom.svg"; sourceTree = "<group>"; };
 		3C4D5E6F708192A3B4C5D6E7 /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
 		40AE4BF6FDBEFC2B95902309 /* icon-certificate.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-certificate.svg"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		AA52FC55D179E7FBE6AE5F24 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				34C6C2CDB6C24A96A2C43F14 /* ContentPackageRemoteStore.swift */,
 				D4F8A27491B7E51A364F95C5 /* KnowledgeCardDataStore.swift */,
 				B7CCC36FDD046771F1C90B43 /* SVGAssetView.swift */,
 			);
@@ -293,6 +296,7 @@
 				8A11FC7F20BC81D7F9873F14 /* KnowledgeCardStudyView.swift in Sources */,
 				1C2D3E4F5061728394A5B6C7 /* LeoMarkdownView.swift in Sources */,
 				2B3C4D5E6F708192A3B4C5D6 /* TaskCardView.swift in Sources */,
+				6FA4A9AB93D444C8A7E92810 /* ContentPackageRemoteStore.swift in Sources */,
 				7ACBB4B17A0A388D9EAF162A /* KnowledgeCardDataStore.swift in Sources */,
 				7DB42BE7E6A6EB758D3FB0F3 /* SVGAssetView.swift in Sources */,
 			);

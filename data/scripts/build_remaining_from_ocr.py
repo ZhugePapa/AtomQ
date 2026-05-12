@@ -22,7 +22,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CONTENT_ROOT = ROOT / "content_package"
+CONTENT_ROOT = ROOT / "content_package" / "public"
 SUBJECT_ID = "high_itpmp"
 BUILD_TIME = "2026-05-11T00:00:00+08:00"
 SOURCE_ID = "pdf_2026_tricolor_high"
@@ -220,7 +220,6 @@ def make_markdown(title: str, raw: str) -> str:
     overview = lines[0] if lines else title
     bullets = lines[1:8]
     bullet_text = "\n".join(f"- {line}" for line in bullets)
-    key_points = make_key_points(raw)
     body = f"""### 概述
 
 =={title}== 是本章需要掌握的考点之一。{overview}
@@ -228,14 +227,6 @@ def make_markdown(title: str, raw: str) -> str:
 ### 结构化要点
 
 {bullet_text if bullet_text else '- 该考点来自原始 PDF 的 OCR 识别结果，需人工复核后发布。'}
-
-:::key
-{key_points}
-:::
-
-:::warning
-本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。
-:::
 """
     return body
 
@@ -306,12 +297,13 @@ def build_chapter(chapter: dict[str, object]) -> dict[str, object]:
                 "difficulty": infer_difficulty(chunk),
                 "estimated_read_seconds": min(300, max(60, int(len(chunk) / 3.2))),
                 "has_key_content": True,
-                "is_free": card_count <= 3,
+                "is_free": True,
                 "sort_no": card_count,
                 "content_file": f"{stem}.md",
                 "tags": tags_for(title, section_title, chapter_title),
                 "key_points": make_key_points(chunk),
                 "mnemonics": "",
+                "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。",
                 "prerequisite_point_ids": related_prev,
                 "related_point_ids": [],
                 "related_question_ids": [],
@@ -363,8 +355,20 @@ def rebuild_subject_index(extra_chapters: list[dict[str, object]]) -> None:
 
     manifest_path = CONTENT_ROOT / "manifest.json"
     manifest = load_json(manifest_path)
-    manifest["package_id"] = "atomq_high_itpmp_2026_full_ocr_draft"
-    manifest["content_version"] = "2026.05.full-ocr-draft.1"
+    manifest["package_id"] = "atomq_high_itpmp_2026_public_full"
+    manifest["content_version"] = "2026.05.full-ocr-draft.1.public-full"
+    manifest["distribution"] = {
+        "mode": "public_read_full",
+        "origin": "aliyun_oss",
+        "cdn": "aliyun_cdn_after_icp",
+        "file_index": "file_index.json",
+        "app_cache_path": "Documents/cache/cards/content_package/public",
+    }
+    manifest["storage_policy"] = {
+        "static_content": "Aliyun OSS public-read now, Aliyun CDN after ICP approval",
+        "dynamic_user_data": "SQLite locally, Supabase/Postgres for cloud sync",
+        "paid_content": "Not separated in the current package; all static content is public-free.",
+    }
     manifest["chapters"] = [
         {"chapter_id": item["chapter_id"], "title": item["title"], "card_count": item["card_count"], "question_count": item["question_count"]}
         for item in chapters

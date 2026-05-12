@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct AtomQHomeStaticApp: App {
+struct AtomQApp: App {
     @State private var selectedTab: AppTab = .study
     @AppStorage("atomq.darkMode.enabled") private var isDarkMode = false
 

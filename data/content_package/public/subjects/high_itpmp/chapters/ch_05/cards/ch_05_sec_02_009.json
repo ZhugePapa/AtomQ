@@ -1,0 +1,42 @@
+{
+  "point_id": "009",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_02",
+  "title": "在00A方法中",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 93,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 9,
+  "content_file": "ch_05_sec_02_009.md",
+  "tags": [
+    "信息系统工程",
+    "需求分析",
+    "在00A方法中"
+  ],
+  "key_points": "1. 分别是识别参与者、合并需求获得用例、\n2. 细化用例描述和调整用例模型，其中前三个阶段是必须的。\n3. (2)扩展关系：是如果一个用例明显地混合了两种或两种以上的不同场景，",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "008"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

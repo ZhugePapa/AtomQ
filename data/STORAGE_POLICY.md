@@ -4,7 +4,8 @@
 
 当前结论：
 
-- 静态内容资产走阿里 OSS + 阿里 CDN。
+- 公共读免费静态内容只发布 `data/content_package/public/`，当前走阿里 OSS，备案后切阿里 CDN。
+- 完整静态内容源目录 `data/content_package/` 不能直接公共读发布，因为其中可能包含 `is_free = false` 的付费内容。
 - 用户动态数据走 App 本地 SQLite + Supabase Postgres 同步。
 - App Bundle 只内置最小兜底内容。
 - 内容生产资料和构建脚本不发布到线上运行环境。
@@ -13,16 +14,17 @@
 
 | 数据类型 | 主存放位置 | App 内位置 | 是否进 Supabase Postgres | 说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| 静态 JSON 元数据 | 阿里 OSS + 阿里 CDN | `Documents/cache/cards/`，并保留 Bundle 兜底 | 否 | 内容资产，读多写少，适合版本化文件分发 |
-| Markdown 正文 | 阿里 OSS + 阿里 CDN | `Documents/cache/cards/`，并保留 Bundle 兜底 | 否 | 与 JSON 同目录发布，通过 `content_file` 关联 |
-| 题库 JSON | 阿里 OSS + 阿里 CDN | `Documents/cache/cards/`，首章可 Bundle 兜底 | 否 | 题库属于内容资产，不建议每次从数据库查询 |
+| 免费静态 JSON 元数据 | 阿里 OSS 公共读，备案后阿里 CDN | `Documents/cache/cards/content_package/public/`，并保留 Bundle 兜底 | 否 | 只发布 `is_free = true` 的内容 |
+| 免费 Markdown 正文 | 阿里 OSS 公共读，备案后阿里 CDN | `Documents/cache/cards/content_package/public/`，并保留 Bundle 兜底 | 否 | 与 JSON 同目录发布，通过 `content_file` 关联 |
+| 免费题库 JSON | 阿里 OSS 公共读，备案后阿里 CDN | `Documents/cache/cards/content_package/public/`，首章可 Bundle 兜底 | 否 | 只包含免费题目，公共读不放付费题 |
+| 完整静态内容源 | 本地仓库/内容生产环境 | 不直接进入公共读缓存 | 否 | `data/content_package/` 是源目录，不是公共发布目录 |
 | 用户动态数据 | Supabase Postgres | `Documents/data.db` | 是 | 学习记录、错题、掌握度、任务、标熟、收藏、笔记 |
 | UI 轻量偏好 | 本机 | `UserDefaults` | 否 | 如重点显示/隐藏开关，不作为业务同步数据 |
 
 一句话落地：
 
 ```text
-静态内容按文件包走阿里 CDN。
+免费静态内容按 public 文件包走阿里 OSS，备案后换阿里 CDN。
 动态用户行为进入 SQLite + Supabase。
 App 首包只带最小可用兜底内容。
 ```
@@ -31,28 +33,38 @@ App 首包只带最小可用兜底内容。
 
 | 当前路径 | 内容 | 线上归属 | App 内归属 | 说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| `data/content_package/manifest.json` | 内容包版本、章节数量、schema 版本 | 阿里 OSS + CDN | 沙盒缓存，Bundle 可放兜底版 | App 用于版本比对、增量更新 |
-| `data/content_package/subjects/*/subject_index.json` | 科目索引 | 阿里 OSS + CDN | 沙盒缓存 + Bundle 兜底 | 首屏、目录快速加载 |
-| `data/content_package/subjects/*/chapters/*/chapter_meta.json` | 章节与子章节结构 | 阿里 OSS + CDN | 沙盒缓存 + Bundle 兜底 | 章节树、卡片目录 |
-| `data/content_package/subjects/*/chapters/*/cards/*.json` | 知识卡片元数据 | 阿里 OSS + CDN | 沙盒缓存 + Bundle 兜底 | 包含 `point_id`、`section_id`、`tags`、`key_points`、`mnemonics` 等 |
-| `data/content_package/subjects/*/chapters/*/cards/*.md` | 知识卡片正文 | 阿里 OSS + CDN | 沙盒缓存 + Bundle 兜底 | Markdown 正文，不进 Supabase Postgres |
-| `data/content_package/subjects/*/questions/*.json` | 章节题目 | 阿里 OSS + CDN | 沙盒缓存，首章可 Bundle 兜底 | 题干、选项、答案、解析、知识点关联 |
+| `data/content_package/public/manifest.json` | 公开免费内容包版本、章节数量、schema 版本 | 阿里 OSS 公共读，备案后 CDN | 沙盒缓存，Bundle 可放兜底版 | App 用于版本比对、增量更新 |
+| `data/content_package/public/file_index.json` | 公开免费内容文件清单 | 阿里 OSS 公共读，备案后 CDN | 沙盒缓存 | App 按清单下载，不依赖 OSS 目录列表 |
+| `data/content_package/public/subjects/*/subject_index.json` | 公开免费科目索引 | 阿里 OSS 公共读，备案后 CDN | 沙盒缓存 + Bundle 兜底 | 包含全部可发布章节 |
+| `data/content_package/public/subjects/*/chapters/*/chapter_meta.json` | 公开免费章节与子章节结构 | 阿里 OSS 公共读，备案后 CDN | 沙盒缓存 + Bundle 兜底 | 小节 `card_count` 对应全部公开内容 |
+| `data/content_package/public/subjects/*/chapters/*/cards/*.json` | 公开免费知识卡片元数据 | 阿里 OSS 公共读，备案后 CDN | 沙盒缓存 + Bundle 兜底 | 所有卡片均为 `is_free = true` |
+| `data/content_package/public/subjects/*/chapters/*/cards/*.md` | 公开免费知识卡片正文 | 阿里 OSS 公共读，备案后 CDN | 沙盒缓存 + Bundle 兜底 | 所有正文均可公开访问 |
+| `data/content_package/public/subjects/*/questions/*.json` | 公开免费章节题目 | 阿里 OSS 公共读，备案后 CDN | 沙盒缓存，首章可 Bundle 兜底 | 所有题目均为 `is_free = true` |
 | `data/local_store/schema.sql` | 本地动态库 schema | 不直接发布为内容包 | App SQLite 建表依据 | Supabase migration 可参考同类结构 |
 | `data/sources/source_manifest.json` | 内容来源、PDF 路径、抽取说明 | 不发布 | 不打进 App | 包含本机路径和生产说明，仅仓库内部使用 |
-| `data/scripts/*.py` | 内容构建与校验脚本 | 不发布 | 不打进 App | 仅内容生产或 CI 使用 |
+| `data/scripts/*` | 内容构建与校验脚本 | 不发布 | 不打进 App | 仅内容生产或 CI 使用 |
 | `data/.old/` | 历史备份 | 不发布 | 不打进 App | 旧数据和旧脚本，仅参考 |
 
-## 3. CDN 内容包规则
+## 3. 公共读免费内容包规则
 
-`data/content_package/` 是可发布的静态内容包源目录。发布时上传到阿里 OSS，并通过阿里 CDN 分发。
+`data/content_package/public/` 是唯一可发布的公共读免费内容包。完整包已移除，当前所有静态卡片与题目均进入公开免费包。
+
+发布包需要满足：
+
+- 所有知识卡片 JSON 与对应 Markdown 都位于 `data/content_package/public/subjects/` 下。
+- 所有卡片与题目的 `is_free` 均为 `true`。
+- `subject_index.json` 和 `chapter_meta.json` 中的数量对应全部公开内容。
+- `file_index.json` 包含所有发布文件，让 App 不依赖 OSS 目录列表。
+- 正文 `.md` 不包含 `:::key`、`:::tip`、`:::warning`；这些内容应在同名 `.json` 的 `key_points`、`mnemonics`、`warnings` 字段中。
 
 推荐线上路径结构保持与本地一致：
 
 ```text
-content_package/
+content_package/public/
 ├── manifest.json
+├── file_index.json
 └── subjects/
-    └── subj_high_level/
+    └── high_itpmp/
         ├── subject_index.json
         ├── chapters/
         │   └── ch_01/
@@ -67,10 +79,19 @@ content_package/
 发布规则：
 
 - `manifest.json` 必须包含 `content_version`、`generated_at`、`schema_version`。
+- 公共读 OSS 只能上传 `content_package/public/`，不能上传完整 `content_package/`。
+- `file_index.json` 必须与线上文件保持一致。
 - App 启动或进入内容页时，先比对 `manifest.json`。
 - 新版本内容按文件增量下载到沙盒缓存。
 - 静态 JSON / MD / question 文件不写入 Supabase Postgres。
 - 如未来需要后台 CMS 检索，可以另建服务端索引，但客户端仍以 CDN 文件包为主。
+
+当前 OSS 直连阶段：
+
+- OSS Bucket 可配置公共读，只用于免费内容。
+- App 配置 `ATOMQ_PUBLIC_CONTENT_BASE_URL` 为 OSS 上 `content_package/public/` 的 HTTPS 根地址。
+- 不在 App 内放阿里云 AccessKey、Secret、STS Token。
+- 备案通过接入 CDN 后，只需要把 `ATOMQ_PUBLIC_CONTENT_BASE_URL` 换成 CDN 域名，目录结构不变。
 
 ## 4. App 内存放规则
 
@@ -85,15 +106,15 @@ App Bundle
 
 App 沙盒
 └── Documents/
-    ├── cache/cards/       # CDN 下载的静态内容缓存
-    └── data.db            # 用户动态数据 SQLite
+    ├── cache/cards/content_package/public/  # OSS/CDN 下载的免费静态内容缓存
+    └── data.db                              # 用户动态数据 SQLite
 ```
 
 读取优先级：
 
-1. `Documents/cache/cards/`
+1. `Documents/cache/cards/content_package/public/`
 2. `Bundle/Resources/default_cards/`
-3. 阿里 CDN 下载后写入 `Documents/cache/cards/`
+3. 阿里 OSS/CDN 下载后写入 `Documents/cache/cards/content_package/public/`
 
 动态数据写入规则：
 
@@ -138,6 +159,7 @@ Supabase 同步原则：
 
 以下内容不得上传到 CDN，不得打进 App，也不应进入 Supabase：
 
+- `data/content_package/` 中的 `is_free = false` 内容
 - `data/.old/`
 - `data/scripts/`
 - `data/scripts/__pycache__/`
@@ -148,13 +170,15 @@ Supabase 同步原则：
 
 ## 7. 发布检查清单
 
-发布静态内容前检查：
+公共读免费静态内容发布检查：
 
 - `manifest.json` 的 `content_version` 已更新。
 - `schema_version` 与客户端解析模型兼容。
+- OSS 公共读目录上传的是 `data/content_package/public/`。
+- `file_index.json` 已上传，并且包含所有公开文件。
+- 公共读目录中不存在 `is_free = false` 的 JSON。
 - 所有 `content_file` 都能在同目录找到对应 `.md` 文件。
 - 所有 `related_question_ids` 和 `knowledge_point_ids` 可解析。
-- `data/scripts/validate_content.py` 校验通过。
 - 不包含 `sources/`、`scripts/`、`.old/`、`__pycache__/`。
 
 上线 Supabase 前检查：
@@ -168,9 +192,10 @@ Supabase 同步原则：
 ## 8. 推荐最终架构
 
 ```text
-阿里 OSS + 阿里 CDN
-└── content_package/
+阿里 OSS 公共读，备案后阿里 CDN
+└── content_package/public/
     ├── manifest.json
+    ├── file_index.json
     ├── subject_index.json
     ├── chapter_meta.json
     ├── cards/*.json
@@ -178,19 +203,20 @@ Supabase 同步原则：
     └── questions/*.json
 
 iOS App
-├── Bundle default_cards/       # 最小兜底内容
-├── Documents/cache/cards/      # 静态内容缓存
-├── Documents/data.db           # 动态数据 SQLite
-└── UserDefaults                # 轻量 UI 偏好
+├── Bundle default_cards/                         # 最小兜底内容
+├── Documents/cache/cards/content_package/public/ # 免费静态内容缓存
+├── Documents/data.db                             # 动态数据 SQLite
+└── UserDefaults                                  # 轻量 UI 偏好
 
 Supabase
-└── Postgres                    # 用户动态数据云同步
+└── Postgres                                      # 用户动态数据云同步
 ```
 
 核心判断标准：
 
 ```text
-会随内容版本变化、对所有用户基本一致的数据 -> CDN。
+会随内容版本变化、对所有用户基本一致的数据 -> content_package/public -> OSS/CDN。
 会随用户行为变化、需要跨设备恢复的数据 -> SQLite + Supabase。
 首启无网络也必须可用的最小内容 -> App Bundle。
+公共读阶段只发布免费内容 -> content_package/public。
 ```

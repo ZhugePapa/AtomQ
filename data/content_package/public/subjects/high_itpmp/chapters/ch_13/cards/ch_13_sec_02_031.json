@@ -1,0 +1,42 @@
+{
+  "point_id": "031",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_02",
+  "title": "认可与奖励",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 123,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 31,
+  "content_file": "ch_13_sec_02_031.md",
+  "tags": [
+    "资源管理",
+    "管理过程",
+    "认可与奖励"
+  ],
+  "key_points": "1. 最初的奖励计划是在规划资源管理过程中编制的，只有能满足被奖励者的某个重要需求的奖励，才\n2. 是有效的奖励。\n3. 金钱是奖励制度中的有形奖励，然而也存在各种同样有效，甚至更加有效的无形奖励。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "030"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

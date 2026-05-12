@@ -1,0 +1,42 @@
+{
+  "point_id": "039",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_14",
+  "title": "可以帮助协调连接各种应用的组件有",
+  "card_type": "definition",
+  "difficulty": 1,
+  "estimated_read_seconds": 65,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 39,
+  "content_file": "ch_05_sec_14_039.md",
+  "tags": [
+    "信息系统工程",
+    "应用集成",
+    "可以帮助协调连接各种应用的组件有"
+  ],
+  "key_points": "1. (1)应用编程接口(API)：API 是定义不同软件交互方式的程序和规则，可以支持应用之间相互通信。API",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "038"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

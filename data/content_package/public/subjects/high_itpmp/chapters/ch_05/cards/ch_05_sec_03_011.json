@@ -1,0 +1,42 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_03",
+  "title": "结构化设计SD是一种面向数据流的方法",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 83,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 11,
+  "content_file": "ch_05_sec_03_011.md",
+  "tags": [
+    "信息系统工程",
+    "软件设计",
+    "结构化设计SD是一种面向数据流的"
+  ],
+  "key_points": "1. 1、结构化设计 SD是一种面向数据流的方法，它以SRS 和SA 阶段所产生的DPD 和数据字典等文档为\n2. 基础，是一个自顶向下、逐步求精和模块化的过程。SD 方法的基本思想是将软件设计成由相对独立且具有\n3. 单一功能的模块组成的结构，分为概要设计和详细设计两个阶段；",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "010"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

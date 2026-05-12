@@ -1,0 +1,42 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_01",
+  "title": "配置项的版本号",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 141,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "content_file": "ch_19_sec_01_003.md",
+  "tags": [
+    "配置与变更管理",
+    "配置管理",
+    "配置项的版本号"
+  ],
+  "key_points": "1. 7、配置项的版本管理作用于多个配置管理活动之中，如配置标识、配置控制和配置审计、发布和交付等。\n2. 版本管理的目的是按照一定的规则保存配置项的所有版本，避免发生版本丢失或混淆等现象，并且可以快速",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "002"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

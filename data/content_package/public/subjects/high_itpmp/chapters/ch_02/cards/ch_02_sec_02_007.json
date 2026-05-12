@@ -1,0 +1,42 @@
+{
+  "point_id": "007",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_02",
+  "title": "数据存储是类似于文件系统的逻辑容器",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 90,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 7,
+  "content_file": "ch_02_sec_02_007.md",
+  "tags": [
+    "信息技术发展",
+    "存储和数据库",
+    "数据存储是类似于文件系统的逻辑容"
+  ],
+  "key_points": "1. 2.数据存储是类似于文件系统的逻辑容器。它隐藏每个存储设备的特性，形成一个\n2. 3.绿色存储技术是指从节能环保的角度出发，用来设计生产能效更佳的存储产品降低\n3. 数据存储设备的功耗，提高存储设备每瓦性能的技术。绿色存储技术的核心是设计运",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "006"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

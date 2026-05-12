@@ -1,0 +1,42 @@
+{
+  "point_id": "010",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_02",
+  "title": "类之间关系有关联依赖泛化聚合组合和实现",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 206,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 10,
+  "content_file": "ch_05_sec_02_010.md",
+  "tags": [
+    "信息系统工程",
+    "需求分析",
+    "类之间关系有关联依赖泛化聚合组合"
+  ],
+  "key_points": "1. 提供了不同类的对象之间的结构关系，它在一段时间内将多个类的实例连接在一起。现的是\n2. 描述了一般事物与该事物中的特种类之间的关系，也就是父类与子类之间的关系。继承\n3. 关系是泛化关系的反关系，子类继承了父类，而父类则是子类的泛化",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "009"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

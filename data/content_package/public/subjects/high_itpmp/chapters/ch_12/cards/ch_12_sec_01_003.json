@@ -1,0 +1,42 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "质量方针与质量目标",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 101,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "content_file": "ch_12_sec_01_003.md",
+  "tags": [
+    "质量管理",
+    "管理基础",
+    "质量方针与质量目标"
+  ],
+  "key_points": "1. 质量方针是指\"由组织的最高管理者正式发布的该组织总的质量宗旨和方向\"。是总方针的一个组成\n2. 质量目标是指\"在质量方面所追求的目的\"，应分解落实到各部门及项目的全体成员，以便于实施、检\n3. (1)通常，代价最大的方法是让客户发现缺陷。这种方法可能会导致召回、商誉受损和返工成本。",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "002"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

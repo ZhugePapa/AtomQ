@@ -1,0 +1,42 @@
+{
+  "point_id": "054",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_15",
+  "title": "智能制造成熟度",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 192,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 54,
+  "content_file": "ch_05_sec_15_054.md",
+  "tags": [
+    "信息系统工程",
+    "安全工程",
+    "智能制造成熟度"
+  ],
+  "key_points": "1. 企业应开始对实施智能制造的基础和条件进行规划，能够对核心业务活动(设计、\n2. 企业应采用自动化技术、信息技术手段对核心装备和业务活动等进行改造和规\n3. 企业应对人员、资源、制造等进行数据挖掘，形成知识、模型等，实现对核心业",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "053"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

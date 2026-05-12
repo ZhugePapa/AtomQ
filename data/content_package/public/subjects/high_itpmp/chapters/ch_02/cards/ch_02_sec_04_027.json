@@ -1,0 +1,42 @@
+{
+  "point_id": "027",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_04",
+  "title": "虚拟现实",
+  "card_type": "definition",
+  "difficulty": 3,
+  "estimated_read_seconds": 147,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 27,
+  "content_file": "ch_02_sec_04_027.md",
+  "tags": [
+    "信息技术发展",
+    "新一代信息技术及应用",
+    "虚拟现实"
+  ],
+  "key_points": "1. 虚拟现实(VR)是一种可以创立和体验虚拟世界的计算机系统(其中虚拟世界是全体虚拟\n2. 主要\n3. 虚拟现实技术的主要特征包括沉浸性、交互性、多感知性、构想性(也称想象性)和自主",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "026"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "OCR自动定位待复核"
+    }
+  ],
+  "author": "Codex OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2,
+  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+}

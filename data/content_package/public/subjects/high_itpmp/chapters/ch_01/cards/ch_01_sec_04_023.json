@@ -1,0 +1,47 @@
+{
+  "point_id": "023",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_04",
+  "title": "数字政府",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 150,
+  "has_key_content": false,
+  "is_free": true,
+  "sort_no": 23,
+  "content_file": "ch_01_sec_04_023.md",
+  "tags": [
+    "数字政府",
+    "政务服务",
+    "治理能力"
+  ],
+  "key_points": "数字政府强调以数字技术推进政府治理流程再造、模式优化和履职能力提升。\n\n数字政府不是简单“政务上网”，核心是治理流程、治理模式和治理能力的数字化转型。",
+  "mnemonics": "服务协同，治理增效。",
+  "prerequisite_point_ids": [
+    "020"
+  ],
+  "related_point_ids": [
+    "024"
+  ],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "第7页"
+    },
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "第8页"
+    }
+  ],
+  "author": "Codex 内容整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-11T00:00:00+08:00",
+  "updated_at": "2026-05-11T00:00:00+08:00",
+  "version": 1,
+  "schema_version": 2
+}
