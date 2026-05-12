@@ -6,38 +6,28 @@
   "title": "信息的定义",
   "card_type": "definition",
   "difficulty": 1,
-  "estimated_read_seconds": 90,
+  "estimated_read_seconds": 75,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 1,
   "content_file": "ch_01_sec_01_001.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.md",
   "tags": [
     "信息",
     "确定性",
-    "物质",
-    "能量"
+    "属性标示"
   ],
-  "key_points": "信息是物质、能量及其属性的标示集合；学习时抓住“确定性的增加”。\n\n信息 = 属性标示 + 确定性增加。",
-  "mnemonics": "信息不是物质能量本身，而是让不确定变确定。",
   "prerequisite_point_ids": [],
-  "related_point_ids": [
-    "002",
-    "003"
-  ],
+  "related_point_ids": [],
   "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
+  "key_points": "1. 信息 = **物质、能量及其属性的标示的集合**。\n2. 信息的作用是**增加确定性 / 消除不确定性**。\n3. 信息不是物质本身，也不是能量本身。",
+  "mnemonics": "信息不是物和能，信息标示它们的**属性**；知道更多，不确定就更少。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "source_refs": [
     {
-      "source_id": "pdf_2026_tricolor_high",
-      "page_label": "第1页"
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第2页"
     }
-  ],
-  "author": "Codex 内容整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2
+  ]
 }

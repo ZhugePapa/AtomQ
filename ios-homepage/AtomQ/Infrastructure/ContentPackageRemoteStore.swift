@@ -6,24 +6,32 @@ enum ContentPackageRemoteStore {
             throw RemoteStoreError.missingCacheRoot
         }
 
+        var errors: [Error] = []
+
         if let signURL = ContentPackageConfig.ossSignURL {
-            try await SignedURLContentDownloader(
-                signURL: signURL,
-                objectPrefix: ContentPackageConfig.ossObjectPrefix,
-                cacheRoot: cacheRoot
-            ).refreshIfNeeded()
-            return
+            do {
+                try await SignedURLContentDownloader(
+                    signURL: signURL,
+                    objectPrefix: ContentPackageConfig.ossObjectPrefix,
+                    cacheRoot: cacheRoot
+                ).refreshIfNeeded()
+                return
+            } catch {
+                errors.append(error)
+            }
         }
 
         guard let rawBaseURL = ContentPackageConfig.publicContentBaseURLRaw else {
-            throw RemoteStoreError.missingBaseURL
+            if errors.isEmpty {
+                throw RemoteStoreError.missingBaseURL
+            }
+            throw RemoteStoreError.allCandidatesFailed(candidates: [], errors: errors)
         }
         let candidates = ContentPackageConfig.candidateBaseURLs(from: rawBaseURL)
         guard !candidates.isEmpty else {
             throw RemoteStoreError.invalidBaseURL(rawBaseURL)
         }
 
-        var errors: [Error] = []
         for candidate in candidates {
             do {
                 try await PublicContentDownloader(baseURL: candidate, cacheRoot: cacheRoot).refreshIfNeeded()
@@ -132,18 +140,19 @@ private struct PublicContentDownloader {
     func refreshIfNeeded() async throws {
         let remoteManifestData = try await fetch(relativePath: "manifest.json")
         let remoteManifest = try JSONDecoder().decode(ContentManifest.self, from: remoteManifestData)
+        let fileIndexPath = remoteManifest.distribution?.fileIndex ?? "file_index.json"
 
         if let localManifest = try? loadLocalManifest(),
            localManifest.contentVersion == remoteManifest.contentVersion,
-           FileManager.default.fileExists(atPath: cacheRoot.appendingPathComponent("file_index.json").path) {
+           isLocalCacheComplete(fileIndexRelativePath: fileIndexPath) {
             return
         }
 
-        let fileIndexData = try await fetch(relativePath: remoteManifest.distribution?.fileIndex ?? "file_index.json")
+        let fileIndexData = try await fetch(relativePath: fileIndexPath)
         let fileIndex = try JSONDecoder().decode(ContentFileIndex.self, from: fileIndexData)
 
         try write(remoteManifestData, to: "manifest.json")
-        try write(fileIndexData, to: "file_index.json")
+        try write(fileIndexData, to: fileIndexPath)
 
         for file in fileIndex.files where file.path != "manifest.json" && file.path != "file_index.json" {
             let data = try await fetch(relativePath: file.path)
@@ -183,6 +192,23 @@ private struct PublicContentDownloader {
         return try JSONDecoder().decode(ContentManifest.self, from: data)
     }
 
+    private func isLocalCacheComplete(fileIndexRelativePath: String) -> Bool {
+        guard isSafeRelativePath(fileIndexRelativePath) else { return false }
+        let fileIndexURL = cacheRoot.appendingPathComponent(fileIndexRelativePath)
+        guard let data = try? Data(contentsOf: fileIndexURL),
+              let localFileIndex = try? JSONDecoder().decode(ContentFileIndex.self, from: data)
+        else { return false }
+
+        for file in localFileIndex.files {
+            guard isSafeRelativePath(file.path) else { return false }
+            let fileURL = cacheRoot.appendingPathComponent(file.path)
+            if !FileManager.default.fileExists(atPath: fileURL.path) {
+                return false
+            }
+        }
+        return true
+    }
+
     private func isSafeRelativePath(_ value: String) -> Bool {
         !value.isEmpty && !value.hasPrefix("/") && !value.split(separator: "/").contains("..")
     }
@@ -196,18 +222,19 @@ private struct SignedURLContentDownloader {
     func refreshIfNeeded() async throws {
         let remoteManifestData = try await fetch(relativePath: "manifest.json")
         let remoteManifest = try JSONDecoder().decode(ContentManifest.self, from: remoteManifestData)
+        let fileIndexPath = remoteManifest.distribution?.fileIndex ?? "file_index.json"
 
         if let localManifest = try? loadLocalManifest(),
            localManifest.contentVersion == remoteManifest.contentVersion,
-           FileManager.default.fileExists(atPath: cacheRoot.appendingPathComponent("file_index.json").path) {
+           isLocalCacheComplete(fileIndexRelativePath: fileIndexPath) {
             return
         }
 
-        let fileIndexData = try await fetch(relativePath: remoteManifest.distribution?.fileIndex ?? "file_index.json")
+        let fileIndexData = try await fetch(relativePath: fileIndexPath)
         let fileIndex = try JSONDecoder().decode(ContentFileIndex.self, from: fileIndexData)
 
         try write(remoteManifestData, to: "manifest.json")
-        try write(fileIndexData, to: "file_index.json")
+        try write(fileIndexData, to: fileIndexPath)
 
         for file in fileIndex.files where file.path != "manifest.json" && file.path != "file_index.json" {
             let data = try await fetch(relativePath: file.path)
@@ -261,6 +288,23 @@ private struct SignedURLContentDownloader {
     private func loadLocalManifest() throws -> ContentManifest {
         let data = try Data(contentsOf: cacheRoot.appendingPathComponent("manifest.json"))
         return try JSONDecoder().decode(ContentManifest.self, from: data)
+    }
+
+    private func isLocalCacheComplete(fileIndexRelativePath: String) -> Bool {
+        guard isSafeRelativePath(fileIndexRelativePath) else { return false }
+        let fileIndexURL = cacheRoot.appendingPathComponent(fileIndexRelativePath)
+        guard let data = try? Data(contentsOf: fileIndexURL),
+              let localFileIndex = try? JSONDecoder().decode(ContentFileIndex.self, from: data)
+        else { return false }
+
+        for file in localFileIndex.files {
+            guard isSafeRelativePath(file.path) else { return false }
+            let fileURL = cacheRoot.appendingPathComponent(file.path)
+            if !FileManager.default.fileExists(atPath: fileURL.path) {
+                return false
+            }
+        }
+        return true
     }
 
     private func isSafeRelativePath(_ value: String) -> Bool {

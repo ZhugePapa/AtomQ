@@ -1,0 +1,34 @@
+{
+  "point_id": "014",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "十四五国家信息化规划",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 75,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 14,
+  "content_file": "ch_01_sec_01_014.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_014.md",
+  "tags": [
+    "十四五",
+    "国家信息化规划",
+    "数字社会",
+    "数字政府"
+  ],
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "key_points": "1. 十四五信息化规划覆盖基础设施、数据要素、数字产业、产业数字化。\n2. 同时覆盖数字政府、数字民生、数字治理和国际合作。\n3. 记框架比逐字硬背更有效。",
+  "mnemonics": "基数产政民，治理加国际。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第3页"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import Foundation
 
 struct KnowledgeCardStudyContent {
+    let pointID: String
     let chapterID: String
     let sectionID: String
     let headerTitle: String
@@ -26,17 +27,35 @@ struct KnowledgeDirectorySection: Identifiable, Equatable {
 enum KnowledgeCardDataStore {
     static func loadStudyContent(
         chapterID: String = "ch_01",
-        sectionID: String = "sec_01_01"
+        sectionID: String = "sec_01"
     ) throws -> KnowledgeCardStudyContent {
-        try loadFromDataSources(chapterID: chapterID, sectionID: sectionID)
+        guard let first = try loadSectionCards(chapterID: chapterID, sectionID: sectionID).first else {
+            throw DataStoreError.notFound(diagnostics: makeRootDiagnostics())
+        }
+        return first
     }
 
     static func refreshFreeContentAndLoadStudyContent(
         chapterID: String = "ch_01",
-        sectionID: String = "sec_01_01"
+        sectionID: String = "sec_01"
     ) async throws -> KnowledgeCardStudyContent {
         try await ContentPackageRemoteStore.refreshFreeContentRequired()
         return try loadStudyContent(chapterID: chapterID, sectionID: sectionID)
+    }
+
+    static func loadSectionCards(
+        chapterID: String = "ch_01",
+        sectionID: String = "sec_01"
+    ) throws -> [KnowledgeCardStudyContent] {
+        try loadSectionCardsFromDataSources(chapterID: chapterID, sectionID: sectionID)
+    }
+
+    static func refreshFreeContentAndLoadSectionCards(
+        chapterID: String = "ch_01",
+        sectionID: String = "sec_01"
+    ) async throws -> [KnowledgeCardStudyContent] {
+        try await ContentPackageRemoteStore.refreshFreeContentRequired()
+        return try loadSectionCards(chapterID: chapterID, sectionID: sectionID)
     }
 
     static func loadDirectoryTree() throws -> [KnowledgeDirectoryChapter] {
@@ -48,10 +67,10 @@ enum KnowledgeCardDataStore {
         return try loadDirectoryTree()
     }
 
-    private static func loadFromDataSources(
+    private static func loadSectionCardsFromDataSources(
         chapterID: String,
         sectionID: String
-    ) throws -> KnowledgeCardStudyContent {
+    ) throws -> [KnowledgeCardStudyContent] {
         for root in candidateRootDirectories() {
             for chapterPath in chapterPathCandidates(chapterID: chapterID) {
                 let chapterDir = root.appendingPathComponent(chapterPath, isDirectory: true)
@@ -66,36 +85,41 @@ enum KnowledgeCardDataStore {
                         return try JSONDecoder().decode(KnowledgePointMeta.self, from: data)
                     }
 
-                guard let targetCard = cards
+                let sectionCards = cards
                     .filter({ $0.sectionID == sectionID })
                     .sorted(by: { $0.sortNo < $1.sortNo })
-                    .first ?? cards.sorted(by: { $0.sortNo < $1.sortNo }).first
-                else {
+                guard !sectionCards.isEmpty else {
                     continue
                 }
 
-                let markdownURL = cardsDir.appendingPathComponent(targetCard.contentFile)
-                guard let markdown = try? String(contentsOf: markdownURL, encoding: .utf8) else { continue }
-
                 let chapterMetaURL = chapterDir.appendingPathComponent("chapter_meta.json")
                 let chapterMeta = try? decodeChapterMeta(at: chapterMetaURL)
-                let section = chapterMeta?.sections.first(where: { $0.sectionID == targetCard.sectionID })
-                let headerTitle = makeHeaderTitle(chapterMeta: chapterMeta, section: section)
-                let chipTitle = "知识卡片 \(targetCard.sortNo)"
+                let contents: [KnowledgeCardStudyContent] = sectionCards.compactMap { card in
+                    let markdownURL = cardsDir.appendingPathComponent(card.contentFile)
+                    guard let markdown = try? String(contentsOf: markdownURL, encoding: .utf8) else { return nil }
+                    let section = chapterMeta?.sections.first(where: { $0.sectionID == card.sectionID })
+                    let headerTitle = makeHeaderTitle(chapterMeta: chapterMeta, section: section)
+                    let chipTitle = "知识卡片 \(card.sortNo)"
 
-                return KnowledgeCardStudyContent(
-                    chapterID: chapterID,
-                    sectionID: targetCard.sectionID,
-                    headerTitle: headerTitle,
-                    knowledgeMarkdown: markdown,
-                    keyPointsMarkdown: normalizedText(targetCard.keyPoints),
-                    mnemonicsMarkdown: normalizedText(targetCard.mnemonics),
-                    chipTitle: chipTitle
-                )
+                    return KnowledgeCardStudyContent(
+                        pointID: card.pointID,
+                        chapterID: chapterID,
+                        sectionID: card.sectionID,
+                        headerTitle: headerTitle,
+                        knowledgeMarkdown: markdown,
+                        keyPointsMarkdown: normalizedText(card.keyPoints),
+                        mnemonicsMarkdown: normalizedText(card.mnemonics),
+                        chipTitle: chipTitle
+                    )
+                }
+
+                if !contents.isEmpty {
+                    return contents
+                }
             }
         }
 
-        throw DataStoreError.notFound
+        throw DataStoreError.notFound(diagnostics: makeRootDiagnostics())
     }
 
     private static func makeHeaderTitle(
@@ -152,7 +176,7 @@ enum KnowledgeCardDataStore {
             }
         }
 
-        throw DataStoreError.notFound
+        throw DataStoreError.notFound(diagnostics: makeRootDiagnostics())
     }
 
     private static func loadChapterMeta(root: URL, chapterID: String) -> ChapterMeta? {
@@ -212,8 +236,30 @@ enum KnowledgeCardDataStore {
         return value.isEmpty ? nil : value
     }
 
-    private enum DataStoreError: Error {
-        case notFound
+    private static func makeRootDiagnostics() -> String {
+        let roots = candidateRootDirectories()
+        if roots.isEmpty {
+            return "no document directory"
+        }
+        return roots.map { root in
+            let exists = FileManager.default.fileExists(atPath: root.path)
+            let subjectIndex = root.appendingPathComponent("subject_index.json")
+            let hasSubjectIndex = FileManager.default.fileExists(atPath: subjectIndex.path)
+            return "[\(exists ? "exists" : "missing")] \(root.path) | subject_index.json: \(hasSubjectIndex ? "yes" : "no")"
+        }.joined(separator: "\n")
+    }
+
+    enum DataStoreError: Error {
+        case notFound(diagnostics: String)
+    }
+}
+
+extension KnowledgeCardDataStore.DataStoreError: LocalizedError {
+    var errorDescription: String? {
+        switch self {
+        case .notFound(let diagnostics):
+            return "未找到可用的知识卡数据目录。\n\(diagnostics)"
+        }
     }
 }
 
@@ -230,8 +276,57 @@ private struct KnowledgePointMeta: Decodable {
         case sectionID = "section_id"
         case sortNo = "sort_no"
         case contentFile = "content_file"
+        case contentMDPath = "content_md_path"
         case keyPoints = "key_points"
         case mnemonics
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        pointID = try container.decode(String.self, forKey: .pointID)
+        sectionID = try container.decode(String.self, forKey: .sectionID)
+        sortNo = try container.decode(Int.self, forKey: .sortNo)
+
+        if let directFile = try container.decodeIfPresent(String.self, forKey: .contentFile),
+           !directFile.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            contentFile = directFile
+        } else if let mdPath = try container.decodeIfPresent(String.self, forKey: .contentMDPath) {
+            let fallback = URL(fileURLWithPath: mdPath).lastPathComponent
+            guard !fallback.isEmpty else {
+                throw DecodingError.dataCorruptedError(
+                    forKey: .contentFile,
+                    in: container,
+                    debugDescription: "missing content_file/content_md_path"
+                )
+            }
+            contentFile = fallback
+        } else {
+            throw DecodingError.dataCorruptedError(
+                forKey: .contentFile,
+                in: container,
+                debugDescription: "missing content_file/content_md_path"
+            )
+        }
+
+        keyPoints = try Self.decodeFlexibleText(forKey: .keyPoints, in: container)
+        mnemonics = try Self.decodeFlexibleText(forKey: .mnemonics, in: container)
+    }
+
+    private static func decodeFlexibleText(
+        forKey key: CodingKeys,
+        in container: KeyedDecodingContainer<CodingKeys>
+    ) throws -> String? {
+        if let scalar = try container.decodeIfPresent(String.self, forKey: key) {
+            return scalar
+        }
+        if let list = try container.decodeIfPresent([String].self, forKey: key) {
+            let merged = list
+                .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+                .filter { !$0.isEmpty }
+                .joined(separator: "\n")
+            return merged.isEmpty ? nil : merged
+        }
+        return nil
     }
 }
 

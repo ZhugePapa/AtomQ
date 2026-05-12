@@ -5,25 +5,41 @@ struct KnowledgeCardStudyView: View {
 
     var onBack: (() -> Void)? = nil
     @State private var pageData = KnowledgeCardStudyContent(
+        pointID: "demo",
         chapterID: "ch_01",
-        sectionID: "sec_01_01",
+        sectionID: "sec_01",
         headerTitle: "1.1 信息与信息化",
         knowledgeMarkdown: "",
         keyPointsMarkdown: nil,
         mnemonicsMarkdown: nil,
         chipTitle: "知识卡片"
     )
+    @State private var sectionCards: [KnowledgeCardStudyContent] = []
+    @State private var currentCardIndex: Int = 0
     @State private var directoryChapters: [KnowledgeDirectoryChapter] = []
     @State private var selectedChapterID: String = "ch_01"
-    @State private var selectedSectionID: String = "sec_01_01"
+    @State private var selectedSectionID: String = "sec_01"
     @State private var expandedChapterID: String?
     @State private var isDirectorySheetPresented = false
     @State private var isDirectoryPanelPresented = false
     @State private var loadErrorMessage: String?
     @State private var focusHighlightVisible = true
+    @State private var isCurrentCardMastered = false
     @State private var topBarCollapseProgress: CGFloat = 0
     @State private var edgeSwipeBackTriggered = false
     private let topBarHeight: CGFloat = 56
+
+    private enum CardSelectionAnchor {
+        case first
+        case firstUnmastered
+        case last
+    }
+
+    enum KnowledgeBarState {
+        case active
+        case completed
+        case pending
+    }
     
     private var resolvedBackAction: () -> Void {
         if let onBack {
@@ -55,10 +71,8 @@ struct KnowledgeCardStudyView: View {
     }
 
     private func closeDirectoryAndLoad(chapter: KnowledgeDirectoryChapter, section: KnowledgeDirectorySection) {
-        selectedChapterID = chapter.id
-        selectedSectionID = section.id
         do {
-            pageData = try KnowledgeCardDataStore.loadStudyContent(chapterID: chapter.id, sectionID: section.id)
+            try loadSectionCards(chapterID: chapter.id, sectionID: section.id, anchor: .firstUnmastered)
         } catch {
             loadErrorMessage = error.localizedDescription
         }
@@ -72,13 +86,152 @@ struct KnowledgeCardStudyView: View {
         }
     }
 
+    private func loadSectionCards(
+        chapterID: String,
+        sectionID: String,
+        anchor: CardSelectionAnchor
+    ) throws {
+        let cards = try KnowledgeCardDataStore.loadSectionCards(chapterID: chapterID, sectionID: sectionID)
+        guard !cards.isEmpty else {
+            throw NSError(domain: "KnowledgeCardStudyView", code: 404, userInfo: [NSLocalizedDescriptionKey: "section has no cards"])
+        }
+        sectionCards = cards
+        selectedChapterID = chapterID
+        selectedSectionID = sectionID
+
+        switch anchor {
+        case .first:
+            currentCardIndex = 0
+        case .last:
+            currentCardIndex = cards.count - 1
+        case .firstUnmastered:
+            if let idx = cards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) {
+                currentCardIndex = idx
+            } else {
+                currentCardIndex = 0
+            }
+        }
+        syncCurrentCardFromIndex()
+    }
+
+    private func syncCurrentCardFromIndex() {
+        guard !sectionCards.isEmpty else { return }
+        currentCardIndex = max(0, min(currentCardIndex, sectionCards.count - 1))
+        pageData = sectionCards[currentCardIndex]
+        syncMasteredStateForCurrentCard()
+    }
+
+    private var knowledgeBarStates: [KnowledgeBarState] {
+        guard !sectionCards.isEmpty else { return [.pending] }
+        return sectionCards.enumerated().map { idx, card in
+            if idx == currentCardIndex { return .active }
+            if GuestUserLocalStore.isPointMastered(card.pointID) { return .completed }
+            return .pending
+        }
+    }
+
+    private func orderedSections() -> [(chapter: KnowledgeDirectoryChapter, section: KnowledgeDirectorySection)] {
+        directoryChapters
+            .sorted(by: { $0.sortNo < $1.sortNo })
+            .flatMap { chapter in
+                chapter.sections
+                    .sorted(by: { $0.sortNo < $1.sortNo })
+                    .map { (chapter: chapter, section: $0) }
+            }
+    }
+
+    private func currentSectionPosition() -> Int? {
+        orderedSections().firstIndex {
+            $0.chapter.id == selectedChapterID && $0.section.id == selectedSectionID
+        }
+    }
+
+    private func navigateToAdjacentSection(offset: Int, anchor: CardSelectionAnchor) {
+        let sections = orderedSections()
+        guard let index = currentSectionPosition() else { return }
+        let nextIndex = index + offset
+        guard sections.indices.contains(nextIndex) else { return }
+        let target = sections[nextIndex]
+        do {
+            try loadSectionCards(chapterID: target.chapter.id, sectionID: target.section.id, anchor: anchor)
+        } catch {
+            loadErrorMessage = error.localizedDescription
+        }
+    }
+
+    private func goForwardCard() {
+        guard !sectionCards.isEmpty else { return }
+        if currentCardIndex + 1 < sectionCards.count {
+            currentCardIndex += 1
+            syncCurrentCardFromIndex()
+        } else {
+            navigateToAdjacentSection(offset: 1, anchor: .first)
+        }
+    }
+
+    private func goBackwardCard() {
+        guard !sectionCards.isEmpty else { return }
+        if currentCardIndex > 0 {
+            currentCardIndex -= 1
+            syncCurrentCardFromIndex()
+        } else {
+            navigateToAdjacentSection(offset: -1, anchor: .last)
+        }
+    }
+
+    private func goToNextUnmasteredCard() {
+        guard !sectionCards.isEmpty else { return }
+
+        if currentCardIndex + 1 < sectionCards.count {
+            if let localIndex = sectionCards[(currentCardIndex + 1)...].firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) {
+                currentCardIndex = localIndex
+                syncCurrentCardFromIndex()
+                return
+            }
+        }
+
+        let sections = orderedSections()
+        guard let sectionPos = currentSectionPosition() else { return }
+        guard sectionPos + 1 < sections.count else { return }
+
+        for idx in (sectionPos + 1)..<sections.count {
+            let target = sections[idx]
+            do {
+                let cards = try KnowledgeCardDataStore.loadSectionCards(chapterID: target.chapter.id, sectionID: target.section.id)
+                if let nextUnmastered = cards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) {
+                    sectionCards = cards
+                    selectedChapterID = target.chapter.id
+                    selectedSectionID = target.section.id
+                    currentCardIndex = nextUnmastered
+                    syncCurrentCardFromIndex()
+                    return
+                }
+            } catch {
+                continue
+            }
+        }
+    }
+
+    private func syncMasteredStateForCurrentCard() {
+        isCurrentCardMastered = GuestUserLocalStore.isPointMastered(pageData.pointID)
+    }
+
+    private func toggleCurrentCardMastered() {
+        let nextValue = !isCurrentCardMastered
+        GuestUserLocalStore.setPointMastered(pageData.pointID, mastered: nextValue)
+        isCurrentCardMastered = nextValue
+        if nextValue {
+            goToNextUnmasteredCard()
+        }
+    }
+
     var body: some View {
         ZStack {
             Token.bgCanvas
                 .ignoresSafeArea()
 
             VStack(spacing: 0) {
-                ProgressHeaderView()
+                ProgressHeaderView(states: knowledgeBarStates)
                     .padding(.horizontal, 20)
                     .padding(.top, 8)
                     .padding(.bottom, 8)
@@ -168,6 +321,19 @@ struct KnowledgeCardStudyView: View {
                                 topBarCollapseProgress = progress
                             }
                         }
+                        .simultaneousGesture(
+                            DragGesture(minimumDistance: 20)
+                                .onEnded { value in
+                                    let horizontal = value.translation.width
+                                    let vertical = value.translation.height
+                                    guard abs(horizontal) > abs(vertical) else { return }
+                                    if horizontal > 56 {
+                                        goForwardCard()
+                                    } else if horizontal < -56 {
+                                        goBackwardCard()
+                                    }
+                                }
+                        )
 
                         LinearGradient(
                             stops: [
@@ -197,13 +363,18 @@ struct KnowledgeCardStudyView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
 
                 BottomActions(
-                    focusHighlightVisible: $focusHighlightVisible
+                    focusHighlightVisible: $focusHighlightVisible,
+                    isCurrentCardMastered: isCurrentCardMastered,
+                    onToggleCurrentCardMastered: toggleCurrentCardMastered
                 )
             }
 
             if isDirectorySheetPresented {
                 ZStack(alignment: .bottom) {
-                    Color.black.opacity(0.25)
+                    Color.black
+                        .opacity(0.25)
+                        .ignoresSafeArea()
+                        .contentShape(Rectangle())
                         .onTapGesture(perform: dismissDirectorySheet)
                         .transition(.identity)
 
@@ -287,12 +458,16 @@ struct KnowledgeCardStudyView: View {
                     selectedSectionID = defaultSection
                 }
 
-                pageData = try await KnowledgeCardDataStore.refreshFreeContentAndLoadStudyContent(
+                sectionCards = try await KnowledgeCardDataStore.refreshFreeContentAndLoadSectionCards(
                     chapterID: selectedChapterID,
                     sectionID: selectedSectionID
                 )
-                selectedChapterID = pageData.chapterID
-                selectedSectionID = pageData.sectionID
+                if let idx = sectionCards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) {
+                    currentCardIndex = idx
+                } else {
+                    currentCardIndex = 0
+                }
+                syncCurrentCardFromIndex()
                 if expandedChapterID == nil {
                     expandedChapterID = selectedChapterID
                 }
@@ -316,34 +491,31 @@ struct KnowledgeCardStudyView: View {
 }
 
 private struct ProgressHeaderView: View {
-    private let barStates: [ProgressState] = [.success, .success, .disabled, .success, .success, .active, .disabled]
+    let states: [KnowledgeCardStudyView.KnowledgeBarState]
 
     var body: some View {
         HStack(spacing: 4) {
-            ForEach(Array(barStates.enumerated()), id: \.offset) { _, state in
+            ForEach(Array(states.enumerated()), id: \.offset) { _, state in
                 Capsule()
                     .fill(state.color)
-                    .frame(height: state == .active ? 6 : 4)
+                    .frame(width: 21, height: state == .active ? 6 : 4)
                     .shadow(color: state == .active ? Token.fgBrand.opacity(0.20) : .clear, radius: 2, x: 0, y: 1)
             }
         }
         .frame(height: 8)
     }
 
-    private enum ProgressState {
-        case active
-        case success
-        case disabled
+}
 
-        var color: Color {
-            switch self {
-            case .active:
-                return Token.fgBrand
-            case .success:
-                return Token.fgSuccessSecondary
-            case .disabled:
-                return Token.fgDisabled
-            }
+private extension KnowledgeCardStudyView.KnowledgeBarState {
+    var color: Color {
+        switch self {
+        case .active:
+            return Token.fgBrand
+        case .completed:
+            return Token.fgBrandSecondary
+        case .pending:
+            return Token.fgDisabled
         }
     }
 }
@@ -476,6 +648,8 @@ private struct DirectorySheetOverlay: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height: 640)
+        .frame(maxHeight: .infinity, alignment: .bottom)
+        .ignoresSafeArea(edges: .bottom)
         .background(Token.bgCanvas)
         .clipShape(
             UnevenRoundedRectangle(
@@ -699,6 +873,8 @@ private struct NoteCard: View {
 
 private struct BottomActions: View {
     @Binding var focusHighlightVisible: Bool
+    let isCurrentCardMastered: Bool
+    let onToggleCurrentCardMastered: () -> Void
     @State private var focusToggleAnimationTick = 0
 
     var body: some View {
@@ -717,17 +893,19 @@ private struct BottomActions: View {
                     }
             }
             .buttonStyle(.plain)
+            .frame(maxWidth: isCurrentCardMastered ? .infinity : 56)
 
-            Button(action: {}) {
-                Text("已掌握")
+            Button(action: onToggleCurrentCardMastered) {
+                Text(isCurrentCardMastered ? "已掌握" : "记住了")
                     .font(.custom("PingFang SC", size: 16).weight(.medium))
-                    .foregroundStyle(Token.textWhite)
+                    .foregroundStyle(isCurrentCardMastered ? Token.textSecondary : Token.textWhite)
                     .frame(maxWidth: .infinity)
                     .frame(height: 48)
-                    .background(Token.fgBrand)
+                    .background(isCurrentCardMastered ? Token.fgDisabled : Token.fgBrand)
                     .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
             }
             .buttonStyle(.plain)
+            .frame(maxWidth: .infinity)
         }
         .padding(.horizontal, 20)
         .padding(.bottom, 12)

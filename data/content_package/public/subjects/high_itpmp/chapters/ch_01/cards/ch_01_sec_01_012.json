@@ -1,0 +1,33 @@
+{
+  "point_id": "012",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "组织信息化趋势",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 75,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 12,
+  "content_file": "ch_01_sec_01_012.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_012.md",
+  "tags": [
+    "组织信息化",
+    "产品信息化",
+    "产业信息化"
+  ],
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "key_points": "1. 组织信息化四类趋势：产品、产业、社会生活、国民经济。\n2. 产品信息化强调产品内嵌智能化信息能力。\n3. 国民经济信息化强调经济各环节通过信息连成整体。",
+  "mnemonics": "产产社国：产品、产业、社会、国民经济。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第3页"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "point_id": "020",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_03",
+  "title": "智能制造",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 75,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 20,
+  "content_file": "ch_01_sec_03_020.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_03_020.md",
+  "tags": [
+    "智能制造",
+    "成熟度模型",
+    "GB/T39116"
+  ],
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "key_points": "1. 智能制造是**人机一体化智能系统**。\n2. 成熟度五级：规划、规范、集成、优化、引领。\n3. 最高等级是**引领级**。",
+  "mnemonics": "规、范、集、优、领。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第6页"
+    },
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第7页"
+    }
+  ]
+}

@@ -83,7 +83,7 @@
     "chapter_id": "ch_01",
     "knowledge_point_ids": [
       {
-        "point_id": "012",
+        "point_id": "015",
         "is_primary": true
       }
     ],
@@ -122,7 +122,7 @@
     "chapter_id": "ch_01",
     "knowledge_point_ids": [
       {
-        "point_id": "014",
+        "point_id": "016",
         "is_primary": true
       }
     ],
@@ -161,7 +161,7 @@
     "chapter_id": "ch_01",
     "knowledge_point_ids": [
       {
-        "point_id": "018",
+        "point_id": "020",
         "is_primary": true
       }
     ],
@@ -200,7 +200,7 @@
     "chapter_id": "ch_01",
     "knowledge_point_ids": [
       {
-        "point_id": "021",
+        "point_id": "023",
         "is_primary": true
       }
     ],
@@ -239,7 +239,7 @@
     "chapter_id": "ch_01",
     "knowledge_point_ids": [
       {
-        "point_id": "024",
+        "point_id": "025",
         "is_primary": true
       }
     ],

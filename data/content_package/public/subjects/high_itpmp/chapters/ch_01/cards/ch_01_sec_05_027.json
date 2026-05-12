@@ -1,0 +1,38 @@
+{
+  "point_id": "027",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_05",
+  "title": "数字化转型",
+  "card_type": "process",
+  "difficulty": 3,
+  "estimated_read_seconds": 75,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 27,
+  "content_file": "ch_01_sec_05_027.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_05_027.md",
+  "tags": [
+    "数字化转型",
+    "DIKW",
+    "S-D模型",
+    "智慧转移"
+  ],
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "key_points": "1. 数字化转型不是单纯 IT 建设，而是核心业务和业务模式重构。\n2. 数据成为重要生产要素，是转型的重要驱动。\n3. DIKW：数据 → 信息 → 知识 → 智慧。",
+  "mnemonics": "转型三层：转换是格式，升级是效率，转型是模式。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第11页"
+    },
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第12页"
+    }
+  ]
+}

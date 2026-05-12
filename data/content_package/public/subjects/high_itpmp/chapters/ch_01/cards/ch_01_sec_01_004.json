@@ -3,42 +3,31 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_01",
   "section_id": "sec_01",
-  "title": "信息的质量属性",
+  "title": "信息质量属性",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 150,
+  "estimated_read_seconds": 75,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 4,
   "content_file": "ch_01_sec_01_004.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_004.md",
   "tags": [
     "信息质量",
     "安全性",
-    "及时性",
-    "可靠性"
+    "及时性"
   ],
-  "key_points": "信息质量属性包括精确、完整、可靠、及时、经济、可验证、安全；金融信息尤其重安全，经济社会信息尤其重及时。\n\n金融信息突出==安全性==；经济与社会信息突出==及时性==。",
-  "mnemonics": "精完可及，经可安。",
-  "prerequisite_point_ids": [
-    "003"
-  ],
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
-  "related_question_ids": [
-    "q_ch01_002"
-  ],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
+  "related_question_ids": [],
+  "key_points": "1. 信息质量属性共 **7 个**：精确、完整、可靠、及时、经济、可验证、安全。\n2. 金融信息优先关注**安全性**。\n3. 经济与社会信息优先关注**及时性**。",
+  "mnemonics": "精完可及经可安。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "source_refs": [
     {
-      "source_id": "pdf_2026_tricolor_high",
-      "page_label": "第1页"
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第2页"
     }
-  ],
-  "author": "Codex 内容整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2
+  ]
 }

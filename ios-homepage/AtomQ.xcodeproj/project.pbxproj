@@ -31,6 +31,7 @@
 		6910BA96A48C1165835CA468 /* SVGAssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F7B0DB401AB6158EECAB41 /* SVGAssetView.swift */; };
 		6C73A8DBE430AD4677209F69 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C1468352EEE1EFB1548C8D /* DesignTokens.swift */; };
 		72382277EC3402A7330A2FC1 /* icon-arrow-forward.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7BF74A6C9351A02FBEE9C043 /* icon-arrow-forward.svg */; };
+		76C63CE8A429449867A08DED /* GuestUserLocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229D1D8EAA2A7D5136AACDFE /* GuestUserLocalStore.swift */; };
 		7F10E00229C72643A53187B6 /* icon-bar-chart.svg in Resources */ = {isa = PBXBuildFile; fileRef = F54C49D8AE6FAA7B568DBF5E /* icon-bar-chart.svg */; };
 		80295D86E089E0B8AE71BC9F /* icon-hero-spark.svg in Resources */ = {isa = PBXBuildFile; fileRef = E99289CCC89DF261EC27D646 /* icon-hero-spark.svg */; };
 		9F20B72498F300CFAF8711FE /* KnowledgeCardStudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07CA8DD0C5582F271E177A4 /* KnowledgeCardStudyView.swift */; };
@@ -55,6 +56,7 @@
 		04D44891911A66F4F1D92DEE /* icon-dir-chevron-left.svg */ = {isa = PBXFileReference; path = "icon-dir-chevron-left.svg"; sourceTree = "<group>"; };
 		10C1468352EEE1EFB1548C8D /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
 		149F36AC2BAC96EDCF4C03DF /* KnowledgeCardDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeCardDataStore.swift; sourceTree = "<group>"; };
+		229D1D8EAA2A7D5136AACDFE /* GuestUserLocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestUserLocalStore.swift; sourceTree = "<group>"; };
 		37C2840F3B04954FA13CFE66 /* icon-user.svg */ = {isa = PBXFileReference; path = "icon-user.svg"; sourceTree = "<group>"; };
 		39591F509D60BD96299F14C2 /* icon-red-dot.svg */ = {isa = PBXFileReference; path = "icon-red-dot.svg"; sourceTree = "<group>"; };
 		3AA19891637C6FBBEB88C09F /* icon-uncheck-outline.svg */ = {isa = PBXFileReference; path = "icon-uncheck-outline.svg"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				D34F798EAA7D786BE8BFA915 /* ContentPackageRemoteStore.swift */,
+				229D1D8EAA2A7D5136AACDFE /* GuestUserLocalStore.swift */,
 				149F36AC2BAC96EDCF4C03DF /* KnowledgeCardDataStore.swift */,
 				E6F7B0DB401AB6158EECAB41 /* SVGAssetView.swift */,
 			);
@@ -315,6 +318,7 @@
 				06F8C74979E99807A04E536F /* AtomQApp.swift in Sources */,
 				545AC590149B6DF05123FAD8 /* ContentPackageRemoteStore.swift in Sources */,
 				6C73A8DBE430AD4677209F69 /* DesignTokens.swift in Sources */,
+				76C63CE8A429449867A08DED /* GuestUserLocalStore.swift in Sources */,
 				3E681F7780C815BAFA052674 /* HomePageView.swift in Sources */,
 				E42C4E1C9739F5130BA09C4D /* KnowledgeCardDataStore.swift in Sources */,
 				9F20B72498F300CFAF8711FE /* KnowledgeCardStudyView.swift in Sources */,

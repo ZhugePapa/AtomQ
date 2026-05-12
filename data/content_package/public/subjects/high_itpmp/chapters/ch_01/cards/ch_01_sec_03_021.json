@@ -1,0 +1,33 @@
+{
+  "point_id": "021",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_03",
+  "title": "消费互联网",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 75,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 21,
+  "content_file": "ch_01_sec_03_021.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_03_021.md",
+  "tags": [
+    "消费互联网",
+    "媒体属性",
+    "产业属性"
+  ],
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "key_points": "1. 消费互联网以**消费者为服务中心**。\n2. 本质是个人虚拟化。\n3. 两大属性：媒体属性、产业属性。",
+  "mnemonics": "消费互联网：个人在线，体验优先。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第7页"
+    }
+  ]
+}

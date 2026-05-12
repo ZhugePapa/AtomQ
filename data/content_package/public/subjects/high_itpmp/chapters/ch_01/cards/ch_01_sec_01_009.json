@@ -3,42 +3,31 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_01",
   "section_id": "sec_01",
-  "title": "信息化核心与内涵",
+  "title": "信息化核心",
   "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 180,
+  "difficulty": 3,
+  "estimated_read_seconds": 75,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 9,
   "content_file": "ch_01_sec_01_009.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_009.md",
   "tags": [
     "信息化",
-    "信息网络体系",
-    "信息产业基础",
-    "效用积累"
+    "生产力",
+    "生产关系"
   ],
-  "key_points": "信息化核心是充分应用基于信息技术的先进生产工具，提高社会生产力，并推动生产关系和上层建筑改革。\n\n信息化的落点是综合实力、文明程度和生活质量的全面提升。",
-  "mnemonics": "网产环效：网络体系、产业基础、运行环境、效用积累。",
-  "prerequisite_point_ids": [
-    "001"
-  ],
-  "related_point_ids": [
-    "010"
-  ],
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
   "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
+  "key_points": "1. 信息化核心是应用**基于信息技术的先进社会生产工具**。\n2. 目标包括提高生产力、推动生产关系和上层建筑改革。\n3. 信息化最终落到国家实力、社会文明和生活质量提升。",
+  "mnemonics": "信息化：用新工具，提生产，改关系，升生活。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "source_refs": [
     {
-      "source_id": "pdf_2026_tricolor_high",
-      "page_label": "第1页"
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第2页"
     }
-  ],
-  "author": "Codex 内容整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2
+  ]
 }

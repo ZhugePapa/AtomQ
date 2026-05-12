@@ -1,0 +1,33 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_05",
+  "title": "元宇宙",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 75,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "content_file": "ch_01_sec_05_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_05_028.md",
+  "tags": [
+    "元宇宙",
+    "虚实融合",
+    "沉浸式体验"
+  ],
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "key_points": "1. 元宇宙强调**虚实融合、沉浸体验、持续运行**。\n2. 它依赖云计算、AI、数字孪生、区块链等数字技术。\n3. 元宇宙可视为数字化转型在交互空间上的延伸。",
+  "mnemonics": "元宇宙三感：沉浸感、持续感、虚实融合感。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第12页"
+    }
+  ]
+}

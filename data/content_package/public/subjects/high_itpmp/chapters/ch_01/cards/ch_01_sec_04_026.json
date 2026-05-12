@@ -1,0 +1,33 @@
+{
+  "point_id": "026",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_04",
+  "title": "数字生态",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 75,
+  "has_key_content": false,
+  "is_free": true,
+  "sort_no": 26,
+  "content_file": "ch_01_sec_04_026.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_04_026.md",
+  "tags": [
+    "数字生态",
+    "生态文明",
+    "绿色发展"
+  ],
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "key_points": "1. 数字生态服务于生态文明和绿色发展。\n2. 关键词：环境监测、资源利用、污染治理、绿色决策。\n3. 不要把数字生态误解为商业平台生态。",
+  "mnemonics": "数字生态：用数据看环境，用智能护绿色。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第11页"
+    }
+  ]
+}

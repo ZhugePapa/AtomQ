@@ -1,0 +1,33 @@
+{
+  "point_id": "013",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "国家信息化发展战略",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 75,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 13,
+  "content_file": "ch_01_sec_01_013.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_013.md",
+  "tags": [
+    "国家信息化发展战略",
+    "三步走",
+    "网络强国"
+  ],
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "key_points": "1. 国家信息化发展战略是**三步走**。\n2. 2025 年目标强调移动通信网络领先、核心关键技术受制局面改变。\n3. 21 世纪中叶目标强调全面支撑现代化、巩固网络强国地位。",
+  "mnemonics": "二零打基础，二五要领先，中叶网络强。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第3页"
+    }
+  ]
+}

@@ -5,41 +5,30 @@
   "section_id": "sec_01",
   "title": "软件生命周期",
   "card_type": "process",
-  "difficulty": 1,
-  "estimated_read_seconds": 120,
+  "difficulty": 2,
+  "estimated_read_seconds": 75,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 7,
   "content_file": "ch_01_sec_01_007.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_007.md",
   "tags": [
     "软件生命周期",
     "需求分析",
-    "设计",
     "测试",
     "维护"
   ],
-  "key_points": "软件生命周期依次覆盖可行性分析与项目开发计划、需求分析、概要设计、详细设计、编码、测试、维护。",
-  "mnemonics": "口诀：可需概详编测维。",
-  "prerequisite_point_ids": [
-    "005"
-  ],
-  "related_point_ids": [
-    "008"
-  ],
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
   "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
+  "key_points": "1. 软件生命周期常见 7 阶段。\n2. 概要设计在详细设计之前。\n3. 测试之后仍有维护，交付不代表生命周期结束。",
+  "mnemonics": "可需概详编测维。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "source_refs": [
     {
-      "source_id": "pdf_2026_tricolor_high",
-      "page_label": "第1页"
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第2页"
     }
-  ],
-  "author": "Codex 内容整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2
+  ]
 }

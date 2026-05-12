@@ -3,39 +3,36 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_01",
   "section_id": "sec_02",
-  "title": "车联网端管云体系",
+  "title": "新型基础设施建设",
   "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 180,
+  "difficulty": 3,
+  "estimated_read_seconds": 75,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 15,
   "content_file": "ch_01_sec_02_015.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_02_015.md",
   "tags": [
-    "车联网",
-    "智能网联汽车",
-    "端管云"
+    "新型基础设施",
+    "信息基础设施",
+    "融合基础设施",
+    "创新基础设施"
   ],
-  "key_points": "车联网是端、管、云三层体系，支持车与云、车与车、车与路、车与人、车内设备互联。",
-  "mnemonics": "端采集，管连接，云汇聚。",
-  "prerequisite_point_ids": [
-    "012"
-  ],
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
+  "key_points": "1. 新型基础设施三类：**信息、融合、创新**。\n2. 智能交通、智慧能源属于**融合基础设施**。\n3. 5G、工业互联网、数据中心属于信息基础设施。",
+  "mnemonics": "信融创：信息打底，融合改造，创新支撑。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "source_refs": [
     {
-      "source_id": "pdf_2026_tricolor_high",
-      "page_label": "第4页"
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第3页"
+    },
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第4页"
     }
-  ],
-  "author": "Codex 内容整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2
+  ]
 }

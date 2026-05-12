@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name='ocr-system' content='tesseract 5.5.2' />
+  <meta name='ocr-capabilities' content='ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_dir ocrp_lang ocrp_wconf'/>
+ </head>
+ <body>
+  <div class='ocr_page' id='page_1' title='image "/Users/leiwang/Documents/AtomQ/data-deepseek/test_output/page_0001-001.png"; bbox 0 0 1654 2339; ppageno 0; scan_res 200 200'>
+   <div class='ocr_carea' id='block_1_1' title="bbox 215 58 1444 1811">
+    <p class='ocr_par' id='par_1_1' lang='chi_sim' title="bbox 215 58 1444 1811">
+     <span class='ocr_line' id='line_1_1' title="bbox 518 58 1134 99; baseline -0.002 0; x_size 50.525772; x_descenders 11.525773; x_ascenders 13">
+      <span class='ocrx_word' id='word_1_1' title='bbox 518 60 557 99; x_wconf 96'>更</span>
+      <span class='ocrx_word' id='word_1_2' title='bbox 577 58 601 99; x_wconf 96'>多</span>
+      <span class='ocrx_word' id='word_1_3' title='bbox 622 58 709 99; x_wconf 96'>资料</span>
+      <span class='ocrx_word' id='word_1_4' title='bbox 712 58 736 98; x_wconf 93'>请</span>
+      <span class='ocrx_word' id='word_1_5' title='bbox 757 58 780 98; x_wconf 63'>咸</span>
+      <span class='ocrx_word' id='word_1_6' title='bbox 802 58 841 98; x_wconf 92'>鱼</span>
+      <span class='ocrx_word' id='word_1_7' title='bbox 844 58 913 98; x_wconf 78'>搜索</span>
+      <span class='ocrx_word' id='word_1_8' title='bbox 935 72 940 96; x_wconf 89'>:</span>
+      <span class='ocrx_word' id='word_1_9' title='bbox 979 58 1047 98; x_wconf 93'>环球</span>
+      <span class='ocrx_word' id='word_1_10' title='bbox 1065 58 1134 98; x_wconf 95'>课堂</span>
+     </span>
+     <span class='ocr_line' id='line_1_2' title="bbox 322 477 1349 551; baseline 0.007 -8; x_size 94.25; x_descenders 21.5; x_ascenders 24.25">
+      <span class='ocrx_word' id='word_1_11' title='bbox 322 477 512 550; x_wconf 90'>2026</span>
+      <span class='ocrx_word' id='word_1_12' title='bbox 562 477 602 549; x_wconf 91'>年</span>
+      <span class='ocrx_word' id='word_1_13' title='bbox 634 477 673 550; x_wconf 92'>高</span>
+      <span class='ocrx_word' id='word_1_14' title='bbox 672 471 730 574; x_wconf 96'>级</span>
+      <span class='ocrx_word' id='word_1_15' title='bbox 730 477 853 550; x_wconf 96'>信息</span>
+      <span class='ocrx_word' id='word_1_16' title='bbox 878 477 1033 551; x_wconf 96'>系统</span>
+      <span class='ocrx_word' id='word_1_17' title='bbox 1032 471 1097 574; x_wconf 93'>项</span>
+      <span class='ocrx_word' id='word_1_18' title='bbox 1096 481 1133 549; x_wconf 93'>目</span>
+      <span class='ocrx_word' id='word_1_19' title='bbox 1174 477 1310 550; x_wconf 93'>管理</span>
+      <span class='ocrx_word' id='word_1_20' title='bbox 1340 503 1349 531; x_wconf 89'>师</span>
+     </span>
+     <span class='ocr_line' id='line_1_3' title="bbox 215 1741 1444 1811; baseline 0.002 -16; x_size 94.25; x_descenders 21.5; x_ascenders 24.25">
+      <span class='ocrx_word' id='word_1_21' title='bbox 215 1741 236 1809; x_wconf 92'>(</span>
+      <span class='ocrx_word' id='word_1_22' title='bbox 281 1748 364 1798; x_wconf 89'>非</span>
+      <span class='ocrx_word' id='word_1_23' title='bbox 364 1721 428 1823; x_wconf 93'>机</span>
+      <span class='ocrx_word' id='word_1_24' title='bbox 427 1749 471 1797; x_wconf 91'>构</span>
+      <span class='ocrx_word' id='word_1_25' title='bbox 517 1749 613 1797; x_wconf 92'>资</span>
+      <span class='ocrx_word' id='word_1_26' title='bbox 640 1791 653 1811; x_wconf 93'>料</span>
+      <span class='ocrx_word' id='word_1_27' title='bbox 676 1721 741 1823; x_wconf 91'>，</span>
+      <span class='ocrx_word' id='word_1_28' title='bbox 740 1748 787 1797; x_wconf 90'>学</span>
+      <span class='ocrx_word' id='word_1_29' title='bbox 823 1748 906 1797; x_wconf 77'>霸</span>
+      <span class='ocrx_word' id='word_1_30' title='bbox 946 1751 996 1797; x_wconf 86'>笔</span>
+      <span class='ocrx_word' id='word_1_31' title='bbox 1029 1791 1042 1811; x_wconf 92'>记</span>
+      <span class='ocrx_word' id='word_1_32' title='bbox 1052 1721 1123 1823; x_wconf 92'>，</span>
+      <span class='ocrx_word' id='word_1_33' title='bbox 1122 1749 1176 1798; x_wconf 82'>精</span>
+      <span class='ocrx_word' id='word_1_34' title='bbox 1211 1748 1330 1797; x_wconf 93'>准备</span>
+      <span class='ocrx_word' id='word_1_35' title='bbox 1364 1748 1408 1797; x_wconf 51'>考</span>
+      <span class='ocrx_word' id='word_1_36' title='bbox 1428 1741 1444 1809; x_wconf 51'>)</span>
+     </span>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

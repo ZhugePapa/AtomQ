@@ -1,0 +1,34 @@
+{
+  "point_id": "017",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_02",
+  "title": "车联网",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 75,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 17,
+  "content_file": "ch_01_sec_02_017.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_02_017.md",
+  "tags": [
+    "车联网",
+    "IoV",
+    "端管云",
+    "V2X"
+  ],
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "key_points": "1. 车联网体系可按**端-管-云**理解。\n2. 管系统负责异构网络通信和 V2X 互联。\n3. 车联网连接包括车云、车车、车路、车人、车内设备。",
+  "mnemonics": "端感知，管连接，云汇聚。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记（信息系统项目管理师）",
+      "location": "拆分PDF 01 第5页"
+    }
+  ]
+}
