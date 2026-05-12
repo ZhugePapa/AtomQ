@@ -1,0 +1,36 @@
+{
+  "point_id": "kp_ch01_014",
+  "subject_id": "subj_high_level",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01_02",
+  "title": "车联网体系",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 180,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 14,
+  "content_file": "kp_ch01_014.md",
+  "tags": [
+    "车联网",
+    "端管云",
+    "智能网联汽车",
+    "V2X",
+    "车路协同"
+  ],
+  "key_points": "\"端管云\"三层 + 五种链接方式 = 车联网核心架构",
+  "mnemonics": "",
+  "prerequisite_point_ids": [
+    "kp_ch01_012"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "高项三色笔记 1.2",
+  "source_type": "official",
+  "author": "内容运营",
+  "reviewer": "",
+  "created_at": "2026-05-10T00:00:00Z",
+  "updated_at": "2026-05-10T00:00:00Z",
+  "version": 1,
+  "schema_version": 1
+}

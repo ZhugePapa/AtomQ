@@ -1,7 +1,7 @@
 # 首页递归变量审计报告（节点级）
 
 - 页面节点: `7836:4846`
-- 数据来源: `docs/figma_home_node.json` + `variables-export.md`
+- 数据来源: `docs/figma_home_node.json` + `docs/variables-export.md`
 - 颜色变量绑定（去重后）: **149** 条
 - 生成时间: 2026-05-04T14:17:25.147Z
 
