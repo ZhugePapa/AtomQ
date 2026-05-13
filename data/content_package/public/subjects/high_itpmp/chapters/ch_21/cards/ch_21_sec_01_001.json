@@ -5,19 +5,21 @@
   "section_id": "sec_01",
   "title": "讲的几个题型需要会",
   "card_type": "concept",
-  "difficulty": 3,
-  "estimated_read_seconds": 100,
-  "has_key_content": true,
+  "difficulty": 1,
+  "estimated_read_seconds": 45,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 1,
   "content_file": "ch_21_sec_01_001.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_21/cards/ch_21_sec_01_001.md",
   "tags": [
     "项目管理科学基础",
-    "工程经济学",
+    "章节核心考点",
     "讲的几个题型需要会"
   ],
-  "key_points": "1. 讲的几个题型需要会，考试的时候这块的内容是比较有难度的，而且是比较费时间的，如果确实不会可以去\n2. 瞎猜一下，当然掌握方法了，这块的题目还是比较简单的！\n3. 财务方面三个主要的项目财务价值评价方法包括净现值分析、投资收益和投资回收率分-3个方法的计算",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
@@ -26,15 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "211"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

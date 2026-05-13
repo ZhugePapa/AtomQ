@@ -3,21 +3,25 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_11",
   "section_id": "sec_02",
-  "title": "项目资金需求",
-  "card_type": "concept",
+  "title": "规划成确定如何估算、预算、管理、监督和控",
+  "card_type": "process",
   "difficulty": 3,
-  "estimated_read_seconds": 68,
-  "has_key_content": true,
+  "estimated_read_seconds": 45,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 19,
   "content_file": "ch_11_sec_02_019.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_11/cards/ch_11_sec_02_019.md",
   "tags": [
     "成本管理",
-    "管理过程",
-    "项目资金需求"
+    "章节核心考点",
+    "管理的过程太",
+    "规划成确定如何估算、预算、管理、",
+    "规划成确定如何估算、预算、管理、"
   ],
-  "key_points": "1. 2. 项目资金需求：包括预计支出及预计债务。",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "018"
   ],
@@ -28,15 +32,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "116,117"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

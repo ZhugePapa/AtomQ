@@ -1,0 +1,45 @@
+{
+  "point_id": "035",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_04",
+  "title": "开发数据网络挖掘、特异群组挖掘、图挖掘等新型",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 97,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 35,
+  "content_file": "ch_02_sec_04_035.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_04_035.md",
+  "tags": [
+    "信息技术发展",
+    "新一代信息技术及应用",
+    "大数据",
+    "开发数据网络挖掘、特异群组挖掘、",
+    "开发数据网络挖掘、特异群组挖掘、"
+  ],
+  "key_points": "- 开发数据网络挖掘、特异群组挖掘、图挖掘等新型数据挖掘技术；创新基于对象的数据连接、相似性连接等大数据融合技术；突破用户兴趣分析、网络行为分析、情感语义分析等面向领域的大数据挖掘技术。\n- 大数据管理技术集中在大数据存储、大数据协同和安全隐私等方面。2.大数据存储技术主要有三个方面：①采用==MPP==架构的新型数据库集群==，通过==列存储、粗粒度索引等多项大数据处理技==术和==高效的分布式计算模式，==实现大数据存储==；==②围绕==Hadoop衍生出相关的\n- 大数据管理==技术==",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "034"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "24"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

@@ -2,22 +2,30 @@
   "chapter_id": "ch_11",
   "subject_id": "high_itpmp",
   "title": "成本管理",
-  "description": "成本管理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "description": "成本管理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
   "sort_no": 11,
+  "card_count": 46,
   "sections": [
     {
       "section_id": "sec_01",
-      "title": "管理基础",
+      "title": "挣值与控制成本",
       "sort_no": 1,
-      "description": "成本管理 - 管理基础",
-      "card_count": 3
+      "description": "成本管理 - 挣值与控制成本",
+      "card_count": 17
     },
     {
       "section_id": "sec_02",
-      "title": "管理过程",
+      "title": "估算与预算",
       "sort_no": 2,
-      "description": "成本管理 - 管理过程",
-      "card_count": 16
+      "description": "成本管理 - 估算与预算",
+      "card_count": 26
+    },
+    {
+      "section_id": "sec_03",
+      "title": "成本管理过程",
+      "sort_no": 3,
+      "description": "成本管理 - 成本管理过程",
+      "card_count": 3
     }
   ],
   "schema_version": 2

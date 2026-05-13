@@ -1,0 +1,44 @@
+{
+  "point_id": "047",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_10",
+  "title": "数字化转型是建立在数字化转换、数字化升级的基",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 217,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 47,
+  "content_file": "ch_22_sec_10_047.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_10_047.md",
+  "tags": [
+    "组织通用治理",
+    "数字化转型实施",
+    "数字化转型是建立在数字化转换、数",
+    "数字化转型是建立在数字化转换、数"
+  ],
+  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| ==转型组织的建立== | 数字化转型组织架构及工作机制的建议可分为4个层次： |\n| ==规划层== | 顶层设计、具有全局观。 |\n| ==实施层== | 围绕数字化产品和服务进行实施推进。 |\n| ==能力层== | 构建数字化相关的支撑实施层的能力资源层：组织与传统业务、传统IT链接。 |\n| ==战略与愿景策划== | 组织数字化转型战略与愿景的核心是制定数字化转型规划， |\n| ==管理模式策划== | 组织应考虑引入数字化管理模式，提升内部管理效能，以客户和服务对象中心，高运营效率，降低运营成本。 |\n| ==数据能力策划== | 数据是开展数字化转型的重要基石。 |\n| ==数字化转型内容重点包括== | 组织数字文化、数字人才队伍、数字化绩效评价、业务模式创新、数字化产品和服务、数字化营销。 |",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "046"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "216"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

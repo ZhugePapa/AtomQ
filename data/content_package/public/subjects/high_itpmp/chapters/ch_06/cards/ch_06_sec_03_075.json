@@ -1,0 +1,44 @@
+{
+  "point_id": "075",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_03",
+  "title": "在敏捷型或适应型项目生命周期中",
+  "card_type": "process",
+  "difficulty": 3,
+  "estimated_read_seconds": 88,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 75,
+  "content_file": "ch_06_sec_03_075.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_03_075.md",
+  "tags": [
+    "项目管理概论",
+    "价值驱动的项目管理知识体系",
+    "适应型项目中的过程组",
+    "在敏捷型或适应型项目生命周期中"
+  ],
+  "key_points": "- 在敏捷型或适应型项目生命周期中，执行过程通过==迭代对工作进行指导和管理==。每次迭代都是在一个很短的固定时问段内开展工作，然后示所完成的工作成果，有关的干系人和团队基于演示来进行回顾性审查。这种演示和审查有助于对照计划检查进展情况，确定是否有必要对项目范围、进度或\n- 执行过程做变更。进行回顾性市查，有利于及时发现和讨论与执行方法有关的问题，并提出改进建\n- 议高度适应型项目中，项目经理聚焦于高层级的目标，并授权团队成员作为一个小组用最能实现目标的方式自行安排具体工作，有助于团队成员高度投入，制订出切合实际的计划在敏捷型或适应型项目生命周期中，监控过程通过==维护未完项的消单==，对进展和绩效进行跟踪、审",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "074"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "74,75"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

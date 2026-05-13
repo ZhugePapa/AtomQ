@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_09",
   "section_id": "sec_02",
-  "title": "分解太女女",
+  "title": "需求管理计划",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 300,
+  "estimated_read_seconds": 45,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 21,
   "content_file": "ch_09_sec_02_021.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_02_021.md",
   "tags": [
     "范围管理",
-    "管理过程",
-    "分解太女女"
+    "章节核心考点",
+    "通过确认每个可交付成果来提高最终",
+    "需求管理计划"
   ],
-  "key_points": "1. 分解是一种把项目范围和项目可交付成果逐步划分为更小、更便于管理的组成部分的技术。工作包是\n2. 创建WBS的方法多种多样，常用的方法包括自上而下的方法、使用组织特定的指南和使用WBS模板。\n3. ⑤核实可交付成果分解的程度是否恰当。",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "020"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "93,94,95"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

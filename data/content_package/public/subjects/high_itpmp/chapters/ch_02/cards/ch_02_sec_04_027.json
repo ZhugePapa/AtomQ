@@ -3,21 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_04",
-  "title": "虚拟现实",
-  "card_type": "definition",
+  "title": "云计算",
+  "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 147,
+  "estimated_read_seconds": 132,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 27,
   "content_file": "ch_02_sec_04_027.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_04_027.md",
   "tags": [
     "信息技术发展",
     "新一代信息技术及应用",
-    "虚拟现实"
+    "云计算"
   ],
-  "key_points": "1. 虚拟现实(VR)是一种可以创立和体验虚拟世界的计算机系统(其中虚拟世界是全体虚拟\n2. 主要\n3. 虚拟现实技术的主要特征包括沉浸性、交互性、多感知性、构想性(也称想象性)和自主",
+  "key_points": "- ==宽带网络接入\"云\"并获得服务==\n- ==基础设施即服务(IaaS)==、==平台即服务(PaaS)==\n- ==SaaS==\n- ==Web==",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "026"
   ],
@@ -28,15 +30,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "23"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

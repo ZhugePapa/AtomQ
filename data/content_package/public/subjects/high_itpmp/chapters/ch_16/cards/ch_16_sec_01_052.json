@@ -1,0 +1,44 @@
+{
+  "point_id": "052",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "卖方建议书",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 99,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 52,
+  "content_file": "ch_16_sec_01_052.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_052.md",
+  "tags": [
+    "采购管理",
+    "管理基础",
+    "采购管理计划",
+    "卖方建议书"
+  ],
+  "key_points": "- ==卖方建议书==：卖方为响应采购文件包而编制的建议书，其中包含的基本信息将被评估团队用于选定一个或多个投标人(卖方)。如果卖方将提交价格建议书，最好要求他们将价格建议书与技术建议书分开。大广告：是就产品、服务或成果与用户或潜在用户进行的沟通。在大众出版物(如指定的报纸)或专门行业\n- 出版物上刊登广告，往往可以扩充现有的潜在卖方名单。大多数政府机构都要求公开发布采购广告，或在网投标人会议：又称承包商会议、供应商会议或投标前会议，是在卖方提交建议书之前，在买方和潜在卖方之间召开的会议，其目的是确保所有潜在投标人对采购要求都有清楚且一致的理解，并确保没有任何投标",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "051"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "170,171"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

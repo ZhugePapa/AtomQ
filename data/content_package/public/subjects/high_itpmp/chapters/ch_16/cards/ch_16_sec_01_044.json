@@ -1,0 +1,44 @@
+{
+  "point_id": "044",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "独立成本估算",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 66,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 44,
+  "content_file": "ch_16_sec_01_044.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_044.md",
+  "tags": [
+    "采购管理",
+    "管理基础",
+    "拟使用的预审合格的卖方等",
+    "独立成本估算"
+  ],
+  "key_points": "",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "043"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "169,170"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

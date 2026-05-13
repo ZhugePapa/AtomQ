@@ -5,19 +5,22 @@
   "section_id": "sec_01",
   "title": "有效执行干系人绩效域可以实现的预期目标主要包",
   "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 207,
-  "has_key_content": true,
+  "difficulty": 1,
+  "estimated_read_seconds": 45,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 1,
   "content_file": "ch_18_sec_01_001.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_01_001.md",
   "tags": [
     "项目绩效域",
-    "绩效要点",
+    "干系人绩效域",
+    "有效执行干系人绩效域可以实现的预",
     "有效执行干系人绩效域可以实现的预"
   ],
-  "key_points": "1. 1、有效执行干系人绩效域可以实现的预期目标主要包含：①与干系人建立高效的工作关系；②于系人认\n2. 变化，干系人对项目的立场和持有的观点会发生变化，因此，理解和分析干系人是\n3. 对干系人进行分析时，需要考虑的因素包括：权力、作用、态度、信念、期望、影",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
@@ -26,15 +29,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "183"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

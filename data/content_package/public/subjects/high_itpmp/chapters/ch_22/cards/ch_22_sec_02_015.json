@@ -1,0 +1,43 @@
+{
+  "point_id": "015",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_02",
+  "title": "组织能力确认",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 122,
+  "has_key_content": false,
+  "is_free": true,
+  "sort_no": 15,
+  "content_file": "ch_22_sec_02_015.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_02_015.md",
+  "tags": [
+    "组织通用治理",
+    "组织战略",
+    "组织能力确认"
+  ],
+  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| ==要点核心能力的管理== | 组织应将自己具有的能力当作资产来积极管理。建立员工能力提升的激励措施，提供足够的培训或招募机制，确保能力不过时。 |\n| ==领导力== | 管理层的管理风格应与组织战略一致，有相应的机制能在内部各级员工中挖掘具有管理才能的人，能够识别那些不具备组织所希望具有的管理风格和行为的管理者。 |\n| ==信息技术== | 组织内的信息技术的IT 基础设施和软、硬件能够为组织的战略实施提供支持。 |",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "014"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "213"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

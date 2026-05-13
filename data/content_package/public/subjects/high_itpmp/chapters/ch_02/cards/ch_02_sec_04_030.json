@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_04",
-  "title": "数据库根据存储方式可以分关系型数据库(SQL",
-  "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 86,
+  "title": "容器技术是一种全新意义上的虚拟化技术",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 188,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 30,
   "content_file": "ch_02_sec_04_030.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_04_030.md",
   "tags": [
     "信息技术发展",
     "新一代信息技术及应用",
-    "数据库根据存储方式可以分关系型数"
+    "容器技术是一种全新意义上的虚拟化",
+    "容器技术是一种全新意义上的虚拟化"
   ],
-  "key_points": "1. 10、非关系型数据库是分布式的、非关系型的、不保证遵循ACID 原则的数据存储系统。\n2. 11、数据仓库是一个面向主题的、集成的、非易失的且随时间变化的数据集合，用于支持管理决\n3. 12、信息系统安全可以划分为四个层次：设备安全、数据安全、内容安全、行为安全。",
+  "key_points": "- ==ABE==\n- ==可信第三方授权中心==、==云存储服务器==、==ABE==、==用户==",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "029"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "23"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

@@ -1,0 +1,44 @@
+{
+  "point_id": "013",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_17",
+  "section_id": "sec_01",
+  "title": "干系人登记册：记录已识别干系人的信息",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 101,
+  "has_key_content": false,
+  "is_free": true,
+  "sort_no": 13,
+  "content_file": "ch_17_sec_01_013.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_17/cards/ch_17_sec_01_013.md",
+  "tags": [
+    "干系人管理",
+    "章节核心考点",
+    "干系人登记册：记录已识别干系人的",
+    "干系人登记册：记录已识别干系人的"
+  ],
+  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| ==干系人登记册== | 记录已识别干系人的信息，主要包括：(23下2批 |\n| ==身份信息== | 姓名、组织职位、地点、联系方式，以及在项目中扮演的角色。 |\n| ==评估信息== | 主要需求、期望、影响项项目生命目成果的潜力，以及干系人最能影响或冲击的周期阶段。 |\n| ==干系人分类== | 用内部或外部，作用、影响、权力或利益，上级、下级、外围或横向，或者项目经理选择的其他分类模型进行分类的结果等。 |",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "012"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "180"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

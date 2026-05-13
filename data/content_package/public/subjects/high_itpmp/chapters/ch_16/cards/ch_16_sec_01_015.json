@@ -3,21 +3,25 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_16",
   "section_id": "sec_01",
-  "title": "项目管理计划(需求管理计划",
-  "card_type": "process",
+  "title": "采购策略采购工作说明书招标文件自制或外购决策",
+  "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 82,
+  "estimated_read_seconds": 45,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 15,
   "content_file": "ch_16_sec_01_015.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_015.md",
   "tags": [
     "采购管理",
-    "【管理基础】",
-    "项目管理计划(需求管理计划"
+    "管理基础",
+    "管理ITTO汇L总",
+    "采购策略采购工作说明书招标文件自",
+    "采购策略采购工作说明书招标文件自"
   ],
-  "key_points": "1. 1.项目管理计划(需求管理计划\n2. 、风险管理计划、采购管理计划、变",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "014"
   ],
@@ -28,15 +32,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "167,168"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

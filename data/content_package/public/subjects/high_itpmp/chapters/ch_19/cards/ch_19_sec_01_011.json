@@ -3,21 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_19",
   "section_id": "sec_01",
-  "title": "功能配置审计是审计配置项的一致性(配置项的实",
+  "title": "配置基线由一组配置项组成",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 105,
-  "has_key_content": true,
+  "estimated_read_seconds": 45,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 11,
   "content_file": "ch_19_sec_01_011.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_011.md",
   "tags": [
     "配置与变更管理",
     "配置管理",
-    "功能配置审计是审计配置项的一致性"
+    "配置基线由一组配置项组成"
   ],
-  "key_points": "1. 27、功能配置审计是审计配置项的一致性(配置项的实际功效是否与其需求一致)，验证：\n2. ③配置项的操作和支持文档己完成并且是符合要求的。(19上 12)(22下50)(22上59)(23下4批)\n3. 28、物理配置审计是审计配置项的完整性(配置项的物理存在是否与预期",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "010"
   ],
@@ -28,15 +30,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "198"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

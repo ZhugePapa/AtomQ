@@ -430,7 +430,9 @@ struct KnowledgeCardStudyView: View {
 
                                         BottomActions(
                                             focusHighlightVisible: $focusHighlightVisible,
-                                            isCurrentCardMastered: GuestUserLocalStore.isPointMastered(card.pointID),
+                                            isCurrentCardMastered: idx == currentCardIndex
+                                                ? isCurrentCardMastered
+                                                : GuestUserLocalStore.isPointMastered(card.pointID),
                                             onToggleCurrentCardMastered: {
                                                 guard idx == currentCardIndex else { return }
                                                 toggleCurrentCardMastered()

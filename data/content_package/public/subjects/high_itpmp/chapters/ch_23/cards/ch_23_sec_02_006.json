@@ -1,0 +1,44 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_02",
+  "title": "工作责任设计",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 50,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "content_file": "ch_23_sec_02_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_02_006.md",
+  "tags": [
+    "组织通用管理",
+    "工作分析与岗位设计",
+    "岗位设计是确定完成工作的方式、所",
+    "工作责任设计"
+  ],
+  "key_points": "- 工作责任设计：就是员工在工作中应承担的职责及压力范围的界定也就是工\n- 作负荷的设定\n- ==工作权利与责任==：需要满足一定程度的对应，否则会影响员工的工作积极性工作方法：包括==领导对下级的工作方法==、==组织==和==个人的工作方法设计等==；相互沟通是整个工作流程顺利进行的信息基础，包括垂直沟通、平行沟通、斜",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "005"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "217,218"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

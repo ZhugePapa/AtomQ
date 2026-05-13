@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_01",
-  "title": "纯粹风险和投机风险在一定条件下可以相互转化",
-  "card_type": "concept",
+  "title": "项目风险管理过程是个持续的不断迭代的过程",
+  "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 155,
-  "has_key_content": true,
+  "estimated_read_seconds": 45,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 4,
   "content_file": "ch_15_sec_01_004.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_004.md",
   "tags": [
     "风险管理",
-    "管理基础",
-    "纯粹风险和投机风险在一定条件下可"
+    "章节核心考点",
+    "项目风险管理过程是个持续的不断迭",
+    "项目风险管理过程是个持续的不断迭"
   ],
-  "key_points": "1. 1.纯粹风险和投机风险在一定条件下可以相互转化。项目管理人员必须避免投机风险转化\n2. 2. 风险不是零和游戏。很多情况下，涉及风险的各个方面都要蒙受损失，无一幸免。\n3. 自然力的作用，造成财产毁损或人员伤亡发生洪水或地震而造成的工程损害，",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "003"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "151"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

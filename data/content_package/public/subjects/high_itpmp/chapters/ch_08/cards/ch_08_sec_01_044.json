@@ -1,0 +1,44 @@
+{
+  "point_id": "044",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_01",
+  "title": "偏差分析关注识别问题的主要原因",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 109,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 44,
+  "content_file": "ch_08_sec_01_044.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_044.md",
+  "tags": [
+    "整合管理",
+    "章节核心考点",
+    "确保项目与商业需求保持一致等",
+    "偏差分析关注识别问题的主要原因"
+  ],
+  "key_points": "- 偏差分析关注识别问题的主要原因，它可用于识别出现偏差的原因以及项目经理为达成项目目标应重点关注的领域根据以往结果预测未来绩效，它可以预测项目的进度延误，提前让项目经理意识到，按照既定趋势发展，后期进度可能出现的问题。应该在足够早的项目时\n- 间进行趋势分析，使项目团队有时间分析和纠正任何异常。\n- 审查目标绩效与实际绩效之间的差异(或偏差)，可涉及持续时间估算.可以在每个知识领域，针对特定变量开展偏差分析决策：投票可以包括用下列方法进行决策：一致同意、==大多数同意或相对多数原则==。",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "043"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "89,90"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

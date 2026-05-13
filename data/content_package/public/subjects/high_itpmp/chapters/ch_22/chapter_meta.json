@@ -2,71 +2,79 @@
   "chapter_id": "ch_22",
   "subject_id": "high_itpmp",
   "title": "组织通用治理",
-  "description": "组织通用治理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "description": "组织通用治理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
   "sort_no": 22,
+  "card_count": 47,
   "sections": [
     {
       "section_id": "sec_01",
-      "title": "组织战略",
+      "title": "章节核心考点",
       "sort_no": 1,
-      "description": "组织通用治理 - 组织战略",
-      "card_count": 7
+      "description": "组织通用治理 - 章节核心考点",
+      "card_count": 1
     },
     {
       "section_id": "sec_02",
-      "title": "绩效计划",
+      "title": "组织战略",
       "sort_no": 2,
-      "description": "组织通用治理 - 绩效计划",
-      "card_count": 2
+      "description": "组织通用治理 - 组织战略",
+      "card_count": 15
     },
     {
       "section_id": "sec_03",
-      "title": "绩效实施",
+      "title": "绩效计划",
       "sort_no": 3,
-      "description": "组织通用治理 - 绩效实施",
-      "card_count": 2
+      "description": "组织通用治理 - 绩效计划",
+      "card_count": 4
     },
     {
       "section_id": "sec_04",
-      "title": "绩效治理",
+      "title": "绩效实施",
       "sort_no": 4,
+      "description": "组织通用治理 - 绩效实施",
+      "card_count": 7
+    },
+    {
+      "section_id": "sec_05",
+      "title": "绩效治理",
+      "sort_no": 5,
       "description": "组织通用治理 - 绩效治理",
       "card_count": 1
     },
     {
-      "section_id": "sec_05",
-      "title": "绩效评估",
-      "sort_no": 5,
-      "description": "组织通用治理 - 绩效评估",
-      "card_count": 3
-    },
-    {
       "section_id": "sec_06",
-      "title": "绩效评价结果反馈",
+      "title": "绩效评估",
       "sort_no": 6,
-      "description": "组织通用治理 - 绩效评价结果反馈",
-      "card_count": 1
+      "description": "组织通用治理 - 绩效评估",
+      "card_count": 9
     },
     {
       "section_id": "sec_07",
-      "title": "绩效评价结果应用",
+      "title": "绩效评价结果反馈",
       "sort_no": 7,
-      "description": "组织通用治理 - 绩效评价结果应用",
-      "card_count": 1
+      "description": "组织通用治理 - 绩效评价结果反馈",
+      "card_count": 2
     },
     {
       "section_id": "sec_08",
-      "title": "战略转型提升级",
+      "title": "绩效评价结果应用",
       "sort_no": 8,
+      "description": "组织通用治理 - 绩效评价结果应用",
+      "card_count": 6
+    },
+    {
+      "section_id": "sec_09",
+      "title": "战略转型提升级",
+      "sort_no": 9,
       "description": "组织通用治理 - 战略转型提升级",
       "card_count": 1
     },
     {
-      "section_id": "sec_09",
+      "section_id": "sec_10",
       "title": "数字化转型实施",
-      "sort_no": 9,
+      "sort_no": 10,
       "description": "组织通用治理 - 数字化转型实施",
-      "card_count": 2
+      "card_count": 1
     }
   ],
   "schema_version": 2

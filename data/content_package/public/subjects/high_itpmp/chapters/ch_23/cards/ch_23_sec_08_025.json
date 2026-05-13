@@ -1,0 +1,44 @@
+{
+  "point_id": "025",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_08",
+  "title": "组织流程通常可分为：战略流程、运行流程和支持",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 122,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 25,
+  "content_file": "ch_23_sec_08_025.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_08_025.md",
+  "tags": [
+    "组织通用管理",
+    "流程规划",
+    "组织流程通常可分为：战略流程、运",
+    "组织流程通常可分为：战略流程、运"
+  ],
+  "key_points": "- ==组织流程通常可分为==、==战略流程==、==运行流程==、==支持流程==\n- ==的竞争策略与商业模式和战略过程的控制==、==战略过程的控制与调整等==、==短期战略目标的规划==、==战略目标的分解==、==组织长==\n- ==产品价值链(新产品管理)==、==服务链(服务管理)等==、==市场链(营销==、==销售)==\n- ==后勤支持与风险控制3类==、==决策支持==",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "024"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "221"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

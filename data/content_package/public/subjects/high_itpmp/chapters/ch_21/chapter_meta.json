@@ -2,20 +2,28 @@
   "chapter_id": "ch_21",
   "subject_id": "high_itpmp",
   "title": "项目管理科学基础",
-  "description": "项目管理科学基础，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "description": "项目管理科学基础，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
   "sort_no": 21,
+  "card_count": 3,
   "sections": [
     {
       "section_id": "sec_01",
-      "title": "工程经济学",
+      "title": "章节核心考点",
       "sort_no": 1,
-      "description": "项目管理科学基础 - 工程经济学",
+      "description": "项目管理科学基础 - 章节核心考点",
       "card_count": 1
     },
     {
       "section_id": "sec_02",
-      "title": "运筹学",
+      "title": "工程经济学",
       "sort_no": 2,
+      "description": "项目管理科学基础 - 工程经济学",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_03",
+      "title": "运筹学",
+      "sort_no": 3,
       "description": "项目管理科学基础 - 运筹学",
       "card_count": 1
     }

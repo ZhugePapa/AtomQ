@@ -1,0 +1,44 @@
+{
+  "point_id": "019",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_03",
+  "title": "OPM是建立了一个动态的组织用来有效地应对变",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 45,
+  "has_key_content": false,
+  "is_free": true,
+  "sort_no": 19,
+  "content_file": "ch_20_sec_03_019.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_03_019.md",
+  "tags": [
+    "高级项目管理",
+    "组织级项目管理",
+    "OPM是建立了一个动态的组织用来",
+    "OPM是建立了一个动态的组织用来"
+  ],
+  "key_points": "",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "018"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "208"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

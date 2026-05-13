@@ -1,0 +1,44 @@
+{
+  "point_id": "018",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_02",
+  "title": "控制职能提供过程与活动来对项目组合及其组件进",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 202,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 18,
+  "content_file": "ch_20_sec_02_018.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_02_018.md",
+  "tags": [
+    "高级项目管理",
+    "项目组合管理",
+    "控制职能提供过程与活动来对项目组",
+    "控制职能提供过程与活动来对项目组"
+  ],
+  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| ==人力资本== | 可用的支持项目组合的人力资源。 |\n| ==财务成本== | 可用的支持项目组合的资金。 |\n| ==资产== | 可用的实物资产，如设备、办公环境、固定资产和存货等。 |\n| ==智力资本== | 可用的专利、版权等。 |",
+  "mnemonics": "按顺序记：**人力资本、财务成本、资产、智力资本**。",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "017"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "207,208"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

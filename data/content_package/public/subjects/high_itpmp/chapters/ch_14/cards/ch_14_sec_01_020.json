@@ -1,0 +1,45 @@
+{
+  "point_id": "020",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_14",
+  "section_id": "sec_01",
+  "title": "(14)来自法律法规、技术、组织政策等的制约",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 53,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 20,
+  "content_file": "ch_14_sec_01_020.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_14/cards/ch_14_sec_01_020.md",
+  "tags": [
+    "沟通管理",
+    "章节核心考点",
+    "沟通管理计划",
+    "(14)来自法律法规、技术、组织",
+    "(14)来自法律法规、技术、组织"
+  ],
+  "key_points": "- (14)来自法律法规、技术、组织政策等的制约因素\n- (15)关于项目状态会议、项目团队会议、网络会议和电子邮件等的指南和模板\n- (16)项目网站和项目管理软件沟通管理计划中还包括==关于项目状态会议==、==项目团队会议==、==网络会议==和==电子邮件等的指南==和==模板==。如果项目要使用项目网站和项目管理软件，需要将其写入沟通管理计划。",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "019"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "148,149"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

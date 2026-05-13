@@ -1,0 +1,44 @@
+{
+  "point_id": "063",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_03",
+  "title": "如果三个估算值服从三角分布，则",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 45,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 63,
+  "content_file": "ch_10_sec_03_063.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_03_063.md",
+  "tags": [
+    "进度管理",
+    "章节核心考点",
+    "乐观时间(To)、最可能时间(T",
+    "如果三个估算值服从三角分布，则"
+  ],
+  "key_points": "- 如果三个估算值服从三角分布，则：T=(==To== +==Ty==+==To== )/3；如果三个估算值服从B分布，则：==TE===(==To== +4==Tw==+T。)/65. 自下而上估算：是一种==估算项目持续时间或成本的方法==，通过==从下到上逐层汇总==WBS==组成部分的估算==而\n- 得到项目估算类\n- 别数据分析",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "062"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "110,111"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

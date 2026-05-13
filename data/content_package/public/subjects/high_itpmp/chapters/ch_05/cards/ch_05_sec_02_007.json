@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_02",
-  "title": "UML14种图",
+  "title": "软件需求就是系统必须完成的事以及必须具备的品",
   "card_type": "concept",
-  "difficulty": 3,
-  "estimated_read_seconds": 228,
+  "difficulty": 1,
+  "estimated_read_seconds": 45,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 7,
   "content_file": "ch_05_sec_02_007.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_02_007.md",
   "tags": [
     "信息系统工程",
     "需求分析",
-    "UML14种图"
+    "软件需求就是系统必须完成的事以及",
+    "软件需求就是系统必须完成的事以及"
   ],
-  "key_points": "1. 展现了一组对象、接口、协作和它们之间的关系。是最常见的图。类图给出了系统的\n2. 描述结构化类(例如，构件或类)的内部结构，包括结构化类与系统其余部分的交互点。\n3. 消息构成。交互图专注于系统的动态视图。顺序图是强调消息的时间次序的交互图",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "006"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "48"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

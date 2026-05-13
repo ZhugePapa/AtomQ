@@ -1,0 +1,44 @@
+{
+  "point_id": "026",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "估算依据",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 45,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 26,
+  "content_file": "ch_10_sec_01_026.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_026.md",
+  "tags": [
+    "进度管理",
+    "章节核心考点",
+    "乐观时间(To)、最可能时间(T",
+    "估算依据"
+  ],
+  "key_points": "- ==估算依据==：持续时间估算所需的支持信息的数量和种类，因应用领域不同而不同。不论其详细程度如何，支持性文件都应该清晰、完整地说明持续时间估算是如何得出的。\n- 过程进度管理-过程5-制定进度计划\n- 工具和技术规划制定",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "025"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "110,111"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

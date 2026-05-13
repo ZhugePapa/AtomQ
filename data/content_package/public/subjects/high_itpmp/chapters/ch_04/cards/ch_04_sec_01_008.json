@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_01",
-  "title": "IT服务管理由若干不同的活动组成",
-  "card_type": "process",
-  "difficulty": 3,
-  "estimated_read_seconds": 280,
+  "title": "组织在考虑集中式与分布式架构决策时",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 89,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 8,
   "content_file": "ch_04_sec_01_008.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_008.md",
   "tags": [
     "信息系统管理",
     "管理方法",
-    "IT服务管理由若干不同的活动组成"
+    "组织在考虑集中式与分布式架构决策",
+    "组织在考虑集中式与分布式架构决策"
   ],
-  "key_points": "1. 服务台是服务中与服务干系人沟通和交互的重要界面，负责对服务干系人遇到的问题\n2. 事件可能是服务中断、服务速度变慢、软件缺陷以及其他任何组件发生故障，目标就\n3. 是快速解决事件，恢复业务。",
+  "key_points": "- ==特定功能的客户端==\n- ==高度建中式治理的组织==",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "007"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "38,39"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

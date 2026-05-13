@@ -3,21 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_23",
   "section_id": "sec_01",
-  "title": "键词进行记忆如果确实不想看",
+  "title": "人力资源",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 205,
+  "estimated_read_seconds": 183,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 1,
   "content_file": "ch_23_sec_01_001.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_01_001.md",
   "tags": [
     "组织通用管理",
     "人力资源管理基础",
-    "键词进行记忆如果确实不想看"
+    "人力资源"
   ],
-  "key_points": "1. 键词进行记忆！如果确实不想看，我觉得本章也是可以放弃的！或者考前把发的考点看看就好！\n2. 提供均等的选聘机会。本环节主要进行工作分析和岗位策划，根据各工作岗位任务的特点，\n3. 维护员工有效工作的积极性，维护安全健康的工作环境。维护包括如何管理员工的工资和奖",
+  "key_points": "- ==如何管理员工的工资==、==绩效、福利等措施激==、==做到奖惩分明==、==福利等措施激==、==奖金==\n- ==工作表现与人力资源管理相关策略执行情况的观察==、==培养各级管理人员==、==骨干人才==、==培训==、==培育==、==测量==",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
@@ -26,15 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "217"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

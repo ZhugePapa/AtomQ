@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_11",
   "section_id": "sec_01",
-  "title": "在项目成本管理的新实践中",
-  "card_type": "process",
-  "difficulty": 3,
-  "estimated_read_seconds": 60,
+  "title": "成本的类型：【项日经理可接控制直接成本",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 127,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 3,
   "content_file": "ch_11_sec_01_003.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_11/cards/ch_11_sec_01_003.md",
   "tags": [
     "成本管理",
-    "管理基础",
-    "在项目成本管理的新实践中"
+    "章节核心考点",
+    "成本的类型：【项日经理可接控制直",
+    "成本的类型：【项日经理可接控制直"
   ],
-  "key_points": "1. 5、在项目成本管理的新实践中：\n2. 进度挣值管理相关",
+  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| ==成本的类型== | 【项日经理可接控制直接成本】 |\n| ==(1)可变成本== | 随着生产量、工作量或时间而变的成本为可变成本。又称变动成本。 |\n| ==(2)固定成本== | 不随生产量、工作量或时间的变化而变化的非重复成本为固定成本。 |\n| ==(3)直接成本== | 直接可以归属于项目工作的成本为直接成本。如项目团队差旅费、工资、项目使用的物料及设备使用费。(一个项目承担) |\n| ==(4)间接成本== | 来自一般管理费用科目或几个项目共同担负的项目成本所分摊给本项目的费用，就形成了项目的间接成本，如税金、额外福利和保卫费用。几个项目分摊) |\n| ==(5)机会成本== | 是利用一定的时间或资源生产一种商品时，而失去的利用这些资源生产其他最佳替代品的机会就是机会成本，泛指一切在做出选择后其中一个最大的损失。 |",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "002"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "115"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

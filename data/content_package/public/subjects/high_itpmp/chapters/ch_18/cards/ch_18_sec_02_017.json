@@ -1,0 +1,44 @@
+{
+  "point_id": "017",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_02",
+  "title": "进度制约因素",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 45,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 17,
+  "content_file": "ch_18_sec_02_017.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_02_017.md",
+  "tags": [
+    "项目绩效域",
+    "绩效要点",
+    "开发方法的选择",
+    "进度制约因素"
+  ],
+  "key_points": "- 进度制约因素\n- 资金可用情\n- 况在充分了解范围和需求的情况下，创新程度高或项目团队没有做过的项目更适合采用==适项目团队以前完成的工作且能够提前规==划的项目适合采用==预测型方法当需求易于定义时==，适合采用预测",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "016"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "186,187"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_06",
   "section_id": "sec_01",
-  "title": "运营管理是另外一个领域",
-  "card_type": "process",
+  "title": "一个项目可以采用三种不同的模式进行管理",
+  "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 91,
+  "estimated_read_seconds": 45,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 9,
   "content_file": "ch_06_sec_01_009.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_01_009.md",
   "tags": [
     "项目管理概论",
     "项目基本要素",
-    "运营管理是另外一个领域"
+    "一个项目可以采用三种不同的模式进",
+    "一个项目可以采用三种不同的模式进"
   ],
-  "key_points": "1. 12、运营管理是另外一个领域，不属于项目管理范围。运营管理关注产品的持续生产、服务的持续提供。",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "008"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "67"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

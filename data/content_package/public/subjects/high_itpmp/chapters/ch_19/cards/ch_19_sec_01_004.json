@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_19",
   "section_id": "sec_01",
-  "title": "配置基线由一组配置项组成",
+  "title": "典型的配置项包括项目计划书、技术解决方案、需",
   "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 92,
+  "difficulty": 3,
+  "estimated_read_seconds": 45,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 4,
   "content_file": "ch_19_sec_01_004.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_004.md",
   "tags": [
     "配置与变更管理",
     "配置管理",
-    "配置基线由一组配置项组成"
+    "典型的配置项包括项目计划书、技术",
+    "典型的配置项包括项目计划书、技术"
   ],
-  "key_points": "1. 了，不能再被任何人随意修改。对基线的变更必须遵循正式的变更控制程序。\n2. 9、产品的一个测试版本(可能包括需求分析说明书、概要设计说明书、详细设计说明书、已编译的可执\n3. 行代码、测试大纲、测试用例、使用手册等)是基线的一个例子。",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "003"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "198"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

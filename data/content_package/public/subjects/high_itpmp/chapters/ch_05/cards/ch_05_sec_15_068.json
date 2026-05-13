@@ -1,0 +1,44 @@
+{
+  "point_id": "068",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_15",
+  "title": "安全服务包括对等实体认证服务、数据保密服务、",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 121,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 68,
+  "content_file": "ch_05_sec_15_068.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_15_068.md",
+  "tags": [
+    "信息系统工程",
+    "安全工程",
+    "安全服务包括对等实体认证服务、数",
+    "安全服务包括对等实体认证服务、数"
+  ],
+  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| ==(1)对等实体认证服务== | 用于两个开放系统同等层中的实体建立链接或数据传输时，对对方实体的合法性、真实性进行确认，以防假冒。 |\n| ==(3)数据完整性服务== | 用以防止非法实体对交换数据的修改、插入、删除以及在数据交换过程中的数据 |\n| ==(4)数据源点认证服务== | 用于确保数据发自真正的源点，防止假冒。 |\n| ==(5)禁止否认服务== | 用以防止发送方在发送数据后否认自己发送过此数据，接收方在收到数据后否认自已收到过此数据或伪造接收数据，由两种服务组成：不得否认发送和不得否认接收。 |\n| ==(6)犯罪证据提供服务== | 指为违反国内外法律法规的行为或活动，提供各类数字证据、信息线索等。 |",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "067"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "60,61"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

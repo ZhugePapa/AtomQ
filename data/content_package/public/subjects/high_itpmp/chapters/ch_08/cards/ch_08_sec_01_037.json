@@ -1,0 +1,44 @@
+{
+  "point_id": "037",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_01",
+  "title": "变更请求",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 110,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 37,
+  "content_file": "ch_08_sec_01_037.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_037.md",
+  "tags": [
+    "整合管理",
+    "章节核心考点",
+    "变更请求大•变更请求是关于修改任",
+    "变更请求"
+  ],
+  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| ==纠正措施== | 为使项目工作绩效重新与项目管理计划一致，而进行的有目的的活动。 |\n| ==预防措施== | 为确保项目工作未来绩效符合项目管理计划，而进行的有目的的活动。 |\n| ==缺陷补救== | 为了修正不一致产品或产品组件，而进行的有目的的活动。 |\n| ==更新== | 对正式受控的项目文件或计划进行变更，以反映修改、增加的意见或内容。 |",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "036"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "87,88"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

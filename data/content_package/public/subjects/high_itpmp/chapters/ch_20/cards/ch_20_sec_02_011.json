@@ -1,0 +1,44 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_02",
+  "title": "产能与能",
+  "card_type": "process",
+  "difficulty": 3,
+  "estimated_read_seconds": 46,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 11,
+  "content_file": "ch_20_sec_02_011.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_02_011.md",
+  "tags": [
+    "高级项目管理",
+    "项目组合管理",
+    "项目组合管理绩效域包括项目组合生",
+    "产能与能"
+  ],
+  "key_points": "- 产能与能\n- 力管理\n- 要点(1)启动阶段。启动阶段拉开了项目组合的序幕。此此阶段的主要活动是验证业务和运营战略，识别项目组合组件，为项目组合及其组件定义长期路线图，包括==财务目标==、==绩效标准==、==沟通==、==治理==、==干系人的定义与角色==，以及==持续管理计划==。",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "010"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "206,207"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

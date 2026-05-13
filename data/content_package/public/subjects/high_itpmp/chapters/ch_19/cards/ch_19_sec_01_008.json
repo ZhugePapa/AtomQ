@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_19",
   "section_id": "sec_01",
-  "title": "配置项负责人确保所负责的配置项的准确和真实",
+  "title": "处于\"正式\"状态的配置项的版本号格式为X.Y",
   "card_type": "concept",
-  "difficulty": 3,
-  "estimated_read_seconds": 185,
-  "has_key_content": true,
+  "difficulty": 1,
+  "estimated_read_seconds": 45,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 8,
   "content_file": "ch_19_sec_01_008.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_008.md",
   "tags": [
     "配置与变更管理",
     "配置管理",
-    "配置项负责人确保所负责的配置项的"
+    "处于\"正式\"状态的配置项的版本号",
+    "处于\"正式\"状态的配置项的版本号"
   ],
-  "key_points": "1. 19、配置管理的日常管理活动主要包括：制订配置管理计划、配置项识别、配置项控制、配置状态报告、\n2. 20、配置管理计划是对如何开展项目配置管理工作的规划，是配置管理过程的基础，应该形成文件并在\n3. 21、配置管理计划的主要内容为：",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "007"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "198"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

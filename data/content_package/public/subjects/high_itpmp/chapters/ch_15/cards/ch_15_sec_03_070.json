@@ -1,0 +1,43 @@
+{
+  "point_id": "070",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_03",
+  "title": "事业环境因素",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 48,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 70,
+  "content_file": "ch_15_sec_03_070.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_03_070.md",
+  "tags": [
+    "风险管理",
+    "章节核心考点",
+    "事业环境因素"
+  ],
+  "key_points": "- 事业环境因素\n- 提示清单\n- 会议组织过程资产识别风险大识别风险时，要同时考虑单个项目风险以及整体项目风险的来源。风险识别活动的参与者可能包括：==项目经理==、==项目团队成员==、==项目风险专家(若己指定)==、==客户==、==项目团队外部的主题专家==、==最终用户==、==其他项目经==",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "069"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "157"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

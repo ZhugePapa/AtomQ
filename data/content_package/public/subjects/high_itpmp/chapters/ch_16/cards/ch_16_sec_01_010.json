@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_16",
   "section_id": "sec_01",
-  "title": "根据可信度相关资质经验专业知识专长领域和参考",
-  "card_type": "concept",
+  "title": "需求管理计划",
+  "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 300,
+  "estimated_read_seconds": 45,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 10,
   "content_file": "ch_16_sec_01_010.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_010.md",
   "tags": [
     "采购管理",
-    "【管理基础】",
-    "根据可信度相关资质经验专业知识专"
+    "管理基础",
+    "管理ITTO汇L总",
+    "需求管理计划"
   ],
-  "key_points": "1. 经过谈判，证明它们的财务建议书是可接受的，那么就会选择技术建议书得分最高的卖方\n2. ⑦是否需要编制独立估算，以及是否应将其作为评价标准；\n3. ⑧风险管理事项，包括对履约保函或保险合同的要求，以减轻某些项目风险；",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "009"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "167,168"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

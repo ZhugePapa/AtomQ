@@ -1,0 +1,44 @@
+{
+  "point_id": "053",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "质量改进方法",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 93,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 53,
+  "content_file": "ch_12_sec_01_053.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_053.md",
+  "tags": [
+    "质量管理",
+    "章节核心考点",
+    "强调每次审计都应对组织经验教训知",
+    "质量改进方法"
+  ],
+  "key_points": "- ==质量改进方法==：质量改进的开展，可基于质量控制过程的发现和建议、质量审计的发现或管理质量过程的问题解决。计划-实施-检查-行动和六西格玛是最常用于分析和评估改进机会的两种质量改进工具。\n- ==质量报告==：可能是图形、数据或定性文件，其中包含的信息可帮助其他过程和部门采取纠正措施，以实现项目质量期望。==质量报告==的信息可以包含团队上报的质量管理问题，针对过程、项目和产品的改善建议，纠正措施建议(包括==返工==、==缺陷==/==漏洞补救==、==100%检查等)==，以及==在控制质量过程中发现的情况的概述==。大\n- ==测试与评估文件==：可基于行业需求和组织模板创建==测试与评估文件==。它们是控制质量过程的输入，用于评估质量目标的实现情况。这些文件可能包括==专门的核对单==和==详尽的需求跟踪矩阵==。",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "052"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "129"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

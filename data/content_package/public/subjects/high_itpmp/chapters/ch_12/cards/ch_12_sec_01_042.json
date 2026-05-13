@@ -1,0 +1,45 @@
+{
+  "point_id": "042",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "项目经理和项目团队可以通过组织的质量保证部门",
+  "card_type": "process",
+  "difficulty": 3,
+  "estimated_read_seconds": 79,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 42,
+  "content_file": "ch_12_sec_01_042.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_042.md",
+  "tags": [
+    "质量管理",
+    "章节核心考点",
+    "提高过程和活动的效率与效果",
+    "项目经理和项目团队可以通过组织的",
+    "项目经理和项目团队可以通过组织的"
+  ],
+  "key_points": "- 项目经理和项目团队可以通过组织的质量保证部门或其他组织职能执行某些管理质量活动，例如故障分析、实验设计和质量改进。\n- 管理质量是所有人的共同职责，包括==项目经理==、==项目团队==、==项目发起人==、==执行组织的管理层==，==甚至是客户==。在敏捷型项目中，整个项目期间的质量管理由所有团队成员执行；但在传统项目中，质量管理通常是特定团队成员的职责。\n- ==数据收集==：核对单是一种==结构化工具==，通常列出特定组成部分，用来核实所要求的一系列步骤是否己得到执行或检查需求列表是否已得到满足。基于项目需求和实践，核对单可简可繁。(22下论",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "041"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "127,128"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

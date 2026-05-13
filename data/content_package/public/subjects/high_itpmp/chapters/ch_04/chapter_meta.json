@@ -2,22 +2,23 @@
   "chapter_id": "ch_04",
   "subject_id": "high_itpmp",
   "title": "信息系统管理",
-  "description": "信息系统管理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "description": "信息系统管理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
   "sort_no": 4,
+  "card_count": 81,
   "sections": [
     {
       "section_id": "sec_01",
       "title": "管理方法",
       "sort_no": 1,
       "description": "信息系统管理 - 管理方法",
-      "card_count": 11
+      "card_count": 21
     },
     {
       "section_id": "sec_02",
       "title": "管理要点",
       "sort_no": 2,
       "description": "信息系统管理 - 管理要点",
-      "card_count": 17
+      "card_count": 60
     }
   ],
   "schema_version": 2

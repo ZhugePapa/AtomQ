@@ -3,21 +3,25 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_04",
-  "title": "信息系统一般由计算机系统网络系统操作系统数据",
+  "title": "关键大数据(BigData)指无法在一定时间",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 92,
+  "estimated_read_seconds": 46,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 31,
   "content_file": "ch_02_sec_04_031.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_04_031.md",
   "tags": [
     "信息技术发展",
     "新一代信息技术及应用",
-    "信息系统一般由计算机系统网络系统"
+    "大数据",
+    "关键大数据(BigData)指无",
+    "关键大数据(BigData)指无"
   ],
-  "key_points": "1. 信息系统安全主要包括计算机设备安全、网络安全、操作系统安全、数据库系统安全和应用系统安全\n2. 14、网络安全技术主要包括：防火墙、入侵检测与防护、VPN、\n3. 16、用户和实体行为分析 UEBA 系统通常包括数据获取层、算法分析层和场景应用层。",
+  "key_points": "- 关键大数据(==Big== ==Data==)指无法在一定时间范围内用常规软件工具进行捕捉、管理和处理的数据集合，是具有==更强的决策力、洞察发现力和流程优化能==力的海量、高增长率和多样化的信息资产。\n- 大数据从数据源到最终价值实现一般需要经过数据准备、数据存储与管理、数据分析和计算、数据治理和知识展现等过程\n- 数据海量",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "030"
   ],
@@ -28,15 +32,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "24"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

@@ -1,0 +1,45 @@
+{
+  "point_id": "036",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "认可计划团队章程；团队章程是为团队创建团队价",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 86,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 36,
+  "content_file": "ch_13_sec_01_036.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_036.md",
+  "tags": [
+    "资源管理",
+    "章节核心考点",
+    "•矩阵型图表能反映与每个人相关的",
+    "认可计划团队章程；团队章程是为团",
+    "认可计划团队章程；团队章程是为团"
+  ],
+  "key_points": "- 认可计划团队章程； 团队章程是为团队创建==团队价值观==、共识和工作指南的文件。团队章程包括：==团队价值观==、==沟通指南==、==决策标准==和==过程==、==冲突处理==过程==、==会议指南==和==团队共识。\n- 团队章程对项目团队成员的可接受行为确定了明确的期望，尽早认可并遵守明确的规则，==有助于减少误解==，==提高生产力==；==借助诸如行为规范==、沟通、决策、会议礼仪等方面的讨论，团队成员可以了解彼此重要的价值观。由团队制定或参与制定的团队章程可发挥最佳效果，所有项目团队成员都分担责任，\n- 确保遵守团队章程中规定的规则；可定期审查和更新团队章程，确保团队成员始终了解团队基本规则，并指导新成员融入团队规",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "035"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "138,139"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

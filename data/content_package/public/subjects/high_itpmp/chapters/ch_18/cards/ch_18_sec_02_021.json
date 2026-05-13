@@ -1,0 +1,45 @@
+{
+  "point_id": "021",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_02",
+  "title": "起开展工作预测型方法更适合具有指导文化的组织",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 123,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 21,
+  "content_file": "ch_18_sec_02_021.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_02_021.md",
+  "tags": [
+    "项目绩效域",
+    "绩效要点",
+    "开发方法的选择",
+    "起开展工作预测型方法更适合具有指",
+    "起开展工作预测型方法更适合具有指"
+  ],
+  "key_points": "- 起开展工作预测型方法更适合具有==指导文化的组织==，这种组适应型方法更适合项目团队自管理的织会制订周密的工作计划并根据相关基准测量组织\n- 进展情况\n- 从预测型方法过疲到适应型方法，然后再过疲到敏捷方法，不仅需要组织具有敏捷性，也需要整个组织的高层管理者转变思维模式。此外，组织政策、工作方式、汇报结构和态度都应保持一致，这样才能成功有效地运用适应型方法对于大型项目团队和主要通过虚拟方式工作的",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "020"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "186,187"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

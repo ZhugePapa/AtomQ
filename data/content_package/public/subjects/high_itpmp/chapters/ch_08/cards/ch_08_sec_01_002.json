@@ -3,21 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_08",
   "section_id": "sec_01",
-  "title": "过程层面执行整合",
-  "card_type": "process",
+  "title": "发生整合的三个层面",
+  "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 105,
-  "has_key_content": true,
+  "estimated_read_seconds": 45,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 2,
   "content_file": "ch_08_sec_01_002.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_002.md",
   "tags": [
     "整合管理",
-    "管理基础",
-    "过程层面执行整合"
+    "章节核心考点",
+    "发生整合的三个层面"
   ],
-  "key_points": "1. ③不同部分之间的动态交互作用；\n2. ④这些交互作用所产生的行为远远大于各部分简单的相加(例如突发性行为)。(23上23)\n3. 4、与整合管理过程相关的发展新实践包括：",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "001"
   ],
@@ -28,15 +30,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "80"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

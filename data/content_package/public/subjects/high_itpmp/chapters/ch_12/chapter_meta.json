@@ -2,22 +2,44 @@
   "chapter_id": "ch_12",
   "subject_id": "high_itpmp",
   "title": "质量管理",
-  "description": "质量管理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "description": "质量管理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
   "sort_no": 12,
+  "card_count": 76,
   "sections": [
     {
       "section_id": "sec_01",
-      "title": "管理基础",
+      "title": "质量管理过程",
       "sort_no": 1,
-      "description": "质量管理 - 管理基础",
-      "card_count": 4
+      "description": "质量管理 - 质量管理过程",
+      "card_count": 60
     },
     {
       "section_id": "sec_02",
-      "title": "管理过程",
+      "title": "控制质量",
       "sort_no": 2,
-      "description": "质量管理 - 管理过程",
-      "card_count": 25
+      "description": "质量管理 - 控制质量",
+      "card_count": 10
+    },
+    {
+      "section_id": "sec_03",
+      "title": "质量工具",
+      "sort_no": 3,
+      "description": "质量管理 - 质量工具",
+      "card_count": 3
+    },
+    {
+      "section_id": "sec_04",
+      "title": "规划质量",
+      "sort_no": 4,
+      "description": "质量管理 - 规划质量",
+      "card_count": 1
+    },
+    {
+      "section_id": "sec_05",
+      "title": "管理质量",
+      "sort_no": 5,
+      "description": "质量管理 - 管理质量",
+      "card_count": 2
     }
   ],
   "schema_version": 2

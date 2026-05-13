@@ -1,0 +1,44 @@
+{
+  "point_id": "057",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_02",
+  "title": "资源平滑",
+  "card_type": "process",
+  "difficulty": 3,
+  "estimated_read_seconds": 90,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 57,
+  "content_file": "ch_10_sec_02_057.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_02_057.md",
+  "tags": [
+    "进度管理",
+    "章节核心考点",
+    "制定进度计划：制订可行的项目进度",
+    "资源平滑"
+  ],
+  "key_points": "- 资源平滑：对进度模型中的活动进行调整，从而使项目资源需求不超过预定的资源限制的一种技术。\n- 相对于资源平衡而言，资源平滑不会改变项目的关键路径，完工日期也不会延迟。也就是说，活动只在其自由和总浮动时间内延迟，但资源平滑技术可能无法实现所有资源的优化。\n- ==数据分析==；==假设情景分析==：是对各种情景进行评估，预测它们对项目目标的影响(积极或消极的)。对\"如果情景X出现，情况会怎样？\"这样的问题进行分析，即基于已有的进度计划，考虑各种各样的情景。可以根据假设情景分析的结果，评估项目进度计划在不同条件下的可行性，以及应对意外情况的影响而编制进度储备和应对计划。",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "056"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "111,112"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

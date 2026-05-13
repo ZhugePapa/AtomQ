@@ -1,0 +1,45 @@
+{
+  "point_id": "036",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_02",
+  "title": "成本基准项目进度网络图项目文件(更新)",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 45,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 36,
+  "content_file": "ch_10_sec_02_036.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_02_036.md",
+  "tags": [
+    "进度管理",
+    "章节核心考点",
+    "管理ITTO汇总*",
+    "成本基准项目进度网络图项目文件(",
+    "成本基准项目进度网络图项目文件("
+  ],
+  "key_points": "",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "035"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "105,106"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

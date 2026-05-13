@@ -1,0 +1,45 @@
+{
+  "point_id": "064",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_03",
+  "title": "在预定的时间区间内渐进增加产品功能的一系列迭",
+  "card_type": "process",
+  "difficulty": 3,
+  "estimated_read_seconds": 89,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 64,
+  "content_file": "ch_06_sec_03_064.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_03_064.md",
+  "tags": [
+    "项目管理概论",
+    "价值驱动的项目管理知识体系",
+    "开发生命周期可以是：预测型、迭代",
+    "在预定的时间区间内渐进增加产品功",
+    "在预定的时间区间内渐进增加产品功"
+  ],
+  "key_points": "- 在预定的时间区间内渐进增加产品功能的一系列迭代来产出可交付成果(渐进地增加产品的功能)\n- 只有在最后一次选代之后，可交付成果具有==了必要和足够的能力才能被视完整的==\n- 增量型迭代方法是通过==一系列重复的循环活动来开发产品增量方==法是渐进地增加产品的功能(敏捷型、变更驱动)适合于需求不确定，不断发展变化的项目。在每次迭代前，项目和产品愿景的范围被明确定义和批准，每次迭代(又称\"冲刺\")结束时，客户会对具有==功能性的可交付物进行审==",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "063"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "73,74"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

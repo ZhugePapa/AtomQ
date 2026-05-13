@@ -1,0 +1,44 @@
+{
+  "point_id": "053",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_08",
+  "title": "依据建库流程可分为",
+  "card_type": "process",
+  "difficulty": 3,
+  "estimated_read_seconds": 96,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 53,
+  "content_file": "ch_05_sec_08_053.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_08_053.md",
+  "tags": [
+    "信息系统工程",
+    "数据运维",
+    "过程",
+    "依据建库流程可分为"
+  ],
+  "key_points": "- ==依据建库流程可分为==：==前期控制==、==过程控制==、==系统检测==、精度评价数据清理：三个步骤：数据分析一数据检测一数据修正＞数据分析：是指从数据中发现控制数据的一般规则，==比如字段域==、业务规则等通过==对数据的分析==，==定义出数据清理的规则==，==并选择合适的清理算法==。\n- 数据检测：是指根据预定义的清理规则及相关数据清理算法，检测数据是否正确，比如是否满足字段域业务规则等，或检测记录是否重复。",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "052"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "56,57"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

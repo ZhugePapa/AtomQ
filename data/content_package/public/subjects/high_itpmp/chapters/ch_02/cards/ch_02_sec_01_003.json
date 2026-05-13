@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_01",
-  "title": "软件定义网络(SDN)",
-  "card_type": "definition",
-  "difficulty": 3,
-  "estimated_read_seconds": 300,
+  "title": "SDN是一种新型网络创新架构",
+  "card_type": "concept",
+  "difficulty": 1,
+  "estimated_read_seconds": 105,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 3,
   "content_file": "ch_02_sec_01_003.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_01_003.md",
   "tags": [
     "信息技术发展",
     "计算机网络",
-    "软件定义网络(SDN)"
+    "广域网协议包括：PPP点对点协议",
+    "SDN是一种新型网络创新架构"
   ],
-  "key_points": "1. 1.是一种新型网络创新架构，是网络虚拟化的\n2. 的灵活控制，使网络变得更加智能，为核心网络及应用的创新提供了良好的平台。\n3. 标准，主要负责将控制器中的转发规则下发至转发设备，最主要应用的是 OpenFlow",
+  "key_points": "- SDN 核心：==控制面与数据面分离==。\n- 分层：==控制层==负责规则控制，==数据层==负责数据转发。\n- 接口：==南向接口==常考 ==OpenFlow==，==北向接口==面向应用，==东西向接口==连接多控制器。",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "002"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "17"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

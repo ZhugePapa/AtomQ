@@ -1,0 +1,44 @@
+{
+  "point_id": "092",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_04",
+  "title": "例子及描述",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 64,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 92,
+  "content_file": "ch_15_sec_04_092.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_04_092.md",
+  "tags": [
+    "风险管理",
+    "章节核心考点",
+    "项目文件(更新)大风险报告内",
+    "例子及描述"
+  ],
+  "key_points": "- 例子及描述\n- 注意点上报给其目标会受该威胁对于被上报的威胁，组织中的影响的那个层级(而具上报相关人员必须愿意承担应对责仟项目团队不再进一步监督)\n- 指项目团队采取行动来消延长进度、改变策略、缩小适用于发生概率较高，且具有==规避(除威胁==，或保护项貝免受成胁的范围、澄清需求、获取信息改善严重负面影响的高优先级威胁影响(将发生概率降低到零)",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "091"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "162"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

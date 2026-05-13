@@ -3,21 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_02",
-  "title": "常见的数据结构模型有三种",
+  "title": "存储系统架构",
   "card_type": "concept",
-  "difficulty": 3,
-  "estimated_read_seconds": 298,
+  "difficulty": 2,
+  "estimated_read_seconds": 61,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 8,
   "content_file": "ch_02_sec_02_008.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_008.md",
   "tags": [
     "信息技术发展",
     "存储和数据库",
-    "常见的数据结构模型有三种"
+    "存储系统架构"
   ],
-  "key_points": "1. 结点，而树中各结点之间的连线表示它们之间的关联。缺点并不是所\n2. 有事物都是层次关系\n3. 存储单位。记录包含若干数据项。网状数据库是导航式数据库，用户",
+  "key_points": "| 层次 | 必背协议 |\n|:---|:---|\n| ==应用层== | FTP、TFTP、HTTP、SMTP、DHCP、Telnet、DNS、SNMP |\n| ==传输层== | TCP、UDP |\n| ==网络层== | IP、ICMP、IGMP、ARP、RARP |\n| ==网络接口层== | 物理媒介 / 线路 |",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "007"
   ],
@@ -28,15 +30,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "18,19"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

@@ -2,22 +2,37 @@
   "chapter_id": "ch_08",
   "subject_id": "high_itpmp",
   "title": "整合管理",
-  "description": "整合管理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "description": "整合管理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
   "sort_no": 8,
+  "card_count": 77,
   "sections": [
     {
       "section_id": "sec_01",
-      "title": "管理基础",
+      "title": "整合管理过程",
       "sort_no": 1,
-      "description": "整合管理 - 管理基础",
-      "card_count": 3
+      "description": "整合管理 - 整合管理过程",
+      "card_count": 51
     },
     {
       "section_id": "sec_02",
-      "title": "管理过程",
+      "title": "指导执行与知识管理",
       "sort_no": 2,
-      "description": "整合管理 - 管理过程",
-      "card_count": 28
+      "description": "整合管理 - 指导执行与知识管理",
+      "card_count": 9
+    },
+    {
+      "section_id": "sec_03",
+      "title": "项目章程与计划",
+      "sort_no": 3,
+      "description": "整合管理 - 项目章程与计划",
+      "card_count": 11
+    },
+    {
+      "section_id": "sec_04",
+      "title": "监控与变更控制",
+      "sort_no": 4,
+      "description": "整合管理 - 监控与变更控制",
+      "card_count": 6
     }
   ],
   "schema_version": 2

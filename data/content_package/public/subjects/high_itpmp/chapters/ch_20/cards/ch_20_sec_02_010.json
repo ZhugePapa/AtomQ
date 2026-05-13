@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_20",
   "section_id": "sec_02",
-  "title": "产能管理强调项目组合及其组件的整体资源需求",
+  "title": "缋效域",
   "card_type": "process",
-  "difficulty": 2,
-  "estimated_read_seconds": 190,
+  "difficulty": 3,
+  "estimated_read_seconds": 45,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 10,
   "content_file": "ch_20_sec_02_010.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_02_010.md",
   "tags": [
     "高级项目管理",
     "项目组合管理",
-    "产能管理强调项目组合及其组件的整"
+    "项目组合管理绩效域包括项目组合生",
+    "缋效域"
   ],
-  "key_points": "1. 产能主要涉及：\n2. 2.能力管理：能力是一个组织为了交付产品或服务，通过人员、过程和系统等形成整合执行\n3. 的水平。能力管理是组织为持续提升能力，提供新能力构建、能力评估能力保持和发展等一",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "009"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "206,207"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

@@ -1,0 +1,44 @@
+{
+  "point_id": "073",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_02",
+  "title": "人际关系与团队技能",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 58,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 73,
+  "content_file": "ch_13_sec_02_073.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_02_073.md",
+  "tags": [
+    "资源管理",
+    "章节核心考点",
+    "团队成员离职率的降低",
+    "人际关系与团队技能"
+  ],
+  "key_points": "- 人际关系与团队技能：冲突管理、制定决策、情商、影响和领导力。\n- (1)冲突管理。在项目环境中，冲突不可避免。冲突的来源包括==资源稀缺==、==进度优先级排序==和==个人工作风==\n- 格差异等。",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "072"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "142,143"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

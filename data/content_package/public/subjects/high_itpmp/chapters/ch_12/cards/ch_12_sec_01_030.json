@@ -1,0 +1,45 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "成本效益分析要效益包括减少返工、提高生产率、",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 69,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 30,
+  "content_file": "ch_12_sec_01_030.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_030.md",
+  "tags": [
+    "质量管理",
+    "章节核心考点",
+    "解释说明将实际或计划的项目实践或",
+    "成本效益分析要效益包括减少返工、",
+    "成本效益分析要效益包括减少返工、"
+  ],
+  "key_points": "- 成本效益分析要效益包括==减少返工==、==提高生产率==、==降低成本==、==提升干系人满意度==及==提升赢利能力==。对每个质量活动进行成本效益分析，就是要比较其可能成本与预期效益数据分析\n- 预防成本预防特定项目的产品、可交付成果或服务质量低劣所带来的成本，包括：==培训==、==文件过程==、==设备==、==完成时间==质\n- 评估成本评估、测量、审计和测试特定项目的产品、可交付成果或服务所带来的成本，包括",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "029"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "124,125"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

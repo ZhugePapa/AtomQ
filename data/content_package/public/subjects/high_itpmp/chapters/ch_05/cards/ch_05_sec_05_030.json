@@ -1,0 +1,45 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_05",
+  "title": "持续交付提供了一套更为完善的解决传统软件开发",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 48,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 30,
+  "content_file": "ch_05_sec_05_030.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_05_030.md",
+  "tags": [
+    "信息系统工程",
+    "部署交付",
+    "持续部署",
+    "持续交付提供了一套更为完善的解决",
+    "持续交付提供了一套更为完善的解决"
+  ],
+  "key_points": "- 持续交付提供了一套更为完善的解决传统软件开发流程的方案，主要体现在：\n- ==在需求阶段==：抛弃了传统的需求文档的方式，使用便于开发人员理解的用户故事在开发测试阶段：做到持续集成，让测试人员尽早进入项目开始测试\n- 在运维阶段：打通开发和运维之间的通路，保持开发环境和运维环境的统一。",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "029"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "53,54"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

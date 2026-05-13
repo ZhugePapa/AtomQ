@@ -1,0 +1,44 @@
+{
+  "point_id": "043",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "信息邀请书(RFI)",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 60,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 43,
+  "content_file": "ch_16_sec_01_043.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_043.md",
+  "tags": [
+    "采购管理",
+    "管理基础",
+    "拟使用的预审合格的卖方等",
+    "信息邀请书(RFI)"
+  ],
+  "key_points": "- 信息邀请书(RFI)：如果需要卖方提供关于拟采购货物和服务的更多信息。\n- ==报价邀请书(RFQ)==：如果需要供应商提供关于将如何满足需求和(或)将需要多少成本的更多信息。\n- ==建议邀请书(RFP)==：如果项目中出现问题且解决办法难以确定，采购文件会包括==规定的应答格式==、==相关的采购工作说明书==，以及==所需的合同条款==。",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "042"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "169,170"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

@@ -1,0 +1,44 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "会议、风险登记册)",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 75,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 30,
+  "content_file": "ch_13_sec_01_030.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_030.md",
+  "tags": [
+    "资源管理",
+    "章节核心考点",
+    "源管理计划",
+    "会议、风险登记册)"
+  ],
+  "key_points": "- 会议、风险登记册)\n- 规划资源管理； 资源规划用于识别和确定一种方法，以确保有足够的资源能够成功完成项目。项目资源可能包括==团队成员==、==用品==、==材料==、==设备==、==服务==和==设施==。有效的资源规划还需要考虑稀缺资源的可用性和竞争方面的问题，并编制相应的计划。\n- 这些资源可以从组织内部资产获得，或者通过==采购过程从组织外部获取==。其他项目可能会在同一时间和地点竞争项目所需的相同资源，从而对项目成本、进度、风险、质量和其他项目领域造成显著影响。",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "029"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "136,137,138"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

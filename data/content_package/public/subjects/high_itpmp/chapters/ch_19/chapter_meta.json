@@ -2,29 +2,37 @@
   "chapter_id": "ch_19",
   "subject_id": "high_itpmp",
   "title": "配置与变更管理",
-  "description": "配置与变更管理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "description": "配置与变更管理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
   "sort_no": 19,
+  "card_count": 86,
   "sections": [
     {
       "section_id": "sec_01",
-      "title": "配置管理",
+      "title": "配置管理基础",
       "sort_no": 1,
-      "description": "配置与变更管理 - 配置管理",
-      "card_count": 12
+      "description": "配置与变更管理 - 配置管理基础",
+      "card_count": 59
     },
     {
       "section_id": "sec_02",
-      "title": "变更管理",
+      "title": "监控审计与记录",
       "sort_no": 2,
-      "description": "配置与变更管理 - 变更管理",
-      "card_count": 7
+      "description": "配置与变更管理 - 监控审计与记录",
+      "card_count": 2
     },
     {
       "section_id": "sec_03",
-      "title": "项目文档管理",
+      "title": "变更管理流程",
       "sort_no": 3,
-      "description": "配置与变更管理 - 项目文档管理",
-      "card_count": 2
+      "description": "配置与变更管理 - 变更管理流程",
+      "card_count": 22
+    },
+    {
+      "section_id": "sec_04",
+      "title": "版本与发布管理",
+      "sort_no": 4,
+      "description": "配置与变更管理 - 版本与发布管理",
+      "card_count": 3
     }
   ],
   "schema_version": 2

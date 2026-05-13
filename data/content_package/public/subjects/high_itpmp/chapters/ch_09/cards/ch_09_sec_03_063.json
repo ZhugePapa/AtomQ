@@ -1,0 +1,45 @@
+{
+  "point_id": "063",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_03",
+  "title": "(4)WBS中的元素必须有人负责，而且只有一",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 114,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 63,
+  "content_file": "ch_09_sec_03_063.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_03_063.md",
+  "tags": [
+    "范围管理",
+    "章节核心考点",
+    "核实可交付成果分解的程度是否恰当",
+    "(4)WBS中的元素必须有人负责",
+    "(4)WBS中的元素必须有人负责"
+  ],
+  "key_points": "- (4)==WBS==中的元素必须有人负责，而且只有一个人负责==(5)==WBS==应控制在4～6层：如果项==目规模比较大，以至于==WBS==要超过6层，此时，可以使用项目分解结构将大项目分解成子项目，然后针对子项目来做==WBS==。每个级别的==WBS==将上一级的一个元素分为==4～7个新元素==，\n- 同一级元素的大小应该相似。一个工作单元只能从属于某个上层单元，避免交叉从属。\n- (6)==WBS==应包括==项目管理工作(因为管理是项目具体工作的一部分)==，==也要包括分包出去的工作==。",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "062"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "101"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

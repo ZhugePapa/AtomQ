@@ -3,21 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_01",
-  "title": "组织在考虑集中式与分布式架构决策时",
-  "card_type": "concept",
-  "difficulty": 1,
-  "estimated_read_seconds": 95,
+  "title": "开展信息系统设计和实施",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 187,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 6,
   "content_file": "ch_04_sec_01_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_006.md",
   "tags": [
     "信息系统管理",
     "管理方法",
-    "组织在考虑集中式与分布式架构决策"
+    "开展信息系统设计和实施"
   ],
-  "key_points": "1. 8、组织在考虑集中式与分布式架构决策时，必须注意权衡与取舍：\n2. ＞集中式体系架构在某些方面更易于管理。因为所有功能都集中在主机或小型机中，而不是\n3. 对于快速构建应用程序非常有用，因为它为管理人员提供了模块化和组件化设计是一种更易于变",
+  "key_points": "- ==安全目标等事项+治理安排+权责)==、==考虑数据==、==流程需求==\n- ==实际的硬件==、==数据==、==网络==、==软件==\n- ==集中建设、支持和管理的模式==",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "005"
   ],
@@ -28,15 +30,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "38"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

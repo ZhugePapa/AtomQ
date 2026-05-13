@@ -1,0 +1,43 @@
+{
+  "point_id": "021",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_07",
+  "title": "战略执行保障体系具体包括以下三层",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 63,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 21,
+  "content_file": "ch_23_sec_07_021.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_07_021.md",
+  "tags": [
+    "组织通用管理",
+    "流程基础",
+    "战略执行保障体系具体包括以下三层"
+  ],
+  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| ==(1)第一层== | 以会议管理、运行分析、预算考核为基础建立组织发展计划，形成以执行和控制为目标的战 |\n| ==(2)第二层== | 以业务流程、岗位描述、绩效测评为基础架构，对研发、采购、生产与交付、销售、客服等各职能领域构建稳定的流程执行层。 |\n| ==(3)第三层== | 以ERP(组织资源规划)、CRM(客户关系管理)、PDM(产品数据管理)等大量的信息技术应用为基础的系统支撑层。 |",
+  "mnemonics": "按顺序记：**(1)第一层、(2)第二层、(3)第三层**。",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "020"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "220"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

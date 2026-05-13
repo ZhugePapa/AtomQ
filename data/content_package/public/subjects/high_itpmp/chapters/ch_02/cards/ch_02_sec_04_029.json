@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_04",
-  "title": "国际电信联盟(ITU)定义了5G的三大类应用",
-  "card_type": "definition",
-  "difficulty": 1,
-  "estimated_read_seconds": 95,
-  "has_key_content": true,
+  "title": "虚拟化技术与多任务以及超线程技术是完全不同的",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 52,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 29,
   "content_file": "ch_02_sec_04_029.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_04_029.md",
   "tags": [
     "信息技术发展",
     "新一代信息技术及应用",
-    "国际电信联盟(ITU)定义了5G"
+    "虚拟化技术与多任务以及超线程技术",
+    "虚拟化技术与多任务以及超线程技术"
   ],
-  "key_points": "1. 6、存储分类根据服务器类型分为：封闭系统的存储和开放系统的存储。封闭系统主要指大型机等\n2. 服务器。开放系统指基于包括麒麟、欧拉、UNIX、Linux 等操作系统的服务器。开放系统的存储分为：\n3. 内置存储和外挂存储。外挂存储根据连接的方式分为直连式存储(DAS)和网络化存储FAS)。网络化存储",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "028"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "23"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

@@ -1,0 +1,45 @@
+{
+  "point_id": "039",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_17",
+  "section_id": "sec_03",
+  "title": "投票通过投票选出应对干系人参与水平偏差的最佳",
+  "card_type": "definition",
+  "difficulty": 3,
+  "estimated_read_seconds": 45,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 39,
+  "content_file": "ch_17_sec_03_039.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_17/cards/ch_17_sec_03_039.md",
+  "tags": [
+    "干系人管理",
+    "章节核心考点",
+    "基本规则：根据团队章程中定义的基",
+    "投票通过投票选出应对干系人参与水",
+    "投票通过投票选出应对干系人参与水"
+  ],
+  "key_points": "- 投票通过==投票选出应对干系人参与水平偏差的最佳==方案数据表现：干系人参与度评估矩阵。跟踪每个干系人参与水平的变化，对干系人参与加以监督。\n- 沟通技能：\n- 沟通技能",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "038"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "181,182"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

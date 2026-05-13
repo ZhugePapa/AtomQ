@@ -3,21 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_01",
-  "title": "风险成本包括有形成本无形成本以及预防与控制风",
+  "title": "项目风险会对项目目标产生负面或正面的影响",
   "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 245,
-  "has_key_content": true,
+  "difficulty": 1,
+  "estimated_read_seconds": 45,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 5,
   "content_file": "ch_15_sec_01_005.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_005.md",
   "tags": [
     "风险管理",
-    "管理基础",
-    "风险成本包括有形成本无形成本以及"
+    "章节核心考点",
+    "项目风险会对项目目标产生负面或正",
+    "项目风险会对项目目标产生负面或正"
   ],
-  "key_points": "1. 8、风险成本包括有形成本、无形成本以及预防与控制风险的成本。太女女",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "004"
   ],
@@ -28,15 +31,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "151"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

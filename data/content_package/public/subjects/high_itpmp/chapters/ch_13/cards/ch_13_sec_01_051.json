@@ -1,0 +1,44 @@
+{
+  "point_id": "051",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "节省员工所需的办公室和所有实物设备的开支等",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 138,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 51,
+  "content_file": "ch_13_sec_01_051.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_051.md",
+  "tags": [
+    "资源管理",
+    "章节核心考点",
+    "节省员工所需的办公室和所有实物设",
+    "节省员工所需的办公室和所有实物设"
+  ],
+  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| ==物质资源分配单== | 记录了项目将使用的材料、设备、用品、地点和其他实物资源。 |\n| ==项目团队派工单== | 记录了团队成员及其在项目中的角色和职责，可包括项目团队名录，还需要把人员姓名插入项目管理计划的其他部分，如项目组织图和进度计划。 |\n| ==资源日历== | 识别了每种具体资源可用时的工作日、班次、正常营业的上下班时间、周末和公共假期。 |",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "050"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "140,141"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

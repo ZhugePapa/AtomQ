@@ -1,0 +1,44 @@
+{
+  "point_id": "029",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_14",
+  "section_id": "sec_02",
+  "title": "(6)负责沟通相关信息的人员",
+  "card_type": "concept",
+  "difficulty": 3,
+  "estimated_read_seconds": 45,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 29,
+  "content_file": "ch_14_sec_02_029.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_14/cards/ch_14_sec_02_029.md",
+  "tags": [
+    "沟通管理",
+    "章节核心考点",
+    "沟通管理计划",
+    "(6)负责沟通相关信息的人员"
+  ],
+  "key_points": "- (6)负责==沟通相关信息的人员==\n- (7)负责==授权保密信息发布的人员==组\n- 执行(8)接收信息的人员或群体，包括他们的需要、==需求==和==期望==",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "028"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "148,149"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

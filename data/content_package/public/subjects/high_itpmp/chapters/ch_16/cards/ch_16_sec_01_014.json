@@ -3,21 +3,25 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_16",
   "section_id": "sec_01",
-  "title": "谈判应由采购团队中拥有合同签署职权的成员主导",
-  "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 120,
+  "title": "广告投标人会议数据分析建议书评估人际关系与团",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 45,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 14,
   "content_file": "ch_16_sec_01_014.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_014.md",
   "tags": [
     "采购管理",
-    "【管理基础】",
-    "谈判应由采购团队中拥有合同签署职"
+    "管理基础",
+    "管理ITTO汇L总",
+    "广告投标人会议数据分析建议书评估",
+    "广告投标人会议数据分析建议书评估"
   ],
-  "key_points": "1. 选定的卖方：是在建议书评估或投标评估中被判断为最有竞争力的投标人。对于较复杂、高价值和高风\n2. 协议：合同是对双方都有约束力的协议。它强制卖方提供规定的产品、服务或成果，强制买方向卖方支\n3. 协议文本的主要内容主要包括：①采购工作说明书或主要的可交付成果；②进度计划、里程碑，或进度计",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "013"
   ],
@@ -28,15 +32,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "167,168"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

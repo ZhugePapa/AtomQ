@@ -1,0 +1,44 @@
+{
+  "point_id": "046",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "核对时间",
+  "card_type": "process",
+  "difficulty": 3,
+  "estimated_read_seconds": 45,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 46,
+  "content_file": "ch_12_sec_01_046.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_046.md",
+  "tags": [
+    "质量管理",
+    "章节核心考点",
+    "提高过程和活动的效率与效果",
+    "核对时间"
+  ],
+  "key_points": "- ==核对时间==：年月日数据分析大类别\n- 工具与技术\n- 解释说明备选方案分析用于评估已识别的可选方案，以选择那些最合适的质量方案或方法分析项目控制过程所输出的不同文件，如质量报告、测试报告、绩效报告和偏差分析，可以重点指出可能超出控制范围之外并阻碍项目团队满足特定要求或干系人期望的",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "045"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "127,128"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

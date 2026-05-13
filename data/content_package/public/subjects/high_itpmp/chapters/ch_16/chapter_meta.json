@@ -2,22 +2,23 @@
   "chapter_id": "ch_16",
   "subject_id": "high_itpmp",
   "title": "采购管理",
-  "description": "采购管理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "description": "采购管理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
   "sort_no": 16,
+  "card_count": 88,
   "sections": [
     {
       "section_id": "sec_01",
-      "title": "【管理基础】",
+      "title": "管理基础",
       "sort_no": 1,
-      "description": "采购管理 - 【管理基础】",
-      "card_count": 17
+      "description": "采购管理 - 管理基础",
+      "card_count": 60
     },
     {
       "section_id": "sec_02",
       "title": "合同管理",
       "sort_no": 2,
       "description": "采购管理 - 合同管理",
-      "card_count": 8
+      "card_count": 28
     }
   ],
   "schema_version": 2

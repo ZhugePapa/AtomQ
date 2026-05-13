@@ -3,21 +3,25 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_02",
-  "title": "智能特征",
-  "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 100,
-  "has_key_content": true,
+  "title": "是对组织各项经营管理活动提供数据决策支持而进",
+  "card_type": "process",
+  "difficulty": 3,
+  "estimated_read_seconds": 115,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 28,
   "content_file": "ch_04_sec_02_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_028.md",
   "tags": [
     "信息系统管理",
     "管理要点",
-    "智能特征"
+    "是关于元数据的创建、存储、整合与",
+    "是对组织各项经营管理活动提供数据",
+    "是对组织各项经营管理活动提供数据"
   ],
-  "key_points": "1. 29、保密性、完整性和可用性是信息安全最为关注的三个属性，因此这三个特性也经常被称为信息安\n2. 30、等级保护对象的安全保护等级分为以下五级：第一级(个人损害)、第二级(个人严重损害)、第三级",
+  "key_points": "",
   "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "027"
   ],
@@ -28,15 +32,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "OCR自动定位待复核"
+      "page_label": "41,42"
     }
   ],
-  "author": "Codex OCR 批量整理",
+  "author": "Codex color OCR 批量整理",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
-  "created_at": "2026-05-11T00:00:00+08:00",
-  "updated_at": "2026-05-11T00:00:00+08:00",
-  "version": 1,
-  "schema_version": 2,
-  "warnings": "本卡片由 OCR 文本自动整理，`review_status` 为 `ai_draft`，上线前需要人工核对原文、表格和红色重点。"
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
 }

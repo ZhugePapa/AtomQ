@@ -1,0 +1,44 @@
+{
+  "point_id": "055",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_09",
+  "title": "数据开发利用包括数据集成、数据挖掘和数据服务",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 215,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 55,
+  "content_file": "ch_05_sec_09_055.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_09_055.md",
+  "tags": [
+    "信息系统工程",
+    "数据开发利用",
+    "数据开发利用包括数据集成、数据挖",
+    "数据开发利用包括数据集成、数据挖"
+  ],
+  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| ==数据挖掘主要任务== | 数据总结、关联分析、分类和预测、聚类分析和孤立点分析。 |\n| ==数据挖掘流程== | 确定分析对象、数据准备、数据挖掘、结果评估与结果应用五阶段 |\n| ==数据目录服务== | 建立目录方便检索服务。 |\n| ==数据查询与浏览及下载服务== | 是网上数据共享服务的重要方式，用户使用数据的方式有查询数据和下载数据两种。 |\n| ==数据分发服务== | 是指数据的生产者通过各种方式将数据传送到用户的过程。 |\n| ==信息检索的方法== | 全文检索、字段检索、基于内容的多媒体检索、数据挖掘。 |",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "054"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "57"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

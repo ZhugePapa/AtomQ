@@ -1,0 +1,44 @@
+{
+  "point_id": "079",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_03",
+  "title": "风险登记册",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 48,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 79,
+  "content_file": "ch_15_sec_03_079.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_03_079.md",
+  "tags": [
+    "风险管理",
+    "章节核心考点",
+    "项目文件(更新)",
+    "风险登记册"
+  ],
+  "key_points": "- ==风险登记册==：更新内容可能包括：==每项单个项目风险的概率==和==影响评估==、==优先级别或风险分值==、==指定风险责任人==，==风险紧迫性信息或风险类别==，以及==低优先级风险的观察清单==和需要进一步分析的风险。\n- 风险报告：更新风险报告，以记录最重要的单个项目风险(通常概率和影响最高的风险)、所有已识别风险的优先级列表以及简要的结论。\n- 气泡大小=冲击值",
+  "mnemonics": "",
+  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "078"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "160,161"
+    }
+  ],
+  "author": "Codex color OCR 批量整理",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-13T00:00:00+08:00",
+  "version": 2,
+  "schema_version": 2
+}

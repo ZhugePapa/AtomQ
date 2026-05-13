@@ -2,50 +2,44 @@
   "chapter_id": "ch_15",
   "subject_id": "high_itpmp",
   "title": "风险管理",
-  "description": "风险管理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "description": "风险管理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
   "sort_no": 15,
+  "card_count": 96,
   "sections": [
     {
       "section_id": "sec_01",
-      "title": "管理基础",
+      "title": "风险管理基础",
       "sort_no": 1,
-      "description": "风险管理 - 管理基础",
-      "card_count": 15
+      "description": "风险管理 - 风险管理基础",
+      "card_count": 36
     },
     {
       "section_id": "sec_02",
-      "title": "0盤",
+      "title": "定性与定量分析",
       "sort_no": 2,
-      "description": "风险管理 - 0盤",
-      "card_count": 1
+      "description": "风险管理 - 定性与定量分析",
+      "card_count": 18
     },
     {
       "section_id": "sec_03",
-      "title": "1.",
+      "title": "规划与识别风险",
       "sort_no": 3,
-      "description": "风险管理 - 1.",
-      "card_count": 1
+      "description": "风险管理 - 规划与识别风险",
+      "card_count": 32
     },
     {
       "section_id": "sec_04",
-      "title": "0.100.05",
+      "title": "规划与实施风险应对",
       "sort_no": 4,
-      "description": "风险管理 - 0.100.05",
-      "card_count": 11
+      "description": "风险管理 - 规划与实施风险应对",
+      "card_count": 8
     },
     {
       "section_id": "sec_05",
-      "title": "亿美元-5000万美元",
+      "title": "监督风险",
       "sort_no": 5,
-      "description": "风险管理 - 亿美元-5000万美元",
-      "card_count": 1
-    },
-    {
-      "section_id": "sec_06",
-      "title": "0.30.4",
-      "sort_no": 6,
-      "description": "风险管理 - 0.30.4",
-      "card_count": 6
+      "description": "风险管理 - 监督风险",
+      "card_count": 2
     }
   ],
   "schema_version": 2

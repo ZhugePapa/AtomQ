@@ -2,15 +2,23 @@
   "chapter_id": "ch_07",
   "subject_id": "high_itpmp",
   "title": "立项管理",
-  "description": "立项管理，由 PDF OCR 文本自动整理为知识卡片草稿。",
+  "description": "立项管理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
   "sort_no": 7,
+  "card_count": 25,
   "sections": [
     {
       "section_id": "sec_01",
-      "title": "章节核心考点",
+      "title": "项目建议与可行性研究",
       "sort_no": 1,
-      "description": "立项管理 - 章节核心考点",
-      "card_count": 9
+      "description": "立项管理 - 项目建议与可行性研究",
+      "card_count": 23
+    },
+    {
+      "section_id": "sec_02",
+      "title": "项目评估与论证",
+      "sort_no": 2,
+      "description": "立项管理 - 项目评估与论证",
+      "card_count": 2
     }
   ],
   "schema_version": 2
