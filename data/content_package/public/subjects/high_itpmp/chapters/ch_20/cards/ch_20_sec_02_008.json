@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 2,
   "estimated_read_seconds": 186,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 8,
   "content_file": "ch_20_sec_02_008.md",
@@ -18,7 +18,7 @@
     "项目组合经理负责建立和实施项目组",
     "项目组合经理负责建立和实施项目组"
   ],
-  "key_points": "- ==必要权限、知识和经验的人员组成==\n- ==识别、分析和追踪项目组合组件间的依赖==",
+  "key_points": "- **必要权限、知识和经验的人员组成**\n- **识别**、**分析和追踪项目组合组件间的依赖**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

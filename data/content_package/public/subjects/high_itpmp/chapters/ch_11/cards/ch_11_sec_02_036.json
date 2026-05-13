@@ -7,7 +7,7 @@
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 36,
   "content_file": "ch_11_sec_02_036.md",
@@ -18,7 +18,7 @@
     "•两种常用的公式是三角分布和贝塔",
     "事业环境因素组织过程资产成本汇总"
   ],
-  "key_points": "- 事业环境因素组织过程资产成本汇总：先把成本估算汇总到 WBS 中的工作包，再由工作包汇总至 WBS 的更高层次(如控制账户)，最终得出整个项==目的==总成本。",
+  "key_points": "- 事业环境因素组织过程资产成本汇总：先把成本估算汇总到 WBS 中的工作包，再由工作包汇总至 WBS 的更高层次(如控制账户)，最终得出整个项**目的**总成本。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

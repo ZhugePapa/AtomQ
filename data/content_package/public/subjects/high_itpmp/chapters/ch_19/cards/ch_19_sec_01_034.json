@@ -17,7 +17,7 @@
     "配置管理",
     "变更工作量估计是否合理"
   ],
-  "key_points": "",
+  "key_points": "- **CCB**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 2,
   "estimated_read_seconds": 75,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 21,
   "content_file": "ch_01_sec_03_021.md",
@@ -20,7 +20,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "- 消费互联网以==消费者为服务中心==。\n- 关键词：个人用户、消费体验、阅读/出行/娱乐/生活服务。\n- 与工业互联网区分：消费互联网偏 C 端，工业互联网偏产业生产体系。",
+  "key_points": "- 消费互联网以**消费者为服务中心**。\n- 关键词：个人用户、消费体验、阅读/出行/娱乐/生活服务。\n- 与工业互联网区分：消费互联网偏 C 端，工业互联网偏产业生产体系。",
   "mnemonics": "",
   "common_mistakes": [],
   "review_status": "ai_draft",
@@ -29,5 +29,6 @@
       "source": "2026新版高项三色笔记（信息系统项目管理师）",
       "location": "拆分PDF 01 第7页"
     }
-  ]
+  ],
+  "updated_at": "2026-05-13T00:00:00+08:00"
 }

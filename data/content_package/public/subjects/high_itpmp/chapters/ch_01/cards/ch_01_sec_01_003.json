@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 2,
   "estimated_read_seconds": 86,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 3,
   "content_file": "ch_01_sec_01_003.md",
@@ -21,7 +21,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "- 这是**特征题**，不是质量属性题。\n- 场景判断常考：**依附性、相对性、动态性、传递性**。\n- 看到“同一信息对不同人价值不同”，优先想==相对性==。",
+  "key_points": "- 这是**特征题**，不是质量属性题。\n- 场景判断常考：**依附性、相对性、动态性、传递性**。\n- 看到“同一信息对不同人价值不同”，优先想**相对性**。",
   "mnemonics": "客普无动相，依变传层系转。",
   "common_mistakes": [],
   "review_status": "ai_draft",
@@ -30,5 +30,6 @@
       "source": "2026新版高项三色笔记（信息系统项目管理师）",
       "location": "拆分PDF 01 第2页"
     }
-  ]
+  ],
+  "updated_at": "2026-05-13T00:00:00+08:00"
 }

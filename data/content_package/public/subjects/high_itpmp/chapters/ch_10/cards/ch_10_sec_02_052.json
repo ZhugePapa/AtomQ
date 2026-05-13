@@ -7,7 +7,7 @@
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 60,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 52,
   "content_file": "ch_10_sec_02_052.md",

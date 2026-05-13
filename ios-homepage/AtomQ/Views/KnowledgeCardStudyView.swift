@@ -27,6 +27,10 @@ struct KnowledgeCardStudyView: View {
     @State private var isCurrentCardMastered = false
     @State private var topBarCollapseProgress: CGFloat = 0
     @State private var edgeSwipeBackTriggered = false
+    @State private var isHorizontalPagingActive = false
+    @State private var isVerticalScrollActive = false
+    @State private var hasActiveScrollSample = false
+    @State private var lastActiveScrollMinY: CGFloat = 0
     @GestureState private var interactiveCardOffsetX: CGFloat = 0
     private let topBarHeight: CGFloat = 56
 
@@ -121,6 +125,9 @@ struct KnowledgeCardStudyView: View {
         currentCardIndex = max(0, min(currentCardIndex, sectionCards.count - 1))
         pageData = sectionCards[currentCardIndex]
         syncMasteredStateForCurrentCard()
+        topBarCollapseProgress = 0
+        hasActiveScrollSample = false
+        lastActiveScrollMinY = 0
     }
 
     private var knowledgeBarStates: [KnowledgeBarState] {
@@ -219,17 +226,26 @@ struct KnowledgeCardStudyView: View {
         let dynamicPredictedThreshold = max(84, min(140, pageWidth * 0.24))
 
         return DragGesture(minimumDistance: 8)
+            .onChanged { value in
+                let horizontal = abs(value.translation.width)
+                let vertical = abs(value.translation.height)
+                guard horizontal > vertical, horizontal > 6, !isVerticalScrollActive else { return }
+                if !isHorizontalPagingActive {
+                    isHorizontalPagingActive = true
+                }
+            }
             .updating($interactiveCardOffsetX) { value, state, transaction in
                 let horizontal = value.translation.width
                 let vertical = value.translation.height
-                guard abs(horizontal) > abs(vertical) else { return }
+                guard !isVerticalScrollActive, abs(horizontal) > abs(vertical) else { return }
                 transaction.animation = .interactiveSpring(response: 0.20, dampingFraction: 0.92)
                 state = dampedInteractiveOffset(horizontal)
             }
             .onEnded { value in
+                defer { isHorizontalPagingActive = false }
                 let horizontal = value.translation.width
                 let vertical = value.translation.height
-                guard abs(horizontal) > abs(vertical) else { return }
+                guard !isVerticalScrollActive, abs(horizontal) > abs(vertical) else { return }
 
                 let predicted = value.predictedEndTranslation.width
                 let projectedExtra = predicted - horizontal
@@ -253,6 +269,20 @@ struct KnowledgeCardStudyView: View {
                         goBackwardCard()
                     }
                 }
+            }
+    }
+
+    private var verticalScrollLockGesture: some Gesture {
+        DragGesture(minimumDistance: 4)
+            .onChanged { value in
+                let horizontal = abs(value.translation.width)
+                let vertical = abs(value.translation.height)
+                if vertical > horizontal + 2, !isHorizontalPagingActive {
+                    isVerticalScrollActive = true
+                }
+            }
+            .onEnded { _ in
+                isVerticalScrollActive = false
             }
     }
 
@@ -406,10 +436,28 @@ struct KnowledgeCardStudyView: View {
                                                     proxy.frame(in: .scrollView).minY
                                                 } action: { minY in
                                                     guard idx == currentCardIndex else { return }
-                                                    let progress = max(0, min(1, -minY / topBarHeight))
-                                                    topBarCollapseProgress = progress
+                                                    if !hasActiveScrollSample {
+                                                        hasActiveScrollSample = true
+                                                        lastActiveScrollMinY = minY
+                                                        return
+                                                    }
+
+                                                    let delta = minY - lastActiveScrollMinY
+                                                    lastActiveScrollMinY = minY
+
+                                                    if delta > 0.5 {
+                                                        // Pulling down: reveal top bar immediately, not only at top.
+                                                        let revealStep = min(1, delta / max(1, topBarHeight)) * 1.6
+                                                        topBarCollapseProgress = max(0, topBarCollapseProgress - revealStep)
+                                                    } else {
+                                                        // Scrolling up / staying: follow absolute collapse progress.
+                                                        let progress = max(0, min(1, -minY / topBarHeight))
+                                                        topBarCollapseProgress = progress
+                                                    }
                                                 }
                                             }
+                                            .scrollDisabled(isHorizontalPagingActive)
+                                            .simultaneousGesture(verticalScrollLockGesture)
 
                                             LinearGradient(
                                                 stops: [
@@ -578,15 +626,27 @@ struct KnowledgeCardStudyView: View {
 
 private struct ProgressHeaderView: View {
     let states: [KnowledgeCardStudyView.KnowledgeBarState]
+    private let spacing: CGFloat = 4
+    private let defaultWidth: CGFloat = 21
 
     var body: some View {
-        HStack(spacing: 4) {
-            ForEach(Array(states.enumerated()), id: \.offset) { _, state in
-                Capsule()
-                    .fill(state.color)
-                    .frame(width: 21, height: state == .active ? 6 : 4)
-                    .shadow(color: state == .active ? Token.fgBrand.opacity(0.20) : .clear, radius: 2, x: 0, y: 1)
+        GeometryReader { proxy in
+            let count = max(states.count, 1)
+            let totalSpacing = CGFloat(max(count - 1, 0)) * spacing
+            let requiredWidth = (CGFloat(count) * defaultWidth) + totalSpacing
+            let barWidth = requiredWidth <= proxy.size.width
+                ? defaultWidth
+                : max(2, (proxy.size.width - totalSpacing) / CGFloat(count))
+
+            HStack(spacing: spacing) {
+                ForEach(Array(states.enumerated()), id: \.offset) { _, state in
+                    Capsule()
+                        .fill(state.color)
+                        .frame(width: barWidth, height: state == .active ? 6 : 4)
+                        .shadow(color: state == .active ? Token.fgBrand.opacity(0.20) : .clear, radius: 2, x: 0, y: 1)
+                }
             }
+            .frame(maxWidth: .infinity, alignment: .center)
         }
         .frame(height: 8)
     }
@@ -803,17 +863,15 @@ private struct DirectoryChapterRow: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
 
                     IconWrapper(
-                        name: isExpanded ? "icon-dir-chevron-down" : "icon-dir-chevron-left",
+                        name: "icon-dir-chevron-left",
                         outerWidth: 24,
                         outerHeight: 24,
-                        innerInsets: isExpanded
-                            ? IconInsets(top: 0.3750, right: 0.2500, bottom: 0.3750, left: 0.2500)
-                            : IconInsets(top: 0.2500, right: 0.3750, bottom: 0.2500, left: 0.3750),
-                        imageInsets: isExpanded
-                            ? IconInsets(top: -0.1667, right: -0.0833, bottom: -0.1667, left: -0.0833)
-                            : IconInsets(top: -0.0833, right: -0.1667, bottom: -0.0833, left: -0.1667),
+                        innerInsets: IconInsets(top: 0.2500, right: 0.3750, bottom: 0.2500, left: 0.3750),
+                        imageInsets: IconInsets(top: -0.0833, right: -0.1667, bottom: -0.0833, left: -0.1667),
                         cssVariables: ["stroke-0": Token.fgTertiary]
                     )
+                    .rotationEffect(.degrees(isExpanded ? -90 : 0))
+                    .animation(.easeInOut(duration: 0.20), value: isExpanded)
                 }
                 .padding(.horizontal, 20)
                 .frame(height: 56)

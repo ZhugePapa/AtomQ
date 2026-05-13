@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 2,
   "estimated_read_seconds": 108,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 55,
   "content_file": "ch_18_sec_04_055.md",
@@ -17,7 +17,7 @@
     "执行效果检查",
     "预期目标了解项目的运行环境"
   ],
-  "key_points": "- ==持一致应对措施适宜性==\n- ==值内利用机会的机制==",
+  "key_points": "- **持一致应对措施适宜性**\n- **值内利用机会的机制**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

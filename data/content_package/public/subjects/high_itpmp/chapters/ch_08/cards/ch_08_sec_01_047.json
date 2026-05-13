@@ -7,7 +7,7 @@
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 47,
   "content_file": "ch_08_sec_01_047.md",
@@ -18,7 +18,7 @@
     "确保项目与商业需求保持一致等",
     "变更请求"
   ],
-  "key_points": "- 变更请求\n- 会议事业环境因素组织过程资产实施整体变更控制\n- 实施整体变更控制过程贯穿项目始终，项目经理对此承担最终责任。在整个项目生命周期的任何时间，参与项==目的==任何干系人都可以提出变更请求。",
+  "key_points": "- 变更请求\n- 会议事业环境因素组织过程资产实施整体变更控制\n- 实施整体变更控制过程贯穿项目始终，项目经理对此承担最终责任。在整个项目生命周期的任何时间，参与项**目的**任何干系人都可以提出变更请求。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

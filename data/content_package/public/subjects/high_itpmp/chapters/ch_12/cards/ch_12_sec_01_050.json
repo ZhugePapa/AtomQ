@@ -7,7 +7,7 @@
   "card_type": "process",
   "difficulty": 2,
   "estimated_read_seconds": 110,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 50,
   "content_file": "ch_12_sec_01_050.md",
@@ -18,7 +18,7 @@
     "展示了引发缺陷的一系列步骤是一种",
     "展示了引发缺陷的一系列步骤是一种"
   ],
-  "key_points": "- ==展示数字数据的条形图==\n- ==PMO==",
+  "key_points": "- **展示数字数据的条形图**\n- **PMO**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

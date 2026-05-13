@@ -7,7 +7,7 @@
   "card_type": "definition",
   "difficulty": 2,
   "estimated_read_seconds": 68,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 16,
   "content_file": "ch_03_sec_01_016.md",
@@ -18,7 +18,7 @@
     "第三方对组织的IT治理能力进行评",
     "第三方对组织的IT治理能力进行评"
   ],
-  "key_points": "",
+  "key_points": "- **IT**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -7,7 +7,7 @@
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 46,
   "content_file": "ch_08_sec_01_046.md",
@@ -19,7 +19,7 @@
     "项目文件(需求跟踪矩阵、成本效益",
     "项目文件(需求跟踪矩阵、成本效益"
   ],
-  "key_points": "- 项目文件(需求跟踪矩阵、成本效益分析)\n- 实施整体\n- 变更控制==风险报告==、估算依据)",
+  "key_points": "- 项目文件(需求跟踪矩阵、成本效益分析)\n- 实施整体\n- 变更控制**风险报告**、估算依据)",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

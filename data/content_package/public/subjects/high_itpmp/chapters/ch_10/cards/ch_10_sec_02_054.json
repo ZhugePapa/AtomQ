@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_02",
-  "title": "解释说明",
+  "title": "储备分析与备选方案分析",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 62,
+  "estimated_read_seconds": 45,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 54,
@@ -15,12 +15,11 @@
   "tags": [
     "进度管理",
     "章节核心考点",
-    "乐观时间(To)、最可能时间(T",
-    "解释说明"
+    "储备分析与备选方案分析"
   ],
-  "key_points": "",
+  "key_points": "- **应急储备**进基准，**管理储备**通常不进基准。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "已人工修复 P0 OCR/标题/重点标记问题。",
   "prerequisite_point_ids": [
     "053"
   ],

@@ -7,7 +7,7 @@
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 20,
   "content_file": "ch_02_sec_03_020.md",
@@ -19,7 +19,7 @@
     "信息可以随时正常使用的属性安全可",
     "信息可以随时正常使用的属性安全可"
   ],
-  "key_points": "- 信息可以随时正常使用的属性安全可以划分为==四个层次：设备安全==、==数据安全==、==内容安全==、==行为安全==\n- 一般由计算机系统、网络系统、操作系统、数据库系统和应用系统组成\n- 信息系统安全",
+  "key_points": "- 信息可以随时正常使用的属性安全可以划分为**四个层次：设备安全、数据安全、内容安全、行为安全**\n- 一般由计算机系统、网络系统、操作系统、数据库系统和应用系统组成\n- 信息系统安全",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

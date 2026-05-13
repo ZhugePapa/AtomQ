@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 2,
   "estimated_read_seconds": 75,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 17,
   "content_file": "ch_01_sec_02_017.md",
@@ -21,7 +21,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "- 车联网可按 ==端-管-云== 理解。\n- 管系统解决 V2V、V2I、V2N、V2P 等互联互通。\n- 五类连接：车云、车车、车路、车人、车内设备。",
+  "key_points": "- 车联网可按 **端-管-云** 理解。\n- 管系统解决 V2V、V2I、V2N、V2P 等互联互通。\n- 五类连接：车云、车车、车路、车人、车内设备。",
   "mnemonics": "端感知，管连接，云汇聚。",
   "common_mistakes": [],
   "review_status": "ai_draft",
@@ -30,5 +30,6 @@
       "source": "2026新版高项三色笔记（信息系统项目管理师）",
       "location": "拆分PDF 01 第5页"
     }
-  ]
+  ],
+  "updated_at": "2026-05-13T00:00:00+08:00"
 }

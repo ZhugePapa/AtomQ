@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 89,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 56,
   "content_file": "ch_09_sec_02_056.md",
@@ -19,7 +19,7 @@
     "工作绩效数据工作绩效信息变更请求",
     "工作绩效数据工作绩效信息变更请求"
   ],
-  "key_points": "",
+  "key_points": "- **的元素：通过定义范围中的时间检查自己、定义范围中的时间检查自己的工作时间是**\n- **控制范围过程来管理这些变更**\n- **客户关注项目范围**、**合理性**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

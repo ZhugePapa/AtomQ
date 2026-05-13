@@ -18,7 +18,7 @@
     "以下提供了OPM成熟度级别特征的",
     "以下提供了OPM成熟度级别特征的"
   ],
-  "key_points": "",
+  "key_points": "- **OPM**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

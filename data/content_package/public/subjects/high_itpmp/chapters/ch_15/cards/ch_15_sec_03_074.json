@@ -3,11 +3,11 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_03",
-  "title": "解释说明",
+  "title": "风险登记册内容",
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 74,
   "content_file": "ch_15_sec_03_074.md",
@@ -15,12 +15,11 @@
   "tags": [
     "风险管理",
     "章节核心考点",
-    "数据分析*大",
-    "解释说明"
+    "风险登记册内容"
   ],
-  "key_points": "",
+  "key_points": "- 风险登记册会随着风险管理过程持续更新。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "已人工修复 P0 OCR/标题/重点标记问题。",
   "prerequisite_point_ids": [
     "073"
   ],

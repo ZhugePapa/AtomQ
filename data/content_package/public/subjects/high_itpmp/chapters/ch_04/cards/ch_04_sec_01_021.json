@@ -17,7 +17,7 @@
     "管理方法",
     "优化和持续改进基于有效的变更管理"
   ],
-  "key_points": "- ==Control/Nerify==、==分析(Analysis)==、==Improve/Desi==、==度量(Measure)==、==DMAIC/DMADV==、==定义(Define)==\n- ==待优化信息系统定义==、==核心流程定义==、==团队组建==\n- ==度量系统分析==、==流程定义==、==指标定义==、==流程基线==\n- ==信息系统异常的源头分析==、==确定优化改进的驱动因素==、==价值流分析==",
+  "key_points": "- **Control**、**Nerify**、**分析(Analysis**、**Improve**、**Desi**、**度量(Measure**、**DMAIC**、**DMADV**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 33,
   "content_file": "ch_05_sec_05_033.md",
@@ -18,7 +18,7 @@
     "持续部署",
     "Ship"
   ],
-  "key_points": "- ==Ship==：将所需的第三方依赖和第三方插件安装到环境中>==Run==：在不同的地方启动整套环境。\n- 制作完成部署包之后，每次需要变更软件或者第三方依赖以及插件升级的时候，不需要重新打包，直接更新部署包即可。\n- 不可变服务器是一种==部署模式==，是指除了更新和安装补丁程序以外，不对服务器进行",
+  "key_points": "- **Ship**：将所需的第三方依赖和第三方插件安装到环境中>**Run**：在不同的地方启动整套环境。\n- 制作完成部署包之后，每次需要变更软件或者第三方依赖以及插件升级的时候，不需要重新打包，直接更新部署包即可。\n- 不可变服务器是一种**部署模式**，是指除了更新和安装补丁程序以外，不对服务器进行",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

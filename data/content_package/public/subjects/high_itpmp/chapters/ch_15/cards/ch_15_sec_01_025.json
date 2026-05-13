@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 25,
   "content_file": "ch_15_sec_01_025.md",
@@ -18,7 +18,7 @@
     "险需求文件、持续时间估算、成本估",
     "险需求文件、持续时间估算、成本估"
   ],
-  "key_points": "- 险需求文件、持续时间估算、成本估算、资，假没条件和制约因源需求、问题日志、经验教训登记册)\n- 素分析、==SWOT==分析、文件分品，政国文件更新(假\n- 析)",
+  "key_points": "- 险需求文件、持续时间估算、成本估算、资，假没条件和制约因源需求、问题日志、经验教训登记册)\n- 素分析、**SWOT**分析、文件分品，政国文件更新(假\n- 析)",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

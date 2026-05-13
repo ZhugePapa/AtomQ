@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 1,
   "estimated_read_seconds": 93,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 11,
   "content_file": "ch_18_sec_02_011.md",
@@ -18,7 +18,7 @@
     "动机：某些情商模型还包括第5个方",
     "动机：某些情商模型还包括第5个方"
   ],
-  "key_points": "- ==包容性的特点==\n- ==投票、德尔菲估算和举手表决等方法进行==",
+  "key_points": "- **包容性的特点**\n- **投票**、**德尔菲估算和举手表决等方法进行**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

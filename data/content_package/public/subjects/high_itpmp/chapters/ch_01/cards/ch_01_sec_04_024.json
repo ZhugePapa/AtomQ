@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 2,
   "estimated_read_seconds": 75,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 24,
   "content_file": "ch_01_sec_04_024.md",
@@ -20,7 +20,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "- 数字政府着力点：==业务数据化、数据业务化==。\n- 目标：**用数据决策、用数据服务、用数据创新**。\n- 五大特征：协同化、云端化、智能化、数据化、动态化。",
+  "key_points": "- 数字政府着力点：**业务数据化、数据业务化**。\n- 目标：**用数据决策、用数据服务、用数据创新**。\n- 五大特征：协同化、云端化、智能化、数据化、动态化。",
   "mnemonics": "协云智数动。",
   "common_mistakes": [],
   "review_status": "ai_draft",
@@ -33,5 +33,6 @@
       "source": "2026新版高项三色笔记（信息系统项目管理师）",
       "location": "拆分PDF 01 第9页"
     }
-  ]
+  ],
+  "updated_at": "2026-05-13T00:00:00+08:00"
 }

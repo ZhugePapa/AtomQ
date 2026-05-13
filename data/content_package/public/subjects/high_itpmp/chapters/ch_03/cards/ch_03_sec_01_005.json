@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 2,
   "estimated_read_seconds": 53,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 5,
   "content_file": "ch_03_sec_01_005.md",
@@ -18,7 +18,7 @@
     "有效的IT治理必须关注五项关键决",
     "有效的IT治理必须关注五项关键决"
   ],
-  "key_points": "- ==IT 基础设施==、==业务应用需求==、==IT 原则==、==IT架构==、==IT投资==、==优先顺序==\n- ==IT==",
+  "key_points": "- **IT 基础设施、业务应用需求、IT 原则、IT架构、IT投资、优先顺序**\n- **IT**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

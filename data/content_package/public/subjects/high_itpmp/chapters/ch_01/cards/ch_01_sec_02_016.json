@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 75,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 16,
   "content_file": "ch_01_sec_02_016.md",
@@ -22,7 +22,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "- 工业互联网不是普通互联网在工业里的简单应用。\n- 四大体系：==网络、平台、数据、安全==。\n- 平台四层：**边缘层、IaaS、PaaS、SaaS**。",
+  "key_points": "- 工业互联网不是普通互联网在工业里的简单应用。\n- 四大体系：**网络、平台、数据、安全**。\n- 平台四层：**边缘层、IaaS、PaaS、SaaS**。",
   "mnemonics": "网平数安；边 I P S。",
   "common_mistakes": [],
   "review_status": "ai_draft",
@@ -31,5 +31,6 @@
       "source": "2026新版高项三色笔记（信息系统项目管理师）",
       "location": "拆分PDF 01 第4页"
     }
-  ]
+  ],
+  "updated_at": "2026-05-13T00:00:00+08:00"
 }

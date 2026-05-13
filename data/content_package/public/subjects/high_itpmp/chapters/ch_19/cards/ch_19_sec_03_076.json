@@ -7,7 +7,7 @@
   "card_type": "process",
   "difficulty": 2,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 76,
   "content_file": "ch_19_sec_03_076.md",
@@ -17,7 +17,7 @@
     "变更管理",
     "对理解变更过程有能力要求等"
   ],
-  "key_points": "- ==按照实施计划实施具体的变更==\n- ==对重大变更行使审批==",
+  "key_points": "- **按照实施计划实施具体的变更**\n- **对重大变更行使审批**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

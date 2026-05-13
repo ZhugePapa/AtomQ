@@ -3,11 +3,11 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_01",
-  "title": "考忠到需求的新厂",
+  "title": "决策树需求情景",
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 33,
   "content_file": "ch_15_sec_01_033.md",
@@ -15,12 +15,11 @@
   "tags": [
     "风险管理",
     "章节核心考点",
-    "敏感性分有助于确定哪些单个项目风",
-    "考忠到需求的新厂"
+    "决策树需求情景"
   ],
-  "key_points": "",
+  "key_points": "- 决策树适合处理**不确定条件下的方案选择**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "已人工修复 P0 OCR/标题/重点标记问题。",
   "prerequisite_point_ids": [
     "032"
   ],

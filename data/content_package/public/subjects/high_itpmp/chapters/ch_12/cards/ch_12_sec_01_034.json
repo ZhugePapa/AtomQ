@@ -7,7 +7,7 @@
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 58,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 34,
   "content_file": "ch_12_sec_01_034.md",
@@ -18,7 +18,7 @@
     "解释说明将实际或计划的项目实践或",
     "项目花费资金规避失败"
   ],
-  "key_points": "",
+  "key_points": "- **映射水平价值链的过程细节来显示活动、**\n- **文件过程、完成时间、培训、设备**\n- **一系列决策排列出备选方案的优先顺序、决策技术**\n- **提升干系人满意度**、**提升赢利能力**、**提高生产率**、**减少返工**、**降低成本**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

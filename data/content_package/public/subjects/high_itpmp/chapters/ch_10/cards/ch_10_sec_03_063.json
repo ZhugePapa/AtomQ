@@ -3,7 +3,7 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_03",
-  "title": "如果三个估算值服从三角分布，则",
+  "title": "三点估算",
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 45,
@@ -15,12 +15,11 @@
   "tags": [
     "进度管理",
     "章节核心考点",
-    "乐观时间(To)、最可能时间(T",
-    "如果三个估算值服从三角分布，则"
+    "三点估算"
   ],
-  "key_points": "- 如果三个估算值服从三角分布，则：T=(==To== +==Ty==+==To== )/3；如果三个估算值服从B分布，则：==TE===(==To== +4==Tw==+T。)/65. 自下而上估算：是一种==估算项目持续时间或成本的方法==，通过==从下到上逐层汇总==WBS==组成部分的估算==而\n- 得到项目估算类\n- 别数据分析",
+  "key_points": "- 三角分布简单平均；贝塔分布给**最可能时间**更高权重。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "已人工修复 P0 OCR/标题/重点标记问题。",
   "prerequisite_point_ids": [
     "062"
   ],

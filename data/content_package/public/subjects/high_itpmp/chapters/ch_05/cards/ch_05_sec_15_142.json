@@ -7,7 +7,7 @@
   "card_type": "definition",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 142,
   "content_file": "ch_05_sec_15_142.md",
@@ -18,7 +18,7 @@
     "CMMI成熟度",
     "采用组织标准流程开展各"
   ],
-  "key_points": "- 采用==组织标准流程开展各==\n- 项工作能够依据项目特征对组织的标准流程进行裁剪以解决特定的项目和工作特征：\n- 项目能够使用和向组织贡献",
+  "key_points": "- 采用**组织标准流程开展各**\n- 项工作能够依据项目特征对组织的标准流程进行裁剪以解决特定的项目和工作特征：\n- 项目能够使用和向组织贡献",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

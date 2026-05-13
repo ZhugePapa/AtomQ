@@ -11,6 +11,16 @@ enum ContentPackageRemoteStore {
         }
         try await PublicContentDownloader(baseURL: baseURL, cacheRoot: cacheRoot).refreshIfNeeded()
     }
+
+    static func clearLocalCache() throws {
+        guard let cacheRoot = ContentPackageConfig.publicContentCacheRoot else {
+            throw RemoteStoreError.missingCacheRoot
+        }
+        let fm = FileManager.default
+        if fm.fileExists(atPath: cacheRoot.path) {
+            try fm.removeItem(at: cacheRoot)
+        }
+    }
 }
 
 private enum ContentPackageConfig {

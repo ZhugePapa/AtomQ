@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 2,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 7,
   "content_file": "ch_23_sec_02_007.md",
@@ -18,7 +18,7 @@
     "岗位设计是确定完成工作的方式、所",
     "法岗位设计方法"
   ],
-  "key_points": "- ==法岗位设计方法==：科学管理方法、人际关系方法、工作特征模型、提高绩效工作系统",
+  "key_points": "- **法岗位设计方法**：科学管理方法、人际关系方法、工作特征模型、提高绩效工作系统\n- **工作的完整性、工作的广度、工作的深度**\n- **工作中的相互沟通等方面、工作的责任、权利、方法**\n- **领导对下级的工作方法、个人的工作方法设计等、工作权利与责任、组织**\n- **法岗位设计方法**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

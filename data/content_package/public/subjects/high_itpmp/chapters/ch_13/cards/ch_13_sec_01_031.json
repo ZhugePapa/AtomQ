@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 75,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 31,
   "content_file": "ch_13_sec_01_031.md",

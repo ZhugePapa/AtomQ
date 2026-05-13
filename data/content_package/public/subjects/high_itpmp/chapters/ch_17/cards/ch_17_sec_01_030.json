@@ -7,7 +7,7 @@
   "card_type": "definition",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 30,
   "content_file": "ch_17_sec_01_030.md",
@@ -18,7 +18,7 @@
     "基本规则：根据团队章程中定义的基",
     "解释说明通过积极倾听"
   ],
-  "key_points": "- 解释说明通过==积极倾听==，减少理解错误和沟通错误文化意识和文化敏感性有助于项目经理分析干系人和团队成员的文化差异和文化需求，并对沟通进行规划\n- 人际关系\n- 与团队技能",
+  "key_points": "- 解释说明通过**积极倾听**，减少理解错误和沟通错误文化意识和文化敏感性有助于项目经理分析干系人和团队成员的文化差异和文化需求，并对沟通进行规划\n- 人际关系\n- 与团队技能",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

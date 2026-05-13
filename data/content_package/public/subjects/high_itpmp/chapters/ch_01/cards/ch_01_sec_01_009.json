@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 75,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 9,
   "content_file": "ch_01_sec_01_009.md",
@@ -20,7 +20,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "- 信息化核心不是“上系统”，而是应用==基于信息技术的先进社会生产工具==。\n- 目标链：**提生产力 → 改生产关系 → 改上层建筑 → 提升国家/社会/生活质量**。",
+  "key_points": "- 信息化核心不是“上系统”，而是应用**基于信息技术的先进社会生产工具**。\n- 目标链：**提生产力 → 改生产关系 → 改上层建筑 → 提升国家/社会/生活质量**。",
   "mnemonics": "",
   "common_mistakes": [],
   "review_status": "ai_draft",
@@ -29,5 +29,6 @@
       "source": "2026新版高项三色笔记（信息系统项目管理师）",
       "location": "拆分PDF 01 第2页"
     }
-  ]
+  ],
+  "updated_at": "2026-05-13T00:00:00+08:00"
 }

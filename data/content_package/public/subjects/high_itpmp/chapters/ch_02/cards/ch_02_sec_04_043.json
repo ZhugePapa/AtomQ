@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_04",
-  "title": "算法意",
+  "title": "区块链加密与共识算法",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 137,
+  "estimated_read_seconds": 73,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 43,
@@ -15,12 +15,11 @@
   "tags": [
     "信息技术发展",
     "新一代信息技术及应用",
-    "算法意：故列算法也叫数据搞要或者",
-    "算法意"
+    "区块链加密与共识算法"
   ],
-  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| ==合规监管== | 是否支持超级权限节点对全网节点、数据进行监 |\n| ==性能效率== | 交易达成共识被确认的效率。 |\n| ==资源消耗== | 共识过程中耗费的CPU网络输入输出、存储等资源。 |\n| ==容错性== | 防攻击、防欺诈的能力 |",
+  "key_points": "- **散列算法**用于数据指纹。\n- **非对称加密**用于身份与数据安全。\n- **共识机制**用于分布式节点达成一致。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "已人工修复 P0 OCR/标题/重点标记问题。",
   "prerequisite_point_ids": [
     "042"
   ],

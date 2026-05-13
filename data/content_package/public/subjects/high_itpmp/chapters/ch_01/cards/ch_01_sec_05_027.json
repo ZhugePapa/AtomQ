@@ -7,7 +7,7 @@
   "card_type": "process",
   "difficulty": 3,
   "estimated_read_seconds": 75,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 27,
   "content_file": "ch_01_sec_05_027.md",
@@ -21,7 +21,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "| 层次 | 判断 |\n|:---|:---|\n| 数字化转换 | 把模拟/纸面信息变成数字形式 |\n| 数字化升级 | 用数字技术做局部提效 |\n| 数字化转型 | ==重构核心业务和业务模式== |\n\nDIKW：**数据 → 信息 → 知识 → 智慧**。",
+  "key_points": "| 层次 | 判断 |\n|:---|:---|\n| 数字化转换 | 把模拟/纸面信息变成数字形式 |\n| 数字化升级 | 用数字技术做局部提效 |\n| 数字化转型 | **重构核心业务和业务模式** |\nDIKW：**数据 → 信息 → 知识 → 智慧**。",
   "mnemonics": "转换改格式，升级提效率，转型改模式。",
   "common_mistakes": [],
   "review_status": "ai_draft",
@@ -34,5 +34,6 @@
       "source": "2026新版高项三色笔记（信息系统项目管理师）",
       "location": "拆分PDF 01 第12页"
     }
-  ]
+  ],
+  "updated_at": "2026-05-13T00:00:00+08:00"
 }

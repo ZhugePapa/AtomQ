@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 2,
   "estimated_read_seconds": 95,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 58,
   "content_file": "ch_15_sec_03_058.md",
@@ -18,7 +18,7 @@
     "管理整体项目风险入口、最小化单个",
     "管理整体项目风险入口、最小化单个"
   ],
-  "key_points": "- ==有效性的过程裁剪考虑==\n- ==敏捷或适应型方法管理项目==",
+  "key_points": "- **有效性的过程裁剪考虑**\n- **敏捷或适应型方法管理项目**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -7,7 +7,7 @@
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 60,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 22,
   "content_file": "ch_02_sec_03_022.md",
@@ -18,7 +18,7 @@
     "安全",
     "典型代表特征"
   ],
-  "key_points": "- 典型代表特征\n- 对称密钥体制数据加密标准 ==DES==算法加密密钥和解密密钥相同非对称密钥体制\n- ==RSA== 算法加密密钥和解密密钥不同，加密密钥可以公开而解密密钥需",
+  "key_points": "- 典型代表特征\n- 对称密钥体制数据加密标准 **DES**算法加密密钥和解密密钥相同非对称密钥体制\n- **RSA** 算法加密密钥和解密密钥不同，加密密钥可以公开而解密密钥需",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

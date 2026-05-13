@@ -18,7 +18,7 @@
     "第五代移动通信技术第五代移动通信",
     "第五代移动通信技术第五代移动通信"
   ],
-  "key_points": "- ==短帧、快速反馈、多层/多站数据重传等==\n- ==OFDMA==、==MIMO==",
+  "key_points": "- **短帧、快速反馈、多层/多站数据重传等**\n- **OFDMA**、**MIMO**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

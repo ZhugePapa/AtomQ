@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 2,
   "estimated_read_seconds": 75,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 28,
   "content_file": "ch_01_sec_05_028.md",
@@ -20,7 +20,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "- 元宇宙关键词：==虚实融合、沉浸体验、持续运行==。\n- 它依赖云计算、AI、数字孪生、区块链等能力。\n- 更适合理解为数字化转型的空间交互延伸，不建议单独硬背太多定义。",
+  "key_points": "- 元宇宙关键词：**虚实融合、沉浸体验、持续运行**。\n- 它依赖云计算、AI、数字孪生、区块链等能力。\n- 更适合理解为数字化转型的空间交互延伸，不建议单独硬背太多定义。",
   "mnemonics": "",
   "common_mistakes": [],
   "review_status": "ai_draft",
@@ -29,5 +29,6 @@
       "source": "2026新版高项三色笔记（信息系统项目管理师）",
       "location": "拆分PDF 01 第12页"
     }
-  ]
+  ],
+  "updated_at": "2026-05-13T00:00:00+08:00"
 }

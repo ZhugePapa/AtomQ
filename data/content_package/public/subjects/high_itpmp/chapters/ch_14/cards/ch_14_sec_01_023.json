@@ -7,7 +7,7 @@
   "card_type": "process",
   "difficulty": 2,
   "estimated_read_seconds": 48,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 23,
   "content_file": "ch_14_sec_01_023.md",
@@ -18,7 +18,7 @@
     "管理沟通管理沟通过程不局限于发布",
     "管理沟通管理沟通过程不局限于发布"
   ],
-  "key_points": "- ==程不局限于发布相关信息==\n- ==发送方-接收方模型媒介选择==、==写作风格==、==会议管理==、==积极倾听==、==演示==、==引导==",
+  "key_points": "- **程不局限于发布相关信息**\n- **发送方**、**接收方模型媒介选择**、**写作风格**、**会议管理**、**积极倾听**、**演示**、**引导**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

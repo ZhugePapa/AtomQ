@@ -7,7 +7,7 @@
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 150,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 38,
   "content_file": "ch_05_sec_06_038.md",
@@ -17,7 +17,7 @@
     "数据建模",
     "根据模型应用目的不同"
   ],
-  "key_points": "- ==三类：概念模型==、==逻辑模型==、==物理模型==\n- ==DBMS==\n- ==这些操作必须满足关系的完整性约束条件==、==更新数据==、==查询==、==插入==、==删除==\n- ==三大类型：实体完整性==、==用户定义的完整性==、==参照完整性==",
+  "key_points": "- **三类：概念模型、逻辑模型、物理模型**\n- **DBMS、这些操作必须满足关系的完整性约束条件、更新数据、查询、插入、删除**\n- **三大类型：实体完整性、用户定义的完整性、参照完整性**\n- **这些操作必须满足关系的完整性约束条件、更新数据、查询、插入、删除**\n- **DBMS**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

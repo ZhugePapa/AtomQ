@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 16,
   "content_file": "ch_09_sec_02_016.md",
@@ -19,7 +19,7 @@
     "监控在整个项目期间保持对范围控制",
     "监控在整个项目期间保持对范围控制"
   ],
-  "key_points": "- 监控在整个项目期间保持对范围控制范围监督项目和产品的范围状态，管理范围基准变更的过程\n- 基准的维需要在整个项目期间开展\n- ==护裁剪考虑==：知识和需求管理、确认和控制、开发方法、需求的稳定性、治理",
+  "key_points": "- 监控在整个项目期间保持对范围控制范围监督项目和产品的范围状态，管理范围基准变更的过程\n- 基准的维需要在整个项目期间开展\n- **护裁剪考虑**：知识和需求管理、确认和控制、开发方法、需求的稳定性、治理",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

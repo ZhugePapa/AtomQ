@@ -27,6 +27,10 @@ enum GuestUserLocalStore {
         return Set(raw.map(normalize).filter { !$0.isEmpty })
     }
 
+    static func clearAll() {
+        UserDefaults.standard.removeObject(forKey: masteredPointIDsKey)
+    }
+
     private static func normalize(_ value: String) -> String {
         value.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
     }

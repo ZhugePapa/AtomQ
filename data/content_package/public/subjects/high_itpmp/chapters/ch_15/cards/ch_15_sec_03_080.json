@@ -3,7 +3,7 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_03",
-  "title": "不可旅今",
+  "title": "风险应对可执行性",
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 45,
@@ -15,12 +15,11 @@
   "tags": [
     "风险管理",
     "章节核心考点",
-    "项目文件(更新)",
-    "不可旅今"
+    "风险应对可执行性"
   ],
-  "key_points": "",
+  "key_points": "- 风险应对不是写在文档里就结束，关键要能**落实执行**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "已人工修复 P0 OCR/标题/重点标记问题。",
   "prerequisite_point_ids": [
     "079"
   ],

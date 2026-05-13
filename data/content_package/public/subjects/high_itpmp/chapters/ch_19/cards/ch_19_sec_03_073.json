@@ -18,7 +18,7 @@
     "可能以逐级审批形式或团队会议的形",
     "可能以逐级审批形式或团队会议的形"
   ],
-  "key_points": "",
+  "key_points": "- **记录与交变更请求单**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

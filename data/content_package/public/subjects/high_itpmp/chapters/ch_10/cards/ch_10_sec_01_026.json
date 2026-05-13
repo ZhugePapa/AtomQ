@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 26,
   "content_file": "ch_10_sec_01_026.md",
@@ -18,7 +18,7 @@
     "乐观时间(To)、最可能时间(T",
     "估算依据"
   ],
-  "key_points": "- ==估算依据==：持续时间估算所需的支持信息的数量和种类，因应用领域不同而不同。不论其详细程度如何，支持性文件都应该清晰、完整地说明持续时间估算是如何得出的。\n- 过程进度管理-过程5-制定进度计划\n- 工具和技术规划制定",
+  "key_points": "- **估算依据 ：持续时间估算所需的支持信息的数量和种类**、**因应用领域不同而不同**、**不论其详细程度如何**、**支持性文件都应该清晰**、**完整地说明持续时间估算是如何得出的**\n- 过程进度管理-过程5-制定进度计划\n- 工具和技术规划制定",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_01",
-  "title": "•赶工：是通过增加资源",
-  "card_type": "formula",
+  "title": "进度压缩与进度计划输出",
+  "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 240,
+  "estimated_read_seconds": 90,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 30,
@@ -14,12 +14,12 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_030.md",
   "tags": [
     "进度管理",
-    "章节核心考点",
-    "•赶工：是通过增加资源"
+    "资源与进度优化",
+    "进度压缩"
   ],
-  "key_points": "- ==增加额外资源或支付加急费用来加快关键路径上的活动==、==增加资源就能缩短持续时间的且位于关键==、==批准加班==、==增加资源==、==赶工==\n- ==并行活动来缩短关键路径上的项目工期的==、==快速跟进==\n- ==Ty==、==Te==、==To==、==Tw==、==Tp==\n- ==人和团队能够决定需要开发的内容==",
+  "key_points": "- **赶工**：加资源压缩关键路径，常带来成本和风险上升。\n- **快速跟进**：并行原本顺序执行的活动，常带来返工和风险上升。\n- **进度图形**：横道图看日期，里程碑图看关键节点，网络图看逻辑关系。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "已人工修复 OCR 污染、坏重点标记和长卡片问题。",
   "prerequisite_point_ids": [
     "029"
   ],

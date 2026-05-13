@@ -696,6 +696,8 @@ private struct TabItem: View {
 
 private struct ProfileCenterView: View {
     @Binding var isDarkMode: Bool
+    @State private var showClearCacheConfirm = false
+    @State private var clearCacheResultMessage: String?
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -710,11 +712,58 @@ private struct ProfileCenterView: View {
             }
             .tint(Token.fgBrand)
 
+            Button {
+                showClearCacheConfirm = true
+            } label: {
+                HStack(spacing: 12) {
+                    Text("清除本地缓存")
+                        .font(.custom("PingFang SC", size: 16).weight(.medium))
+                        .foregroundStyle(Token.textPrimary)
+                    Spacer(minLength: 0)
+                    Text("清理")
+                        .font(.custom("PingFang SC", size: 14).weight(.medium))
+                        .foregroundStyle(Token.textWarning)
+                }
+                .padding(.horizontal, 16)
+                .frame(height: 56)
+                .background(Token.bgSurface)
+                .overlay(
+                    RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous)
+                        .stroke(Token.borderDefault, lineWidth: 1)
+                )
+                .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
+            }
+            .buttonStyle(.plain)
+
             Spacer()
         }
         .padding(.top, 24)
         .padding(.horizontal, 20)
         .background(Token.bgCanvas)
+        .alert("清除本地缓存", isPresented: $showClearCacheConfirm) {
+            Button("取消", role: .cancel) {}
+            Button("清除", role: .destructive) {
+                do {
+                    GuestUserLocalStore.clearAll()
+                    try ContentPackageRemoteStore.clearLocalCache()
+                    clearCacheResultMessage = "本地缓存已清除。"
+                } catch {
+                    clearCacheResultMessage = "清除失败：\(error.localizedDescription)"
+                }
+            }
+        } message: {
+            Text("将清除本地学习状态和已下载内容缓存。")
+        }
+        .alert("清除结果", isPresented: Binding(
+            get: { clearCacheResultMessage != nil },
+            set: { newValue in
+                if !newValue { clearCacheResultMessage = nil }
+            }
+        )) {
+            Button("确定", role: .cancel) { clearCacheResultMessage = nil }
+        } message: {
+            Text(clearCacheResultMessage ?? "")
+        }
     }
 }
 

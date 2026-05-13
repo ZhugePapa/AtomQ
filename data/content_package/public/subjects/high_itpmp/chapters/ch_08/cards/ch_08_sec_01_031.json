@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_08",
   "section_id": "sec_01",
-  "title": "项目审批要求(例如",
+  "title": "制定项目管理计划",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 163,
+  "estimated_read_seconds": 63,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 31,
@@ -15,11 +15,11 @@
   "tags": [
     "整合管理",
     "章节核心考点",
-    "项目审批要求(例如"
+    "制定项目管理计划"
   ],
-  "key_points": "- ==提出变更请求、实施整体变更控制过程进==、==不断更新来渐进明细==",
+  "key_points": "- 项目管理计划是综合性计划，不是单一子计划。\n- 基准确定后，更新要走**整体变更控制**。",
   "mnemonics": "目的目标需求要描述风险进度财务干系人要审批",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "已人工修复 P0 OCR/标题/重点标记问题。",
   "prerequisite_point_ids": [
     "030"
   ],

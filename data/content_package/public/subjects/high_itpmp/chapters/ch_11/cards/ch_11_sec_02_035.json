@@ -7,7 +7,7 @@
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 35,
   "content_file": "ch_11_sec_02_035.md",
@@ -19,7 +19,7 @@
     "可行性研究文件(可行性研究报告、",
     "可行性研究文件(可行性研究报告、"
   ],
-  "key_points": "- 可行性研究文件(可行性研究报告、项目评估报告)\n- 项目文件(估算依据、成本估算、项目进度计划、==风险登记册==专家判断成本汇总数据分析(储备分析)\n- 历史信息审核资金限制平衡",
+  "key_points": "- 可行性研究文件(可行性研究报告、项目评估报告)\n- 项目文件(估算依据、成本估算、项目进度计划、**风险登记册**专家判断成本汇总数据分析(储备分析)\n- 历史信息审核资金限制平衡",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

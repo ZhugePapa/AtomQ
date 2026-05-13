@@ -3,7 +3,7 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_11",
   "section_id": "sec_01",
-  "title": "资金篅求支出",
+  "title": "项目资金需求",
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 45,
@@ -15,12 +15,11 @@
   "tags": [
     "成本管理",
     "章节核心考点",
-    "模型中的参数易于量化",
-    "资金篅求支出"
+    "项目资金需求"
   ],
-  "key_points": "",
+  "key_points": "- **项目资金需求**关注资金投入的时间分布，不只是总成本。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "已人工修复 P0 OCR/标题/重点标记问题。",
   "prerequisite_point_ids": [
     "011"
   ],

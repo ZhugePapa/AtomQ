@@ -7,7 +7,7 @@
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 39,
   "content_file": "ch_20_sec_05_039.md",
@@ -18,7 +18,7 @@
     "CMM15个成熟度级别分别如下",
     "第3级-"
   ],
-  "key_points": "- 第3级-\n- 定义级所有第2级实践的意图和价值都已经达采用==组织标准流程开展各项工作==\n- 到，并且组织能够根据自身的情况定义适能够依据项目特征对组织的标准流程进行裁剪用于自身的标准过程，将这套管理体系与以解决特定的项目和工作特征",
+  "key_points": "- 第3级-\n- 定义级所有第2级实践的意图和价值都已经达采用**组织标准流程开展各项工作**\n- 到，并且组织能够根据自身的情况定义适能够依据项目特征对组织的标准流程进行裁剪用于自身的标准过程，将这套管理体系与以解决特定的项目和工作特征",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -7,7 +7,7 @@
   "card_type": "process",
   "difficulty": 3,
   "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 21,
   "content_file": "ch_11_sec_02_021.md",
@@ -19,7 +19,7 @@
     "今详细的估算适用于采用准时制的短",
     "今详细的估算适用于采用准时制的短"
   ],
-  "key_points": "- 今详细的估算适用于采用==准时制的短期规划==。\n- 管理 ITTO汇总大\n- 过程规划成本管理计划估算成本规划",
+  "key_points": "- 今详细的估算适用于采用**准时制的短期规划**。\n- 管理 ITTO汇总大\n- 过程规划成本管理计划估算成本规划",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

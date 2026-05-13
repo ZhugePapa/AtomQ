@@ -7,7 +7,7 @@
   "card_type": "process",
   "difficulty": 3,
   "estimated_read_seconds": 74,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 54,
   "content_file": "ch_19_sec_01_054.md",
@@ -18,7 +18,7 @@
     "变更的流程：①变更申请一②对变更",
     "变更的流程"
   ],
-  "key_points": "- ==变更的流程==\n- ==该相关信息的收集==",
+  "key_points": "- **变更的流程**\n- **该相关信息的收集**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
