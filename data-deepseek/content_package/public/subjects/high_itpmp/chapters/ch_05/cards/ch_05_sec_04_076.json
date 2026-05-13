@@ -1,0 +1,32 @@
+{
+  "point_id": "076",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_04",
+  "title": "根据目的和用途不同，设计模式可分",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 76,
+  "tags": [
+    "信息系统工程",
+    "安全工程"
+  ],
+  "key_points": [
+    "根据目的和用途不同，设计模式可分为创建型模式 (创建对象) 、结构型模式 (处理类或对象的组合)",
+    "和行为型 (描述类或对象的交互以及职责的分配) 。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_04_076.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_04_076.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

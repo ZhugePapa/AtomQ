@@ -1,0 +1,32 @@
+{
+  "point_id": "033",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_06",
+  "title": "为了有效执行交付绩效域，项目经理需要重点关注价值的",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 65,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 33,
+  "tags": [
+    "项目绩效域",
+    "交付绩效域"
+  ],
+  "key_points": [
+    "为了有效执行交付绩效域，项目经理需要重点关注价值的交付、可交付物、质量。",
+    "些项日会在项目工作进行期间不断提出新的需求。 不管是什么类型的项目，需求都需要对"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_06_033.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_06_033.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

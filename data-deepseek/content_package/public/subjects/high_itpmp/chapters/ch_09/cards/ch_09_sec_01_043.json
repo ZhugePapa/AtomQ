@@ -1,0 +1,31 @@
+{
+  "point_id": "043",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "决策， 投票，当由项目团队和其他干系人进行验收时，",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 39,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 43,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "决策， 投票，当由项目团队和其他干系人进行验收时，使用投票来形成结论。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_043.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_043.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

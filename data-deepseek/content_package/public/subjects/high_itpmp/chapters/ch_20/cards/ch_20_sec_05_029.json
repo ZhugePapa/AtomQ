@@ -1,0 +1,32 @@
+{
+  "point_id": "029",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_05",
+  "title": "CMMI (能力成熟度模型集成) 模型主要用于指导",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 29,
+  "tags": [
+    "高级项目管理",
+    "项目管理实践模型"
+  ],
+  "key_points": [
+    "CMMI (能力成熟度模型集成) 模型主要用于指导组织项目管理过程的改进，以及进行项目管理能力成熟度的",
+    "评估，当前版本为 CMVMI2. 0。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_05_029.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_05_029.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

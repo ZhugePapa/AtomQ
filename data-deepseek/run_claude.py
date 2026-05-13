@@ -47,8 +47,27 @@ def call_claude(chapter_text):
             "anthropic-version": "2023-06-01"
         }
     )
-    resp = urllib.request.urlopen(req, timeout=300)
-    return json.loads(resp.read())
+    try:
+        resp = urllib.request.urlopen(req, timeout=300)
+        return json.loads(resp.read())
+    except Exception as e:
+        print(f"  API call failed: {e}")
+        raise
+
+# ── Pre-flight: test API ──
+print("Testing Claude Desktop API...")
+try:
+    test_req = urllib.request.Request(
+        API_URL,
+        data=json.dumps({"model":"claude-sonnet-4-20250514","max_tokens":10,"messages":[{"role":"user","content":"OK"}]}).encode(),
+        headers={"Content-Type":"application/json","x-api-key":API_TOKEN,"anthropic-version":"2023-06-01"}
+    )
+    test_resp = urllib.request.urlopen(test_req, timeout=15)
+    print(f"  API OK: {test_resp.status}")
+except Exception as e:
+    print(f"  API FAIL: {e}")
+    print("  Make sure Claude Desktop is running and logged in.")
+    exit(1)
 
 os.makedirs(OUT_DIR, exist_ok=True)
 os.makedirs(os.path.join(OUT_DIR, 'chapters'), exist_ok=True)
@@ -59,14 +78,6 @@ print(f"Processing {len(ch_nums)} chapters: {ch_nums}")
 
 for ch_num in ch_nums:  # Process all 23 chapters
     ch_id = f"ch_{ch_num:02d}"
-    cards_dir = os.path.join(OUT_DIR, 'chapters', ch_id, 'cards')
-
-    # Skip if already processed (cards exist)
-    if os.path.isdir(cards_dir) and len(os.listdir(cards_dir)) > 10:
-        existing = len([f for f in os.listdir(cards_dir) if f.endswith('.json')])
-        print(f"  {ch_id}: SKIP ({existing} cards already exist)")
-        continue
-
     m = chapter_texts[ch_num]
     ch_start = m.start()
     next_start = None
@@ -82,8 +93,11 @@ for ch_num in ch_nums:  # Process all 23 chapters
         ch_text = full_text[ch_start:next_start]
 
     ch_text = ch_text.strip()
+    cards_dir = os.path.join(OUT_DIR, 'chapters', ch_id, 'cards')
+    os.makedirs(cards_dir, exist_ok=True)
+
     print(f"\n{'='*60}")
-    print(f"  {ch_id}: {len(ch_text)} chars")
+    print(f"  {ch_id}: {len(ch_text)} chars → calling Claude...")
     print(f"{'='*60}")
 
     try:
@@ -100,9 +114,6 @@ for ch_num in ch_nums:  # Process all 23 chapters
             print(f"  Got {len(cards)} cards in {dt:.0f}s")
 
             # Write cards
-            cards_dir = os.path.join(OUT_DIR, 'chapters', ch_id, 'cards')
-            os.makedirs(cards_dir, exist_ok=True)
-
             for card in cards:
                 # Extract md_content and remove from JSON
                 md_content = card.pop("md_content", "")

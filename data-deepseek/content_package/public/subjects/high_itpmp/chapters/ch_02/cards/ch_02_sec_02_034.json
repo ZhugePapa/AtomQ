@@ -1,0 +1,32 @@
+{
+  "point_id": "034",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_02",
+  "title": "虚拟现实",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 156,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 34,
+  "tags": [
+    "信息技术发展",
+    "新一代信息技术及应用"
+  ],
+  "key_points": [
+    "定义 庶拟现实(VR)是一种可以创立和体验虚拟世界的计算机系统(其中虚拟世界是全体庶所",
+    "帮    传感器技民 头显(即 站 眼镜) 设备过重、分养率低、剧新频率慢等，容易造成视觉疫"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_02_034.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_034.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

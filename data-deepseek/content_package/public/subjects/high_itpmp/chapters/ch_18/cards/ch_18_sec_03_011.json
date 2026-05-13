@@ -1,0 +1,31 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_03",
+  "title": "交付节奏",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 60,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 11,
+  "tags": [
+    "项目绩效域",
+    "开发方法和生命周期绩效域"
+  ],
+  "key_points": [
+    "是将项目特性增量交付给客户，通常通过使用小批量工作和自动化技术完成持续交付可"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_03_011.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_03_011.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

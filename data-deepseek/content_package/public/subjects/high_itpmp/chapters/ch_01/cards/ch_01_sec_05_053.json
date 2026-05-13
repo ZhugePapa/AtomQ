@@ -1,0 +1,32 @@
+{
+  "point_id": "053",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_05",
+  "title": "“迎接数字时代",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 70,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 53,
+  "tags": [
+    "信息化发展",
+    "数字化转型与元字宙"
+  ],
+  "key_points": [
+    "数字政府，以数字化转型整体驶动生产方式、生活方式和治理方式变革”成为了新时代我国信息化发",
+    "业统计分类(2021)》给出了半字经济具体和闫> 分别是:数字产品制造业、数字产品服务业、数字技术"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_05_053.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_05_053.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

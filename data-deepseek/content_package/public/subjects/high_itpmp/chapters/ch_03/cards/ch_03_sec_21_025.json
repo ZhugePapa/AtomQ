@@ -1,0 +1,32 @@
+{
+  "point_id": "025",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_21",
+  "title": "常用的 IT 审计技术包",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 55,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 25,
+  "tags": [
+    "信息系统治理",
+    "T 审计"
+  ],
+  "key_points": [
+    "风险评估 风险分于技术，是对风险影响和后果进行评价和估量，包括定性分析和定量分析。",
+    "技术 有.风险评价法术，是在风险分析的基础上，通过相应的指标体系和评价标准，对风险程度"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_21_025.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_21_025.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

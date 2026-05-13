@@ -1,0 +1,32 @@
+{
+  "point_id": "019",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_03",
+  "title": "0OPM 框架的关键要素包",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 136,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 19,
+  "tags": [
+    "高级项目管理",
+    "组织级项目管理"
+  ],
+  "key_points": [
+    "六OPM方法论: 为了确保与组织背景和环境保持 致，更适用于不同类型项目需求，应允许项目组合、",
+    "0PM 成熟度是指组织以可预测、可控制和可靠的方式交付期望战略成果的能力水平。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_03_019.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_03_019.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "024",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "数据表现太太文",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 143,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 24,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "流程图“|行路径及整体处理顺序守图展示了 其中一个版本的价值链，即SIPOC (供应商、输入、过",
+    "是一种用于可视化组织信息的绘图法。通常是基于单个质量概念创建的，是绘制在空站"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_024.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_024.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

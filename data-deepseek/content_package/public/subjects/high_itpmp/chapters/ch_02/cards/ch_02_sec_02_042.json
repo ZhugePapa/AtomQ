@@ -1,0 +1,31 @@
+{
+  "point_id": "042",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_02",
+  "title": "信息系统安全可以划分",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 42,
+  "tags": [
+    "信息技术发展",
+    "新一代信息技术及应用"
+  ],
+  "key_points": [
+    "信息系统安全可以划分为四余层次:设备实全、数据安全、内容安全、行为安全。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_02_042.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_042.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

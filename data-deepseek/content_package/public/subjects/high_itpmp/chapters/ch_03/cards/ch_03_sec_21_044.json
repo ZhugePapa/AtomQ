@@ -1,0 +1,31 @@
+{
+  "point_id": "044",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_21",
+  "title": "常用 IT 审计技术; 风险评竺技术算计抽样技术、",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 44,
+  "tags": [
+    "信息系统治理",
+    "T 审计"
+  ],
+  "key_points": [
+    "常用 IT 审计技术; 风险评竺技术算计抽样技术、计算机辅助审计技术及大数据审计技术"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_21_044.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_21_044.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

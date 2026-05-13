@@ -1,0 +1,32 @@
+{
+  "point_id": "046",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "合同解释的原则",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 71,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 46,
+  "tags": [
+    "采购管理",
+    "采购管理"
+  ],
+  "key_points": [
+    "当两者不一致时，应该以主导语言文本为准",
+    "合同中应该规定以哪个国家的法律作为合同的适用法律,合同的解释必须根"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_16_sec_01_046.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_046.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_16"
+    }
+  ]
+}

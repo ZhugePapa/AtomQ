@@ -1,0 +1,32 @@
+{
+  "point_id": "068",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_05",
+  "title": "党中央、国务院一直高度重视信息化卫作过2016 年",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 95,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 68,
+  "tags": [
+    "信息化发展",
+    "数字化转型与元字宙"
+  ],
+  "key_points": [
+    "的《国家信息化发展战略纲要》强调国家信息化发展战略总目标是建设网络强围，分“步走”:第一步",
+    "到 2020 年,核心关键技术部分领域达到国际先进水乳，信息产业国际竞争力大幅提升，信息化成为驱"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_05_068.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_05_068.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

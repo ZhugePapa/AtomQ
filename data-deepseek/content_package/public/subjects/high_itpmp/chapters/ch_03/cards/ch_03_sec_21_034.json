@@ -1,0 +1,32 @@
+{
+  "point_id": "034",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_21",
+  "title": "审计流程一般分",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 110,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 34,
+  "tags": [
+    "信息系统治理",
+    "T 审计"
+  ],
+  "key_points": [
+    "审计流程一般分为审计准备、审计实施、富计终结及后续审计四个阶段。",
+    "审计准备阶段 | IT 审计项目从计划开始，到发再审计通知指筋止的期间，工作包括:@明确审计"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_21_034.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_21_034.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

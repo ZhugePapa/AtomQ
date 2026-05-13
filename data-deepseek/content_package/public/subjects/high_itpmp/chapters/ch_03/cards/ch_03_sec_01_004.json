@@ -1,0 +1,31 @@
+{
+  "point_id": "004",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_01",
+  "title": "有效的 IT 治理必须关洋拷 时关键并绩",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 51,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 4,
+  "tags": [
+    "信息系统治理",
+    "IT治理"
+  ],
+  "key_points": [
+    ">TT 投资和优先顺序必须为 TT 原则用整体架构S_基础设施和应用需求所驱动。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_01_004.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_01_004.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

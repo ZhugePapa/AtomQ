@@ -1,0 +1,31 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_04",
+  "title": "某某工作从几月几号开始，请记得拿出手",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "tags": [
+    "组织通用管理",
+    "市场营销"
+  ],
+  "key_points": [
+    "某某工作从几月几号开始，请记得拿出手指妾。如果秆指乳够了，拿出脚趾，如果脚趾"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_04_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_04_028.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

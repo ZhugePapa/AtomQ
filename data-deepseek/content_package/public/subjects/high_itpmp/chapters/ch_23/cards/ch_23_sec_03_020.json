@@ -1,0 +1,32 @@
+{
+  "point_id": "020",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_03",
+  "title": "知识存储是",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 20,
+  "tags": [
+    "组织通用管理",
+    "知识管理"
+  ],
+  "key_points": [
+    "知识存储是指在组织中建立知识库, 将知识存储于组织内部,知识库中包括显性知识",
+    "与共享    是人与人之间进行沟通的过程"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_03_020.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_03_020.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

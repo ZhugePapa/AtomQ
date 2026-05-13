@@ -1,0 +1,32 @@
+{
+  "point_id": "019",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_02",
+  "title": "绩效项目包",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 34,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 19,
+  "tags": [
+    "组织通用治理",
+    "绩效考核"
+  ],
+  "key_points": [
+    "绩效项目包括 3 项: 工作业绩、工作能力和工作态度，这是对员工进行绩效考核的",
+    "绩效内容的确定 | > “工作业绩在设定指标时，通常包含数量、质量、成本和时间等方面;"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_02_019.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_02_019.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

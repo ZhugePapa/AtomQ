@@ -1,0 +1,31 @@
+{
+  "point_id": "047",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_05",
+  "title": "工业互联网平台体系包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 47,
+  "tags": [
+    "信息化发展",
+    "数字化转型与元字宙"
+  ],
+  "key_points": [
+    "工业互联网平台体系包括边缘层、IaaSs、Paas 和 Saas 四个层级，相当于工业互联网的“操"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_05_047.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_05_047.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "point_id": "007",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_02",
+  "title": "团队绩效域聚焦于项目经理和项目团队成员在整个项目生",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 7,
+  "tags": [
+    "项目绩效域",
+    "团队绩效域"
+  ],
+  "key_points": [
+    "团队绩效域聚焦于项目经理和项目团队成员在整个项目生命周期过程中的技能，这些技能已融入项目"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_02_007.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_02_007.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

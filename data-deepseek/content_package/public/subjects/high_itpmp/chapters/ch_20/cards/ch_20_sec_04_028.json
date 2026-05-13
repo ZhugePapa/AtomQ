@@ -1,0 +1,32 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_04",
+  "title": "项目级量化管理",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 114,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "tags": [
+    "高级项目管理",
+    "量化项目管理"
+  ],
+  "key_points": [
+    "在项目执行过程中，目标分解的目的是将项目的质量与过程性能目标量化分解至各",
+    "过程性能监控   个过程或阶段，再分解至对过程或阶段产生关键影响的因子。而过程性能监控是目"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_04_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_04_028.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

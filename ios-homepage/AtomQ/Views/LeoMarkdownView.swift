@@ -292,9 +292,13 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
             }
           }
 
-          window.webkit?.messageHandlers?.leoMarkdownHeight?.postMessage(
-            document.documentElement.scrollHeight
-          );
+          requestAnimationFrame(() => {
+            const contentEl = document.getElementById('leo-markdown-content');
+            const contentHeight = contentEl
+              ? Math.ceil(Math.max(contentEl.scrollHeight, contentEl.getBoundingClientRect().height))
+              : 1;
+            window.webkit?.messageHandlers?.leoMarkdownHeight?.postMessage(contentHeight);
+          });
         }
 
         render();
@@ -372,6 +376,10 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
             .leo-markdown pre:last-child,
             .leo-markdown table:last-child {
               margin-bottom: 0;
+            }
+
+            .leo-markdown > :last-child {
+              margin-bottom: 0 !important;
             }
 
             .leo-markdown ul,
@@ -699,7 +707,13 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
         }
 
         func updateHeight(for webView: WKWebView) {
-            webView.evaluateJavaScript("Math.max(document.body.scrollHeight, document.documentElement.scrollHeight)") { value, _ in
+            webView.evaluateJavaScript("""
+            (function () {
+              const contentEl = document.getElementById('leo-markdown-content');
+              if (!contentEl) return 1;
+              return Math.ceil(Math.max(contentEl.scrollHeight, contentEl.getBoundingClientRect().height));
+            })();
+            """) { value, _ in
                 guard let height = value as? CGFloat else { return }
                 DispatchQueue.main.async {
                     self.parent.renderedHeight = max(1, height)

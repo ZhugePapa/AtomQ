@@ -1,0 +1,32 @@
+{
+  "point_id": "010",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_02",
+  "title": "组织流程通常可分",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 95,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 10,
+  "tags": [
+    "组织通用管理",
+    "流程管理"
+  ],
+  "key_points": [
+    "组织流程通常可分为: 战略流程、运行流程和支持流程。",
+    "是面向未来的，为组织提供发展方向和整体管理，包括组织长/中/短期战略目标的规划、"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_02_010.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_02_010.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "024",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "数据收集太太女",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 177,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 24,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "通过与干系人直接交谈，来获取信息的正武或非正式的方法，访谈的典型做法是向",
+    "被访者提出预设和即兴的问题，并记录他们的回钢，访谈经常是一个访谈者和一个"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_024.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_024.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

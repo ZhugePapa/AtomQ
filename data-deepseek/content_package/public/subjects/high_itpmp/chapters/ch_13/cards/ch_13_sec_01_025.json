@@ -1,0 +1,31 @@
+{
+  "point_id": "025",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "规划 |基准)              数据表现",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 31,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 25,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "规划 |基准)              数据表现(层级型、南他.资源管理计划"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_025.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_025.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

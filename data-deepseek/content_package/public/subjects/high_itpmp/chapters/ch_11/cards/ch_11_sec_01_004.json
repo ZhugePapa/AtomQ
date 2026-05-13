@@ -1,0 +1,32 @@
+{
+  "point_id": "004",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_11",
+  "section_id": "sec_01",
+  "title": "应急储备是",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 168,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 4,
+  "tags": [
+    "成本管理",
+    "成本管理"
+  ],
+  "key_points": [
+    "应急储备是包含在成本基准内的部分预算 〈25上1批) ，用来应对已接受的已识别风险，及已经制定应",
+    "急或减轻措施的已识别风险。应急储备通常是预算的一部分，用来应对那些会影响项目的“已知-未知”"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_11_sec_01_004.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_11/cards/ch_11_sec_01_004.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_11"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "013",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_01",
+  "title": "COBIT 中治理目标被列入评估、",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 156,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 13,
+  "tags": [
+    "信息系统治理",
+    "IT治理"
+  ],
+  "key_points": [
+    "COBIT 中治理目标被列入评估、指导和监控(EDM) 领域，在这个领域，治理机构将评估战略",
+    "方案，指导高级管理层执答所选的战略方案并监督战略的实施。董事会和执行管理层负责"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_01_013.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_01_013.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

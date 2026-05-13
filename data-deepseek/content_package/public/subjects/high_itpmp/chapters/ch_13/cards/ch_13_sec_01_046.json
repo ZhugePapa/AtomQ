@@ -1,0 +1,32 @@
+{
+  "point_id": "046",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "集中办公",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 46,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "集中办公， 指把许多或全部最活跃的项目团队成员安排桂|二-个地点工作，以增强团队工作能力。集",
+    "中办公有婚可以是临时的，也可以贯穿整个项目。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_046.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_046.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

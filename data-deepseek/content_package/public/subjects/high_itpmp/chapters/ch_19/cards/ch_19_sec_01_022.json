@@ -1,0 +1,31 @@
+{
+  "point_id": "022",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_01",
+  "title": "配置审计也称配置朝阁或配转译价痢包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 22,
+  "tags": [
+    "配置与变更管理",
+    "配置管理"
+  ],
+  "key_points": [
+    "配置审计也称配置朝阁或配转译价痢包括功能配置审计和物理配置审计，分别用以验证当前配置项"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_01_022.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_022.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

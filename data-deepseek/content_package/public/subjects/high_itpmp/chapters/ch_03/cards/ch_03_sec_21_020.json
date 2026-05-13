@@ -1,0 +1,31 @@
+{
+  "point_id": "020",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_21",
+  "title": "组织的 IT 目标主要包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 20,
+  "tags": [
+    "信息系统治理",
+    "T 审计"
+  ],
+  "key_points": [
+    "组织的 IT 目标主要包括; @组织的 TT 战略应与业务战略保持一致，因保护信息资产的安全"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_21_020.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_21_020.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "062",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "数据分析女友友〈23下4批)",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 111,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 62,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "进度绩效测量指标 (如进度偏差(SV) 和进度绩效指数(SPI) 用于评价偏离初始进度基",
+    "这块必考计算题的，这个必须掌握的，主要是一些网络图、关键路径、六标时、PERT 等其他的计算题，资"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_062.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_062.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

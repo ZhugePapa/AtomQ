@@ -1,0 +1,31 @@
+{
+  "point_id": "017",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_01",
+  "title": "COBIT 给出了建议设计流程",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 17,
+  "tags": [
+    "信息系统治理",
+    "IT治理"
+  ],
+  "key_points": [
+    "COBIT 给出了建议设计流程: D了解组织环境和战略，@确定治理系统的初步范围，@优"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_01_017.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_01_017.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

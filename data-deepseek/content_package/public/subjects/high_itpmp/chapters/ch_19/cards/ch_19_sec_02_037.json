@@ -1,0 +1,32 @@
+{
+  "point_id": "037",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_02",
+  "title": "应当在评审过程中将专业评审清经济评审分开",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 69,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 37,
+  "tags": [
+    "配置与变更管理",
+    "变更管理"
+  ],
+  "key_points": [
+    "7 “| 效果评估    名评估依据是项目的基准; _  _",
+    "名结合变更的目标，评估变更所要达到的目的是否已达成"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_02_037.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_02_037.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "013",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_01",
+  "title": "类之间关系有关联、依赖、泛化、聚合、组合和实现",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 208,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 13,
+  "tags": [
+    "信息系统工程",
+    "软件工程"
+  ],
+  "key_points": [
+    "关联“| 旨供了不同类的对象之问的结构关系, 它在一段时间内将多个类的实例连接在一起。 现的是",
+    "泛化| 托述了一般事物与该事物中的特殊种关之问的关系，也就是父关与子类之问的关系。继承"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_01_013.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_01_013.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

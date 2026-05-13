@@ -1,0 +1,32 @@
+{
+  "point_id": "043",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_04",
+  "title": "项目绩效域",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 59,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 43,
+  "tags": [
+    "项目管理概论",
+    "价值驱动的项目管理知识体系"
+  ],
+  "key_points": [
+    "项目绩效域是项目执行过程中需要密切关注的相互作用、相互关联和相互依赖的领域它们可以协",
+    "不确定性八个项目绩效域。这些绩效域共同构成了一个统一的整体。这样，绩效域就可以作为一个整合系统"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_04_043.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_04_043.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

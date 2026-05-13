@@ -1,0 +1,32 @@
+{
+  "point_id": "046",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "数据分析友妇女",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 33,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 46,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "| 用于将基准与实际结果进行比较，以确定偏差是知处于临界值区间内或是否",
+    "趋势分析 “| 旨在审查项目绩效随时间的变化情况，以判断绩效是正在改善还是正在恶化"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_046.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_046.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

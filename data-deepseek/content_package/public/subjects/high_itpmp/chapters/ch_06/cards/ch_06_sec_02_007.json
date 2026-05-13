@@ -1,0 +1,32 @@
+{
+  "point_id": "007",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_02",
+  "title": "项目创造业 | 项目的业务价值",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 7,
+  "tags": [
+    "项目管理概论",
+    "项目基本要素"
+  ],
+  "key_points": [
+    "项目创造业 | 项目的业务价值指特定项目的成果能够为干系人带来的效益。项目带来的效益可以是有",
+    "组织领导者启动项目是为了应对影响该组织持续运营和业务战略的因素"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_02_007.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_02_007.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

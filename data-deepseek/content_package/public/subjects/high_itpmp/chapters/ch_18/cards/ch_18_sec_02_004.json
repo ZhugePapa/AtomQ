@@ -1,0 +1,32 @@
+{
+  "point_id": "004",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_02",
+  "title": "有效执行团队绩效域可以实现预期目标，主要",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 165,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 4,
+  "tags": [
+    "项目绩效域",
+    "团队绩效域"
+  ],
+  "key_points": [
+    "在项目整个生命周期过程中，为了有效执行团队绩效域，项目经理需要重点关注: 项目团队文化、高",
+    "又化     种方式有意识地形成，也可以通过项目团队成员的行为非正式地形成。方法有， 透明、"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_02_004.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_02_004.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

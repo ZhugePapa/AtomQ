@@ -1,0 +1,31 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_05",
+  "title": "管理实物资源的目标主要包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "tags": [
+    "项目绩效域",
+    "项目工作绩效域"
+  ],
+  "key_points": [
+    "管理实物资源的目标主要包括:"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_05_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_05_028.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

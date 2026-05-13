@@ -1,0 +1,31 @@
+{
+  "point_id": "021",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_04",
+  "title": "规划项目团队的组成和结构时",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 42,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 21,
+  "tags": [
+    "项目绩效域",
+    "规划绩效域"
+  ],
+  "key_points": [
+    "规划项目团队的组成和结构时，首先要确定完成项目工作所需的技能组合包括"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_04_021.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_04_021.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

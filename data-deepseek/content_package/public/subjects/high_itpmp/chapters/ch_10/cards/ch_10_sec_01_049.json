@@ -1,0 +1,32 @@
+{
+  "point_id": "049",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "资源优化女友女",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 81,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 49,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "4资源平衡: 是为了在资源需求与资源供给之问取得平衡, 根据资源制约因素对开始日期和完成日期进",
+    "分配至两个或多个活动，就需要进行资源平衡。也可以为保持资源使用量处于均衡水平而进行资源平衡。 资"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_049.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_049.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

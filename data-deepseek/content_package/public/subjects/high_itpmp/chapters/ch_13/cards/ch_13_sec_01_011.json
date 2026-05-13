@@ -1,0 +1,32 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "管理的过程友友丸           (23下3批",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 166,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 11,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "和 设施、设备回概述和指导资源的过择;      在整个项目期辣",
+    "一|是提高工作能力，促进团队成员互动,改进团队协作、增强人际关系技能|，    -"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_011.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_011.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

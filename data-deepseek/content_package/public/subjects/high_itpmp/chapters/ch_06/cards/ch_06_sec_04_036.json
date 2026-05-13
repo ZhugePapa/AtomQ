@@ -1,0 +1,32 @@
+{
+  "point_id": "036",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_04",
+  "title": "适应型项目中过程组之间的关系",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 58,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 36,
+  "tags": [
+    "项目管理概论",
+    "价值驱动的项目管理知识体系"
+  ],
+  "key_points": [
+    "(D) 以寺代方式顺序开展的项目。适应型项目往往可分解为一系列先后顺序进行的，被称为“和帮代期”",
+    "的阶段。在每个选代期都要利用相关的项目管理过程, 为了有效管理高度复杂且充满不确定性和变更的项目，"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_04_036.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_04_036.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "point_id": "032",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "数据分析友胡女",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 104,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 32,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "， Ar 上 可以重点指出可能超出控制范围之外并阻碍项目团队满足特定要求或千系人期望的"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_032.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_032.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

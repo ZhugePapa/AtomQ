@@ -1,0 +1,31 @@
+{
+  "point_id": "016",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_03",
+  "title": "两化融合",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 16,
+  "tags": [
+    "信息化发展",
+    "现代化创新发展"
+  ],
+  "key_points": [
+    "两化融合是信息化和工业化的高层次的深度结合,4得指以信息化带动工业化、以工业化促"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_03_016.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_03_016.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

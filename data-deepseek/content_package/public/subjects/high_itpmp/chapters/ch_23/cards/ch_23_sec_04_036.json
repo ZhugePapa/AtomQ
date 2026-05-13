@@ -1,0 +1,32 @@
+{
+  "point_id": "036",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_04",
+  "title": "求EMV 的时候，各分支的影响到底",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 36,
+  "tags": [
+    "组织通用管理",
+    "市场营销"
+  ],
+  "key_points": [
+    "求EMV 的时候，各分支的影响到底是多少? 比如成本是 100 元，失败的概率是 20%，",
+    "失败了赔偿 20 元。则应该是 20%* (-120) 。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_04_036.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_04_036.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

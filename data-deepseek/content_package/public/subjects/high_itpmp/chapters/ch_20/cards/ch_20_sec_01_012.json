@@ -1,0 +1,31 @@
+{
+  "point_id": "012",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_01",
+  "title": "项目集收尾阶段光稳项目集效益移交给维护组织， 并以",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 12,
+  "tags": [
+    "高级项目管理",
+    "项目集管理"
+  ],
+  "key_points": [
+    "项目集收尾阶段光稳项目集效益移交给维护组织， 并以可控的方式正式结束项目集活动。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_01_012.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_01_012.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

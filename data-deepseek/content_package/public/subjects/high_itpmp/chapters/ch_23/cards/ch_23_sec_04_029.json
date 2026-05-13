@@ -1,0 +1,31 @@
+{
+  "point_id": "029",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_04",
+  "title": "如果题目说了 50/50 原则，请一定要知道开始了",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 29,
+  "tags": [
+    "组织通用管理",
+    "市场营销"
+  ],
+  "key_points": [
+    "么 50%，要么 100%如果没有说，一般就是按照实际完成的百祭比或者完成情况来进行计算就好"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_04_029.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_04_029.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

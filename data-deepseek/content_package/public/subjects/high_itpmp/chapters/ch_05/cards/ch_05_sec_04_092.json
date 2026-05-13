@@ -1,0 +1,31 @@
+{
+  "point_id": "092",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_04",
+  "title": "可视化的表现方式可分",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 92,
+  "tags": [
+    "信息系统工程",
+    "安全工程"
+  ],
+  "key_points": [
+    "可视化的表现方式可分为七类: 一推数期可视化、二维数期可视化、三维数据可视化老推数据可视"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_04_092.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_04_092.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

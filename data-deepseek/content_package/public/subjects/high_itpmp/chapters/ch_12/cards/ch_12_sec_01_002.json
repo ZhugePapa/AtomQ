@@ -1,0 +1,32 @@
+{
+  "point_id": "002",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "质量与等级的区别。质量作",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 54,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 2,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "质量与等级的区别。质量作为实现的性能或成果，是“一系列内在特性满足要求的程度(TS09000) ”。",
+    "等级是对用途相同但技术特性不同的可交付成果的级别分类。广友妈"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_002.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_002.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

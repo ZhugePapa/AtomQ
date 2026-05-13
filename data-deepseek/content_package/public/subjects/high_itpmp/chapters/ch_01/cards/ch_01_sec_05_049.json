@@ -1,0 +1,31 @@
+{
+  "point_id": "049",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_05",
+  "title": "聚焦数字赋能农业农村现代化建设",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 49,
+  "tags": [
+    "信息化发展",
+    "数字化转型与元字宙"
+  ],
+  "key_points": [
+    "聚焦数字赋能农业农村现代化建设，承点建设基础设施、发展智感农业和建设数字乡村等广"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_05_049.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_05_049.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "point_id": "051",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_05",
+  "title": "成熟度等级分为五个等级，自低向高分别",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 51,
+  "tags": [
+    "信息化发展",
+    "数字化转型与元字宙"
+  ],
+  "key_points": [
+    "成熟度等级分为五个等级，自低向高分别是一级 (规划级) 、三级(规范级) 、三级 (集成级)、"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_05_051.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_05_051.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

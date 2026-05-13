@@ -1,0 +1,32 @@
+{
+  "point_id": "040",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "虚拟团队太太文GL8上上案例虽",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 86,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 40,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "人”虚拟团队可定义为具有共同目标，在完成角色竹务的过程中很少或没有时间面对面工作的一群人。",
+    "现代沟通技术(如电子邮件、电话会议、糙交媒体、4网络会议和视频会议等) 使虚拟团队成为可行。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_040.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_040.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

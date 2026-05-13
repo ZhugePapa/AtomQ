@@ -27,6 +27,7 @@ struct KnowledgeCardStudyView: View {
     @State private var isCurrentCardMastered = false
     @State private var topBarCollapseProgress: CGFloat = 0
     @State private var edgeSwipeBackTriggered = false
+    @GestureState private var interactiveCardOffsetX: CGFloat = 0
     private let topBarHeight: CGFloat = 56
 
     private enum CardSelectionAnchor {
@@ -40,7 +41,8 @@ struct KnowledgeCardStudyView: View {
         case completed
         case pending
     }
-    
+
+
     private var resolvedBackAction: () -> Void {
         if let onBack {
             return onBack
@@ -179,6 +181,81 @@ struct KnowledgeCardStudyView: View {
         }
     }
 
+    private func hasNextCardGlobally() -> Bool {
+        if currentCardIndex + 1 < sectionCards.count {
+            return true
+        }
+        guard let pos = currentSectionPosition() else { return false }
+        return pos + 1 < orderedSections().count
+    }
+
+    private func hasPreviousCardGlobally() -> Bool {
+        if currentCardIndex > 0 {
+            return true
+        }
+        guard let pos = currentSectionPosition() else { return false }
+        return pos - 1 >= 0
+    }
+
+    private func dampedInteractiveOffset(_ rawOffset: CGFloat) -> CGFloat {
+        if rawOffset > 0, !hasPreviousCardGlobally() {
+            return rawOffset * 0.2
+        }
+        if rawOffset < 0, !hasNextCardGlobally() {
+            return rawOffset * 0.2
+        }
+        return rawOffset
+    }
+
+    private func visibleCardIndices() -> [Int] {
+        guard !sectionCards.isEmpty else { return [] }
+        let lower = max(0, currentCardIndex - 1)
+        let upper = min(sectionCards.count - 1, currentCardIndex + 1)
+        return Array(lower...upper)
+    }
+
+    private func cardSwipeGesture(pageWidth: CGFloat) -> some Gesture {
+        let dynamicDistanceThreshold = max(56, min(96, pageWidth * 0.18))
+        let dynamicPredictedThreshold = max(84, min(140, pageWidth * 0.24))
+
+        return DragGesture(minimumDistance: 8)
+            .updating($interactiveCardOffsetX) { value, state, transaction in
+                let horizontal = value.translation.width
+                let vertical = value.translation.height
+                guard abs(horizontal) > abs(vertical) else { return }
+                transaction.animation = .interactiveSpring(response: 0.20, dampingFraction: 0.92)
+                state = dampedInteractiveOffset(horizontal)
+            }
+            .onEnded { value in
+                let horizontal = value.translation.width
+                let vertical = value.translation.height
+                guard abs(horizontal) > abs(vertical) else { return }
+
+                let predicted = value.predictedEndTranslation.width
+                let projectedExtra = predicted - horizontal
+
+                let movedFarEnough = abs(horizontal) >= dynamicDistanceThreshold
+                let isQuickFlick = abs(projectedExtra) >= 36 || abs(predicted) >= dynamicPredictedThreshold
+
+                guard movedFarEnough || isQuickFlick else {
+                    return
+                }
+
+                let resolved = abs(predicted) > abs(horizontal) ? predicted : horizontal
+                if resolved < 0 {
+                    // left swipe -> next card
+                    withAnimation(.interactiveSpring(response: 0.26, dampingFraction: 0.86)) {
+                        goForwardCard()
+                    }
+                } else {
+                    // right swipe -> previous card
+                    withAnimation(.interactiveSpring(response: 0.26, dampingFraction: 0.86)) {
+                        goBackwardCard()
+                    }
+                }
+            }
+    }
+
     private func goToNextUnmasteredCard() {
         guard !sectionCards.isEmpty else { return }
 
@@ -221,7 +298,9 @@ struct KnowledgeCardStudyView: View {
         GuestUserLocalStore.setPointMastered(pageData.pointID, mastered: nextValue)
         isCurrentCardMastered = nextValue
         if nextValue {
-            goToNextUnmasteredCard()
+            withAnimation(.easeInOut(duration: 0.24)) {
+                goToNextUnmasteredCard()
+            }
         }
     }
 
@@ -248,125 +327,130 @@ struct KnowledgeCardStudyView: View {
                 .clipped()
                 .zIndex(10)
 
-                GeometryReader { _ in
+                GeometryReader { viewport in
+                    let pageWidth = viewport.size.width
+                    let visibleIndices = visibleCardIndices()
+                    let baseIndex = visibleIndices.first ?? currentCardIndex
                     ZStack {
-                        ScrollView(.vertical, showsIndicators: false) {
-                            VStack(spacing: 16) {
-                                KnowledgeBodyCard(
-                                    markdown: pageData.knowledgeMarkdown,
-                                    focusHighlightVisible: focusHighlightVisible
-                                )
+                        ZStack {
+                            HStack(spacing: 0) {
+                                ForEach(visibleIndices, id: \.self) { idx in
+                                    let card = sectionCards[idx]
+                                    VStack(spacing: 0) {
+                                        ZStack(alignment: .bottom) {
+                                            ScrollView(.vertical, showsIndicators: false) {
+                                                VStack(spacing: 16) {
+                                                    KnowledgeBodyCard(
+                                                        markdown: card.knowledgeMarkdown,
+                                                        focusHighlightVisible: focusHighlightVisible
+                                                    )
 
-                                if let keyPoints = pageData.keyPointsMarkdown {
-                                    NoteCard(
-                                        icon: "icon-target-04",
-                                        iconStrokeColor: Token.fgBrand,
-                                        iconBackground: Token.fgBrandSubtle,
-                                        title: "高频考点",
-                                        titleColor: Token.textBrand,
-                                        markdown: keyPoints,
-                                        focusHighlightVisible: focusHighlightVisible
-                                    )
-                                }
+                                                    if let keyPoints = card.keyPointsMarkdown {
+                                                        NoteCard(
+                                                            icon: "icon-target-04",
+                                                            iconStrokeColor: Token.fgBrand,
+                                                            iconBackground: Token.fgBrandSubtle,
+                                                            title: "高频考点",
+                                                            titleColor: Token.textBrand,
+                                                            markdown: keyPoints,
+                                                            focusHighlightVisible: focusHighlightVisible
+                                                        )
+                                                    }
 
-                                if let mnemonics = pageData.mnemonicsMarkdown {
-                                    NoteCard(
-                                        icon: "icon-stars-03",
-                                        iconStrokeColor: Token.fgWarning,
-                                        iconBackground: Token.fgWarningSubtle,
-                                        title: "记忆口诀",
-                                        titleColor: Token.textWarning,
-                                        markdown: mnemonics,
-                                        focusHighlightVisible: focusHighlightVisible
-                                    )
-                                }
+                                                    if let mnemonics = card.mnemonicsMarkdown {
+                                                        NoteCard(
+                                                            icon: "icon-stars-03",
+                                                            iconStrokeColor: Token.fgWarning,
+                                                            iconBackground: Token.fgWarningSubtle,
+                                                            title: "记忆口诀",
+                                                            titleColor: Token.textWarning,
+                                                            markdown: mnemonics,
+                                                            focusHighlightVisible: focusHighlightVisible
+                                                        )
+                                                    }
 
-                                HStack(spacing: 16) {
-                                    Text(pageData.chipTitle)
-                                        .font(.custom("PingFang SC", size: 14).weight(.medium))
-                                        .foregroundStyle(Token.textBrand)
-                                        .padding(.horizontal, 12)
-                                        .frame(height: 32)
-                                        .background(Token.fgBrandSubtle)
-                                        .clipShape(Capsule())
+                                                    HStack(spacing: 16) {
+                                                        Text(card.chipTitle)
+                                                            .font(.custom("PingFang SC", size: 14).weight(.medium))
+                                                            .foregroundStyle(Token.textBrand)
+                                                            .padding(.horizontal, 12)
+                                                            .frame(height: 32)
+                                                            .background(Token.fgBrandSubtle)
+                                                            .clipShape(Capsule())
 
-                                    Spacer(minLength: 0)
+                                                        Spacer(minLength: 0)
 
-                                    IconWrapper(
-                                        name: "icon-star-01",
-                                        outerWidth: 24,
-                                        outerHeight: 24,
-                                        innerInsets: IconInsets(top: 0.1096, right: 0.1073, bottom: 0.1416, left: 0.1073),
-                                        imageInsets: IconInsets(top: -0.0556, right: -0.0530, bottom: -0.0556, left: -0.0530),
-                                        cssVariables: ["stroke-0": Token.fgTertiary]
-                                    )
+                                                        IconWrapper(
+                                                            name: "icon-star-01",
+                                                            outerWidth: 24,
+                                                            outerHeight: 24,
+                                                            innerInsets: IconInsets(top: 0.1096, right: 0.1073, bottom: 0.1416, left: 0.1073),
+                                                            imageInsets: IconInsets(top: -0.0556, right: -0.0530, bottom: -0.0556, left: -0.0530),
+                                                            cssVariables: ["stroke-0": Token.fgTertiary]
+                                                        )
 
-                                    IconWrapper(
-                                        name: "icon-dots-horizontal",
-                                        outerWidth: 24,
-                                        outerHeight: 24,
-                                        innerInsets: IconInsets(top: 0.4583, right: 0.1667, bottom: 0.4583, left: 0.1667),
-                                        imageInsets: IconInsets(top: -0.5000, right: -0.0625, bottom: -0.5000, left: -0.0625),
-                                        cssVariables: ["stroke-0": Token.fgTertiary]
-                                    )
-                                }
-                            }
-                            .padding(.horizontal, 20)
-                            .padding(.top, 8)
-                            .padding(.bottom, 120)
-                            .onGeometryChange(for: CGFloat.self) { proxy in
-                                proxy.frame(in: .scrollView).minY
-                            } action: { minY in
-                                let progress = max(0, min(1, -minY / topBarHeight))
-                                topBarCollapseProgress = progress
-                            }
-                        }
-                        .simultaneousGesture(
-                            DragGesture(minimumDistance: 20)
-                                .onEnded { value in
-                                    let horizontal = value.translation.width
-                                    let vertical = value.translation.height
-                                    guard abs(horizontal) > abs(vertical) else { return }
-                                    if horizontal > 56 {
-                                        goForwardCard()
-                                    } else if horizontal < -56 {
-                                        goBackwardCard()
+                                                        IconWrapper(
+                                                            name: "icon-dots-horizontal",
+                                                            outerWidth: 24,
+                                                            outerHeight: 24,
+                                                            innerInsets: IconInsets(top: 0.4583, right: 0.1667, bottom: 0.4583, left: 0.1667),
+                                                            imageInsets: IconInsets(top: -0.5000, right: -0.0625, bottom: -0.5000, left: -0.0625),
+                                                            cssVariables: ["stroke-0": Token.fgTertiary]
+                                                        )
+                                                    }
+                                                }
+                                                .padding(.horizontal, 20)
+                                                .padding(.top, 8)
+                                                .padding(.bottom, 24)
+                                                .onGeometryChange(for: CGFloat.self) { proxy in
+                                                    proxy.frame(in: .scrollView).minY
+                                                } action: { minY in
+                                                    guard idx == currentCardIndex else { return }
+                                                    let progress = max(0, min(1, -minY / topBarHeight))
+                                                    topBarCollapseProgress = progress
+                                                }
+                                            }
+
+                                            LinearGradient(
+                                                stops: [
+                                                    .init(color: Token.componentsAlpha0, location: 0.03125),
+                                                    .init(color: Token.componentsAlpha100, location: 0.796875),
+                                                ],
+                                                startPoint: .top,
+                                                endPoint: .bottom
+                                            )
+                                            .frame(height: 96)
+                                            .frame(maxWidth: .infinity, alignment: .bottom)
+                                            .allowsHitTesting(false)
+
+                                            // Tips are hidden for now by request.
+                                            // Text("TIPS：左右滑动可切换知识卡片") ...
+                                        }
+                                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+                                        BottomActions(
+                                            focusHighlightVisible: $focusHighlightVisible,
+                                            isCurrentCardMastered: GuestUserLocalStore.isPointMastered(card.pointID),
+                                            onToggleCurrentCardMastered: {
+                                                guard idx == currentCardIndex else { return }
+                                                toggleCurrentCardMastered()
+                                            }
+                                        )
                                     }
+                                    .frame(width: pageWidth)
+                                    .contentShape(Rectangle())
+                                    .allowsHitTesting(idx == currentCardIndex)
                                 }
-                        )
-
-                        LinearGradient(
-                            stops: [
-                                .init(color: Token.componentsAlpha0, location: 0.03125),
-                                .init(color: Token.componentsAlpha100, location: 0.796875),
-                            ],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                        .frame(height: 96)
-                        .frame(maxHeight: .infinity, alignment: .bottom)
-                        .allowsHitTesting(false)
-
-                        Text("TIPS：左右滑动可切换知识卡片")
-                            .font(.custom("PingFang SC", size: 12).weight(.regular))
-                            .foregroundStyle(Token.textTertiary)
-                            .padding(.horizontal, 12)
-                            .frame(height: 24)
-                            .background(Token.bgSubtleAlt)
-                            .clipShape(Capsule())
-                            .padding(.bottom, 12)
-                            .frame(maxHeight: .infinity, alignment: .bottom)
-                            .zIndex(1)
+                            }
+                            .frame(width: pageWidth, alignment: .leading)
+                            .offset(x: (-CGFloat(currentCardIndex - baseIndex) * pageWidth) + interactiveCardOffsetX)
+                            .animation(.interactiveSpring(response: 0.26, dampingFraction: 0.88), value: currentCardIndex)
+                        }
                     }
+                    .simultaneousGesture(cardSwipeGesture(pageWidth: pageWidth))
                     .clipped()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-
-                BottomActions(
-                    focusHighlightVisible: $focusHighlightVisible,
-                    isCurrentCardMastered: isCurrentCardMastered,
-                    onToggleCurrentCardMastered: toggleCurrentCardMastered
-                )
             }
 
             if isDirectorySheetPresented {
@@ -648,8 +732,6 @@ private struct DirectorySheetOverlay: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height: 640)
-        .frame(maxHeight: .infinity, alignment: .bottom)
-        .ignoresSafeArea(edges: .bottom)
         .background(Token.bgCanvas)
         .clipShape(
             UnevenRoundedRectangle(
@@ -893,7 +975,7 @@ private struct BottomActions: View {
                     }
             }
             .buttonStyle(.plain)
-            .frame(maxWidth: isCurrentCardMastered ? .infinity : 56)
+            .frame(width: 56)
 
             Button(action: onToggleCurrentCardMastered) {
                 Text(isCurrentCardMastered ? "已掌握" : "记住了")

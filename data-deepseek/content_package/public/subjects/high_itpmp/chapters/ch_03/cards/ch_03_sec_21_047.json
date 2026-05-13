@@ -1,0 +1,31 @@
+{
+  "point_id": "047",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_21",
+  "title": "审计工作底稿三级复核制度是",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 47,
+  "tags": [
+    "信息系统治理",
+    "T 审计"
+  ],
+  "key_points": [
+    "审计工作底稿三级复核制度是指以审计胡构负责六< 部门负责人和项目负责人(或项目经理)"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_21_047.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_21_047.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

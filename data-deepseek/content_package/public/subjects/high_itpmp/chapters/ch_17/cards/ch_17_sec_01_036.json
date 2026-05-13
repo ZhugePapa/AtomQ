@@ -1,0 +1,32 @@
+{
+  "point_id": "036",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_17",
+  "section_id": "sec_01",
+  "title": "组织过程资产              6.会议 ",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 198,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 36,
+  "tags": [
+    "干系人管理",
+    "干系人管理"
+  ],
+  "key_points": [
+    "为于系人提供清晰的信息",
+    "会议:会议基型包括为监督和评估于系人的参与水平而厂开的状态会议、站会、辐质会以及干系人参与计划"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_17_sec_01_036.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_17/cards/ch_17_sec_01_036.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_17"
+    }
+  ]
+}

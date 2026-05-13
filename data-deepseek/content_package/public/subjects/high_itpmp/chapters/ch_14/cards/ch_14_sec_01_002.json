@@ -1,0 +1,31 @@
+{
+  "point_id": "002",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_14",
+  "section_id": "sec_01",
+  "title": "沟通模型",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 2,
+  "tags": [
+    "沟通管理",
+    "沟通管理"
+  ],
+  "key_points": [
+    "沟通模型包含5种状态: 已发送、已收到、忆理解、已认可、已转化为积极的行动。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_14_sec_01_002.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_14/cards/ch_14_sec_01_002.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_14"
+    }
+  ]
+}

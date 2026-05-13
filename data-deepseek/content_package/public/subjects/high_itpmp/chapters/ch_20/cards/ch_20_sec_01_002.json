@@ -1,0 +1,31 @@
+{
+  "point_id": "002",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_01",
+  "title": "提供有能力的治理资源",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 2,
+  "tags": [
+    "高级项目管理",
+    "项目集管理"
+  ],
+  "key_points": [
+    "提供有能力的治理资源，监督与效益交付相关的项目集的不确定性和复杂性;"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_01_002.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_01_002.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

@@ -21,7 +21,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 软件生命周期常见 7 阶段。\n2. 概要设计在详细设计之前。\n3. 测试之后仍有维护，交付不代表生命周期结束。",
+  "key_points": "- 顺序题重点：**可行性分析/计划 → 需求 → 概要 → 详细 → 编码 → 测试 → 维护**。\n- 维护仍属于生命周期，交付不是终点。",
   "mnemonics": "可需概详编测维。",
   "common_mistakes": [],
   "review_status": "ai_draft",

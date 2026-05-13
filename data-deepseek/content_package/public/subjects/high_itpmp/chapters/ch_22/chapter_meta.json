@@ -1,0 +1,31 @@
+{
+  "chapter_id": "ch_22",
+  "subject_id": "high_itpmp",
+  "title": "组织通用治理",
+  "description": "围绕组织通用治理展开",
+  "sort_no": 22,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "组织通用治理",
+      "sort_no": 1,
+      "description": "组织通用治理",
+      "card_count": 14
+    },
+    {
+      "section_id": "sec_02",
+      "title": "绩效考核",
+      "sort_no": 2,
+      "description": "绩效考核",
+      "card_count": 22
+    },
+    {
+      "section_id": "sec_03",
+      "title": "转型提升级",
+      "sort_no": 3,
+      "description": "转型提升级",
+      "card_count": 3
+    }
+  ],
+  "schema_version": 2
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "067",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_01",
+  "title": "结束项目或阶段过程所需执行的活动包",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 88,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 67,
+  "tags": [
+    "整合管理",
+    "整合管理"
+  ],
+  "key_points": [
+    "多为达到阶段或项目的完工或退出标准所必须的行动和活动;",
+    "儿为关闭项目合同协议或项目阶段合同协议所必须开展的活动"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_08_sec_01_067.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_067.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_08"
+    }
+  ]
+}

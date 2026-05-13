@@ -1,0 +1,32 @@
+{
+  "point_id": "024",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_21",
+  "title": "常用审计方法包",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 242,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 24,
+  "tags": [
+    "信息系统治理",
+    "T 审计"
+  ],
+  "key_points": [
+    "含义: 是指通过访谈人和受访人面对面地交谈来了解被审计对象的信息。依据不同研",
+    "分类; 根据访谈进程的结构化程度，可将它分为结构型访谈和非结构型访谈"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_21_024.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_21_024.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

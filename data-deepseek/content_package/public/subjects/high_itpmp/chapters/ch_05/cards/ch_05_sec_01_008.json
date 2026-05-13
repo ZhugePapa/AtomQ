@@ -1,0 +1,31 @@
+{
+  "point_id": "008",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_01",
+  "title": "UML 中的事物也称为建模元素,包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 8,
+  "tags": [
+    "信息系统工程",
+    "软件工程"
+  ],
+  "key_points": [
+    "UML 中的事物也称为建模元素,包括结构事物、行为寺物(也称动作事物) 、分组事物和注释事物 (也"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_01_008.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_01_008.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

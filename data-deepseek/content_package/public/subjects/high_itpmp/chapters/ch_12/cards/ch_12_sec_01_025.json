@@ -1,0 +1,31 @@
+{
+  "point_id": "025",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "测试与检查的规划",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 25,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "测试与检查的规划， 在规划阶段，项目经理和项目团队决定如何测试或检查产品、可交付成果或服务"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_025.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_025.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

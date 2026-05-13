@@ -1,0 +1,31 @@
+{
+  "point_id": "065",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_04",
+  "title": "信息安全系统工程应该吸纳安全管理的成熟规范部分",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 65,
+  "tags": [
+    "信息系统工程",
+    "安全工程"
+  ],
+  "key_points": [
+    "信息安全系统工程应该吸纳安全管理的成熟规范部分，这些安全管理包括物理安全、计算机安全、"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_04_065.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_04_065.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

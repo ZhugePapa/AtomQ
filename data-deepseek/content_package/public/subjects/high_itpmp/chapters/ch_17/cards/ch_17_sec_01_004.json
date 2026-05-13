@@ -1,0 +1,32 @@
+{
+  "point_id": "004",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_17",
+  "section_id": "sec_01",
+  "title": "项目干系人管理的发展趋势和新兴实践主要包",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 49,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 4,
+  "tags": [
+    "干系人管理",
+    "干系人管理"
+  ],
+  "key_points": [
+    "()应用“共创”概念，咨询受项目工作或成果影响最大的干系人，视其为合作伙伴。",
+    "(5) 关注干系人有效参与程度的正面与负面价值。正面价值是干系人(尤其是强大干系人)"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_17_sec_01_004.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_17/cards/ch_17_sec_01_004.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_17"
+    }
+  ]
+}

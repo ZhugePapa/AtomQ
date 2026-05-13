@@ -1,0 +1,17 @@
+{
+  "chapter_id": "ch_17",
+  "subject_id": "high_itpmp",
+  "title": "干系人管理",
+  "description": "围绕干系人管理展开",
+  "sort_no": 17,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "干系人管理",
+      "sort_no": 1,
+      "description": "干系人管理",
+      "card_count": 36
+    }
+  ],
+  "schema_version": 2
+}

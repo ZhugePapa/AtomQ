@@ -1,0 +1,31 @@
+{
+  "point_id": "022",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_04",
+  "title": "沟通",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 36,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 22,
+  "tags": [
+    "项目绩效域",
+    "规划绩效域"
+  ],
+  "key_points": [
+    "沟通是争取干系人有效参与的最重要的因素,对沟通进行规划时，需要与干系人绩效域进行关"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_04_022.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_04_022.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

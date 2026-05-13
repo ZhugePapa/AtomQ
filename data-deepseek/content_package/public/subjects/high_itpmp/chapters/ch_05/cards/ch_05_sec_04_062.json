@@ -1,0 +1,32 @@
+{
+  "point_id": "062",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_04",
+  "title": "安全服务包",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 132,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 62,
+  "tags": [
+    "信息系统工程",
+    "安全工程"
+  ],
+  "key_points": [
+    "(2)数据保密服务: 包括多种保密服务，为了防止网络中各系统之间的数据被截获或被非法存取而泄密，",
+    "(6) 犯罪证据提供服务: 指为违反国内外法律法规的行为或活动，提供各类数字证据、信息线索等。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_04_062.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_04_062.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

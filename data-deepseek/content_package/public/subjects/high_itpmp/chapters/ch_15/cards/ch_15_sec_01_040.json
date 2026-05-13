@@ -1,0 +1,32 @@
+{
+  "point_id": "040",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "实施定性风险分析",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 64,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 40,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "争本过程会为每个风险识别出址任大，以便由他们负责规划风险应对措施，并确保应对措施的实施。如",
+    "果需要开展实施定量风险分析过程” 那么实施定性风险分析也能为其黄定基础。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_040.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_040.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

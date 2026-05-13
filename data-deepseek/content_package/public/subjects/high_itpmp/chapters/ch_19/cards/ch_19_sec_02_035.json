@@ -1,0 +1,32 @@
+{
+  "point_id": "035",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_02",
+  "title": "变更方案的主要作用，首先是对变更请求",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 45,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 35,
+  "tags": [
+    "配置与变更管理",
+    "变更管理"
+  ],
+  "key_points": [
+    "变更方案的主要作用，首先是对变更请求是否可实现进行论证，如果可能实",
+    "现，则将变更请求由搜术要求转化为资源需求，以供 CCB 决策。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_02_035.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_02_035.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

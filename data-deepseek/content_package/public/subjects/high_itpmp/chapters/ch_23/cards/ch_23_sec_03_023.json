@@ -1,0 +1,32 @@
+{
+  "point_id": "023",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_03",
+  "title": "4 市场营销",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 55,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 23,
+  "tags": [
+    "组织通用管理",
+    "知识管理"
+  ],
+  "key_points": [
+    "工场过销组合工具称为市场营销的 :产品、定价、汪道和促销，",
+    "工 为获得优质的客户润罕，市场芝铺知必须有效地管理来自各种渠道的市场营钳信息。市场癌销者可以"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_03_023.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_03_023.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

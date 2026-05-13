@@ -1,0 +1,32 @@
+{
+  "point_id": "022",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_04",
+  "title": "数字经济",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 75,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 22,
+  "tags": [
+    "信息化发展",
+    "数字中国"
+  ],
+  "key_points": [
+    "从本质上看，数字经济是一种新的技术经济范式，它建立在信息与通信技术的重大突破的基础上，",
+    "前4类未数字产业化部分，第 5 类为产业数字化部分。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_04_022.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_04_022.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

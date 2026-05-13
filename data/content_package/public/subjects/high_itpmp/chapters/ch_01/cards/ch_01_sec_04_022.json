@@ -20,8 +20,8 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 数字中国是国家层面的数字化发展战略。\n2. 重点线索：数字经济、数字政府、数字民生、数字生态、数字化转型。\n3. 不要把数字中国缩小成某一个系统或平台。",
-  "mnemonics": "数字中国五条线：经、政、民、生、转。",
+  "key_points": "- 数字中国是国家层面的数字化发展战略，不是单个系统。\n- 后续按五条线理解：**数字经济、数字政府、数字民生、数字生态、数字化转型**。",
+  "mnemonics": "",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [

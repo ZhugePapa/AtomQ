@@ -1,0 +1,32 @@
+{
+  "point_id": "036",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "项目范围说明书女女太 (22下26) [COTR7",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 90,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 36,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "全项目范围说明书是对项目范围、主要可交付成果、人很设入件和制欧因素的指述。",
+    "> ”可交付成果，为完成某一过程、阶段或项目而必须产出的任何狐蛙并可核实的产品、成果或服务能"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_036.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_036.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

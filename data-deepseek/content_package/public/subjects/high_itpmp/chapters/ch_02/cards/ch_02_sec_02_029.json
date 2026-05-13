@@ -1,0 +1,32 @@
+{
+  "point_id": "029",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_02",
+  "title": "区块链可以理解为以站对称加密算法",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 315,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 29,
+  "tags": [
+    "信息技术发展",
+    "新一代信息技术及应用"
+  ],
+  "key_points": [
+    "区块链可以理解为以站对称加密算法为基础，以改进的默克尔树为数据结构，使",
+    "区块链分为公有链、联蚌钨、秋有能和混合链四大类。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_02_029.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_029.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

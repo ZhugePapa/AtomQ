@@ -1,0 +1,31 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "系统交互图",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 32,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "系统交互图，是对产品范围的可视化描绘，可以直观显示业务系统过程、设备、计算机系统等) 及"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_028.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

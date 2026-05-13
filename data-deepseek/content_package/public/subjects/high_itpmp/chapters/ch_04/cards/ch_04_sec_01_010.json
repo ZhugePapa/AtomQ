@@ -1,0 +1,31 @@
+{
+  "point_id": "010",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "信息系统的运维和服务由各类管理活动组成",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 10,
+  "tags": [
+    "信息系统管理",
+    "管理方法"
+  ],
+  "key_points": [
+    "信息系统的运维和服务由各类管理活动组成，主要包括，运行管理和控制、IT 服务管理、运"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_01_010.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_010.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_02",
+  "title": "信息系统管理覆盖四大领域",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 30,
+  "tags": [
+    "信息系统管理",
+    "管理要点"
+  ],
+  "key_points": [
+    "信息系统管理覆盖四大领域:规划和组织、设计和实施、运维和服务、优化和持续改进"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_02_030.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_030.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

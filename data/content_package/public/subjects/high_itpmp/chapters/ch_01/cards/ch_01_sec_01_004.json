@@ -20,7 +20,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 信息质量属性共 **7 个**：精确、完整、可靠、及时、经济、可验证、安全。\n2. 金融信息优先关注**安全性**。\n3. 经济与社会信息优先关注**及时性**。",
+  "key_points": "| 场景 | 优先属性 |\n|:---|:---|\n| 金融信息 | ==安全性== |\n| 经济与社会信息 | ==及时性== |\n\n信息质量属性：**精确、完整、可靠、及时、经济、可验证、安全**。",
   "mnemonics": "精完可及经可安。",
   "common_mistakes": [],
   "review_status": "ai_draft",

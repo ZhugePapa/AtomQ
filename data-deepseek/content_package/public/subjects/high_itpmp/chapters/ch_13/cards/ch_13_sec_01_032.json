@@ -1,0 +1,32 @@
+{
+  "point_id": "032",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "类比估算，将以入类似项目的资源相关信息作",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 86,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 32,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "类比估算，将以入类似项目的资源相关信息作为估算未来项目的基础。这是一种快速信算方法，适用",
+    "5 数据分析: 备选方案分析是一种对已训别的司移方案进行评估的技术，用来决定选择哪种方案或使用"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_032.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_032.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

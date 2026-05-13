@@ -1,0 +1,31 @@
+{
+  "point_id": "033",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_05",
+  "title": "DIKW 模型很好地诠释了数据 (Data) >信",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 132,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 33,
+  "tags": [
+    "信息化发展",
+    "数字化转型与元字宙"
+  ],
+  "key_points": [
+    "过  3. S&D 模型就是基于 DIKW 模型，构簧了“智慧-数据”“数据-智慧”两大过程的8 个"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_05_033.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_05_033.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

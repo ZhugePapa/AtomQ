@@ -1,0 +1,31 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_02",
+  "title": "区块链技术具有多中心化存储、隐私保护、防自改等特点",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "tags": [
+    "信息技术发展",
+    "新一代信息技术及应用"
+  ],
+  "key_points": [
+    "容错的事劳机制; 人为新一代匿名在线支付、汇款和数字资产交易的核心，被广泛"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_02_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_028.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "point_id": "005",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_01",
+  "title": "TCP/IP(I7下19/雪上11)",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 92,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 5,
+  "tags": [
+    "信息技术发展",
+    "信息技术发展"
+  ],
+  "key_points": [
+    "网络接口层 | 既是传输数据的物理媒介，也可以汶网络层提供一条准确无误的线路"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_01_005.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_01_005.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

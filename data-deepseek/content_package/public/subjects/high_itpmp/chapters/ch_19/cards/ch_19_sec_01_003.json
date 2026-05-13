@@ -1,0 +1,31 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_01",
+  "title": "配置项是信息系统组件或与其有关的项目，包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "tags": [
+    "配置与变更管理",
+    "配置管理"
+  ],
+  "key_points": [
+    "配置项是信息系统组件或与其有关的项目，包括软件、硬件和各各文档，如变更请求、服务、服务器、"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_01_003.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_003.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

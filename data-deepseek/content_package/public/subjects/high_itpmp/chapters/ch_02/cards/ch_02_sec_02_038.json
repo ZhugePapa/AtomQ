@@ -1,0 +1,32 @@
+{
+  "point_id": "038",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_02",
+  "title": "存储分类根据服务器类型分",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 44,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 38,
+  "tags": [
+    "信息技术发展",
+    "新一代信息技术及应用"
+  ],
+  "key_points": [
+    "存储分类根据服务器类型分为:封闭系统的存储和开放系统的存储。封闭系统主要指大型机等",
+    "服务器。开放系统指基于包括衣麟、欧拉、UNIX、Linux 等操作系统的服务器。开放系统的存储分为:"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_02_038.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_038.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

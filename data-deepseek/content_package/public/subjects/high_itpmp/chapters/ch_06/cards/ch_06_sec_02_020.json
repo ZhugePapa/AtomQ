@@ -1,0 +1,31 @@
+{
+  "point_id": "020",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_02",
+  "title": "PMO有支持型、控制型和",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 40,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 20,
+  "tags": [
+    "项目管理概论",
+    "项目基本要素"
+  ],
+  "key_points": [
+    "PMO有支持型、控制型和指令型等3种"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_02_020.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_02_020.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

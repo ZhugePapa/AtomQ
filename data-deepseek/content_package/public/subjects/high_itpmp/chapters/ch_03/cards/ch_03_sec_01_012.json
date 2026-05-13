@@ -1,0 +1,32 @@
+{
+  "point_id": "012",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_01",
+  "title": "IT 治理实施",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 42,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 12,
+  "tags": [
+    "信息系统治理",
+    "IT治理"
+  ],
+  "key_points": [
+    "IT 治理实施指南-GB/XT34960. 2《信息技术服务治理第 2 部分:实施指南》该标准适用于:",
+    "图IT 治理相关软件或解决方案实施落地的指导;"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_01_012.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_01_012.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

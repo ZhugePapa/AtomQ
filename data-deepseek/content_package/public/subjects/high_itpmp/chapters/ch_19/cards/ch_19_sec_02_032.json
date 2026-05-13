@@ -1,0 +1,32 @@
+{
+  "point_id": "032",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_02",
+  "title": "变更管理的原则",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 102,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 32,
+  "tags": [
+    "配置与变更管理",
+    "变更管理"
+  ],
+  "key_points": [
+    "变更管理的原则是项目基准化尘变更管理过程规范化。包括: 外基准管理、@变更控制流程化、轿明",
+    "() 基准管理:基准是变更的依据二在项目实施过程中，基准计划确定并经过评审后(通常用户应参与部"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_02_032.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_02_032.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

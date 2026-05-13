@@ -1,0 +1,32 @@
+{
+  "point_id": "019",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "需求管理计划女友妇\\22上27)",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 66,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 19,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "急需求管理计划是项目管理计划的组成部分，描述如何分析、记录和管理需求。",
+    "@@测量指标及使用这些指标的理由，"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_019.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_019.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

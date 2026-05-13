@@ -1,0 +1,32 @@
+{
+  "point_id": "013",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_03",
+  "title": "开发方法的选择",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 376,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 13,
+  "tags": [
+    "项目绩效域",
+    "开发方法和生命周期绩效域"
+  ],
+  "key_points": [
+    "品 | 易程度 “| 并等变更较为困难，则适合采用预 | 的方法",
+    "预末型方沃更运合共有指导文化的红织\"这种末| wy"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_03_013.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_03_013.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

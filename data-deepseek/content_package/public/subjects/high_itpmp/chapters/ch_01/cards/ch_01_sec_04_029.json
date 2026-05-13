@@ -1,0 +1,32 @@
+{
+  "point_id": "029",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_04",
+  "title": "数字政府",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 281,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 29,
+  "tags": [
+    "信息化发展",
+    "数字中国"
+  ],
+  "key_points": [
+    "_| 以新一代信息技术为支撑，以“业务数据化、数据业务化”为着力点，通过数据驱动重塑政",
+    "既是“互联网+政务”深度发展的结果，也是大数据时代政府自觉转型升级的必然，其核心目"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_04_029.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_04_029.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "051",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "事业环境国素     入信厂生生分打悔记肌、项目进",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 399,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 51,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "次生风险。次生风险是实施风险应对措施直接导残的风险。",
+    "指项目团队采取行动来漳 延长进度、改变策略、缩川       加"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_051.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_051.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "025",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_01",
+  "title": "物理配置审计",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 25,
+  "tags": [
+    "配置与变更管理",
+    "配置管理"
+  ],
+  "key_points": [
+    "物理配置审计是审计配置项的完整性 (配置项的物理存在是否与预期盖臻), 验证",
+    "人@@要交付的配置项是否存在"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_01_025.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_025.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

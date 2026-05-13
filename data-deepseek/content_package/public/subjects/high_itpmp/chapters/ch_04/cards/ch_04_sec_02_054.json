@@ -1,0 +1,31 @@
+{
+  "point_id": "054",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_02",
+  "title": "GB/T22239《信息安全技术网络安全等级保护基",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 43,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 54,
+  "tags": [
+    "信息系统管理",
+    "管理要点"
+  ],
+  "key_points": [
+    "GB/T22239《信息安全技术网络安全等级保护基本要求》规定了不同级别的等级保护对象应共备的"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_02_054.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_054.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

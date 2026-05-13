@@ -1,0 +1,32 @@
+{
+  "point_id": "018",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_03",
+  "title": "业务评估",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 37,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 18,
+  "tags": [
+    "高级项目管理",
+    "组织级项目管理"
+  ],
+  "key_points": [
+    "业务评估是建立 OPM框架的必要组件。组织管理层或发起人需要说明实施 OPM 解决的业务问题、OPM",
+    "特征和关键绩效指标的定义。尽可能通过财委量化的方式确定收益，确定 OPM 实施成本和投资回报，即实施"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_03_018.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_03_018.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

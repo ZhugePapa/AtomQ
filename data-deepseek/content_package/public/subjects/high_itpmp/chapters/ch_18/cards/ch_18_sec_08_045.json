@@ -1,0 +1,32 @@
+{
+  "point_id": "045",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_08",
+  "title": "为了有效执行不确定性绩效域",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 336,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 45,
+  "tags": [
+    "项目绩效域",
+    "不确定性绩效域"
+  ],
+  "key_points": [
+    "为了有效执行不确定性绩效域，项目经理需要重点关注风险、模糊性、复杂性、不确定性的应对方法",
+    "为多种结果| 制定可用的解决方案，包括备份或应急计划,为短一个不确定性做好准备如果存在"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_08_045.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_08_045.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

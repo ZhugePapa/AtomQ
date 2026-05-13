@@ -1,0 +1,32 @@
+{
+  "point_id": "002",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "控制论的创始人维纳认为: 信息就",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 2,
+  "tags": [
+    "信息化发展",
+    "信息与信息化"
+  ],
+  "key_points": [
+    "控制论的创始人维纳认为: 信息就是信息，它既不是物质，也不是能量。信息化的奠基者",
+    "香农认为: 信息是能够用来消除不确定性的东西。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_01_002.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_002.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

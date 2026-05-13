@@ -1,0 +1,32 @@
+{
+  "point_id": "012",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_02",
+  "title": "为达成组织的一系列目的和目标，可能需要实施多个项目",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 41,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 12,
+  "tags": [
+    "项目管理概论",
+    "项目基本要素"
+  ],
+  "key_points": [
+    "为达成组织的一系列目的和目标，可能需要实施多个项目。在这种情况下，项目可能被归入项目",
+    "集中。 项目集是一组相互关联且被协调管理的项目、子项目集和项目集活动，目的是为了获得分别管理无"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_02_012.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_02_012.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

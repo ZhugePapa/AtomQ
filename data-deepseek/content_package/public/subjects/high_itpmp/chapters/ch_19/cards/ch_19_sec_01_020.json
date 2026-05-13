@@ -1,0 +1,32 @@
+{
+  "point_id": "020",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_01",
+  "title": "配置项控制即对配置项和基线的变更控制",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 181,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 20,
+  "tags": [
+    "配置与变更管理",
+    "配置管理"
+  ],
+  "key_points": [
+    "配置项控制即对配置项和基线的变更控制，包插志标识和和记录变更中请、分析和评价变更、批准或",
+    "评症AL | @变更的内容是可必要"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_01_020.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_020.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

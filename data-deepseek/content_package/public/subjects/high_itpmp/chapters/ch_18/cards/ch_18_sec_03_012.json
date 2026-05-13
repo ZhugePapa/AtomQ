@@ -1,0 +1,32 @@
+{
+  "point_id": "012",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_03",
+  "title": "开发方法; 预测型方法、混合型方法和适应型方法",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 203,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 12,
+  "tags": [
+    "项目绩效域",
+    "开发方法和生命周期绩效域"
+  ],
+  "key_points": [
+    "特点: 是适应型方法和预测型方法的结合体，适应性比预测型方法强，但比纯粹的适应型",
+    "> ”增量型方法是用于在一系列友代过程中生成可交付物, 每个迭代都会在预先确定的时间"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_03_012.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_03_012.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

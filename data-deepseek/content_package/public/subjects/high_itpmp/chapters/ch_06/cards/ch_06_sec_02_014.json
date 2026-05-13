@@ -1,0 +1,32 @@
+{
+  "point_id": "014",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_02",
+  "title": "项目、项目集、项目组合管对的比较",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 413,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 14,
+  "tags": [
+    "项目管理概论",
+    "项目基本要素"
+  ],
+  "key_points": [
+    "是汪组相互关联且被协调管理   目 er ED      -    -",
+    "定六| 是为创造独特的产品”服务 | |的项国 了项目集和项目集活  生生人人"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_02_014.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_02_014.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

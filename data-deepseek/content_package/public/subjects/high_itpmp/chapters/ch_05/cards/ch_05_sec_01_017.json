@@ -1,0 +1,32 @@
+{
+  "point_id": "017",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_01",
+  "title": "设计模式",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 113,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 17,
+  "tags": [
+    "信息系统工程",
+    "软件工程"
+  ],
+  "key_points": [
+    "设计模式是前人经验的总结，它使人们可以方便地复用成功的软件设计。设计横式包含模式名称、",
+    "(D) 根据处理范围不同，设计模式可分为类模式和对象模式，"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_01_017.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_01_017.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

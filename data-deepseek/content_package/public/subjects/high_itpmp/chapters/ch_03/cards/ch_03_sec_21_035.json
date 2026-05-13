@@ -1,0 +1,32 @@
+{
+  "point_id": "035",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_21",
+  "title": "IT 审计业务和服务通常分",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 54,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 35,
+  "tags": [
+    "信息系统治理",
+    "T 审计"
+  ],
+  "key_points": [
+    "IT 审计业务和服务通常分为 IT 内部控制审计和 IT 专项审计。",
+    ">IT 专项审计主要是指根据当前面临的特殊风险或者需求开展的 IT 审计，审计范围为 IT 综合"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_21_035.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_21_035.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

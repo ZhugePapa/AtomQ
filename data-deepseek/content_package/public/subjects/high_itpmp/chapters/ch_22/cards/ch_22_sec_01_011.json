@@ -1,0 +1,31 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_01",
+  "title": "领导力",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 11,
+  "tags": [
+    "组织通用治理",
+    "组织通用治理"
+  ],
+  "key_points": [
+    "基本能力  有管理才能的人，能够识别那些不具备组织所希望具有的管理风格和行为的管理者。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_01_011.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_01_011.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

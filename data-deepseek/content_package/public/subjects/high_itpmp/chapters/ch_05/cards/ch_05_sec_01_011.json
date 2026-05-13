@@ -1,0 +1,34 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_01",
+  "title": "UML5 个系统视图",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 96,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 11,
+  "tags": [
+    "信息系统工程",
+    "软件工程"
+  ],
+  "key_points": [
+    "四本下  也称为设计视图, 它表示了设计模型中在架构方面具有重要意义的部分, 即类、",
+    "用例视图“| 是最基本的需求分析模型"
+  ],
+  "mnemonics": [
+    "记忆息决，裸线不用进"
+  ],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_01_011.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_01_011.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

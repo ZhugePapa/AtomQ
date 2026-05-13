@@ -1,0 +1,32 @@
+{
+  "point_id": "063",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_05",
+  "title": "智慧城市基本原理表现",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 63,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 63,
+  "tags": [
+    "信息化发展",
+    "数字化转型与元字宙"
+  ],
+  "key_points": [
+    "智慧城市基本原理表现为:GD强调“人民城市为人民”, 以面向政府、企业、市民等主体提供",
+    "智慧化的服务为主要模式:@@重点强化数据治理、数字挛生、边际决策、多元融合和态势感知五个核心"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_05_063.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_05_063.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

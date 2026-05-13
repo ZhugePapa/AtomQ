@@ -1,0 +1,31 @@
+{
+  "point_id": "008",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "信息系统的生命周期可以简化",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 8,
+  "tags": [
+    "信息化发展",
+    "信息与信息化"
+  ],
+  "key_points": [
+    "信息系统的生命周期可以简化为: 系统规划(可行性分析与项目开发计划), 系统分析 (需求分"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_01_008.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_008.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

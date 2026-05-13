@@ -1,0 +1,31 @@
+{
+  "point_id": "037",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_02",
+  "title": "数据元;",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 44,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 37,
+  "tags": [
+    "信息系统工程",
+    "数据工程【数据建模、数据标准化、数据运维、数据开发利用和数据安全】"
+  ],
+  "key_points": [
+    "数据元; 是数据库、文件和数据交换的基本数据单元。数据库或文件由记录或元组"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_02_037.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_02_037.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "033",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "箭线图法女友女",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 204,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 33,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "人箭线图法 (ADM) 是用箭线表示活动，节点表示事件的一种网络图绘制方法。也被称作双代号网络图或活",
+    "@网络图中每一活动和每一事件都必须有唯一的一个代号，即网络图中不会有相同的代号"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_033.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_033.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

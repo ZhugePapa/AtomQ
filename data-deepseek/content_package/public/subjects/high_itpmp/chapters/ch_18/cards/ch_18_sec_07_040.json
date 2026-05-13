@@ -1,0 +1,32 @@
+{
+  "point_id": "040",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_07",
+  "title": "展示度量信息和结果",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 147,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 40,
+  "tags": [
+    "项目绩效域",
+    "度量绩效域"
+  ],
+  "key_points": [
+    "表盘 是以电子方式收集信息并生成描述状态的图表，介阁双数据进行深入分析，用于提供高层",
+    "级的概要信息，对于超出既定临界值的任何度量指标巾辅助使用文本进行解释。仪表盘包"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_07_040.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_07_040.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

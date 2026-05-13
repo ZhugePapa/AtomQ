@@ -1,0 +1,32 @@
+{
+  "point_id": "023",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_21",
+  "title": "IT 审计风险主要包",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 155,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 23,
+  "tags": [
+    "信息系统治理",
+    "T 审计"
+  ],
+  "key_points": [
+    "含义: 是指 iT 活动不存在相关控制的情况下 汪易于导致重大错误的风险",
+    "风险。 | 特点; 固有风险是 IT 活动本身所具有的，审计大员只能评估二却无法控制或影响它;"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_21_023.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_21_023.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

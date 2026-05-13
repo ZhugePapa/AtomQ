@@ -1,0 +1,32 @@
+{
+  "point_id": "009",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "期望理论是一种道过考察人们的努力行",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 76,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 9,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "期望理论是一种道过考察人们的努力行为与其所获得的最终奖一之间的因果关系，来说明激励过程，",
+    "并以选择合适的行为达到最终的奖丽目标的理论。(17下44) 广坟"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_009.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_009.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

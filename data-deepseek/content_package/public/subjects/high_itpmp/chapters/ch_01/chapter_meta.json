@@ -1,0 +1,38 @@
+{
+  "chapter_id": "ch_01",
+  "subject_id": "high_itpmp",
+  "title": "信息化发展",
+  "description": "围绕信息化发展展开",
+  "sort_no": 1,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "信息与信息化",
+      "sort_no": 1,
+      "description": "信息与信息化",
+      "card_count": 14
+    },
+    {
+      "section_id": "sec_03",
+      "title": "现代化创新发展",
+      "sort_no": 2,
+      "description": "现代化创新发展",
+      "card_count": 6
+    },
+    {
+      "section_id": "sec_04",
+      "title": "数字中国",
+      "sort_no": 3,
+      "description": "数字中国",
+      "card_count": 11
+    },
+    {
+      "section_id": "sec_05",
+      "title": "数字化转型与元字宙",
+      "sort_no": 4,
+      "description": "数字化转型与元字宙",
+      "card_count": 42
+    }
+  ],
+  "schema_version": 2
+}

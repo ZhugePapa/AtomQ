@@ -1,0 +1,31 @@
+{
+  "point_id": "036",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "问题解决发现解决问题或应对挑的解决方案 重用结杨化",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 31,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 36,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "问题解决发现解决问题或应对挑的解决方案 重用结杨化的问题解决方法有助于消除问题和制定"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_036.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_036.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

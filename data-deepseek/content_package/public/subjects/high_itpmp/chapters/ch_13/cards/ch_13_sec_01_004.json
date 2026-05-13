@@ -1,0 +1,32 @@
+{
+  "point_id": "004",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "项目经理的权力有5种来源",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 124,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 4,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "的任务以及其他的奖励员工满意行为的手段",
+    "| 5 | 参由权力 |由于成为别人学习参照榜样所名有的力量"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_004.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_004.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

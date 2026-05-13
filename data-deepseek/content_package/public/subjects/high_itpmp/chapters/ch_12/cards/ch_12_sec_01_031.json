@@ -1,0 +1,32 @@
+{
+  "point_id": "031",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "数据收集: 核对单",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 37,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 31,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "数据收集: 核对单是一种结构化开具，通常列出特定组成部分，用来核实所要求的一系列步骤是否已",
+    "得到执行或检查需求列表是否已得到满足。 基于需目需求和实践，核对单可简可繁。女妇女(21 上40)[22下座"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_031.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_031.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

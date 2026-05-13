@@ -1,0 +1,32 @@
+{
+  "point_id": "022",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "数据分析女妇女",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 126,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 22,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "成本效益分析 |案。可帮助项目经理确定规划的质量活动是否有兹利用了成本。达到质量要求的",
+    "。对每个质量活动进行成本效益分析，就是要陛较其可能成本与预期效益"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_022.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_022.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

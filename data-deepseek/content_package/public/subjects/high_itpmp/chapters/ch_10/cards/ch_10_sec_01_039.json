@@ -1,0 +1,32 @@
+{
+  "point_id": "039",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "参数估算女友友 (23下4批)",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 56,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 39,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "急参数估算是一种基于历史数据和项目参数，使用某种算法来计算成本或持续时间的估算技术。它是指",
+    "动参数。把需要实施的工作量乘以完成单位工作量所需的工时，即可计算出持续时间。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_039.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_039.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "025",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_04",
+  "title": "数字产业化发展重点包",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 85,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 25,
+  "tags": [
+    "信息化发展",
+    "数字中国"
+  ],
+  "key_points": [
+    "1 指在新一代数字科技支撑和引领下，以数据为关键要素，以价值释放为核心，以数据岗",
+    "能为主线，对产业链上下游的全要素数字化升级、转型和再造的过程。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_04_025.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_04_025.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

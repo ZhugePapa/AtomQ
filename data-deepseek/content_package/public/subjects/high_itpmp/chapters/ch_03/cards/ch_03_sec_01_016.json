@@ -1,0 +1,31 @@
+{
+  "point_id": "016",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_01",
+  "title": "高效和有效的 IT 治理系统",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 16,
+  "tags": [
+    "信息系统治理",
+    "IT治理"
+  ],
+  "key_points": [
+    "高效和有效的 IT 治理系统是创造价值的起点。COBIT 定义的 IT 治理系统设计因素包括组"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_01_016.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_01_016.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

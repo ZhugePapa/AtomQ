@@ -1,0 +1,31 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_02",
+  "title": "虽然项目",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 31,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "tags": [
+    "项目管理概论",
+    "项目基本要素"
+  ],
+  "key_points": [
+    "虽然项目是临时性工作,但其可交付成果可能会在项目终也后依然存在。(项目临时，绸"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_02_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_02_006.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

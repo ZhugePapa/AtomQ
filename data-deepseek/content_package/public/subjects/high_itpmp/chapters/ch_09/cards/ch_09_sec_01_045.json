@@ -1,0 +1,31 @@
+{
+  "point_id": "045",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "工作绩效数据                  -",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 58,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 45,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "域的控制过程协调开展。未经控制的产品或项目范围的扩大(未对时间、成本和资源做相应调整) 被称为范"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_045.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_045.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

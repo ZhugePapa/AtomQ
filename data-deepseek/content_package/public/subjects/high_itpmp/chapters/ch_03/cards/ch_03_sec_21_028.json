@@ -1,0 +1,32 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_21",
+  "title": "审计证据的特性见下表",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 63,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "tags": [
+    "信息系统治理",
+    "T 审计"
+  ],
+  "key_points": [
+    "区 指要求审计人员根据所获证据足以对视审计对象提出一定穆度保证的结论，是对审",
+    "指审计证据必须是客观存在的事实材料。客观的审计证据比需要判断或解释的证据可"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_21_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_21_028.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

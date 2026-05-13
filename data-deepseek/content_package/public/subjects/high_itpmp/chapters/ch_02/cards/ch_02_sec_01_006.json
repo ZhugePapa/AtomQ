@@ -1,0 +1,32 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_01",
+  "title": "是一种新型网络创新架构",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 300,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "tags": [
+    "信息技术发展",
+    "信息技术发展"
+  ],
+  "key_points": [
+    "是一种新型网络创新架构，是网络虚拟化的一种实现六式，它可通过软件编程的形式",
+    "、| 的灵活控制，使网络变得更加智能，为核心网络及应用的创新提供了良好的平台。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_01_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_01_006.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

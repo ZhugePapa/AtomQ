@@ -1,0 +1,31 @@
+{
+  "point_id": "043",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_03",
+  "title": "文档的规范化管理主要体现在",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 43,
+  "tags": [
+    "配置与变更管理",
+    "项目文档管理"
+  ],
+  "key_points": [
+    "文档的规范化管理主要体现在: 四文档书写规范, @赂表编号规则;，@@文档目录编写标准，@@文档管"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_03_043.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_03_043.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

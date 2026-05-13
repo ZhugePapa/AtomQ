@@ -1,0 +1,31 @@
+{
+  "point_id": "017",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_07",
+  "section_id": "sec_01",
+  "title": "项目评估的工作程序",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 17,
+  "tags": [
+    "立项管理",
+    "立项管理"
+  ],
+  "key_points": [
+    "项目评估的工作程序:成立评估小组一开展调查研究一分析与评估一编号、讨论、修改评估报告一"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_07_sec_01_017.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_017.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_07"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "point_id": "045",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_02",
+  "title": "组织的数据标准能力域通常包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 45,
+  "tags": [
+    "信息系统管理",
+    "管理要点"
+  ],
+  "key_points": [
+    "组织的数据标准能力域通常包括业务术语、参考数据利生数据汪数据元和指标数据四个能力项。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_02_045.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_045.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

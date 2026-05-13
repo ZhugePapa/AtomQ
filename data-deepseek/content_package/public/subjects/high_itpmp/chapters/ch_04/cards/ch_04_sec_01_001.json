@@ -1,0 +1,32 @@
+{
+  "point_id": "001",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "信息系统包",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 42,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 1,
+  "tags": [
+    "信息系统管理",
+    "管理方法"
+  ],
+  "key_points": [
+    "在信息系统层次架构中，信息系统之上是管理，它监督系统的设计和结构，并监控其整体性",
+    "了一个蓝图,可以将业务和系统策略转换为组件或基础架构，并以恰当的人员、技术、流程和数"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_01_001.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_001.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

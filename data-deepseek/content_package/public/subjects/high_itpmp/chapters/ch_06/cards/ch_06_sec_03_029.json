@@ -1,0 +1,31 @@
+{
+  "point_id": "029",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_03",
+  "title": "战略和商务管理技能包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 29,
+  "tags": [
+    "项目管理概论",
+    "项目经理的角色"
+  ],
+  "key_points": [
+    "战略和商务管理技能包括了解组织概况、有效协商，以及执行有利于战略调整和创新的决策及行动的"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_03_029.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_03_029.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

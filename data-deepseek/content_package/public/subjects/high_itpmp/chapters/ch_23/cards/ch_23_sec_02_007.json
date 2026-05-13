@@ -1,0 +1,32 @@
+{
+  "point_id": "007",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_02",
+  "title": "战略执行保障体系具体包",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 52,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 7,
+  "tags": [
+    "组织通用管理",
+    "流程管理"
+  ],
+  "key_points": [
+    "(GD第一层: 以会议管理、运行分析、预算考核为基础建立组织发展计划，形成以执行和控制为目标的战",
+    "(2) 第二层:以业务流程、岗位描述、绩效测评为基础架构，对研发 嘱购、生产与交付、销售、客服等"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_02_007.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_02_007.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

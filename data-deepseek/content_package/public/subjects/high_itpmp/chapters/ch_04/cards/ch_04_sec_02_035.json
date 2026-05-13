@@ -1,0 +1,32 @@
+{
+  "point_id": "035",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_02",
+  "title": "使用六西格玛倡导的五阶段方法 DMAIC/DMAD",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 55,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 35,
+  "tags": [
+    "信息系统管理",
+    "管理要点"
+  ],
+  "key_points": [
+    "使用六西格玛倡导的五阶段方法 DMAIC/DMADYV, 是对戴明环四阶段周期的延伸, 包括:定义(Dedine)、",
+    "阶段的“改进”替换为“设计”, “控制”蔡换为“验证”时, 五阶段法就从 DMAIC 转变为 DMADV。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_02_035.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_035.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

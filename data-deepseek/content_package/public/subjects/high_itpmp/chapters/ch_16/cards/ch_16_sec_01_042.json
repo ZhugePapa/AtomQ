@@ -1,0 +1,32 @@
+{
+  "point_id": "042",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "合同档案管理 (文本管理)",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 38,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 42,
+  "tags": [
+    "采购管理",
+    "采购管理"
+  ],
+  "key_points": [
+    "合同档案管理 (文本管理) 是整个合同管理的基础。合同档案管理还包括正本和副本管理、合同文件格",
+    "式等内容。在文本格式上，为了限制执行人员随意修改合同，一般要求采用电脑打印文本，手写的旁注和修"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_16_sec_01_042.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_042.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_16"
+    }
+  ]
+}

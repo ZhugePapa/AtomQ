@@ -1,0 +1,32 @@
+{
+  "point_id": "036",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "组织过程资产           4",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 207,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 36,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "经理、项目团队成员、项目风险专家(若已指定) 、客户、项目团队处部的亡题专家、最终用户、其他项目经",
+    "应采用统一的风险描述格式来描述和记录项目风险，以确保每一项风险都被清楚、明确地理解，从而为"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_036.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_036.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

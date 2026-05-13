@@ -1,0 +1,32 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_04",
+  "title": "数字民生、智慧城市",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 436,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 30,
+  "tags": [
+    "信息化发展",
+    "数字中国"
+  ],
+  "key_points": [
+    "智慧城市是运用信息通信技术，有效整合各类城市管理系统，实现城市各系统",
+    "主要 | 智慧城市建设更加注重以人民为中心， 新技术持续由能智慧城市的建设与发"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_04_030.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_04_030.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

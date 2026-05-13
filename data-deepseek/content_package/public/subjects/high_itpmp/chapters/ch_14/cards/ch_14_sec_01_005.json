@@ -1,0 +1,31 @@
+{
+  "point_id": "005",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_14",
+  "section_id": "sec_01",
+  "title": "书面沟通的5C原则",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 5,
+  "tags": [
+    "沟通管理",
+    "沟通管理"
+  ],
+  "key_points": [
+    "书面沟通的5C原则: 正确的语法和拼写、简洁的表述、清晰的目的和表述、连贯的思维逻辑、善用控"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_14_sec_01_005.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_14/cards/ch_14_sec_01_005.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_14"
+    }
+  ]
+}

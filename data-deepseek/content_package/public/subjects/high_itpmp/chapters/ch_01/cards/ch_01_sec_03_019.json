@@ -1,0 +1,32 @@
+{
+  "point_id": "019",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_03",
+  "title": "智能制造的建设",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 124,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 19,
+  "tags": [
+    "信息化发展",
+    "现代化创新发展"
+  ],
+  "key_points": [
+    "智能制造的建设是一项持续性的系统工程，涵盖企业的方方面面。",
+    "制    B/T39116《智能制造能力成熟度模型》成熟度等级分为五个等级; 一级(规划级) 、二级 (规范"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_03_019.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_03_019.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

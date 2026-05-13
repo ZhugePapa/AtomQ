@@ -1,0 +1,32 @@
+{
+  "point_id": "016",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_01",
+  "title": "常用的 00D 原则包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 77,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 16,
+  "tags": [
+    "信息系统工程",
+    "软件工程"
+  ],
+  "key_points": [
+    "单职原则     设计功能单一的类。本原则与结构化方法的高肉聚太则是一致的。",
+    "依赖倒置原则   要依赖于抽象，而不是具体实现，要针对接口编程，不要针对实现编程。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_01_016.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_01_016.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

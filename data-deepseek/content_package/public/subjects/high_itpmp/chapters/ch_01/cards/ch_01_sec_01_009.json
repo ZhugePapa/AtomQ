@@ -1,0 +1,32 @@
+{
+  "point_id": "009",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "信息化的核心",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 32,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 9,
+  "tags": [
+    "信息化发展",
+    "信息与信息化"
+  ],
+  "key_points": [
+    "信息化的核心是要通过全体社会成员的共同努力,在经济和社会从个领域充分应用基于信息",
+    "技术的先进社会生产工具(表现为各种信息系统或软硬件产品), 提高信息时代的社会生产力, 并推动"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_01_009.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_009.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

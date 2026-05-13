@@ -1,0 +1,32 @@
+{
+  "point_id": "024",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_01",
+  "title": "功能配置审计",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 35,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 24,
+  "tags": [
+    "配置与变更管理",
+    "配置管理"
+  ],
+  "key_points": [
+    "功能配置审计是审计配置项的一致性 (配置项的灾际功效是俏与其需求一致, 验证",
+    "图配置项的操作和支持文档已完成并且是符合要求的。 (19 上 12)居22 Ri50) (22 上 59) (23 下 4 批)"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_01_024.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_024.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

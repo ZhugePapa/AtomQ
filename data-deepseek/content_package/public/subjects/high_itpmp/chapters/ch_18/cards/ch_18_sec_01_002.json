@@ -1,0 +1,32 @@
+{
+  "point_id": "002",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_01",
+  "title": "为了有效地让干系人参与",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 120,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 2,
+  "tags": [
+    "项目绩效域",
+    "干系人绩效域"
+  ],
+  "key_points": [
+    "为了有效地让干系人参与，项目经理可带领项目团队按步骤开展工作: 识别一》理解和分析一》优先",
+    "理解和分析  变化,干系人对项目的立场和持有的观点会发生变化，因此，理解和分析干系人是"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_01_002.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_01_002.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

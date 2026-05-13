@@ -1,0 +1,31 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_01",
+  "title": "确保项目集目标和规划的效益符合组织战略和运营目标",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 45,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "tags": [
+    "高级项目管理",
+    "项目集管理"
+  ],
+  "key_points": [
+    "项目集指导委员会 | 5. 支持或批准项目集的建议和变更，"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_01_003.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_01_003.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

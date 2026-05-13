@@ -1,0 +1,32 @@
+{
+  "point_id": "034",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_11",
+  "section_id": "sec_01",
+  "title": "成本基准友女女",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 100,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 34,
+  "tags": [
+    "成本管理",
+    "成本管理"
+  ],
+  "key_points": [
+    "久成本基准是经过批准的、按时间段分配的项目预算，不包括任何管理储备，只有通过正式的变更控制",
+    "程序才能变更，用作与实际结果进行比较的依据，成本基准是不同进度活动经批准的预算的总和。(22下33)"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_11_sec_01_034.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_11/cards/ch_11_sec_01_034.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_11"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "026",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "滚动式规划娘娘女",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 40,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 26,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "多滚动式规划是一种迭代式的规划技术，即详细规划近期要完成的工作，同时在较高层级上狂咯规划远",
+    "期工作。它是一种渐进明细的规划方式，适用于 卫作包4 规划包。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_026.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_026.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

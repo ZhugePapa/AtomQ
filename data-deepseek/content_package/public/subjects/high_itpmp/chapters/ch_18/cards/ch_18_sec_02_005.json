@@ -1,0 +1,32 @@
+{
+  "point_id": "005",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_02",
+  "title": "| 激励 。 | 对团队成员的激励可以",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 219,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 5,
+  "tags": [
+    "项目绩效域",
+    "团队绩效域"
+  ],
+  "key_points": [
+    "| 激励 。 | 对团队成员的激励可以是内存航，也可以是外在的。外在激励源自外部奖励(如奖金)。",
+    "信      内在激励因素包括; 成就。挑战当对工作的信念、改变现状的需要、自我指导和自主权、"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_02_005.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_02_005.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

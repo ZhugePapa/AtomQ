@@ -1,0 +1,32 @@
+{
+  "point_id": "021",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_03",
+  "title": "知识转移",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 21,
+  "tags": [
+    "组织通用管理",
+    "知识管理"
+  ],
+  "key_points": [
+    "知识转移是由知识传输和知识吸收两个过程所共同组成的统一过程。只有当转移的知",
+    "知识转移 “| 识保留下来，才是有效的知识转移。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_03_021.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_03_021.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

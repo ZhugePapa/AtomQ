@@ -1,0 +1,32 @@
+{
+  "point_id": "005",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_11",
+  "section_id": "sec_01",
+  "title": "规划成 | 确定如何估算、预算、管理、监督和控 |",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 100,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 5,
+  "tags": [
+    "成本管理",
+    "成本管理"
+  ],
+  "key_points": [
+    "规划成 | 确定如何估算、预算、管理、监督和控 | 在整个项目期间为如何管理",
+    "本管理 | 制项目成本的过程          项目成本提供指南和方向"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_11_sec_01_005.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_11/cards/ch_11_sec_01_005.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_11"
+    }
+  ]
+}

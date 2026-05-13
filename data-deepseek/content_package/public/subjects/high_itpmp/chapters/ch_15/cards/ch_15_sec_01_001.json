@@ -1,0 +1,32 @@
+{
+  "point_id": "001",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "项目风险",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 40,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 1,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "项目风险是一种不确定的事件或条件，一旦发生，会对项目目标产生某种正面或负面的影响。项目风",
+    "4已知风险是那些已经经过识别和分析的风险，对于已知风险，对其进行规划，寻找应对方案是可行的"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_001.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_001.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

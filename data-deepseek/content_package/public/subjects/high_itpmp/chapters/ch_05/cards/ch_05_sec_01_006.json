@@ -1,0 +1,32 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_01",
+  "title": "需求分析对已经获取到的需求进行提炼、分析和审查",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 106,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "tags": [
+    "信息系统工程",
+    "软件工程"
+  ],
+  "key_points": [
+    ">用例是一种描述系统需求的方法，使用用例的方法来描述系统需求的过程就是用例",
+    "它们如何保持通信，实现系统行为 (动态模型) 。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_01_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_01_006.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

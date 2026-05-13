@@ -1,0 +1,32 @@
+{
+  "point_id": "007",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "开展信息系统设计和实施",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 180,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 7,
+  "tags": [
+    "信息系统管理",
+    "管理方法"
+  ],
+  "key_points": [
+    "开展信息系统设计和实施，首先需要将业务需求转换为信息系统架构，信息系统架构为将组",
+    "织业务战略转换为信息系统的计划提供了蓝图。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_01_007.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_007.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

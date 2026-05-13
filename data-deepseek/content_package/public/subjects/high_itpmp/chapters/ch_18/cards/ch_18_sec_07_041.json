@@ -1,0 +1,32 @@
+{
+  "point_id": "041",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_07",
+  "title": "度量陷阱",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 141,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 41,
+  "tags": [
+    "项目绩效域",
+    "度量绩效域"
+  ],
+  "key_points": [
+    "敌对效应指出，对某一事条证行度量阿会对其行为产生形而，因下需要训便测定度量指",
+    "交付物，而不是仅仅专注于度量客户更满意的那些可交付物。(23 下 1 批)"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_07_041.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_07_041.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

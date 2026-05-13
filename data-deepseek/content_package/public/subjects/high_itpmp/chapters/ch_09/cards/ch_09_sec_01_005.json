@@ -1,0 +1,31 @@
+{
+  "point_id": "005",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "控制范围| 理范围基准变更的过程       护 ",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 113,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 5,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "控制范围| 理范围基准变更的过程       护                  开展"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_005.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_005.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

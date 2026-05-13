@@ -1,0 +1,32 @@
+{
+  "point_id": "008",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_01",
+  "title": "存储技术",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 123,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 8,
+  "tags": [
+    "信息技术发展",
+    "信息技术发展"
+  ],
+  "key_points": [
+    "工存储虚拟化是“云存稀吕的核心技术之 -，它把来自一个或多个网络的存储资源",
+    "们直接的好处是提高了存储利用误导降低了存倘成本，简化了大型、复杂、异构的存"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_01_008.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_01_008.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "038",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_04",
+  "title": "如下这个图还",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 64,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 38,
+  "tags": [
+    "组织通用管理",
+    "市场营销"
+  ],
+  "key_points": [
+    "如下这个图还是建议认真看看的。",
+    "| 0-100 ”| 最保守的。只有全部完成才记为完成"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_04_038.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_04_038.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

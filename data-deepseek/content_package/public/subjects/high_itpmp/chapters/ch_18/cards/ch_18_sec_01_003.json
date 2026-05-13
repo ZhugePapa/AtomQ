@@ -1,0 +1,32 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_01",
+  "title": "王系人主要参与的项目工作包括: @",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 104,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "tags": [
+    "项目绩效域",
+    "干系人绩效域"
+  ],
+  "key_points": [
+    "王系人主要参与的项目工作包括: @为项目团陕定勾需求和范围，并对其进行优先级排序，@@参与并",
+    "于系人行为: 王系人的行为可表明项目受益人是否对项目感到满意和表示支"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_01_003.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_01_003.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

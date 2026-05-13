@@ -1,0 +1,32 @@
+{
+  "point_id": "012",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_01",
+  "title": "配置库可以分开发库、受控库、产品库 3 种",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 94,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 12,
+  "tags": [
+    "配置与变更管理",
+    "配置管理"
+  ],
+  "key_points": [
+    "开发库“| 实体，动态库是开发A员的个人工作区，由开发人员自行控制。库中的信 | 可以任意的修改",
+    "息可能有较为频繁的修改"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_01_012.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_012.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

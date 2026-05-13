@@ -1,0 +1,32 @@
+{
+  "point_id": "034",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_04",
+  "title": "项目管理过程组不同于项目阶段",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 35,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 34,
+  "tags": [
+    "项目管理概论",
+    "价值驱动的项目管理知识体系"
+  ],
+  "key_points": [
+    "项目管理过程组不同于项目阶段: GD 珊卓和理过程组是为了管理项目，针对项目管理过程进行迎辑上",
+    "的划分;四页目从及是项目从开始到结束所经历的一系列阶段，是一组具有逻辑关系的项目活动的集合，通党"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_04_034.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_04_034.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

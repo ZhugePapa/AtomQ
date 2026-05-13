@@ -1,0 +1,31 @@
+{
+  "point_id": "031",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_05",
+  "title": "CMMI5 个成熟度级别分别如下",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 321,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 31,
+  "tags": [
+    "高级项目管理",
+    "项目管理实践模型"
+  ],
+  "key_points": [
+    "的管理流程成为组织的一种文化，成为组"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_05_031.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_05_031.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

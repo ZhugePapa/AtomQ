@@ -1,0 +1,32 @@
+{
+  "point_id": "002",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_01",
+  "title": "战略目标",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 2,
+  "tags": [
+    "组织通用治理",
+    "组织通用治理"
+  ],
+  "key_points": [
+    "战略目标是组织在一定的战略期内总体发展的总水平和总任务。它决定了组织在该战略期间的总体发展",
+    "的主要行动方向，是组织战略的核心。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_01_002.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_01_002.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

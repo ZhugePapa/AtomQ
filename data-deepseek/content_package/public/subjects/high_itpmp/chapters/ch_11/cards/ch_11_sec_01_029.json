@@ -1,0 +1,31 @@
+{
+  "point_id": "029",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_11",
+  "section_id": "sec_01",
+  "title": "成本汇总",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 29,
+  "tags": [
+    "成本管理",
+    "成本管理"
+  ],
+  "key_points": [
+    "成本汇总:先把成本估算汇总到 WBS 中的于作包潮 再由四-作包汇总至 WBS 的更高层次(如控制账户), 最"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_11_sec_01_029.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_11/cards/ch_11_sec_01_029.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_11"
+    }
+  ]
+}

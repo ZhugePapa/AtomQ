@@ -1,0 +1,32 @@
+{
+  "point_id": "002",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "相关术语和定义",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 109,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 2,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "山行项目工作，以实现项目目标的一组人员，由为了完成项目而承担不同角色与职责的人员组",
+    "项目团队 咸。项目团队成员可能其备不同的技能，可能是全职的或兼职的，也可能随项目进展而增加或"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_002.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_002.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

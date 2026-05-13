@@ -1,0 +1,32 @@
+{
+  "point_id": "010",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "管理的过程太胡太",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 267,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 10,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "风险分析 对级排序，拓而为后续分析或行到悍点关注高优先级的风险 整个项日期间开展",
+    "性的其他来源码整体项目目标的风能性        .但是如果采用，在可"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_010.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_010.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

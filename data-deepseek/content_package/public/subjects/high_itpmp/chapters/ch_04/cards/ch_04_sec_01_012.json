@@ -1,0 +1,32 @@
+{
+  "point_id": "012",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "TT 服务管理由着直下同的活动组成",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 193,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 12,
+  "tags": [
+    "信息系统管理",
+    "管理方法"
+  ],
+  "key_points": [
+    "服务外“| 服务台是服务中与服务二和人测通和交互的重要界面，负责对服务干系人过到的问是",
+    "事件管理 | 事件可能是服务中断、服务志度变查、软信外陷以及其他任何组件发和故障，目标就"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_01_012.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_012.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

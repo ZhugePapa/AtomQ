@@ -1,0 +1,31 @@
+{
+  "point_id": "048",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_02",
+  "title": "数据管理能力成熟度模型 DCWM 将组织的管理成熟",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 48,
+  "tags": [
+    "信息系统管理",
+    "管理要点"
+  ],
+  "key_points": [
+    "数据管理能力成熟度模型 DCWM 将组织的管理成熟度划分为 5 个等级, 分别是:初始级、受管理级、"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_02_048.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_048.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

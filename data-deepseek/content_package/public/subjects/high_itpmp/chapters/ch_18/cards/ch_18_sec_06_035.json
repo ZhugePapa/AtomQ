@@ -1,0 +1,31 @@
+{
+  "point_id": "035",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_06",
+  "title": "定义范围和管理变更",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 87,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 35,
+  "tags": [
+    "项目绩效域",
+    "交付绩效域"
+  ],
+  "key_points": [
+    "交付绩效域是在规划绩效域中所执行所有工作的终点。交侍节奏基于开发方法和生命周期绩效域中工作"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_06_035.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_06_035.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

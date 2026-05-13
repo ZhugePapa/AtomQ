@@ -1,0 +1,31 @@
+{
+  "point_id": "091",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_04",
+  "title": "数据服务主要包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 91,
+  "tags": [
+    "信息系统工程",
+    "安全工程"
+  ],
+  "key_points": [
+    "数据服务主要包括数据目录服务、数测查询与浏览及下载服务 汝数据分发服务。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_04_091.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_04_091.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

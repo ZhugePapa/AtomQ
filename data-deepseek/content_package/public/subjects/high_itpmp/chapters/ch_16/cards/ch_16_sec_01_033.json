@@ -1,0 +1,32 @@
+{
+  "point_id": "033",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "组织过程资总",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 117,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 33,
+  "tags": [
+    "采购管理",
+    "采购管理"
+  ],
+  "key_points": [
+    "对于有多个供应商的较大项目，合同管理的一个重要方面就是管理各个供应商之间的沟通。鉴于其法律",
+    "意义，很多组织都将合同管理视为独立于项目的一种组织j内能记虽然采购管理员可以是项目团队成员，但通"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_16_sec_01_033.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_033.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_16"
+    }
+  ]
+}

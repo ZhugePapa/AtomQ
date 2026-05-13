@@ -1,0 +1,32 @@
+{
+  "point_id": "018",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_02",
+  "title": "事业环境因素和组织过程资产(23下1/2/3批)",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 113,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 18,
+  "tags": [
+    "项目管理概论",
+    "项目基本要素"
+  ],
+  "key_points": [
+    "组织过程资产 | 3. 数据资产:以前项目的数据库、文件库、度量指标、数据和工件。",
+    "1项目运行晤会受到项目所在的组织结枸和消坦杠欧的开交与淹的为有效且高效违开展项目，项目经至"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_02_018.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_02_018.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

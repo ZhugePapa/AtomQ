@@ -1,0 +1,31 @@
+{
+  "point_id": "055",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_01",
+  "title": "监控项目工作妈妈女",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 31,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 55,
+  "tags": [
+    "整合管理",
+    "整合管理"
+  ],
+  "key_points": [
+    "监督是贯穿于整个项目的项目管理活动之一，包括收集汪测量和分析测量结果，以及预测趋势，以便推"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_08_sec_01_055.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_055.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_08"
+    }
+  ]
+}

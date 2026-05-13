@@ -1,0 +1,32 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_01",
+  "title": "项目章程太友友(17上31)",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 101,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "tags": [
+    "整合管理",
+    "整合管理"
+  ],
+  "key_points": [
+    "多通过编制项目章程，米确认项目是否符合组织战略和日常运营的需要。",
+    "席或其授权代表。项目启动者或发起人应该具有一定的职权, 能为项目获取资金并提供资源。(21下26)"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_08_sec_01_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_028.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_08"
+    }
+  ]
+}

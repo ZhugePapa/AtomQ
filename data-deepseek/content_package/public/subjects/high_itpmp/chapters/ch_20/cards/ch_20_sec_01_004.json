@@ -1,0 +1,31 @@
+{
+  "point_id": "004",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_01",
+  "title": "定义要传达给干系人的头铺信息",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 79,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 4,
+  "tags": [
+    "高级项目管理",
+    "项目集管理"
+  ],
+  "key_points": [
+    "与项目经理和其他项目集经理交孔，为支持项目集各项计划提供支持和指导，"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_01_004.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_01_004.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

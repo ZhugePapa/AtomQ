@@ -1,0 +1,32 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_01",
+  "title": "配置项的版本号",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 67,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "tags": [
+    "配置与变更管理",
+    "配置管理"
+  ],
+  "key_points": [
+    "@处于“草稿”状态的配置项的版本号格式为 0. YZ, YZ 的数字范围为 一89。随着草稿的修正，YZ 的取",
+    "@@处于“正式”状态的配置项的版本号格式为X. Y X 为主版本号，取和值范围为1-9。Y 为次版本号，取"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_01_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_006.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

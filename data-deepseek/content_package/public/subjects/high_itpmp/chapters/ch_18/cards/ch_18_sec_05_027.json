@@ -1,0 +1,32 @@
+{
+  "point_id": "027",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_05",
+  "title": "制约因素包",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 127,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 27,
+  "tags": [
+    "项目绩效域",
+    "项目工作绩效域"
+  ],
+  "key_points": [
+    "因素        2. 平衡不断变化的制约因素,例时维护平系人的满意度是一项持续进行的项目工作需要在整",
+    "为了使项目交付和干系人价值最大化轩项目工作要聚焦在工作过程 (交付价值) 和保护项目团"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_05_027.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_05_027.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

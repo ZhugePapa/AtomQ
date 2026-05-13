@@ -1,0 +1,31 @@
+{
+  "point_id": "029",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_17",
+  "section_id": "sec_01",
+  "title": "数据分析",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 53,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 29,
+  "tags": [
+    "干系人管理",
+    "干系人管理"
+  ],
+  "key_points": [
+    "析       呈和| 。 识别是什么根本原因导致了干系人对项目的某种支持水平，以便选择"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_17_sec_01_029.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_17/cards/ch_17_sec_01_029.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_17"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "001",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_01",
+  "title": "项目整合管理由项目经理负责,项目经理负责整合所有其",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 71,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 1,
+  "tags": [
+    "整合管理",
+    "整合管理"
+  ],
+  "key_points": [
+    "项目整合管理的责任不能被授权或转移，项目经理必须对整个项目承担最终责任。整合是项目经理的一项",
+    "多在项目层面上，项目经理负责指导团队关注真正重要的事务并协同工作。为此，项目经理需要整合"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_08_sec_01_001.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_001.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_08"
+    }
+  ]
+}

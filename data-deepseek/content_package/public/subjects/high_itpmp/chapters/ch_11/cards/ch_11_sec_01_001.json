@@ -1,0 +1,31 @@
+{
+  "point_id": "001",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_11",
+  "section_id": "sec_01",
+  "title": "发生成本失控的原因主要包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 1,
+  "tags": [
+    "成本管理",
+    "成本管理"
+  ],
+  "key_points": [
+    "发生成本失控的原因主要包括，"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_11_sec_01_001.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_11/cards/ch_11_sec_01_001.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_11"
+    }
+  ]
+}

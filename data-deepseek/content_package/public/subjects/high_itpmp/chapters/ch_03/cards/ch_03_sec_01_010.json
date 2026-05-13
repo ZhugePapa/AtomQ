@@ -1,0 +1,32 @@
+{
+  "point_id": "010",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_01",
+  "title": "我国 IT 治理标准化研究",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 52,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 10,
+  "tags": [
+    "信息系统治理",
+    "IT治理"
+  ],
+  "key_points": [
+    "我国 IT 治理标准化研究是围绕 IT 治理研究范畴，为 IT 过程、IT 资源、信息与组织战略、",
+    "组织目标的连接提供了一种机制。通过指导、实施、管理和评价等过程，确保 IT 支持并拓展组织的"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_01_010.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_01_010.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

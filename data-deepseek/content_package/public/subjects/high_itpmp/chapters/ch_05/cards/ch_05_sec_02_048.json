@@ -1,0 +1,32 @@
+{
+  "point_id": "048",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_02",
+  "title": "数据清理",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 49,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 48,
+  "tags": [
+    "信息系统工程",
+    "数据工程【数据建模、数据标准化、数据运维、数据开发利用和数据安全】"
+  ],
+  "key_points": [
+    ">数据分析: 是指从数据中发现控制数据的一般规则，比如字段域、业务规则等通过",
+    ">数据检测， 是指根据预定义的清理规则及相关数据清理算法，检测数据是杏正确，比"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_02_048.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_02_048.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "战略的选择 (23 下2 批)",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 127,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "tags": [
+    "信息系统管理",
+    "管理方法"
+  ],
+  "key_points": [
+    "当组织的目标是成为市场上成本最低的生产者时二总成本领先战略就会产生。采",
+    "和玉务价值的方法。为了使此策略起作用，差异化因素向客户对象收取的价格必"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_01_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_006.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

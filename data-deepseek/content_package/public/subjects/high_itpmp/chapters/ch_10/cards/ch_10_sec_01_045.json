@@ -1,0 +1,31 @@
+{
+  "point_id": "045",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "项目文件(假设日志、风险登 | 3. 资源优化 (",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 90,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 45,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "项目文件(假设日志、风险登 | 3. 资源优化 (资源平衡岛资源平 | 3. 进度数据"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_045.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_045.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

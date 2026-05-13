@@ -1,0 +1,32 @@
+{
+  "point_id": "036",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "获取资源妇女女",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 104,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 36,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "争，因为集体劳资协议、分包商人员使用、抢阵型项目环境、内外部报告关系或其他原因，项目管理团",
+    "@项目经理或项目团队应该进行有效谈判，并影响那些能为项目提供所需团队和实物资源的人员"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_036.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_036.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

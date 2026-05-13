@@ -1,0 +1,32 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_07",
+  "section_id": "sec_01",
+  "title": "立项申请又称为项目建议书",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 57,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "tags": [
+    "立项管理",
+    "立项管理"
+  ],
+  "key_points": [
+    "立项申请又称为项目建议书，是项目建设单位向上级主管部门提交项目申请时所必须的文件，是访",
+    "所在地的内外部条件、组织发展战略等，提出的某一具体项目的建议文件，是对拟建项目提出的框架性总"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_07_sec_01_003.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_003.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_07"
+    }
+  ]
+}

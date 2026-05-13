@@ -1,0 +1,31 @@
+{
+  "point_id": "042",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_02",
+  "title": "批准数据标准",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 42,
+  "tags": [
+    "信息系统工程",
+    "数据工程【数据建模、数据标准化、数据运维、数据开发利用和数据安全】"
+  ],
+  "key_points": [
+    "批准数据标准， 数据管理机构对提交的数据标准建议、现行数据标准的修改或封存"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_02_042.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_02_042.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

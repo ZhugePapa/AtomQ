@@ -1,0 +1,31 @@
+{
+  "point_id": "008",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "风险成本包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 72,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 8,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "风险成本包括有形成本、无形成本以及预防与控制风险的成本。女妇女"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_008.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_008.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

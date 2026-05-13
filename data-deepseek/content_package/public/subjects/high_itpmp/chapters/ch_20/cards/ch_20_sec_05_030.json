@@ -1,0 +1,31 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_05",
+  "title": "CMMI 将所有收集并论证过的最佳实践按罗辑归为 ",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 41,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 30,
+  "tags": [
+    "高级项目管理",
+    "项目管理实践模型"
+  ],
+  "key_points": [
+    "CMMI 将所有收集并论证过的最佳实践按罗辑归为 4 大能力域类别: 行动、管理、使能、提高。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_05_030.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_05_030.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

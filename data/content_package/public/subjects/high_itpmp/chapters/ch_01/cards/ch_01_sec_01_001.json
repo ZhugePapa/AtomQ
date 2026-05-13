@@ -20,8 +20,8 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 信息 = **物质、能量及其属性的标示的集合**。\n2. 信息的作用是**增加确定性 / 消除不确定性**。\n3. 信息不是物质本身，也不是能量本身。",
-  "mnemonics": "信息不是物和能，信息标示它们的**属性**；知道更多，不确定就更少。",
+  "key_points": "- 信息 = ==**物质、能量及其属性的标示**==\n- 作用 = **增加确定性**，也就是香农说的“消除不确定性”\n- 易错：信息不是物质本身，也不是能量本身",
+  "mnemonics": "信息不等于物和能，信息是它们的**属性标示**。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [

@@ -1,0 +1,32 @@
+{
+  "point_id": "018",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_17",
+  "section_id": "sec_01",
+  "title": "会议",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 64,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 18,
+  "tags": [
+    "干系人管理",
+    "干系人管理"
+  ],
+  "key_points": [
+    "上 古管再生禾Ga是人全用ea间        页上全",
+    "有 访议                |权 为影响方略、作用影响方格| 和. 项 目文件更新(假设日"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_17_sec_01_018.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_17/cards/ch_17_sec_01_018.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_17"
+    }
+  ]
+}

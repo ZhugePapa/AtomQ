@@ -1,0 +1,31 @@
+{
+  "point_id": "017",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_04",
+  "title": "采用预测型开发方法",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 139,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 17,
+  "tags": [
+    "项目绩效域",
+    "规划绩效域"
+  ],
+  "key_points": [
+    "部分规划都是预先进行的。在整个项目期间，最初的计划会渐进明细地制订，但"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_04_017.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_04_017.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

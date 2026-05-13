@@ -1,0 +1,32 @@
+{
+  "point_id": "026",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_01",
+  "title": "不可变服务器是一种部署模式，是",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 68,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 26,
+  "tags": [
+    "信息系统工程",
+    "软件工程"
+  ],
+  "key_points": [
+    "不可变服务器是一种部署模式，是指除了更新和安装补丁程序以外，不对服务器进行",
+    "在部署原则中提到两大部署方式为蓝绿部署和金丝稚部署。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_01_026.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_01_026.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "需求文件太太广",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 159,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 30,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "求，才能作为基准。(22上28)",
+    "多。 需求文件的格式多种多样，既可以是一份按干系人和优先级分类列出全部需求的简单文件,也可以"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_030.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_030.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

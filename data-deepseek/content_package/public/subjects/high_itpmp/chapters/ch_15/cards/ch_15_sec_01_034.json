@@ -1,0 +1,32 @@
+{
+  "point_id": "034",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "风险管理计划内容",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 233,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 34,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "。风险分解结构是潜在风险来源的层级展现。风险分解结构有助于项目团队考虑",
+    "每个优先级组别之内排列单个风险相对优先级。下图是概率和影响矩阵的示例，"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_034.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_034.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

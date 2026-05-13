@@ -1,0 +1,31 @@
+{
+  "point_id": "018",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "控制进度 | 1. 项目管理计划     于数据分",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 65,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 18,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "控制进度 | 1. 项目管理计划     于数据分析           1. 工作绩效信息"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_018.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_018.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

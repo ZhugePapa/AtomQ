@@ -1,0 +1,32 @@
+{
+  "point_id": "014",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "I开 运行的任务-运行和监控",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 60,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 14,
+  "tags": [
+    "信息系统管理",
+    "管理方法"
+  ],
+  "key_points": [
+    "运行 | IT 团队应对信息系统、应用程序和基础设施进行监控，以确保它们继续按要求运行。是否扫",
+    "安全 | 组织需要执行不同类型的安全监控， 并把安全监控作为其整体策略的一部分,以预防和响应"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_01_014.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_014.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "042",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "数据分析",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 46,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 42,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "基据 绩效审查 作对实际结果测量s人化较和分术规划质量管理过程中定义的质量测量指标",
+    "在检查:是指检验工作产品，以确定是否符合有而标亲。检桔可在任何层而上进行。可以检查单个活动"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_042.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_042.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

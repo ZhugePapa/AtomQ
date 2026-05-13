@@ -1,0 +1,32 @@
+{
+  "point_id": "032",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_02",
+  "title": "神经网络",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 80,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 32,
+  "tags": [
+    "信息技术发展",
+    "新一代信息技术及应用"
+  ],
+  "key_points": [
+    "神经网络是机器学习的一种形式, 并用于分类型应用程序。它根据输入、",
+    "虹         3. 深度学习是通过多等级的特征和变量来预测结果的神经网络模型，深度"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_02_032.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_032.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

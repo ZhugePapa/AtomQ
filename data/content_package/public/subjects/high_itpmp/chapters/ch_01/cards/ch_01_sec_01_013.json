@@ -20,8 +20,8 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 国家信息化发展战略是**三步走**。\n2. 2025 年目标强调移动通信网络领先、核心关键技术受制局面改变。\n3. 21 世纪中叶目标强调全面支撑现代化、巩固网络强国地位。",
-  "mnemonics": "二零打基础，二五要领先，中叶网络强。",
+  "key_points": "| 时间节点 | 记忆重点 |\n|:---|:---|\n| 2020 | 部分核心关键技术达到国际先进 |\n| 2025 | 移动通信网络领先，改变受制局面 |\n| 21 世纪中叶 | 全面支撑现代化，巩固网络强国 |",
+  "mnemonics": "2020 打基础，2025 要领先，中叶网络强。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [

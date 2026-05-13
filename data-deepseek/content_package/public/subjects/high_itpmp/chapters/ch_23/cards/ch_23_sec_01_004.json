@@ -1,0 +1,32 @@
+{
+  "point_id": "004",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_01",
+  "title": "岗位设计",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 188,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 4,
+  "tags": [
+    "组织通用管理",
+    "组织通用管理"
+  ],
+  "key_points": [
+    "岗位设计是确定完成工作的方式、所需要完成的任务，以及界定该项工作在组织中与其他岗位工作的",
+    "关系的过程。为了更好地进行岗位设计，需要全面了解现有的岗位工作，发现工作设置上的问题。岗位设计"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_01_004.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_01_004.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

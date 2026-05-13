@@ -1,0 +1,32 @@
+{
+  "point_id": "014",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "车联网",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 260,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 14,
+  "tags": [
+    "信息化发展",
+    "信息与信息化"
+  ],
+  "key_points": [
+    "车联网是新一代网络通信技术与汽车、电子、道路交通运输等领域深度融合的新兴产业",
+    "定义  形态。智能网联汽车是搭载先进的车载传感器、控制器、执行器等装置，并融合现代通"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_01_014.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_014.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

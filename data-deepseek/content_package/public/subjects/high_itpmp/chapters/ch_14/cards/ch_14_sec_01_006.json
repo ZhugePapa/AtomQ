@@ -1,0 +1,31 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_14",
+  "section_id": "sec_01",
+  "title": "项目经理除了要掌握书面沟通的5C原则",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "tags": [
+    "沟通管理",
+    "沟通管理"
+  ],
+  "key_points": [
+    "项目经理除了要掌握书面沟通的5C原则，还需配合下列沟通技巧: @积极倾听; @@理解文化和个人差"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_14_sec_01_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_14/cards/ch_14_sec_01_006.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_14"
+    }
+  ]
+}

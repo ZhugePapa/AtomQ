@@ -1,0 +1,31 @@
+{
+  "point_id": "067",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_05",
+  "title": "组织每个能力因子数字化“封装”的持续迭代主要包含四",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 39,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 67,
+  "tags": [
+    "信息化发展",
+    "数字化转型与元字宙"
+  ],
+  "key_points": [
+    "组织每个能力因子数字化“封装”的持续迭代主要包含四项活动，即 :信息物理世界(也称数"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_05_067.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_05_067.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

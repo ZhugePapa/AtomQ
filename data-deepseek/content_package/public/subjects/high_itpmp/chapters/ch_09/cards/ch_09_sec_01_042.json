@@ -1,0 +1,32 @@
+{
+  "point_id": "042",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "确认范围女友女",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 177,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 42,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "的正确性及是否满足质量要求。控制质量过程通常先于确认范围过程，但二者也可同时进行。(19下31/23上",
+    "关注项目范围，是指范围对项目的进度、资金和资源的影响，这些因素是否超过了组织承受范围"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_042.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_042.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

@@ -22,7 +22,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 信息系统不是只有软硬件，还包括**人员和规程**。\n2. 感知设备、存储设备、网络都属于组成部件。\n3. 规程负责把数据处理为有用信息。",
+  "key_points": "- 信息系统组成不只包含技术组件，也包含==人员==和==规程==。\n- 题目选项出现“人员/规程”时，不要因为它们不是设备就排除。",
   "mnemonics": "硬软库网存，感外人规程。",
   "common_mistakes": [],
   "review_status": "ai_draft",

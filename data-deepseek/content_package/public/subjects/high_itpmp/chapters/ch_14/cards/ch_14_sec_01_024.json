@@ -1,0 +1,32 @@
+{
+  "point_id": "024",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_14",
+  "section_id": "sec_01",
+  "title": "人际关系与团队技能",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 112,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 24,
+  "tags": [
+    "沟通管理",
+    "沟通管理"
+  ],
+  "key_points": [
+    "风格评估。 在干系人参与度评估中， 找出孔系准确与度的差距。为弥补这种差距",
+    "关系          有助于项目经理根据项目环境和组织的政策环霸来规划沟通。政策意识是指对下"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_14_sec_01_024.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_14/cards/ch_14_sec_01_024.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_14"
+    }
+  ]
+}

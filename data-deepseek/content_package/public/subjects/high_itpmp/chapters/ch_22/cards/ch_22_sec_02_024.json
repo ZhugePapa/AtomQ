@@ -1,0 +1,31 @@
+{
+  "point_id": "024",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_02",
+  "title": "记录和收集绩效信息的目的是",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 24,
+  "tags": [
+    "组织通用治理",
+    "绩效考核"
+  ],
+  "key_points": [
+    "记录和收集绩效信息的目的是为在绩效评估及绩效改进时提供事实依据,在绩效实施中及时发现问题"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_02_024.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_02_024.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

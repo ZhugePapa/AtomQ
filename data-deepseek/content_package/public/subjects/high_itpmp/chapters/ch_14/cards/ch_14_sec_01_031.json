@@ -1,0 +1,32 @@
+{
+  "point_id": "031",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_14",
+  "section_id": "sec_01",
+  "title": "项目报告: 发布是收集和发布项目信息的行",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 44,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 31,
+  "tags": [
+    "沟通管理",
+    "沟通管理"
+  ],
+  "key_points": [
+    "项目报告: 发布是收集和发布项目信息的行为。项目信息应发布给众多干系人群体。应针对每种干",
+    "不相同。可以定期准备信息或基于例外情况准备。虽然工作绩效报告是监控项目工作过程的输出，但是本过"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_14_sec_01_031.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_14/cards/ch_14_sec_01_031.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_14"
+    }
+  ]
+}

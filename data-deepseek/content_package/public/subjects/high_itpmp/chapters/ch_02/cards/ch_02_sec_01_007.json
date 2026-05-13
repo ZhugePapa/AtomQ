@@ -1,0 +1,32 @@
+{
+  "point_id": "007",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_01",
+  "title": "第五代移动通信技术",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 281,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 7,
+  "tags": [
+    "信息技术发展",
+    "信息技术发展"
+  ],
+  "key_points": [
+    "区9 第五代移击通信技术66)是具有高速率、低时延和大连接特点的新一代移动通信技术。",
+    "特点 | 为了支持低时延中谭林笔，56 采用短帧、快速反馈、多层/多站数据重传等技术。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_01_007.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_01_007.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

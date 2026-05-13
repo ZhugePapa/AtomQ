@@ -1,0 +1,31 @@
+{
+  "point_id": "020",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_02",
+  "title": "绩效指标一般可细化",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 20,
+  "tags": [
+    "组织通用治理",
+    "绩效考核"
+  ],
+  "key_points": [
+    "绩效指标一般可细化为 6 项: 分析判断能力、协调沟通能力、组织指挥能力、开拓"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_02_020.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_02_020.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

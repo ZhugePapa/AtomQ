@@ -1,0 +1,32 @@
+{
+  "point_id": "008",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "信息系统体系架构(21 下 17)",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 139,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 8,
+  "tags": [
+    "信息系统管理",
+    "管理方法"
+  ],
+  "key_points": [
+    "2  和平板电脑。设备(有时也被称为客户应)，    务器的 性这里会有所帮助 当业务",
+    "具有足够的处理能力来执行所需的许多服务，并 | 架构 储要是非集中化的时候"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_01_008.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_008.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

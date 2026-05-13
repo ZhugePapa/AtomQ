@@ -1,0 +1,32 @@
+{
+  "point_id": "025",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_04",
+  "title": "市场党销管理过程需要的 4种营销管理活动，分析、计",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 38,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 25,
+  "tags": [
+    "组织通用管理",
+    "市场营销"
+  ],
+  "key_points": [
+    "然后将它们转化为每个部门、产品和服务、品牌的市场侣销计划或其他计划，并有效执行计划。组织通过控",
+    "制测量和评价市场宫销活动的结果，并且在必要的时候采取纠偏措施。还需要通过市场间销分析，为所有其"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_04_025.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_04_025.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

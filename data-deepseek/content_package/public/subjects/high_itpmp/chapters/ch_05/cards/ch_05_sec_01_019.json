@@ -1,0 +1,32 @@
+{
+  "point_id": "019",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_01",
+  "title": "软件测试的目的是验证软件",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 124,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 19,
+  "tags": [
+    "信息系统工程",
+    "软件工程"
+  ],
+  "key_points": [
+    "软件测试的目的是验证软件是否满足软件开发合骨或通且开发计划、系统/子系统设计文档、SRS、",
+    "软件设计说明和软件产品说明等规定的软件质量要求。通过测试发现软侍缺陷，为软件产品的质量测量和"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_01_019.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_01_019.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

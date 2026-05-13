@@ -1,0 +1,31 @@
+{
+  "point_id": "002",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_21",
+  "section_id": "sec_01",
+  "title": "2 运筹学",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 77,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 2,
+  "tags": [
+    "项目管理科学基础",
+    "工程经济学"
+  ],
+  "key_points": [
+    "【复习建议】: 复习时在运筹学上花的时间要适可而止, 没有太多时间的, 重点掌握我们视频课里的题型即可。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_21_sec_01_002.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_21/cards/ch_21_sec_01_002.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_21"
+    }
+  ]
+}

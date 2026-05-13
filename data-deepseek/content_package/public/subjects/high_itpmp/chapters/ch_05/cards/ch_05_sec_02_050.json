@@ -1,0 +1,32 @@
+{
+  "point_id": "050",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_02",
+  "title": "数据分发服务;是",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 54,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 50,
+  "tags": [
+    "信息系统工程",
+    "数据工程【数据建模、数据标准化、数据运维、数据开发利用和数据安全】"
+  ],
+  "key_points": [
+    "数据分发服务;是指数据的生产者通过各种方式将数据传送到用户的过程。",
+    "可视 “| 2.可视化的表现方式分为七关，一维数据可视化、二维数据可视化、三维数据可视化、多"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_02_050.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_02_050.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "point_id": "043",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_50",
+  "title": "自制和外购分析--必须掌握",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 43,
+  "tags": [
+    "组织通用管理",
+    "| 常用的。工作开始记做完成 50%，工作完成后再记 50%《另一种说法工作开始"
+  ],
+  "key_points": [
+    "上面部分的例题见历年试题分类解析一书, 在此不一一列举, 重点还是进度和成本 2 大块，"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_50_043.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_50_043.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

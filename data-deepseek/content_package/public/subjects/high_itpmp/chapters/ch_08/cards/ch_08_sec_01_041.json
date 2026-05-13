@@ -1,0 +1,32 @@
+{
+  "point_id": "041",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_01",
+  "title": "批准的变更请求妇太太",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 78,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 41,
+  "tags": [
+    "整合管理",
+    "整合管理"
+  ],
+  "key_points": [
+    "急批准的变更请求是实施整体变更控制过程的输出，包括经项目经理审查和批准的变更请求，必要时需",
+    "争CCB是项目的所有者权益代表，负责对变更进行决策。CCB由项目所涉及的主要干系人共同组成，通常"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_08_sec_01_041.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_041.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_08"
+    }
+  ]
+}

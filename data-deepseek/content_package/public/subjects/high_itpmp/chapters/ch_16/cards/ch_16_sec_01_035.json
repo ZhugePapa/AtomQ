@@ -1,0 +1,32 @@
+{
+  "point_id": "035",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "合同的分类",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 344,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 35,
+  "tags": [
+    "采购管理",
+    "采购管理"
+  ],
+  "key_points": [
+    "买方将项目的全过程作为一个整体发包给同一个卖方的合同。",
+    "构) 再发包给县有相应资质条件的分包方，与分包方订立的合同称为项目分包合同。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_16_sec_01_035.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_035.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_16"
+    }
+  ]
+}

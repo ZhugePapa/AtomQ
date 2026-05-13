@@ -1,0 +1,24 @@
+{
+  "chapter_id": "ch_02",
+  "subject_id": "high_itpmp",
+  "title": "信息技术发展",
+  "description": "围绕信息技术发展展开",
+  "sort_no": 2,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "信息技术发展",
+      "sort_no": 1,
+      "description": "信息技术发展",
+      "card_count": 14
+    },
+    {
+      "section_id": "sec_02",
+      "title": "新一代信息技术及应用",
+      "sort_no": 2,
+      "description": "新一代信息技术及应用",
+      "card_count": 44
+    }
+  ],
+  "schema_version": 2
+}

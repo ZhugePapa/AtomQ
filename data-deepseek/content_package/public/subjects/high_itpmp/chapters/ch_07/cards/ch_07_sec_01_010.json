@@ -1,0 +1,32 @@
+{
+  "point_id": "010",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_07",
+  "section_id": "sec_01",
+  "title": "详细可行性研究",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 44,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 10,
+  "tags": [
+    "立项管理",
+    "立项管理"
+  ],
+  "key_points": [
+    "详细可行性研究是在项目决策前对与项目有关的技术、经济、法律、社会环境等方面的条件和情",
+    "项目建设完成后所可能产生的经济、社会效益进行预测和评价，最终提交的可行性研究报告将成为进行项目"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_07_sec_01_010.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_010.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_07"
+    }
+  ]
+}

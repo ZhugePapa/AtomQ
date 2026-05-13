@@ -1,0 +1,32 @@
+{
+  "point_id": "005",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_17",
+  "section_id": "sec_01",
+  "title": "管理的过程友友友(22上44) (26下) 汪23",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 202,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 5,
+  "tags": [
+    "干系人管理",
+    "干系人管理"
+  ],
+  "key_points": [
+    "4人 频繁变化的项目更需要项目干系人的有效互动和参与。为了开展及时且高效的讨论并制定决策，适应型团",
+    "队会直接与千系人互动，而不是通过层层的管理级别。客户、用户和开发人员在动态的共创过程中交换信息"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_17_sec_01_005.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_17/cards/ch_17_sec_01_005.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_17"
+    }
+  ]
+}

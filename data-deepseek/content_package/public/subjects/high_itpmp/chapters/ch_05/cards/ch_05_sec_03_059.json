@@ -1,0 +1,32 @@
+{
+  "point_id": "059",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_03",
+  "title": "可以帮助协调连接各种应用的组件有",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 54,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 59,
+  "tags": [
+    "信息系统工程",
+    "系统集成"
+  ],
+  "key_points": [
+    "(GD) 应用编程接口(API) :API 是定义不同软件交互方式的程序和规则，可以支持应用之闻相互通信。API",
+    "(2)事件驱动型操作: 当触发器(即事件) 启动一个程序或志组操作时，系统就会执行事件驱动型操作。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_03_059.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_03_059.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

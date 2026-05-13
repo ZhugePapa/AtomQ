@@ -1,0 +1,32 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "数据表现太太娘",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 235,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "售，无论使用什么方法来记录团队成员的角色，目的都是要隐保每个工作包都有明确的责任人，确保全",
+    "久 工作分解结构 (WBS) :用来显示如何把项目可交付成果分解为工作包 有助于明确高层级的职责。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_028.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

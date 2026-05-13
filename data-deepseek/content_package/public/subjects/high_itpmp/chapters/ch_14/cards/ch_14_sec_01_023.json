@@ -1,0 +1,31 @@
+{
+  "point_id": "023",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_14",
+  "section_id": "sec_01",
+  "title": "沟通方法友妈女        (23下1/3批)",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 76,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 23,
+  "tags": [
+    "沟通管理",
+    "沟通管理"
+  ],
+  "key_points": [
+    "本本网一本本本本罗遇呈且汪有有        会议、电话、即时通信、社交媒体、视鼎"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_14_sec_01_023.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_14/cards/ch_14_sec_01_023.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_14"
+    }
+  ]
+}

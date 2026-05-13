@@ -1,0 +1,32 @@
+{
+  "point_id": "010",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_01",
+  "title": "UML14 种图 (18 上27)",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 186,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 10,
+  "tags": [
+    "信息系统工程",
+    "软件工程"
+  ],
+  "key_points": [
+    "展现了一组对象、接口、协作和它们之问的关系。是最常见的图。类图给出了系统的",
+    "(序列图) | 消息梧成。交互网专省于系统的动态视图。有顺序图是强调消息的何问冯序的交互图"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_01_010.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_01_010.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

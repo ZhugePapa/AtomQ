@@ -1,0 +1,32 @@
+{
+  "point_id": "039",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "测试与评估文件",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 99,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 39,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "测试与评估文件: 可基于行业需求和组织模板创建测试与评估文件。它们是控制质量过程的输入, 用",
+    "是测量指标、经验教训登记册) 。 人如和          人让"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_039.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_039.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

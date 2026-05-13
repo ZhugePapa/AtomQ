@@ -1,0 +1,32 @@
+{
+  "point_id": "050",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "培训",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 49,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 50,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "旬，增训包括旨在提高项目团队成员能力的全部活动，可以是正式的或非正式的,方式包括课堂培训、在",
+    "争，如果项目团队成员候乏必要的管理或技术技能，可以把对这种技能的培养作为项目工作的一部分。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_050.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_050.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "022",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_02",
+  "title": "产品是",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 35,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 22,
+  "tags": [
+    "项目管理概论",
+    "项目基本要素"
+  ],
+  "key_points": [
+    "产品是指可量化生产的于件 (得蕃服务及其组件) 。产品既可以是最终制品，也可以是组件制品。产",
+    "。 产品生命周期是指一个产品从引入& 万长、成熟到衰退的整个演变过程的一系列阶段。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_02_022.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_02_022.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

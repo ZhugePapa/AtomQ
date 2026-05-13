@@ -1,0 +1,31 @@
+{
+  "point_id": "024",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_04",
+  "title": "5 项目工作绩效域",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 40,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 24,
+  "tags": [
+    "项目绩效域",
+    "规划绩效域"
+  ],
+  "key_points": [
+    "5 项目工作绩效域"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_04_024.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_04_024.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

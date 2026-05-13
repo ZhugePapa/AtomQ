@@ -1,0 +1,32 @@
+{
+  "point_id": "031",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_05",
+  "title": "项目具有临时性特点，因此项目完成后的知识转移对组织",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 135,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 31,
+  "tags": [
+    "项目绩效域",
+    "项目工作绩效域"
+  ],
+  "key_points": [
+    "资产，为组织其他项目使用，提升组织整体能力。",
+    "@项目工作可为项目团队互动和王系人参与提供有效的环境;"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_05_031.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_05_031.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "point_id": "023",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "决策技术",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 98,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 23,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "决策技术:多标准决策分析工具(如优先矩阵) 可用于识别关键事项和合适的备选方案，并通过一系列"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_023.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_023.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

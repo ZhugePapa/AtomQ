@@ -1,0 +1,32 @@
+{
+  "point_id": "035",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_02",
+  "title": "绩效评价结果的应用",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 35,
+  "tags": [
+    "组织通用治理",
+    "绩效考核"
+  ],
+  "key_points": [
+    "@@价值评价。作为组织人事决策的重要参考，用于相关的奖惩、薪酬调整和人事调动。",
+    "加绩效改进。对绩效评估结果进行分析，为组织安排员工培训、员工职业生涯规划等方面提供依据。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_02_035.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_02_035.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

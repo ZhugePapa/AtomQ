@@ -1,0 +1,32 @@
+{
+  "point_id": "005",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "质量方针与质量目标",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 31,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 5,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "人质量方针是指“由组织的最高管理者正式发布的该组织总的质量宗旨和方向”。是总方针的一个组成",
+    "介质量目标是指“在质量方面所追求的目的”, 应分解落实到各部癌及项目的全体成员，以便于实施、检"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_005.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_005.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

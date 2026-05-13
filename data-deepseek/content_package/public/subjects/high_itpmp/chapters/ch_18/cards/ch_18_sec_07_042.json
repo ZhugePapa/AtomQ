@@ -1,0 +1,32 @@
+{
+  "point_id": "042",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_07",
+  "title": "持续改进， 度量、展示度量信息和度量结果的由的是为",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 146,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 42,
+  "tags": [
+    "项目绩效域",
+    "度量绩效域"
+  ],
+  "key_points": [
+    "持续改进， 度量、展示度量信息和度量结果的由的是为了持续改进，为了优化项目绩效和效率。",
+    "轩当不可蔬测的事件发生时 (无论是积极事件还是消极事件), 它们会影响项目绩效，从而影响项目的度量"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_07_042.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_07_042.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

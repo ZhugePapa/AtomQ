@@ -1,0 +1,32 @@
+{
+  "point_id": "044",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "数据表现太太娘",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 118,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 44,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "用于确定一个过程是否稳定，或者是否具有可预测的绩效。规格上限和下限是要",
+    "质量控制测量结果: 是对质量控制活动结果的书面记录，应以质量管理计划所确定的格式加以记录。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_044.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_044.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

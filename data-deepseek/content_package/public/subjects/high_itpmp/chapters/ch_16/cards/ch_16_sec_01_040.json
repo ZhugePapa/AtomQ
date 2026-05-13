@@ -1,0 +1,31 @@
+{
+  "point_id": "040",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "解决争议的方法主要有替代争议解决方法 \"",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 40,
+  "tags": [
+    "采购管理",
+    "采购管理"
+  ],
+  "key_points": [
+    "解决争议的方法主要有替代争议解决方法 \"包括调解、仲裁等)和诉讼。其优先顺序为谈判 (协商)、调"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_16_sec_01_040.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_040.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_16"
+    }
+  ]
+}

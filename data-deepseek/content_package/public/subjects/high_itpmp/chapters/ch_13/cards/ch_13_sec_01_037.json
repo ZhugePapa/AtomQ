@@ -1,0 +1,31 @@
+{
+  "point_id": "037",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "决策，多标准决策分析",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 42,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 37,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "决策，多标准决策分析。选择标准常用于选择项目的实物资源或项目团队。使用多标准决策分析工具"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_037.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_037.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

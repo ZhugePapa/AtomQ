@@ -21,8 +21,8 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 数字化转型不是单纯 IT 建设，而是核心业务和业务模式重构。\n2. 数据成为重要生产要素，是转型的重要驱动。\n3. DIKW：数据 → 信息 → 知识 → 智慧。",
-  "mnemonics": "转型三层：转换是格式，升级是效率，转型是模式。",
+  "key_points": "| 层次 | 判断 |\n|:---|:---|\n| 数字化转换 | 把模拟/纸面信息变成数字形式 |\n| 数字化升级 | 用数字技术做局部提效 |\n| 数字化转型 | ==重构核心业务和业务模式== |\n\nDIKW：**数据 → 信息 → 知识 → 智慧**。",
+  "mnemonics": "转换改格式，升级提效率，转型改模式。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [

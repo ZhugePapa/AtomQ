@@ -1,0 +1,32 @@
+{
+  "point_id": "055",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "管理团队",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 40,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 55,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "多，进行团队管理，需要综合运用各种技能，特别是沟通、冲突管理、谈判和领导技能。项目经理应该",
+    "作，项目经理应留意团队成员是否有意愿和能力完成工作，然后相应地调整管理和领导力方式。相对于"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_055.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_055.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

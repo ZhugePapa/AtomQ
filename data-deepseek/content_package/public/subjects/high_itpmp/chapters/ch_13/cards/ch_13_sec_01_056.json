@@ -1,0 +1,32 @@
+{
+  "point_id": "056",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "人际关系与团队技能;冲突管理、制定决策、情商、影响",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 194,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 56,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "假如意见分歧成为负面因素，应该首先由项目团队成员负责解决， 如果冲突升级，项目经理应提供协助",
+    "促成满意的解决方案，采用直接和合作的方式，尽早并且通常是在私下处理冲突。如果破坏性冲突继续存在"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_056.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_056.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

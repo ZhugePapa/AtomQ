@@ -1,0 +1,32 @@
+{
+  "point_id": "049",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "认可与奖励",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 49,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 49,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "争，最初的奖励计划是在规划资源管理过程中编制的，只有能满足被奖励者的其个重要需求的奖励，才",
+    "争，爹钱是奖励制度中的有形奖励，然而也存在各种同样有效，其至更加有效的无形奖励。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_049.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_049.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

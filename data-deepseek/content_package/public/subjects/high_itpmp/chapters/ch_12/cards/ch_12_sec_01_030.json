@@ -1,0 +1,32 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "管理质量友妇女(17下9)",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 141,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 30,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "人”管理质量有时被称为“质量保证”, 但“管理质量”的定义比“质量保证”更广，因其可用于非项目",
+    "@ ”管理质量是所有人的共同职项包括项目经理、项目团队、项目发起人、执行组织的管理层, 甚至是"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_030.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_030.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

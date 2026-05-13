@@ -1,0 +1,32 @@
+{
+  "point_id": "025",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_02",
+  "title": "能力模型;",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 159,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 25,
+  "tags": [
+    "信息系统管理",
+    "管理要点"
+  ],
+  "key_points": [
+    "组织需要考虑环境的内外部因素，在治理要求的指导下，根据服务场景，识别服务能",
+    "护能力体系，向各种服务场景赋能，通过服务提供实现服务价值，并针对建立关键指"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_02_025.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_025.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

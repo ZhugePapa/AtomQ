@@ -1,0 +1,32 @@
+{
+  "point_id": "029",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_02",
+  "title": "GB/T22239《信息安全技术网络安全等级保护基",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 149,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 29,
+  "tags": [
+    "信息系统管理",
+    "管理要点"
+  ],
+  "key_points": [
+    "应能够在统一安全策略下防护免受来自外部有组织的团体、 拥有较为丰富资源的威胁",
+    "第三级 。 | 源发起的恶意攻击、较为严重的自然灾难，以及其他相当程度的威胁所造成的主要资"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_02_029.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_029.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

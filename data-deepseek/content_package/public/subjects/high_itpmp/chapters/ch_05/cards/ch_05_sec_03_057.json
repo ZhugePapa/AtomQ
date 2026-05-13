@@ -1,0 +1,32 @@
+{
+  "point_id": "057",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_03",
+  "title": "DCOM 作",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 137,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 57,
+  "tags": [
+    "信息系统工程",
+    "系统集成"
+  ],
+  "key_points": [
+    "DCOM 作为 COM 的扩展, 不仅继承了 COM 优点，而且针对分布环境还提供了一些新的",
+    "DCOM 与 | 2. COM+为 COM 的新发展或 COM 更高层次上的应用，其底层结构仍然以 COM 为基础，几乎包容了"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_03_057.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_03_057.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

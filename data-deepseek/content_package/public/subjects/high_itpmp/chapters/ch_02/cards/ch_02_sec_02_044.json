@@ -1,0 +1,32 @@
+{
+  "point_id": "044",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_02",
+  "title": "网络安全技术主要包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 49,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 44,
+  "tags": [
+    "信息技术发展",
+    "新一代信息技术及应用"
+  ],
+  "key_points": [
+    "对称加密以数据加密标准 DES 算法为典型代表, 非对称加密通常以 RSA 算法为代表对称加密",
+    "用户和实体行为分析 UEBA 系统通常包括数据获取层\\ 算法分析层和场景应用层。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_02_044.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_044.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

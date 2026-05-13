@@ -1,0 +1,32 @@
+{
+  "point_id": "012",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_02",
+  "title": "流程检查方法主要有流程和查本流程病效评估、满意度评",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 64,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 12,
+  "tags": [
+    "组织通用管理",
+    "流程管理"
+  ],
+  "key_points": [
+    "““ | 行，执行是否到位，是否符合流程制度的要求等",
+    "本     对流程运行的结果、效果进行评信，莽将其与流程的设计目标进行对比，评估流程目标是"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_02_012.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_02_012.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

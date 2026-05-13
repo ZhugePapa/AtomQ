@@ -1,0 +1,32 @@
+{
+  "point_id": "007",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_01",
+  "title": "项目集经理通过在不同的项目集管理绩效域实施的行动、",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 55,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 7,
+  "tags": [
+    "高级项目管理",
+    "项目集管理"
+  ],
+  "key_points": [
+    "项目集经理通过在不同的项目集管理绩效域实施的行动、指导和带领力来引入变更。项目集管理绩效",
+    "项目集战略  1. 是识别项目集输出和成果，以便与组织的目标和目的保持一致的绩效域。项目集经理应"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_01_007.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_01_007.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "015",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_03",
+  "title": "农业现代化",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 125,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 15,
+  "tags": [
+    "信息化发展",
+    "现代化创新发展"
+  ],
+  "key_points": [
+    "是用现代工业装备农业，用现代科学技术改造农业，用现代管理方法管理农业，用",
+    "现代科学文化知识提高农民素质的过程，农业信息化是农业现代化的重要技术手段。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_03_015.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_03_015.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

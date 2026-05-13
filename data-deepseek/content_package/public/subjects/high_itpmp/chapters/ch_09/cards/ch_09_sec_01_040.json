@@ -1,0 +1,32 @@
+{
+  "point_id": "040",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "范围基准:",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 91,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 40,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "范围基准: 是经过批准的范围说明书、WBS和相应的WBS词典，只有通过正式的变更控制程序才能进行",
+    "变更，它被用作比较的基础。范围基准是项目管理计划的组成部分。女妇女"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_040.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_040.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

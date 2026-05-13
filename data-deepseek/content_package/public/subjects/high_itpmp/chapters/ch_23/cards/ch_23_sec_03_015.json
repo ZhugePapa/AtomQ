@@ -1,0 +1,32 @@
+{
+  "point_id": "015",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_03",
+  "title": "知识又可以分",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 75,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 15,
+  "tags": [
+    "组织通用管理",
+    "知识管理"
+  ],
+  "key_points": [
+    "知识又可以分为显性知识和隐性知识，显性知识与隐性知识可相互转换。",
+    "显性  通过文字、公式、图形等表述或通过语言、行为表述并体现 | 中客观存在性;， @前态存在性;"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_03_015.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_03_015.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

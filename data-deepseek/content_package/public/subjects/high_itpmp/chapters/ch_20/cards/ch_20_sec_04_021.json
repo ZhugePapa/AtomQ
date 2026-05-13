@@ -1,0 +1,32 @@
+{
+  "point_id": "021",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_04",
+  "title": "统计过程控制 (SPC) 是",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 34,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 21,
+  "tags": [
+    "高级项目管理",
+    "量化项目管理"
+  ],
+  "key_points": [
+    "统计过程控制 (SPC) 是指应用统计技术对工作过程中的各个阶段进行分析、监控和评估，建立并保持",
+    "统计过程控制是一种预防性方法，强调全员参与。并且统计过程控制强调整个过程，重点在于过程。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_04_021.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_04_021.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

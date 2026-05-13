@@ -1,0 +1,32 @@
+{
+  "point_id": "023",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "组织过程资产      8. 原型法",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 62,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 23,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "服务或成果的需求，能直接促进项目成功电需求是指根据特定协议或其他强制性规范，产品、服务或成果必",
+    "地挖掘、分析和记录这些需求，并将其包含在范围基准中，在项目执行开始后对其进行测量。需求将作为后"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_023.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_023.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

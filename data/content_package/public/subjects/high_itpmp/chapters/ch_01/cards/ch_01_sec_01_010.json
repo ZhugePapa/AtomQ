@@ -20,7 +20,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 信息化内涵四部分：**网络、产业、社会、效用**。\n2. 信息网络体系包括信息资源、信息系统和通信网络平台。\n3. 效用积累过程强调长期提升，不是一次性建设。",
+  "key_points": "| 内涵 | 作用 |\n|:---|:---|\n| 信息网络体系 | 连接与平台 |\n| 信息产业基础 | 技术和产业供给 |\n| 社会运行环境 | 制度和文化土壤 |\n| 效用积累过程 | 长期收益 |",
   "mnemonics": "网产社效。",
   "common_mistakes": [],
   "review_status": "ai_draft",

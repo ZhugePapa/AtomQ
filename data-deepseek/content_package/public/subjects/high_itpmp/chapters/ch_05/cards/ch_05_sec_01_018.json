@@ -1,0 +1,34 @@
+{
+  "point_id": "018",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_01",
+  "title": "软件配置管理活动包",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 93,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 18,
+  "tags": [
+    "信息系统工程",
+    "软件工程"
+  ],
+  "key_points": [
+    "、   独记评价软件诈晶和过程是否遵从已有的规则、标准、指南、计划和",
+    "| 6 | 软件发布管理和交付 | 震要创建特定的交付版本、完成此任务的关键是软件库"
+  ],
+  "mnemonics": [
+    "口诀，计时制，状态审计不符"
+  ],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_01_018.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_01_018.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

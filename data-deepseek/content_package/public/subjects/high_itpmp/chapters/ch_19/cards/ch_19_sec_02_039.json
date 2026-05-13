@@ -1,0 +1,31 @@
+{
+  "point_id": "039",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_02",
+  "title": "变更申请的提交",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 39,
+  "tags": [
+    "配置与变更管理",
+    "变更管理"
+  ],
+  "key_points": [
+    "变更申请的提交，首先应当确保覆盖所有变更操作，这意味着如果变更申请操作可以被绕过，那么变"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_02_039.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_02_039.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_03",
+  "title": "项目经理需要重点关注三个方面的关键技能包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 51,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "tags": [
+    "项目管理概论",
+    "项目经理的角色"
+  ],
+  "key_points": [
+    "项目管理 | 与项目、项目集和项目组合管理特定领域相关的知识、技能和行为，可以帮助达成项目目标",
+    "指导、激励和带领团队所需的知识、技能和行为，可以帮助组织达成业务目标"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_03_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_03_028.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

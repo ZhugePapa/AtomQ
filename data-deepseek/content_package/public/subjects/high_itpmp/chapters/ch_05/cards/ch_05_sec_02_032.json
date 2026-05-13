@@ -1,0 +1,31 @@
+{
+  "point_id": "032",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_02",
+  "title": "关系的完整性约束包",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 42,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 32,
+  "tags": [
+    "信息系统工程",
+    "数据工程【数据建模、数据标准化、数据运维、数据开发利用和数据安全】"
+  ],
+  "key_points": [
+    "1物理数据模型是在逻辑数据模型的基础上，考虑各种具体的技术实现因素，进行数据库"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_02_032.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_02_032.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

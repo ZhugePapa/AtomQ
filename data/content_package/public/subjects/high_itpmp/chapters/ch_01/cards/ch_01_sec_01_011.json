@@ -20,7 +20,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 国家信息化体系是 **6 要素**。\n2. 易考完整列举：应用、资源、网络、技术产业、人才、政策法规标准。\n3. 政策法规和标准规范是制度保障，不是技术组件。",
+  "key_points": "- 国家信息化体系是 ==6 要素==。\n- 要素：**信息技术应用、信息资源、信息网络、信息技术和产业、信息化人才、政策法规和标准规范**。\n- “应用”和“技术产业”不要混：一个讲怎么用，一个讲供给能力。",
   "mnemonics": "应资网，技产人，政策标准保运行。",
   "common_mistakes": [],
   "review_status": "ai_draft",

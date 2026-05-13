@@ -1,0 +1,31 @@
+{
+  "point_id": "009",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_01",
+  "title": "组织环境",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 68,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 9,
+  "tags": [
+    "组织通用治理",
+    "组织通用治理"
+  ],
+  "key_points": [
+    "组织环境是存在于组织内外部，影响组织发展的各种因素的总和。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_01_009.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_01_009.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

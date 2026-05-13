@@ -1,0 +1,31 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_02",
+  "title": "发散/汇聚的模式可以快速做出决策，同时以",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 43,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "tags": [
+    "项目绩效域",
+    "团队绩效域"
+  ],
+  "key_points": [
+    "发散/汇聚的模式可以快速做出决策，同时以包容和尊重的方式吸收团队多样化的知"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_02_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_02_006.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

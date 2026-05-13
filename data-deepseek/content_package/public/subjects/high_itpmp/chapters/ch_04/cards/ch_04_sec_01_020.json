@@ -1,0 +1,32 @@
+{
+  "point_id": "020",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "优化和持续改进基于有效的变更管理二使用六画格玛倡导",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 120,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 20,
+  "tags": [
+    "信息系统管理",
+    "管理方法"
+  ],
+  "key_points": [
+    "优化和持续改进基于有效的变更管理二使用六画格玛倡导的五阶段方法 DMAICVDMADV, 是对",
+    "(Improve/Design) 、控制/验证 (Control/Ne下fy) 。史第四阶段的“改进”替换为“设计”,“控制”"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_01_020.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_020.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

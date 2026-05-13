@@ -20,7 +20,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 两化融合 = 信息化 + 工业化深度结合。\n2. 四个融合：技术、产品、业务、产业衍生。\n3. 核心是信息化支撑，目标是新型工业化和可持续发展。",
+  "key_points": "| 融合领域 | 关键词 |\n|:---|:---|\n| 技术融合 | 工业技术 + 信息技术 |\n| 产品融合 | 信息技术嵌入产品 |\n| 业务融合 | 研发、生产、管理、营销流程融合 |\n| 产业衍生 | 工业软件、工业电子、工业信息服务 |",
   "mnemonics": "两化四融：技、产、业、衍。",
   "common_mistakes": [],
   "review_status": "ai_draft",

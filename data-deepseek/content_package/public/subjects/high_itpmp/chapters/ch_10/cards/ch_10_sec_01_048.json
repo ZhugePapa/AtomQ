@@ -1,0 +1,32 @@
+{
+  "point_id": "048",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "关键路径法; 用于在进度模型中估算项目的最短工期",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 93,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 48,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "点持续时间最长的路径就是关键路径, 关键路径可能有多条; 太太友(17 下 37-38/18 上 37-38/18 上 66-67/18",
+    "银自由浮动时间: 就是指在不延误任何紧后活动的最早开始日期或不违反进度制约因素的前提下，某进"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_048.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_048.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

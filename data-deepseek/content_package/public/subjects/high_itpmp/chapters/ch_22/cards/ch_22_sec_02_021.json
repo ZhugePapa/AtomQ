@@ -1,0 +1,32 @@
+{
+  "point_id": "021",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_02",
+  "title": "绩效实施是",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 39,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 21,
+  "tags": [
+    "组织通用治理",
+    "绩效考核"
+  ],
+  "key_points": [
+    "绩效实施是指员工根据已经制订好的绩效计划开展工作，组织管理者对员工的工作进行指导、监督和",
+    "来说，绩效实施就是指对已制订好的绩效目标进行实施的过程。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_02_021.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_02_021.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

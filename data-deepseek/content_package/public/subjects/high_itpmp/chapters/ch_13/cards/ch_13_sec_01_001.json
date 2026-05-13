@@ -1,0 +1,32 @@
+{
+  "point_id": "001",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "项目资源管理包",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 46,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 1,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "项目资源管理是为了降低项目成本，而对项目所需的人力、材料、机械、技术、资金等资源所进行的计划、",
+    "组织、指挥、协调和控制等的活动。项目团队成员可能具备不同的技能，可能是全职的或兼职的，有可能随"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_001.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_001.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

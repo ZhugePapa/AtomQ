@@ -1,0 +1,32 @@
+{
+  "point_id": "005",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_07",
+  "section_id": "sec_01",
+  "title": "信息系统项目进行可行性研究包",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 349,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 5,
+  "tags": [
+    "立项管理",
+    "立项管理"
+  ],
+  "key_points": [
+    "是指在当前的技术、产品条件限制下，能否利用现在拥有的以及可能拥有的技术能力、产品功",
+    "是对整个项目的投资及所产生的经济效益和对项目的社会葡益进行分析，具体包括支出分析、"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_07_sec_01_005.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_005.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_07"
+    }
+  ]
+}

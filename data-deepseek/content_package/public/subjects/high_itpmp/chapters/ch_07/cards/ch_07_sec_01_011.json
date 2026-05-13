@@ -1,0 +1,31 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_07",
+  "section_id": "sec_01",
+  "title": "详细可行性研究的方法如经济评价法、市场预测法、投资",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 11,
+  "tags": [
+    "立项管理",
+    "立项管理"
+  ],
+  "key_points": [
+    "详细可行性研究的方法如经济评价法、市场预测法、投资估算法和增量净效益法等"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_07_sec_01_011.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_011.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_07"
+    }
+  ]
+}

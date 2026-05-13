@@ -21,8 +21,8 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 智慧城市五能力：数据治理、城市孪生、边际决策、多元融合、态势感知。\n2. 城市孪生描述现实世界与信息世界互动融合。\n3. 数字乡村 = 乡村振兴战略方向 + 数字中国重要内容。",
-  "mnemonics": "智城五力：数治、孪生、边决、多融、态感。",
+  "key_points": "| 智慧城市能力 | 关键词 |\n|:---|:---|\n| 数据治理 | 数据责权利、开发利用 |\n| 城市孪生 | ==现实世界与信息世界互动融合== |\n| 边际决策 | 快速反应、高效决策 |\n| 多元融合 | 服务编排、快速集成 |\n| 态势感知 | 感知、模拟、预测 |",
+  "mnemonics": "数治、孪生、边决、多融、态感。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [

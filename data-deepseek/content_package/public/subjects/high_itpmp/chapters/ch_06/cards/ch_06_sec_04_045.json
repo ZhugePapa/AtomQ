@@ -1,0 +1,31 @@
+{
+  "point_id": "045",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_04",
+  "title": "价值交付组件",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 45,
+  "tags": [
+    "项目管理概论",
+    "价值驱动的项目管理知识体系"
+  ],
+  "key_points": [
+    "价值交付组件:可以单独或共同使用多种组件 (例如项目组合、项目集、项目、产品和运营) 以创造"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_04_045.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_04_045.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

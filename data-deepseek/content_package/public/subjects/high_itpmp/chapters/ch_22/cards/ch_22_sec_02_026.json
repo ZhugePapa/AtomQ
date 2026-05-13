@@ -1,0 +1,32 @@
+{
+  "point_id": "026",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_02",
+  "title": "绩效评估是指以员工与组织的共同发展",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 47,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 26,
+  "tags": [
+    "组织通用治理",
+    "绩效考核"
+  ],
+  "key_points": [
+    "绩效评估是指以员工与组织的共同发展为目标，通过正式的结构化的制度或方法，评价和测量在一",
+    "定的周期内团队或员工个人的工作行为和工作成果冲金面了解员工的发展潜力。绩效评估工作通常由人力资"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_02_026.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_02_026.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "015",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_03",
+  "title": "4 规划绩效域",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 43,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 15,
+  "tags": [
+    "项目绩效域",
+    "开发方法和生命周期绩效域"
+  ],
+  "key_points": [
+    "@规划投入的时间成本是适当的",
+    "@规划的内容对管理于系人的需求而言是充分的"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_03_015.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_03_015.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

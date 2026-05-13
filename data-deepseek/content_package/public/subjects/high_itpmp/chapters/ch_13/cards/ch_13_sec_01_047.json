@@ -1,0 +1,31 @@
+{
+  "point_id": "047",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "虚拟团队;使用更多技术熟练的资源、降低成朴S庆下出",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 74,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 47,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "电子邮件/著天软件:使用电子邮件和著天软件定期沟通也是一种有效的方式。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_047.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_047.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

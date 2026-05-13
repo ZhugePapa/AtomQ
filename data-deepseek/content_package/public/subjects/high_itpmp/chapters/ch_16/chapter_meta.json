@@ -1,0 +1,17 @@
+{
+  "chapter_id": "ch_16",
+  "subject_id": "high_itpmp",
+  "title": "采购管理",
+  "description": "围绕采购管理展开",
+  "sort_no": 16,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "采购管理",
+      "sort_no": 1,
+      "description": "采购管理",
+      "card_count": 46
+    }
+  ],
+  "schema_version": 2
+}

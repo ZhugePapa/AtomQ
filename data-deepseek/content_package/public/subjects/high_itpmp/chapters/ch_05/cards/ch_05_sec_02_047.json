@@ -1,0 +1,32 @@
+{
+  "point_id": "047",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_02",
+  "title": "数据质量评价方法",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 59,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 47,
+  "tags": [
+    "信息系统工程",
+    "数据工程【数据建模、数据标准化、数据运维、数据开发利用和数据安全】"
+  ],
+  "key_points": [
+    ">后期控制为数据录入完成后的后处理质量控制与评价。",
+    "依据建库流程可分为，前期控制、过程控制、系统检测、精度评价"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_02_047.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_02_047.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

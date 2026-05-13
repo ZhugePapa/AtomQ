@@ -1,0 +1,32 @@
+{
+  "point_id": "022",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "规划采购管理",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 704,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 22,
+  "tags": [
+    "采购管理",
+    "采购管理"
+  ],
+  "key_points": [
+    "数据分析: 自制或外购分析用于确定某项工作或可交付成果最好是由项目团队自行完成，还是应该从外",
+    "经过谈判，证明它们的财务建议书是可接受的，那么就会选择技术建议书得分最高的卖方"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_16_sec_01_022.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_022.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_16"
+    }
+  ]
+}

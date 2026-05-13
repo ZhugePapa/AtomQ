@@ -1,0 +1,169 @@
+{
+  "subject_id": "high_itpmp",
+  "subject_name": "高级-信息系统项目管理师",
+  "exam_version": "2026",
+  "chapters": [
+    {
+      "chapter_id": "ch_01",
+      "title": "信息化发展",
+      "sort_no": 1,
+      "card_count": 73,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_02",
+      "title": "信息技术发展",
+      "sort_no": 2,
+      "card_count": 58,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_03",
+      "title": "信息系统治理",
+      "sort_no": 3,
+      "card_count": 49,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_04",
+      "title": "信息系统管理",
+      "sort_no": 4,
+      "card_count": 54,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_05",
+      "title": "信息系统工程",
+      "sort_no": 5,
+      "card_count": 110,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_06",
+      "title": "项目管理概论",
+      "sort_no": 6,
+      "card_count": 46,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_07",
+      "title": "立项管理",
+      "sort_no": 7,
+      "card_count": 17,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_08",
+      "title": "整合管理",
+      "sort_no": 8,
+      "card_count": 69,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_09",
+      "title": "范围管理",
+      "sort_no": 9,
+      "card_count": 46,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_10",
+      "title": "进度管理",
+      "sort_no": 10,
+      "card_count": 62,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_11",
+      "title": "成本管理",
+      "sort_no": 11,
+      "card_count": 39,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_12",
+      "title": "质量管理",
+      "sort_no": 12,
+      "card_count": 45,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_13",
+      "title": "资源管理",
+      "sort_no": 13,
+      "card_count": 62,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_14",
+      "title": "沟通管理",
+      "sort_no": 14,
+      "card_count": 39,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_15",
+      "title": "风险管理",
+      "sort_no": 15,
+      "card_count": 56,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_16",
+      "title": "采购管理",
+      "sort_no": 16,
+      "card_count": 46,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_17",
+      "title": "干系人管理",
+      "sort_no": 17,
+      "card_count": 36,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_18",
+      "title": "项目绩效域",
+      "sort_no": 18,
+      "card_count": 45,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_19",
+      "title": "配置与变更管理",
+      "sort_no": 19,
+      "card_count": 43,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_20",
+      "title": "高级项目管理",
+      "sort_no": 20,
+      "card_count": 32,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_21",
+      "title": "项目管理科学基础",
+      "sort_no": 21,
+      "card_count": 2,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_22",
+      "title": "组织通用治理",
+      "sort_no": 22,
+      "card_count": 39,
+      "question_count": 0
+    },
+    {
+      "chapter_id": "ch_23",
+      "title": "组织通用管理",
+      "sort_no": 23,
+      "card_count": 43,
+      "question_count": 0
+    }
+  ],
+  "schema_version": 2
+}

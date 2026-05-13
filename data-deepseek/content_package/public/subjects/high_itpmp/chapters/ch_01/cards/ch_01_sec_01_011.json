@@ -1,0 +1,32 @@
+{
+  "point_id": "011",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "国家信息化体系: 包",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 264,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 11,
+  "tags": [
+    "信息化发展",
+    "信息与信息化"
+  ],
+  "key_points": [
+    "指在经济大系统内实现统一的信息大流动，使金融、贸易、投资、计划、",
+    "化 瞩升，信息化成为驱动现代化建设的先导力量。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_01_011.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_011.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

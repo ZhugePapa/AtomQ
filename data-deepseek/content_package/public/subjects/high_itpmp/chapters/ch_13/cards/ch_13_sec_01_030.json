@@ -1,0 +1,32 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_13",
+  "section_id": "sec_01",
+  "title": "团队章程太友女",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 179,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 30,
+  "tags": [
+    "资源管理",
+    "资源管理"
+  ],
+  "key_points": [
+    "儿，团队章程是为团队创建团队价值观、共识和工作指南的文件。团队章程包括，团队价值观、沟通指",
+    "南、决策标准和过程、冲突处理过程、会议指南和团队共识。 (23上39)"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_13_sec_01_030.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_030.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_13"
+    }
+  ]
+}

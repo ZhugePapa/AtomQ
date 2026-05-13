@@ -1,0 +1,32 @@
+{
+  "point_id": "015",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_02",
+  "title": "项目组合是指",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 31,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 15,
+  "tags": [
+    "项目管理概论",
+    "项目基本要素"
+  ],
+  "key_points": [
+    "项目组合是指为实现成略目标而组合在一超管理的项目、j尖目集、子项目组合和运营工作。项目组",
+    "合管理是指为了实现战略目标而对一个或多个项目组合进行的集单管理。项目组合中的项目集或项目不一定"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_06_sec_02_015.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_02_015.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_06"
+    }
+  ]
+}

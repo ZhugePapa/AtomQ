@@ -1,0 +1,32 @@
+{
+  "point_id": "039",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "分解妇女友",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 343,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 39,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "令分解是一种把项目范围和项目可交付成果逐步划分为更小、更便于管理的组成部分的技术。工作包是",
+    "售创建WBS的方法多种多样，常用的方法包括自上而下的方法、使用组织特定的指南和使用WBS模板。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_039.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_039.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

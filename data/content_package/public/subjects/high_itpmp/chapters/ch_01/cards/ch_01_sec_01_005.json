@@ -20,8 +20,8 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 信息系统流程：**数据输入 → 加工处理 → 信息输出**。\n2. 显著特点：**面向管理和支持生产**。\n3. 三个支柱：管理模型、信息处理模型、系统实现条件。",
-  "mnemonics": "信息系统三件事：输数据、做处理、出信息。",
+  "key_points": "- 信息系统流程：**数据输入 → 加工处理 → 信息输出**。\n- 显著特点：==面向管理和支持生产==。\n- 三个支柱：管理模型、信息处理模型、系统实现条件。",
+  "mnemonics": "",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [

@@ -1,0 +1,32 @@
+{
+  "point_id": "013",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_01",
+  "title": "工业互联网",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 203,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 13,
+  "tags": [
+    "信息化发展",
+    "信息与信息化"
+  ],
+  "key_points": [
+    "工 工业互联网是新一全信息通信技术与工业经济深度融合",
+    "业     工业互联网不是于联网克工业的简单应用，是具有更为丰富的内涵和外延。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_01_013.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_013.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

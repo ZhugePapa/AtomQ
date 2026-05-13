@@ -1,0 +1,32 @@
+{
+  "point_id": "008",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_01",
+  "title": "组织文化有两个基本特征;",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 44,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 8,
+  "tags": [
+    "组织通用治理",
+    "组织通用治理"
+  ],
+  "key_points": [
+    "加组织文化提出了组织发展涉及的制度、行为等措施，如员工管理方法、员工互动方式、激励机制等，",
+    "为日常工作提供了具体的实践方法。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_01_008.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_01_008.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

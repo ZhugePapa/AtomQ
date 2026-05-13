@@ -1,0 +1,32 @@
+{
+  "point_id": "009",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "管理的过程丰友妈(19上63) (21下38) (",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 102,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 9,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "规划 | 1. 规划质 质量要求、标准，并书面描述为在整个项目期间如何管理和核实质量提供",
+    "量管理  项目将如何证明符合质量要 |指南和方向"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_009.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_009.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "039",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_04",
+  "title": "50 | 常用的",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 344,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 39,
+  "tags": [
+    "组织通用管理",
+    "市场营销"
+  ],
+  "key_points": [
+    "记做完成 50%，工作超过 50%即记完成)",
+    "总计划价值BAC | 项目完工预算(不含管理储备) | 规划用 10 天种 100 棵树，预算为 10000 元"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_04_039.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_04_039.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "040",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_50",
+  "title": "兆现值、投资收益率、投资回收期",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 284,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 40,
+  "tags": [
+    "组织通用管理",
+    "| 常用的。工作开始记做完成 50%，工作完成后再记 50%《另一种说法工作开始"
+  ],
+  "key_points": [
+    "单年份净现值计算公式: NPV=A/ (1+i) ! (A 是每年现金流，i 是折现率:;t 是年份)",
+    "最终该项目的合计净现值 NPV 为 2316=-4545+826+1503+2049+2484"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_50_040.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_50_040.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

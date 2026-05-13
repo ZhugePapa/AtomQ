@@ -1,0 +1,32 @@
+{
+  "point_id": "009",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "管理新实中",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 154,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 9,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "项目新| 有一种风险只有在发生后才能被发现，过种风险称为灾发性风险。可以通过强项目坷性来应对这",
+    "多除了为已知风险列出风险预算，还要为突发性风险预留念理应急预算和时间"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_009.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_009.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

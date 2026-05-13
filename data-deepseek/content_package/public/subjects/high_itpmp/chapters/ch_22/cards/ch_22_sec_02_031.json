@@ -1,0 +1,32 @@
+{
+  "point_id": "031",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_02",
+  "title": "平衡计分卡法是",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 32,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 31,
+  "tags": [
+    "组织通用治理",
+    "绩效考核"
+  ],
+  "key_points": [
+    "平衡计分卡法是指通过财务、客户、内部运营、学习与成长 4个角度，将组织的战略目标落实为可操",
+    "作的衡量指标和目标值，对被评估者进行综合考评的方法。平衔计分卡法是一种有效的绩效管理工具，可以"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_02_031.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_02_031.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

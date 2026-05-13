@@ -1,0 +1,32 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_01",
+  "title": "IT治理属于组织治理的重要组成部分",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 74,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "tags": [
+    "信息系统治理",
+    "IT治理"
+  ],
+  "key_points": [
+    "| |  证实 IT 战略与业务成略是否一致;证实通过明确的期望和衡量手段交付 IT 价值;",
+    "最高管理层 | 指导 IT 战略、平衡支持组织当前和未来发展的投资; 指导信息和数据资源的分本"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_01_003.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_01_003.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

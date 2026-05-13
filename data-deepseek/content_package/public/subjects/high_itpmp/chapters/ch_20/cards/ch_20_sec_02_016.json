@@ -1,0 +1,32 @@
+{
+  "point_id": "016",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_02",
+  "title": "能力管理:能力是一个组织",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 133,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 16,
+  "tags": [
+    "高级项目管理",
+    "项目组合管理"
+  ],
+  "key_points": [
+    "能力管理:能力是一个组织为了交付产品或服务，通过人员、过程和系统等形成整合执行",
+    "的水平。能力管理是组织为持续提升能力，提供新能力构建、能力评估能力保持和发展等一"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_02_016.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_02_016.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

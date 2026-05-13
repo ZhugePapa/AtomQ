@@ -1,0 +1,31 @@
+{
+  "point_id": "044",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "项目管理诗史抱十轩管理计划、          1",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 61,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 44,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "项目管理诗史抱十轩管理计划、          1工作绩冯信息"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_044.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_044.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

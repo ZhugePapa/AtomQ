@@ -1,0 +1,32 @@
+{
+  "point_id": "007",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_01",
+  "title": "组织文化",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 7,
+  "tags": [
+    "组织通用治理",
+    "组织通用治理"
+  ],
+  "key_points": [
+    "组织文化是组织发展过程中凸显的精神特质与内涵，是组织区别于其他组织的关键因素。",
+    "组织文化是组织最为本质的体现之一，是组织发展的原动力。优秀的组织文化是组织战略制定的重要条件，"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_01_007.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_01_007.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

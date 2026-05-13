@@ -1,0 +1,32 @@
+{
+  "point_id": "009",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_07",
+  "section_id": "sec_01",
+  "title": "条助(功能) 研究包",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 38,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 9,
+  "tags": [
+    "立项管理",
+    "立项管理"
+  ],
+  "key_points": [
+    "条助(功能) 研究包括项目的一个或几个方面，但不是所有方面六并且只能作为初步可行性研究、详",
+    "辅助研究的费用必须和项目可行性研究的费用一并考虑，因为这种研究的目的之一就是要在项目可行性研究"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_07_sec_01_009.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_009.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_07"
+    }
+  ]
+}

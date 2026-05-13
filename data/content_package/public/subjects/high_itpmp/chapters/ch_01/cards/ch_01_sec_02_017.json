@@ -21,7 +21,7 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 车联网体系可按**端-管-云**理解。\n2. 管系统负责异构网络通信和 V2X 互联。\n3. 车联网连接包括车云、车车、车路、车人、车内设备。",
+  "key_points": "- 车联网可按 ==端-管-云== 理解。\n- 管系统解决 V2V、V2I、V2N、V2P 等互联互通。\n- 五类连接：车云、车车、车路、车人、车内设备。",
   "mnemonics": "端感知，管连接，云汇聚。",
   "common_mistakes": [],
   "review_status": "ai_draft",

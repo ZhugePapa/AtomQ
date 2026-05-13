@@ -1,0 +1,31 @@
+{
+  "point_id": "013",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_02",
+  "title": "流程优化需求大致可分",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 39,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 13,
+  "tags": [
+    "组织通用管理",
+    "流程管理"
+  ],
+  "key_points": [
+    "流程优化需求大致可分为 3 种，问题导向、绩效导向、赤划导前。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_02_013.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_02_013.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

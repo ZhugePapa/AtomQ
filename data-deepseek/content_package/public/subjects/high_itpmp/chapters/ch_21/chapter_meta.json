@@ -1,0 +1,17 @@
+{
+  "chapter_id": "ch_21",
+  "subject_id": "high_itpmp",
+  "title": "项目管理科学基础",
+  "description": "围绕项目管理科学基础展开",
+  "sort_no": 21,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "工程经济学",
+      "sort_no": 1,
+      "description": "工程经济学",
+      "card_count": 2
+    }
+  ],
+  "schema_version": 2
+}

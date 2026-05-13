@@ -1,0 +1,32 @@
+{
+  "point_id": "020",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_03",
+  "title": "消费互联网",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 100,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 20,
+  "tags": [
+    "信息化发展",
+    "现代化创新发展"
+  ],
+  "key_points": [
+    "定义“| 行、娱乐、生活等诸多方面进行起善，让生活变得更方便、更快捷。本质是个人虚拟化",
+    "联 | “属性 | 媒体属性       由自媒体、福会媒体以及资讯为主的门户网站"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_03_020.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_03_020.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

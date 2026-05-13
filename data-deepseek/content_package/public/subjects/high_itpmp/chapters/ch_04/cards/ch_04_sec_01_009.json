@@ -1,0 +1,32 @@
+{
+  "point_id": "009",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "组织在考虑集中式与分布式架构决策时",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 80,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 9,
+  "tags": [
+    "信息系统管理",
+    "管理方法"
+  ],
+  "key_points": [
+    "分布式架构比集中式架构更加模块化，允许相对容易地添加其他服务器，并能为特定用户添加具",
+    "》集中式体系架构在某些方面更易于管理。因为所有功能都集中在主机或小型机中，而不是"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_01_009.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_009.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

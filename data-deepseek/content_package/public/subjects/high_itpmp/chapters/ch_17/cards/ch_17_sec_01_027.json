@@ -1,0 +1,31 @@
+{
+  "point_id": "027",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_17",
+  "section_id": "sec_01",
+  "title": "干系人登记册",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 135,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 27,
+  "tags": [
+    "干系人管理",
+    "干系人管理"
+  ],
+  "key_points": [
+    "干系人登记册: 记录已识别干系人的信息，主要包括;妇女丰(17下43) (19上44) (20下43) (23下2批"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_17_sec_01_027.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_17/cards/ch_17_sec_01_027.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_17"
+    }
+  ]
+}

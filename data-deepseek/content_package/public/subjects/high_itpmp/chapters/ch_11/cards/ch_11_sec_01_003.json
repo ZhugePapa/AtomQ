@@ -1,0 +1,32 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_11",
+  "section_id": "sec_01",
+  "title": "成本的类型",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 115,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "tags": [
+    "成本管理",
+    "成本管理"
+  ],
+  "key_points": [
+    "(GD) 可变成本: 随着生产量、工作量或时间而变的成本为可变成本。又称变动成本。",
+    "(2) 固定成本: 不随生产量4 工作量或时间的变化而变化的非重复成本为固定成本。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_11_sec_01_003.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_11/cards/ch_11_sec_01_003.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_11"
+    }
+  ]
+}

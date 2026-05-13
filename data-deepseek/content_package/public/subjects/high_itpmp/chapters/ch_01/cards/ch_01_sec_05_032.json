@@ -1,0 +1,32 @@
+{
+  "point_id": "032",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_01",
+  "section_id": "sec_05",
+  "title": "数字化转型",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 149,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 32,
+  "tags": [
+    "信息化发展",
+    "数字化转型与元字宙"
+  ],
+  "key_points": [
+    "数字化转型是建立在数字化转菊、数字化升级基础上，进一步触及组织核心业务，以",
+    "定久 | 新建一种业务模式为目标的高层关转型 只有组织对其业务进行系统仁、和度的(或"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_01_sec_05_032.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_05_032.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_01"
+    }
+  ]
+}

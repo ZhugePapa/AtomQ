@@ -1,0 +1,32 @@
+{
+  "point_id": "049",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "用计算机软件数千次迭代运行定量风险分析模型",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 275,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 49,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "上析       的决策或事件，即项目的备选路径。通过计算每条分支的预期货币价值，就可以选出最优",
+    "不确定条件下进行决策的图形辅助工具。它将一个项目或项目中的一种情境表现为一系列"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_049.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_049.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

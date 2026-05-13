@@ -1,0 +1,32 @@
+{
+  "point_id": "026",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_05",
+  "title": "项目经理和项目团队应建立项目过程",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 78,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 26,
+  "tags": [
+    "项目绩效域",
+    "项目工作绩效域"
+  ],
+  "key_points": [
+    "项目经理和项目团队应建立项目过程，并对过程进行定期审查,检查该过程是否高效、是",
+    "和否存在瓶颈、工作是否按照预期进行、是否存在阻碍等。2. 除了有效率之外，过程还应该有"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_05_026.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_05_026.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

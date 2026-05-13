@@ -1,0 +1,32 @@
+{
+  "point_id": "040",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_02",
+  "title": "数据模式的描述方式主要有图描述方法和数据字典方法",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 77,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 40,
+  "tags": [
+    "信息系统工程",
+    "数据工程【数据建模、数据标准化、数据运维、数据开发利用和数据安全】"
+  ],
+  "key_points": [
+    "数据分类“| 就是把数据分类与编码工作纳入标准化工作的领域，按标准化的要求和工作程序，将",
+    "淮化”| 注册，以标准的形式发布，作为共同遵守的准则和依据，并在其相应的级别范围内宣"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_02_040.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_02_040.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

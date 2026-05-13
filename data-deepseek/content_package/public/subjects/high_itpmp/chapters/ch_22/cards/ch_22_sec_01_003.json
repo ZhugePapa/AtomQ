@@ -1,0 +1,32 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_01",
+  "title": "常见的组织总体战略类型主要包",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 58,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "tags": [
+    "组织通用治理",
+    "组织通用治理"
+  ],
+  "key_points": [
+    "指组织由竺鞭运行环境和肉部条件的限制，在整个战略期内基本保持战略起点的运行绩",
+    "稳定型战略 “| 效范围和水平的5疆右略。这是一种风险相对较低的战略。当组织较为满意过去的运行"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_01_003.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_01_003.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

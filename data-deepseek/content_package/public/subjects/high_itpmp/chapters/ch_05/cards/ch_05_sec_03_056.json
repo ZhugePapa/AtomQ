@@ -1,0 +1,32 @@
+{
+  "point_id": "056",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_03",
+  "title": "软件构件标准;公共对象请求代理结构 (CORBRJ",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 64,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 56,
+  "tags": [
+    "信息系统工程",
+    "系统集成"
+  ],
+  "key_points": [
+    "OMG 的目的则是为了将对象和分布式系统技术集成为一站讲相于操作的统一结构，",
+    "COM 技术要达到的基本目标是: 即使对象是由不同的开发碎员用不同的编程语言实现"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_03_056.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_03_056.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

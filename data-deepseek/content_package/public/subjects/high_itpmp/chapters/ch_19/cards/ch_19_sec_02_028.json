@@ -1,0 +1,32 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_02",
+  "title": "变更管理的实质",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 41,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "tags": [
+    "配置与变更管理",
+    "变更管理"
+  ],
+  "key_points": [
+    "变更管理的实质, 是根据项目推进过程中越来越丰富的项目认知, 不断调整项目努力方向和资源配置",
+    "最大程度地满足项目需求，提升项目价值。变更管理是为使得项目基准与项目实际执行情况相一致，应"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_02_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_02_028.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

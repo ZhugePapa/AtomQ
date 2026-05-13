@@ -1,0 +1,32 @@
+{
+  "point_id": "016",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_03",
+  "title": "知识管理遵循 3 条原则",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 49,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 16,
+  "tags": [
+    "组织通用管理",
+    "知识管理"
+  ],
+  "key_points": [
+    "人积累原则: 是实施知识的管理基础。",
+    "@@共享原则: 指一个组织内部的信息和知识要尽可能公开，使每一个员工都能接触和使用组织的知识和"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_03_016.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_03_016.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

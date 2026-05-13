@@ -1,0 +1,32 @@
+{
+  "point_id": "060",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_04",
+  "title": "信息安全系统三维空间包",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 62,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 60,
+  "tags": [
+    "信息系统工程",
+    "安全工程"
+  ],
+  "key_points": [
+    "()X轴是“安全机制”。安全机制可以理解为提供某些安全服务,利用各种安全技术和技巧，所形成",
+    "的一个较为完善的结构体系。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_04_060.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_04_060.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

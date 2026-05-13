@@ -1,0 +1,32 @@
+{
+  "point_id": "055",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "项目进度计划妇女女",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 80,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 55,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "项目进度计划是进度模型的输出，为各个相互关联的活动标注了计划日期、持续时间、里程碑和所需",
+    "资源等。项目进度计划可以是概括的或详细的。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_055.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_055.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

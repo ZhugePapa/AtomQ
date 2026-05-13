@@ -1,0 +1,32 @@
+{
+  "point_id": "071",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_04",
+  "title": "使用结构化分析 SA 方法进行需求分析，其建立的模",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 51,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 71,
+  "tags": [
+    "信息系统工程",
+    "安全工程"
+  ],
+  "key_points": [
+    "使用结构化分析 SA 方法进行需求分析，其建立的模型的核心是数据字典。围绕这个核心，有三个层",
+    "次的模型，分别是数据模型、功能模型和行为模型 (也称为状态模型) 。使用实体关系图 (E-R 图) 表示数据模"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_04_071.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_04_071.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

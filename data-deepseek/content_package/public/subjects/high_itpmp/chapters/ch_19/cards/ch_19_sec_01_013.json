@@ -1,0 +1,32 @@
+{
+  "point_id": "013",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_19",
+  "section_id": "sec_01",
+  "title": "配置库的建库模式有两种",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 72,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 13,
+  "tags": [
+    "配置与变更管理",
+    "配置管理"
+  ],
+  "key_points": [
+    "开发任务 | 专业软件的开发组织 | 使用的开发工具种类繁多，开发模式以线性发展为主，所以就没有必",
+    "要把配置项严格地分类存储，炎为增加目录的复杂性。对于研发性的"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_19_sec_01_013.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_013.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_19"
+    }
+  ]
+}

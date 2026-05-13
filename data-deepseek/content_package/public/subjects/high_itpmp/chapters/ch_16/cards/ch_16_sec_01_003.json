@@ -1,0 +1,32 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_16",
+  "section_id": "sec_01",
+  "title": "昌然所有项目文件可能痢要经过蓉种形式的审查与批准",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 79,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "tags": [
+    "采购管理",
+    "采购管理"
+  ],
+  "key_points": [
+    "昌然所有项目文件可能痢要经过蓉种形式的审查与批准，但是，鉴于其法律约束力，合同或协议需要经过",
+    "更多的审批程序，而且通常会波及法务都。在任何情况下，审批程序的主要目标都是确保合同充分描述将由"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_16_sec_01_003.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_003.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_16"
+    }
+  ]
+}

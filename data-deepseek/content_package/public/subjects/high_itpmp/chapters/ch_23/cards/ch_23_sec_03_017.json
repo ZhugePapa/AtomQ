@@ -1,0 +1,32 @@
+{
+  "point_id": "017",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_03",
+  "title": "知识获取与收集分汶主动式和被动式两类",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 43,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 17,
+  "tags": [
+    "组织通用管理",
+    "知识管理"
+  ],
+  "key_points": [
+    "@@主动式知识获取与收集是知识处理系统根据领域专家给出的数据与资料, 利用工具直",
+    "知识获取  @@被动式知识获取与收集是间接通过一个中介大并采用知识编辑器之类的工具，把"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_03_017.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_03_017.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

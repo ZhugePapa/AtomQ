@@ -1,0 +1,38 @@
+{
+  "chapter_id": "ch_05",
+  "subject_id": "high_itpmp",
+  "title": "信息系统工程",
+  "description": "围绕信息系统工程展开",
+  "sort_no": 5,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "软件工程",
+      "sort_no": 1,
+      "description": "软件工程",
+      "card_count": 30
+    },
+    {
+      "section_id": "sec_02",
+      "title": "数据工程【数据建模、数据标准化、数据运维、数据开发利用和数据安全】",
+      "sort_no": 2,
+      "description": "数据工程【数据建模、数据标准化、数据运维、数据开发利用和数据安全】",
+      "card_count": 22
+    },
+    {
+      "section_id": "sec_03",
+      "title": "系统集成",
+      "sort_no": 3,
+      "description": "系统集成",
+      "card_count": 7
+    },
+    {
+      "section_id": "sec_04",
+      "title": "安全工程",
+      "sort_no": 4,
+      "description": "安全工程",
+      "card_count": 51
+    }
+  ],
+  "schema_version": 2
+}

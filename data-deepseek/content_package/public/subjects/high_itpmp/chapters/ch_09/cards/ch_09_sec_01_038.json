@@ -1,0 +1,32 @@
+{
+  "point_id": "038",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "创建VBS妈友友",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 42,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 38,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "4 WBS最低层的组成部分称为工作包，其中包括计划的工作。工作包对相关活动进行归类，以便对工作安",
+    "排进度，进行估算，开展监督与控制。在“工作分解结构”这个词语中，“工作”是指作为活动结果的工作"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_038.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_038.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

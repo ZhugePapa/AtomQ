@@ -1,0 +1,32 @@
+{
+  "point_id": "039",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_07",
+  "title": "度量内容及相应",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 366,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 39,
+  "tags": [
+    "项目绩效域",
+    "度量绩效域"
+  ],
+  "key_points": [
+    "度量内容、参数和度量方法取资手项目目标、预期成果以及项目的环境。和常见的度量指标类别包括可交付物、",
+    "交付、基准绩效、 资源、价值、干系人和项测型度量指标"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_07_039.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_07_039.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

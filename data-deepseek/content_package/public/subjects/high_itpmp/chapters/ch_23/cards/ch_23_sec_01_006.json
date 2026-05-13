@@ -1,0 +1,32 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_01",
+  "title": "当把人力资源的提供给预测和需求预测结果相互比照",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 475,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "tags": [
+    "组织通用管理",
+    "组织通用管理"
+  ],
+  "key_points": [
+    "当把人力资源的提供给预测和需求预测结果相互比照，有 3种可能的结果: 一是需求和提供给",
+    "彼此适应，二是需求超过提供给，这意味着组织在人力方面存在短缺， 三是需求小于供给，这意"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_01_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_01_006.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

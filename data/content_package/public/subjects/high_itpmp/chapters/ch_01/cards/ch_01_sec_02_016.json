@@ -22,8 +22,8 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. 工业互联网不是工业 + 普通互联网，而是 ICT 与工业经济深度融合。\n2. 四大体系：网络、平台、数据、安全。\n3. 平台四层：边缘层、IaaS、PaaS、SaaS。",
-  "mnemonics": "工互四体系：网平数安；平台四层：边 I P S。",
+  "key_points": "- 工业互联网不是普通互联网在工业里的简单应用。\n- 四大体系：==网络、平台、数据、安全==。\n- 平台四层：**边缘层、IaaS、PaaS、SaaS**。",
+  "mnemonics": "网平数安；边 I P S。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [

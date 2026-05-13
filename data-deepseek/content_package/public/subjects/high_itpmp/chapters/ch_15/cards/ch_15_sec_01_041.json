@@ -1,0 +1,32 @@
+{
+  "point_id": "041",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "数据分析妈妇女",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 198,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 41,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "风险概率评估考虑的是特定风险发生的可能性",
+    "风险影响评估考虑的是风险对一项或多项项目目标的潜在影响，如进度、成本、"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_041.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_041.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

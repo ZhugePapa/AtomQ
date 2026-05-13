@@ -1,0 +1,32 @@
+{
+  "point_id": "060",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_01",
+  "title": "实施整体变更控制友友友(18上36)",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 106,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 60,
+  "tags": [
+    "整合管理",
+    "整合管理"
+  ],
+  "key_points": [
+    "更请求都必须由一位责任人批准、推迟或否决，这个责任人通常是项目发起人或项目经理。应该在项目管",
+    "理计划或组织程序中指定这位责任人，必要时应该由CCB来开展实施整体变更控制过程。变更请求得到批准"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_08_sec_01_060.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_060.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_08"
+    }
+  ]
+}

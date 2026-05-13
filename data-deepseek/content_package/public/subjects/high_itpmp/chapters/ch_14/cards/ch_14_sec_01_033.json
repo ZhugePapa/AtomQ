@@ -1,0 +1,32 @@
+{
+  "point_id": "033",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_14",
+  "section_id": "sec_01",
+  "title": "监督沟通女妇女",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 57,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 33,
+  "tags": [
+    "沟通管理",
+    "沟通管理"
+  ],
+  "key_points": [
+    "活动，来提升沟通的效果。这种迁代体现了项目沟通管理各过程的持续性。问题、关键绩效指标、风险或冲",
+    "突，都可能立即触发重新迭代开展这些过程。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_14_sec_01_033.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_14/cards/ch_14_sec_01_033.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_14"
+    }
+  ]
+}

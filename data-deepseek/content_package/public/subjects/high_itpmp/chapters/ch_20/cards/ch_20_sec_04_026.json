@@ -1,0 +1,32 @@
+{
+  "point_id": "026",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_04",
+  "title": "建立组织级的量化管理体系的肉容主要包",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 93,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 26,
+  "tags": [
+    "高级项目管理",
+    "量化项目管理"
+  ],
+  "key_points": [
+    "()组织在定义目标过程惠，还应依据质量和过程性能目标对战略规划及业务目标的影响程度,为量化目",
+    "(2) 建立过程性能基线的目的是通过历史数据刻画组织当前项目各个过程的能力, 确定过程能力的稳定范"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_04_026.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_04_026.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "014",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_02",
+  "title": "3 知识管理",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 88,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 14,
+  "tags": [
+    "组织通用管理",
+    "流程管理"
+  ],
+  "key_points": [
+    "| 知识创造| 组织所应用的知识应有其产生的来源，而且其来源应该是多元化的",
+    "目的是希望借助知识审计的结果，完成知识文件分类与核心竞争优势调查，有系统地挖掘"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_02_014.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_02_014.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

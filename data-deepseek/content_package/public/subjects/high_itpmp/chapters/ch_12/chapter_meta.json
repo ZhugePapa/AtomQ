@@ -1,0 +1,17 @@
+{
+  "chapter_id": "ch_12",
+  "subject_id": "high_itpmp",
+  "title": "质量管理",
+  "description": "围绕质量管理展开",
+  "sort_no": 12,
+  "sections": [
+    {
+      "section_id": "sec_01",
+      "title": "质量管理",
+      "sort_no": 1,
+      "description": "质量管理",
+      "card_count": 45
+    }
+  ],
+  "schema_version": 2
+}

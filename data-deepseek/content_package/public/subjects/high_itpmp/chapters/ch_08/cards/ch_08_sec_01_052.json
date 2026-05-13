@@ -1,0 +1,32 @@
+{
+  "point_id": "052",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_01",
+  "title": "经验教训登记册妈友妈",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 76,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 52,
+  "tags": [
+    "整合管理",
+    "整合管理"
+  ],
+  "key_points": [
+    "经验教训登记册在项目早期创建，作为管理项目知识过程的输出。因此，在整个项目期间，它可以作为",
+    "很多过程的输入，也可以作为输出而不断更新。参与工作的个人和团队也参与记录经验教训。可通过视频、"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_08_sec_01_052.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_052.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_08"
+    }
+  ]
+}

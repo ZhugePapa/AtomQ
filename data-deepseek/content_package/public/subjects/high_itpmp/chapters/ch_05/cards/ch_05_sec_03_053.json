@@ -1,0 +1,32 @@
+{
+  "point_id": "053",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_03",
+  "title": "数据集成",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 122,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 53,
+  "tags": [
+    "信息系统工程",
+    "系统集成"
+  ],
+  "key_points": [
+    "数据集成是将参与数据库的有关信息在逻辑上集成为一个属于异构分布式数据库的全局概念模式",
+    "以达到信息共享的目的。数据集成可以分为基本数据集成、多级视图集成、模式集成和多粒度数据集成四"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_03_053.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_03_053.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

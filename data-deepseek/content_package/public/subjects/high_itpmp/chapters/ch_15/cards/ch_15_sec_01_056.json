@@ -1,0 +1,32 @@
+{
+  "point_id": "056",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "监督风险; 监督风险过程采用项目执行期间生成的绩效",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 171,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 56,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "@@实施的风险应对是否有效，@@整体项目风险级别是否已改变，轩已识别单个项目风险的状态是否已改",
+    "变; 四是否出现新的单个项目风险; 加风险管理方法是否依然适用;@@项目假设条件是否仍然成立;"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_056.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_056.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

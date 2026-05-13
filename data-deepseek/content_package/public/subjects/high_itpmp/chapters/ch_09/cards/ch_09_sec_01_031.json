@@ -1,0 +1,32 @@
+{
+  "point_id": "031",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "需求跟踪矩阵友友龙 〈23下3批)",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 108,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 31,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "久需求跟啼矩阵是把产品需求从其来源连接到能满足需求的可交香成条的一种表格。(18下40)",
+    "先级别、版本、当前状态和状态日期。为确保干系人满意，可能需要增加一些补充属性，如稳定性、复"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_031.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_031.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

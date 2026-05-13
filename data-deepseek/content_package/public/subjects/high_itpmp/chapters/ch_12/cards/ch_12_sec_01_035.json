@@ -1,0 +1,32 @@
+{
+  "point_id": "035",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "面向X的设计",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 33,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 35,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "面向X的设计，是产品设计期间可采用的一系列技霖指南舍叶在优化设计的特定方面，可以控制或提高",
+    "产品最终特性。DfX中的X可以是产品开发的不同方面。J侈如可党性S记配、装配、制造、成本、服务、可用"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_035.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_035.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

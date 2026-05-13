@@ -1,0 +1,32 @@
+{
+  "point_id": "015",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_02",
+  "section_id": "sec_02",
+  "title": "物联网",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 160,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 15,
+  "tags": [
+    "信息技术发展",
+    "新一代信息技术及应用"
+  ],
+  "key_points": [
+    "、 | 物联网是指通过信息传感设备，按约定的协议将任何物品与互联网相连接，进行信息",
+    "摄像头、GPS 等感知终端，是物联网商别物体六采集信息的来源 (19 上1)"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_02_sec_02_015.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_015.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_02"
+    }
+  ]
+}

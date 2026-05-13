@@ -1,0 +1,32 @@
+{
+  "point_id": "005",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_01",
+  "title": "人力资源战略",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 102,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 5,
+  "tags": [
+    "组织通用管理",
+    "组织通用管理"
+  ],
+  "key_points": [
+    "人力资源战略是确立人力资源管理的规划方向，明确组织人力资源管理的战略定位。人力资源计划则",
+    "是人力资源战略的短期体现，是预测未来一定时期的组织任务和环境对组织的要求，以及为了完成这些任务"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_01_005.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_01_005.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

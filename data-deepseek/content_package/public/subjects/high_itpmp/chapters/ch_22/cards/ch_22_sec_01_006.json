@@ -1,0 +1,32 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_01",
+  "title": "组织使命是管理者",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 47,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "tags": [
+    "组织通用治理",
+    "组织通用治理"
+  ],
+  "key_points": [
+    "组织使命是管理者为组织确定的较长时期的业务发展的总方向、总月的、总特征和总的指导思想，描",
+    "述了组织所处的社会价值范畴、当前的业务和宗旨。组织使命是组织的圣存基石和存在理由宣言，体现了组"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_01_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_01_006.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "021",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_02",
+  "title": "数据管理能力成熟度评估模型 DCMM 定义了数据战",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 971,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 21,
+  "tags": [
+    "信息系统管理",
+    "管理要点"
+  ],
+  "key_points": [
+    "数据战   是在组织所有利益相关者之间达成共识的结果。 从宏观及微观两个层面确定开",
+    "是组织完成数据战略规划后， 逐渐实现数据职能框架的过程。 实施过程中依据"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_02_021.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_021.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

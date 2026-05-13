@@ -1,0 +1,32 @@
+{
+  "point_id": "005",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_01",
+  "title": "质量功能部器(QFD)",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 48,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 5,
+  "tags": [
+    "信息系统工程",
+    "软件工程"
+  ],
+  "key_points": [
+    "质量功能部器(QFD)是一种将用户要求转化成软件需求的技术,其目的是最大限度地提升软件工程过",
+    "程中用户的满意度。为了达到这个目标，QFD 将软件需求分为三类，分别是常规需求、期望需求和意外"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_01_005.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_01_005.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

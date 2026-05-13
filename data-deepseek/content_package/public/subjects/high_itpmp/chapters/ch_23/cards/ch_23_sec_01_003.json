@@ -1,0 +1,32 @@
+{
+  "point_id": "003",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_23",
+  "section_id": "sec_01",
+  "title": "工作分析",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 3,
+  "tags": [
+    "组织通用管理",
+    "组织通用管理"
+  ],
+  "key_points": [
+    "工作分析是对组织分工和分工内容进行清晰的界定，让任职者更清楚下作的内容，甚至未从事过某项",
+    "工作的人也能清楚该工作是怎样完成的。如果岗位工作内容和工作设置不是最优的，则需对工作的内容进行"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_23_sec_01_003.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_01_003.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_23"
+    }
+  ]
+}

@@ -869,6 +869,200 @@ QUESTION_REF_UPDATES = {
 }
 
 
+HIGHLIGHT_TERMS = {
+    "003": ["客观性", "普遍性", "无限性", "动态性", "相对性", "依附性", "变换性", "传递性", "层次性", "系统性", "转化性"],
+    "004": ["精确性", "完整性", "可靠性", "及时性", "经济性", "可验证性", "安全性"],
+    "006": ["硬件", "软件", "数据库", "网络", "存储设备", "感知设备", "外设", "人员", "规程"],
+    "007": ["可行性分析与项目开发计划", "需求分析", "概要设计", "详细设计", "编码", "测试", "维护"],
+    "008": ["系统规划", "系统分析", "系统设计", "系统实施", "系统运行和维护"],
+    "010": ["信息网络体系", "信息产业基础", "社会运行环境", "效用积累过程"],
+    "011": ["信息技术应用", "信息资源", "信息网络", "信息技术和产业", "信息化人才", "信息化政策法规和标准规范"],
+    "012": ["产品信息化", "产业信息化", "社会生活信息化", "国民经济信息化"],
+    "015": ["信息基础设施", "融合基础设施", "创新基础设施"],
+    "016": ["网络体系", "平台体系", "数据体系", "安全体系", "边缘层", "IaaS", "PaaS", "SaaS"],
+    "017": ["端系统", "管系统", "云系统"],
+    "019": ["技术融合", "产品融合", "业务融合", "产业衍生"],
+    "020": ["一级", "二级", "三级", "四级", "五级", "规划级", "规范级", "集成级", "优化级", "引领级"],
+    "023": ["数字产业化", "产业数字化", "数字化治理", "数据价值化"],
+    "024": ["协同化", "云端化", "智能化", "数据化", "动态化"],
+    "025": ["数据治理", "城市孪生", "边际决策", "多元融合", "态势感知"],
+    "027": ["数字化转换", "数字化升级", "数字化转型"],
+    "028": ["沉浸体验", "虚实融合", "持续运行"],
+}
+
+
+FIELD_OVERRIDES = {
+    "001": {
+        "key_points": "- 信息 = ==**物质、能量及其属性的标示**==\n- 作用 = **增加确定性**，也就是香农说的“消除不确定性”\n- 易错：信息不是物质本身，也不是能量本身",
+        "mnemonics": "信息不等于物和能，信息是它们的**属性标示**。",
+    },
+    "002": {
+        "key_points": "| 题干关键词 | 对应人物 |\n|:---|:---|\n| 既不是物质，也不是能量 | ==维纳== |\n| 消除不确定性 | ==香农== |",
+        "mnemonics": "维纳：**不物不能**；香农：**消不确定**。",
+    },
+    "003": {
+        "key_points": "- 这是**特征题**，不是质量属性题。\n- 场景判断常考：**依附性、相对性、动态性、传递性**。\n- 看到“同一信息对不同人价值不同”，优先想==相对性==。",
+        "mnemonics": "客普无动相，依变传层系转。",
+    },
+    "004": {
+        "key_points": "| 场景 | 优先属性 |\n|:---|:---|\n| 金融信息 | ==安全性== |\n| 经济与社会信息 | ==及时性== |\n\n信息质量属性：**精确、完整、可靠、及时、经济、可验证、安全**。",
+        "mnemonics": "精完可及经可安。",
+    },
+    "005": {
+        "key_points": "- 信息系统流程：**数据输入 → 加工处理 → 信息输出**。\n- 显著特点：==面向管理和支持生产==。\n- 三个支柱：管理模型、信息处理模型、系统实现条件。",
+        "mnemonics": "",
+    },
+    "006": {
+        "key_points": "- 信息系统组成不只包含技术组件，也包含==人员==和==规程==。\n- 题目选项出现“人员/规程”时，不要因为它们不是设备就排除。",
+        "mnemonics": "硬软库网存，感外人规程。",
+    },
+    "007": {
+        "key_points": "- 顺序题重点：**可行性分析/计划 → 需求 → 概要 → 详细 → 编码 → 测试 → 维护**。\n- 维护仍属于生命周期，交付不是终点。",
+        "mnemonics": "可需概详编测维。",
+    },
+    "008": {
+        "key_points": "| 信息系统阶段 | 对应软件活动 |\n|:---|:---|\n| 系统规划 | 可行性分析与项目开发计划 |\n| 系统分析 | 需求分析 |\n| 系统设计 | 概要设计 + 详细设计 |\n| 系统实施 | 编码 + 测试 |\n| 运行维护 | 维护 |",
+        "mnemonics": "规分设实运。",
+    },
+    "009": {
+        "key_points": "- 信息化核心不是“上系统”，而是应用==基于信息技术的先进社会生产工具==。\n- 目标链：**提生产力 → 改生产关系 → 改上层建筑 → 提升国家/社会/生活质量**。",
+        "mnemonics": "",
+    },
+    "010": {
+        "key_points": "| 内涵 | 作用 |\n|:---|:---|\n| 信息网络体系 | 连接与平台 |\n| 信息产业基础 | 技术和产业供给 |\n| 社会运行环境 | 制度和文化土壤 |\n| 效用积累过程 | 长期收益 |",
+        "mnemonics": "网产社效。",
+    },
+    "011": {
+        "key_points": "- 国家信息化体系是 ==6 要素==。\n- 要素：**信息技术应用、信息资源、信息网络、信息技术和产业、信息化人才、政策法规和标准规范**。\n- “应用”和“技术产业”不要混：一个讲怎么用，一个讲供给能力。",
+        "mnemonics": "应资网，技产人，政策标准保运行。",
+    },
+    "012": {
+        "key_points": "",
+        "mnemonics": "品、业、生、国：**产品信息化、产业信息化、社会生活信息化、国民经济信息化**。",
+    },
+    "013": {
+        "key_points": "| 时间节点 | 记忆重点 |\n|:---|:---|\n| 2020 | 部分核心关键技术达到国际先进 |\n| 2025 | 移动通信网络领先，改变受制局面 |\n| 21 世纪中叶 | 全面支撑现代化，巩固网络强国 |",
+        "mnemonics": "2020 打基础，2025 要领先，中叶网络强。",
+    },
+    "014": {
+        "key_points": "- 这张卡只需背框架：**基础设施、数据、产业、政府、民生、治理、国际合作**。\n- 不建议逐字背规划长句，考试更常考方向归类。",
+        "mnemonics": "",
+    },
+    "015": {
+        "key_points": "| 类型 | 快速判断 |\n|:---|:---|\n| 信息基础设施 | 5G、物联网、工业互联网、数据中心、算力 |\n| 融合基础设施 | ==智能交通、智慧能源== |\n| 创新基础设施 | 重大科技、科教、产业技术创新平台 |",
+        "mnemonics": "信融创：信息打底，融合改造，创新支撑。",
+    },
+    "016": {
+        "key_points": "- 工业互联网不是普通互联网在工业里的简单应用。\n- 四大体系：==网络、平台、数据、安全==。\n- 平台四层：**边缘层、IaaS、PaaS、SaaS**。",
+        "mnemonics": "网平数安；边 I P S。",
+    },
+    "017": {
+        "key_points": "- 车联网可按 ==端-管-云== 理解。\n- 管系统解决 V2V、V2I、V2N、V2P 等互联互通。\n- 五类连接：车云、车车、车路、车人、车内设备。",
+        "mnemonics": "端感知，管连接，云汇聚。",
+    },
+    "018": {
+        "key_points": "",
+        "mnemonics": "",
+    },
+    "019": {
+        "key_points": "| 融合领域 | 关键词 |\n|:---|:---|\n| 技术融合 | 工业技术 + 信息技术 |\n| 产品融合 | 信息技术嵌入产品 |\n| 业务融合 | 研发、生产、管理、营销流程融合 |\n| 产业衍生 | 工业软件、工业电子、工业信息服务 |",
+        "mnemonics": "两化四融：技、产、业、衍。",
+    },
+    "020": {
+        "key_points": "- 智能制造 = ==人机一体化智能系统==。\n- 成熟度五级：**规划、规范、集成、优化、引领**。\n- 最高等级是==引领级==。",
+        "mnemonics": "规、范、集、优、领。",
+    },
+    "021": {
+        "key_points": "- 消费互联网以==消费者为服务中心==。\n- 关键词：个人用户、消费体验、阅读/出行/娱乐/生活服务。\n- 与工业互联网区分：消费互联网偏 C 端，工业互联网偏产业生产体系。",
+        "mnemonics": "",
+    },
+    "022": {
+        "key_points": "- 数字中国是国家层面的数字化发展战略，不是单个系统。\n- 后续按五条线理解：**数字经济、数字政府、数字民生、数字生态、数字化转型**。",
+        "mnemonics": "",
+    },
+    "023": {
+        "key_points": "| 问法 | 答法 |\n|:---|:---|\n| 数字经济整体构成 | 数字产业化、产业数字化、数字化治理、数据价值化 |\n| 从产业构成看 | ==数字产业化 + 产业数字化== |\n| 数据价值化路径 | 资源化 → 资产化 → 资本化 |",
+        "mnemonics": "数产、产数、数治、数价；数据价值三步：资源、资产、资本。",
+    },
+    "024": {
+        "key_points": "- 数字政府着力点：==业务数据化、数据业务化==。\n- 目标：**用数据决策、用数据服务、用数据创新**。\n- 五大特征：协同化、云端化、智能化、数据化、动态化。",
+        "mnemonics": "协云智数动。",
+    },
+    "025": {
+        "key_points": "| 智慧城市能力 | 关键词 |\n|:---|:---|\n| 数据治理 | 数据责权利、开发利用 |\n| 城市孪生 | ==现实世界与信息世界互动融合== |\n| 边际决策 | 快速反应、高效决策 |\n| 多元融合 | 服务编排、快速集成 |\n| 态势感知 | 感知、模拟、预测 |",
+        "mnemonics": "数治、孪生、边决、多融、态感。",
+    },
+    "026": {
+        "key_points": "",
+        "mnemonics": "",
+    },
+    "027": {
+        "key_points": "| 层次 | 判断 |\n|:---|:---|\n| 数字化转换 | 把模拟/纸面信息变成数字形式 |\n| 数字化升级 | 用数字技术做局部提效 |\n| 数字化转型 | ==重构核心业务和业务模式== |\n\nDIKW：**数据 → 信息 → 知识 → 智慧**。",
+        "mnemonics": "转换改格式，升级提效率，转型改模式。",
+    },
+    "028": {
+        "key_points": "- 元宇宙关键词：==虚实融合、沉浸体验、持续运行==。\n- 它依赖云计算、AI、数字孪生、区块链等能力。\n- 更适合理解为数字化转型的空间交互延伸，不建议单独硬背太多定义。",
+        "mnemonics": "",
+    },
+}
+
+
+def downgrade_headings(md: str) -> str:
+    lines = []
+    for line in md.splitlines():
+        stripped = line.lstrip()
+        indent = line[: len(line) - len(stripped)]
+        if stripped.startswith("#"):
+            hashes, _, rest = stripped.partition(" ")
+            if hashes and set(hashes) == {"#"} and 1 <= len(hashes) < 6:
+                lines.append(f"{indent}{hashes}# {rest}")
+                continue
+        lines.append(line)
+    return "\n".join(lines)
+
+
+def wrap_unhighlighted(text: str, needle: str, replacement: str) -> str:
+    parts = text.split("==")
+    for index in range(0, len(parts), 2):
+        parts[index] = parts[index].replace(needle, replacement)
+    return "==".join(parts)
+
+
+def highlight_structured_terms(md: str, point_id: str) -> str:
+    terms = sorted(HIGHLIGHT_TERMS.get(point_id, []), key=len, reverse=True)
+    if not terms:
+        return md
+
+    out = []
+    for line in md.splitlines():
+        if line.strip().startswith("<!--") or line.strip().startswith("|:"):
+            out.append(line)
+            continue
+
+        updated = line
+        if "|" in updated and updated.strip().startswith("|"):
+            cells = updated.split("|")
+            for idx, cell in enumerate(cells):
+                stripped = cell.strip()
+                if stripped in terms:
+                    cells[idx] = cell.replace(stripped, f"=={stripped}==")
+            updated = "|".join(cells)
+
+        for term in terms:
+            updated = wrap_unhighlighted(updated, f"{term}：", f"=={term}==：")
+            updated = wrap_unhighlighted(updated, f"{term}:", f"=={term}==:")
+
+        out.append(updated)
+    return "\n".join(out)
+
+
+def render_markdown(card: dict) -> str:
+    md = card["md"].strip()
+    md = highlight_structured_terms(md, card["point_id"])
+    md = downgrade_headings(md)
+    return md + "\n"
+
+
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -885,7 +1079,8 @@ def estimated_seconds(md: str) -> int:
 
 def card_meta(card: dict, sort_no: int) -> dict:
     filename_base = f"{CHAPTER_ID}_{card['section_id']}_{card['point_id']}"
-    md = card["md"].strip() + "\n"
+    md = render_markdown(card)
+    field_override = FIELD_OVERRIDES.get(card["point_id"], {})
     return {
         "point_id": card["point_id"],
         "subject_id": SUBJECT_ID,
@@ -904,8 +1099,8 @@ def card_meta(card: dict, sort_no: int) -> dict:
         "prerequisite_point_ids": [],
         "related_point_ids": [],
         "related_question_ids": [],
-        "key_points": card["key_points"],
-        "mnemonics": card["mnemonics"],
+        "key_points": field_override.get("key_points", card["key_points"]),
+        "mnemonics": field_override.get("mnemonics", card["mnemonics"]),
         "common_mistakes": [],
         "review_status": "ai_draft",
         "source_refs": [
@@ -948,7 +1143,7 @@ def main() -> None:
     for idx, card in enumerate(CARDS, start=1):
         base = f"{CHAPTER_ID}_{card['section_id']}_{card['point_id']}"
         write_json(CARDS_DIR / f"{base}.json", card_meta(card, idx))
-        (CARDS_DIR / f"{base}.md").write_text(card["md"].strip() + "\n", encoding="utf-8")
+        (CARDS_DIR / f"{base}.md").write_text(render_markdown(card), encoding="utf-8")
 
     counts = {section["section_id"]: 0 for section in SECTIONS}
     for card in CARDS:

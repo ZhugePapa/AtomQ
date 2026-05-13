@@ -1,0 +1,32 @@
+{
+  "point_id": "018",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_01",
+  "title": "范围管理计划女友友 (21下29疹(2下4批)",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 48,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 18,
+  "tags": [
+    "范围管理",
+    "范围管理"
+  ],
+  "key_points": [
+    "多范围管理计划是项目管理计划的组成部分，描述将如何定义、制定、监督、控制和确认项目范围。",
+    "多范围管理计划用于指导如下过程和相关工作:"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_09_sec_01_018.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_018.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_09"
+    }
+  ]
+}

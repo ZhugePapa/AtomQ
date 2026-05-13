@@ -1,0 +1,32 @@
+{
+  "point_id": "058",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_03",
+  "title": "应用集成或组织应用集成(EAIT) 是",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 78,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 58,
+  "tags": [
+    "信息系统工程",
+    "系统集成"
+  ],
+  "key_points": [
+    "应用集成或组织应用集成(EAIT) 是指将独立的软件应用连接起来，实现协同工作。对应用集成的技术",
+    "(D) 县有应用间的互操作性: 应用的互操作性提供不同系统间信息的有意义交换，即信息的语用交换，"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_05_sec_03_058.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_03_058.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_05"
+    }
+  ]
+}

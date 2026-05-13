@@ -1,0 +1,32 @@
+{
+  "point_id": "038",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "类比估算女友友〈23下4批)",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 57,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 38,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "急类比估算是一种使用相似活动或项目的历史数据来估算当前活动或项目的持续时间或成本的技术。以",
+    "过去类似项目的参数值 (如持续时间、预算、规模、重量和复杂性等) 为基础,4呈估算当前和未来项目的同类"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_038.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_038.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

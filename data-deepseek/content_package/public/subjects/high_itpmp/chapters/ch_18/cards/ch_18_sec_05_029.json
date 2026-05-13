@@ -1,0 +1,31 @@
+{
+  "point_id": "029",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_18",
+  "section_id": "sec_05",
+  "title": "可以根据项目特点选择合同方式",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 58,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 29,
+  "tags": [
+    "项目绩效域",
+    "项目工作绩效域"
+  ],
+  "key_points": [
+    "可以根据项目特点选择合同方式。例如，项目中有的交付物采用适应型方法，有的交付物"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_18_sec_05_029.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_05_029.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_18"
+    }
+  ]
+}

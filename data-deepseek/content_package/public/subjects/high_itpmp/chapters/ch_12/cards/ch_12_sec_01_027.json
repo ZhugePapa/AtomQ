@@ -1,0 +1,32 @@
+{
+  "point_id": "027",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "质量测量",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 72,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 27,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "质量测量指标女友妇(22下35)",
+    "4 。 质量测量指标专用于描述项目或产品属性，以及控制放量读程将合何验证符合程度。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_027.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_027.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

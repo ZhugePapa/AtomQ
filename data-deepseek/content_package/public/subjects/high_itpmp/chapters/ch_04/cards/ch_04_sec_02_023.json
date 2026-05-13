@@ -1,0 +1,32 @@
+{
+  "point_id": "023",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_02",
+  "title": "数据管理能力成熟度模型 DCMM 将组织的管理成熟",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 76,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 23,
+  "tags": [
+    "信息系统管理",
+    "管理要点"
+  ],
+  "key_points": [
+    "数据管理能力成熟度模型 DCMM 将组织的管理成熟度划分为 讲个等至，分别是: 初始级、受",
+    "数据需求的管理主要是在项目级体现，没有统一的管理流程，主要是被动式管理"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_04_sec_02_023.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_023.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_04"
+    }
+  ]
+}

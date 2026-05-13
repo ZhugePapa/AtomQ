@@ -1,0 +1,32 @@
+{
+  "point_id": "006",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_12",
+  "section_id": "sec_01",
+  "title": "按有效性递增排列的五种质量管理水平",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 59,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 6,
+  "tags": [
+    "质量管理",
+    "质量管理"
+  ],
+  "key_points": [
+    "(GD) 通常，代价最大的方法是让客户发现缺陷。这种方法可能会导致召臣 商誉受损和返工成本。",
+    "(2)控制质量过程包括先检测和纠正缺陷，再将可交付成果发送给客户 该过程会带来相关成本，主要是"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_12_sec_01_006.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_006.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_12"
+    }
+  ]
+}

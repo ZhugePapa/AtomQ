@@ -1,0 +1,31 @@
+{
+  "point_id": "053",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "计划评审技术妇女友(20下35/21 上35/21",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 53,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 53,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "多计划评审技术(PERT), 又称为三点估算技术, 其理论基础是假设项目持续时间以及整个项目完成时间是"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_053.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_053.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

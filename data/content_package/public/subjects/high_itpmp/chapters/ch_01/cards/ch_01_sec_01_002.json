@@ -21,8 +21,8 @@
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "1. **维纳**：信息既不是物质，也不是能量。\n2. **香农**：信息用于消除不确定性。\n3. “确定性增加”和“消除不确定性”是一组同义考法。",
-  "mnemonics": "维纳：不物不能；香农：消不确定。",
+  "key_points": "| 题干关键词 | 对应人物 |\n|:---|:---|\n| 既不是物质，也不是能量 | ==维纳== |\n| 消除不确定性 | ==香农== |",
+  "mnemonics": "维纳：**不物不能**；香农：**消不确定**。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [

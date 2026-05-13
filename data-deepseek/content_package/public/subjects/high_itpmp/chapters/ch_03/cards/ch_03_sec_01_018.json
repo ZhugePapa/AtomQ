@@ -1,0 +1,32 @@
+{
+  "point_id": "018",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_03",
+  "section_id": "sec_01",
+  "title": "ISOVIEC 正式发布 IT 治理标准 ISO/",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 41,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 18,
+  "tags": [
+    "信息系统治理",
+    "IT治理"
+  ],
+  "key_points": [
+    "1该标准包括 责任、战略、收购、性能、一致性和人的行为。",
+    "人该标准规定治理机构应通过评估、指导和监督三个主要任务来治理 TT。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_03_sec_01_018.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_01_018.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_03"
+    }
+  ]
+}

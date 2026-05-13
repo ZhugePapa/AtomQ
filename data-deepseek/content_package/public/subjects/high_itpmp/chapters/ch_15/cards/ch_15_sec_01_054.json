@@ -1,0 +1,31 @@
+{
+  "point_id": "054",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_15",
+  "section_id": "sec_01",
+  "title": "人际关系与团队技能",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 34,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 54,
+  "tags": [
+    "风险管理",
+    "风险管理"
+  ],
+  "key_points": [
+    "争性需求的人员执行。这种情况下，负责引导风险管理过程的项目经理或人员就需要施展影响力，去鼓励指"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_15_sec_01_054.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_054.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_15"
+    }
+  ]
+}

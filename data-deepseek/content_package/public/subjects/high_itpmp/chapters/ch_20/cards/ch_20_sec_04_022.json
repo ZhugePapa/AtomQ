@@ -1,0 +1,32 @@
+{
+  "point_id": "022",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_20",
+  "section_id": "sec_04",
+  "title": "统计过程控制理论认为，过程的能力",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 22,
+  "tags": [
+    "高级项目管理",
+    "量化项目管理"
+  ],
+  "key_points": [
+    "统计过程控制理论认为，过程的能力是存在波动性的: 一种波动是正常的波动，任何组织或个人执行",
+    "过程的能力都会有一定的波动性，这是正常的，另一种波动是异常的波动，可能有特殊成因造成了能力的异"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_20_sec_04_022.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_04_022.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_20"
+    }
+  ]
+}

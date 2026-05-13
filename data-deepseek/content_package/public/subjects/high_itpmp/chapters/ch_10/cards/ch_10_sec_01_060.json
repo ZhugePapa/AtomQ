@@ -1,0 +1,32 @@
+{
+  "point_id": "060",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_01",
+  "title": "控制进度妇女",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 68,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 60,
+  "tags": [
+    "进度管理",
+    "进度管理"
+  ],
+  "key_points": [
+    "多控制进度作为实施整体变更控制过程的二部分，关注内容包括;",
+    "轩判断项目进度是否已经发生变更"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_10_sec_01_060.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_060.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_10"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "point_id": "039",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_22",
+  "section_id": "sec_03",
+  "title": "管理全起全划上中组织应考虑引入数字化管理模式",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 73,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 39,
+  "tags": [
+    "组织通用治理",
+    "转型提升级"
+  ],
+  "key_points": [
+    "务对象为中心，高运营效率,人降低运营成本。",
+    "ne | 3.数据能力策划 数据是下展台字化转型的重要基石。"
+  ],
+  "mnemonics": [],
+  "common_mistakes": [],
+  "review_status": "ai_draft",
+  "content_file": "ch_22_sec_03_039.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_22/cards/ch_22_sec_03_039.md",
+  "source_refs": [
+    {
+      "source": "2026新版高项三色笔记",
+      "location": "ch_22"
+    }
+  ]
+}
