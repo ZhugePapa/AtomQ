@@ -6,7 +6,7 @@
   "title": "工具和技术项目管理计划(范围基准、1.专家判",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 37,
@@ -16,10 +16,9 @@
     "资源管理",
     "章节核心考点",
     "•矩阵型图表能反映与每个人相关的",
-    "工具和技术项目管理计划(范围基准",
     "工具和技术项目管理计划(范围基准"
   ],
-  "key_points": "- **工具**和技术**项目管理计划**(**范围基准**、1. 专家判断资源管理计划)",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

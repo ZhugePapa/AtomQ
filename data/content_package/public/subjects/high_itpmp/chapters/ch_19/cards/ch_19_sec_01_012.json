@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_19",
   "section_id": "sec_01",
-  "title": "产品的一个测试版本(可能包括需求分析说明书、",
+  "title": "产品的一个测试版本(可能包括需求分析说明书",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 12,
@@ -15,7 +15,6 @@
   "tags": [
     "配置与变更管理",
     "配置管理",
-    "产品的一个测试版本(可能包括需求",
     "产品的一个测试版本(可能包括需求"
   ],
   "key_points": "",

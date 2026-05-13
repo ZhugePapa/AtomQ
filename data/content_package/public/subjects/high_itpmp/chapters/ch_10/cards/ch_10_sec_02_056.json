@@ -6,7 +6,7 @@
   "title": "项目文件更新(活动属性、假设日志、持续时间估",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 56,
@@ -16,10 +16,9 @@
     "进度管理",
     "章节核心考点",
     "乐观时间(To)、最可能时间(T",
-    "项目文件更新(活动属性、假设日志",
     "项目文件更新(活动属性、假设日志"
   ],
-  "key_points": "- **在进度基准**\n- **但可指出一定的变动区间、持续时间估算、任何滞后量**\n- **从下到上逐层汇总WBS组成部分的估算、估算项目持续时间或成本的方法、WBS、To、Ty、TE- **估算依据",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

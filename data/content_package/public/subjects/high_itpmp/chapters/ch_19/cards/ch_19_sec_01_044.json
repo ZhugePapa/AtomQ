@@ -6,7 +6,7 @@
   "title": "功能配置审计是审计配置项的一致性(配置项的实",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 44,
@@ -15,7 +15,6 @@
   "tags": [
     "配置与变更管理",
     "配置管理",
-    "功能配置审计是审计配置项的一致性",
     "功能配置审计是审计配置项的一致性"
   ],
   "key_points": "",

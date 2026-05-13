@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_12",
   "section_id": "sec_01",
-  "title": "(1)",
+  "title": "质量管理计划",
   "card_type": "process",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 43,
@@ -14,11 +14,9 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_043.md",
   "tags": [
     "质量管理",
-    "章节核心考点",
-    "提高过程和活动的效率与效果",
-    "(1)"
+    "质量管理计划"
   ],
-  "key_points": "",
+  "key_points": "- 质量管理计划指导项目如何执行质量政策、标准和质量活动。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

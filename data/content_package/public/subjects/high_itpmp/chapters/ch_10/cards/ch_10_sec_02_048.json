@@ -3,23 +3,22 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_02",
-  "title": "项目进度网络图",
+  "title": "项目进度网络图关系",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 34,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 48,
   "content_file": "ch_10_sec_02_048.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_02_048.md",
   "tags": [
     "进度管理",
-    "章节核心考点",
-    "流入(流出)同一节点的活动",
-    "项目进度网络图"
+    "网络图",
+    "逻辑关系"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 网络图常见逻辑关系：**FS、SS、FF、SF**；注意提前量和滞后量。",
+  "mnemonics": "FS 最常见：前完后开。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "047"

@@ -3,11 +3,11 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_04",
-  "title": "存储分类根据服务器类型分为",
+  "title": "存储分类",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 58,
-  "has_key_content": false,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 51,
   "content_file": "ch_02_sec_04_051.md",
@@ -18,8 +18,8 @@
     "存储分类根据服务器类型分为：封闭",
     "存储分类根据服务器类型分为"
   ],
-  "key_points": "- **封闭系统的存储、开放系统的存储、Linux、UNIX- **直连式存储(DAS)、网络化存储 FAS)、NAS、SAN\n- **直连式存储(DAS**、**网络化存储 FAS**、**NAS**、**SAN**",
-  "mnemonics": "",
+  "key_points": "- 存储分类抓三组：**封闭/开放**、**内置/外挂**、**DAS/NAS/SAN**。",
+  "mnemonics": "DAS 直连，NAS 网络接入，SAN 存储区域。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "050"

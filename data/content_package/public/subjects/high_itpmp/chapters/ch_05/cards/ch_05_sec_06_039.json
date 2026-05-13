@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_06",
-  "title": "数据建模过程包括数据需求分析、概念模型设计、",
+  "title": "数据建模过程包括数据需求分析、概念模型设计",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 82,
+  "estimated_read_seconds": 39,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 39,
@@ -15,7 +15,6 @@
   "tags": [
     "信息系统工程",
     "数据建模",
-    "数据建模过程包括数据需求分析、概",
     "数据建模过程包括数据需求分析、概"
   ],
   "key_points": "- **编写必要的存储过程与触发器等**、**确定字段类型**、**DBMS**、**命名**",

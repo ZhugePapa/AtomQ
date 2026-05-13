@@ -6,7 +6,7 @@
   "title": "将待提升级的基线(假设版本号为V2.1)从产",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 35,
@@ -15,7 +15,6 @@
   "tags": [
     "配置与变更管理",
     "配置管理",
-    "将待提升级的基线(假设版本号为V",
     "将待提升级的基线(假设版本号为V"
   ],
   "key_points": "",

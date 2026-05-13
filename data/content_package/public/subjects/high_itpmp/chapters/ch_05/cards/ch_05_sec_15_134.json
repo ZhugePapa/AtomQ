@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_15",
-  "title": "软件过程能力成熟度",
+  "title": "软件过程能力成熟度五级",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 134,
@@ -14,11 +14,11 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_15_134.md",
   "tags": [
     "信息系统工程",
-    "安全工程",
-    "软件过程能力成熟度"
+    "能力成熟度",
+    "CSMM"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 软件过程能力成熟度五级：**初始级、项目规范级、组织改进级、量化提升级、创新引领级**。",
+  "mnemonics": "初规改量创。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "133"

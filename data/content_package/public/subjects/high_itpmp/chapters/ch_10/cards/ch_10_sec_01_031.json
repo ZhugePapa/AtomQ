@@ -3,21 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_01",
-  "title": "制进",
+  "title": "控制进度 ITTO",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 77,
-  "has_key_content": false,
+  "estimated_read_seconds": 32,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 31,
   "content_file": "ch_10_sec_01_031.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_031.md",
   "tags": [
     "进度管理",
-    "章节核心考点",
-    "制进"
+    "控制进度",
+    "ITTO"
   ],
-  "key_points": "",
+  "key_points": "- 控制进度核心：**监督进度偏差**，并通过**整体变更控制**管理进度基准变更。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

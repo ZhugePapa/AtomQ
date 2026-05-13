@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_12",
   "section_id": "sec_01",
-  "title": "、连续7个点落在均值下方",
+  "title": "连续7个点落在均值下方",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 79,
+  "estimated_read_seconds": 46,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 60,
@@ -15,7 +15,7 @@
   "tags": [
     "质量管理",
     "章节核心考点",
-    "、连续7个点落在均值下方"
+    "连续7个点落在均值下方"
   ],
   "key_points": "- **核实的可交付成果**",
   "mnemonics": "",

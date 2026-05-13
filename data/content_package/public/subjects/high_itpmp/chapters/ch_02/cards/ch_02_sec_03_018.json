@@ -3,11 +3,11 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_03",
-  "title": "保密性",
+  "title": "信息安全三属性",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": false,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 18,
   "content_file": "ch_02_sec_03_018.md",
@@ -15,11 +15,12 @@
   "tags": [
     "信息技术发展",
     "信息安全",
-    "安全",
-    "保密性"
+    "保密性",
+    "完整性",
+    "可用性"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 信息安全基础属性：**保密性、完整性、可用性**。",
+  "mnemonics": "保完可：保密性、完整性、可用性。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "017"

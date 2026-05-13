@@ -3,22 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_14",
   "section_id": "sec_01",
-  "title": "管理ITTO汇总大",
+  "title": "沟通管理 ITTO 主线",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 170,
-  "has_key_content": false,
+  "estimated_read_seconds": 43,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 12,
   "content_file": "ch_14_sec_01_012.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_14/cards/ch_14_sec_01_012.md",
   "tags": [
     "沟通管理",
-    "章节核心考点",
-    "管理ITTO汇总大"
+    "ITTO",
+    "规划沟通",
+    "管理沟通",
+    "监督沟通"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "| 过程 | 记忆定位 |\n|:---|:---|\n| **规划沟通管理** | 怎么沟通 |\n| **管理沟通** | 按计划沟通 |\n| **监督沟通** | 沟通是否有效 |",
+  "mnemonics": "规、管、监：规划怎么沟通，管理按计划沟通，监督沟通效果。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "011"

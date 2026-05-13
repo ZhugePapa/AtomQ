@@ -6,7 +6,7 @@
   "title": "对文档的静态测试主要以检查单的形式进行",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 93,
@@ -15,10 +15,9 @@
   "tags": [
     "信息系统工程",
     "安全工程",
-    "对文档的静态测试主要以检查单的形",
     "对文档的静态测试主要以检查单的形"
   ],
-  "key_points": "",
+  "key_points": "- 代码静态测试常用：**桌前检查、代码走查、代码审查**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

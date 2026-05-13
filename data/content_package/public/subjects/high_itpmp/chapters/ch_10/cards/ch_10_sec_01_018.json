@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_01",
-  "title": "分解里程碑清单事业环境因素滚动式规划组织过程",
+  "title": "分解与滚动式规划",
   "card_type": "definition",
   "difficulty": 3,
-  "estimated_read_seconds": 72,
+  "estimated_read_seconds": 31,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 18,
@@ -14,13 +14,12 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_018.md",
   "tags": [
     "进度管理",
-    "章节核心考点",
-    "绩效测量规则EVM",
-    "分解里程碑清单事业环境因素滚动式",
-    "分解里程碑清单事业环境因素滚动式"
+    "定义活动",
+    "分解",
+    "滚动式规划"
   ],
-  "key_points": "- 分解里程碑清单事业环境因素滚动式规划组织过程资产变更请求\n- 会议项目管理计划更新(进度基准、成本基准)\n- **分解**：把项目范围和项目可交付成果逐步划分为**更小、更便于管理的组成部分的技术**。**WBS** 中的每个工作包都需**分解**成活动，以便通过**这些活动来完成相应的可交付成果**。让团队成员参与**分解**过程，有助于得到更好、更准确的结果。",
-  "mnemonics": "",
+  "key_points": "- 定义活动常用两类工具：**分解**和**滚动式规划**。\n- 分解是把工作包拆成活动；滚动式规划是**近细远粗、逐步细化**。",
+  "mnemonics": "分解拆活动；滚动近细远粗。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "017"

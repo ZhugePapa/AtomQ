@@ -3,23 +3,22 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_01",
-  "title": "风险成本包括有形成本、无形成本以及预防与控制",
+  "title": "风险成本分类",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 61,
-  "has_key_content": false,
+  "estimated_read_seconds": 36,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 8,
   "content_file": "ch_15_sec_01_008.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_008.md",
   "tags": [
     "风险管理",
-    "章节核心考点",
-    "风险成本包括有形成本、无形成本以",
-    "风险成本包括有形成本、无形成本以"
+    "风险成本",
+    "风险基础"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 风险成本三类：**有形成本、无形成本、预防与控制风险的成本**。\n- 注意：风险成本包括**预防投入**，不只是风险发生后的损失。",
+  "mnemonics": "有无预控：有形、无形、预防与控制。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "007"

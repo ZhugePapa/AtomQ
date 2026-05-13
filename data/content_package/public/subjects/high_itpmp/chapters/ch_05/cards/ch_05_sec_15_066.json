@@ -6,7 +6,7 @@
   "title": "信息安全系统三维空间包括安全机制、网络参考模",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 73,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 66,
@@ -15,11 +15,10 @@
   "tags": [
     "信息系统工程",
     "安全工程",
-    "信息安全系统三维空间包括安全机制",
     "信息安全系统三维空间包括安全机制"
   ],
-  "key_points": "- **网络参考模型、安全机制、安全服务**\n- **OSI- **认证、权限、完整、加密和不可否认五大",
-  "mnemonics": "",
+  "key_points": "- 信息安全系统三维空间：**安全机制、网络参考模型、安全服务**。",
+  "mnemonics": "安全三轴：机制、模型、服务。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "065"

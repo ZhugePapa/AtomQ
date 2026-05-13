@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_15",
-  "title": "第五级",
+  "title": "成熟度 5 级：创新引领级",
   "card_type": "definition",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 140,
   "content_file": "ch_05_sec_15_140.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_15_140.md",
   "tags": [
     "信息系统工程",
-    "安全工程",
-    "CMMI成熟度",
-    "第五级"
+    "能力成熟度",
+    "持续优化"
   ],
-  "key_points": "",
+  "key_points": "- 5级重点是**主动预防偏差**和**持续优化创新**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -6,7 +6,7 @@
   "title": "审计证据的特性",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 58,
@@ -15,7 +15,7 @@
   "tags": [
     "信息系统治理",
     "IT审计",
-    "审计证据的特性：充分性、客观性、",
+    "审计证据的特性：充分性、客观性",
     "审计证据的特性"
   ],
   "key_points": "",

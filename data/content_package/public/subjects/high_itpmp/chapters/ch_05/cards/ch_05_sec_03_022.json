@@ -6,7 +6,7 @@
   "title": "面向对象设计(00D)是00A方法的延续",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 22,
@@ -15,7 +15,6 @@
   "tags": [
     "信息系统工程",
     "软件设计",
-    "面向对象设计(00D)是00A方",
     "面向对象设计(00D)是00A方"
   ],
   "key_points": "",

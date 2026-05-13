@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_23",
   "section_id": "sec_02",
-  "title": "工作职",
+  "title": "工作职责说明",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 5,
   "content_file": "ch_23_sec_02_005.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_02_005.md",
   "tags": [
     "组织通用管理",
-    "工作分析与岗位设计",
-    "岗位设计是确定完成工作的方式、所",
-    "工作职"
+    "岗位",
+    "工作职责"
   ],
-  "key_points": "",
+  "key_points": "- 工作职责说明明确岗位**做什么、对什么负责、拥有什么权限**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -6,7 +6,7 @@
   "title": "软件文档分为三类：开发文档、产品文档、管理文",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 65,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 58,
@@ -15,11 +15,10 @@
   "tags": [
     "配置与变更管理",
     "项目文档管理",
-    "软件文档分为三类：开发文档、产品",
     "软件文档分为三类：开发文档、产品"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 软件文档三类：**开发文档、产品文档、管理文档**。",
+  "mnemonics": "开产管：开发文档、产品文档、管理文档。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "057"

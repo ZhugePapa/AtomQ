@@ -6,7 +6,7 @@
   "title": "进度压缩技术是指在不缩减项目范围的前提下",
   "card_type": "process",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 64,
@@ -16,7 +16,6 @@
     "进度管理",
     "章节核心考点",
     "制定进度计划：制订可行的项目进度",
-    "进度压缩技术是指在不缩减项目范围",
     "进度压缩技术是指在不缩减项目范围"
   ],
   "key_points": "- **关键路径法**\n- **数据分析**；**假设情景分析**\n- **模拟**",

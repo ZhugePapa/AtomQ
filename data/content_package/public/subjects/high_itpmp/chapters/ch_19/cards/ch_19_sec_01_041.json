@@ -6,7 +6,7 @@
   "title": "配置审计的实施是为了确保项目配置管理的有效性",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 41,
@@ -15,7 +15,6 @@
   "tags": [
     "配置与变更管理",
     "配置管理",
-    "配置审计的实施是为了确保项目配置",
     "配置审计的实施是为了确保项目配置"
   ],
   "key_points": "",

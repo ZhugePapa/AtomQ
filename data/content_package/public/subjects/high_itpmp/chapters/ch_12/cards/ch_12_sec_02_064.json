@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_12",
   "section_id": "sec_02",
-  "title": "逻辑数据模型",
+  "title": "管理质量常见工具",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 64,
   "content_file": "ch_12_sec_02_064.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_02_064.md",
   "tags": [
     "质量管理",
-    "章节核心考点",
-    "管理ITTO江总**大",
-    "逻辑数据模型"
+    "管理质量",
+    "质量工具"
   ],
-  "key_points": "",
+  "key_points": "- 管理质量工具可从模型、图表、清单和会议四类记：**逻辑数据模型、矩阵图、思维导图、核对单、测试与检查规划会议**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

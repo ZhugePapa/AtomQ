@@ -6,7 +6,7 @@
   "title": "数据存储是类似于文件系统的逻辑容器",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 90,
+  "estimated_read_seconds": 44,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 11,
@@ -16,7 +16,6 @@
     "信息技术发展",
     "存储和数据库",
     "存储技术",
-    "数据存储是类似于文件系统的逻辑容",
     "数据存储是类似于文件系统的逻辑容"
   ],
   "key_points": "",

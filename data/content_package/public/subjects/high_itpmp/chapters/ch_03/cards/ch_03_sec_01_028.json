@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_01",
-  "title": "ISO/IEC正式发布IT治理标准IS0/1",
+  "title": "ISO/IEC 38500 IT 治理标准",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 57,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 28,
@@ -15,10 +15,9 @@
   "tags": [
     "信息系统治理",
     "IT治理",
-    "ISO/IEC正式发布IT治理标",
     "ISO/IEC正式发布IT治理标"
   ],
-  "key_points": "- **ISO、IEC、IT、1) 该标准包括、人的行为、一致性、贵任、战略**\n- **评估、指导和监督三个主要任务来治理I、IT- **1) 该标准包括、人的行为、一致性、贵任、战略、收购",
+  "key_points": "- ISO/IEC 38500 记三件事：**责任/战略/收购/性能/一致性/人的行为**，以及 **评估、指导、监督**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

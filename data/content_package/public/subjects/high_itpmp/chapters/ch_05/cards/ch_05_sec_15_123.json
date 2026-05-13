@@ -6,7 +6,7 @@
   "title": "安全机制包含基础设施实体安全、平台安全、数据",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 123,
@@ -15,7 +15,6 @@
   "tags": [
     "信息系统工程",
     "安全工程",
-    "安全机制包含基础设施实体安全、平",
     "安全机制包含基础设施实体安全、平"
   ],
   "key_points": "",

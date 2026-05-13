@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_06",
   "section_id": "sec_03",
-  "title": "过程组",
+  "title": "适应型项目过程组",
   "card_type": "process",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 73,
@@ -14,8 +14,7 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_03_073.md",
   "tags": [
     "项目管理概论",
-    "价值驱动的项目管理知识体系",
-    "适应型项目中的过程组",
+    "适应型",
     "过程组"
   ],
   "key_points": "",

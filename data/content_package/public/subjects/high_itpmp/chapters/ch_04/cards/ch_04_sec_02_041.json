@@ -6,7 +6,7 @@
   "title": "效果评估",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 41,
@@ -18,7 +18,7 @@
     "智能运维能力框架",
     "效果评估"
   ],
-  "key_points": "",
+  "key_points": "- 效果评估关注智能运维建设是否改善：**数据管理能力、分析决策能力、自动控制能力**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

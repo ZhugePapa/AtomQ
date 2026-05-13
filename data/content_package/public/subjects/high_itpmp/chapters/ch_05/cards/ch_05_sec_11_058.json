@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_11",
-  "title": "数据库安全机制包括用户的身份认证、存取控制、",
+  "title": "数据库安全机制包括用户的身份认证、存取控制",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 66,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 58,
@@ -15,7 +15,6 @@
   "tags": [
     "信息系统工程",
     "网络集成",
-    "数据库安全机制包括用户的身份认证",
     "数据库安全机制包括用户的身份认证"
   ],
   "key_points": "- **红外线等常用的有线传输介质主要包括双绞线**、**光纤等网络按所覆盖的区域可分为局域网**、**城域网交换技术**、**广域网交换技术**、**无线电波**、**同轴电缆**",

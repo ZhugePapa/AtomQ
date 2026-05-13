@@ -6,7 +6,7 @@
   "title": "审批配置库或配置管理数据库的结构性变更",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 21,
@@ -15,7 +15,6 @@
   "tags": [
     "配置与变更管理",
     "配置管理",
-    "审批配置库或配置管理数据库的结构",
     "审批配置库或配置管理数据库的结构"
   ],
   "key_points": "",

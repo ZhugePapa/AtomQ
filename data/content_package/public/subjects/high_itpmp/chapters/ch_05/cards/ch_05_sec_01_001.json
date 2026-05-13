@@ -6,7 +6,7 @@
   "title": "软件架构设计的一个核心问题是能否达到架构级的",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 1,
@@ -15,7 +15,6 @@
   "tags": [
     "信息系统工程",
     "架构设计",
-    "软件架构设计的一个核心问题是能否",
     "软件架构设计的一个核心问题是能否"
   ],
   "key_points": "",

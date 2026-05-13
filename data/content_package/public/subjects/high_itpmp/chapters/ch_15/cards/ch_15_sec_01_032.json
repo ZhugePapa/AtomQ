@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_01",
-  "title": "需求疲软(9000万美元)",
+  "title": "决策树与 EMV",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 32,
   "content_file": "ch_15_sec_01_032.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_032.md",
   "tags": [
     "风险管理",
-    "章节核心考点",
-    "敏感性分有助于确定哪些单个项目风",
-    "需求疲软(9000万美元)"
+    "决策树",
+    "EMV"
   ],
-  "key_points": "",
+  "key_points": "- EMV = **概率 × 结果值**；方案 EMV 为各路径 EMV 之和。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

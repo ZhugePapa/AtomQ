@@ -3,19 +3,19 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_19",
   "section_id": "sec_01",
-  "title": "复制",
+  "title": "配置项复制",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 39,
   "content_file": "ch_19_sec_01_039.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_039.md",
   "tags": [
-    "配置与变更管理",
     "配置管理",
-    "复制"
+    "复制",
+    "配置项"
   ],
   "key_points": "",
   "mnemonics": "",

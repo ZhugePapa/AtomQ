@@ -6,7 +6,7 @@
   "title": "审计流程一般分为审计准备、审计实施、审计终结",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 120,
+  "estimated_read_seconds": 55,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 44,
@@ -15,10 +15,9 @@
   "tags": [
     "信息系统治理",
     "IT审计",
-    "审计流程一般分为审计准备、审计实",
     "审计流程一般分为审计准备、审计实"
   ],
-  "key_points": "- **后续审计四个阶段、审计准备、审计实施、审计终结**\n- 252、**IT- **①整理与复核审计工作底稿、IT",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

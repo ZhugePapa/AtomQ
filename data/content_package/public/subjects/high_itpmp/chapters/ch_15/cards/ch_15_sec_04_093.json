@@ -6,7 +6,7 @@
   "title": "保险、使用履约保函、担保转移风险是把风险管理",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 48,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 93,
@@ -16,10 +16,9 @@
     "风险管理",
     "章节核心考点",
     "项目文件(更新)大风险报告内",
-    "保险、使用履约保函、担保转移风险",
     "保险、使用履约保函、担保转移风险"
   ],
-  "key_points": "- **规避(除威胁**",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

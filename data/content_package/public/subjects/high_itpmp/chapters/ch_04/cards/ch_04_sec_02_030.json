@@ -3,23 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_02",
-  "title": "量提升业务术语参考标准",
+  "title": "数据标准对象",
   "card_type": "process",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 30,
   "content_file": "ch_04_sec_02_030.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_030.md",
   "tags": [
     "信息系统管理",
-    "管理要点",
-    "是关于元数据的创建、存储、整合与",
-    "量提升业务术语参考标准"
+    "数据标准",
+    "主数据",
+    "数据元"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 数据标准对象：**业务术语、主数据、数据元、指标数据**。",
+  "mnemonics": "术主元指：业务术语、主数据、数据元、指标数据。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "029"

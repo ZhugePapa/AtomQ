@@ -6,7 +6,7 @@
   "title": "软件过程能力是组织基于软件过程、技术、资源和",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 35,
@@ -15,8 +15,7 @@
   "tags": [
     "信息系统工程",
     "部署交付",
-    "软件过程能力是组织基于软件过程、",
-    "软件过程能力是组织基于软件过程、"
+    "软件过程能力是组织基于软件过程"
   ],
   "key_points": "",
   "mnemonics": "",

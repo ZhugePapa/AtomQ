@@ -6,7 +6,7 @@
   "title": "虚拟现实虚拟现实(VR)是一种可以创立和体验",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 126,
+  "estimated_read_seconds": 59,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 45,
@@ -15,10 +15,9 @@
   "tags": [
     "信息技术发展",
     "新一代信息技术及应用",
-    "虚拟现实虚拟现实(VR)是一种可",
     "虚拟现实虚拟现实(VR)是一种可"
   ],
-  "key_points": "- **构想性(也称想象性**、**多感知性**、**沉浸性**、**交互性**、**自主**",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

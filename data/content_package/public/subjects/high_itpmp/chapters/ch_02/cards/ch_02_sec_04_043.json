@@ -6,7 +6,7 @@
   "title": "区块链加密与共识算法",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 73,
+  "estimated_read_seconds": 32,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 43,
@@ -17,7 +17,7 @@
     "新一代信息技术及应用",
     "区块链加密与共识算法"
   ],
-  "key_points": "- **散列算法**用于数据指纹。\n- **非对称加密**用于身份与数据安全。\n- **共识机制**用于分布式节点达成一致。",
+  "key_points": "- 区块链基础技术抓两类：**加密算法** 和 **共识机制**。",
   "mnemonics": "",
   "warnings": "已人工修复 P0 OCR/标题/重点标记问题。",
   "prerequisite_point_ids": [

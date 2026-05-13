@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_09",
   "section_id": "sec_02",
-  "title": "范围管理-过程4-创建WBS",
+  "title": "创建 WBS",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 131,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 49,
@@ -17,7 +17,7 @@
     "章节核心考点",
     "范围管理-过程4-创建WBS"
   ],
-  "key_points": "- **WBS、把项目范围和项目可交付成果逐步划分为、更便于管理的组成部分的技术、更小**\n- **使用组织特定的指南、自上而下的方法、使用WBS模板**\n- **把项目范围和项目可交付成果逐步划分为**、**更便于管理的组成部分的技术**、**WBS**、**更小**、**使用组织特定的指南**、**自上而下的方法**、**使用WBS模板**",
+  "key_points": "- 创建 WBS 的最低层是**工作包**；“工作”指可交付成果，不是活动本身。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -6,7 +6,7 @@
   "title": "使验收过程具有客观性",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 15,
@@ -17,7 +17,7 @@
     "章节核心考点",
     "使验收过程具有客观性"
   ],
-  "key_points": "",
+  "key_points": "- 确认范围 = **正式验收已完成的项目可交付成果**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

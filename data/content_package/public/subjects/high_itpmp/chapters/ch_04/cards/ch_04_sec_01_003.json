@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_01",
-  "title": "信息系统管理覆盖四大领域：①规划和组织",
+  "title": "信息系统管理四大领域",
   "card_type": "definition",
   "difficulty": 1,
-  "estimated_read_seconds": 50,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 3,
@@ -15,11 +15,10 @@
   "tags": [
     "信息系统管理",
     "管理方法",
-    "信息系统管理覆盖四大领域：①规划",
     "信息系统管理覆盖四大领域：①规划"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 四大领域：**规划和组织、设计和实施、运维和服务、优化和持续改进**。",
+  "mnemonics": "规设运优：规划组织、设计实施、运维服务、优化改进。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "002"

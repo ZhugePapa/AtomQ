@@ -6,7 +6,7 @@
   "title": "软件架构技术三类主要评估方式",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 73,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 5,
@@ -18,7 +18,7 @@
     "软件架构技术三类主要评估方式：基",
     "软件架构技术三类主要评估方式"
   ],
-  "key_points": "- **架构权衡分析法(ATAM**、**软件架构分析法(SAAM**、**成本效益分析法(CBAM**、**基于场景的方式主要包括**",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

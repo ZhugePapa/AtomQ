@@ -6,7 +6,7 @@
   "title": "内部失败成本(项目中发现的失败)返工报废",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 33,
@@ -16,7 +16,6 @@
     "质量管理",
     "章节核心考点",
     "解释说明将实际或计划的项目实践或",
-    "内部失败成本(项目中发现的失败)",
     "内部失败成本(项目中发现的失败)"
   ],
   "key_points": "",

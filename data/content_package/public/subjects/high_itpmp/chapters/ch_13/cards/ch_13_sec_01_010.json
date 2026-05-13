@@ -6,7 +6,7 @@
   "title": "资源管理新实践(1)资源管理方法出现了",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 72,
+  "estimated_read_seconds": 34,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 10,
@@ -15,10 +15,9 @@
   "tags": [
     "资源管理",
     "章节核心考点",
-    "资源管理新实践(1)资源管理方法",
     "资源管理新实践(1)资源管理方法"
   ],
-  "key_points": "- **Kaizen、JIT、TPM- **(3)自组织团队、PM\n- **3)自组织团队**、**PM**",
+  "key_points": "- **JIT**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

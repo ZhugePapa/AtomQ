@@ -6,7 +6,7 @@
   "title": "•在变更请求可能影响任一项目基准的情况下",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 240,
+  "estimated_read_seconds": 110,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 49,
@@ -15,7 +15,6 @@
   "tags": [
     "整合管理",
     "章节核心考点",
-    "•在变更请求可能影响任一项目基准",
     "•在变更请求可能影响任一项目基准"
   ],
   "key_points": "- **CCB、记录并报告配置项状态、配置管理活动包括、识别配置项**\n- **识别变更**\n- **记录变更**\n- **记录并报告配置项状态、配置管理活动包括、识别配置项**\n- **为整个集体制定决策、决策**；**投票**\n- **CCB**",

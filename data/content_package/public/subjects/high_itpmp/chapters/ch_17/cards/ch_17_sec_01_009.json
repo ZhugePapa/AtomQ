@@ -6,7 +6,7 @@
   "title": "数据分析",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 175,
+  "estimated_read_seconds": 95,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 9,
@@ -17,7 +17,7 @@
     "章节核心考点",
     "数据分析"
   ],
-  "key_points": "- **打交道的路**\n- **B打交道的策略**",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

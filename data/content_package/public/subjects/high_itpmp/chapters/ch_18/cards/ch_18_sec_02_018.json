@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_18",
   "section_id": "sec_02",
-  "title": "应型方法当需求不确定、易变或复杂",
+  "title": "开发方法选择：预测型与适应型",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 76,
+  "estimated_read_seconds": 33,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 18,
@@ -14,12 +14,12 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_02_018.md",
   "tags": [
     "项目绩效域",
-    "绩效要点",
-    "开发方法的选择",
-    "应型方法当需求不确定、易变或复杂"
+    "开发方法",
+    "预测型",
+    "适应型"
   ],
-  "key_points": "- 应型方法当需求不确定、易变或复杂，且在整个项目期间会发生演变时，适应性方法更适合如果范围会有许多变更，则**适应型**方法会更适合适合采用**预测型方法与需求确定性和范围稳定性相**关，如果可交付物的性质使得管理和合对于容易适应变更的可交付物，则更适合采用**适应型**\n- 并等变更较为困难，则适合采用预\n- 的方法",
-  "mnemonics": "",
+  "key_points": "- 需求稳定选**预测型**；需求易变或复杂选**适应型**；可拆分交付时考虑**增量/迭代**。",
+  "mnemonics": "稳预测，变适应，拆组件用增量/迭代。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "017"

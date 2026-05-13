@@ -6,7 +6,7 @@
   "title": "检查项目管理计划更新(质量测试/产品评估",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 51,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 55,
@@ -16,10 +16,9 @@
     "质量管理",
     "章节核心考点",
     "强调每次审计都应对组织经验教训知",
-    "检查项目管理计划更新(质量测试/",
     "检查项目管理计划更新(质量测试/"
   ],
-  "key_points": "- **详尽的需求跟踪矩阵、测试与评估文件、专门的核对单**\n- **质量改进方法**\n- **在控制质量过程中发现的情况的概述、100%检查等)、漏洞补救、质量报告、返工、缺陷**\n- **预防措施)的实施情况**、**纠正措施**、**缺陷补救**、**更新**",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

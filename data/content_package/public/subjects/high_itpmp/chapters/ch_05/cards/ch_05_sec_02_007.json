@@ -6,7 +6,7 @@
   "title": "软件需求就是系统必须完成的事以及必须具备的品",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 7,
@@ -15,11 +15,10 @@
   "tags": [
     "信息系统工程",
     "需求分析",
-    "软件需求就是系统必须完成的事以及",
     "软件需求就是系统必须完成的事以及"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 需求层次：**业务需求、用户需求、系统需求**。",
+  "mnemonics": "业、用、系：业务需求、用户需求、系统需求。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "006"

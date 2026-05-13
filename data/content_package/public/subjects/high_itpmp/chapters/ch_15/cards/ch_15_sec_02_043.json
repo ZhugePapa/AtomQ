@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_02",
-  "title": "数据表现大",
+  "title": "数据表现",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 57,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 43,
@@ -15,7 +15,7 @@
   "tags": [
     "风险管理",
     "章节核心考点",
-    "数据表现大"
+    "数据表现"
   ],
   "key_points": "",
   "mnemonics": "",

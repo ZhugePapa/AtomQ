@@ -6,7 +6,7 @@
   "title": "大型可见图表(BVC)也称信息发射源",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 52,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 44,
@@ -16,10 +16,9 @@
     "项目绩效域",
     "绩效要点",
     "常见的度量指标包括：①与计划成本",
-    "大型可见图表(BVC)也称信息发",
     "大型可见图表(BVC)也称信息发"
   ],
-  "key_points": "- **信号灯图(也称次 RAG 图其中 RAG 是红**、**绿的英文缩写**、**横道图**、**饼状图**、**控制冬**",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

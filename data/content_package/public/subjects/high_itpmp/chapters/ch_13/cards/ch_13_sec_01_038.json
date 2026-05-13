@@ -6,7 +6,7 @@
   "title": "资源登记册、活动属性、活动清单参数估算、成本",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 38,
@@ -16,7 +16,6 @@
     "资源管理",
     "章节核心考点",
     "自下而上估算估算活动项目",
-    "资源登记册、活动属性、活动清单参",
     "资源登记册、活动属性、活动清单参"
   ],
   "key_points": "",

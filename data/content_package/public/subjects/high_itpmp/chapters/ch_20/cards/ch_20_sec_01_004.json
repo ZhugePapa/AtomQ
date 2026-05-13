@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_20",
   "section_id": "sec_01",
-  "title": "在整个项目集治理阶段",
+  "title": "项目集治理与干系人参与",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 4,
   "content_file": "ch_20_sec_01_004.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_20/cards/ch_20_sec_01_004.md",
   "tags": [
-    "高级项目管理",
     "项目集管理",
-    "项目集经理通过在不同的项目集管理",
-    "在整个项目集治理阶段"
+    "治理",
+    "干系人参与"
   ],
-  "key_points": "",
+  "key_points": "- 项目集治理要持续评估绩效数据，确保项目集产生预期**效益和成果**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

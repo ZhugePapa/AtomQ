@@ -6,7 +6,7 @@
   "title": "组织在考虑集中式与分布式架构决策时",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 89,
+  "estimated_read_seconds": 40,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 8,
@@ -15,10 +15,9 @@
   "tags": [
     "信息系统管理",
     "管理方法",
-    "组织在考虑集中式与分布式架构决策",
     "组织在考虑集中式与分布式架构决策"
   ],
-  "key_points": "- **特定功能的客户端**\n- **高度建中式治理的组织**",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -6,7 +6,7 @@
   "title": "进度压缩与进度计划输出",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 90,
+  "estimated_read_seconds": 33,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 30,
@@ -17,7 +17,7 @@
     "资源与进度优化",
     "进度压缩"
   ],
-  "key_points": "- **赶工**：加资源压缩关键路径，常带来成本和风险上升。\n- **快速跟进**：并行原本顺序执行的活动，常带来返工和风险上升。\n- **进度图形**：横道图看日期，里程碑图看关键节点，网络图看逻辑关系。",
+  "key_points": "- 进度压缩两法：**赶工**增加资源，**快速跟进**改为并行。",
   "mnemonics": "",
   "warnings": "已人工修复 OCR 污染、坏重点标记和长卡片问题。",
   "prerequisite_point_ids": [

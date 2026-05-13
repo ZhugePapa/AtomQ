@@ -6,7 +6,7 @@
   "title": "COBIT中治理目标被列入评估、指导和监控(",
   "card_type": "definition",
   "difficulty": 1,
-  "estimated_read_seconds": 56,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 54,
@@ -15,8 +15,7 @@
   "tags": [
     "信息系统治理",
     "IT审计",
-    "COBIT中治理目标被列入评估、",
-    "COBIT中治理目标被列入评估、"
+    "COBIT中治理目标被列入评估"
   ],
   "key_points": "",
   "mnemonics": "",

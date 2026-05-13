@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_16",
   "section_id": "sec_01",
-  "title": "更新)",
+  "title": "规划采购管理输出",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 16,
   "content_file": "ch_16_sec_01_016.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_016.md",
   "tags": [
     "采购管理",
-    "管理基础",
-    "管理ITTO汇L总",
-    "更新)"
+    "规划采购",
+    "输出"
   ],
-  "key_points": "",
+  "key_points": "- 规划采购管理输出：**采购管理计划、采购策略、招标文件、SOW、供方选择标准**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

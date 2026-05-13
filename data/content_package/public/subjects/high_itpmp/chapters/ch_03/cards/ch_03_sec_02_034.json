@@ -6,7 +6,7 @@
   "title": "常用审计方法包括",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 240,
+  "estimated_read_seconds": 32,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 34,
@@ -18,7 +18,7 @@
     "常用审计方法包括：访谈法、调查法",
     "常用审计方法包括"
   ],
-  "key_points": "",
+  "key_points": "- 常用审计方法：**访谈法、调查法、检查法、观察法、测试法、程序代码检查法**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

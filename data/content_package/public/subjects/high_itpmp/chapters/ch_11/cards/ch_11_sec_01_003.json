@@ -6,7 +6,7 @@
   "title": "成本类型",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 76,
+  "estimated_read_seconds": 32,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 3,
@@ -17,7 +17,7 @@
     "章节核心考点",
     "成本类型"
   ],
-  "key_points": "- **沉没成本**不应影响当前投资决策。\n- **直接成本**归属单个项目，**间接成本**由多个项目分摊。",
+  "key_points": "- 成本类型重点区分：**可变/固定**、**直接/间接**、**机会/沉没**。",
   "mnemonics": "",
   "warnings": "已人工修复 P0 OCR/标题/重点标记问题。",
   "prerequisite_point_ids": [

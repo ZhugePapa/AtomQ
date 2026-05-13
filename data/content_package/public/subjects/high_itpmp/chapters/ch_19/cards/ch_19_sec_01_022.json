@@ -6,7 +6,7 @@
   "title": "定义配置管理数据库范围、配置项属性、配置项之",
   "card_type": "definition",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 22,
@@ -15,7 +15,6 @@
   "tags": [
     "配置与变更管理",
     "配置管理",
-    "定义配置管理数据库范围、配置项属",
     "定义配置管理数据库范围、配置项属"
   ],
   "key_points": "",

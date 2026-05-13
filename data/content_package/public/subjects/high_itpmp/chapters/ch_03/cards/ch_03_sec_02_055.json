@@ -6,7 +6,7 @@
   "title": "IT审计风险主要包括固有风险、控制风险、检查",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 55,
@@ -15,8 +15,7 @@
   "tags": [
     "信息系统治理",
     "IT审计",
-    "IT审计风险主要包括固有风险、",
-    "IT审计风险主要包括固有风险、控",
+    "IT审计风险主要包括固有风险",
     "IT审计风险主要包括固有风险、控"
   ],
   "key_points": "",

@@ -3,23 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_19",
   "section_id": "sec_01",
-  "title": "配置库可以分开发库、受控库、产品库3种",
+  "title": "配置库分类",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 90,
-  "has_key_content": false,
+  "estimated_read_seconds": 31,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 16,
   "content_file": "ch_19_sec_01_016.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_19/cards/ch_19_sec_01_016.md",
   "tags": [
-    "配置与变更管理",
     "配置管理",
-    "配置库可以分开发库、受控库、产品",
-    "配置库可以分开发库、受控库、产品"
+    "配置库",
+    "开发库",
+    "受控库",
+    "产品库"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 配置库三类：**开发库、受控库、产品库**。",
+  "mnemonics": "开发可改，受控走流程，产品基本不改。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "015"

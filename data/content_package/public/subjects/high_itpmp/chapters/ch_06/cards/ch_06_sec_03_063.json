@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_06",
   "section_id": "sec_03",
-  "title": "(瀑布型、计划驱动)一已经充分了解并明确确定",
+  "title": "预测型与迭代型生命周期",
   "card_type": "process",
   "difficulty": 3,
-  "estimated_read_seconds": 72,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 63,
@@ -14,12 +14,11 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_03_063.md",
   "tags": [
     "项目管理概论",
-    "价值驱动的项目管理知识体系",
-    "开发生命周期可以是：预测型、迭代",
-    "(瀑布型、计划驱动)一已经充分了",
-    "(瀑布型、计划驱动)一已经充分了"
+    "生命周期",
+    "预测型",
+    "迭代型"
   ],
-  "key_points": "",
+  "key_points": "- 预测型：需求清晰、范围稳定；迭代型：通过多轮反馈反复完善。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

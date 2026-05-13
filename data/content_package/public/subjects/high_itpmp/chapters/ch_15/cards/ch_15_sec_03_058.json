@@ -6,7 +6,7 @@
   "title": "管理整体项目风险入口、最小化单个项目威胁",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 95,
+  "estimated_read_seconds": 43,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 58,
@@ -15,7 +15,6 @@
   "tags": [
     "风险管理",
     "章节核心考点",
-    "管理整体项目风险入口、最小化单个",
     "管理整体项目风险入口、最小化单个"
   ],
   "key_points": "- **有效性的过程裁剪考虑**\n- **敏捷或适应型方法管理项目**",

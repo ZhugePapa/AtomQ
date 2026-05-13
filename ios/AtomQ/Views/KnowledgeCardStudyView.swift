@@ -1,5 +1,7 @@
 import SwiftUI
 
+private let directoryAccordionAnimation = Animation.easeInOut(duration: 0.26)
+
 struct KnowledgeCardStudyView: View {
     @Environment(\.dismiss) private var dismiss
 
@@ -224,12 +226,13 @@ struct KnowledgeCardStudyView: View {
     private func cardSwipeGesture(pageWidth: CGFloat) -> some Gesture {
         let dynamicDistanceThreshold = max(56, min(96, pageWidth * 0.18))
         let dynamicPredictedThreshold = max(84, min(140, pageWidth * 0.24))
+        let activationDistance: CGFloat = 18
 
         return DragGesture(minimumDistance: 8)
             .onChanged { value in
                 let horizontal = abs(value.translation.width)
                 let vertical = abs(value.translation.height)
-                guard horizontal > vertical, horizontal > 6, !isVerticalScrollActive else { return }
+                guard horizontal > vertical + 8, horizontal > activationDistance, !isVerticalScrollActive else { return }
                 if !isHorizontalPagingActive {
                     isHorizontalPagingActive = true
                 }
@@ -237,7 +240,10 @@ struct KnowledgeCardStudyView: View {
             .updating($interactiveCardOffsetX) { value, state, transaction in
                 let horizontal = value.translation.width
                 let vertical = value.translation.height
-                guard !isVerticalScrollActive, abs(horizontal) > abs(vertical) else { return }
+                guard
+                    !isVerticalScrollActive,
+                    abs(horizontal) > max(abs(vertical) + 8, activationDistance)
+                else { return }
                 transaction.animation = .interactiveSpring(response: 0.20, dampingFraction: 0.92)
                 state = dampedInteractiveOffset(horizontal)
             }
@@ -245,7 +251,10 @@ struct KnowledgeCardStudyView: View {
                 defer { isHorizontalPagingActive = false }
                 let horizontal = value.translation.width
                 let vertical = value.translation.height
-                guard !isVerticalScrollActive, abs(horizontal) > abs(vertical) else { return }
+                guard
+                    !isVerticalScrollActive,
+                    abs(horizontal) > max(abs(vertical) + 8, activationDistance)
+                else { return }
 
                 let predicted = value.predictedEndTranslation.width
                 let projectedExtra = predicted - horizontal
@@ -260,12 +269,12 @@ struct KnowledgeCardStudyView: View {
                 let resolved = abs(predicted) > abs(horizontal) ? predicted : horizontal
                 if resolved < 0 {
                     // left swipe -> next card
-                    withAnimation(.interactiveSpring(response: 0.26, dampingFraction: 0.86)) {
+                    withAnimation(.easeInOut(duration: 0.30)) {
                         goForwardCard()
                     }
                 } else {
                     // right swipe -> previous card
-                    withAnimation(.interactiveSpring(response: 0.26, dampingFraction: 0.86)) {
+                    withAnimation(.easeInOut(duration: 0.30)) {
                         goBackwardCard()
                     }
                 }
@@ -334,6 +343,145 @@ struct KnowledgeCardStudyView: View {
         }
     }
 
+    @ViewBuilder
+    private func visibleCardPages(visibleIndices: [Int], pageWidth: CGFloat) -> some View {
+        if visibleIndices.indices.contains(0) {
+            cardPage(at: visibleIndices[0], pageWidth: pageWidth)
+        }
+        if visibleIndices.indices.contains(1) {
+            cardPage(at: visibleIndices[1], pageWidth: pageWidth)
+        }
+        if visibleIndices.indices.contains(2) {
+            cardPage(at: visibleIndices[2], pageWidth: pageWidth)
+        }
+    }
+
+    private func cardPage(at idx: Int, pageWidth: CGFloat) -> some View {
+        let card = sectionCards[idx]
+        return VStack(spacing: 0) {
+            ZStack(alignment: .bottom) {
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(spacing: 16) {
+                        KnowledgeBodyCard(
+                            markdown: card.knowledgeMarkdown,
+                            focusHighlightVisible: focusHighlightVisible
+                        )
+
+                        if let keyPoints = card.keyPointsMarkdown {
+                            NoteCard(
+                                icon: "icon-target-04",
+                                iconStrokeColor: Token.fgBrand,
+                                iconBackground: Token.fgBrandSubtle,
+                                title: "高频考点",
+                                titleColor: Token.textBrand,
+                                markdown: keyPoints,
+                                focusHighlightVisible: focusHighlightVisible
+                            )
+                        }
+
+                        if let mnemonics = card.mnemonicsMarkdown {
+                            NoteCard(
+                                icon: "icon-stars-03",
+                                iconStrokeColor: Token.fgWarning,
+                                iconBackground: Token.fgWarningSubtle,
+                                title: "记忆口诀",
+                                titleColor: Token.textWarning,
+                                markdown: mnemonics,
+                                focusHighlightVisible: focusHighlightVisible
+                            )
+                        }
+
+                        HStack(spacing: 16) {
+                            Text(card.chipTitle)
+                                .font(.custom("PingFang SC", size: 14).weight(.medium))
+                                .foregroundStyle(Token.textBrand)
+                                .padding(.horizontal, 12)
+                                .frame(height: 32)
+                                .background(Token.fgBrandSubtle)
+                                .clipShape(Capsule())
+
+                            Spacer(minLength: 0)
+
+                            IconWrapper(
+                                name: "icon-star-01",
+                                outerWidth: 24,
+                                outerHeight: 24,
+                                innerInsets: IconInsets(top: 0.1096, right: 0.1073, bottom: 0.1416, left: 0.1073),
+                                imageInsets: IconInsets(top: -0.0556, right: -0.0530, bottom: -0.0556, left: -0.0530),
+                                cssVariables: ["stroke-0": Token.fgTertiary]
+                            )
+
+                            IconWrapper(
+                                name: "icon-dots-horizontal",
+                                outerWidth: 24,
+                                outerHeight: 24,
+                                innerInsets: IconInsets(top: 0.4583, right: 0.1667, bottom: 0.4583, left: 0.1667),
+                                imageInsets: IconInsets(top: -0.5000, right: -0.0625, bottom: -0.5000, left: -0.0625),
+                                cssVariables: ["stroke-0": Token.fgTertiary]
+                            )
+                        }
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.top, 8)
+                    .padding(.bottom, 24)
+                    .onGeometryChange(for: CGFloat.self) { proxy in
+                        proxy.frame(in: .scrollView).minY
+                    } action: { minY in
+                        guard idx == currentCardIndex else { return }
+                        if !hasActiveScrollSample {
+                            hasActiveScrollSample = true
+                            lastActiveScrollMinY = minY
+                            return
+                        }
+
+                        let delta = minY - lastActiveScrollMinY
+                        lastActiveScrollMinY = minY
+
+                        if delta > 0.5 {
+                            // Pulling down: reveal top bar immediately, not only at top.
+                            let revealStep = min(1, delta / max(1, topBarHeight)) * 1.6
+                            topBarCollapseProgress = max(0, topBarCollapseProgress - revealStep)
+                        } else {
+                            // Scrolling up / staying: follow absolute collapse progress.
+                            let progress = max(0, min(1, -minY / topBarHeight))
+                            topBarCollapseProgress = progress
+                        }
+                    }
+                }
+                .scrollBounceBehavior(.basedOnSize, axes: .vertical)
+                .scrollDisabled(isHorizontalPagingActive)
+                .simultaneousGesture(verticalScrollLockGesture)
+
+                LinearGradient(
+                    stops: [
+                        .init(color: Token.componentsAlpha0, location: 0.03125),
+                        .init(color: Token.componentsAlpha100, location: 0.796875),
+                    ],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .frame(height: 96)
+                .frame(maxWidth: .infinity, alignment: .bottom)
+                .allowsHitTesting(false)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+            BottomActions(
+                focusHighlightVisible: $focusHighlightVisible,
+                isCurrentCardMastered: idx == currentCardIndex
+                    ? isCurrentCardMastered
+                    : GuestUserLocalStore.isPointMastered(card.pointID),
+                onToggleCurrentCardMastered: {
+                    guard idx == currentCardIndex else { return }
+                    toggleCurrentCardMastered()
+                }
+            )
+        }
+        .frame(width: pageWidth)
+        .contentShape(Rectangle())
+        .allowsHitTesting(idx == currentCardIndex)
+    }
+
     var body: some View {
         ZStack {
             Token.bgCanvas
@@ -364,137 +512,11 @@ struct KnowledgeCardStudyView: View {
                     ZStack {
                         ZStack {
                             HStack(spacing: 0) {
-                                ForEach(visibleIndices, id: \.self) { idx in
-                                    let card = sectionCards[idx]
-                                    VStack(spacing: 0) {
-                                        ZStack(alignment: .bottom) {
-                                            ScrollView(.vertical, showsIndicators: false) {
-                                                VStack(spacing: 16) {
-                                                    KnowledgeBodyCard(
-                                                        markdown: card.knowledgeMarkdown,
-                                                        focusHighlightVisible: focusHighlightVisible
-                                                    )
-
-                                                    if let keyPoints = card.keyPointsMarkdown {
-                                                        NoteCard(
-                                                            icon: "icon-target-04",
-                                                            iconStrokeColor: Token.fgBrand,
-                                                            iconBackground: Token.fgBrandSubtle,
-                                                            title: "高频考点",
-                                                            titleColor: Token.textBrand,
-                                                            markdown: keyPoints,
-                                                            focusHighlightVisible: focusHighlightVisible
-                                                        )
-                                                    }
-
-                                                    if let mnemonics = card.mnemonicsMarkdown {
-                                                        NoteCard(
-                                                            icon: "icon-stars-03",
-                                                            iconStrokeColor: Token.fgWarning,
-                                                            iconBackground: Token.fgWarningSubtle,
-                                                            title: "记忆口诀",
-                                                            titleColor: Token.textWarning,
-                                                            markdown: mnemonics,
-                                                            focusHighlightVisible: focusHighlightVisible
-                                                        )
-                                                    }
-
-                                                    HStack(spacing: 16) {
-                                                        Text(card.chipTitle)
-                                                            .font(.custom("PingFang SC", size: 14).weight(.medium))
-                                                            .foregroundStyle(Token.textBrand)
-                                                            .padding(.horizontal, 12)
-                                                            .frame(height: 32)
-                                                            .background(Token.fgBrandSubtle)
-                                                            .clipShape(Capsule())
-
-                                                        Spacer(minLength: 0)
-
-                                                        IconWrapper(
-                                                            name: "icon-star-01",
-                                                            outerWidth: 24,
-                                                            outerHeight: 24,
-                                                            innerInsets: IconInsets(top: 0.1096, right: 0.1073, bottom: 0.1416, left: 0.1073),
-                                                            imageInsets: IconInsets(top: -0.0556, right: -0.0530, bottom: -0.0556, left: -0.0530),
-                                                            cssVariables: ["stroke-0": Token.fgTertiary]
-                                                        )
-
-                                                        IconWrapper(
-                                                            name: "icon-dots-horizontal",
-                                                            outerWidth: 24,
-                                                            outerHeight: 24,
-                                                            innerInsets: IconInsets(top: 0.4583, right: 0.1667, bottom: 0.4583, left: 0.1667),
-                                                            imageInsets: IconInsets(top: -0.5000, right: -0.0625, bottom: -0.5000, left: -0.0625),
-                                                            cssVariables: ["stroke-0": Token.fgTertiary]
-                                                        )
-                                                    }
-                                                }
-                                                .padding(.horizontal, 20)
-                                                .padding(.top, 8)
-                                                .padding(.bottom, 24)
-                                                .onGeometryChange(for: CGFloat.self) { proxy in
-                                                    proxy.frame(in: .scrollView).minY
-                                                } action: { minY in
-                                                    guard idx == currentCardIndex else { return }
-                                                    if !hasActiveScrollSample {
-                                                        hasActiveScrollSample = true
-                                                        lastActiveScrollMinY = minY
-                                                        return
-                                                    }
-
-                                                    let delta = minY - lastActiveScrollMinY
-                                                    lastActiveScrollMinY = minY
-
-                                                    if delta > 0.5 {
-                                                        // Pulling down: reveal top bar immediately, not only at top.
-                                                        let revealStep = min(1, delta / max(1, topBarHeight)) * 1.6
-                                                        topBarCollapseProgress = max(0, topBarCollapseProgress - revealStep)
-                                                    } else {
-                                                        // Scrolling up / staying: follow absolute collapse progress.
-                                                        let progress = max(0, min(1, -minY / topBarHeight))
-                                                        topBarCollapseProgress = progress
-                                                    }
-                                                }
-                                            }
-                                            .scrollDisabled(isHorizontalPagingActive)
-                                            .simultaneousGesture(verticalScrollLockGesture)
-
-                                            LinearGradient(
-                                                stops: [
-                                                    .init(color: Token.componentsAlpha0, location: 0.03125),
-                                                    .init(color: Token.componentsAlpha100, location: 0.796875),
-                                                ],
-                                                startPoint: .top,
-                                                endPoint: .bottom
-                                            )
-                                            .frame(height: 96)
-                                            .frame(maxWidth: .infinity, alignment: .bottom)
-                                            .allowsHitTesting(false)
-
-                                            // Tips are hidden for now by request.
-                                            // Text("TIPS：左右滑动可切换知识卡片") ...
-                                        }
-                                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-
-                                        BottomActions(
-                                            focusHighlightVisible: $focusHighlightVisible,
-                                            isCurrentCardMastered: idx == currentCardIndex
-                                                ? isCurrentCardMastered
-                                                : GuestUserLocalStore.isPointMastered(card.pointID),
-                                            onToggleCurrentCardMastered: {
-                                                guard idx == currentCardIndex else { return }
-                                                toggleCurrentCardMastered()
-                                            }
-                                        )
-                                    }
-                                    .frame(width: pageWidth)
-                                    .contentShape(Rectangle())
-                                    .allowsHitTesting(idx == currentCardIndex)
-                                }
+                                visibleCardPages(visibleIndices: visibleIndices, pageWidth: pageWidth)
                             }
                             .frame(width: pageWidth, alignment: .leading)
                             .offset(x: (-CGFloat(currentCardIndex - baseIndex) * pageWidth) + interactiveCardOffsetX)
-                            .animation(.interactiveSpring(response: 0.26, dampingFraction: 0.88), value: currentCardIndex)
+                            .animation(.easeInOut(duration: 0.30), value: currentCardIndex)
                         }
                     }
                     .simultaneousGesture(cardSwipeGesture(pageWidth: pageWidth))
@@ -777,10 +799,12 @@ private struct DirectorySheetOverlay: View {
                             selectedSectionID: selectedSectionID,
                             isExpanded: expandedChapterID == chapter.id,
                             onToggleExpand: {
-                                if expandedChapterID == chapter.id {
-                                    expandedChapterID = nil
-                                } else {
-                                    expandedChapterID = chapter.id
+                                withAnimation(directoryAccordionAnimation) {
+                                    if expandedChapterID == chapter.id {
+                                        expandedChapterID = nil
+                                    } else {
+                                        expandedChapterID = chapter.id
+                                    }
                                 }
                             },
                             onSelectSection: { section in
@@ -852,6 +876,9 @@ private struct DirectoryChapterRow: View {
     let isExpanded: Bool
     let onToggleExpand: () -> Void
     let onSelectSection: (KnowledgeDirectorySection) -> Void
+    private var expandedContentHeight: CGFloat {
+        CGFloat(chapter.sections.count) * 56
+    }
 
     var body: some View {
         VStack(spacing: 0) {
@@ -862,25 +889,21 @@ private struct DirectoryChapterRow: View {
                         .foregroundStyle(Token.textSecondary)
                         .frame(maxWidth: .infinity, alignment: .leading)
 
-                    IconWrapper(
-                        name: "icon-dir-chevron-left",
-                        outerWidth: 24,
-                        outerHeight: 24,
-                        innerInsets: IconInsets(top: 0.2500, right: 0.3750, bottom: 0.2500, left: 0.3750),
-                        imageInsets: IconInsets(top: -0.0833, right: -0.1667, bottom: -0.0833, left: -0.1667),
-                        cssVariables: ["stroke-0": Token.fgTertiary]
-                    )
-                    .rotationEffect(.degrees(isExpanded ? -90 : 0))
-                    .animation(.easeInOut(duration: 0.20), value: isExpanded)
+                    DirectoryChevronIcon(color: Token.fgTertiary)
+                        .frame(width: 24, height: 24)
+                        .rotationEffect(.degrees(isExpanded ? 90 : 0))
                 }
                 .padding(.horizontal, 20)
                 .frame(height: 56)
                 .contentShape(Rectangle())
             }
             .buttonStyle(DirectoryPressableRowStyle(pressedBackground: Token.bgSubtle))
+            .transaction { tx in
+                tx.animation = nil
+            }
 
-            if isExpanded {
-                ForEach(chapter.sections) { section in
+            VStack(spacing: 0) {
+                ForEach(chapter.sections.sorted(by: { $0.sortNo < $1.sortNo })) { section in
                     DirectorySectionRow(
                         title: section.title,
                         isSelected: section.id == selectedSectionID && chapter.id == selectedChapterID,
@@ -888,7 +911,30 @@ private struct DirectoryChapterRow: View {
                     )
                 }
             }
+            .frame(height: isExpanded ? expandedContentHeight : 0, alignment: .top)
+            .clipped()
+            .allowsHitTesting(isExpanded)
         }
+        .clipped()
+    }
+}
+
+private struct DirectoryChevronIcon: View {
+    let color: Color
+
+    var body: some View {
+        Canvas { context, size in
+            var path = Path()
+            path.move(to: CGPoint(x: size.width * 0.34, y: size.height * 0.24))
+            path.addLine(to: CGPoint(x: size.width * 0.62, y: size.height * 0.50))
+            path.addLine(to: CGPoint(x: size.width * 0.34, y: size.height * 0.76))
+            context.stroke(
+                path,
+                with: .color(color),
+                style: StrokeStyle(lineWidth: 2.0, lineCap: .round, lineJoin: .round)
+            )
+        }
+        .drawingGroup(opaque: false)
     }
 }
 

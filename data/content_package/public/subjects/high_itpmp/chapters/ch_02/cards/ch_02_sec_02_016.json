@@ -6,7 +6,7 @@
   "title": "关系型数据库支持事务的ACID原则",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 16,
@@ -16,7 +16,6 @@
     "信息技术发展",
     "存储和数据库",
     "存储技术",
-    "关系型数据库支持事务的ACID原",
     "关系型数据库支持事务的ACID原"
   ],
   "key_points": "- **关系型数据库支持事务的 ACID 原则**、**即原子性**、**一致性**、**隔离性**、**持久性**、**非关系型的**、**不保证遵循 ACID 原则的数据存储系统**\n- **这个视图中的统一逻辑接口来访问被整合**\n- **ACID**、**Linux**、**UNIX**、**常见的数据结构模型有三种**",

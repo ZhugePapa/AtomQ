@@ -6,7 +6,7 @@
   "title": "要点数据库管理系统必须根据用户或应用的授权来",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 130,
+  "estimated_read_seconds": 59,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 57,
@@ -15,7 +15,6 @@
   "tags": [
     "信息系统工程",
     "网络集成",
-    "要点数据库管理系统必须根据用户或",
     "要点数据库管理系统必须根据用户或"
   ],
   "key_points": "- **访问控制**、**备份**、**恢复以及一些专用的安**、**完整性约束来描述**、**在修改数据时**",

@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_01",
-  "title": "管理的过程大",
+  "title": "管理的过程",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 185,
+  "estimated_read_seconds": 88,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 3,
@@ -15,7 +15,7 @@
   "tags": [
     "进度管理",
     "章节核心考点",
-    "管理的过程大"
+    "管理的过程"
   ],
   "key_points": "- **计划日期的进度模型在整个项目期间保持**\n- **适应型方法或两种方法的混合**、**预测型方法**、**一系列技术**",
   "mnemonics": "",

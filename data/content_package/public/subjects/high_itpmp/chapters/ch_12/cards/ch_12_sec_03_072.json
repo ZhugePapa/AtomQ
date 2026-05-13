@@ -3,11 +3,11 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_12",
   "section_id": "sec_03",
-  "title": "直方图",
+  "title": "质量工具对照",
   "card_type": "process",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 72,
   "content_file": "ch_12_sec_03_072.md",
@@ -18,7 +18,7 @@
     "提高过程和活动的效率与效果",
     "直方图"
   ],
-  "key_points": "- **结构化工具、数据收集**\n- **执行组织的管理层、项目发起人、甚至是客户、项目经理、项目团队**\n- **whg、wby- **核对时间",
+  "key_points": "- 因果图又称**鱼骨图、Why-Why 分析图、石川图**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

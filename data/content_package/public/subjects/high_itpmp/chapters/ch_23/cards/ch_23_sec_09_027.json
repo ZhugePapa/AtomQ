@@ -6,7 +6,7 @@
   "title": "流程检查方法主要有流程稽查、流程绩效评估、满",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 79,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 27,
@@ -15,10 +15,9 @@
   "tags": [
     "组织通用管理",
     "流程评价",
-    "流程检查方法主要有流程稽查、流程",
     "流程检查方法主要有流程稽查、流程"
   ],
-  "key_points": "",
+  "key_points": "- 流程检查方法：**流程稽查、流程绩效评估、满意度评估、流程审计**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_03",
-  "title": "规划项目管理计划(需求管理计划、进度管理计划",
+  "title": "识别风险 ITTO",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 69,
@@ -14,11 +14,10 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_03_069.md",
   "tags": [
     "风险管理",
-    "章节核心考点",
-    "规划项目管理计划(需求管理计划、",
-    "规划项目管理计划(需求管理计划、"
+    "识别风险",
+    "ITTO"
   ],
-  "key_points": "",
+  "key_points": "- 识别风险核心输出：**风险登记册**和**风险报告**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -6,7 +6,7 @@
   "title": "开发方法和生命周期绩效域的检查方法",
   "card_type": "process",
   "difficulty": 1,
-  "estimated_read_seconds": 91,
+  "estimated_read_seconds": 37,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 50,
@@ -15,10 +15,9 @@
   "tags": [
     "项目绩效域",
     "执行效果检查",
-    "开发方法和生命周期绩效域的检查方",
     "开发方法和生命周期绩效域的检查方"
   ],
-  "key_points": "- **适宜的开发方法(预测型、混合型或适应、多个项目**\n- **开发方法：如果项目具有多个可交付物**、**适当的退出标准适宜的交付节奏**、**开发方法不同**、**且交付节奏**",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

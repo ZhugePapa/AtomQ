@@ -6,7 +6,7 @@
   "title": "CMMI将所有收集并论证过的最佳实践按逻辑归",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 36,
@@ -15,7 +15,6 @@
   "tags": [
     "高级项目管理",
     "项目管理实践模型",
-    "CMMI将所有收集并论证过的最佳",
     "CMMI将所有收集并论证过的最佳"
   ],
   "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| **(1)行动** | 用于生产和提供优秀解决方案的能力域.(2)管理：用于策划和管理解决方案实施的能力域。 |\n| **(3)使能** | 用于支持解决方案实施和交付的能力域。 |\n| **(4)提高** | 用于维持和提高效率效能的能力域。 |",

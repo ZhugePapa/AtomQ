@@ -6,7 +6,7 @@
   "title": "在复杂项目中",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 5,
@@ -17,7 +17,7 @@
     "管理基础",
     "在复杂项目中"
   ],
-  "key_points": "- **卖方**\n- **买方**",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

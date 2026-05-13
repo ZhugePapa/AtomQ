@@ -3,21 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_13",
   "section_id": "sec_01",
-  "title": "在变更实际发生时对其进行管理等",
+  "title": "控制资源的数据分析与问题解决",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 127,
-  "has_key_content": false,
+  "estimated_read_seconds": 32,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 62,
   "content_file": "ch_13_sec_01_062.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_13/cards/ch_13_sec_01_062.md",
   "tags": [
     "资源管理",
-    "章节核心考点",
-    "在变更实际发生时对其进行管理等"
+    "控制资源",
+    "变更控制"
   ],
-  "key_points": "",
+  "key_points": "- 控制资源的核心是：**发现资源使用偏差并纠正**。\n- 资源变更如果影响基准，需要走**实施整体变更控制**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

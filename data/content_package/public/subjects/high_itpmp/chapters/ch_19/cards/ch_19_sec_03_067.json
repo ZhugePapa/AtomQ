@@ -6,7 +6,7 @@
   "title": "信息系统项目中",
   "card_type": "definition",
   "difficulty": 3,
-  "estimated_read_seconds": 83,
+  "estimated_read_seconds": 40,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 67,
@@ -17,7 +17,7 @@
     "变更管理",
     "信息系统项目中"
   ],
-  "key_points": "- **人、变更请求者、变更实施者和变更顾问、CCB- **项目经理在变更中的作用是\n- **项目经理在变更中的作用是**",
+  "key_points": "- **CCB**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

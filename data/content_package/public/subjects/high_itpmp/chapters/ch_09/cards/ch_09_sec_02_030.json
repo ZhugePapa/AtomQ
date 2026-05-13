@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_09",
   "section_id": "sec_02",
-  "title": "确定如何审批和维护范围基准",
+  "title": "范围基准审批与维护",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 30,
@@ -14,10 +14,10 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_02_030.md",
   "tags": [
     "范围管理",
-    "章节核心考点",
-    "确定如何审批和维护范围基准"
+    "范围基准",
+    "变更控制"
   ],
-  "key_points": "",
+  "key_points": "- 范围基准变更必须经过**正式变更控制程序**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

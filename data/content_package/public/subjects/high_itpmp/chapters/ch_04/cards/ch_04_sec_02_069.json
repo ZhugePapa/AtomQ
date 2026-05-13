@@ -6,7 +6,7 @@
   "title": "组织的数据质量能力域通常包括数据质量需求、数",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 69,
@@ -15,10 +15,9 @@
   "tags": [
     "信息系统管理",
     "管理要点",
-    "组织的数据质量能力域通常包括数据",
     "组织的数据质量能力域通常包括数据"
   ],
-  "key_points": "",
+  "key_points": "- 数据质量能力域：**数据质量需求、数据质量检查、数据质量分析、数据质量提升**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

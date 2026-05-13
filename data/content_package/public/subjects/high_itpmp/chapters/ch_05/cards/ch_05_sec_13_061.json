@@ -6,7 +6,7 @@
   "title": "软件构件标准",
   "card_type": "comparison",
   "difficulty": 2,
-  "estimated_read_seconds": 105,
+  "estimated_read_seconds": 40,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 61,
@@ -17,7 +17,7 @@
     "软件集成",
     "构件标准"
   ],
-  "key_points": "- 必认标准：**CORBA**、**COM / DCOM / COM+**、**.NET**、**J2EE**。\n- **COM+** 更强调与操作系统服务结合；**J2EE** 面向企业级应用架构。",
+  "key_points": "- 软件构件标准：**CORBA、COM/DCOM/COM+、.NET、J2EE**。",
   "mnemonics": "",
   "warnings": "已人工修复 OCR 污染和坏重点标记。",
   "prerequisite_point_ids": [

@@ -6,7 +6,7 @@
   "title": "ISSE-CMM主要适用于工程组织、获取组织",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 74,
@@ -15,7 +15,6 @@
   "tags": [
     "信息系统工程",
     "安全工程",
-    "ISSE-CMM主要适用于工程组",
     "ISSE-CMM主要适用于工程组"
   ],
   "key_points": "",

@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_01",
-  "title": "信息系统体系架构",
+  "title": "信息系统体系架构模式",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 128,
+  "estimated_read_seconds": 35,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 7,
@@ -17,7 +17,7 @@
     "管理方法",
     "信息系统体系架构"
   ],
-  "key_points": "- **IT- **不同位置的服务器、笔记本电脑、智能手机、PC- **足够的处理能力来执行所需的许多服务**\n- **Web、不同位置的服务器、笔记本电脑、智能手机、PC、足够的处理能力来执行所需的许多服务**\n- **IT- **Web",
+  "key_points": "- 信息系统架构模式：**集中式、分布式、基于服务器、面向服务、基于 Web**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

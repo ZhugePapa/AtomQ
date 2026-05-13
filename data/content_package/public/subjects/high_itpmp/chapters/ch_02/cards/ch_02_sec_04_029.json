@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_04",
-  "title": "虚拟化技术与多任务以及超线程技术是完全不同的",
+  "title": "虚拟化、多任务与超线程",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 52,
+  "estimated_read_seconds": 34,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 29,
@@ -14,11 +14,11 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_04_029.md",
   "tags": [
     "信息技术发展",
-    "新一代信息技术及应用",
-    "虚拟化技术与多任务以及超线程技术",
-    "虚拟化技术与多任务以及超线程技术"
+    "虚拟化",
+    "超线程",
+    "云存储"
   ],
-  "key_points": "",
+  "key_points": "- 多任务是**一个系统跑多个程序**；虚拟化是**一台机器跑多个虚拟环境**；超线程是**一个物理 CPU 模拟多个逻辑处理单元**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

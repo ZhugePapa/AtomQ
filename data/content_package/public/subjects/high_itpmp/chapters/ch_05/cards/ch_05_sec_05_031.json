@@ -6,7 +6,7 @@
   "title": "能够有效缩短提交代码到正式部署上线的时间",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 31,
@@ -16,7 +16,6 @@
     "信息系统工程",
     "部署交付",
     "持续部署",
-    "能够有效缩短提交代码到正式部署上",
     "能够有效缩短提交代码到正式部署上"
   ],
   "key_points": "",

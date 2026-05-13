@@ -3,11 +3,11 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_05",
-  "title": "成熟度模型CSMM模型由4个能力域、20个能",
+  "title": "CSMM 成熟度模型结构",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 45,
-  "has_key_content": false,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 36,
   "content_file": "ch_05_sec_05_036.md",
@@ -15,10 +15,9 @@
   "tags": [
     "信息系统工程",
     "部署交付",
-    "成熟度模型CSMM模型由4个能力",
     "成熟度模型CSMM模型由4个能力"
   ],
-  "key_points": "",
+  "key_points": "- CSMM 结构：**4 个能力域、20 个能力子域、161 个能力要求**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -6,7 +6,7 @@
   "title": "数据集成是将参与数据库的有关信息在逻辑上集成",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 183,
+  "estimated_read_seconds": 33,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 59,
@@ -15,10 +15,9 @@
   "tags": [
     "信息系统工程",
     "数据集成",
-    "数据集成是将参与数据库的有关信息",
     "数据集成是将参与数据库的有关信息"
   ],
-  "key_points": "",
+  "key_points": "- 数据集成四层次：**基本数据集成、多级视图集成、模式集成、多粒度数据集成**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

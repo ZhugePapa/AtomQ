@@ -6,7 +6,7 @@
   "title": "可能以逐级审批形式或团队会议的形式参与变更的",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 73,
@@ -15,7 +15,6 @@
   "tags": [
     "配置与变更管理",
     "变更管理",
-    "可能以逐级审批形式或团队会议的形",
     "可能以逐级审批形式或团队会议的形"
   ],
   "key_points": "- **记录与交变更请求单**",

@@ -6,7 +6,7 @@
   "title": "批准的变更请求",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 99,
+  "estimated_read_seconds": 42,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 34,
@@ -18,7 +18,7 @@
     "批准的变更请求•批准的变更请求是",
     "批准的变更请求"
   ],
-  "key_points": "- **经项目经理审查**、**批准的变更请求**、**CCB**、**评审手段来决定项目基准是否需要变更**、**项目所在组织管理层的决策人员**、**对变更进行决策**、**用户**\n- **CCB- **评审手段来决定项目基准是否需要变更、项目所在组织管理层的决策人员、对变更进行决策、CCB、用户",
+  "key_points": "- **CCB**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

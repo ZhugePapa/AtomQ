@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_02",
-  "title": "非关系型数据(NoSQL)组成",
+  "title": "NoSQL 常见类型",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 36,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 14,
@@ -14,12 +14,11 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_014.md",
   "tags": [
     "信息技术发展",
-    "存储和数据库",
-    "存储技术",
-    "非关系型数据(NoSQL)组成"
+    "NoSQL",
+    "数据库"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- NoSQL 常见四类：**键值、文档、列族、图**。",
+  "mnemonics": "键文列图：键值、文档、列族、图。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "013"

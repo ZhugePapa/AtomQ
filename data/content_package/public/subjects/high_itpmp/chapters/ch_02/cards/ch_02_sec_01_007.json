@@ -6,7 +6,7 @@
   "title": "第五代移动通信技术第五代移动通信技术(5G)",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 120,
+  "estimated_read_seconds": 58,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 7,
@@ -15,7 +15,6 @@
   "tags": [
     "信息技术发展",
     "计算机网络",
-    "第五代移动通信技术第五代移动通信",
     "第五代移动通信技术第五代移动通信"
   ],
   "key_points": "- **短帧、快速反馈、多层/多站数据重传等**\n- **OFDMA**、**MIMO**",

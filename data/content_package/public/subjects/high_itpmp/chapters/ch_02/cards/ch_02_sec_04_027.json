@@ -6,7 +6,7 @@
   "title": "云计算",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 132,
+  "estimated_read_seconds": 61,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 27,
@@ -17,7 +17,7 @@
     "新一代信息技术及应用",
     "云计算"
   ],
-  "key_points": "- **宽带网络接入\"云\"并获得服务**\n- **基础设施即服务(IaaS)、平台即服务(PaaS)**\n- **SaaS- **Web",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

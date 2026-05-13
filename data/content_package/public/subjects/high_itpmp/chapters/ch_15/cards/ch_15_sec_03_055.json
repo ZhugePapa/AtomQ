@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_03",
-  "title": "管理的过程大",
+  "title": "管理的过程",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 55,
@@ -15,7 +15,7 @@
   "tags": [
     "风险管理",
     "章节核心考点",
-    "管理的过程大"
+    "管理的过程"
   ],
   "key_points": "",
   "mnemonics": "",

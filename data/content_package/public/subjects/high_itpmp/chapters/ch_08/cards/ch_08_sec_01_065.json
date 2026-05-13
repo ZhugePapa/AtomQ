@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_08",
   "section_id": "sec_01",
-  "title": "制定项目",
+  "title": "制定项目管理计划",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 65,
@@ -14,10 +14,9 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_065.md",
   "tags": [
     "整合管理",
-    "章节核心考点",
-    "制定项目"
+    "项目管理计划"
   ],
-  "key_points": "",
+  "key_points": "- 制定项目管理计划的关键是**整合各子计划和基准**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

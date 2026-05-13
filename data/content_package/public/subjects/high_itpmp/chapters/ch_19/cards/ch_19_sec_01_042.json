@@ -6,7 +6,7 @@
   "title": "找出各配置项间不匹配或不相容的现象",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 42,
@@ -15,7 +15,6 @@
   "tags": [
     "配置与变更管理",
     "配置管理",
-    "找出各配置项间不匹配或不相容的现",
     "找出各配置项间不匹配或不相容的现"
   ],
   "key_points": "",

@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_02",
-  "title": "元数据析",
+  "title": "数据战略实施工作要点",
   "card_type": "definition",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 25,
   "content_file": "ch_04_sec_02_025.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_025.md",
   "tags": [
     "信息系统管理",
-    "管理要点",
-    "数据管理能力成熟度评估模型DCM",
-    "元数据析"
+    "数据战略",
+    "实施路径"
   ],
-  "key_points": "",
+  "key_points": "- 数据战略实施抓：**评估准则、现状评估、差距分析、实施路径、保障计划、任务实施、过程监控**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

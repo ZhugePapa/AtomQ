@@ -3,22 +3,20 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_03",
-  "title": "导)",
+  "title": "实施风险应对",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 84,
   "content_file": "ch_15_sec_03_084.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_03_084.md",
   "tags": [
     "风险管理",
-    "章节核心考点",
-    "项目文件(更新)大风险报告内",
-    "导)"
+    "实施风险应对"
   ],
-  "key_points": "",
+  "key_points": "- 实施风险应对 = 把已批准的风险应对计划**执行落地**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

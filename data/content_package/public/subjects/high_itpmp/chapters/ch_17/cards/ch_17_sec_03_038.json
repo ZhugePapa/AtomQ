@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_17",
   "section_id": "sec_03",
-  "title": "数据表现大",
+  "title": "数据表现",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 38,
@@ -15,7 +15,7 @@
   "tags": [
     "干系人管理",
     "章节核心考点",
-    "数据表现大"
+    "数据表现"
   ],
   "key_points": "",
   "mnemonics": "",

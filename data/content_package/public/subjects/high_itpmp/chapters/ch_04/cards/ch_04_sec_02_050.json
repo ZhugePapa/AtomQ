@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_02",
-  "title": "GB/T22239《信息安全技术网络安全等级",
+  "title": "网络安全等级保护五级",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 146,
+  "estimated_read_seconds": 37,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 50,
@@ -14,11 +14,10 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_050.md",
   "tags": [
     "信息系统管理",
-    "管理要点",
-    "GB/T22239《信息安全技术",
-    "GB/T22239《信息安全技术"
+    "等级保护",
+    "网络安全"
   ],
-  "key_points": "",
+  "key_points": "- 等保五级：级别越高，系统受破坏后的影响越严重；第五级对应**特别严重损害国家安全**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

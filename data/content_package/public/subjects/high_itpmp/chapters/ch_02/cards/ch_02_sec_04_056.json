@@ -6,7 +6,7 @@
   "title": "数据仓库是一个面向主题的、集成的、非易失的且",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 56,
@@ -15,7 +15,6 @@
   "tags": [
     "信息技术发展",
     "新一代信息技术及应用",
-    "数据仓库是一个面向主题的、集成的",
     "数据仓库是一个面向主题的、集成的"
   ],
   "key_points": "",

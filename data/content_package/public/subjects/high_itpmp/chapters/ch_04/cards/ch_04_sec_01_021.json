@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_01",
-  "title": "优化和持续改进基于有效的变更管理",
+  "title": "六西格玛 DMAIC 与 DMADV",
   "card_type": "definition",
   "difficulty": 2,
-  "estimated_read_seconds": 145,
+  "estimated_read_seconds": 43,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 21,
@@ -17,7 +17,7 @@
     "管理方法",
     "优化和持续改进基于有效的变更管理"
   ],
-  "key_points": "- **Control**、**Nerify**、**分析(Analysis**、**Improve**、**Desi**、**度量(Measure**、**DMAIC**、**DMADV**",
+  "key_points": "| 方法 | 阶段 |\n|:---|:---|\n| **DMAIC** | Define、Measure、Analyze、Improve、Control |\n| **DMADV** | Define、Measure、Analyze、Design、Verify |",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

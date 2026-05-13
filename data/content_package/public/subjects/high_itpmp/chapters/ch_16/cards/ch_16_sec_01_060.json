@@ -6,7 +6,7 @@
   "title": "数据分析",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 161,
+  "estimated_read_seconds": 71,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 60,
@@ -17,7 +17,7 @@
     "管理基础",
     "数据分析"
   ],
-  "key_points": "- **确定工作包提前或落后于进度计划、是否存在资源或质量问题、超出或低于预算**\n- **EAC、其授权的采购管理员、采购关闭**\n- **在采购管理计划中**\n- **EAC- **其授权的采购管理员、采购关闭",
+  "key_points": "- **确定工作包提前或落后于进度计划、超出或低于预算**",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

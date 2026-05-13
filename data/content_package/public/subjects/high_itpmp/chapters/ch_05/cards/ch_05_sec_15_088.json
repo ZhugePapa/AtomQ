@@ -3,22 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_15",
-  "title": "在SD中",
+  "title": "高内聚低耦合",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
-  "has_key_content": false,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 88,
   "content_file": "ch_05_sec_15_088.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_15_088.md",
   "tags": [
     "信息系统工程",
-    "安全工程",
-    "在SD中"
+    "软件设计",
+    "高内聚",
+    "低耦合"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 软件设计基本原则：**高内聚、低耦合**。",
+  "mnemonics": "内聚要高，耦合要低。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "087"

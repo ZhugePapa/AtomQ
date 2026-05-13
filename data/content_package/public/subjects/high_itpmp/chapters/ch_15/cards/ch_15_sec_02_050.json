@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_02",
-  "title": "敏感性分有助于确定哪些单个项目风险或不确定性",
+  "title": "敏感性分析",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 50,
   "content_file": "ch_15_sec_02_050.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_02_050.md",
   "tags": [
     "风险管理",
-    "章节核心考点",
-    "敏感性分有助于确定哪些单个项目风",
-    "敏感性分有助于确定哪些单个项目风"
+    "敏感性分析",
+    "龙卷风图"
   ],
-  "key_points": "",
+  "key_points": "- 敏感性分析看哪个因素对结果影响最大，常用**龙卷风图**表现。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

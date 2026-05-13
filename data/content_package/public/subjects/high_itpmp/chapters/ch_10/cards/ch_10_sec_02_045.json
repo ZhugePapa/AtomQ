@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_02",
-  "title": "例如",
+  "title": "强制性依赖与选择性依赖",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
-  "has_key_content": true,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 45,
   "content_file": "ch_10_sec_02_045.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_02_045.md",
   "tags": [
     "进度管理",
-    "章节核心考点",
-    "流入(流出)同一节点的活动",
-    "例如"
+    "依赖关系",
+    "软逻辑"
   ],
-  "key_points": "",
+  "key_points": "- 强制性依赖不能随意改变；选择性依赖也叫**软逻辑**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

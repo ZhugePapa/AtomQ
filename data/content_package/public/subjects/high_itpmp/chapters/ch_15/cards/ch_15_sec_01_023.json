@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_15",
   "section_id": "sec_01",
-  "title": "蟹0.50中",
+  "title": "概率和影响矩阵",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 23,
@@ -14,10 +14,10 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_01_023.md",
   "tags": [
     "风险管理",
-    "章节核心考点",
-    "蟹0.50中"
+    "概率和影响矩阵",
+    "风险优先级"
   ],
-  "key_points": "",
+  "key_points": "- 概率和影响矩阵用于给**单个项目风险**排优先级。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -6,7 +6,7 @@
   "title": "在采购过程中",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 42,
@@ -18,7 +18,7 @@
     "拟使用的预审合格的卖方等",
     "在采购过程中"
   ],
-  "key_points": "- 在采购过程中，应根据需要对工作说明书进行修订，直到它成为所签协议的一部分。对于服务采购，可能会用\"工作大纲(**TOR**)\"这个术语。\n- 招标文件太；招标文件用于向潜在卖方征求建议书。\n- 招标文件可以是信息邀请书、报价邀请书、建议邀请书，或其他适当的采购文件。",
+  "key_points": "",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

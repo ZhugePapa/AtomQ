@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_15",
-  "title": "第一级初始",
+  "title": "成熟度 1 级与 2 级",
   "card_type": "definition",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 137,
@@ -14,11 +14,10 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_15_137.md",
   "tags": [
     "信息系统工程",
-    "安全工程",
-    "CMMI成熟度",
-    "第一级初始"
+    "能力成熟度",
+    "CSMM"
   ],
-  "key_points": "",
+  "key_points": "- 1级依赖个人和基本执行；2级开始按项目规范进行管理。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

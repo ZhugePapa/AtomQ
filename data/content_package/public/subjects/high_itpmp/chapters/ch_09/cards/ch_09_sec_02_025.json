@@ -6,7 +6,7 @@
   "title": "每次迭代中未完项(包括产品需求和用户故事)",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 25,
@@ -16,7 +16,6 @@
     "范围管理",
     "章节核心考点",
     "通过确认每个可交付成果来提高最终",
-    "每次迭代中未完项(包括产品需求和",
     "每次迭代中未完项(包括产品需求和"
   ],
   "key_points": "- 每次迭代中未完项(包括**产品需求**和**用户故事)**\n- 范围管理计划需求管理计划\n- 需求文件需求跟踪矩阵监控",

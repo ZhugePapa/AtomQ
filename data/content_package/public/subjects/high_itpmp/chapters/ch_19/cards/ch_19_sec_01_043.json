@@ -6,7 +6,7 @@
   "title": "确认配置项已在所要求的质量控制审核之后纳入基",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 43,
@@ -15,7 +15,6 @@
   "tags": [
     "配置与变更管理",
     "配置管理",
-    "确认配置项已在所要求的质量控制审",
     "确认配置项已在所要求的质量控制审"
   ],
   "key_points": "",

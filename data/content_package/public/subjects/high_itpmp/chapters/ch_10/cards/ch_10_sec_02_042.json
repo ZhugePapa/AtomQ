@@ -6,7 +6,7 @@
   "title": "网络图中每一活动和每一事件都必须有唯一的一个",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 42,
@@ -15,7 +15,6 @@
   "tags": [
     "进度管理",
     "章节核心考点",
-    "网络图中每一活动和每一事件都必须",
     "网络图中每一活动和每一事件都必须"
   ],
   "key_points": "",

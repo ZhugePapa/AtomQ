@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_02",
-  "title": "智能运维能力平台通常具备数据管理、分析决策、",
+  "title": "智能运维能力平台通常具备数据管理、分析决策",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 76,
@@ -15,7 +15,6 @@
   "tags": [
     "信息系统管理",
     "管理要点",
-    "智能运维能力平台通常具备数据管理",
     "智能运维能力平台通常具备数据管理"
   ],
   "key_points": "",

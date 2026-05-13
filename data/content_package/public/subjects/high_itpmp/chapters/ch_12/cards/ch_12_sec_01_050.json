@@ -6,7 +6,7 @@
   "title": "展示了引发缺陷的一系列步骤是一种展示数字数据",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 110,
+  "estimated_read_seconds": 60,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 50,
@@ -15,7 +15,6 @@
   "tags": [
     "质量管理",
     "章节核心考点",
-    "展示了引发缺陷的一系列步骤是一种",
     "展示了引发缺陷的一系列步骤是一种"
   ],
   "key_points": "- **展示数字数据的条形图**\n- **PMO**",

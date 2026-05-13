@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_09",
   "section_id": "sec_02",
-  "title": "范围基准",
+  "title": "范围基准、工作包与控制账户",
   "card_type": "formula",
   "difficulty": 3,
-  "estimated_read_seconds": 149,
+  "estimated_read_seconds": 37,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 51,
@@ -14,12 +14,12 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_02_051.md",
   "tags": [
     "范围管理",
-    "章节核心考点",
-    "范围基准：是经过批准的范围说明书",
-    "范围基准"
+    "范围基准",
+    "WBS",
+    "工作包"
   ],
-  "key_points": "- **正式的变更控制程序才能进行变更、范围基准、WBS、低于控制账户而高于工作包的工作分解结**\n- **WBS- **低于控制账户而高于工作包的工作分解结",
-  "mnemonics": "",
+  "key_points": "- 范围基准 = **范围说明书 + WBS + WBS 词典**。",
+  "mnemonics": "范 W 典：范围说明书、WBS、WBS 词典。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "050"

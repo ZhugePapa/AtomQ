@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_23",
   "section_id": "sec_13",
-  "title": "知识管理的过程",
+  "title": "知识管理过程",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 34,
@@ -14,11 +14,11 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_23/cards/ch_23_sec_13_034.md",
   "tags": [
     "组织通用管理",
-    "知识管理过程",
-    "知识管理的过程"
+    "知识管理",
+    "过程"
   ],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 知识管理过程：**获取与收集、组织与存储、交流与共享、转移与应用**。",
+  "mnemonics": "获组交流转：获取、组织、交流、转移。",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "033"

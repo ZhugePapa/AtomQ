@@ -6,7 +6,7 @@
   "title": "需求过程主要包括需求取、需求分析、需求规格说",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 81,
@@ -15,7 +15,6 @@
   "tags": [
     "信息系统工程",
     "安全工程",
-    "需求过程主要包括需求取、需求分析",
     "需求过程主要包括需求取、需求分析"
   ],
   "key_points": "",
