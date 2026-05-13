@@ -3,7 +3,7 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_15",
-  "title": "标的达成",
+  "title": "高成熟度目标达成",
   "card_type": "concept",
   "difficulty": 1,
   "estimated_read_seconds": 30,
@@ -14,10 +14,10 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_15_144.md",
   "tags": [
     "信息系统工程",
-    "安全工程",
-    "标的达成"
+    "能力成熟度",
+    "持续优化"
   ],
-  "key_points": "",
+  "key_points": "- 高成熟度关注：**量化管理、持续优化、组织目标稳定达成**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

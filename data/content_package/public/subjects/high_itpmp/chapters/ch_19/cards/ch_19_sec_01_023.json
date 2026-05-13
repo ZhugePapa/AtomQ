@@ -17,7 +17,7 @@
     "配置管理",
     "评估配置管理过程并持续改进"
   ],
-  "key_points": "",
+  "key_points": "- 配置管理过程需要定期评估并持续改进，确保配置控制有效。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

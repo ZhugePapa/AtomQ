@@ -18,7 +18,7 @@
     "经验教训登记册、风险登记",
     "因果图表现"
   ],
-  "key_points": "",
+  "key_points": "- 因果图用于分析问题原因，也称鱼骨图或石川图。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

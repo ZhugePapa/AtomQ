@@ -25,6 +25,9 @@ struct KnowledgeDirectorySection: Identifiable, Equatable {
 }
 
 enum KnowledgeCardDataStore {
+    private static var cachedDirectoryTree: [KnowledgeDirectoryChapter]?
+    private static var cachedSectionCards: [String: [KnowledgeCardStudyContent]] = [:]
+
     static func loadStudyContent(
         chapterID: String = "ch_01",
         sectionID: String = "sec_01"
@@ -47,7 +50,13 @@ enum KnowledgeCardDataStore {
         chapterID: String = "ch_01",
         sectionID: String = "sec_01"
     ) throws -> [KnowledgeCardStudyContent] {
-        try loadSectionCardsFromDataSources(chapterID: chapterID, sectionID: sectionID)
+        let cacheKey = "\(chapterID)|\(sectionID)"
+        if let cached = cachedSectionCards[cacheKey] {
+            return cached
+        }
+        let cards = try loadSectionCardsFromDataSources(chapterID: chapterID, sectionID: sectionID)
+        cachedSectionCards[cacheKey] = cards
+        return cards
     }
 
     static func refreshFreeContentAndLoadSectionCards(
@@ -55,16 +64,28 @@ enum KnowledgeCardDataStore {
         sectionID: String = "sec_01"
     ) async throws -> [KnowledgeCardStudyContent] {
         try await ContentPackageRemoteStore.refreshFreeContentRequired()
+        invalidateCache()
         return try loadSectionCards(chapterID: chapterID, sectionID: sectionID)
     }
 
     static func loadDirectoryTree() throws -> [KnowledgeDirectoryChapter] {
-        try loadDirectoryTreeFromDataSources()
+        if let cached = cachedDirectoryTree {
+            return cached
+        }
+        let tree = try loadDirectoryTreeFromDataSources()
+        cachedDirectoryTree = tree
+        return tree
     }
 
     static func refreshFreeContentAndLoadDirectoryTree() async throws -> [KnowledgeDirectoryChapter] {
         try await ContentPackageRemoteStore.refreshFreeContentRequired()
+        invalidateCache()
         return try loadDirectoryTree()
+    }
+
+    static func invalidateCache() {
+        cachedDirectoryTree = nil
+        cachedSectionCards = [:]
     }
 
     private static func loadSectionCardsFromDataSources(

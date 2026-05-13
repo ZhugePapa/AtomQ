@@ -17,7 +17,7 @@
     "配置管理",
     "找出各配置项间不匹配或不相容的现"
   ],
-  "key_points": "",
+  "key_points": "- 配置审计可发现配置项之间不匹配、不一致或不相容的问题。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -17,7 +17,7 @@
     "配置管理",
     "遵从配置管理过程"
   ],
-  "key_points": "",
+  "key_points": "- 遵从配置管理过程，意味着配置项识别、变更、审计和发布都要按流程执行。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

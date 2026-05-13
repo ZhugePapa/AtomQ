@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_12",
   "section_id": "sec_01",
-  "title": "(21)",
+  "title": "质量会议准备事项",
   "card_type": "process",
   "difficulty": 3,
   "estimated_read_seconds": 30,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 44,
   "content_file": "ch_12_sec_01_044.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_044.md",
   "tags": [
     "质量管理",
-    "章节核心考点",
-    "提高过程和活动的效率与效果",
-    "(21)"
+    "会议",
+    "准备事项"
   ],
-  "key_points": "",
+  "key_points": "- 会议准备抓：**目的、议程、时间地点、主持记录、资料、参会人、设备保障**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

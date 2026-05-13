@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_08",
   "section_id": "sec_01",
-  "title": "根本原因分析",
+  "title": "根本原因、趋势与偏差分析",
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 30,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 25,
   "content_file": "ch_08_sec_01_025.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_025.md",
   "tags": [
     "整合管理",
-    "章节核心考点",
-    "整合管理ITTO汇总*大太",
-    "根本原因分析"
+    "根本原因分析",
+    "趋势分析"
   ],
-  "key_points": "",
+  "key_points": "- 根本原因分析找原因；趋势分析看未来；偏差分析比计划与实际。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_08",
   "section_id": "sec_01",
-  "title": "项目进度计划",
+  "title": "指导与管理项目工作输入",
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 30,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 17,
   "content_file": "ch_08_sec_01_017.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_017.md",
   "tags": [
     "整合管理",
-    "章节核心考点",
-    "整合管理ITTO汇总*大太",
-    "项目进度计划"
+    "指导与管理项目工作",
+    "输入"
   ],
-  "key_points": "",
+  "key_points": "- 指导与管理项目工作依据计划执行，并产出**可交付成果**和**工作绩效数据**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -3,7 +3,7 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_01",
-  "title": "分！",
+  "title": "进度管理基础",
   "card_type": "definition",
   "difficulty": 2,
   "estimated_read_seconds": 30,
@@ -14,10 +14,9 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_001.md",
   "tags": [
     "进度管理",
-    "章节核心考点",
-    "分！"
+    "管理基础"
   ],
-  "key_points": "",
+  "key_points": "- 进度管理主线：**定义活动、排列顺序、估算持续时间、制定进度计划、控制进度**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [],

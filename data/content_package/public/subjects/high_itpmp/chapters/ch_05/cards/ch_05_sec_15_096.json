@@ -18,7 +18,7 @@
     "完整的镜像部署包括三个环节：Bu",
     "完整的镜像部署包括三个环节"
   ],
-  "key_points": "",
+  "key_points": "- 完整镜像部署抓 **Build-Ship-Run**：构建、分发、运行。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

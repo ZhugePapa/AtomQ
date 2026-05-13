@@ -33,6 +33,7 @@ struct KnowledgeCardStudyView: View {
     @State private var isVerticalScrollActive = false
     @State private var hasActiveScrollSample = false
     @State private var lastActiveScrollMinY: CGFloat = 0
+    @State private var shouldRenderAdjacentCards = false
     @GestureState private var interactiveCardOffsetX: CGFloat = 0
     private let topBarHeight: CGFloat = 56
 
@@ -218,6 +219,9 @@ struct KnowledgeCardStudyView: View {
 
     private func visibleCardIndices() -> [Int] {
         guard !sectionCards.isEmpty else { return [] }
+        if !shouldRenderAdjacentCards {
+            return [currentCardIndex]
+        }
         let lower = max(0, currentCardIndex - 1)
         let upper = min(sectionCards.count - 1, currentCardIndex + 1)
         return Array(lower...upper)
@@ -341,6 +345,47 @@ struct KnowledgeCardStudyView: View {
                 goToNextUnmasteredCard()
             }
         }
+    }
+
+    private typealias LoadedStudyPayload = (
+        chapters: [KnowledgeDirectoryChapter],
+        chapterID: String,
+        sectionID: String,
+        cards: [KnowledgeCardStudyContent]
+    )
+
+    private func loadStudyPayload(
+        fallbackChapterID: String,
+        fallbackSectionID: String
+    ) async throws -> LoadedStudyPayload {
+        try await Task.detached(priority: .userInitiated) {
+            let chapters = try KnowledgeCardDataStore.loadDirectoryTree()
+            let chapterID = chapters.first?.id ?? fallbackChapterID
+            let sectionID = chapters.first?.sections.first?.id ?? fallbackSectionID
+            let cards = try KnowledgeCardDataStore.loadSectionCards(
+                chapterID: chapterID,
+                sectionID: sectionID
+            )
+            return (chapters, chapterID, sectionID, cards)
+        }.value
+    }
+
+    private func applyLoadedStudyPayload(_ loaded: LoadedStudyPayload) {
+        directoryChapters = loaded.chapters
+        selectedChapterID = loaded.chapterID
+        selectedSectionID = loaded.sectionID
+        sectionCards = loaded.cards
+
+        if let idx = sectionCards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) {
+            currentCardIndex = idx
+        } else {
+            currentCardIndex = 0
+        }
+        syncCurrentCardFromIndex()
+        if expandedChapterID == nil {
+            expandedChapterID = selectedChapterID
+        }
+        loadErrorMessage = nil
     }
 
     @ViewBuilder
@@ -606,31 +651,43 @@ struct KnowledgeCardStudyView: View {
             .zIndex(999)
         }
         .task {
-            do {
-                directoryChapters = try await KnowledgeCardDataStore.refreshFreeContentAndLoadDirectoryTree()
-                if let firstChapter = directoryChapters.first {
-                    let defaultSection = firstChapter.sections.first?.id ?? selectedSectionID
-                    selectedChapterID = firstChapter.id
-                    selectedSectionID = defaultSection
-                }
+            shouldRenderAdjacentCards = false
 
-                sectionCards = try await KnowledgeCardDataStore.refreshFreeContentAndLoadSectionCards(
-                    chapterID: selectedChapterID,
-                    sectionID: selectedSectionID
+            let previousChapterID = selectedChapterID
+            let previousSectionID = selectedSectionID
+            var hasRenderedLocal = false
+
+            // Phase 1: render local cache immediately if available.
+            if let localLoaded = try? await loadStudyPayload(
+                fallbackChapterID: previousChapterID,
+                fallbackSectionID: previousSectionID
+            ) {
+                applyLoadedStudyPayload(localLoaded)
+                hasRenderedLocal = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
+                    shouldRenderAdjacentCards = true
+                }
+            }
+
+            // Phase 2: refresh remote in background, then reload and update.
+            do {
+                try await ContentPackageRemoteStore.refreshFreeContentRequired()
+                KnowledgeCardDataStore.invalidateCache()
+                let refreshed = try await loadStudyPayload(
+                    fallbackChapterID: previousChapterID,
+                    fallbackSectionID: previousSectionID
                 )
-                if let idx = sectionCards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) {
-                    currentCardIndex = idx
-                } else {
-                    currentCardIndex = 0
+                applyLoadedStudyPayload(refreshed)
+                if !hasRenderedLocal {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
+                        shouldRenderAdjacentCards = true
+                    }
                 }
-                syncCurrentCardFromIndex()
-                if expandedChapterID == nil {
-                    expandedChapterID = selectedChapterID
-                }
-                loadErrorMessage = nil
             } catch {
-                directoryChapters = []
-                loadErrorMessage = error.localizedDescription
+                if !hasRenderedLocal {
+                    directoryChapters = []
+                    loadErrorMessage = error.localizedDescription
+                }
             }
         }
         .alert("数据加载失败", isPresented: Binding(

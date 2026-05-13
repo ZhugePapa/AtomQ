@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_08",
   "section_id": "sec_01",
-  "title": "成本预测",
+  "title": "监控项目工作输入",
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 30,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 21,
   "content_file": "ch_08_sec_01_021.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_021.md",
   "tags": [
     "整合管理",
-    "章节核心考点",
-    "整合管理ITTO汇总*大太",
-    "成本预测"
+    "监控项目工作",
+    "输入"
   ],
-  "key_points": "",
+  "key_points": "- 监控项目工作通过成本预测、进度预测、质量报告等判断项目状态。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

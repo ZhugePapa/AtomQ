@@ -17,7 +17,7 @@
     "绩效评价结果应用",
     "通常绩效评价结果会应用于如下方面"
   ],
-  "key_points": "",
+  "key_points": "- 绩效评价结果常用于薪酬、晋升、培训、岗位调整和绩效改进。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

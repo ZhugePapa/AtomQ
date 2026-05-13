@@ -17,7 +17,7 @@
     "章节核心考点",
     "项目采用的质量标准"
   ],
-  "key_points": "",
+  "key_points": "- 项目采用的质量标准应明确、可测量，并能指导验收和质量控制。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

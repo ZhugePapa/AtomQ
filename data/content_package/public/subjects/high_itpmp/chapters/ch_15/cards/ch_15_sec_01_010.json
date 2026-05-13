@@ -18,7 +18,7 @@
     "管理ITTO汇总大",
     "范围基准"
   ],
-  "key_points": "",
+  "key_points": "- 风险管理需要参考范围基准，因为范围变化会带来新的风险或改变风险影响。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

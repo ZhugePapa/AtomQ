@@ -18,7 +18,7 @@
     "区块链",
     "智能合约"
   ],
-  "key_points": "",
+  "key_points": "- 智能合约是运行在区块链上的自动执行程序，核心是按预设规则自动触发和执行。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

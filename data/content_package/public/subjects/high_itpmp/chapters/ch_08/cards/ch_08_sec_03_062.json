@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_08",
   "section_id": "sec_03",
-  "title": "专家判断项目管理信息系统",
+  "title": "指导与管理项目工作工具输出",
   "card_type": "formula",
   "difficulty": 3,
   "estimated_read_seconds": 30,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 62,
   "content_file": "ch_08_sec_03_062.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_03_062.md",
   "tags": [
     "整合管理",
-    "章节核心考点",
-    "整合管理ITTO汇总*大太",
-    "专家判断项目管理信息系统"
+    "项目管理信息系统",
+    "输出"
   ],
-  "key_points": "",
+  "key_points": "- 指导与管理项目工作常用**专家判断**和**项目管理信息系统**。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

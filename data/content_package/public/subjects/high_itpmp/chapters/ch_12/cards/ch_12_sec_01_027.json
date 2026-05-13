@@ -3,22 +3,21 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_12",
   "section_id": "sec_01",
-  "title": "记册)",
+  "title": "规划质量管理并行开展",
   "card_type": "concept",
   "difficulty": 3,
   "estimated_read_seconds": 30,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 27,
   "content_file": "ch_12_sec_01_027.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_12/cards/ch_12_sec_01_027.md",
   "tags": [
     "质量管理",
-    "章节核心考点",
-    "管理ITTO江总**大",
-    "记册)"
+    "规划质量",
+    "ITTO"
   ],
-  "key_points": "",
+  "key_points": "- 规划质量管理应与其他规划过程并行开展，输出质量管理计划和质量测量指标。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

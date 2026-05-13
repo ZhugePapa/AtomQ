@@ -3,21 +3,22 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_16",
   "section_id": "sec_01",
-  "title": "准备采购工作说明书(SOw)或工作大纲(TO",
+  "title": "采购 SOW/TOR 与技术评估",
   "card_type": "concept",
   "difficulty": 1,
   "estimated_read_seconds": 30,
-  "has_key_content": true,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 27,
   "content_file": "ch_16_sec_01_027.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_16/cards/ch_16_sec_01_027.md",
   "tags": [
     "采购管理",
-    "管理基础",
-    "准备采购工作说明书(SOw)或工"
+    "SOW",
+    "TOR",
+    "技术评估"
   ],
-  "key_points": "",
+  "key_points": "- SOW/TOR 说明采购工作范围和交付要求；技术评估判断卖方方案是否满足需求。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [

@@ -17,7 +17,7 @@
     "章节核心考点",
     "用来建立模型的历史信息准确"
   ],
-  "key_points": "",
+  "key_points": "- 参数估算依赖历史信息；历史数据越准确，估算模型越可靠。",
   "mnemonics": "",
   "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
   "prerequisite_point_ids": [
