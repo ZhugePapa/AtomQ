@@ -568,58 +568,49 @@ private struct TopActionBar: View {
     let onOpenCatalog: () -> Void
 
     var body: some View {
-        ZStack {
-            HStack {
-                Button(action: onBack) {
-                    SvgIconView(
-                        name: "icon-arrow-left",
-                        outerWidth: 24,
-                        outerHeight: 24,
-                        innerInsets: SvgIconInsets(top: 0.2083, right: 0.2083, bottom: 0.2083, left: 0.2083),
-                        imageInsets: SvgIconInsets(top: -0.0714, right: -0.0714, bottom: -0.0714, left: -0.0714),
-                        cssVariables: ["stroke-0": Token.fgPrimary]
-                    )
-                    .frame(width: 44, height: 44)
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-
-                Spacer()
-
-                Text(title)
-                    .font(.custom("PingFang SC", size: 18).weight(.semibold))
-                    .foregroundStyle(Token.textPrimary)
-                    .frame(height: 28)
-                    .lineLimit(1)
-
-                Spacer()
-
-                Button(action: onOpenCatalog) {
-                    SvgIconView(
-                        name: "icon-menu-03",
-                        outerWidth: 24,
-                        outerHeight: 24,
-                        innerInsets: SvgIconInsets(top: 0.2500, right: 0.1250, bottom: 0.2500, left: 0.1250),
-                        imageInsets: SvgIconInsets(top: -0.0833, right: -0.0556, bottom: -0.0833, left: -0.0556),
-                        cssVariables: ["stroke-0": Token.fgPrimary]
-                    )
-                    .frame(width: 44, height: 44)
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
+        HStack(spacing: 0) {
+            Button(action: onBack) {
+                SvgIconView(
+                    name: "icon-arrow-left",
+                    outerWidth: 24,
+                    outerHeight: 24,
+                    innerInsets: SvgIconInsets(top: 0.2083, right: 0.2083, bottom: 0.2083, left: 0.2083),
+                    imageInsets: SvgIconInsets(top: -0.0714, right: -0.0714, bottom: -0.0714, left: -0.0714),
+                    cssVariables: ["stroke-0": Token.fgPrimary]
+                )
+                .frame(width: 24, height: 24)
+                .contentShape(Rectangle())
+                .padding(.leading, 20)
+                .padding(.trailing, 12)
             }
+            .buttonStyle(.plain)
 
-            // Fallback touch target: left area only, avoid blocking right menu button.
-            HStack {
-                Button(action: onBack) {
-                    Color.black.opacity(0.001).frame(width: 64, height: 56)
-                }
-                .buttonStyle(.plain)
-                Spacer(minLength: 0)
+            Spacer()
+
+            Text(title)
+                .font(.custom("PingFang SC", size: 18).weight(.semibold))
+                .foregroundStyle(Token.textPrimary)
+                .frame(height: 28)
+                .lineLimit(1)
+
+            Spacer()
+
+            Button(action: onOpenCatalog) {
+                SvgIconView(
+                    name: "icon-menu-03",
+                    outerWidth: 24,
+                    outerHeight: 24,
+                    innerInsets: SvgIconInsets(top: 0.2500, right: 0.1250, bottom: 0.2500, left: 0.1250),
+                    imageInsets: SvgIconInsets(top: -0.0833, right: -0.0556, bottom: -0.0833, left: -0.0556),
+                    cssVariables: ["stroke-0": Token.fgPrimary]
+                )
+                .frame(width: 24, height: 24)
+                .contentShape(Rectangle())
+                .padding(.leading, 12)
+                .padding(.trailing, 20)
             }
-            .allowsHitTesting(false)
+            .buttonStyle(.plain)
         }
-        .padding(.horizontal, 20)
         .frame(height: 56)
     }
 }
