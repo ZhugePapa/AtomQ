@@ -17,7 +17,9 @@
     "生态文明",
     "绿色发展"
   ],
-  "prerequisite_point_ids": [],
+  "prerequisite_point_ids": [
+    "025"
+  ],
   "related_point_ids": [],
   "related_question_ids": [],
   "key_points": "",

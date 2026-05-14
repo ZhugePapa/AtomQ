@@ -17,8 +17,12 @@
     "安全性",
     "及时性"
   ],
-  "prerequisite_point_ids": [],
-  "related_point_ids": [],
+  "prerequisite_point_ids": [
+    "001"
+  ],
+  "related_point_ids": [
+    "003"
+  ],
   "related_question_ids": [],
   "key_points": "| 场景 | 优先属性 |\n|:---|:---|\n| 金融信息 | **安全性** |\n| 经济与社会信息 | **及时性** |\n信息质量属性：**精确、完整、可靠、及时、经济、可验证、安全**。",
   "mnemonics": "精完可及经可安。",

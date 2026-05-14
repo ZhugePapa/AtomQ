@@ -18,11 +18,13 @@
     "数字社会",
     "数字政府"
   ],
-  "prerequisite_point_ids": [],
+  "prerequisite_point_ids": [
+    "011"
+  ],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "- 这张卡只需背框架：**基础设施、数据、产业、政府、民生、治理、国际合作**。\n- 不建议逐字背规划长句，考试更常考方向归类。",
-  "mnemonics": "",
+  "key_points": "十四五信息化规划 7 字框架：**基、数、产、政、民、治、合**。\n- 基础设施（泛在智联）→ 数据要素（高效利用）→ 数字产业 + 产业数字化\n- 数字政府（协同高效）→ 数字民生（普惠便捷）→ 数字治理 + 国际合作",
+  "mnemonics": "基数控产，政民治合——七个字记九个体系。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [

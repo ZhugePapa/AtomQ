@@ -18,7 +18,9 @@
     "智慧农业"
   ],
   "prerequisite_point_ids": [],
-  "related_point_ids": [],
+  "related_point_ids": [
+    "019"
+  ],
   "related_question_ids": [],
   "key_points": "农业现代化不是单纯“机械化”，在本章中更强调数字技术与农业生产经营体系融合。",
   "mnemonics": "",

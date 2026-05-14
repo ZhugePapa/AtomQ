@@ -17,8 +17,12 @@
     "信息网络体系",
     "信息产业基础"
   ],
-  "prerequisite_point_ids": [],
-  "related_point_ids": [],
+  "prerequisite_point_ids": [
+    "009"
+  ],
+  "related_point_ids": [
+    "011"
+  ],
   "related_question_ids": [],
   "key_points": "| 内涵 | 作用 |\n|:---|:---|\n| 信息网络体系 | 连接与平台 |\n| 信息产业基础 | 技术和产业供给 |\n| 社会运行环境 | 制度和文化土壤 |\n| 效用积累过程 | 长期收益 |",
   "mnemonics": "网产社效。",

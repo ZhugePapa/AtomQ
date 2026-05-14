@@ -18,8 +18,12 @@
     "依附性",
     "传递性"
   ],
-  "prerequisite_point_ids": [],
-  "related_point_ids": [],
+  "prerequisite_point_ids": [
+    "001"
+  ],
+  "related_point_ids": [
+    "004"
+  ],
   "related_question_ids": [],
   "key_points": "- 这是**特征题**，不是质量属性题。\n- 场景判断常考：**依附性、相对性、动态性、传递性**。\n- 看到“同一信息对不同人价值不同”，优先想**相对性**。",
   "mnemonics": "客普无动相，依变传层系转。",

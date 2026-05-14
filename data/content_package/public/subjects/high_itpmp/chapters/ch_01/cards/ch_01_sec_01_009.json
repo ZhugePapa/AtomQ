@@ -17,8 +17,12 @@
     "生产力",
     "生产关系"
   ],
-  "prerequisite_point_ids": [],
-  "related_point_ids": [],
+  "prerequisite_point_ids": [
+    "001"
+  ],
+  "related_point_ids": [
+    "010"
+  ],
   "related_question_ids": [],
   "key_points": "- 信息化核心不是“上系统”，而是应用**基于信息技术的先进社会生产工具**。\n- 目标链：**提生产力 → 改生产关系 → 改上层建筑 → 提升国家/社会/生活质量**。",
   "mnemonics": "",

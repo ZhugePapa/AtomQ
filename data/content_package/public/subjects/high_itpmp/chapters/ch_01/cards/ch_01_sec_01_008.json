@@ -18,8 +18,8 @@
     "系统分析",
     "系统设计"
   ],
-  "prerequisite_point_ids": [],
-  "related_point_ids": [],
+  "prerequisite_point_ids": ["007"],
+  "related_point_ids": ["007"],
   "related_question_ids": [],
   "key_points": "| 信息系统阶段 | 对应软件活动 |\n|:---|:---|\n| 系统规划 | 可行性分析与项目开发计划 |\n| 系统分析 | 需求分析 |\n| 系统设计 | 概要设计 + 详细设计 |\n| 系统实施 | 编码 + 测试 |\n| 运行维护 | 维护 |",
   "mnemonics": "规分设实运。",

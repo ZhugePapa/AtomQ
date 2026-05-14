@@ -19,7 +19,9 @@
     "数据体系",
     "安全体系"
   ],
-  "prerequisite_point_ids": [],
+  "prerequisite_point_ids": [
+    "015"
+  ],
   "related_point_ids": [],
   "related_question_ids": [],
   "key_points": "- 工业互联网不是普通互联网在工业里的简单应用。\n- 四大体系：**网络、平台、数据、安全**。\n- 平台四层：**边缘层、IaaS、PaaS、SaaS**。",

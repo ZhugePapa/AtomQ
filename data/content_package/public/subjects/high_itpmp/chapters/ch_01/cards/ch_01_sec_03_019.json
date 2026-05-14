@@ -18,7 +18,10 @@
     "工业化"
   ],
   "prerequisite_point_ids": [],
-  "related_point_ids": [],
+  "related_point_ids": [
+    "018",
+    "020"
+  ],
   "related_question_ids": [],
   "key_points": "| 融合领域 | 关键词 |\n|:---|:---|\n| 技术融合 | 工业技术 + 信息技术 |\n| 产品融合 | 信息技术嵌入产品 |\n| 业务融合 | 研发、生产、管理、营销流程融合 |\n| 产业衍生 | 工业软件、工业电子、工业信息服务 |",
   "mnemonics": "两化四融：技、产、业、衍。",

@@ -18,7 +18,9 @@
     "数字化发展"
   ],
   "prerequisite_point_ids": [],
-  "related_point_ids": [],
+  "related_point_ids": [
+    "023"
+  ],
   "related_question_ids": [],
   "key_points": "- 数字中国是国家层面的数字化发展战略，不是单个系统。\n- 后续按五条线理解：**数字经济、数字政府、数字民生、数字生态、数字化转型**。",
   "mnemonics": "",

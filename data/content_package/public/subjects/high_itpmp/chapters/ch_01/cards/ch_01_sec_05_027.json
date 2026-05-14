@@ -18,8 +18,12 @@
     "S-D模型",
     "智慧转移"
   ],
-  "prerequisite_point_ids": [],
-  "related_point_ids": [],
+  "prerequisite_point_ids": [
+    "019"
+  ],
+  "related_point_ids": [
+    "028"
+  ],
   "related_question_ids": [],
   "key_points": "| 层次 | 判断 |\n|:---|:---|\n| 数字化转换 | 把模拟/纸面信息变成数字形式 |\n| 数字化升级 | 用数字技术做局部提效 |\n| 数字化转型 | **重构核心业务和业务模式** |\nDIKW：**数据 → 信息 → 知识 → 智慧**。",
   "mnemonics": "转换改格式，升级提效率，转型改模式。",

@@ -17,7 +17,9 @@
     "虚实融合",
     "沉浸式体验"
   ],
-  "prerequisite_point_ids": [],
+  "prerequisite_point_ids": [
+    "027"
+  ],
   "related_point_ids": [],
   "related_question_ids": [],
   "key_points": "- 元宇宙关键词：**虚实融合、沉浸体验、持续运行**。\n- 它依赖云计算、AI、数字孪生、区块链等能力。\n- 更适合理解为数字化转型的空间交互延伸，不建议单独硬背太多定义。",

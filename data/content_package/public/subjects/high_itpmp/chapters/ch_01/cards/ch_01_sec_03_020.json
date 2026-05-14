@@ -17,7 +17,9 @@
     "成熟度模型",
     "GB/T39116"
   ],
-  "prerequisite_point_ids": [],
+  "prerequisite_point_ids": [
+    "019"
+  ],
   "related_point_ids": [],
   "related_question_ids": [],
   "key_points": "- 智能制造 = **人机一体化智能系统**。\n- 成熟度五级：**规划、规范、集成、优化、引领**。\n- 最高等级是**引领级**。",

@@ -19,7 +19,9 @@
     "数据库",
     "人员"
   ],
-  "prerequisite_point_ids": [],
+  "prerequisite_point_ids": [
+    "005"
+  ],
   "related_point_ids": [],
   "related_question_ids": [],
   "key_points": "- 信息系统组成不只包含技术组件，也包含**人员**和**规程**。\n- 题目选项出现“人员/规程”时，不要因为它们不是设备就排除。\n看到“人员、规程”不要排除，它们也是信息系统的组成部分。",

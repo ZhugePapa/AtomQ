@@ -18,7 +18,9 @@
     "数字乡村",
     "数字生活"
   ],
-  "prerequisite_point_ids": [],
+  "prerequisite_point_ids": [
+    "024"
+  ],
   "related_point_ids": [],
   "related_question_ids": [],
   "key_points": "| 智慧城市能力 | 关键词 |\n|:---|:---|\n| 数据治理 | 数据责权利、开发利用 |\n| 城市孪生 | **现实世界与信息世界互动融合** |\n| 边际决策 | 快速反应、高效决策 |\n| 多元融合 | 服务编排、快速集成 |\n| 态势感知 | 感知、模拟、预测 |",

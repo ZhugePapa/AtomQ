@@ -18,10 +18,14 @@
     "测试",
     "维护"
   ],
-  "prerequisite_point_ids": [],
-  "related_point_ids": [],
+  "prerequisite_point_ids": [
+    "005"
+  ],
+  "related_point_ids": [
+    "008"
+  ],
   "related_question_ids": [],
-  "key_points": "- 顺序题重点：**可行性分析/计划 → 需求 → 概要 → 详细 → 编码 → 测试 → 维护**。\n- 维护仍属于生命周期，交付不是终点。",
+  "key_points": "- 7 阶段顺序：**可行性分析/计划 → 需求 → 概要 → 详细 → 编码 → 测试 → 维护**。\n- 维护仍属于生命周期，交付不是终点。\n- 软件生命周期 ≠ 信息系统生命周期：后者多了**系统规划**阶段。",
   "mnemonics": "可需概详编测维。",
   "common_mistakes": [],
   "review_status": "ai_draft",

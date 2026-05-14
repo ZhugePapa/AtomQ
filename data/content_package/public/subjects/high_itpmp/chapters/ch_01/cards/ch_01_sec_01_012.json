@@ -17,7 +17,9 @@
     "产品信息化",
     "产业信息化"
   ],
-  "prerequisite_point_ids": [],
+  "prerequisite_point_ids": [
+    "003"
+  ],
   "related_point_ids": [],
   "related_question_ids": [],
   "key_points": "",

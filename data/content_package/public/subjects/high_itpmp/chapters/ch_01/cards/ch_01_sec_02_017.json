@@ -18,7 +18,9 @@
     "端管云",
     "V2X"
   ],
-  "prerequisite_point_ids": [],
+  "prerequisite_point_ids": [
+    "015"
+  ],
   "related_point_ids": [],
   "related_question_ids": [],
   "key_points": "- 车联网可按 **端-管-云** 理解。\n- 管系统解决 V2V、V2I、V2N、V2P 等互联互通。\n- 五类连接：车云、车车、车路、车人、车内设备。",
