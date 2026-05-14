@@ -19,7 +19,98 @@ private enum SVGImageCache {
     }
 }
 
-// MARK: - SVGAssetView (public API unchanged)
+// MARK: - Shared SVG Render Engine (single WKWebView for all icons)
+
+@MainActor
+final class SVGRenderEngine: NSObject, WKNavigationDelegate {
+    static let shared = SVGRenderEngine()
+
+    private var webView: WKWebView?
+    private typealias PendingItem = (cacheKey: String, svgHTML: String, size: CGSize, completion: (UIImage?) -> Void)
+    private var pending: [PendingItem] = []
+    private var rendering = false
+    private var snapshotCompletion: (() -> Void)?
+
+    private override init() { super.init() }
+
+    func enqueueRender(
+        cacheKey: String,
+        svgHTML: String,
+        size: CGSize,
+        completion: @escaping (UIImage?) -> Void
+    ) {
+        pending.append((cacheKey: cacheKey, svgHTML: svgHTML, size: size, completion: completion))
+        if !rendering {
+            processNext()
+        }
+    }
+
+    private func processNext() {
+        guard !pending.isEmpty else {
+            rendering = false
+            return
+        }
+        rendering = true
+        let item = pending.removeFirst()
+
+        let wv = ensureWebView()
+        wv.frame = CGRect(origin: .zero, size: item.size)
+        wv.loadHTMLString(item.svgHTML, baseURL: nil)
+
+        snapshotCompletion = { [weak self, weak wv] in
+            guard let self, let wv else { return }
+            let config = WKSnapshotConfiguration()
+            config.rect = CGRect(origin: .zero, size: item.size)
+            wv.takeSnapshot(with: config) { image, _ in
+                if let image {
+                    SVGImageCache.setImage(image, forKey: item.cacheKey)
+                }
+                item.completion(image)
+                self.processNext()
+            }
+        }
+    }
+
+    private func ensureWebView() -> WKWebView {
+        if let wv = webView { return wv }
+        let config = WKWebViewConfiguration()
+        config.allowsInlineMediaPlayback = true
+        let wv = WKWebView(frame: .zero, configuration: config)
+        wv.navigationDelegate = self
+        wv.isOpaque = false
+        wv.backgroundColor = .clear
+        wv.scrollView.isScrollEnabled = false
+        wv.isUserInteractionEnabled = false
+        webView = wv
+        return wv
+    }
+
+    // MARK: - WKNavigationDelegate
+
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.02) { [weak self] in
+            self?.snapshotCompletion?()
+            self?.snapshotCompletion = nil
+        }
+    }
+
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: any Error) {
+        // Retry current item
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+            self?.snapshotCompletion?()
+            self?.snapshotCompletion = nil
+        }
+    }
+
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: any Error) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+            self?.snapshotCompletion?()
+            self?.snapshotCompletion = nil
+        }
+    }
+}
+
+// MARK: - SVG Asset View (public API unchanged)
 
 struct SVGAssetView: View {
     let name: String
@@ -38,7 +129,7 @@ struct SVGAssetView: View {
     }
 }
 
-// MARK: - SVG Render View (cached image with WKWebView fallback)
+// MARK: - SVG Render View
 
 private struct SVGRenderView: View {
     let name: String
@@ -46,6 +137,7 @@ private struct SVGRenderView: View {
     let cssValues: [String: String]
 
     @State private var cachedImage: UIImage?
+    @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
         GeometryReader { geometry in
@@ -53,262 +145,130 @@ private struct SVGRenderView: View {
             let height = geometry.size.height
 
             if width > 0, height > 0 {
-                let cacheKey = makeCacheKey(name: name, width: width, height: height, cssVariables: cssVariables, cssValues: cssValues)
+                let cacheKey = makeCacheKey(name: name, width: width, height: height)
 
-                // Check in-memory state first, then global cache
                 if let image = cachedImage ?? SVGImageCache.image(forKey: cacheKey) {
                     Image(uiImage: image)
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: width, height: height)
                         .onAppear { cachedImage = image }
                 } else {
-                    SVGWebAssetView(
+                    SVGPlaceholderView(
                         name: name,
                         cssVariables: cssVariables,
                         cssValues: cssValues,
                         cacheKey: cacheKey,
+                        size: CGSize(width: width, height: height),
+                        colorScheme: colorScheme,
                         onImageCached: { cachedImage = $0 }
                     )
-                    .frame(width: width, height: height)
                 }
             }
         }
     }
 
-    private func makeCacheKey(
-        name: String,
-        width: CGFloat,
-        height: CGFloat,
-        cssVariables: [String: Color],
-        cssValues: [String: String]
-    ) -> String {
-        let varPart = cssVariables.keys.sorted().map { "\($0)=\(cssVariables[$0]?.description ?? "")" }.joined(separator: ",")
-        let valPart = cssValues.keys.sorted().map { "\($0)=\(cssValues[$0] ?? "")" }.joined(separator: ",")
+    private func makeCacheKey(name: String, width: CGFloat, height: CGFloat) -> String {
         let w = String(format: "%.0f", width)
         let h = String(format: "%.0f", height)
-        return "\(name)|\(w)x\(h)|\(varPart)|\(valPart)"
+        return "\(name)|\(w)x\(h)"
     }
 }
 
-// MARK: - WKWebView-based SVG renderer (only created on cache miss)
+// MARK: - SVG Placeholder (enqueues to shared renderer, shows placeholder icon)
 
-private struct SVGWebAssetView: UIViewRepresentable {
+private struct SVGPlaceholderView: View {
     let name: String
     let cssVariables: [String: Color]
     let cssValues: [String: String]
     let cacheKey: String
+    let size: CGSize
+    let colorScheme: ColorScheme
     let onImageCached: (UIImage) -> Void
 
-    private static var resolvedURLCache: [String: URL] = [:]
+    @State private var loadedImage: UIImage?
 
-    final class SVGRenderWebView: WKWebView {
-        var svgSource: String = ""
-        var svgBaseURL: URL?
-        var svgKey: String = ""
-        var cssVariables: [String: String] = [:]
-        var lastSignature: String = ""
-
-        override func layoutSubviews() {
-            super.layoutSubviews()
-            renderIfNeeded()
-        }
-
-        func renderIfNeeded(force: Bool = false) {
-            guard !svgSource.isEmpty else { return }
-            let width = max(1, bounds.width)
-            let height = max(1, bounds.height)
-            let normalizedWidth = (width * 1000).rounded() / 1000
-            let normalizedHeight = (height * 1000).rounded() / 1000
-            let variableSignature = cssVariables.keys.sorted().map { "\($0)=\(cssVariables[$0] ?? "")" }.joined(separator: ";")
-            let signature = "\(svgKey)#\(normalizedWidth)x\(normalizedHeight)#\(variableSignature)"
-            guard force || signature != lastSignature else { return }
-            lastSignature = signature
-
-            let widthPx = String(format: "%.3f", normalizedWidth)
-            let heightPx = String(format: "%.3f", normalizedHeight)
-            let cssVariableText = cssVariables.keys.sorted().map { key in
-                "--\(key): \(cssVariables[key] ?? "transparent");"
-            }.joined(separator: "\n")
-
-            let html = """
-            <!doctype html>
-            <html>
-            <head>
-              <meta charset="utf-8" />
-              <meta name="viewport" content="width=\(widthPx), height=\(heightPx), initial-scale=1, maximum-scale=1, user-scalable=no" />
-              <style>
-                html, body {
-                  margin: 0;
-                  padding: 0;
-                  width: \(widthPx)px;
-                  height: \(heightPx)px;
-                  overflow: hidden;
-                  background: transparent;
-                  -webkit-text-size-adjust: 100%;
+    var body: some View {
+        if let image = loadedImage {
+            Image(uiImage: image)
+                .resizable()
+        } else {
+            Rectangle()
+                .fill(Color.clear)
+                .onAppear {
+                    requestRender()
                 }
-                #root {
-                  position: relative;
-                  width: 100%;
-                  height: 100%;
-                  overflow: hidden;
-                }
-                #root > svg {
-                  position: absolute;
-                  inset: 0;
-                  display: block;
-                }
-                :root {
-                  \(cssVariableText)
-                }
-              </style>
-            </head>
-            <body>
-              <div id="root">\(svgSource)</div>
-            </body>
-            </html>
-            """
-
-            loadHTMLString(html, baseURL: svgBaseURL)
         }
     }
 
-    final class Coordinator: NSObject, WKNavigationDelegate {
-        let parent: SVGWebAssetView
-
-        init(_ parent: SVGWebAssetView) {
-            self.parent = parent
-        }
-
-        func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
-            (webView as? SVGRenderWebView)?.renderIfNeeded(force: true)
-        }
-
-        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: any Error) {
-            (webView as? SVGRenderWebView)?.renderIfNeeded(force: true)
-        }
-
-        func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: any Error) {
-            (webView as? SVGRenderWebView)?.renderIfNeeded(force: true)
-        }
-
-        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            // Wait for SVG to paint, then snapshot and cache
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.02) {
-                let config = WKSnapshotConfiguration()
-                config.rect = CGRect(origin: .zero, size: webView.bounds.size)
-                webView.takeSnapshot(with: config) { image, _ in
-                    guard let image else { return }
-                    SVGImageCache.setImage(image, forKey: self.parent.cacheKey)
-                    self.parent.onImageCached(image)
-                }
-            }
-        }
-    }
-
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-
-    func makeUIView(context: Context) -> SVGRenderWebView {
-        let config = WKWebViewConfiguration()
-        config.allowsInlineMediaPlayback = true
-
-        let webView = SVGRenderWebView(frame: .zero, configuration: config)
-        webView.navigationDelegate = context.coordinator
-        webView.isOpaque = false
-        webView.backgroundColor = .clear
-        webView.scrollView.isScrollEnabled = false
-        webView.scrollView.backgroundColor = .clear
-        webView.scrollView.bounces = false
-        webView.scrollView.contentInsetAdjustmentBehavior = .never
-        webView.isUserInteractionEnabled = false
-        return webView
-    }
-
-    func updateUIView(_ webView: SVGRenderWebView, context: Context) {
-        guard let url = resolveURL(for: name),
-              let svg = try? String(contentsOf: url, encoding: .utf8) else {
-            return
-        }
-
-        let colorScheme = context.environment.colorScheme
+    private func requestRender() {
         let style: UIUserInterfaceStyle = colorScheme == .dark ? .dark : .light
-        let forcedTrait = UITraitCollection(userInterfaceStyle: style)
-        webView.overrideUserInterfaceStyle = style
+        let trait = UITraitCollection(userInterfaceStyle: style)
 
-        webView.svgSource = svg
-        webView.svgBaseURL = nil
-        webView.svgKey = "\(name)-\(url.lastPathComponent)"
-        var resolvedVariables = resolveCssVariables(for: forcedTrait)
-        for (name, value) in cssValues {
-            resolvedVariables[name] = value
-        }
-        webView.cssVariables = resolvedVariables
-        webView.renderIfNeeded()
-    }
-
-    private func resolveURL(for name: String) -> URL? {
-        if let cached = Self.resolvedURLCache[name] {
-            return cached
-        }
-
-        let fileName = "\(name).svg"
-        let candidateBundles = Array(
-            Set(
-                [Bundle.main, Bundle(for: SVGRenderWebView.self)] +
-                Bundle.allBundles +
-                Bundle.allFrameworks
-            )
-        )
-
-        for bundle in candidateBundles {
-            if let url = bundle.url(forResource: name, withExtension: "svg") {
-                Self.resolvedURLCache[name] = url
-                return url
-            }
-            if let url = bundle.url(forResource: name, withExtension: "svg", subdirectory: "SVG") {
-                Self.resolvedURLCache[name] = url
-                return url
-            }
-            if let url = bundle.url(forResource: name, withExtension: "svg", subdirectory: "Resources/SVG") {
-                Self.resolvedURLCache[name] = url
-                return url
-            }
-
-            guard let resourceURL = bundle.resourceURL else { continue }
-            let direct = resourceURL.appendingPathComponent(fileName)
-            if FileManager.default.fileExists(atPath: direct.path) {
-                Self.resolvedURLCache[name] = direct
-                return direct
-            }
-
-            let svgDir = resourceURL.appendingPathComponent("SVG").appendingPathComponent(fileName)
-            if FileManager.default.fileExists(atPath: svgDir.path) {
-                Self.resolvedURLCache[name] = svgDir
-                return svgDir
-            }
-
-            let nestedDir = resourceURL
-                .appendingPathComponent("Resources")
-                .appendingPathComponent("SVG")
-                .appendingPathComponent(fileName)
-            if FileManager.default.fileExists(atPath: nestedDir.path) {
-                Self.resolvedURLCache[name] = nestedDir
-                return nestedDir
-            }
-        }
-
-        return nil
-    }
-
-    private func resolveCssVariables(for traitCollection: UITraitCollection) -> [String: String] {
-        var resolved: [String: String] = [:]
+        var cssVarStrings: [String: String] = [:]
         for (name, color) in cssVariables {
-            let uiColor = UIColor(color).resolvedColor(with: traitCollection)
-            resolved[name] = uiColor.cssRGBAString
+            cssVarStrings[name] = UIColor(color).resolvedColor(with: trait).cssRGBAString
         }
-        return resolved
+        for (name, value) in cssValues {
+            cssVarStrings[name] = value
+        }
+
+        let cssText = cssVarStrings.keys.sorted().map { key in
+            "--\(key): \(cssVarStrings[key] ?? "transparent");"
+        }.joined(separator: "\n")
+
+        guard let svgSource = loadSVGSource(name: name) else { return }
+
+        let w = String(format: "%.0f", size.width)
+        let h = String(format: "%.0f", size.height)
+        let html = """
+        <!doctype html>
+        <html>
+        <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+        <style>
+        html,body{margin:0;padding:0;width:\(w)px;height:\(h)px;overflow:hidden;background:transparent;}
+        #root{position:relative;width:100%;height:100%;overflow:hidden;}
+        #root>svg{position:absolute;inset:0;display:block;}
+        :root{\(cssText)}
+        </style>
+        </head>
+        <body><div id="root">\(svgSource)</div></body>
+        </html>
+        """
+
+        SVGRenderEngine.shared.enqueueRender(
+            cacheKey: cacheKey,
+            svgHTML: html,
+            size: size
+        ) { image in
+            if let image {
+                DispatchQueue.main.async {
+                    self.loadedImage = image
+                    self.onImageCached(image)
+                }
+            }
+        }
+    }
+
+    private func loadSVGSource(name: String) -> String? {
+        guard let url = resolveSVGURL(name: name) else { return nil }
+        return try? String(contentsOf: url, encoding: .utf8)
+    }
+
+    private func resolveSVGURL(name: String) -> URL? {
+        // Prefer Bundle.main resource lookup (fast, within sandbox)
+        let subdirectories = ["SVG", "Resources/SVG"]
+        // Try by name in each subdirectory
+        for subdir in subdirectories {
+            if let url = Bundle.main.url(forResource: name, withExtension: "svg", subdirectory: subdir) {
+                return url
+            }
+        }
+        // Try flat in resource root
+        if let url = Bundle.main.url(forResource: name, withExtension: "svg") {
+            return url
+        }
+        return nil
     }
 }
 
