@@ -1,139 +1,93 @@
 import SwiftUI
 
-private let directoryAccordionAnimation = Animation.easeInOut(duration: 0.26)
+// MARK: - KnowledgeCardStudyViewModel
 
-struct KnowledgeCardStudyView: View {
-    @Environment(\.dismiss) private var dismiss
+@MainActor
+final class KnowledgeCardStudyViewModel: ObservableObject {
+    @Published var pageData = KnowledgeCardStudyContent(pointID: "demo", chapterID: "ch_01", sectionID: "sec_01_01", headerTitle: "1.1 信息与信息化", knowledgeMarkdown: "", keyPointsMarkdown: nil, mnemonicsMarkdown: nil, chipTitle: "知识卡片")
+    @Published var sectionCards: [KnowledgeCardStudyContent] = []
+    @Published var currentCardIndex: Int = 0
+    @Published var directoryChapters: [KnowledgeDirectoryChapter] = []
+    @Published var selectedChapterID: String = "ch_01"
+    @Published var selectedSectionID: String = "sec_01_01"
+    @Published var expandedChapterID: String?
+    @Published var isDirectorySheetPresented = false
+    @Published var isDirectoryPanelPresented = false
+    @Published var loadErrorMessage: String?
+    @Published var focusHighlightVisible = true
+    @Published var isCurrentCardMastered = false
+    @Published var topBarCollapseProgress: CGFloat = 0
+    @Published var shouldRenderAdjacentCards = false
+    var edgeSwipeBackTriggered = false
+    var isHorizontalPagingActive = false
+    var isVerticalScrollActive = false
+    var hasActiveScrollSample = false
+    var lastActiveScrollMinY: CGFloat = 0
+    let topBarHeight: CGFloat = 56
+    var onBack: (() -> Void)?
 
-    var onBack: (() -> Void)? = nil
-    @State private var pageData = KnowledgeCardStudyContent(
-        pointID: "demo",
-        chapterID: "ch_01",
-        sectionID: "sec_01",
-        headerTitle: "1.1 信息与信息化",
-        knowledgeMarkdown: "",
-        keyPointsMarkdown: nil,
-        mnemonicsMarkdown: nil,
-        chipTitle: "知识卡片"
-    )
-    @State private var sectionCards: [KnowledgeCardStudyContent] = []
-    @State private var currentCardIndex: Int = 0
-    @State private var directoryChapters: [KnowledgeDirectoryChapter] = []
-    @State private var selectedChapterID: String = "ch_01"
-    @State private var selectedSectionID: String = "sec_01"
-    @State private var expandedChapterID: String?
-    @State private var isDirectorySheetPresented = false
-    @State private var isDirectoryPanelPresented = false
-    @State private var loadErrorMessage: String?
-    @State private var focusHighlightVisible = true
-    @State private var isCurrentCardMastered = false
-    @State private var topBarCollapseProgress: CGFloat = 0
-    @State private var edgeSwipeBackTriggered = false
-    @State private var isHorizontalPagingActive = false
-    @State private var isVerticalScrollActive = false
-    @State private var hasActiveScrollSample = false
-    @State private var lastActiveScrollMinY: CGFloat = 0
-    @State private var shouldRenderAdjacentCards = false
-    @GestureState private var interactiveCardOffsetX: CGFloat = 0
-    private let topBarHeight: CGFloat = 56
+    enum CardSelectionAnchor { case first, firstUnmastered, last }
+    enum KnowledgeBarState { case active, completed, pending }
 
-    private enum CardSelectionAnchor {
-        case first
-        case firstUnmastered
-        case last
+    typealias LoadedStudyPayload = (chapters: [KnowledgeDirectoryChapter], chapterID: String, sectionID: String, cards: [KnowledgeCardStudyContent])
+
+    var resolvedBackAction: () -> Void {
+        if let onBack = onBack { return onBack }
+        return {}
     }
 
-    enum KnowledgeBarState {
-        case active
-        case completed
-        case pending
-    }
-
-
-    private var resolvedBackAction: () -> Void {
-        if let onBack {
-            return onBack
-        }
-        return { dismiss() }
-    }
-
-    private func presentDirectorySheet() {
+    func presentDirectorySheet() {
         guard !isDirectorySheetPresented else { return }
         expandedChapterID = selectedChapterID
         isDirectorySheetPresented = true
         DispatchQueue.main.async {
-            withAnimation(.spring(response: 0.3, dampingFraction: 0.86)) {
-                isDirectoryPanelPresented = true
-            }
+            withAnimation(.spring(response: 0.3, dampingFraction: 0.86)) { self.isDirectoryPanelPresented = true }
         }
     }
 
-    private func dismissDirectorySheet() {
-        withAnimation(.spring(response: 0.3, dampingFraction: 0.86)) {
-            isDirectoryPanelPresented = false
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.30) {
-            if !isDirectoryPanelPresented {
-                isDirectorySheetPresented = false
-            }
+    func dismissDirectorySheet() {
+        withAnimation(.spring(response: 0.3, dampingFraction: 0.86)) { isDirectoryPanelPresented = false }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.30) { [weak self] in
+            guard let self = self, !self.isDirectoryPanelPresented else { return }
+            self.isDirectorySheetPresented = false
         }
     }
 
-    private func closeDirectoryAndLoad(chapter: KnowledgeDirectoryChapter, section: KnowledgeDirectorySection) {
-        do {
-            try loadSectionCards(chapterID: chapter.id, sectionID: section.id, anchor: .firstUnmastered)
-        } catch {
-            loadErrorMessage = error.localizedDescription
-        }
-        withAnimation(.spring(response: 0.3, dampingFraction: 0.86)) {
-            isDirectoryPanelPresented = false
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.30) {
-            if !isDirectoryPanelPresented {
-                isDirectorySheetPresented = false
-            }
+    func closeDirectoryAndLoad(chapter: KnowledgeDirectoryChapter, section: KnowledgeDirectorySection) {
+        do { try loadSectionCards(chapterID: chapter.id, sectionID: section.id, anchor: .firstUnmastered) }
+        catch { loadErrorMessage = error.localizedDescription }
+        withAnimation(.spring(response: 0.3, dampingFraction: 0.86)) { isDirectoryPanelPresented = false }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.30) { [weak self] in
+            guard let self = self, !self.isDirectoryPanelPresented else { return }
+            self.isDirectorySheetPresented = false
         }
     }
 
-    private func loadSectionCards(
-        chapterID: String,
-        sectionID: String,
-        anchor: CardSelectionAnchor
-    ) throws {
+    func loadSectionCards(chapterID: String, sectionID: String, anchor: CardSelectionAnchor) throws {
         let cards = try KnowledgeCardDataStore.loadSectionCards(chapterID: chapterID, sectionID: sectionID)
-        guard !cards.isEmpty else {
-            throw NSError(domain: "KnowledgeCardStudyView", code: 404, userInfo: [NSLocalizedDescriptionKey: "section has no cards"])
-        }
+        guard !cards.isEmpty else { throw NSError(domain: "KCSVM", code: 404) }
         sectionCards = cards
         selectedChapterID = chapterID
         selectedSectionID = sectionID
-
         switch anchor {
-        case .first:
-            currentCardIndex = 0
-        case .last:
-            currentCardIndex = cards.count - 1
+        case .first: currentCardIndex = 0
+        case .last: currentCardIndex = cards.count - 1
         case .firstUnmastered:
-            if let idx = cards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) {
-                currentCardIndex = idx
-            } else {
-                currentCardIndex = 0
-            }
+            if let idx = cards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) { currentCardIndex = idx }
+            else { currentCardIndex = 0 }
         }
         syncCurrentCardFromIndex()
     }
 
-    private func syncCurrentCardFromIndex() {
+    func syncCurrentCardFromIndex() {
         guard !sectionCards.isEmpty else { return }
         currentCardIndex = max(0, min(currentCardIndex, sectionCards.count - 1))
         pageData = sectionCards[currentCardIndex]
         syncMasteredStateForCurrentCard()
-        topBarCollapseProgress = 0
-        hasActiveScrollSample = false
-        lastActiveScrollMinY = 0
+        topBarCollapseProgress = 0; hasActiveScrollSample = false; lastActiveScrollMinY = 0
     }
 
-    private var knowledgeBarStates: [KnowledgeBarState] {
+    var knowledgeBarStates: [KnowledgeBarState] {
         guard !sectionCards.isEmpty else { return [.pending] }
         return sectionCards.enumerated().map { idx, card in
             if idx == currentCardIndex { return .active }
@@ -142,90 +96,158 @@ struct KnowledgeCardStudyView: View {
         }
     }
 
-    private func orderedSections() -> [(chapter: KnowledgeDirectoryChapter, section: KnowledgeDirectorySection)] {
-        directoryChapters
-            .sorted(by: { $0.sortNo < $1.sortNo })
-            .flatMap { chapter in
-                chapter.sections
-                    .sorted(by: { $0.sortNo < $1.sortNo })
-                    .map { (chapter: chapter, section: $0) }
-            }
-    }
-
-    private func currentSectionPosition() -> Int? {
-        orderedSections().firstIndex {
-            $0.chapter.id == selectedChapterID && $0.section.id == selectedSectionID
+    func orderedSections() -> [(chapter: KnowledgeDirectoryChapter, section: KnowledgeDirectorySection)] {
+        directoryChapters.sorted(by: { $0.sortNo < $1.sortNo }).flatMap { chapter in
+            chapter.sections.sorted(by: { $0.sortNo < $1.sortNo }).map { (chapter: chapter, section: $0) }
         }
     }
 
-    private func navigateToAdjacentSection(offset: Int, anchor: CardSelectionAnchor) {
+    func currentSectionPosition() -> Int? {
+        orderedSections().firstIndex { $0.chapter.id == selectedChapterID && $0.section.id == selectedSectionID }
+    }
+
+    func navigateToAdjacentSection(offset: Int, anchor: CardSelectionAnchor) {
         let sections = orderedSections()
         guard let index = currentSectionPosition() else { return }
         let nextIndex = index + offset
         guard sections.indices.contains(nextIndex) else { return }
         let target = sections[nextIndex]
-        do {
-            try loadSectionCards(chapterID: target.chapter.id, sectionID: target.section.id, anchor: anchor)
-        } catch {
-            loadErrorMessage = error.localizedDescription
-        }
+        do { try loadSectionCards(chapterID: target.chapter.id, sectionID: target.section.id, anchor: anchor) }
+        catch { loadErrorMessage = error.localizedDescription }
     }
 
-    private func goForwardCard() {
+    func goForwardCard() {
         guard !sectionCards.isEmpty else { return }
-        if currentCardIndex + 1 < sectionCards.count {
-            currentCardIndex += 1
-            syncCurrentCardFromIndex()
-        } else {
-            navigateToAdjacentSection(offset: 1, anchor: .first)
-        }
+        if currentCardIndex + 1 < sectionCards.count { currentCardIndex += 1; syncCurrentCardFromIndex() }
+        else { navigateToAdjacentSection(offset: 1, anchor: .first) }
     }
 
-    private func goBackwardCard() {
+    func goBackwardCard() {
         guard !sectionCards.isEmpty else { return }
-        if currentCardIndex > 0 {
-            currentCardIndex -= 1
-            syncCurrentCardFromIndex()
-        } else {
-            navigateToAdjacentSection(offset: -1, anchor: .last)
-        }
+        if currentCardIndex > 0 { currentCardIndex -= 1; syncCurrentCardFromIndex() }
+        else { navigateToAdjacentSection(offset: -1, anchor: .last) }
     }
 
-    private func hasNextCardGlobally() -> Bool {
-        if currentCardIndex + 1 < sectionCards.count {
-            return true
-        }
+    func hasNextCardGlobally() -> Bool {
+        if currentCardIndex + 1 < sectionCards.count { return true }
         guard let pos = currentSectionPosition() else { return false }
         return pos + 1 < orderedSections().count
     }
 
-    private func hasPreviousCardGlobally() -> Bool {
-        if currentCardIndex > 0 {
-            return true
-        }
+    func hasPreviousCardGlobally() -> Bool {
+        if currentCardIndex > 0 { return true }
         guard let pos = currentSectionPosition() else { return false }
         return pos - 1 >= 0
     }
 
-    private func dampedInteractiveOffset(_ rawOffset: CGFloat) -> CGFloat {
-        if rawOffset > 0, !hasPreviousCardGlobally() {
-            return rawOffset * 0.2
-        }
-        if rawOffset < 0, !hasNextCardGlobally() {
-            return rawOffset * 0.2
-        }
+    func dampedInteractiveOffset(_ rawOffset: CGFloat) -> CGFloat {
+        if rawOffset > 0, !hasPreviousCardGlobally() { return rawOffset * 0.2 }
+        if rawOffset < 0, !hasNextCardGlobally() { return rawOffset * 0.2 }
         return rawOffset
     }
 
-    private func visibleCardIndices() -> [Int] {
+    func visibleCardIndices() -> [Int] {
         guard !sectionCards.isEmpty else { return [] }
-        if !shouldRenderAdjacentCards {
-            return [currentCardIndex]
-        }
+        if !shouldRenderAdjacentCards { return [currentCardIndex] }
         let lower = max(0, currentCardIndex - 1)
         let upper = min(sectionCards.count - 1, currentCardIndex + 1)
         return Array(lower...upper)
     }
+
+    func goToNextUnmasteredCard() {
+        guard !sectionCards.isEmpty else { return }
+        if currentCardIndex + 1 < sectionCards.count {
+            if let idx = sectionCards[(currentCardIndex+1)...].firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) {
+                currentCardIndex = idx; syncCurrentCardFromIndex(); return
+            }
+        }
+        let sections = orderedSections()
+        guard let pos = currentSectionPosition(), pos + 1 < sections.count else { return }
+        for idx in (pos + 1)..<sections.count {
+            let target = sections[idx]
+            guard let cards = try? KnowledgeCardDataStore.loadSectionCards(chapterID: target.chapter.id, sectionID: target.section.id),
+                  let next = cards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) else { continue }
+            sectionCards = cards; selectedChapterID = target.chapter.id; selectedSectionID = target.section.id
+            currentCardIndex = next; syncCurrentCardFromIndex(); return
+        }
+    }
+
+    func syncMasteredStateForCurrentCard() {
+        isCurrentCardMastered = GuestUserLocalStore.isPointMastered(pageData.pointID)
+    }
+
+    func toggleCurrentCardMastered() {
+        let nextValue = !isCurrentCardMastered
+        GuestUserLocalStore.setPointMastered(pageData.pointID, mastered: nextValue)
+        isCurrentCardMastered = nextValue
+        if nextValue { withAnimation(.easeInOut(duration: 0.24)) { goToNextUnmasteredCard() } }
+    }
+
+    func loadStudyPayload(fallbackChapterID: String, fallbackSectionID: String) async throws -> LoadedStudyPayload {
+        try await Task.detached(priority: .userInitiated) {
+            let chapters = try KnowledgeCardDataStore.loadDirectoryTree()
+            let cid = chapters.first?.id ?? fallbackChapterID
+            let sid = chapters.first?.sections.first?.id ?? fallbackSectionID
+            let cards = try KnowledgeCardDataStore.loadSectionCards(chapterID: cid, sectionID: sid)
+            return (chapters, cid, sid, cards)
+        }.value
+    }
+
+    func applyLoadedStudyPayload(_ loaded: LoadedStudyPayload) {
+        directoryChapters = loaded.chapters; selectedChapterID = loaded.chapterID; selectedSectionID = loaded.sectionID
+        sectionCards = loaded.cards
+        if let idx = sectionCards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) { currentCardIndex = idx }
+        else { currentCardIndex = 0 }
+        syncCurrentCardFromIndex()
+        if expandedChapterID == nil { expandedChapterID = selectedChapterID }
+        loadErrorMessage = nil
+    }
+
+    func loadInitialData() async {
+        shouldRenderAdjacentCards = false
+        let prevCID = selectedChapterID, prevSID = selectedSectionID
+        var rendered = false
+        if let local = try? await loadStudyPayload(fallbackChapterID: prevCID, fallbackSectionID: prevSID) {
+            applyLoadedStudyPayload(local); rendered = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in self?.shouldRenderAdjacentCards = true }
+        }
+        do {
+            try await ContentPackageRemoteStore.refreshFreeContentRequired()
+            KnowledgeCardDataStore.invalidateCache()
+            let refreshed = try await loadStudyPayload(fallbackChapterID: prevCID, fallbackSectionID: prevSID)
+            await MainActor.run { self.applyLoadedStudyPayload(refreshed) }
+            if !rendered { DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in self?.shouldRenderAdjacentCards = true } }
+        } catch {
+            if !rendered { await MainActor.run { self.directoryChapters = []; self.loadErrorMessage = error.localizedDescription } }
+        }
+    }
+}
+
+// MARK: - KnowledgeCardStudyView
+
+private let directoryAccordionAnimation = Animation.easeInOut(duration: 0.26)
+
+struct KnowledgeCardStudyView: View {
+    @ObservedObject var viewModel: KnowledgeCardStudyViewModel
+    var onBack: (() -> Void)? = nil
+
+    @GestureState private var interactiveCardOffsetX: CGFloat = 0
+    private let topBarHeight: CGFloat = 56
+
+    init(viewModel: KnowledgeCardStudyViewModel, onBack: (() -> Void)? = nil) {
+        self.viewModel = viewModel
+        self.onBack = onBack
+        viewModel.onBack = onBack
+    }
+
+    private var resolvedBackAction: () -> Void {
+        if let onBack = onBack {
+            return onBack
+        }
+        return { /* handled by parent */ }
+    }
+
+    // MARK: - Card swipe gesture (must stay in View for @GestureState)
 
     private func cardSwipeGesture(pageWidth: CGFloat) -> some Gesture {
         let dynamicDistanceThreshold = max(56, min(96, pageWidth * 0.18))
@@ -236,27 +258,27 @@ struct KnowledgeCardStudyView: View {
             .onChanged { value in
                 let horizontal = abs(value.translation.width)
                 let vertical = abs(value.translation.height)
-                guard horizontal > vertical + 8, horizontal > activationDistance, !isVerticalScrollActive else { return }
-                if !isHorizontalPagingActive {
-                    isHorizontalPagingActive = true
+                guard horizontal > vertical + 8, horizontal > activationDistance, !viewModel.isVerticalScrollActive else { return }
+                if !viewModel.isHorizontalPagingActive {
+                    viewModel.isHorizontalPagingActive = true
                 }
             }
             .updating($interactiveCardOffsetX) { value, state, transaction in
                 let horizontal = value.translation.width
                 let vertical = value.translation.height
                 guard
-                    !isVerticalScrollActive,
+                    !viewModel.isVerticalScrollActive,
                     abs(horizontal) > max(abs(vertical) + 8, activationDistance)
                 else { return }
                 transaction.animation = .interactiveSpring(response: 0.20, dampingFraction: 0.92)
-                state = dampedInteractiveOffset(horizontal)
+                state = viewModel.dampedInteractiveOffset(horizontal)
             }
             .onEnded { value in
-                defer { isHorizontalPagingActive = false }
+                defer { viewModel.isHorizontalPagingActive = false }
                 let horizontal = value.translation.width
                 let vertical = value.translation.height
                 guard
-                    !isVerticalScrollActive,
+                    !viewModel.isVerticalScrollActive,
                     abs(horizontal) > max(abs(vertical) + 8, activationDistance)
                 else { return }
 
@@ -272,14 +294,12 @@ struct KnowledgeCardStudyView: View {
 
                 let resolved = abs(predicted) > abs(horizontal) ? predicted : horizontal
                 if resolved < 0 {
-                    // left swipe -> next card
                     withAnimation(.easeInOut(duration: 0.30)) {
-                        goForwardCard()
+                        viewModel.goForwardCard()
                     }
                 } else {
-                    // right swipe -> previous card
                     withAnimation(.easeInOut(duration: 0.30)) {
-                        goBackwardCard()
+                        viewModel.goBackwardCard()
                     }
                 }
             }
@@ -290,103 +310,16 @@ struct KnowledgeCardStudyView: View {
             .onChanged { value in
                 let horizontal = abs(value.translation.width)
                 let vertical = abs(value.translation.height)
-                if vertical > horizontal + 2, !isHorizontalPagingActive {
-                    isVerticalScrollActive = true
+                if vertical > horizontal + 2, !viewModel.isHorizontalPagingActive {
+                    viewModel.isVerticalScrollActive = true
                 }
             }
             .onEnded { _ in
-                isVerticalScrollActive = false
+                viewModel.isVerticalScrollActive = false
             }
     }
 
-    private func goToNextUnmasteredCard() {
-        guard !sectionCards.isEmpty else { return }
-
-        if currentCardIndex + 1 < sectionCards.count {
-            if let localIndex = sectionCards[(currentCardIndex + 1)...].firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) {
-                currentCardIndex = localIndex
-                syncCurrentCardFromIndex()
-                return
-            }
-        }
-
-        let sections = orderedSections()
-        guard let sectionPos = currentSectionPosition() else { return }
-        guard sectionPos + 1 < sections.count else { return }
-
-        for idx in (sectionPos + 1)..<sections.count {
-            let target = sections[idx]
-            do {
-                let cards = try KnowledgeCardDataStore.loadSectionCards(chapterID: target.chapter.id, sectionID: target.section.id)
-                if let nextUnmastered = cards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) {
-                    sectionCards = cards
-                    selectedChapterID = target.chapter.id
-                    selectedSectionID = target.section.id
-                    currentCardIndex = nextUnmastered
-                    syncCurrentCardFromIndex()
-                    return
-                }
-            } catch {
-                continue
-            }
-        }
-    }
-
-    private func syncMasteredStateForCurrentCard() {
-        isCurrentCardMastered = GuestUserLocalStore.isPointMastered(pageData.pointID)
-    }
-
-    private func toggleCurrentCardMastered() {
-        let nextValue = !isCurrentCardMastered
-        GuestUserLocalStore.setPointMastered(pageData.pointID, mastered: nextValue)
-        isCurrentCardMastered = nextValue
-        if nextValue {
-            withAnimation(.easeInOut(duration: 0.24)) {
-                goToNextUnmasteredCard()
-            }
-        }
-    }
-
-    private typealias LoadedStudyPayload = (
-        chapters: [KnowledgeDirectoryChapter],
-        chapterID: String,
-        sectionID: String,
-        cards: [KnowledgeCardStudyContent]
-    )
-
-    private func loadStudyPayload(
-        fallbackChapterID: String,
-        fallbackSectionID: String
-    ) async throws -> LoadedStudyPayload {
-        try await Task.detached(priority: .userInitiated) {
-            let chapters = try KnowledgeCardDataStore.loadDirectoryTree()
-            let chapterID = chapters.first?.id ?? fallbackChapterID
-            let sectionID = chapters.first?.sections.first?.id ?? fallbackSectionID
-            let cards = try KnowledgeCardDataStore.loadSectionCards(
-                chapterID: chapterID,
-                sectionID: sectionID
-            )
-            return (chapters, chapterID, sectionID, cards)
-        }.value
-    }
-
-    private func applyLoadedStudyPayload(_ loaded: LoadedStudyPayload) {
-        directoryChapters = loaded.chapters
-        selectedChapterID = loaded.chapterID
-        selectedSectionID = loaded.sectionID
-        sectionCards = loaded.cards
-
-        if let idx = sectionCards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) {
-            currentCardIndex = idx
-        } else {
-            currentCardIndex = 0
-        }
-        syncCurrentCardFromIndex()
-        if expandedChapterID == nil {
-            expandedChapterID = selectedChapterID
-        }
-        loadErrorMessage = nil
-    }
+    // MARK: - Card pages
 
     @ViewBuilder
     private func visibleCardPages(visibleIndices: [Int], pageWidth: CGFloat) -> some View {
@@ -402,14 +335,14 @@ struct KnowledgeCardStudyView: View {
     }
 
     private func cardPage(at idx: Int, pageWidth: CGFloat) -> some View {
-        let card = sectionCards[idx]
+        let card = viewModel.sectionCards[idx]
         return VStack(spacing: 0) {
             ZStack(alignment: .bottom) {
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 16) {
                         KnowledgeBodyCard(
                             markdown: card.knowledgeMarkdown,
-                            focusHighlightVisible: focusHighlightVisible
+                            focusHighlightVisible: viewModel.focusHighlightVisible
                         )
 
                         if let keyPoints = card.keyPointsMarkdown {
@@ -420,7 +353,7 @@ struct KnowledgeCardStudyView: View {
                                 title: "高频考点",
                                 titleColor: Token.textBrand,
                                 markdown: keyPoints,
-                                focusHighlightVisible: focusHighlightVisible
+                                focusHighlightVisible: viewModel.focusHighlightVisible
                             )
                         }
 
@@ -432,7 +365,7 @@ struct KnowledgeCardStudyView: View {
                                 title: "记忆口诀",
                                 titleColor: Token.textWarning,
                                 markdown: mnemonics,
-                                focusHighlightVisible: focusHighlightVisible
+                                focusHighlightVisible: viewModel.focusHighlightVisible
                             )
                         }
 
@@ -447,21 +380,21 @@ struct KnowledgeCardStudyView: View {
 
                             Spacer(minLength: 0)
 
-                            IconWrapper(
+                            SvgIconView(
                                 name: "icon-star-01",
                                 outerWidth: 24,
                                 outerHeight: 24,
-                                innerInsets: IconInsets(top: 0.1096, right: 0.1073, bottom: 0.1416, left: 0.1073),
-                                imageInsets: IconInsets(top: -0.0556, right: -0.0530, bottom: -0.0556, left: -0.0530),
+                                innerInsets: SvgIconInsets(top: 0.1096, right: 0.1073, bottom: 0.1416, left: 0.1073),
+                                imageInsets: SvgIconInsets(top: -0.0556, right: -0.0530, bottom: -0.0556, left: -0.0530),
                                 cssVariables: ["stroke-0": Token.fgTertiary]
                             )
 
-                            IconWrapper(
+                            SvgIconView(
                                 name: "icon-dots-horizontal",
                                 outerWidth: 24,
                                 outerHeight: 24,
-                                innerInsets: IconInsets(top: 0.4583, right: 0.1667, bottom: 0.4583, left: 0.1667),
-                                imageInsets: IconInsets(top: -0.5000, right: -0.0625, bottom: -0.5000, left: -0.0625),
+                                innerInsets: SvgIconInsets(top: 0.4583, right: 0.1667, bottom: 0.4583, left: 0.1667),
+                                imageInsets: SvgIconInsets(top: -0.5000, right: -0.0625, bottom: -0.5000, left: -0.0625),
                                 cssVariables: ["stroke-0": Token.fgTertiary]
                             )
                         }
@@ -472,29 +405,27 @@ struct KnowledgeCardStudyView: View {
                     .onGeometryChange(for: CGFloat.self) { proxy in
                         proxy.frame(in: .scrollView).minY
                     } action: { minY in
-                        guard idx == currentCardIndex else { return }
-                        if !hasActiveScrollSample {
-                            hasActiveScrollSample = true
-                            lastActiveScrollMinY = minY
+                        guard idx == viewModel.currentCardIndex else { return }
+                        if !viewModel.hasActiveScrollSample {
+                            viewModel.hasActiveScrollSample = true
+                            viewModel.lastActiveScrollMinY = minY
                             return
                         }
 
-                        let delta = minY - lastActiveScrollMinY
-                        lastActiveScrollMinY = minY
+                        let delta = minY - viewModel.lastActiveScrollMinY
+                        viewModel.lastActiveScrollMinY = minY
 
                         if delta > 0.5 {
-                            // Pulling down: reveal top bar immediately, not only at top.
                             let revealStep = min(1, delta / max(1, topBarHeight)) * 1.6
-                            topBarCollapseProgress = max(0, topBarCollapseProgress - revealStep)
+                            viewModel.topBarCollapseProgress = max(0, viewModel.topBarCollapseProgress - revealStep)
                         } else {
-                            // Scrolling up / staying: follow absolute collapse progress.
                             let progress = max(0, min(1, -minY / topBarHeight))
-                            topBarCollapseProgress = progress
+                            viewModel.topBarCollapseProgress = progress
                         }
                     }
                 }
                 .scrollBounceBehavior(.basedOnSize, axes: .vertical)
-                .scrollDisabled(isHorizontalPagingActive)
+                .scrollDisabled(viewModel.isHorizontalPagingActive)
                 .simultaneousGesture(verticalScrollLockGesture)
 
                 LinearGradient(
@@ -512,20 +443,22 @@ struct KnowledgeCardStudyView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
 
             BottomActions(
-                focusHighlightVisible: $focusHighlightVisible,
-                isCurrentCardMastered: idx == currentCardIndex
-                    ? isCurrentCardMastered
+                focusHighlightVisible: $viewModel.focusHighlightVisible,
+                isCurrentCardMastered: idx == viewModel.currentCardIndex
+                    ? viewModel.isCurrentCardMastered
                     : GuestUserLocalStore.isPointMastered(card.pointID),
                 onToggleCurrentCardMastered: {
-                    guard idx == currentCardIndex else { return }
-                    toggleCurrentCardMastered()
+                    guard idx == viewModel.currentCardIndex else { return }
+                    viewModel.toggleCurrentCardMastered()
                 }
             )
         }
         .frame(width: pageWidth)
         .contentShape(Rectangle())
-        .allowsHitTesting(idx == currentCardIndex)
+        .allowsHitTesting(idx == viewModel.currentCardIndex)
     }
+
+    // MARK: - Body
 
     var body: some View {
         ZStack {
@@ -533,35 +466,35 @@ struct KnowledgeCardStudyView: View {
                 .ignoresSafeArea()
 
             VStack(spacing: 0) {
-                ProgressHeaderView(states: knowledgeBarStates)
+                ProgressHeaderView(states: viewModel.knowledgeBarStates)
                     .padding(.horizontal, 20)
                     .padding(.top, 8)
                     .padding(.bottom, 8)
 
                 TopActionBar(
-                    title: pageData.headerTitle,
+                    title: viewModel.pageData.headerTitle,
                     onBack: resolvedBackAction,
-                    onOpenCatalog: presentDirectorySheet
+                    onOpenCatalog: { viewModel.presentDirectorySheet() }
                 )
                 .frame(height: topBarHeight)
-                .opacity(1 - topBarCollapseProgress)
-                .offset(y: -24 * topBarCollapseProgress)
-                .padding(.bottom, -topBarHeight * topBarCollapseProgress)
+                .opacity(1 - viewModel.topBarCollapseProgress)
+                .offset(y: -24 * viewModel.topBarCollapseProgress)
+                .padding(.bottom, -topBarHeight * viewModel.topBarCollapseProgress)
                 .clipped()
                 .zIndex(10)
 
                 GeometryReader { viewport in
                     let pageWidth = viewport.size.width
-                    let visibleIndices = visibleCardIndices()
-                    let baseIndex = visibleIndices.first ?? currentCardIndex
+                    let visibleIndices = viewModel.visibleCardIndices()
+                    let baseIndex = visibleIndices.first ?? viewModel.currentCardIndex
                     ZStack {
                         ZStack {
                             HStack(spacing: 0) {
                                 visibleCardPages(visibleIndices: visibleIndices, pageWidth: pageWidth)
                             }
                             .frame(width: pageWidth, alignment: .leading)
-                            .offset(x: (-CGFloat(currentCardIndex - baseIndex) * pageWidth) + interactiveCardOffsetX)
-                            .animation(.easeInOut(duration: 0.30), value: currentCardIndex)
+                            .offset(x: (-CGFloat(viewModel.currentCardIndex - baseIndex) * pageWidth) + interactiveCardOffsetX)
+                            .animation(.easeInOut(duration: 0.30), value: viewModel.currentCardIndex)
                         }
                     }
                     .simultaneousGesture(cardSwipeGesture(pageWidth: pageWidth))
@@ -570,23 +503,25 @@ struct KnowledgeCardStudyView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
 
-            if isDirectorySheetPresented {
+            if viewModel.isDirectorySheetPresented {
                 ZStack(alignment: .bottom) {
                     Color.black
                         .opacity(0.25)
                         .ignoresSafeArea()
                         .contentShape(Rectangle())
-                        .onTapGesture(perform: dismissDirectorySheet)
+                        .onTapGesture(perform: { viewModel.dismissDirectorySheet() })
                         .transition(.identity)
 
-                    if isDirectoryPanelPresented {
+                    if viewModel.isDirectoryPanelPresented {
                         DirectorySheetOverlay(
-                            chapters: directoryChapters,
-                            selectedChapterID: selectedChapterID,
-                            selectedSectionID: selectedSectionID,
-                            expandedChapterID: $expandedChapterID,
-                            onClose: dismissDirectorySheet,
-                            onSelectSection: closeDirectoryAndLoad
+                            chapters: viewModel.directoryChapters,
+                            selectedChapterID: viewModel.selectedChapterID,
+                            selectedSectionID: viewModel.selectedSectionID,
+                            expandedChapterID: $viewModel.expandedChapterID,
+                            onClose: { viewModel.dismissDirectorySheet() },
+                            onSelectSection: { chapter, section in
+                                viewModel.closeDirectoryAndLoad(chapter: chapter, section: section)
+                            }
                         )
                         .transition(.move(edge: .bottom))
                     }
@@ -594,117 +529,27 @@ struct KnowledgeCardStudyView: View {
                 .ignoresSafeArea()
                 .zIndex(400)
             }
-
-            // Hard fallback hit area for back action (left corner only).
-            VStack {
-                Button(action: resolvedBackAction) {
-                    Color.black.opacity(0.001).frame(width: 88, height: 56)
-                }
-                .buttonStyle(.plain)
-                .padding(.top, 24)
-                .padding(.leading, 0)
-                Spacer(minLength: 0)
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-            .allowsHitTesting(!isDirectorySheetPresented)
-            .zIndex(1000)
-
-            // Hard fallback hit area for catalog action (right corner only).
-            VStack {
-                HStack {
-                    Spacer(minLength: 0)
-                    Button(action: presentDirectorySheet) {
-                        Color.black.opacity(0.001).frame(width: 88, height: 56)
-                    }
-                    .buttonStyle(.plain)
-                }
-                .padding(.top, 24)
-                Spacer(minLength: 0)
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-            .allowsHitTesting(!isDirectorySheetPresented)
-            .zIndex(1001)
-
-            // Left-edge swipe back: drag right from screen edge to go back.
-            HStack(spacing: 0) {
-                Color.black.opacity(0.001)
-                    .frame(width: 20)
-                    .contentShape(Rectangle())
-                    .gesture(
-                        DragGesture(minimumDistance: 8)
-                            .onChanged { value in
-                                guard !edgeSwipeBackTriggered else { return }
-                                let movedRight = value.translation.width > 56
-                                let stableVertical = abs(value.translation.height) < 40
-                                if movedRight && stableVertical {
-                                    edgeSwipeBackTriggered = true
-                                    resolvedBackAction()
-                                }
-                            }
-                            .onEnded { _ in
-                                edgeSwipeBackTriggered = false
-                            }
-                    )
-                Spacer(minLength: 0)
-            }
-            .allowsHitTesting(!isDirectorySheetPresented)
-            .zIndex(999)
         }
         .task {
-            shouldRenderAdjacentCards = false
-
-            let previousChapterID = selectedChapterID
-            let previousSectionID = selectedSectionID
-            var hasRenderedLocal = false
-
-            // Phase 1: render local cache immediately if available.
-            if let localLoaded = try? await loadStudyPayload(
-                fallbackChapterID: previousChapterID,
-                fallbackSectionID: previousSectionID
-            ) {
-                applyLoadedStudyPayload(localLoaded)
-                hasRenderedLocal = true
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
-                    shouldRenderAdjacentCards = true
-                }
-            }
-
-            // Phase 2: refresh remote in background, then reload and update.
-            do {
-                try await ContentPackageRemoteStore.refreshFreeContentRequired()
-                KnowledgeCardDataStore.invalidateCache()
-                let refreshed = try await loadStudyPayload(
-                    fallbackChapterID: previousChapterID,
-                    fallbackSectionID: previousSectionID
-                )
-                applyLoadedStudyPayload(refreshed)
-                if !hasRenderedLocal {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
-                        shouldRenderAdjacentCards = true
-                    }
-                }
-            } catch {
-                if !hasRenderedLocal {
-                    directoryChapters = []
-                    loadErrorMessage = error.localizedDescription
-                }
-            }
+            await viewModel.loadInitialData()
         }
         .alert("数据加载失败", isPresented: Binding(
-            get: { loadErrorMessage != nil },
+            get: { viewModel.loadErrorMessage != nil },
             set: { newValue in
-                if !newValue { loadErrorMessage = nil }
+                if !newValue { viewModel.loadErrorMessage = nil }
             }
         )) {
-            Button("确定", role: .cancel) { loadErrorMessage = nil }
+            Button("确定", role: .cancel) { viewModel.loadErrorMessage = nil }
         } message: {
-            Text(loadErrorMessage ?? "")
+            Text(viewModel.loadErrorMessage ?? "")
         }
     }
 }
 
+// MARK: - Progress Header
+
 private struct ProgressHeaderView: View {
-    let states: [KnowledgeCardStudyView.KnowledgeBarState]
+    let states: [KnowledgeCardStudyViewModel.KnowledgeBarState]
     private let spacing: CGFloat = 4
     private let defaultWidth: CGFloat = 21
 
@@ -729,10 +574,9 @@ private struct ProgressHeaderView: View {
         }
         .frame(height: 8)
     }
-
 }
 
-private extension KnowledgeCardStudyView.KnowledgeBarState {
+private extension KnowledgeCardStudyViewModel.KnowledgeBarState {
     var color: Color {
         switch self {
         case .active:
@@ -745,6 +589,8 @@ private extension KnowledgeCardStudyView.KnowledgeBarState {
     }
 }
 
+// MARK: - Top Action Bar
+
 private struct TopActionBar: View {
     let title: String
     let onBack: () -> Void
@@ -754,12 +600,12 @@ private struct TopActionBar: View {
         ZStack {
             HStack {
                 Button(action: onBack) {
-                    IconWrapper(
+                    SvgIconView(
                         name: "icon-arrow-left",
                         outerWidth: 24,
                         outerHeight: 24,
-                        innerInsets: IconInsets(top: 0.2083, right: 0.2083, bottom: 0.2083, left: 0.2083),
-                        imageInsets: IconInsets(top: -0.0714, right: -0.0714, bottom: -0.0714, left: -0.0714),
+                        innerInsets: SvgIconInsets(top: 0.2083, right: 0.2083, bottom: 0.2083, left: 0.2083),
+                        imageInsets: SvgIconInsets(top: -0.0714, right: -0.0714, bottom: -0.0714, left: -0.0714),
                         cssVariables: ["stroke-0": Token.fgPrimary]
                     )
                     .frame(width: 44, height: 44)
@@ -778,12 +624,12 @@ private struct TopActionBar: View {
                 Spacer()
 
                 Button(action: onOpenCatalog) {
-                    IconWrapper(
+                    SvgIconView(
                         name: "icon-menu-03",
                         outerWidth: 24,
                         outerHeight: 24,
-                        innerInsets: IconInsets(top: 0.2500, right: 0.1250, bottom: 0.2500, left: 0.1250),
-                        imageInsets: IconInsets(top: -0.0833, right: -0.0556, bottom: -0.0833, left: -0.0556),
+                        innerInsets: SvgIconInsets(top: 0.2500, right: 0.1250, bottom: 0.2500, left: 0.1250),
+                        imageInsets: SvgIconInsets(top: -0.0833, right: -0.0556, bottom: -0.0833, left: -0.0556),
                         cssVariables: ["stroke-0": Token.fgPrimary]
                     )
                     .frame(width: 44, height: 44)
@@ -791,7 +637,7 @@ private struct TopActionBar: View {
                 }
                 .buttonStyle(.plain)
             }
-            
+
             // Fallback touch target: left area only, avoid blocking right menu button.
             HStack {
                 Button(action: onBack) {
@@ -807,6 +653,8 @@ private struct TopActionBar: View {
     }
 }
 
+// MARK: - Directory Sheet
+
 private struct DirectorySheetOverlay: View {
     let chapters: [KnowledgeDirectoryChapter]
     let selectedChapterID: String
@@ -814,6 +662,11 @@ private struct DirectorySheetOverlay: View {
     @Binding var expandedChapterID: String?
     let onClose: () -> Void
     let onSelectSection: (KnowledgeDirectoryChapter, KnowledgeDirectorySection) -> Void
+
+    private var sheetHeight: CGFloat {
+        let screen = UIScreen.main.bounds.height
+        return min(640, screen * 0.72)
+    }
 
     var body: some View {
         VStack(spacing: 0) {
@@ -823,12 +676,12 @@ private struct DirectorySheetOverlay: View {
                     .foregroundStyle(Token.textPrimary)
                     .frame(maxWidth: .infinity, alignment: .leading)
 
-                IconWrapper(
+                SvgIconView(
                     name: "icon-dir-x-close",
                     outerWidth: 24,
                     outerHeight: 24,
-                    innerInsets: IconInsets(top: 0.25, right: 0.25, bottom: 0.25, left: 0.25),
-                    imageInsets: IconInsets(top: -0.0833, right: -0.0833, bottom: -0.0833, left: -0.0833),
+                    innerInsets: SvgIconInsets(top: 0.25, right: 0.25, bottom: 0.25, left: 0.25),
+                    imageInsets: SvgIconInsets(top: -0.0833, right: -0.0833, bottom: -0.0833, left: -0.0833),
                     cssVariables: ["stroke-0": Token.fgTertiary]
                 )
                 .contentShape(Rectangle())
@@ -874,7 +727,7 @@ private struct DirectorySheetOverlay: View {
             }
         }
         .frame(maxWidth: .infinity)
-        .frame(height: 640)
+        .frame(height: sheetHeight)
         .background(Token.bgCanvas)
         .clipShape(
             UnevenRoundedRectangle(
@@ -1009,12 +862,12 @@ private struct DirectorySectionRow: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
 
                 if isSelected {
-                    IconWrapper(
+                    SvgIconView(
                         name: "icon-dir-check",
                         outerWidth: 24,
                         outerHeight: 24,
-                        innerInsets: IconInsets(top: 0.2706, right: 0.1667, bottom: 0.2710, left: 0.1667),
-                        imageInsets: IconInsets(top: -0.0909, right: -0.0625, bottom: -0.0909, left: -0.0625),
+                        innerInsets: SvgIconInsets(top: 0.2706, right: 0.1667, bottom: 0.2710, left: 0.1667),
+                        imageInsets: SvgIconInsets(top: -0.0909, right: -0.0625, bottom: -0.0909, left: -0.0625),
                         cssVariables: ["stroke-0": Token.fgBrand]
                     )
                 }
@@ -1042,6 +895,8 @@ private struct DirectoryPressableRowStyle: ButtonStyle {
     }
 }
 
+// MARK: - Knowledge Body Card
+
 private struct KnowledgeBodyCard: View {
     let markdown: String
     let focusHighlightVisible: Bool
@@ -1062,6 +917,8 @@ private struct KnowledgeBodyCard: View {
     }
 }
 
+// MARK: - Note Card
+
 private struct NoteCard: View {
     let icon: String
     let iconStrokeColor: Color
@@ -1078,12 +935,12 @@ private struct NoteCard: View {
                     RoundedRectangle(cornerRadius: 8, style: .continuous)
                         .fill(iconBackground)
 
-                    IconWrapper(
+                    SvgIconView(
                         name: icon,
                         outerWidth: 16,
                         outerHeight: 16,
-                        innerInsets: IconInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
-                        imageInsets: IconInsets(top: -0.0563, right: -0.0562, bottom: -0.0562, left: -0.0563),
+                        innerInsets: SvgIconInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
+                        imageInsets: SvgIconInsets(top: -0.0563, right: -0.0562, bottom: -0.0562, left: -0.0563),
                         cssVariables: ["stroke-0": iconStrokeColor],
                         cssValues: ["stroke-width-0": "1.2"]
                     )
@@ -1115,6 +972,8 @@ private struct NoteCard: View {
         .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
     }
 }
+
+// MARK: - Bottom Actions
 
 private struct BottomActions: View {
     @Binding var focusHighlightVisible: Bool
@@ -1188,82 +1047,8 @@ private struct FocusVisibilityToggleButton: View {
     }
 }
 
-private struct IconInsets {
-    let top: CGFloat
-    let right: CGFloat
-    let bottom: CGFloat
-    let left: CGFloat
-
-    static let zero = IconInsets(top: 0, right: 0, bottom: 0, left: 0)
-}
-
-private struct IconWrapper: View {
-    let name: String
-    let outerWidth: CGFloat
-    let outerHeight: CGFloat
-    let innerInsets: IconInsets
-    let imageInsets: IconInsets
-    let cssVariables: [String: Color]
-    let cssValues: [String: String]
-    let shouldClip: Bool
-
-    init(
-        name: String,
-        outerWidth: CGFloat,
-        outerHeight: CGFloat,
-        innerInsets: IconInsets = .zero,
-        imageInsets: IconInsets = .zero,
-        cssVariables: [String: Color] = [:],
-        cssValues: [String: String] = [:],
-        shouldClip: Bool = true
-    ) {
-        self.name = name
-        self.outerWidth = outerWidth
-        self.outerHeight = outerHeight
-        self.innerInsets = innerInsets
-        self.imageInsets = imageInsets
-        self.cssVariables = cssVariables
-        self.cssValues = cssValues
-        self.shouldClip = shouldClip
-    }
-
-    var body: some View {
-        GeometryReader { geometry in
-            let width = geometry.size.width
-            let height = geometry.size.height
-
-            let innerX = width * innerInsets.left
-            let innerY = height * innerInsets.top
-            let innerWidth = max(0, width * (1 - innerInsets.left - innerInsets.right))
-            let innerHeight = max(0, height * (1 - innerInsets.top - innerInsets.bottom))
-
-            let imageX = innerX + innerWidth * imageInsets.left
-            let imageY = innerY + innerHeight * imageInsets.top
-            let imageWidth = max(0, innerWidth * (1 - imageInsets.left - imageInsets.right))
-            let imageHeight = max(0, innerHeight * (1 - imageInsets.top - imageInsets.bottom))
-
-            SVGAssetView(name: name, cssVariables: cssVariables, cssValues: cssValues)
-                .frame(width: imageWidth, height: imageHeight)
-                .position(x: imageX + imageWidth / 2, y: imageY + imageHeight / 2)
-        }
-        .frame(width: outerWidth, height: outerHeight)
-        .modifier(ClipModifier(isEnabled: shouldClip))
-    }
-}
-
-private struct ClipModifier: ViewModifier {
-    let isEnabled: Bool
-
-    @ViewBuilder
-    func body(content: Content) -> some View {
-        if isEnabled {
-            content.clipped()
-        } else {
-            content
-        }
-    }
-}
+// MARK: - Preview
 
 #Preview {
-    KnowledgeCardStudyView()
+    KnowledgeCardStudyView(viewModel: KnowledgeCardStudyViewModel())
 }

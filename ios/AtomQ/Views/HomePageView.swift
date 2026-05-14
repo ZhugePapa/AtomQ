@@ -1,31 +1,8 @@
 import SwiftUI
 import UIKit
 
-enum AppTab: String {
-    case study
-    case stats
-    case profile
-}
-
 struct HomePageView: View {
-    private enum StudyNavDirection {
-        case push
-        case pop
-    }
-
-    @Binding var selectedTab: AppTab
-    @Binding var isDarkMode: Bool
-    @State private var showingKnowledgeCardStudy = false
-    @State private var studyNavDirection: StudyNavDirection = .push
-
-    private var studyPageTransition: AnyTransition {
-        switch studyNavDirection {
-        case .push:
-            return .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
-        case .pop:
-            return .asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .trailing))
-        }
-    }
+    @ObservedObject var viewModel: HomeViewModel
 
     var body: some View {
         GeometryReader { geometry in
@@ -38,20 +15,16 @@ struct HomePageView: View {
                 VStack(spacing: 0) {
                     Spacer().frame(height: 56)
 
-                    if selectedTab == .study {
+                    if viewModel.selectedTab == .study {
                         ZStack {
-                            if showingKnowledgeCardStudy {
+                            if viewModel.showingKnowledgeCardStudy {
                                 KnowledgeCardStudyView(
-                                    onBack: {
-                                        DispatchQueue.main.async {
-                                            studyNavDirection = .pop
-                                            withAnimation(.easeInOut(duration: 0.25)) {
-                                                showingKnowledgeCardStudy = false
-                                            }
-                                        }
+                                    viewModel: viewModel.studyViewModel,
+                                    onBack: { [weak viewModel] in
+                                        viewModel?.closeKnowledgeCardStudy()
                                     }
                                 )
-                                .transition(studyPageTransition)
+                                .transition(viewModel.studyPageTransition)
                             } else {
                                 VStack(spacing: 0) {
                                     HeaderView()
@@ -59,30 +32,27 @@ struct HomePageView: View {
                                         .frame(height: 62)
 
                                     ContentAreaView(
-                                        onOpenKnowledgeCardStudy: {
-                                            studyNavDirection = .push
-                                            withAnimation(.easeInOut(duration: 0.25)) {
-                                                showingKnowledgeCardStudy = true
-                                            }
+                                        onOpenKnowledgeCardStudy: { [weak viewModel] in
+                                            viewModel?.openKnowledgeCardStudy()
                                         }
                                     )
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
 
-                                    BottomTabBarView(selectedTab: $selectedTab)
+                                    BottomTabBarView(viewModel: viewModel)
                                         .frame(maxWidth: .infinity)
                                         .frame(height: 64)
                                 }
-                                .transition(studyPageTransition)
+                                .transition(viewModel.studyPageTransition)
                             }
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .clipped()
-                    } else if selectedTab == .profile {
+                    } else if viewModel.selectedTab == .profile {
                         VStack(spacing: 0) {
-                            ProfileCenterView(isDarkMode: $isDarkMode)
+                            ProfileCenterView()
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
 
-                            BottomTabBarView(selectedTab: $selectedTab)
+                            BottomTabBarView(viewModel: viewModel)
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 64)
                         }
@@ -91,7 +61,7 @@ struct HomePageView: View {
                             StatsPlaceholderView()
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
 
-                            BottomTabBarView(selectedTab: $selectedTab)
+                            BottomTabBarView(viewModel: viewModel)
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 64)
                         }
@@ -102,69 +72,10 @@ struct HomePageView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             }
         }
-        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 
-private struct PercentInsets {
-    let top: CGFloat
-    let right: CGFloat
-    let bottom: CGFloat
-    let left: CGFloat
-
-    static let zero = PercentInsets(top: 0, right: 0, bottom: 0, left: 0)
-}
-
-private struct FigmaIconView: View {
-    let name: String
-    let outerWidth: CGFloat
-    let outerHeight: CGFloat
-    let innerInsets: PercentInsets
-    let imageInsets: PercentInsets
-    let cssVariables: [String: Color]
-    let cssValues: [String: String]
-
-    init(
-        name: String,
-        outerWidth: CGFloat,
-        outerHeight: CGFloat,
-        innerInsets: PercentInsets = .zero,
-        imageInsets: PercentInsets = .zero,
-        cssVariables: [String: Color] = [:],
-        cssValues: [String: String] = [:]
-    ) {
-        self.name = name
-        self.outerWidth = outerWidth
-        self.outerHeight = outerHeight
-        self.innerInsets = innerInsets
-        self.imageInsets = imageInsets
-        self.cssVariables = cssVariables
-        self.cssValues = cssValues
-    }
-
-    var body: some View {
-        GeometryReader { geometry in
-            let width = geometry.size.width
-            let height = geometry.size.height
-
-            let innerX = width * innerInsets.left
-            let innerY = height * innerInsets.top
-            let innerWidth = max(0, width * (1 - innerInsets.left - innerInsets.right))
-            let innerHeight = max(0, height * (1 - innerInsets.top - innerInsets.bottom))
-
-            let imageX = innerX + innerWidth * imageInsets.left
-            let imageY = innerY + innerHeight * imageInsets.top
-            let imageWidth = max(0, innerWidth * (1 - imageInsets.left - imageInsets.right))
-            let imageHeight = max(0, innerHeight * (1 - imageInsets.top - imageInsets.bottom))
-
-            SVGAssetView(name: name, cssVariables: cssVariables, cssValues: cssValues)
-                .frame(width: imageWidth, height: imageHeight)
-                .position(x: imageX + imageWidth / 2, y: imageY + imageHeight / 2)
-        }
-        .frame(width: outerWidth, height: outerHeight)
-        .clipped()
-    }
-}
+// MARK: - Header
 
 private struct HeaderView: View {
     var body: some View {
@@ -188,19 +99,19 @@ private struct HeaderView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
 
             ZStack(alignment: .topTrailing) {
-                FigmaIconView(
+                SvgIconView(
                     name: "icon-notification",
                     outerWidth: 24,
                     outerHeight: 24,
-                    innerInsets: PercentInsets(top: 0.0938, right: 0.1560, bottom: 0.0938, left: 0.1559),
-                    imageInsets: PercentInsets(top: -0.0513, right: -0.0611, bottom: -0.0513, left: -0.0612),
+                    innerInsets: SvgIconInsets(top: 0.0938, right: 0.1560, bottom: 0.0938, left: 0.1559),
+                    imageInsets: SvgIconInsets(top: -0.0513, right: -0.0611, bottom: -0.0513, left: -0.0612),
                     cssVariables: ["stroke-0": Token.fgPrimary]
                 )
-                FigmaIconView(
+                SvgIconView(
                     name: "icon-red-dot",
                     outerWidth: 8,
                     outerHeight: 8,
-                    imageInsets: PercentInsets(top: -0.125, right: -0.125, bottom: -0.125, left: -0.125),
+                    imageInsets: SvgIconInsets(top: -0.125, right: -0.125, bottom: -0.125, left: -0.125),
                     cssVariables: [
                         "fill-0": Token.fgDanger,
                         "stroke-0": Token.fgWhiteInverse,
@@ -215,6 +126,8 @@ private struct HeaderView: View {
         .background(Token.bgCanvas)
     }
 }
+
+// MARK: - Content Area
 
 private struct ContentAreaView: View {
     let onOpenKnowledgeCardStudy: () -> Void
@@ -278,12 +191,12 @@ private struct ContentAreaView: View {
                                 Text("继续学习")
                                     .font(.custom("PingFang SC", size: 16).weight(.medium))
                                     .foregroundStyle(Token.textWhite)
-                                FigmaIconView(
+                                SvgIconView(
                                     name: "icon-play-circle",
                                     outerWidth: iconSize,
                                     outerHeight: iconSize,
-                                    innerInsets: PercentInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
-                                    imageInsets: PercentInsets(top: -0.0375, right: -0.0375, bottom: -0.0375, left: -0.0375)
+                                    innerInsets: SvgIconInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
+                                    imageInsets: SvgIconInsets(top: -0.0375, right: -0.0375, bottom: -0.0375, left: -0.0375)
                                 )
                             }
                             .frame(width: ctaWidth, height: ctaHeight)
@@ -318,6 +231,8 @@ private struct ContentAreaView: View {
     }
 }
 
+// MARK: - Hero Card Shape
+
 private struct HeroCardCutoutShape: Shape {
     var cornerRadius: CGFloat = Token.radiusMd
     var notchWidth: CGFloat = 152
@@ -345,7 +260,6 @@ private struct HeroCardCutoutShape: Shape {
         var path = Path()
         path.move(to: CGPoint(x: x0 + radius, y: y0))
 
-        // 外轮廓：上边 -> 右上角 -> 右边
         path.addLine(to: CGPoint(x: x1 - radius, y: y0))
         path.addQuadCurve(
             to: CGPoint(x: x1, y: y0 + radius),
@@ -353,7 +267,6 @@ private struct HeroCardCutoutShape: Shape {
         )
         path.addLine(to: CGPoint(x: x1, y: notchTopY - radius))
 
-        // 凹口：右侧拐入 -> 顶边向左 -> 左侧向下（内凹两角）
         path.addQuadCurve(
             to: CGPoint(x: x1 - radius, y: notchTopY),
             control: CGPoint(x: x1, y: notchTopY)
@@ -365,7 +278,6 @@ private struct HeroCardCutoutShape: Shape {
         )
         path.addLine(to: CGPoint(x: notchLeftX, y: y1 - radius))
 
-        // 外轮廓：下边 -> 左下角 -> 左边 -> 左上角闭合
         path.addQuadCurve(
             to: CGPoint(x: notchLeftX - radius, y: y1),
             control: CGPoint(x: notchLeftX, y: y1)
@@ -394,6 +306,8 @@ private struct HeroDecorativeOverlay: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
     }
 }
+
+// MARK: - Hero Metric
 
 private enum FigmaFont {
     static func dataXlgDINBold() -> Font {
@@ -442,6 +356,8 @@ private struct HeroMetric: View {
     }
 }
 
+// MARK: - Quick Actions
+
 private struct QuickActionRow: View {
     var body: some View {
         HStack(spacing: 16) {
@@ -461,47 +377,7 @@ private struct QuickActionItem: View {
     var body: some View {
         VStack(spacing: 8) {
             ZStack {
-                switch icon {
-                case "icon-graduation-hat":
-                    FigmaIconView(
-                        name: icon,
-                        outerWidth: 24,
-                        outerHeight: 24,
-                        innerInsets: PercentInsets(top: 0.1483, right: 0.0833, bottom: 0.1292, left: 0.0833),
-                        imageInsets: PercentInsets(top: -0.0577, right: -0.0500, bottom: -0.0577, left: -0.0500),
-                        cssVariables: ["stroke-0": Token.fgPrimary]
-                    )
-                case "icon-certificate":
-                    FigmaIconView(
-                        name: icon,
-                        outerWidth: 24,
-                        outerHeight: 24,
-                        innerInsets: PercentInsets(top: 0.0833, right: 0.1250, bottom: 0.0833, left: 0.1250),
-                        imageInsets: PercentInsets(top: -0.0500, right: -0.0556, bottom: -0.0500, left: -0.0556),
-                        cssVariables: ["stroke-0": Token.fgPrimary]
-                    )
-                case "icon-atom":
-                    FigmaIconView(
-                        name: icon,
-                        outerWidth: 24,
-                        outerHeight: 24,
-                        innerInsets: PercentInsets(top: 0.1316, right: 0.1299, bottom: 0.1299, left: 0.1316),
-                        imageInsets: PercentInsets(top: -0.0564, right: -0.0564, bottom: -0.0564, left: -0.0564),
-                        cssVariables: ["stroke-0": Token.fgPrimary]
-                    )
-                case "icon-beaker":
-                    FigmaIconView(
-                        name: icon,
-                        outerWidth: 24,
-                        outerHeight: 24,
-                        innerInsets: PercentInsets(top: 0.0833, right: 0.1250, bottom: 0.0833, left: 0.1250),
-                        imageInsets: PercentInsets(top: -0.0500, right: -0.0556, bottom: -0.0500, left: -0.0556),
-                        cssVariables: ["stroke-0": Token.fgPrimary]
-                    )
-                default:
-                    SVGAssetView(name: icon)
-                        .frame(width: 24, height: 24)
-                }
+                quickActionIconView
             }
             .frame(width: Token.spacing56, height: Token.spacing56)
             .background(Token.bgSubtle)
@@ -515,7 +391,54 @@ private struct QuickActionItem: View {
         .frame(maxWidth: .infinity)
         .frame(height: 86)
     }
+
+    @ViewBuilder
+    private var quickActionIconView: some View {
+        switch icon {
+        case "icon-graduation-hat":
+            SvgIconView(
+                name: icon,
+                outerWidth: 24,
+                outerHeight: 24,
+                innerInsets: SvgIconInsets(top: 0.1483, right: 0.0833, bottom: 0.1292, left: 0.0833),
+                imageInsets: SvgIconInsets(top: -0.0577, right: -0.0500, bottom: -0.0577, left: -0.0500),
+                cssVariables: ["stroke-0": Token.fgPrimary]
+            )
+        case "icon-certificate":
+            SvgIconView(
+                name: icon,
+                outerWidth: 24,
+                outerHeight: 24,
+                innerInsets: SvgIconInsets(top: 0.0833, right: 0.1250, bottom: 0.0833, left: 0.1250),
+                imageInsets: SvgIconInsets(top: -0.0500, right: -0.0556, bottom: -0.0500, left: -0.0556),
+                cssVariables: ["stroke-0": Token.fgPrimary]
+            )
+        case "icon-atom":
+            SvgIconView(
+                name: icon,
+                outerWidth: 24,
+                outerHeight: 24,
+                innerInsets: SvgIconInsets(top: 0.1316, right: 0.1299, bottom: 0.1299, left: 0.1316),
+                imageInsets: SvgIconInsets(top: -0.0564, right: -0.0564, bottom: -0.0564, left: -0.0564),
+                cssVariables: ["stroke-0": Token.fgPrimary]
+            )
+        case "icon-beaker":
+            SvgIconView(
+                name: icon,
+                outerWidth: 24,
+                outerHeight: 24,
+                innerInsets: SvgIconInsets(top: 0.0833, right: 0.1250, bottom: 0.0833, left: 0.1250),
+                imageInsets: SvgIconInsets(top: -0.0500, right: -0.0556, bottom: -0.0500, left: -0.0556),
+                cssVariables: ["stroke-0": Token.fgPrimary]
+            )
+        default:
+            SVGAssetView(name: icon)
+                .frame(width: 24, height: 24)
+        }
+    }
 }
+
+// MARK: - Task Section
 
 private struct TaskSectionView: View {
     let onOpenKnowledgeCardStudy: () -> Void
@@ -607,19 +530,21 @@ private struct TaskSectionView: View {
     }
 }
 
+// MARK: - Bottom Tab Bar
+
 private struct BottomTabBarView: View {
-    @Binding var selectedTab: AppTab
+    @ObservedObject var viewModel: HomeViewModel
 
     var body: some View {
         HStack(spacing: 24) {
-            TabItem(icon: "icon-home-line", label: "学习", active: selectedTab == .study) {
-                selectedTab = .study
+            TabItem(icon: "icon-home-line", label: "学习", active: viewModel.selectedTab == .study) {
+                viewModel.selectedTab = .study
             }
-            TabItem(icon: "icon-bar-chart", label: "统计", active: selectedTab == .stats) {
-                selectedTab = .stats
+            TabItem(icon: "icon-bar-chart", label: "统计", active: viewModel.selectedTab == .stats) {
+                viewModel.selectedTab = .stats
             }
-            TabItem(icon: "icon-user", label: "个人中心", active: selectedTab == .profile) {
-                selectedTab = .profile
+            TabItem(icon: "icon-user", label: "个人中心", active: viewModel.selectedTab == .profile) {
+                viewModel.selectedTab = .profile
             }
         }
         .padding(.horizontal, 24)
@@ -645,38 +570,38 @@ private struct TabItem: View {
             VStack(spacing: 4) {
                 switch icon {
                 case "icon-home-line":
-                    FigmaIconView(
+                    SvgIconView(
                         name: icon,
                         outerWidth: 24,
                         outerHeight: 24,
-                        innerInsets: PercentInsets(top: 0.0945, right: 0.1250, bottom: 0.1250, left: 0.1250),
+                        innerInsets: SvgIconInsets(top: 0.0945, right: 0.1250, bottom: 0.1250, left: 0.1250),
                         imageInsets: active
-                            ? PercentInsets(top: -0.0534, right: -0.0556, bottom: -0.0534, left: -0.0556)
-                            : PercentInsets(top: -0.0400, right: -0.0417, bottom: -0.0400, left: -0.0417),
+                            ? SvgIconInsets(top: -0.0534, right: -0.0556, bottom: -0.0534, left: -0.0556)
+                            : SvgIconInsets(top: -0.0400, right: -0.0417, bottom: -0.0400, left: -0.0417),
                         cssVariables: ["stroke-0": active ? Token.fgPrimary : Token.fgDisabled],
                         cssValues: ["stroke-width-0": active ? "2" : "1.5"]
                     )
                 case "icon-bar-chart":
-                    FigmaIconView(
+                    SvgIconView(
                         name: icon,
                         outerWidth: 24,
                         outerHeight: 24,
-                        innerInsets: PercentInsets(top: 0.1250, right: 0.1250, bottom: 0.1250, left: 0.1250),
+                        innerInsets: SvgIconInsets(top: 0.1250, right: 0.1250, bottom: 0.1250, left: 0.1250),
                         imageInsets: active
-                            ? PercentInsets(top: -0.0556, right: -0.0556, bottom: -0.0556, left: -0.0556)
-                            : PercentInsets(top: -0.0417, right: -0.0417, bottom: -0.0417, left: -0.0417),
+                            ? SvgIconInsets(top: -0.0556, right: -0.0556, bottom: -0.0556, left: -0.0556)
+                            : SvgIconInsets(top: -0.0417, right: -0.0417, bottom: -0.0417, left: -0.0417),
                         cssVariables: ["stroke-0": active ? Token.fgPrimary : Token.fgDisabled],
                         cssValues: ["stroke-width-0": active ? "2" : "1.5"]
                     )
                 case "icon-user":
-                    FigmaIconView(
+                    SvgIconView(
                         name: icon,
                         outerWidth: 24,
                         outerHeight: 24,
-                        innerInsets: PercentInsets(top: 0.1250, right: 0.1667, bottom: 0.1250, left: 0.1667),
+                        innerInsets: SvgIconInsets(top: 0.1250, right: 0.1667, bottom: 0.1250, left: 0.1667),
                         imageInsets: active
-                            ? PercentInsets(top: -0.0556, right: -0.0625, bottom: -0.0556, left: -0.0625)
-                            : PercentInsets(top: -0.0417, right: -0.0469, bottom: -0.0417, left: -0.0469),
+                            ? SvgIconInsets(top: -0.0556, right: -0.0625, bottom: -0.0556, left: -0.0625)
+                            : SvgIconInsets(top: -0.0417, right: -0.0469, bottom: -0.0417, left: -0.0469),
                         cssVariables: ["stroke-0": active ? Token.fgPrimary : Token.fgDisabled],
                         cssValues: ["stroke-width-0": active ? "2" : "1.5"]
                     )
@@ -694,8 +619,10 @@ private struct TabItem: View {
     }
 }
 
+// MARK: - Profile Center
+
 private struct ProfileCenterView: View {
-    @Binding var isDarkMode: Bool
+    @AppStorage("atomq.darkMode.enabled") private var isDarkMode = false
     @State private var showClearCacheConfirm = false
     @State private var clearCacheResultMessage: String?
 
@@ -767,6 +694,8 @@ private struct ProfileCenterView: View {
     }
 }
 
+// MARK: - Stats Placeholder
+
 private struct StatsPlaceholderView: View {
     var body: some View {
         Token.bgCanvas
@@ -774,12 +703,14 @@ private struct StatsPlaceholderView: View {
     }
 }
 
+// MARK: - Preview
+
 private struct HomePageInteractivePreview: View {
-    @State private var selectedTab: AppTab = .study
-    @State private var isDarkMode = false
+    @StateObject private var viewModel = HomeViewModel()
+    @AppStorage("atomq.darkMode.enabled") private var isDarkMode = false
 
     var body: some View {
-        HomePageView(selectedTab: $selectedTab, isDarkMode: $isDarkMode)
+        HomePageView(viewModel: viewModel)
             .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }

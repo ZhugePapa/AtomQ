@@ -2,6 +2,25 @@ import SwiftUI
 import UIKit
 import WebKit
 
+// MARK: - SVG Image Cache
+
+private enum SVGImageCache {
+    private static let lock = NSLock()
+    private static var cache: [String: UIImage] = [:]
+
+    static func image(forKey key: String) -> UIImage? {
+        lock.lock(); defer { lock.unlock() }
+        return cache[key]
+    }
+
+    static func setImage(_ image: UIImage, forKey key: String) {
+        lock.lock(); defer { lock.unlock() }
+        cache[key] = image
+    }
+}
+
+// MARK: - SVGAssetView (public API unchanged)
+
 struct SVGAssetView: View {
     let name: String
     let cssVariables: [String: Color]
@@ -14,15 +33,73 @@ struct SVGAssetView: View {
     }
 
     var body: some View {
-        SVGWebAssetView(name: name, cssVariables: cssVariables, cssValues: cssValues)
+        SVGRenderView(name: name, cssVariables: cssVariables, cssValues: cssValues)
             .allowsHitTesting(false)
     }
 }
+
+// MARK: - SVG Render View (cached image with WKWebView fallback)
+
+private struct SVGRenderView: View {
+    let name: String
+    let cssVariables: [String: Color]
+    let cssValues: [String: String]
+
+    @State private var cachedImage: UIImage?
+
+    var body: some View {
+        GeometryReader { geometry in
+            let width = geometry.size.width
+            let height = geometry.size.height
+
+            if width > 0, height > 0 {
+                let cacheKey = makeCacheKey(name: name, width: width, height: height, cssVariables: cssVariables, cssValues: cssValues)
+
+                // Check in-memory state first, then global cache
+                if let image = cachedImage ?? SVGImageCache.image(forKey: cacheKey) {
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: width, height: height)
+                        .onAppear { cachedImage = image }
+                } else {
+                    SVGWebAssetView(
+                        name: name,
+                        cssVariables: cssVariables,
+                        cssValues: cssValues,
+                        cacheKey: cacheKey,
+                        onImageCached: { cachedImage = $0 }
+                    )
+                    .frame(width: width, height: height)
+                }
+            }
+        }
+    }
+
+    private func makeCacheKey(
+        name: String,
+        width: CGFloat,
+        height: CGFloat,
+        cssVariables: [String: Color],
+        cssValues: [String: String]
+    ) -> String {
+        let varPart = cssVariables.keys.sorted().map { "\($0)=\(cssVariables[$0]?.description ?? "")" }.joined(separator: ",")
+        let valPart = cssValues.keys.sorted().map { "\($0)=\(cssValues[$0] ?? "")" }.joined(separator: ",")
+        let w = String(format: "%.0f", width)
+        let h = String(format: "%.0f", height)
+        return "\(name)|\(w)x\(h)|\(varPart)|\(valPart)"
+    }
+}
+
+// MARK: - WKWebView-based SVG renderer (only created on cache miss)
 
 private struct SVGWebAssetView: UIViewRepresentable {
     let name: String
     let cssVariables: [String: Color]
     let cssValues: [String: String]
+    let cacheKey: String
+    let onImageCached: (UIImage) -> Void
+
     private static var resolvedURLCache: [String: URL] = [:]
 
     final class SVGRenderWebView: WKWebView {
@@ -58,8 +135,8 @@ private struct SVGWebAssetView: UIViewRepresentable {
             <!doctype html>
             <html>
             <head>
-              <meta charset=\"utf-8\" />
-              <meta name=\"viewport\" content=\"width=\(widthPx), height=\(heightPx), initial-scale=1, maximum-scale=1, user-scalable=no\" />
+              <meta charset="utf-8" />
+              <meta name="viewport" content="width=\(widthPx), height=\(heightPx), initial-scale=1, maximum-scale=1, user-scalable=no" />
               <style>
                 html, body {
                   margin: 0;
@@ -87,7 +164,7 @@ private struct SVGWebAssetView: UIViewRepresentable {
               </style>
             </head>
             <body>
-              <div id=\"root\">\(svgSource)</div>
+              <div id="root">\(svgSource)</div>
             </body>
             </html>
             """
@@ -97,6 +174,12 @@ private struct SVGWebAssetView: UIViewRepresentable {
     }
 
     final class Coordinator: NSObject, WKNavigationDelegate {
+        let parent: SVGWebAssetView
+
+        init(_ parent: SVGWebAssetView) {
+            self.parent = parent
+        }
+
         func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
             (webView as? SVGRenderWebView)?.renderIfNeeded(force: true)
         }
@@ -108,10 +191,23 @@ private struct SVGWebAssetView: UIViewRepresentable {
         func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: any Error) {
             (webView as? SVGRenderWebView)?.renderIfNeeded(force: true)
         }
+
+        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+            // Wait for SVG to paint, then snapshot and cache
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.02) {
+                let config = WKSnapshotConfiguration()
+                config.rect = CGRect(origin: .zero, size: webView.bounds.size)
+                webView.takeSnapshot(with: config) { image, _ in
+                    guard let image else { return }
+                    SVGImageCache.setImage(image, forKey: self.parent.cacheKey)
+                    self.parent.onImageCached(image)
+                }
+            }
+        }
     }
 
     func makeCoordinator() -> Coordinator {
-        Coordinator()
+        Coordinator(self)
     }
 
     func makeUIView(context: Context) -> SVGRenderWebView {
@@ -203,17 +299,6 @@ private struct SVGWebAssetView: UIViewRepresentable {
             }
         }
 
-        let sourceRootResourcePath = URL(fileURLWithPath: #filePath)
-            .deletingLastPathComponent()
-            .deletingLastPathComponent()
-            .appendingPathComponent("Resources")
-            .appendingPathComponent("SVG")
-            .appendingPathComponent(fileName)
-        if FileManager.default.fileExists(atPath: sourceRootResourcePath.path) {
-            Self.resolvedURLCache[name] = sourceRootResourcePath
-            return sourceRootResourcePath
-        }
-
         return nil
     }
 
@@ -227,40 +312,71 @@ private struct SVGWebAssetView: UIViewRepresentable {
     }
 }
 
-private extension UIColor {
-    var cssRGBAString: String {
-        var r: CGFloat = 0
-        var g: CGFloat = 0
-        var b: CGFloat = 0
-        var a: CGFloat = 0
-        if getRed(&r, green: &g, blue: &b, alpha: &a) {
-            let red = Int((r * 255).rounded())
-            let green = Int((g * 255).rounded())
-            let blue = Int((b * 255).rounded())
-            return "rgba(\(red), \(green), \(blue), \(a))"
-        }
+// MARK: - Shared SVG Icon Component
 
-        guard
-            let sRGB = CGColorSpace(name: CGColorSpace.sRGB),
-            let converted = cgColor.converted(to: sRGB, intent: .defaultIntent, options: nil),
-            let components = converted.components
-        else {
-            return "rgba(0, 0, 0, 1)"
-        }
+struct SvgIconInsets {
+    let top: CGFloat
+    let right: CGFloat
+    let bottom: CGFloat
+    let left: CGFloat
+    static let zero = SvgIconInsets(top: 0, right: 0, bottom: 0, left: 0)
+}
 
-        switch components.count {
-        case 4:
-            let red = Int((components[0] * 255).rounded())
-            let green = Int((components[1] * 255).rounded())
-            let blue = Int((components[2] * 255).rounded())
-            let alpha = max(0, min(1, components[3]))
-            return "rgba(\(red), \(green), \(blue), \(alpha))"
-        case 2:
-            let gray = Int((components[0] * 255).rounded())
-            let alpha = max(0, min(1, components[1]))
-            return "rgba(\(gray), \(gray), \(gray), \(alpha))"
-        default:
-            return "rgba(0, 0, 0, 1)"
+struct SvgIconView: View {
+    let name: String
+    let outerWidth: CGFloat
+    let outerHeight: CGFloat
+    let innerInsets: SvgIconInsets
+    let imageInsets: SvgIconInsets
+    let cssVariables: [String: Color]
+    let cssValues: [String: String]
+    let shouldClip: Bool
+
+    init(
+        name: String,
+        outerWidth: CGFloat,
+        outerHeight: CGFloat,
+        innerInsets: SvgIconInsets = .zero,
+        imageInsets: SvgIconInsets = .zero,
+        cssVariables: [String: Color] = [:],
+        cssValues: [String: String] = [:],
+        shouldClip: Bool = true
+    ) {
+        self.name = name
+        self.outerWidth = outerWidth
+        self.outerHeight = outerHeight
+        self.innerInsets = innerInsets
+        self.imageInsets = imageInsets
+        self.cssVariables = cssVariables
+        self.cssValues = cssValues
+        self.shouldClip = shouldClip
+    }
+
+    var body: some View {
+        GeometryReader { geometry in
+            let width = geometry.size.width
+            let height = geometry.size.height
+            let innerX = width * innerInsets.left
+            let innerY = height * innerInsets.top
+            let innerWidth = max(0, width * (1 - innerInsets.left - innerInsets.right))
+            let innerHeight = max(0, height * (1 - innerInsets.top - innerInsets.bottom))
+            let imageX = innerX + innerWidth * imageInsets.left
+            let imageY = innerY + innerHeight * imageInsets.top
+            let imageWidth = max(0, innerWidth * (1 - imageInsets.left - imageInsets.right))
+            let imageHeight = max(0, innerHeight * (1 - imageInsets.top - imageInsets.bottom))
+
+            SVGAssetView(name: name, cssVariables: cssVariables, cssValues: cssValues)
+                .frame(width: imageWidth, height: imageHeight)
+                .position(x: imageX + imageWidth / 2, y: imageY + imageHeight / 2)
         }
+        .frame(width: outerWidth, height: outerHeight)
+        .modifier(SvgClipModifier(isEnabled: shouldClip))
+    }
+}
+
+private struct SvgClipModifier: ViewModifier {
+    let isEnabled: Bool
+    func body(content: Content) -> some View {
+        if isEnabled { content.clipped() } else { content }
     }
 }

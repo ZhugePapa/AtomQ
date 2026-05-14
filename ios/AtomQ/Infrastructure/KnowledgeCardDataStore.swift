@@ -25,12 +25,23 @@ struct KnowledgeDirectorySection: Identifiable, Equatable {
 }
 
 enum KnowledgeCardDataStore {
-    private static var cachedDirectoryTree: [KnowledgeDirectoryChapter]?
-    private static var cachedSectionCards: [String: [KnowledgeCardStudyContent]] = [:]
+    private static let cacheLock = NSLock()
+    private static var _cachedDirectoryTree: [KnowledgeDirectoryChapter]?
+    private static var _cachedSectionCards: [String: [KnowledgeCardStudyContent]] = [:]
+
+    private static var cachedDirectoryTree: [KnowledgeDirectoryChapter]? {
+        get { cacheLock.lock(); defer { cacheLock.unlock() }; return _cachedDirectoryTree }
+        set { cacheLock.lock(); defer { cacheLock.unlock() }; _cachedDirectoryTree = newValue }
+    }
+
+    private static var cachedSectionCards: [String: [KnowledgeCardStudyContent]] {
+        get { cacheLock.lock(); defer { cacheLock.unlock() }; return _cachedSectionCards }
+        set { cacheLock.lock(); defer { cacheLock.unlock() }; _cachedSectionCards = newValue }
+    }
 
     static func loadStudyContent(
         chapterID: String = "ch_01",
-        sectionID: String = "sec_01"
+        sectionID: String = "sec_01_01"
     ) throws -> KnowledgeCardStudyContent {
         guard let first = try loadSectionCards(chapterID: chapterID, sectionID: sectionID).first else {
             throw DataStoreError.notFound(diagnostics: makeRootDiagnostics())
@@ -40,7 +51,7 @@ enum KnowledgeCardDataStore {
 
     static func refreshFreeContentAndLoadStudyContent(
         chapterID: String = "ch_01",
-        sectionID: String = "sec_01"
+        sectionID: String = "sec_01_01"
     ) async throws -> KnowledgeCardStudyContent {
         try await ContentPackageRemoteStore.refreshFreeContentRequired()
         return try loadStudyContent(chapterID: chapterID, sectionID: sectionID)
@@ -48,7 +59,7 @@ enum KnowledgeCardDataStore {
 
     static func loadSectionCards(
         chapterID: String = "ch_01",
-        sectionID: String = "sec_01"
+        sectionID: String = "sec_01_01"
     ) throws -> [KnowledgeCardStudyContent] {
         let cacheKey = "\(chapterID)|\(sectionID)"
         if let cached = cachedSectionCards[cacheKey] {
@@ -61,7 +72,7 @@ enum KnowledgeCardDataStore {
 
     static func refreshFreeContentAndLoadSectionCards(
         chapterID: String = "ch_01",
-        sectionID: String = "sec_01"
+        sectionID: String = "sec_01_01"
     ) async throws -> [KnowledgeCardStudyContent] {
         try await ContentPackageRemoteStore.refreshFreeContentRequired()
         invalidateCache()
@@ -225,14 +236,25 @@ enum KnowledgeCardDataStore {
     }
 
     private static func candidateRootDirectories() -> [URL] {
-        guard let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
-            return []
+        var roots: [URL] = []
+
+        // Bundle resource path (default_cards shipped with the app)
+        if let bundleRoot = Bundle.main.url(forResource: "subject_index", withExtension: "json", subdirectory: "default_cards")?.deletingLastPathComponent() {
+            roots.append(bundleRoot)
         }
-        return [
-            docs.appendingPathComponent("cache/cards/content_package/public/subjects/high_itpmp", isDirectory: true),
-            docs.appendingPathComponent("cache/cards/subjects/high_itpmp", isDirectory: true),
-            docs.appendingPathComponent("cache/cards", isDirectory: true)
-        ]
+        if let bundleRoot = Bundle.main.url(forResource: "subject_index", withExtension: "json", subdirectory: "Resources/default_cards")?.deletingLastPathComponent() {
+            roots.append(bundleRoot)
+        }
+
+        // Document directory cache paths (remote content downloads)
+        guard let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+            return roots
+        }
+        roots.append(docs.appendingPathComponent("cache/cards/content_package/public/subjects/high_itpmp", isDirectory: true))
+        roots.append(docs.appendingPathComponent("cache/cards/subjects/high_itpmp", isDirectory: true))
+        roots.append(docs.appendingPathComponent("cache/cards", isDirectory: true))
+
+        return roots
     }
 
     private static func cardMetaURLs(in cardsDirectory: URL) throws -> [URL] {
