@@ -16,13 +16,10 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
     @Published var loadErrorMessage: String?
     @Published var focusHighlightVisible = true
     @Published var isCurrentCardMastered = false
-    @Published var topBarCollapseProgress: CGFloat = 0
     @Published var shouldRenderAdjacentCards = false
-    var edgeSwipeBackTriggered = false
     var isHorizontalPagingActive = false
     var isVerticalScrollActive = false
-    var hasActiveScrollSample = false
-    var lastActiveScrollMinY: CGFloat = 0
+    var hasLoadedInitialData = false
     let topBarHeight: CGFloat = 56
     var onBack: (() -> Void)?
 
@@ -84,7 +81,6 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
         currentCardIndex = max(0, min(currentCardIndex, sectionCards.count - 1))
         pageData = sectionCards[currentCardIndex]
         syncMasteredStateForCurrentCard()
-        topBarCollapseProgress = 0; hasActiveScrollSample = false; lastActiveScrollMinY = 0
     }
 
     var knowledgeBarStates: [KnowledgeBarState] {
@@ -204,6 +200,8 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
     }
 
     func loadInitialData() async {
+        guard !hasLoadedInitialData else { return }
+        hasLoadedInitialData = true
         shouldRenderAdjacentCards = false
         let prevCID = selectedChapterID, prevSID = selectedSectionID
         var rendered = false
@@ -402,29 +400,7 @@ struct KnowledgeCardStudyView: View {
                     .padding(.horizontal, 20)
                     .padding(.top, 8)
                     .padding(.bottom, 24)
-                    .onGeometryChange(for: CGFloat.self) { proxy in
-                        proxy.frame(in: .scrollView).minY
-                    } action: { minY in
-                        guard idx == viewModel.currentCardIndex else { return }
-                        if !viewModel.hasActiveScrollSample {
-                            viewModel.hasActiveScrollSample = true
-                            viewModel.lastActiveScrollMinY = minY
-                            return
-                        }
-
-                        let delta = minY - viewModel.lastActiveScrollMinY
-                        viewModel.lastActiveScrollMinY = minY
-
-                        if delta > 0.5 {
-                            let revealStep = min(1, delta / max(1, topBarHeight)) * 1.6
-                            viewModel.topBarCollapseProgress = max(0, viewModel.topBarCollapseProgress - revealStep)
-                        } else {
-                            let progress = max(0, min(1, -minY / topBarHeight))
-                            viewModel.topBarCollapseProgress = progress
-                        }
-                    }
                 }
-                .scrollBounceBehavior(.basedOnSize, axes: .vertical)
                 .scrollDisabled(viewModel.isHorizontalPagingActive)
                 .simultaneousGesture(verticalScrollLockGesture)
 
@@ -477,11 +453,6 @@ struct KnowledgeCardStudyView: View {
                     onOpenCatalog: { viewModel.presentDirectorySheet() }
                 )
                 .frame(height: topBarHeight)
-                .opacity(1 - viewModel.topBarCollapseProgress)
-                .offset(y: -24 * viewModel.topBarCollapseProgress)
-                .padding(.bottom, -topBarHeight * viewModel.topBarCollapseProgress)
-                .clipped()
-                .zIndex(10)
 
                 GeometryReader { viewport in
                     let pageWidth = viewport.size.width

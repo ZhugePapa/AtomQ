@@ -17,15 +17,8 @@ struct HomePageView: View {
 
                     if viewModel.selectedTab == .study {
                         ZStack {
-                            if viewModel.showingKnowledgeCardStudy {
-                                KnowledgeCardStudyView(
-                                    viewModel: viewModel.studyViewModel,
-                                    onBack: { [weak viewModel] in
-                                        viewModel?.closeKnowledgeCardStudy()
-                                    }
-                                )
-                                .transition(viewModel.studyPageTransition)
-                            } else {
+                            // Home page: slides left on push, slides back from left on pop
+                            if !viewModel.showingKnowledgeCardStudy {
                                 VStack(spacing: 0) {
                                     HeaderView()
                                         .frame(maxWidth: .infinity)
@@ -42,7 +35,18 @@ struct HomePageView: View {
                                         .frame(maxWidth: .infinity)
                                         .frame(height: 64)
                                 }
-                                .transition(viewModel.studyPageTransition)
+                                .transition(.move(edge: .leading))
+                            }
+
+                            // Study page: slides in from right on push, slides out right on pop
+                            if viewModel.showingKnowledgeCardStudy {
+                                KnowledgeCardStudyView(
+                                    viewModel: viewModel.studyViewModel,
+                                    onBack: { [weak viewModel] in
+                                        viewModel?.closeKnowledgeCardStudy()
+                                    }
+                                )
+                                .transition(.move(edge: .trailing))
                             }
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)

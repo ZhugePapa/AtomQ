@@ -13,27 +13,20 @@ final class HomeViewModel: ObservableObject {
     @Published var selectedTab: AppTab = .study
     @Published var showingKnowledgeCardStudy = false
     let studyViewModel = KnowledgeCardStudyViewModel()
-    var studyNavDirection: StudyNavDirection = .push
 
-    enum StudyNavDirection { case push, pop }
-
-    var studyPageTransition: AnyTransition {
-        switch studyNavDirection {
-        case .push:
-            return .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
-        case .pop:
-            return .asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .trailing))
+    init() {
+        // Start preloading study data immediately so it's ready when user opens the page
+        Task { @MainActor in
+            await studyViewModel.loadInitialData()
         }
     }
 
     func openKnowledgeCardStudy() {
-        studyNavDirection = .push
-        withAnimation(.easeInOut(duration: 0.25)) { showingKnowledgeCardStudy = true }
+        withAnimation(.easeInOut(duration: 0.3)) { showingKnowledgeCardStudy = true }
     }
 
     func closeKnowledgeCardStudy() {
-        studyNavDirection = .pop
-        withAnimation(.easeInOut(duration: 0.25)) { showingKnowledgeCardStudy = false }
+        withAnimation(.easeInOut(duration: 0.3)) { showingKnowledgeCardStudy = false }
     }
 }
 

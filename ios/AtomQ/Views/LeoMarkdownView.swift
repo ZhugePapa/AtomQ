@@ -700,8 +700,11 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
 
         func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
             if message.name == "leoMarkdownHeight", let height = message.body as? CGFloat {
+                let newHeight = max(1, height)
+                // Only update if height changed by more than 1pt to avoid micro-jitter
+                guard abs(newHeight - parent.renderedHeight) > 1 else { return }
                 DispatchQueue.main.async {
-                    self.parent.renderedHeight = max(1, height)
+                    self.parent.renderedHeight = newHeight
                 }
             }
         }
@@ -715,8 +718,10 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
             })();
             """) { value, _ in
                 guard let height = value as? CGFloat else { return }
+                let newHeight = max(1, height)
+                guard abs(newHeight - self.parent.renderedHeight) > 1 else { return }
                 DispatchQueue.main.async {
-                    self.parent.renderedHeight = max(1, height)
+                    self.parent.renderedHeight = newHeight
                 }
             }
         }
@@ -727,44 +732,6 @@ private final class MarkdownRenderWebView: WKWebView {
     var lastRenderSignature: String = ""
 }
 
-private extension UIColor {
-    var cssRGBAString: String {
-        var r: CGFloat = 0
-        var g: CGFloat = 0
-        var b: CGFloat = 0
-        var a: CGFloat = 0
-
-        if getRed(&r, green: &g, blue: &b, alpha: &a) {
-            let red = Int((r * 255).rounded())
-            let green = Int((g * 255).rounded())
-            let blue = Int((b * 255).rounded())
-            return "rgba(\(red), \(green), \(blue), \(a))"
-        }
-
-        guard
-            let sRGB = CGColorSpace(name: CGColorSpace.sRGB),
-            let converted = cgColor.converted(to: sRGB, intent: .defaultIntent, options: nil),
-            let components = converted.components
-        else {
-            return "rgba(0, 0, 0, 1)"
-        }
-
-        switch components.count {
-        case 4:
-            let red = Int((components[0] * 255).rounded())
-            let green = Int((components[1] * 255).rounded())
-            let blue = Int((components[2] * 255).rounded())
-            let alpha = max(0, min(1, components[3]))
-            return "rgba(\(red), \(green), \(blue), \(alpha))"
-        case 2:
-            let gray = Int((components[0] * 255).rounded())
-            let alpha = max(0, min(1, components[1]))
-            return "rgba(\(gray), \(gray), \(gray), \(alpha))"
-        default:
-            return "rgba(0, 0, 0, 1)"
-        }
-    }
-}
 
 #Preview {
     ScrollView {
