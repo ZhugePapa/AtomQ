@@ -26,12 +26,38 @@ final class SVGRenderEngine: NSObject, WKNavigationDelegate {
     static let shared = SVGRenderEngine()
 
     private var webView: WKWebView?
+    private var isWebViewReady = false
+    private var warmupCompletion: (() -> Void)?
+
     private typealias PendingItem = (cacheKey: String, svgHTML: String, size: CGSize, completion: (UIImage?) -> Void)
     private var pending: [PendingItem] = []
     private var rendering = false
     private var snapshotCompletion: (() -> Void)?
 
-    private override init() { super.init() }
+    private override init() {
+        super.init()
+        preWarmWebView()
+    }
+
+    /// Pre-warm the WKWebView at app startup so it's ready when icons need rendering
+    private func preWarmWebView() {
+        let wv = createWebView()
+        // Load a minimal page to initialize the WebContent process immediately
+        wv.loadHTMLString("<html><body></body></html>", baseURL: nil)
+    }
+
+    private func createWebView() -> WKWebView {
+        let config = WKWebViewConfiguration()
+        config.allowsInlineMediaPlayback = true
+        let wv = WKWebView(frame: CGRect(origin: .zero, size: CGSize(width: 1, height: 1)), configuration: config)
+        wv.navigationDelegate = self
+        wv.isOpaque = false
+        wv.backgroundColor = .clear
+        wv.scrollView.isScrollEnabled = false
+        wv.isUserInteractionEnabled = false
+        webView = wv
+        return wv
+    }
 
     func enqueueRender(
         cacheKey: String,
@@ -40,7 +66,7 @@ final class SVGRenderEngine: NSObject, WKNavigationDelegate {
         completion: @escaping (UIImage?) -> Void
     ) {
         pending.append((cacheKey: cacheKey, svgHTML: svgHTML, size: size, completion: completion))
-        if !rendering {
+        if !rendering && isWebViewReady {
             processNext()
         }
     }
@@ -53,7 +79,7 @@ final class SVGRenderEngine: NSObject, WKNavigationDelegate {
         rendering = true
         let item = pending.removeFirst()
 
-        let wv = ensureWebView()
+        let wv = webView!
         wv.frame = CGRect(origin: .zero, size: item.size)
         wv.loadHTMLString(item.svgHTML, baseURL: nil)
 
@@ -71,31 +97,25 @@ final class SVGRenderEngine: NSObject, WKNavigationDelegate {
         }
     }
 
-    private func ensureWebView() -> WKWebView {
-        if let wv = webView { return wv }
-        let config = WKWebViewConfiguration()
-        config.allowsInlineMediaPlayback = true
-        let wv = WKWebView(frame: .zero, configuration: config)
-        wv.navigationDelegate = self
-        wv.isOpaque = false
-        wv.backgroundColor = .clear
-        wv.scrollView.isScrollEnabled = false
-        wv.isUserInteractionEnabled = false
-        webView = wv
-        return wv
-    }
-
     // MARK: - WKNavigationDelegate
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.02) { [weak self] in
-            self?.snapshotCompletion?()
-            self?.snapshotCompletion = nil
+        if !isWebViewReady {
+            isWebViewReady = true
+            // Start processing pending items now that WebView is warm
+            if !pending.isEmpty && !rendering {
+                processNext()
+            }
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.02) { [weak self] in
+                self?.snapshotCompletion?()
+                self?.snapshotCompletion = nil
+            }
         }
     }
 
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: any Error) {
-        // Retry current item
+        if !isWebViewReady { isWebViewReady = true } // Mark ready even on failure
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             self?.snapshotCompletion?()
             self?.snapshotCompletion = nil
@@ -103,6 +123,7 @@ final class SVGRenderEngine: NSObject, WKNavigationDelegate {
     }
 
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: any Error) {
+        if !isWebViewReady { isWebViewReady = true }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             self?.snapshotCompletion?()
             self?.snapshotCompletion = nil
@@ -167,13 +188,15 @@ private struct SVGRenderView: View {
     }
 
     private func makeCacheKey(name: String, width: CGFloat, height: CGFloat) -> String {
+        let varSig = cssVariables.keys.sorted().map { "\($0)=\(cssVariables[$0]?.description ?? "")" }.joined()
+        let valSig = cssValues.keys.sorted().map { "\($0)=\(cssValues[$0] ?? "")" }.joined()
         let w = String(format: "%.0f", width)
         let h = String(format: "%.0f", height)
-        return "\(name)|\(w)x\(h)"
+        return "\(name)|\(w)x\(h)|\(varSig)|\(valSig)"
     }
 }
 
-// MARK: - SVG Placeholder (enqueues to shared renderer, shows placeholder icon)
+// MARK: - SVG Placeholder (enqueues to shared renderer)
 
 private struct SVGPlaceholderView: View {
     let name: String
@@ -213,28 +236,13 @@ private struct SVGPlaceholderView: View {
 
         let cssText = cssVarStrings.keys.sorted().map { key in
             "--\(key): \(cssVarStrings[key] ?? "transparent");"
-        }.joined(separator: "\n")
+        }.joined(separator: " ")
 
-        guard let svgSource = loadSVGSource(name: name) else { return }
+        guard let svgSource = try? String(contentsOf: resolveSVGURL(name: name), encoding: .utf8) else { return }
 
         let w = String(format: "%.0f", size.width)
         let h = String(format: "%.0f", size.height)
-        let html = """
-        <!doctype html>
-        <html>
-        <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
-        <style>
-        html,body{margin:0;padding:0;width:\(w)px;height:\(h)px;overflow:hidden;background:transparent;}
-        #root{position:relative;width:100%;height:100%;overflow:hidden;}
-        #root>svg{position:absolute;inset:0;display:block;}
-        :root{\(cssText)}
-        </style>
-        </head>
-        <body><div id="root">\(svgSource)</div></body>
-        </html>
-        """
+        let html = "<!doctype html><html><head><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no\"><style>html,body{margin:0;padding:0;width:\(w)px;height:\(h)px;overflow:hidden;background:transparent;}#root{position:relative;width:100%;height:100%;overflow:hidden;}#root>svg{position:absolute;inset:0;display:block;}:root{\(cssText)}</style></head><body><div id=root>\(svgSource)</div></body></html>"
 
         SVGRenderEngine.shared.enqueueRender(
             cacheKey: cacheKey,
@@ -250,25 +258,12 @@ private struct SVGPlaceholderView: View {
         }
     }
 
-    private func loadSVGSource(name: String) -> String? {
-        guard let url = resolveSVGURL(name: name) else { return nil }
-        return try? String(contentsOf: url, encoding: .utf8)
-    }
-
-    private func resolveSVGURL(name: String) -> URL? {
-        // Prefer Bundle.main resource lookup (fast, within sandbox)
-        let subdirectories = ["SVG", "Resources/SVG"]
-        // Try by name in each subdirectory
-        for subdir in subdirectories {
-            if let url = Bundle.main.url(forResource: name, withExtension: "svg", subdirectory: subdir) {
-                return url
-            }
-        }
-        // Try flat in resource root
-        if let url = Bundle.main.url(forResource: name, withExtension: "svg") {
-            return url
-        }
-        return nil
+    private func resolveSVGURL(name: String) -> URL {
+        // Try Bundle.main resource lookups
+        if let url = Bundle.main.url(forResource: name, withExtension: "svg", subdirectory: "SVG") { return url }
+        if let url = Bundle.main.url(forResource: name, withExtension: "svg") { return url }
+        // Fallback: construct path from resourceURL (works for folder references)
+        return Bundle.main.resourceURL!.appendingPathComponent("SVG/\(name).svg")
     }
 }
 

@@ -181,7 +181,8 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
     }
 
     func loadInitialData() async {
-        guard !hasLoadedInitialData else { return }
+        // Skip reload if we already have data (preloaded by HomeViewModel)
+        guard sectionCards.isEmpty else { return }
         hasLoadedInitialData = true
         shouldRenderAdjacentCards = false
         let prevCID = selectedChapterID, prevSID = selectedSectionID
