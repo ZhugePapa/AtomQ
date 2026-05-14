@@ -51,7 +51,13 @@ struct HomePageView: View {
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .clipped()
-                        .ignoresSafeArea(.all, edges: .top)
+
+                        // Directory overlay — outside .clipped() so it covers the full screen including status bar
+                        if viewModel.showingKnowledgeCardStudy && viewModel.studyViewModel.isDirectorySheetPresented {
+                            DirectoryOverlayWrapper(viewModel: viewModel.studyViewModel)
+                                .ignoresSafeArea()
+                                .transition(.opacity)
+                        }
                     } else if viewModel.selectedTab == .profile {
                         VStack(spacing: 0) {
                             ProfileCenterView()
@@ -75,6 +81,36 @@ struct HomePageView: View {
                 .ignoresSafeArea(.all, edges: .top)
                 .frame(width: canvasWidth)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            }
+        }
+    }
+}
+
+// MARK: - Directory Overlay Wrapper (outside .clipped() for full-screen coverage)
+
+struct DirectoryOverlayWrapper: View {
+    @ObservedObject var viewModel: KnowledgeCardStudyViewModel
+
+    var body: some View {
+        ZStack(alignment: .bottom) {
+            Color.black
+                .opacity(0.25)
+                .ignoresSafeArea()
+                .contentShape(Rectangle())
+                .onTapGesture { viewModel.dismissDirectorySheet() }
+
+            if viewModel.isDirectoryPanelPresented {
+                DirectorySheetOverlay(
+                    chapters: viewModel.directoryChapters,
+                    selectedChapterID: viewModel.selectedChapterID,
+                    selectedSectionID: viewModel.selectedSectionID,
+                    expandedChapterID: $viewModel.expandedChapterID,
+                    onClose: { viewModel.dismissDirectorySheet() },
+                    onSelectSection: { chapter, section in
+                        viewModel.closeDirectoryAndLoad(chapter: chapter, section: section)
+                    }
+                )
+                .transition(.move(edge: .bottom))
             }
         }
     }

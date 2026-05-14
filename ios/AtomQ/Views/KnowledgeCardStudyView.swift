@@ -473,33 +473,6 @@ struct KnowledgeCardStudyView: View {
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
-
-            if viewModel.isDirectorySheetPresented {
-                ZStack(alignment: .bottom) {
-                    Color.black
-                        .opacity(0.25)
-                        .ignoresSafeArea()
-                        .contentShape(Rectangle())
-                        .onTapGesture(perform: { viewModel.dismissDirectorySheet() })
-                        .transition(.identity)
-
-                    if viewModel.isDirectoryPanelPresented {
-                        DirectorySheetOverlay(
-                            chapters: viewModel.directoryChapters,
-                            selectedChapterID: viewModel.selectedChapterID,
-                            selectedSectionID: viewModel.selectedSectionID,
-                            expandedChapterID: $viewModel.expandedChapterID,
-                            onClose: { viewModel.dismissDirectorySheet() },
-                            onSelectSection: { chapter, section in
-                                viewModel.closeDirectoryAndLoad(chapter: chapter, section: section)
-                            }
-                        )
-                        .transition(.move(edge: .bottom))
-                    }
-                }
-                .ignoresSafeArea()
-                .zIndex(400)
-            }
         }
         .task {
             await viewModel.loadInitialData()
@@ -617,7 +590,7 @@ private struct TopActionBar: View {
 
 // MARK: - Directory Sheet
 
-private struct DirectorySheetOverlay: View {
+struct DirectorySheetOverlay: View {
     let chapters: [KnowledgeDirectoryChapter]
     let selectedChapterID: String
     let selectedSectionID: String
