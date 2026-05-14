@@ -51,6 +51,7 @@ struct HomePageView: View {
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .clipped()
+                        .ignoresSafeArea(.all, edges: .top)
                     } else if viewModel.selectedTab == .profile {
                         VStack(spacing: 0) {
                             ProfileCenterView()
