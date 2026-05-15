@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "data/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_006.md",
+                "file": "data-deepseek/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_007.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ch_01_sec_01_006"
+              "title": "ch_01_sec_01_007"
             }
           }
         ]
@@ -185,6 +185,13 @@
   },
   "active": "14f120273f39593a",
   "lastOpenFiles": [
+    "data-deepseek/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_006.md",
+    "data-deepseek/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_007.md",
+    "data-deepseek/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_005.md",
+    "data-deepseek/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_003.md",
+    "data-deepseek/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_002.md",
+    "data-deepseek/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.md",
+    "data/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_006.md",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_005.md",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_003.md",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_004.md",
@@ -214,13 +221,6 @@
     "data/content_package/public/subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_023.json",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_023.md",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_05_096.json",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_05_096.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_05_095.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_04_094.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_04_093.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_04_092.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_04_091.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_04_090.md",
     "data-deepseek/test_output/page_0005-005.png",
     "data-deepseek/ocr_output/b0221-229.png",
     "data-deepseek/ocr_output/b0221-228.png",

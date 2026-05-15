@@ -80,12 +80,13 @@ struct ShadowSpec {
     let radius: CGFloat
 }
 
+// MARK: - Color extensions
+
 extension Color {
     init(hex: String) {
         let cleaned = hex.replacingOccurrences(of: "#", with: "")
         var value: UInt64 = 0
         Scanner(string: cleaned).scanHexInt64(&value)
-
         let r, g, b: Double
         switch cleaned.count {
         case 6:
@@ -93,11 +94,8 @@ extension Color {
             g = Double((value & 0x00FF00) >> 8) / 255.0
             b = Double(value & 0x0000FF) / 255.0
         default:
-            r = 0
-            g = 0
-            b = 0
+            r = 0; g = 0; b = 0
         }
-
         self.init(.sRGB, red: r, green: g, blue: b, opacity: 1)
     }
 
@@ -115,7 +113,6 @@ extension UIColor {
         let cleaned = hex.replacingOccurrences(of: "#", with: "")
         var value: UInt64 = 0
         Scanner(string: cleaned).scanHexInt64(&value)
-
         let r, g, b: CGFloat
         switch cleaned.count {
         case 6:
@@ -123,11 +120,28 @@ extension UIColor {
             g = CGFloat((value & 0x00FF00) >> 8) / 255.0
             b = CGFloat(value & 0x0000FF) / 255.0
         default:
-            r = 0
-            g = 0
-            b = 0
+            r = 0; g = 0; b = 0
         }
-
         self.init(red: r, green: g, blue: b, alpha: 1)
     }
+
+    var cssRGBAString: String {
+        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
+        if getRed(&r, green: &g, blue: &b, alpha: &a) {
+            return "rgba(\(Int((r*255).rounded())), \(Int((g*255).rounded())), \(Int((b*255).rounded())), \(a))"
+        }
+        guard let sRGB = CGColorSpace(name: CGColorSpace.sRGB),
+              let converted = cgColor.converted(to: sRGB, intent: .defaultIntent, options: nil),
+              let components = converted.components
+        else { return "rgba(0, 0, 0, 1)" }
+        switch components.count {
+        case 4:
+            return "rgba(\(Int((components[0]*255).rounded())), \(Int((components[1]*255).rounded())), \(Int((components[2]*255).rounded())), \(max(0, min(1, components[3]))))"
+        case 2:
+            return "rgba(\(Int((components[0]*255).rounded())), \(Int((components[0]*255).rounded())), \(Int((components[0]*255).rounded())), \(max(0, min(1, components[1]))))"
+        default:
+            return "rgba(0, 0, 0, 1)"
+        }
+    }
 }
+

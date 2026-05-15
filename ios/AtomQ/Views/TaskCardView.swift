@@ -58,12 +58,12 @@ struct TaskCardView: View {
     private var leadingIcon: some View {
         switch status {
         case .notStarted:
-            TaskFigmaIconView(
+            SvgIconView(
                 name: "icon-uncheck-outline",
                 outerWidth: 24,
                 outerHeight: 24,
-                innerInsets: TaskPercentInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
-                imageInsets: TaskPercentInsets(top: -0.0500, right: -0.0500, bottom: -0.0500, left: -0.0500),
+                innerInsets: SvgIconInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
+                imageInsets: SvgIconInsets(top: -0.0500, right: -0.0500, bottom: -0.0500, left: -0.0500),
                 cssVariables: ["stroke-0": Token.borderStrong]
             )
         case .inProgress:
@@ -76,12 +76,12 @@ struct TaskCardView: View {
             )
             .frame(width: 24, height: 24)
         case .completed:
-            TaskFigmaIconView(
+            SvgIconView(
                 name: "icon-check-circle",
                 outerWidth: 24,
                 outerHeight: 24,
-                innerInsets: TaskPercentInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
-                imageInsets: TaskPercentInsets(top: -0.0500, right: -0.0500, bottom: -0.0500, left: -0.0500),
+                innerInsets: SvgIconInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
+                imageInsets: SvgIconInsets(top: -0.0500, right: -0.0500, bottom: -0.0500, left: -0.0500),
                 cssVariables: ["stroke-0": Token.fgSuccessSecondary]
             )
         }
@@ -91,12 +91,12 @@ struct TaskCardView: View {
     private var trailingContent: some View {
         switch status {
         case .notStarted:
-            TaskFigmaIconView(
+            SvgIconView(
                 name: "icon-chevron-forward",
                 outerWidth: 16,
                 outerHeight: 16,
-                innerInsets: TaskPercentInsets(top: 0.2188, right: 0.3594, bottom: 0.2188, left: 0.3594),
-                imageInsets: TaskPercentInsets(top: -0.0833, right: -0.1667, bottom: -0.0833, left: -0.1667),
+                innerInsets: SvgIconInsets(top: 0.2188, right: 0.3594, bottom: 0.2188, left: 0.3594),
+                imageInsets: SvgIconInsets(top: -0.0833, right: -0.1667, bottom: -0.0833, left: -0.1667),
                 cssVariables: ["stroke-0": Token.fgTertiary]
             )
         case .inProgress:
@@ -104,12 +104,12 @@ struct TaskCardView: View {
                 Text("继续")
                     .font(.custom("PingFang SC", size: 16).weight(.medium))
                     .foregroundStyle(Token.textWhite)
-                TaskFigmaIconView(
+                SvgIconView(
                     name: "icon-arrow-forward",
                     outerWidth: 16,
                     outerHeight: 16,
-                    innerInsets: TaskPercentInsets(top: 0.2188, right: 0.1953, bottom: 0.2188, left: 0.1953),
-                    imageInsets: TaskPercentInsets(top: -0.0833, right: -0.0769, bottom: -0.0833, left: -0.0769)
+                    innerInsets: SvgIconInsets(top: 0.2188, right: 0.1953, bottom: 0.2188, left: 0.1953),
+                    imageInsets: SvgIconInsets(top: -0.0833, right: -0.0769, bottom: -0.0833, left: -0.0769)
                 )
             }
             .padding(.horizontal, 16)
@@ -149,65 +149,5 @@ struct TaskCardView: View {
 
     private var cardBorder: Color {
         status == .inProgress ? Token.borderWarning : Token.borderDefault
-    }
-}
-
-private struct TaskPercentInsets {
-    let top: CGFloat
-    let right: CGFloat
-    let bottom: CGFloat
-    let left: CGFloat
-
-    static let zero = TaskPercentInsets(top: 0, right: 0, bottom: 0, left: 0)
-}
-
-private struct TaskFigmaIconView: View {
-    let name: String
-    let outerWidth: CGFloat
-    let outerHeight: CGFloat
-    let innerInsets: TaskPercentInsets
-    let imageInsets: TaskPercentInsets
-    let cssVariables: [String: Color]
-    let cssValues: [String: String]
-
-    init(
-        name: String,
-        outerWidth: CGFloat,
-        outerHeight: CGFloat,
-        innerInsets: TaskPercentInsets = .zero,
-        imageInsets: TaskPercentInsets = .zero,
-        cssVariables: [String: Color] = [:],
-        cssValues: [String: String] = [:]
-    ) {
-        self.name = name
-        self.outerWidth = outerWidth
-        self.outerHeight = outerHeight
-        self.innerInsets = innerInsets
-        self.imageInsets = imageInsets
-        self.cssVariables = cssVariables
-        self.cssValues = cssValues
-    }
-
-    var body: some View {
-        GeometryReader { geometry in
-            let width = geometry.size.width
-            let height = geometry.size.height
-
-            let innerX = width * innerInsets.left
-            let innerY = height * innerInsets.top
-            let innerWidth = max(0, width * (1 - innerInsets.left - innerInsets.right))
-            let innerHeight = max(0, height * (1 - innerInsets.top - innerInsets.bottom))
-
-            let imageX = innerX + innerWidth * imageInsets.left
-            let imageY = innerY + innerHeight * imageInsets.top
-            let imageWidth = max(0, innerWidth * (1 - imageInsets.left - imageInsets.right))
-            let imageHeight = max(0, innerHeight * (1 - imageInsets.top - imageInsets.bottom))
-
-            SVGAssetView(name: name, cssVariables: cssVariables, cssValues: cssValues)
-                .frame(width: imageWidth, height: imageHeight)
-                .position(x: imageX + imageWidth / 2, y: imageY + imageHeight / 2)
-        }
-        .frame(width: outerWidth, height: outerHeight)
-        .clipped()
     }
 }
