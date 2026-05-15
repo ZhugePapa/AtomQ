@@ -6,7 +6,7 @@
   "title": "维纳与香农的信息观点",
   "card_type": "comparison",
   "difficulty": 1,
-  "estimated_read_seconds": 30,
+  "estimated_read_seconds": 106,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 2,
@@ -23,14 +23,14 @@
   ],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "| 题干关键词 | 对应人物/概念 |\n|:---|:---|\n| 既不是物质，也不是能量 | **维纳**（控制论） |\n| 消除不确定性 | **香农**（信息论） |\n| 比特（bit）、熵、负熵 | **香农** |\n\n信息的单位是**比特（bit）**，熵 = 无序度，信息 = 负熵 = 有序度。",
+  "key_points": "| 题干关键词 | 对应人物/概念 |\n|:---|:---|\n| 既不是物质，也不是能量 | **维纳**（控制论） |\n| 消除不确定性 | **香农**（信息论） |\n| 熵、不确定性、信息量 | 信息论语境 |",
   "mnemonics": "维纳：**不物不能**；香农：**消不确定**。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第2页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "2"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

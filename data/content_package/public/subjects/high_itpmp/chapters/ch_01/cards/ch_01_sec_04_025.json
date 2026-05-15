@@ -6,7 +6,7 @@
   "title": "数字民生与智慧城市",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 54,
+  "estimated_read_seconds": 132,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 25,
@@ -23,18 +23,14 @@
   ],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "| 智慧城市能力 | 关键词 |\n|:---|:---|\n| 数据治理 | 数据责权利、开发利用 |\n| 城市孪生 | **现实世界与信息世界互动融合** |\n| 边际决策 | 快速反应、高效决策 |\n| 多元融合 | 服务编排、快速集成 |\n| 态势感知 | 感知、模拟、预测 |",
-  "mnemonics": "数治、孪生、边决、多融、态感。",
+  "key_points": "- 数字民生关键词：**普惠、赋能、利民**。\n- 智慧城市五能力：**数据治理、数字孪生、边际决策、多元融合、态势感知**。\n- 成熟度五级：**规划、管理、协同、优化、引领**。",
+  "mnemonics": "民生普赋利；城市数孪边多态；成熟规管协优领。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第9页"
-    },
-    {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第10页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "9,10"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

@@ -158,7 +158,8 @@ private struct SVGRenderView: View {
     let cssValues: [String: String]
 
     @State private var cachedImage: UIImage?
-    @Environment(\.colorScheme) private var colorScheme
+    @State private var cachedImageKey: String?
+    @AppStorage("atomq.darkMode.enabled") private var isDarkMode = false
 
     var body: some View {
         GeometryReader { geometry in
@@ -166,33 +167,61 @@ private struct SVGRenderView: View {
             let height = geometry.size.height
 
             if width > 0, height > 0 {
-                let cacheKey = makeCacheKey(name: name, width: width, height: height)
+                let resolvedCSSVariables = resolveCSSVariables(isDarkMode: isDarkMode)
+                let cacheKey = makeCacheKey(
+                    name: name,
+                    width: width,
+                    height: height,
+                    resolvedCSSVariables: resolvedCSSVariables
+                )
 
-                if let image = cachedImage ?? SVGImageCache.image(forKey: cacheKey) {
+                if let image = cachedImage(for: cacheKey) ?? SVGImageCache.image(forKey: cacheKey) {
                     Image(uiImage: image)
                         .resizable()
-                        .onAppear { cachedImage = image }
+                        .onAppear { cache(image, for: cacheKey) }
                 } else {
                     SVGPlaceholderView(
                         name: name,
-                        cssVariables: cssVariables,
+                        resolvedCSSVariables: resolvedCSSVariables,
                         cssValues: cssValues,
                         cacheKey: cacheKey,
                         size: CGSize(width: width, height: height),
-                        colorScheme: colorScheme,
-                        onImageCached: { cachedImage = $0 }
+                        onImageCached: { cache($0, for: cacheKey) }
                     )
                 }
             }
         }
     }
 
-    private func makeCacheKey(name: String, width: CGFloat, height: CGFloat) -> String {
-        let varSig = cssVariables.keys.sorted().map { "\($0)=\(cssVariables[$0]?.description ?? "")" }.joined()
+    private func cachedImage(for cacheKey: String) -> UIImage? {
+        cachedImageKey == cacheKey ? cachedImage : nil
+    }
+
+    private func cache(_ image: UIImage, for cacheKey: String) {
+        cachedImage = image
+        cachedImageKey = cacheKey
+    }
+
+    private func makeCacheKey(
+        name: String,
+        width: CGFloat,
+        height: CGFloat,
+        resolvedCSSVariables: [String: String]
+    ) -> String {
+        let varSig = resolvedCSSVariables.keys.sorted().map { "\($0)=\(resolvedCSSVariables[$0] ?? "")" }.joined()
         let valSig = cssValues.keys.sorted().map { "\($0)=\(cssValues[$0] ?? "")" }.joined()
         let w = String(format: "%.0f", width)
         let h = String(format: "%.0f", height)
         return "\(name)|\(w)x\(h)|\(varSig)|\(valSig)"
+    }
+
+    private func resolveCSSVariables(isDarkMode: Bool) -> [String: String] {
+        let style: UIUserInterfaceStyle = isDarkMode ? .dark : .light
+        let trait = UITraitCollection(userInterfaceStyle: style)
+
+        return cssVariables.reduce(into: [:]) { result, item in
+            result[item.key] = UIColor(item.value).resolvedColor(with: trait).cssRGBAString
+        }
     }
 }
 
@@ -200,11 +229,10 @@ private struct SVGRenderView: View {
 
 private struct SVGPlaceholderView: View {
     let name: String
-    let cssVariables: [String: Color]
+    let resolvedCSSVariables: [String: String]
     let cssValues: [String: String]
     let cacheKey: String
     let size: CGSize
-    let colorScheme: ColorScheme
     let onImageCached: (UIImage) -> Void
 
     @State private var loadedImage: UIImage?
@@ -223,13 +251,7 @@ private struct SVGPlaceholderView: View {
     }
 
     private func requestRender() {
-        let style: UIUserInterfaceStyle = colorScheme == .dark ? .dark : .light
-        let trait = UITraitCollection(userInterfaceStyle: style)
-
-        var cssVarStrings: [String: String] = [:]
-        for (name, color) in cssVariables {
-            cssVarStrings[name] = UIColor(color).resolvedColor(with: trait).cssRGBAString
-        }
+        var cssVarStrings = resolvedCSSVariables
         for (name, value) in cssValues {
             cssVarStrings[name] = value
         }

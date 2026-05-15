@@ -6,7 +6,7 @@
   "title": "新型基础设施建设",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 45,
+  "estimated_read_seconds": 157,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 15,
@@ -24,18 +24,14 @@
     "017"
   ],
   "related_question_ids": [],
-  "key_points": "| 类型 | 判断标准 | 典型代表 |\n|:---|:---|:---|\n| 信息基础设施 | ==技术新== | 5G、物联网、数据中心、算力 |\n| 融合基础设施 | ==应用新== | **智能交通、智慧能源** |\n| 创新基础设施 | ==平台新== | 重大科技、科教、产业创新平台 |\n\n场景判断：建基站→信息，老路改智能→融合，建实验室→创新。",
+  "key_points": "| 类型 | 判断标准 | 典型代表 |\n|:---|:---|:---|\n| 信息基础设施 | **技术新** | 5G、物联网、数据中心、算力 |\n| 融合基础设施 | **应用新** | 智能交通、智慧能源 |\n| 创新基础设施 | **平台新** | 重大科技、科教、产业创新平台 |\n\n场景判断：建基站→信息，老路改智能→融合，建实验室→创新。",
   "mnemonics": "信融创三新：信息→技术新，融合→应用新，创新→平台新。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第3页"
-    },
-    {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第4页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "3,4"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

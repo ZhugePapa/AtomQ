@@ -3,42 +3,30 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_02",
-  "title": "关系型数据库支持事务的ACID原则",
-  "card_type": "concept",
+  "title": "OLAP 三种实现方式",
+  "card_type": "comparison",
   "difficulty": 3,
-  "estimated_read_seconds": 30,
-  "has_key_content": true,
+  "estimated_read_seconds": 75,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 16,
+  "tags": [
+    "数据仓库",
+    "OLAP",
+    "ROLAP",
+    "MOLAP",
+    "HOLAP"
+  ],
+  "key_points": "| 类型 | 存储方式 |\n|:---|:---|\n| **ROLAP** | 基本数据和聚合数据均在 RDBMS |\n| **MOLAP** | 基本数据和聚合数据均在多维数据库 |\n| **HOLAP** | 基本数据在 RDBMS，聚合数据在多维数据库 |",
+  "mnemonics": "R 全关系，M 全多维，H 混合。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "content_file": "ch_02_sec_02_016.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_016.md",
-  "tags": [
-    "信息技术发展",
-    "存储和数据库",
-    "存储技术",
-    "关系型数据库支持事务的ACID原"
-  ],
-  "key_points": "- **关系型数据库支持事务的 ACID 原则**、**即原子性**、**一致性**、**隔离性**、**持久性**、**非关系型的**、**不保证遵循 ACID 原则的数据存储系统**\n- **这个视图中的统一逻辑接口来访问被整合**\n- **ACID**、**Linux**、**UNIX**、**常见的数据结构模型有三种**",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "015"
-  ],
-  "related_point_ids": [],
-  "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "19,20"
+      "page_label": "20"
     }
-  ],
-  "author": "Codex color OCR 批量整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
-  "schema_version": 2
+  ]
 }

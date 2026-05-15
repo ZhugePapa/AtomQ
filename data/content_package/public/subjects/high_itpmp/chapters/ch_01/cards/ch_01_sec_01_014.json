@@ -6,7 +6,7 @@
   "title": "十四五国家信息化规划",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 40,
+  "estimated_read_seconds": 138,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 14,
@@ -23,14 +23,14 @@
   ],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "十四五信息化规划 7 字框架：**基、数、产、政、民、治、合**。\n- 基础设施（泛在智联）→ 数据要素（高效利用）→ 数字产业 + 产业数字化\n- 数字政府（协同高效）→ 数字民生（普惠便捷）→ 数字治理 + 国际合作",
-  "mnemonics": "基数控产，政民治合——七个字记九个体系。",
+  "key_points": "十四五信息化规划 10 项任务：**基础设施、数据要素、创新发展、数字产业、产业数字化、数字政府、数字民生、数字社会治理、发展治理、国际合作**。",
+  "mnemonics": "基数创，双产；政民社，治合。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第3页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "3"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

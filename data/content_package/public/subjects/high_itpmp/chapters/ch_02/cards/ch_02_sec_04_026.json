@@ -3,41 +3,29 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_04",
-  "title": "物联网三层结构与关键技术",
-  "card_type": "formula",
-  "difficulty": 3,
-  "estimated_read_seconds": 46,
+  "title": "物联网定义与三层架构",
+  "card_type": "definition",
+  "difficulty": 2,
+  "estimated_read_seconds": 72,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 26,
+  "tags": [
+    "物联网",
+    "感知层",
+    "网络层",
+    "应用层"
+  ],
+  "key_points": "- 物联网目标：**智能化识别、定位、跟踪、监控和管理**。\n- 三层：**感知层、网络层、应用层**。",
+  "mnemonics": "感网用。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "content_file": "ch_02_sec_04_026.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_04_026.md",
-  "tags": [
-    "信息技术发展",
-    "新一代信息技术及应用",
-    "物联网"
-  ],
-  "key_points": "- 物联网三层：**感知层、网络层、应用层**。\n- RFID 是物联网中常见的射频识别技术。",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "025"
-  ],
-  "related_point_ids": [],
-  "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
       "page_label": "22"
     }
-  ],
-  "author": "Codex color OCR 批量整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
-  "schema_version": 2
+  ]
 }

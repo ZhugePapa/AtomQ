@@ -3,42 +3,28 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_03",
-  "title": "网络安全态势感知是在大规模网络环境中",
-  "card_type": "formula",
+  "title": "网络安全态势感知",
+  "card_type": "definition",
   "difficulty": 3,
-  "estimated_read_seconds": 30,
+  "estimated_read_seconds": 60,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 24,
+  "tags": [
+    "网络安全",
+    "态势感知",
+    "安全大数据"
+  ],
+  "key_points": "态势感知 = 对安全要素进行**获取、理解、显示**，并预测未来网络安全趋势；前提是**安全大数据**。",
+  "mnemonics": "获理显，判未来。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "content_file": "ch_02_sec_03_024.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_03_024.md",
-  "tags": [
-    "信息技术发展",
-    "信息安全",
-    "安全",
-    "网络安全态势感知是在大规模网络环"
-  ],
-  "key_points": "- 网络安全态势感知是在大规模网络环境中，对能够引起网络态势发生变化的安全要素进行获取、**理解、显示**，并据此预测未来的网络安全发展趋势。\n- 安全态势感知的前提是安全大数据，其在安全大数据的基础上进行数据整合、**特征提取等**，然后应用一系列态势评估算法生成网络的整体态势状况，应用态势预测算法预测态势的发展状况，**并使用数据可视化技术**，将态势状况和预测情况展示给安全人员，方便安全人员直观便捷",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "023"
-  ],
-  "related_point_ids": [],
-  "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "21,22"
+      "page_label": "22"
     }
-  ],
-  "author": "Codex color OCR 批量整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
-  "schema_version": 2
+  ]
 }

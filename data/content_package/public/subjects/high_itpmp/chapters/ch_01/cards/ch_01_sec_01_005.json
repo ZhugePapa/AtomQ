@@ -6,7 +6,7 @@
   "title": "信息系统定义与特点",
   "card_type": "definition",
   "difficulty": 2,
-  "estimated_read_seconds": 34,
+  "estimated_read_seconds": 67,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 5,
@@ -30,8 +30,8 @@
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第2页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "2"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

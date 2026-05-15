@@ -11,7 +11,6 @@ struct TaskCardView: View {
     let title: String
     let subtitle: String
     var onTap: (() -> Void)? = nil
-    @GestureState private var isPressed = false
 
     var body: some View {
         Button {
@@ -38,19 +37,13 @@ struct TaskCardView: View {
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity)
             .frame(height: 82)
-            .background(effectiveCardBackground)
-            .overlay(
-                RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous)
-                    .stroke(cardBorder, lineWidth: 1)
-            )
-            .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
         }
-        .buttonStyle(.plain)
-        .simultaneousGesture(
-            DragGesture(minimumDistance: 0)
-                .updating($isPressed) { _, state, _ in
-                    state = true
-                }
+        .buttonStyle(
+            TaskCardButtonStyle(
+                background: cardBackground,
+                pressedBackground: status == .notStarted ? Token.bgSubtle : cardBackground,
+                border: cardBorder
+            )
         )
     }
 
@@ -109,7 +102,8 @@ struct TaskCardView: View {
                     outerWidth: 16,
                     outerHeight: 16,
                     innerInsets: SvgIconInsets(top: 0.2188, right: 0.1953, bottom: 0.2188, left: 0.1953),
-                    imageInsets: SvgIconInsets(top: -0.0833, right: -0.0769, bottom: -0.0833, left: -0.0769)
+                    imageInsets: SvgIconInsets(top: -0.0833, right: -0.0769, bottom: -0.0833, left: -0.0769),
+                    cssVariables: ["stroke-0": Token.fgWhite]
                 )
             }
             .padding(.horizontal, 16)
@@ -140,14 +134,23 @@ struct TaskCardView: View {
         }
     }
 
-    private var effectiveCardBackground: Color {
-        if status == .notStarted && isPressed {
-            return Token.bgSubtle
-        }
-        return cardBackground
-    }
-
     private var cardBorder: Color {
         status == .inProgress ? Token.borderWarning : Token.borderDefault
+    }
+}
+
+private struct TaskCardButtonStyle: ButtonStyle {
+    let background: Color
+    let pressedBackground: Color
+    let border: Color
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .background(configuration.isPressed ? pressedBackground : background)
+            .overlay(
+                RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous)
+                    .stroke(border, lineWidth: 1)
+            )
+            .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
     }
 }

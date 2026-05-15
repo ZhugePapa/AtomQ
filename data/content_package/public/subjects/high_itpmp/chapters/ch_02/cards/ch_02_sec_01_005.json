@@ -3,41 +3,28 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_01",
-  "title": "TCP/IP(17下19/",
-  "card_type": "concept",
-  "difficulty": 1,
-  "estimated_read_seconds": 30,
+  "title": "SDN 定义与分层",
+  "card_type": "definition",
+  "difficulty": 3,
+  "estimated_read_seconds": 102,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 5,
+  "tags": [
+    "计算机网络",
+    "SDN",
+    "网络虚拟化"
+  ],
+  "key_points": "- SDN = **新型网络创新架构**，也是**网络虚拟化**实现方式。\n- 核心思想：**控制面与数据面分离**。\n- 两层：**控制层**负责规则和全局视图，**数据层**负责快速转发。",
+  "mnemonics": "控数分离，控管全局，数管转发。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "content_file": "ch_02_sec_01_005.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_01_005.md",
-  "tags": [
-    "信息技术发展",
-    "计算机网络",
-    "TCP/IP(17下19/"
-  ],
-  "key_points": "| 层次 | 必背协议 |\n|:---|:---|\n| **应用层** | FTP、TFTP、HTTP、SMTP、DHCP、Telnet、DNS、SNMP |\n| **传输层** | TCP、UDP |\n| **网络层** | IP、ICMP、IGMP、ARP、RARP |\n| **网络接口层** | 物理媒介 / 线路 |\n看到协议名，先定位到对应层次；尤其注意 **TCP/UDP 属于传输层**，**IP/ICMP/ARP 属于网络层**。",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "004"
-  ],
-  "related_point_ids": [],
-  "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
       "page_label": "17"
     }
-  ],
-  "author": "Codex color OCR 批量整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
-  "schema_version": 2
+  ]
 }

@@ -3,42 +3,28 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_04",
-  "title": "要点数据采集",
-  "card_type": "formula",
-  "difficulty": 3,
-  "estimated_read_seconds": 30,
+  "title": "大数据主要特征",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 60,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 33,
+  "tags": [
+    "大数据",
+    "4V",
+    "数据特征"
+  ],
+  "key_points": "大数据主要特征：**数据海量、数据类型多样、数据价值密度低、数据处理速度快**。",
+  "mnemonics": "量、多、低、快。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "content_file": "ch_02_sec_04_033.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_04_033.md",
-  "tags": [
-    "信息技术发展",
-    "新一代信息技术及应用",
-    "大数据",
-    "要点数据采集"
-  ],
-  "key_points": "- **要点数据采集**：通过**分布式爬取、分布式高速高可靠性数据采**集、高速全网数据映像技术，从网站上获取数据信息。\n- 大数据获\n- 取技术整合：多源多模态信息集成模型、异构数据智能转换模型、异构数据集成的智能模式抽取和模式匹配算法、自动容错映射和转换模型及算法、整合信息的正确性验证方法、整合信息的可用性评估方法等清洗：根据正确性条件和数据约束规则，清除不合理和错误的数",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "032"
-  ],
-  "related_point_ids": [],
-  "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
       "page_label": "24"
     }
-  ],
-  "author": "Codex color OCR 批量整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
-  "schema_version": 2
+  ]
 }

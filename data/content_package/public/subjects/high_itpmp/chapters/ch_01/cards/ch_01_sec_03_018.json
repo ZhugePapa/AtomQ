@@ -6,8 +6,8 @@
   "title": "农业现代化",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 30,
-  "has_key_content": true,
+  "estimated_read_seconds": 70,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 18,
   "content_file": "ch_01_sec_03_018.md",
@@ -22,14 +22,14 @@
     "019"
   ],
   "related_question_ids": [],
-  "key_points": "农业现代化不是单纯“机械化”，在本章中更强调数字技术与农业生产经营体系融合。",
+  "key_points": "农业现代化不是单纯机械化。本章更强调：**基础设施数字化、智慧农业、数字乡村服务治理**。",
   "mnemonics": "",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第6页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "6"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

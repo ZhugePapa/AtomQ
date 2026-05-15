@@ -3,41 +3,29 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_01",
-  "title": "第五代移动通信技术第五代移动通信技术(5G)",
+  "title": "5G 技术特点与应用场景",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 58,
+  "estimated_read_seconds": 86,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 7,
+  "tags": [
+    "5G",
+    "eMBB",
+    "uRLLC",
+    "mMTC"
+  ],
+  "key_points": "- 5G 特点：**高速率、低时延、大连接**。\n- 三大场景：**eMBB 增强移动宽带、uRLLC 超高可靠低时延通信、mMTC 海量机器类通信**。",
+  "mnemonics": "5G 三场景：宽、低、海。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "content_file": "ch_02_sec_01_007.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_01_007.md",
-  "tags": [
-    "信息技术发展",
-    "计算机网络",
-    "第五代移动通信技术第五代移动通信"
-  ],
-  "key_points": "- **短帧、快速反馈、多层/多站数据重传等**\n- **OFDMA**、**MIMO**",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "006"
-  ],
-  "related_point_ids": [],
-  "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
       "page_label": "18"
     }
-  ],
-  "author": "Codex color OCR 批量整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
-  "schema_version": 2
+  ]
 }

@@ -6,8 +6,8 @@
   "title": "信息系统组成部件",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "estimated_read_seconds": 84,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 6,
   "content_file": "ch_01_sec_01_006.md",
@@ -24,14 +24,14 @@
   ],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "- 信息系统组成不只包含技术组件，也包含**人员**和**规程**。\n- 题目选项出现“人员/规程”时，不要因为它们不是设备就排除。\n看到“人员、规程”不要排除，它们也是信息系统的组成部分。",
+  "key_points": "- 信息系统组成不只包含技术组件，也包含**人员**和**规程**。\n- 题目选项出现“人员/规程”时，不要因为它们不是设备就排除。",
   "mnemonics": "硬软库网存，感外人规程。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第2页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "2"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

@@ -6,8 +6,8 @@
   "title": "数字生态",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "estimated_read_seconds": 100,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 26,
   "content_file": "ch_01_sec_04_026.md",
@@ -22,14 +22,14 @@
   ],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "",
-  "mnemonics": "",
+  "key_points": "- 数字生态关键词：**放管并重、开放健康安全**。\n- 数据要素市场化配置是**结果**，不是手段。\n- 数字营商环境 5 指标：**数字支撑体系、数据开发利用与安全、数字市场准入、数字市场规则、数字创新环境**。",
+  "mnemonics": "生态看三件：规则、数据、安全。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第11页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "11"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

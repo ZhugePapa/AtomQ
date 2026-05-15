@@ -3,41 +3,29 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_02",
-  "title": "存储系统架构",
-  "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 30,
+  "title": "DAS、NAS 与 SAN",
+  "card_type": "comparison",
+  "difficulty": 3,
+  "estimated_read_seconds": 88,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 8,
+  "tags": [
+    "存储",
+    "DAS",
+    "NAS",
+    "SAN"
+  ],
+  "key_points": "| 架构 | 记忆点 |\n|:---|:---|\n| **DAS** | 直连式存储，服务器直接连接 |\n| **NAS** | 网络接入存储，文件级共享，常用 NFS/CIFS |\n| **SAN** | 存储区域网络，块级存储，适合大型组织/数据中心 |",
+  "mnemonics": "DAS 直连，NAS 文件，SAN 块。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "content_file": "ch_02_sec_02_008.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_008.md",
-  "tags": [
-    "信息技术发展",
-    "存储和数据库",
-    "存储系统架构"
-  ],
-  "key_points": "| 层次 | 必背协议 |\n|:---|:---|\n| **应用层** | FTP、TFTP、HTTP、SMTP、DHCP、Telnet、DNS、SNMP |\n| **传输层** | TCP、UDP |\n| **网络层** | IP、ICMP、IGMP、ARP、RARP |\n| **网络接口层** | 物理媒介 / 线路 |\n看到协议名，先定位到对应层次；尤其注意 **TCP/UDP 属于传输层**，**IP/ICMP/ARP 属于网络层**。",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "007"
-  ],
-  "related_point_ids": [],
-  "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
       "page_label": "18,19"
     }
-  ],
-  "author": "Codex color OCR 批量整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
-  "schema_version": 2
+  ]
 }

@@ -6,7 +6,7 @@
   "title": "信息系统生命周期",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 46,
+  "estimated_read_seconds": 132,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 8,
@@ -25,14 +25,14 @@
     "007"
   ],
   "related_question_ids": [],
-  "key_points": "| 信息系统阶段 | 对应软件活动 |\n|:---|:---|\n| 系统规划 | 可行性分析与项目开发计划 |\n| 系统分析 | 需求分析 |\n| 系统设计 | 概要设计 + 详细设计 |\n| 系统实施 | 编码 + 测试 |\n| 运行维护 | 维护 |",
+  "key_points": "| 题干语境 | 优先理解 |\n|:---|:---|\n| 信息系统生命周期 | **规划、分析、设计、实施、运行维护** |\n| 软件生命周期 | **可研/计划、需求、概要、详细、编码、测试、维护** |\n不要机械背“信息系统生命周期 = 软件生命周期 + 系统规划”。",
   "mnemonics": "规分设实运。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第2页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "2"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

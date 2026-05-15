@@ -3,42 +3,28 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_04",
-  "title": "的典型",
-  "card_type": "formula",
-  "difficulty": 3,
-  "estimated_read_seconds": 30,
+  "title": "大数据应用服务与可视化",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 60,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 37,
+  "tags": [
+    "大数据",
+    "可视化",
+    "分析应用"
+  ],
+  "key_points": "大数据应用和服务技术主要包含：**分析应用技术、可视化技术**。",
+  "mnemonics": "应用服务两件事：分析、可视化。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "content_file": "ch_02_sec_04_037.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_04_037.md",
-  "tags": [
-    "信息技术发展",
-    "新一代信息技术及应用",
-    "区块链",
-    "的典型"
-  ],
-  "key_points": "- 的典型\n- 特征区块链技术具有**多中心化存储、隐私保护、防篡改等特点**，提供了开放、分散和容错的事务机制，成新一代匿名在线支付、汇款和数字资产交易的核心，被广泛应用于各大交易平台。\n- 区块链可以理解为以非对称加密算法为基础，以改进的默克尔树为数据结构，使用共识机制、点对点网络、智能合约等技术结合而成的一种分布式存储数据库技术。",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "036"
-  ],
-  "related_point_ids": [],
-  "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "25,26"
+      "page_label": "25"
     }
-  ],
-  "author": "Codex color OCR 批量整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
-  "schema_version": 2
+  ]
 }

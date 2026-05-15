@@ -3,42 +3,28 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_02",
-  "title": "外挂存储根直连式存储DAS",
+  "title": "数据存储与绿色存储",
   "card_type": "concept",
-  "difficulty": 3,
-  "estimated_read_seconds": 32,
-  "has_key_content": false,
+  "difficulty": 2,
+  "estimated_read_seconds": 62,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 10,
+  "tags": [
+    "存储",
+    "数据存储",
+    "绿色存储"
+  ],
+  "key_points": "- 数据存储：类似文件系统的**逻辑容器**，隐藏存储设备差异。\n- 绿色存储：围绕**节能环保、低功耗、高能效**设计。\n- 最终目标：**容量、性能、能耗三者平衡**。",
+  "mnemonics": "",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "content_file": "ch_02_sec_02_010.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_010.md",
-  "tags": [
-    "信息技术发展",
-    "存储和数据库",
-    "存储技术",
-    "外挂存储根直连式存储DAS"
-  ],
-  "key_points": "- 外挂存储根直连式存储 DAS\n- 据连接方式网络化存储 FAS网络接入存储(NAS)和存储区域网络(SAN)\n- 存储虚拟化是\"云存储\"的核心技术之一，它把来自一个或多个网络的存储资源整合起来，向用户提供一个抽象的逻辑视图，用户可以通过**这个视图中的统一逻辑接口来访问被整合**的存储资源。用户在访问数据时并不知道真实的物理位置。它带给人",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "009"
-  ],
-  "related_point_ids": [],
-  "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "19,20"
+      "page_label": "19"
     }
-  ],
-  "author": "Codex color OCR 批量整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
-  "schema_version": 2
+  ]
 }

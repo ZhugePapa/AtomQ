@@ -6,8 +6,8 @@
   "title": "组织信息化趋势",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 42,
-  "has_key_content": false,
+  "estimated_read_seconds": 90,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 12,
   "content_file": "ch_01_sec_01_012.md",
@@ -22,14 +22,14 @@
   ],
   "related_point_ids": [],
   "related_question_ids": [],
-  "key_points": "",
+  "key_points": "四类趋势按范围扩大记：**产品信息化 → 产业信息化 → 社会生活信息化 → 国民经济信息化**。",
   "mnemonics": "品、业、生、国：**产品信息化、产业信息化、社会生活信息化、国民经济信息化**。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第3页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "3"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

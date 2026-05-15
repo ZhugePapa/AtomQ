@@ -6,8 +6,8 @@
   "title": "消费互联网",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 32,
-  "has_key_content": false,
+  "estimated_read_seconds": 74,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 21,
   "content_file": "ch_01_sec_03_021.md",
@@ -26,8 +26,8 @@
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第7页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "7"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

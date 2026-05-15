@@ -111,16 +111,13 @@ private struct HeaderView: View {
                     imageInsets: SvgIconInsets(top: -0.0513, right: -0.0611, bottom: -0.0513, left: -0.0612),
                     cssVariables: ["stroke-0": Token.fgPrimary]
                 )
-                SvgIconView(
-                    name: "icon-red-dot",
-                    outerWidth: 8,
-                    outerHeight: 8,
-                    imageInsets: SvgIconInsets(top: -0.125, right: -0.125, bottom: -0.125, left: -0.125),
-                    cssVariables: [
-                        "fill-0": Token.fgDanger,
-                        "stroke-0": Token.fgWhiteInverse,
-                    ]
-                )
+                Circle()
+                    .fill(Token.fgDanger)
+                    .frame(width: 8, height: 8)
+                    .overlay {
+                        Circle()
+                            .stroke(Token.fgWhiteInverse, lineWidth: 2)
+                    }
                     .offset(x: -1, y: 1)
             }
             .frame(width: 24, height: 24)
@@ -146,7 +143,7 @@ private struct ContentAreaView: View {
 
                     ZStack(alignment: .topLeading) {
                         HeroCardCutoutShape()
-                            .fill(Token.focusRing)
+                            .fill(Token.componentsCard)
                             .shadow(
                                 color: Token.shadowDownSm.color,
                                 radius: Token.shadowDownSm.radius,
@@ -200,7 +197,8 @@ private struct ContentAreaView: View {
                                     outerWidth: iconSize,
                                     outerHeight: iconSize,
                                     innerInsets: SvgIconInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
-                                    imageInsets: SvgIconInsets(top: -0.0375, right: -0.0375, bottom: -0.0375, left: -0.0375)
+                                    imageInsets: SvgIconInsets(top: -0.0375, right: -0.0375, bottom: -0.0375, left: -0.0375),
+                                    cssVariables: ["stroke-0": Token.fgWhite]
                                 )
                             }
                             .frame(width: ctaWidth, height: ctaHeight)
@@ -231,6 +229,7 @@ private struct ContentAreaView: View {
             }
             .padding(.horizontal, 20)
         }
+        .scrollBounceBehavior(.basedOnSize, axes: .vertical)
         .background(Token.bgCanvas)
     }
 }
@@ -469,7 +468,7 @@ private struct TaskSectionView: View {
                 type: .learning,
                 status: .notStarted,
                 title: "学习任务：项目可行性分析",
-                subtitle: "已完成学习",
+                subtitle: "5 张知识卡",
                 onTap: onOpenKnowledgeCardStudy
             ),
             TaskItem(

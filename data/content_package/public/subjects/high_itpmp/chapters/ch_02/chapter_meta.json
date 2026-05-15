@@ -2,37 +2,37 @@
   "chapter_id": "ch_02",
   "subject_id": "high_itpmp",
   "title": "信息技术发展",
-  "description": "信息技术发展，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
+  "description": "计算机网络、存储和数据库、信息安全、新一代信息技术及应用。",
   "sort_no": 2,
-  "card_count": 81,
+  "card_count": 45,
   "sections": [
     {
       "section_id": "sec_01",
       "title": "计算机网络",
       "sort_no": 1,
-      "description": "信息技术发展 - 计算机网络",
+      "description": "网络分类、OSI、TCP/IP、SDN、5G。",
       "card_count": 7
     },
     {
       "section_id": "sec_02",
       "title": "存储和数据库",
       "sort_no": 2,
-      "description": "信息技术发展 - 存储和数据库",
+      "description": "存储架构、存储虚拟化、数据模型、数据库、数据仓库。",
       "card_count": 10
     },
     {
       "section_id": "sec_03",
       "title": "信息安全",
       "sort_no": 3,
-      "description": "信息技术发展 - 信息安全",
+      "description": "信息安全属性、安全层次、网络安全技术、UEBA、态势感知。",
       "card_count": 8
     },
     {
       "section_id": "sec_04",
       "title": "新一代信息技术及应用",
       "sort_no": 4,
-      "description": "信息技术发展 - 新一代信息技术及应用",
-      "card_count": 56
+      "description": "物联网、云计算、大数据、区块链、人工智能、虚拟现实。",
+      "card_count": 20
     }
   ],
   "schema_version": 2

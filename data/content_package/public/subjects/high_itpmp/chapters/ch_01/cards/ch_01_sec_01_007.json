@@ -6,8 +6,8 @@
   "title": "软件生命周期",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 43,
-  "has_key_content": false,
+  "estimated_read_seconds": 94,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 7,
   "content_file": "ch_01_sec_01_007.md",
@@ -25,14 +25,14 @@
     "008"
   ],
   "related_question_ids": [],
-  "key_points": "- 7 阶段顺序：**可行性分析/计划 → 需求 → 概要 → 详细 → 编码 → 测试 → 维护**。\n- 维护仍属于生命周期，交付不是终点。\n- 软件生命周期 ≠ 信息系统生命周期：后者多了**系统规划**阶段。",
+  "key_points": "- 7 阶段顺序：**可行性分析/计划 → 需求 → 概要 → 详细 → 编码 → 测试 → 维护**。\n- 维护仍属于生命周期，交付不是终点。",
   "mnemonics": "可需概详编测维。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第2页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "2"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

@@ -3,41 +3,29 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_02",
-  "title": "NoSQL数据存储不需要固定的表结构",
-  "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 111,
-  "has_key_content": true,
+  "title": "关系型数据库与 NoSQL 优缺点",
+  "card_type": "comparison",
+  "difficulty": 3,
+  "estimated_read_seconds": 72,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 17,
+  "tags": [
+    "数据库",
+    "SQL",
+    "NoSQL",
+    "优缺点"
+  ],
+  "key_points": "- 关系型优点：**易理解、SQL 使用方便、完整性强**；缺点：高并发性能、固定表结构、多表关联。\n- NoSQL 优点：**高并发、分布式、易扩展、简单**；缺点：事务弱、通用性差、完整约束弱。",
+  "mnemonics": "",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "content_file": "ch_02_sec_02_017.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_02_017.md",
-  "tags": [
-    "信息技术发展",
-    "存储和数据库",
-    "NoSQL数据存储不需要固定的表"
-  ],
-  "key_points": "- **NoSQL、RDBMS、各种基于数据仓库或数据集市的应用开发工具、各种查询工具、数据挖掘工具、报表工具、分析工具**\n- **各种基于数据仓库或数据集市的应用开发工具、各种查询工具、数据挖掘工具、报表工具、分析工具**\n- **RDBMS**",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "016"
-  ],
-  "related_point_ids": [],
-  "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "20,21"
+      "page_label": "21"
     }
-  ],
-  "author": "Codex color OCR 批量整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
-  "schema_version": 2
+  ]
 }

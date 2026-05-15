@@ -3,41 +3,30 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_02",
   "section_id": "sec_04",
-  "title": "人工智能(Artificiallntelli",
-  "card_type": "formula",
+  "title": "机器学习相关概念",
+  "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 74,
+  "estimated_read_seconds": 63,
   "has_key_content": false,
   "is_free": true,
   "sort_no": 44,
+  "tags": [
+    "人工智能",
+    "机器学习",
+    "神经网络",
+    "深度学习",
+    "强化学习"
+  ],
+  "key_points": "| 概念 | 抓手 |\n|:---|:---|\n| 机器学习 | 模型与数据匹配，通过训练学习 |\n| 神经网络 | 类似神经元处理信号，常用于分类 |\n| 深度学习 | 多层特征和变量，常用反向传播 |\n| 强化学习 | 目标 + 奖励驱动 |",
+  "mnemonics": "机器学数据，神经做分类，深度多层，强化有奖励。",
+  "common_mistakes": [],
+  "review_status": "ai_draft",
   "content_file": "ch_02_sec_04_044.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_02/cards/ch_02_sec_04_044.md",
-  "tags": [
-    "信息技术发展",
-    "新一代信息技术及应用",
-    "人工智能(Artificiall"
-  ],
-  "key_points": "- **机器学习**\n- **模拟人类专家解决领域问题的计算机程序**",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "043"
-  ],
-  "related_point_ids": [],
-  "related_question_ids": [],
-  "source": "2026新版高项三色笔记（信息系统项目管理师）",
-  "source_type": "exam_note",
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
       "page_label": "27"
     }
-  ],
-  "author": "Codex color OCR 批量整理",
-  "reviewer": "待人工复核",
-  "review_status": "ai_draft",
-  "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
-  "schema_version": 2
+  ]
 }

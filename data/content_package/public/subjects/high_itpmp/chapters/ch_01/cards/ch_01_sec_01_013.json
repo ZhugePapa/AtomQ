@@ -6,7 +6,7 @@
   "title": "国家信息化发展战略",
   "card_type": "process",
   "difficulty": 2,
-  "estimated_read_seconds": 41,
+  "estimated_read_seconds": 82,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 13,
@@ -26,8 +26,8 @@
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第3页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "3"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

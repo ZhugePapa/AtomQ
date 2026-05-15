@@ -7,10 +7,10 @@ enum Token {
     static let bgSurface = Color(lightHex: "#ffffff", darkHex: "#121b26")
     static let bgSubtle = Color(lightHex: "#f8fafc", darkHex: "#1b2533")
     static let bgSubtleAlt = Color(lightHex: "#f8fafc", darkHex: "#1b2533")
-    static let bgSubtle2 = Color(lightHex: "#f3f5f8", darkHex: "#1b2533")
+    static let bgSubtle2 = Color(lightHex: "#f3f5f8", darkHex: "#2f3c4f")
     static let bgTertiary = Color(lightHex: "#f7f9fb", darkHex: "#1b2533")
     static let bgTaskSubtle = Color(lightHex: "#ffffff", darkHex: "#0b111a")
-    static let textPrimary = Color(lightHex: "#121b26", darkHex: "#f3f4f6")
+    static let textPrimary = Color(lightHex: "#121b26", darkHex: "#f3f5f8")
     static let textSecondary = Color(lightHex: "#404c63", darkHex: "#d9e0e8")
     static let textTertiary = Color(lightHex: "#6e7e94", darkHex: "#97a6b8")
     static let textDisabled = Color(lightHex: "#c2ccd8", darkHex: "#536279")
@@ -22,12 +22,12 @@ enum Token {
     static let borderStrong = Color(lightHex: "#d9e0e8", darkHex: "#404c63")
     static let borderWarning = Color(lightHex: "#ffe5cf", darkHex: "#a13913")
 
-    static let fgPrimary = Color(lightHex: "#121b26", darkHex: "#f3f4f6")
+    static let fgPrimary = Color(lightHex: "#121b26", darkHex: "#f3f5f8")
     static let fgWarning = Color(lightHex: "#fd5e0d", darkHex: "#fd5e0d")
     static let fgWarningSubtle = Color(lightHex: "#fff5ec", darkHex: "#452019")
     static let fgDangerSubtle = Color(lightHex: "#feeef0", darkHex: "#441b2e")
     static let fgBrand = Color(lightHex: "#1362fe", darkHex: "#1362fe")
-    static let fgBrandSubtle = Color(lightHex: "#ecf5ff", darkHex: "#0f2d56")
+    static let fgBrandSubtle = Color(lightHex: "#ecf5ff", darkHex: "#162049")
     static let fgBrandSecondary = Color(lightHex: "#71aafe", darkHex: "#153aa4")
     static let fgSuccess = Color(lightHex: "#1fbe65", darkHex: "#1fbe65")
     static let fgSuccessSecondary = Color(lightHex: "#79d89d", darkHex: "#1c7c4e")
@@ -35,8 +35,10 @@ enum Token {
     static let fgAssist = Color(lightHex: "#894cf3", darkHex: "#894cf3")
     static let fgDisabled = Color(lightHex: "#d9e0e8", darkHex: "#404c63")
     static let fgTertiary = Color(lightHex: "#6e7e94", darkHex: "#6e7e94")
+    static let fgWhite = Color(lightHex: "#ffffff", darkHex: "#ffffff")
     static let fgWhiteInverse = Color(lightHex: "#ffffff", darkHex: "#1b2533")
-    static let focusRing = Color(lightHex: "#071947", darkHex: "#1c2839")
+    static let componentsCard = Color(lightHex: "#071947", darkHex: "#1c2839")
+    static let focusRing = componentsCard
     static let componentsAlpha0 = Color(
         UIColor { trait in
             trait.userInterfaceStyle == .dark
@@ -144,4 +146,3 @@ extension UIColor {
         }
     }
 }
-

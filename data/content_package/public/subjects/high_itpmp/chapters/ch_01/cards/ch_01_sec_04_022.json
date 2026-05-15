@@ -6,8 +6,8 @@
   "title": "数字中国总体要求",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 35,
-  "has_key_content": false,
+  "estimated_read_seconds": 106,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 22,
   "content_file": "ch_01_sec_04_022.md",
@@ -22,14 +22,14 @@
     "023"
   ],
   "related_question_ids": [],
-  "key_points": "- 数字中国是国家层面的数字化发展战略，不是单个系统。\n- 后续按五条线理解：**数字经济、数字政府、数字民生、数字生态、数字化转型**。",
-  "mnemonics": "",
+  "key_points": "- PDF 主线：**数字经济、数字社会、数字政府**，由**数字化转型**整体驱动生产、生活、治理方式变革。\n- 官方布局抓手：**2522**，两大基础、五位一体、两大能力、两个环境。",
+  "mnemonics": "数字中国看 2522：两基、五融、两能、两境。",
   "common_mistakes": [],
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第7页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "7"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"

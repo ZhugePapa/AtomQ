@@ -6,7 +6,7 @@
   "title": "数字经济",
   "card_type": "concept",
   "difficulty": 3,
-  "estimated_read_seconds": 58,
+  "estimated_read_seconds": 120,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 23,
@@ -31,12 +31,8 @@
   "review_status": "ai_draft",
   "source_refs": [
     {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第7页"
-    },
-    {
-      "source": "2026新版高项三色笔记（信息系统项目管理师）",
-      "location": "拆分PDF 01 第8页"
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "7,8"
     }
   ],
   "updated_at": "2026-05-13T00:00:00+08:00"
