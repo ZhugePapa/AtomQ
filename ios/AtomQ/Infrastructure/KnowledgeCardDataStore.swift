@@ -238,12 +238,26 @@ enum KnowledgeCardDataStore {
     private static func candidateRootDirectories() -> [URL] {
         var roots: [URL] = []
 
-        // Bundle resource path (default_cards shipped with the app)
-        if let bundleRoot = Bundle.main.url(forResource: "subject_index", withExtension: "json", subdirectory: "default_cards")?.deletingLastPathComponent() {
-            roots.append(bundleRoot)
+        // Bundle resource paths (default_cards shipped with the app)
+        // Multiple lookup strategies for different Xcode/XcodeGen bundle layouts
+        let bundleSubdirs = ["default_cards", "Resources/default_cards"]
+        for subdir in bundleSubdirs {
+            if let url = Bundle.main.url(forResource: "subject_index", withExtension: "json", subdirectory: subdir) {
+                roots.append(url.deletingLastPathComponent())
+            }
         }
-        if let bundleRoot = Bundle.main.url(forResource: "subject_index", withExtension: "json", subdirectory: "Resources/default_cards")?.deletingLastPathComponent() {
-            roots.append(bundleRoot)
+        // Catch-all: try bundle root directly
+        if let resourceURL = Bundle.main.resourceURL {
+            // Check if subject_index.json exists at bundle root (flattened resources)
+            let flat = resourceURL.appendingPathComponent("subject_index.json")
+            if FileManager.default.fileExists(atPath: flat.path) {
+                roots.append(resourceURL)
+            }
+            // Check default_cards at bundle root
+            let defaultCards = resourceURL.appendingPathComponent("default_cards")
+            if FileManager.default.fileExists(atPath: defaultCards.appendingPathComponent("subject_index.json").path) {
+                roots.append(defaultCards)
+            }
         }
 
         // Document directory cache paths (remote content downloads)

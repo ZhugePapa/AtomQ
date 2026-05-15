@@ -73,7 +73,16 @@ private struct PublicContentDownloader {
 
     private func fetch(relativePath: String) async throws -> Data {
         let url = baseURL.appendingPathComponent(relativePath)
-        let (data, response) = try await URLSession.shared.data(from: url)
+
+        let session = URLSession(configuration: {
+            let config = URLSessionConfiguration.default
+            config.timeoutIntervalForRequest = 10
+            config.timeoutIntervalForResource = 30
+            config.waitsForConnectivity = false
+            return config
+        }())
+
+        let (data, response) = try await session.data(from: url)
 
         guard let httpResponse = response as? HTTPURLResponse,
               (200..<300).contains(httpResponse.statusCode)

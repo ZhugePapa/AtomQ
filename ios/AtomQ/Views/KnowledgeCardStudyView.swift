@@ -181,24 +181,37 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
     }
 
     func loadInitialData() async {
-        // Skip reload if we already have data (preloaded by HomeViewModel)
         guard sectionCards.isEmpty else { return }
         hasLoadedInitialData = true
         shouldRenderAdjacentCards = false
         let prevCID = selectedChapterID, prevSID = selectedSectionID
-        var rendered = false
+
+        // 1. Load local data immediately — don't wait for network
         if let local = try? await loadStudyPayload(fallbackChapterID: prevCID, fallbackSectionID: prevSID) {
-            applyLoadedStudyPayload(local); rendered = true
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in self?.shouldRenderAdjacentCards = true }
+            applyLoadedStudyPayload(local)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in
+                self?.shouldRenderAdjacentCards = true
+            }
+        } else {
+            loadErrorMessage = "未找到本地学习数据。请连接网络后重试，App 将自动下载最新内容。"
+            return
         }
-        do {
-            try await ContentPackageRemoteStore.refreshFreeContentRequired()
-            KnowledgeCardDataStore.invalidateCache()
-            let refreshed = try await loadStudyPayload(fallbackChapterID: prevCID, fallbackSectionID: prevSID)
-            await MainActor.run { self.applyLoadedStudyPayload(refreshed) }
-            if !rendered { DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in self?.shouldRenderAdjacentCards = true } }
-        } catch {
-            if !rendered { await MainActor.run { self.directoryChapters = []; self.loadErrorMessage = error.localizedDescription } }
+
+        // 2. Fire-and-forget remote refresh in background (non-blocking)
+        Task.detached(priority: .background) { [weak self] in
+            do {
+                try await ContentPackageRemoteStore.refreshFreeContentRequired()
+                KnowledgeCardDataStore.invalidateCache()
+                guard let self else { return }
+                if let refreshed = try? await self.loadStudyPayload(fallbackChapterID: prevCID, fallbackSectionID: prevSID) {
+                    await MainActor.run {
+                        self.applyLoadedStudyPayload(refreshed)
+                        self.shouldRenderAdjacentCards = true
+                    }
+                }
+            } catch {
+                // Remote update failed — local data is already shown, silently ignore
+            }
         }
     }
 }
