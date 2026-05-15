@@ -14,7 +14,12 @@ targets:
         excludes:
           - Resources/default_cards/**
     resources:
-      - AtomQ/Resources/SVG
+      - path: AtomQ/Resources/SVG
+        type: folder
+      - path: AtomQ/Resources/default_cards
+        type: folder
+      - path: AtomQ/Resources/Markdown
+        type: folder
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.atomq.home.static
