@@ -41,7 +41,7 @@ enum KnowledgeCardDataStore {
 
     static func loadStudyContent(
         chapterID: String = "ch_01",
-        sectionID: String = "sec_01_01"
+        sectionID: String = "sec_01"
     ) throws -> KnowledgeCardStudyContent {
         guard let first = try loadSectionCards(chapterID: chapterID, sectionID: sectionID).first else {
             throw DataStoreError.notFound(diagnostics: makeRootDiagnostics())
@@ -51,7 +51,7 @@ enum KnowledgeCardDataStore {
 
     static func refreshFreeContentAndLoadStudyContent(
         chapterID: String = "ch_01",
-        sectionID: String = "sec_01_01"
+        sectionID: String = "sec_01"
     ) async throws -> KnowledgeCardStudyContent {
         try await ContentPackageRemoteStore.refreshFreeContentRequired()
         return try loadStudyContent(chapterID: chapterID, sectionID: sectionID)
@@ -59,7 +59,7 @@ enum KnowledgeCardDataStore {
 
     static func loadSectionCards(
         chapterID: String = "ch_01",
-        sectionID: String = "sec_01_01"
+        sectionID: String = "sec_01"
     ) throws -> [KnowledgeCardStudyContent] {
         let cacheKey = "\(chapterID)|\(sectionID)"
         if let cached = cachedSectionCards[cacheKey] {
@@ -72,7 +72,7 @@ enum KnowledgeCardDataStore {
 
     static func refreshFreeContentAndLoadSectionCards(
         chapterID: String = "ch_01",
-        sectionID: String = "sec_01_01"
+        sectionID: String = "sec_01"
     ) async throws -> [KnowledgeCardStudyContent] {
         try await ContentPackageRemoteStore.refreshFreeContentRequired()
         invalidateCache()
@@ -146,6 +146,7 @@ enum KnowledgeCardDataStore {
                 }
 
                 if !contents.isEmpty {
+                    print("[AtomQ][StudyData] loaded cards root=\(root.path) chapter=\(chapterID) section=\(sectionID) count=\(contents.count)")
                     return contents
                 }
             }
@@ -204,6 +205,7 @@ enum KnowledgeCardDataStore {
             }
 
             if !chapters.isEmpty {
+                print("[AtomQ][StudyData] loaded directory root=\(root.path) chapters=\(chapters.count)")
                 return chapters.sorted { $0.sortNo < $1.sortNo }
             }
         }
@@ -245,28 +247,6 @@ enum KnowledgeCardDataStore {
             roots.append(docs.appendingPathComponent("cache/cards", isDirectory: true))
         }
 
-        // Bundle resource paths (default_cards shipped with the app)
-        // Multiple lookup strategies for different Xcode/XcodeGen bundle layouts
-        let bundleSubdirs = ["default_cards", "Resources/default_cards"]
-        for subdir in bundleSubdirs {
-            if let url = Bundle.main.url(forResource: "subject_index", withExtension: "json", subdirectory: subdir) {
-                roots.append(url.deletingLastPathComponent())
-            }
-        }
-        // Catch-all: try bundle root directly
-        if let resourceURL = Bundle.main.resourceURL {
-            // Check if subject_index.json exists at bundle root (flattened resources)
-            let flat = resourceURL.appendingPathComponent("subject_index.json")
-            if FileManager.default.fileExists(atPath: flat.path) {
-                roots.append(resourceURL)
-            }
-            // Check default_cards at bundle root
-            let defaultCards = resourceURL.appendingPathComponent("default_cards")
-            if FileManager.default.fileExists(atPath: defaultCards.appendingPathComponent("subject_index.json").path) {
-                roots.append(defaultCards)
-            }
-        }
-
         return roots
     }
 
@@ -297,12 +277,14 @@ enum KnowledgeCardDataStore {
         if roots.isEmpty {
             return "no document directory"
         }
-        return roots.map { root in
+        var lines = roots.map { root in
             let exists = FileManager.default.fileExists(atPath: root.path)
             let subjectIndex = root.appendingPathComponent("subject_index.json")
             let hasSubjectIndex = FileManager.default.fileExists(atPath: subjectIndex.path)
             return "[\(exists ? "exists" : "missing")] \(root.path) | subject_index.json: \(hasSubjectIndex ? "yes" : "no")"
-        }.joined(separator: "\n")
+        }
+        lines.append("bundle fallback disabled; knowledge cards must come from refreshed remote cache")
+        return lines.joined(separator: "\n")
     }
 
     enum DataStoreError: Error {

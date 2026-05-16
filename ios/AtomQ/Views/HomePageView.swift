@@ -678,6 +678,7 @@ private struct ProfileCenterView: View {
                 do {
                     GuestUserLocalStore.clearAll()
                     try ContentPackageRemoteStore.clearLocalCache()
+                    KnowledgeCardDataStore.invalidateCache()
                     clearCacheResultMessage = "本地缓存已清除。"
                 } catch {
                     clearCacheResultMessage = "清除失败：\(error.localizedDescription)"

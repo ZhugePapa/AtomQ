@@ -4,12 +4,12 @@ import SwiftUI
 
 @MainActor
 final class KnowledgeCardStudyViewModel: ObservableObject {
-    @Published var pageData = KnowledgeCardStudyContent(pointID: "demo", chapterID: "ch_01", sectionID: "sec_01_01", headerTitle: "1.1 信息与信息化", knowledgeMarkdown: "", keyPointsMarkdown: nil, mnemonicsMarkdown: nil, chipTitle: "知识卡片")
+    @Published var pageData = KnowledgeCardStudyContent(pointID: "demo", chapterID: "ch_01", sectionID: "sec_01", headerTitle: "1.1 信息与信息化", knowledgeMarkdown: "", keyPointsMarkdown: nil, mnemonicsMarkdown: nil, chipTitle: "知识卡片")
     @Published var sectionCards: [KnowledgeCardStudyContent] = []
     @Published var currentCardIndex: Int = 0
     @Published var directoryChapters: [KnowledgeDirectoryChapter] = []
     @Published var selectedChapterID: String = "ch_01"
-    @Published var selectedSectionID: String = "sec_01_01"
+    @Published var selectedSectionID: String = "sec_01"
     @Published var isDirectoryPresented = false
     @Published var loadErrorMessage: String?
     @Published var focusHighlightVisible = true
@@ -230,22 +230,59 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
 
     func loadInitialData() async {
         guard sectionCards.isEmpty else { return }
+        guard !hasLoadedInitialData else { return }
         hasLoadedInitialData = true
         shouldRenderAdjacentCards = false
         let prevCID = selectedChapterID, prevSID = selectedSectionID
+        let shouldRefreshBeforeFirstRender = ContentPackageRemoteStore.canRefreshPublicContent
+        var initialRemoteError: Error?
 
-        // 1. Load local data immediately — don't wait for network
-        if let local = try? await loadStudyPayload(fallbackChapterID: prevCID, fallbackSectionID: prevSID) {
+        if shouldRefreshBeforeFirstRender {
+            do {
+                print("[AtomQ][StudyData] refreshing remote content before first render")
+                try await ContentPackageRemoteStore.refreshFreeContentRequired()
+                KnowledgeCardDataStore.invalidateCache()
+                print("[AtomQ][StudyData] initial remote refresh finished")
+            } catch {
+                initialRemoteError = error
+                print("[AtomQ][StudyData] initial remote refresh failed: \(error.localizedDescription)")
+            }
+        }
+
+        do {
+            let local = try await loadStudyPayload(fallbackChapterID: prevCID, fallbackSectionID: prevSID)
             applyLoadedStudyPayload(local)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) { [weak self] in
                 self?.shouldRenderAdjacentCards = true
             }
-        } else {
-            loadErrorMessage = "未找到本地学习数据。请连接网络后重试，App 将自动下载最新内容。"
+        } catch {
+            let localLoadError = error
+            print("[AtomQ][StudyData] local load failed: \(localLoadError.localizedDescription)")
+
+            if !shouldRefreshBeforeFirstRender {
+                do {
+                    print("[AtomQ][StudyData] local cache exists but load failed, refreshing remote content")
+                    try await ContentPackageRemoteStore.refreshFreeContentRequired()
+                    KnowledgeCardDataStore.invalidateCache()
+                    let refreshed = try await loadStudyPayload(fallbackChapterID: prevCID, fallbackSectionID: prevSID)
+                    applyLoadedStudyPayload(refreshed)
+                    shouldRenderAdjacentCards = true
+                    return
+                } catch {
+                    initialRemoteError = error
+                    print("[AtomQ][StudyData] recovery remote refresh/load failed: \(error.localizedDescription)")
+                }
+            }
+
+            loadErrorMessage = makeLoadErrorMessage(remoteError: initialRemoteError, localError: localLoadError)
+            hasLoadedInitialData = false
             return
         }
 
-        // 2. Fire-and-forget remote refresh in background (non-blocking)
+        guard !shouldRefreshBeforeFirstRender else {
+            return
+        }
+
         Task.detached(priority: .background) { [weak self] in
             do {
                 try await ContentPackageRemoteStore.refreshFreeContentRequired()
@@ -261,6 +298,25 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
                 // Remote update failed — local data is already shown, silently ignore
             }
         }
+    }
+
+    private func makeLoadErrorMessage(remoteError: Error?, localError: Error) -> String {
+        var message = "未找到学习数据。"
+        if let remoteError {
+            message += "\n\n远程刷新失败：\(remoteError.localizedDescription)"
+        }
+        message += "\n\n本地读取失败：\(localError.localizedDescription)"
+        return message
+    }
+
+    func reloadAfterContentCacheClear() async {
+        sectionCards = []
+        directoryChapters = []
+        currentCardIndex = 0
+        shouldRenderAdjacentCards = false
+        hasLoadedInitialData = false
+        KnowledgeCardDataStore.invalidateCache()
+        await loadInitialData()
     }
 }
 
@@ -718,6 +774,12 @@ struct KnowledgeCardStudyView: View {
         .onChange(of: viewModel.sectionCards.map(\.pointID)) { _, _ in
             syncRenderedCardWindow(immediate: true)
         }
+        .onReceive(NotificationCenter.default.publisher(for: ContentPackageRemoteStore.didClearLocalCacheNotification)) { _ in
+            Task {
+                await viewModel.reloadAfterContentCacheClear()
+                syncRenderedCardWindow(immediate: true)
+            }
+        }
         .alert("数据加载失败", isPresented: Binding(
             get: { viewModel.loadErrorMessage != nil },
             set: { newValue in
@@ -833,50 +895,171 @@ private struct TopActionBar: View {
 
 private struct DirectorySheet: View {
     @ObservedObject var viewModel: KnowledgeCardStudyViewModel
+    @Environment(\.dismiss) private var dismiss
+    @State private var expandedChapterID: String?
+
+    private let accordionAnimation = Animation.timingCurve(0.25, 0.1, 0.25, 1, duration: 0.28)
+
+    private var chapters: [KnowledgeDirectoryChapter] {
+        viewModel.directoryChapters.sorted { $0.sortNo < $1.sortNo }
+    }
 
     var body: some View {
-        NavigationStack {
-            List {
-                ForEach(viewModel.directoryChapters) { chapter in
-                    Section {
-                        ForEach(chapter.sections) { section in
-                            Button(action: {
-                                viewModel.selectDirectorySection(chapter: chapter, section: section)
-                            }) {
-                                HStack {
-                                    Text(section.title)
-                                        .font(.custom("PingFang SC", size: 16).weight(
-                                            viewModel.selectedSectionID == section.id && viewModel.selectedChapterID == chapter.id ? .medium : .regular
-                                        ))
-                                        .foregroundStyle(
-                                            viewModel.selectedSectionID == section.id && viewModel.selectedChapterID == chapter.id ? Token.textBrand : Token.textSecondary
-                                        )
+        VStack(spacing: 0) {
+            directoryHeader
 
-                                    Spacer()
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .leading, spacing: 0) {
+                    Color.clear
+                        .frame(height: 16)
 
-                                    if viewModel.selectedSectionID == section.id && viewModel.selectedChapterID == chapter.id {
-                                        Text("当前")
-                                            .font(.custom("PingFang SC", size: 11))
-                                            .foregroundStyle(Token.textBrand)
-                                            .padding(.horizontal, 6)
-                                            .padding(.vertical, 2)
-                                            .background(Token.fgBrandSubtle)
-                                            .clipShape(RoundedRectangle(cornerRadius: 4))
+                    ForEach(chapters) { chapter in
+                        VStack(spacing: 0) {
+                            chapterRow(chapter)
+
+                            if expandedChapterID == chapter.id {
+                                VStack(spacing: 0) {
+                                    ForEach(chapter.sections.sorted { $0.sortNo < $1.sortNo }) { section in
+                                        sectionRow(section, in: chapter)
                                     }
                                 }
+                                .clipped()
+                                .transition(.opacity)
                             }
                         }
-                    } header: {
-                        Text(chapter.title)
-                            .font(.custom("PingFang SC", size: 15).weight(.medium))
-                            .foregroundStyle(Token.textPrimary)
+                        .animation(accordionAnimation, value: expandedChapterID)
                     }
                 }
+                .frame(maxWidth: .infinity, alignment: .topLeading)
             }
-            .listStyle(.insetGrouped)
-            .navigationTitle("目录")
-            .navigationBarTitleDisplayMode(.inline)
         }
+        .background(Token.bgCanvas)
+        .onAppear {
+            if expandedChapterID == nil {
+                expandedChapterID = viewModel.selectedChapterID
+            }
+        }
+    }
+
+    private var directoryHeader: some View {
+        ZStack(alignment: .top) {
+            HStack(spacing: 8) {
+                Text("目录")
+                    .font(.custom("PingFang SC", size: 20).weight(.semibold))
+                    .lineSpacing(0)
+                    .foregroundStyle(Token.textPrimary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                Button(action: closeSheet) {
+                    directoryCloseIcon
+                }
+                .buttonStyle(.plain)
+            }
+            .padding(20)
+            .frame(height: 72)
+
+            RoundedRectangle(cornerRadius: 100, style: .continuous)
+                .fill(Token.fgDisabled)
+                .frame(width: 32, height: 5)
+                .padding(.top, 6)
+        }
+        .background(Token.bgCanvas)
+        .overlay(alignment: .bottom) {
+            Rectangle()
+                .fill(Token.borderDefault)
+                .frame(height: 1)
+        }
+    }
+
+    private func chapterRow(_ chapter: KnowledgeDirectoryChapter) -> some View {
+        let isExpanded = expandedChapterID == chapter.id
+
+        return Button {
+            withAnimation(accordionAnimation) {
+                expandedChapterID = isExpanded ? nil : chapter.id
+            }
+        } label: {
+            HStack(spacing: 8) {
+                Text(chapter.title)
+                    .font(.custom("PingFang SC", size: 16).weight(.medium))
+                    .lineSpacing(0)
+                    .foregroundStyle(Token.textSecondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                directoryChevronIcon(isExpanded: isExpanded)
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 16)
+            .contentShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func sectionRow(_ section: KnowledgeDirectorySection, in chapter: KnowledgeDirectoryChapter) -> some View {
+        let isSelected = viewModel.selectedChapterID == chapter.id && viewModel.selectedSectionID == section.id
+
+        return Button {
+            viewModel.selectDirectorySection(chapter: chapter, section: section)
+        } label: {
+            HStack(spacing: 8) {
+                Text(section.title)
+                    .font(.custom("PingFang SC", size: 16).weight(isSelected ? .medium : .regular))
+                    .lineSpacing(0)
+                    .foregroundStyle(isSelected ? Token.textBrand : Token.textSecondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                if isSelected {
+                    currentSectionBadge
+                        .transition(.opacity)
+                }
+            }
+            .padding(.leading, 40)
+            .padding(.trailing, 20)
+            .padding(.vertical, 16)
+            .contentShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func closeSheet() {
+        viewModel.isDirectoryPresented = false
+        dismiss()
+    }
+
+    private var directoryCloseIcon: some View {
+        SvgIconView(
+            name: "icon-dir-x-close",
+            outerWidth: 24,
+            outerHeight: 24,
+            innerInsets: SvgIconInsets(top: 0.25, right: 0.25, bottom: 0.25, left: 0.25),
+            imageInsets: SvgIconInsets(top: -0.0833, right: -0.0833, bottom: -0.0833, left: -0.0833),
+            cssVariables: ["stroke-0": Token.textTertiary]
+        )
+    }
+
+    private func directoryChevronIcon(isExpanded: Bool) -> some View {
+        SvgIconView(
+            name: "icon-dir-chevron-left",
+            outerWidth: 24,
+            outerHeight: 24,
+            innerInsets: SvgIconInsets(top: 0.25, right: 0.375, bottom: 0.25, left: 0.375),
+            imageInsets: SvgIconInsets(top: -0.0833, right: -0.1667, bottom: -0.0833, left: -0.1667),
+            cssVariables: ["stroke-0": Token.fgTertiary]
+        )
+        .rotationEffect(.degrees(isExpanded ? -90 : 0))
+        .animation(accordionAnimation, value: isExpanded)
+    }
+
+    private var currentSectionBadge: some View {
+        Text("当前")
+            .font(.custom("PingFang SC", size: 14).weight(.regular))
+            .lineSpacing(0)
+            .foregroundStyle(Token.textBrand)
+            .frame(height: 22, alignment: .center)
+            .padding(.horizontal, 8)
+            .frame(height: 24, alignment: .center)
+            .background(Token.fgBrandSubtle)
+            .clipShape(Capsule())
     }
 }
 

@@ -146,9 +146,9 @@
 | border/warning | var(--ios-color-border-warning) | @alias(warning/100) | STROKE_COLOR | Light | Colors | VariableID:7769:205 |
 | border/warning | var(--ios-color-border-warning) | @alias(warning/700) | STROKE_COLOR | Dark | Colors | VariableID:7769:205 |
 | components/alpha_0 | var(--ios-color-components-alpha-0) | #ffffff@0.00 | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Light | Colors | VariableID:7967:769 |
-| components/alpha_0 | var(--ios-color-components-alpha-0) | #071947@0.00 | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Dark | Colors | VariableID:7967:769 |
+| components/alpha_0 | var(--ios-color-components-alpha-0) | #0b111a@0.00 | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Dark | Colors | VariableID:7967:769 |
 | components/alpha_100 | var(--ios-color-components-alpha-100) | #ffffff | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Light | Colors | VariableID:7970:770 |
-| components/alpha_100 | var(--ios-color-components-alpha-100) | #071947 | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Dark | Colors | VariableID:7970:770 |
+| components/alpha_100 | var(--ios-color-components-alpha-100) | #0b111a | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Dark | Colors | VariableID:7970:770 |
 | components/card | var(--ios-color-components-card) | #071947 | FRAME_FILL,SHAPE_FILL | Light | Colors | VariableID:7862:6563 |
 | components/card | var(--ios-color-components-card) | #1c2839 | FRAME_FILL,SHAPE_FILL | Dark | Colors | VariableID:7862:6563 |
 | components/emphasis_invisible | var(--ios-color-components-emphasis-invisible) | @alias(neutral/100) | FRAME_FILL,SHAPE_FILL | Light | Colors | VariableID:7979:872 |

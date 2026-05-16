@@ -20,6 +20,10 @@
   <string>1</string>
 	<key>ATOMQ_PUBLIC_CONTENT_BASE_URL</key>
 	<string>https://atomq.leoht.space/atomq/content_package/public/</string>
+	<key>ATOMQ_OSS_OBJECT_PREFIX</key>
+	<string>atomq/content_package/public/</string>
+	<key>ATOMQ_OSS_SIGN_URL</key>
+	<string></string>
   <key>LSRequiresIPhoneOS</key>
   <true/>
   <key>UIApplicationSceneManifest</key>

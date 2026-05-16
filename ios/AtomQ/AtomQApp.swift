@@ -13,11 +13,28 @@ final class HomeViewModel: ObservableObject {
     @Published var selectedTab: AppTab = .study
     @Published var showingKnowledgeCardStudy = false
     let studyViewModel = KnowledgeCardStudyViewModel()
+    private var contentCacheObserver: NSObjectProtocol?
 
     init() {
+        contentCacheObserver = NotificationCenter.default.addObserver(
+            forName: ContentPackageRemoteStore.didClearLocalCacheNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            Task { @MainActor in
+                await self?.studyViewModel.reloadAfterContentCacheClear()
+            }
+        }
+
         // Start preloading study data immediately so it's ready when user opens the page
         Task { @MainActor in
             await studyViewModel.loadInitialData()
+        }
+    }
+
+    deinit {
+        if let contentCacheObserver {
+            NotificationCenter.default.removeObserver(contentCacheObserver)
         }
     }
 

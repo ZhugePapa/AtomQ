@@ -42,14 +42,14 @@ enum Token {
     static let componentsAlpha0 = Color(
         UIColor { trait in
             trait.userInterfaceStyle == .dark
-                ? UIColor(red: 7 / 255, green: 25 / 255, blue: 71 / 255, alpha: 0)
+                ? UIColor(red: 11 / 255, green: 17 / 255, blue: 26 / 255, alpha: 0)
                 : UIColor(red: 1, green: 1, blue: 1, alpha: 0)
         }
     )
     static let componentsAlpha100 = Color(
         UIColor { trait in
             trait.userInterfaceStyle == .dark
-                ? UIColor(red: 7 / 255, green: 25 / 255, blue: 71 / 255, alpha: 1)
+                ? UIColor(red: 11 / 255, green: 17 / 255, blue: 26 / 255, alpha: 1)
                 : UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         }
     )

@@ -11,13 +11,9 @@ targets:
     platform: iOS
     sources:
       - path: AtomQ
-        excludes:
-          - Resources/default_cards/**
     resources:
       - path: AtomQ/Assets.xcassets
       - path: AtomQ/Resources/SVG
-        type: folder
-      - path: AtomQ/Resources/default_cards
         type: folder
       - path: AtomQ/Resources/Markdown
         type: folder
