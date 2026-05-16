@@ -55,6 +55,28 @@ enum ContentPackageRemoteStore {
         print("[AtomQ][RemoteContent] refresh success")
     }
 
+    static func refreshContentRequired(chapterID: String, sectionID: String) async throws {
+        guard let cacheRoot = ContentPackageConfig.publicContentCacheRoot else {
+            throw RemoteStoreError.missingCacheRoot
+        }
+
+        guard let remoteAccess = ContentPackageConfig.remoteAccess else {
+            throw RemoteStoreError.missingRemoteAccess
+        }
+
+        let mode = ContentPackageRefreshModeState.consumeRequestedMode()
+        print("[AtomQ][RemoteContent] initial refresh start chapter=\(chapterID) section=\(sectionID) cache=\(cacheRoot.path) mode=\(mode.logLabel)")
+        try await ContentPackageRefreshCoordinator.shared.refreshInitial(
+            remoteAccess: remoteAccess,
+            cacheRoot: cacheRoot,
+            chapterID: chapterID,
+            sectionID: sectionID,
+            mode: mode
+        )
+        try writeCacheSchemaMarker()
+        print("[AtomQ][RemoteContent] initial refresh success")
+    }
+
     static func refreshDirectoryIndexRequired() async throws {
         guard let cacheRoot = ContentPackageConfig.publicContentCacheRoot else {
             throw RemoteStoreError.missingCacheRoot
@@ -212,6 +234,7 @@ private actor ContentPackageRefreshCoordinator {
     static let shared = ContentPackageRefreshCoordinator()
 
     private var inFlightRefresh: (generation: Int, mode: ContentPackageRefreshMode, task: Task<Void, Error>)?
+    private var inFlightInitialRefresh: (generation: Int, chapterID: String, sectionID: String, mode: ContentPackageRefreshMode, task: Task<Void, Error>)?
 
     func refresh(
         remoteAccess: ContentPackageConfig.RemoteAccess,
@@ -245,6 +268,47 @@ private actor ContentPackageRefreshCoordinator {
         } catch {
             if inFlightRefresh?.generation == generation {
                 inFlightRefresh = nil
+            }
+            throw error
+        }
+    }
+
+    func refreshInitial(
+        remoteAccess: ContentPackageConfig.RemoteAccess,
+        cacheRoot: URL,
+        chapterID: String,
+        sectionID: String,
+        mode: ContentPackageRefreshMode
+    ) async throws {
+        let generation = ContentPackageCacheState.currentGeneration
+        if let inFlightInitialRefresh,
+           inFlightInitialRefresh.generation == generation,
+           inFlightInitialRefresh.chapterID == chapterID,
+           inFlightInitialRefresh.sectionID == sectionID,
+           inFlightInitialRefresh.mode == mode {
+            print("[AtomQ][RemoteContent] joining in-flight initial refresh")
+            try await inFlightInitialRefresh.task.value
+            return
+        }
+        if let inFlightInitialRefresh {
+            inFlightInitialRefresh.task.cancel()
+            self.inFlightInitialRefresh = nil
+        }
+
+        let task = Task {
+            try await PublicContentDownloader(remoteAccess: remoteAccess, cacheRoot: cacheRoot)
+                .refreshInitialIfNeeded(chapterID: chapterID, sectionID: sectionID, mode: mode)
+        }
+        inFlightInitialRefresh = (generation, chapterID, sectionID, mode, task)
+
+        do {
+            try await task.value
+            if inFlightInitialRefresh?.generation == generation {
+                inFlightInitialRefresh = nil
+            }
+        } catch {
+            if inFlightInitialRefresh?.generation == generation {
+                inFlightInitialRefresh = nil
             }
             throw error
         }
@@ -336,16 +400,13 @@ private struct PublicContentDownloader {
     }
 
     func refreshIfNeeded(mode: ContentPackageRefreshMode) async throws {
-        print("[AtomQ][RemoteContent] fetch manifest.json")
-        let remoteManifestData = try await fetch(relativePath: "manifest.json")
-        let remoteManifest = try JSONDecoder().decode(ContentManifest.self, from: remoteManifestData)
-        let fileIndexPath = remoteManifest.distribution?.fileIndex ?? "file_index.json"
+        let remotePackage = try await fetchRemotePackageIndex(logPrefix: "")
+        let remoteManifestData = remotePackage.manifestData
+        let remoteManifest = remotePackage.manifest
+        let fileIndexPath = remotePackage.fileIndexPath
+        let fileIndexData = remotePackage.fileIndexData
+        let fileIndex = remotePackage.fileIndex
         let localManifest = try? loadLocalManifest()
-
-        print("[AtomQ][RemoteContent] fetch \(fileIndexPath)")
-        let fileIndexData = try await fetch(relativePath: fileIndexPath)
-        let fileIndex = try JSONDecoder().decode(ContentFileIndex.self, from: fileIndexData)
-        print("[AtomQ][RemoteContent] file count=\(fileIndex.files.count)")
 
         try write(remoteManifestData, to: "manifest.json")
         try write(fileIndexData, to: fileIndexPath)
@@ -386,6 +447,55 @@ private struct PublicContentDownloader {
             print("[AtomQ][RemoteContent] refresh partial success skipped=\(nonCriticalFailures.count)")
         }
         print("[AtomQ][RemoteContent] refresh download complete")
+    }
+
+    func refreshInitialIfNeeded(chapterID: String, sectionID: String, mode: ContentPackageRefreshMode) async throws {
+        let remotePackage = try await fetchRemotePackageIndex(logPrefix: "initial ")
+        let remoteManifestData = remotePackage.manifestData
+        let remoteManifest = remotePackage.manifest
+        let fileIndexPath = remotePackage.fileIndexPath
+        let fileIndexData = remotePackage.fileIndexData
+        let fileIndex = remotePackage.fileIndex
+
+        try write(remoteManifestData, to: "manifest.json")
+        try write(fileIndexData, to: fileIndexPath)
+
+        let initialFiles = filesToRefresh(
+            from: initialContentFiles(from: fileIndex.files, chapterID: chapterID, sectionID: sectionID),
+            mode: mode
+        )
+
+        if initialFiles.isEmpty {
+            print("[AtomQ][RemoteContent] initial cache current version=\(remoteManifest.contentVersion)")
+            return
+        }
+
+        let orderedFiles = prioritizedFiles(initialFiles, chapterID: chapterID, sectionID: sectionID)
+        print("[AtomQ][RemoteContent] initial download file count=\(orderedFiles.count)")
+        for (index, file) in orderedFiles.enumerated() {
+            try await download(file, progress: "initial \(index + 1)/\(orderedFiles.count)")
+        }
+        print("[AtomQ][RemoteContent] initial refresh download complete")
+    }
+
+    private func fetchRemotePackageIndex(logPrefix: String) async throws -> RemotePackageIndex {
+        print("[AtomQ][RemoteContent] fetch \(logPrefix)manifest.json")
+        let remoteManifestData = try await fetch(relativePath: "manifest.json")
+        let remoteManifest = try JSONDecoder().decode(ContentManifest.self, from: remoteManifestData)
+        let fileIndexPath = remoteManifest.distribution?.fileIndex ?? "file_index.json"
+
+        print("[AtomQ][RemoteContent] fetch \(logPrefix)\(fileIndexPath)")
+        let fileIndexData = try await fetch(relativePath: fileIndexPath)
+        let fileIndex = try JSONDecoder().decode(ContentFileIndex.self, from: fileIndexData)
+        print("[AtomQ][RemoteContent] \(logPrefix)file count=\(fileIndex.files.count)")
+
+        return RemotePackageIndex(
+            manifestData: remoteManifestData,
+            manifest: remoteManifest,
+            fileIndexPath: fileIndexPath,
+            fileIndexData: fileIndexData,
+            fileIndex: fileIndex
+        )
     }
 
     private func filesToRefresh(from files: [ContentFile], mode: ContentPackageRefreshMode) -> [ContentFile] {
@@ -430,6 +540,10 @@ private struct PublicContentDownloader {
     }
 
     private func prioritizedFiles(from files: [ContentFile]) -> [ContentFile] {
+        prioritizedFiles(files, chapterID: "ch_01", sectionID: "sec_01")
+    }
+
+    private func prioritizedFiles(_ files: [ContentFile], chapterID: String, sectionID: String) -> [ContentFile] {
         var seenPaths = Set<String>()
         var prioritized: [ContentFile] = []
 
@@ -439,11 +553,11 @@ private struct PublicContentDownloader {
             prioritized.append(file)
         }
 
-        // Fetch the full directory tree first, then the first screen, then the rest of the package.
+        // Fetch the full directory tree first, then the active section, then the rest of the package.
         for file in directoryIndexFiles(from: files) {
             append(file)
         }
-        for file in files where file.path.hasPrefix("subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_") {
+        for file in files where isSectionCardFile(file, chapterID: chapterID, sectionID: sectionID) {
             append(file)
         }
         for file in files {
@@ -451,6 +565,12 @@ private struct PublicContentDownloader {
         }
 
         return prioritized
+    }
+
+    private func initialContentFiles(from files: [ContentFile], chapterID: String, sectionID: String) -> [ContentFile] {
+        files.filter { file in
+            isDirectoryIndexFile(file) || isSectionCardFile(file, chapterID: chapterID, sectionID: sectionID)
+        }
     }
 
     private func directoryIndexFiles(from files: [ContentFile]) -> [ContentFile] {
@@ -463,15 +583,25 @@ private struct PublicContentDownloader {
             prioritized.append(file)
         }
 
-        for file in files where file.path == "subjects/high_itpmp/subject_index.json" {
+        for file in files where isDirectoryIndexFile(file) && file.path == "subjects/high_itpmp/subject_index.json" {
             append(file)
         }
-        for file in files where file.path.hasPrefix("subjects/high_itpmp/chapters/")
-            && file.path.hasSuffix("/chapter_meta.json") {
+        for file in files where isDirectoryIndexFile(file) && file.path.hasSuffix("/chapter_meta.json") {
             append(file)
         }
 
         return prioritized
+    }
+
+    private func isDirectoryIndexFile(_ file: ContentFile) -> Bool {
+        file.path == "subjects/high_itpmp/subject_index.json"
+            || (file.path.hasPrefix("subjects/high_itpmp/chapters/")
+                && file.path.hasSuffix("/chapter_meta.json"))
+    }
+
+    private func isSectionCardFile(_ file: ContentFile, chapterID: String, sectionID: String) -> Bool {
+        file.path.hasPrefix("subjects/high_itpmp/chapters/\(chapterID)/cards/\(chapterID)_\(sectionID)_")
+            && (file.path.hasSuffix(".json") || file.path.hasSuffix(".md"))
     }
 
     private func isInitialLoadCriticalFile(_ file: ContentFile) -> Bool {
@@ -643,6 +773,14 @@ private struct ContentDistribution: Decodable {
 
 private struct ContentFileIndex: Decodable {
     let files: [ContentFile]
+}
+
+private struct RemotePackageIndex {
+    let manifestData: Data
+    let manifest: ContentManifest
+    let fileIndexPath: String
+    let fileIndexData: Data
+    let fileIndex: ContentFileIndex
 }
 
 private struct ContentFile: Decodable {

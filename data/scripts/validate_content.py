@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import sys
 from pathlib import Path
 
@@ -16,6 +17,15 @@ def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def is_safe_package_path(value: str) -> bool:
+    parts = value.split("/")
+    return bool(value) and not value.startswith("/") and ".." not in parts
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
 def main() -> int:
     errors: list[str] = []
     warnings: list[str] = []
@@ -23,6 +33,86 @@ def main() -> int:
     subject_dirs = sorted((PACKAGE_ROOT / "subjects").glob("*"))
     if not subject_dirs:
         errors.append("No subject directories found.")
+
+    manifest_path = PACKAGE_ROOT / "manifest.json"
+    file_index_path = PACKAGE_ROOT / "file_index.json"
+    if not manifest_path.exists():
+        errors.append(f"Missing {manifest_path}")
+    if not file_index_path.exists():
+        errors.append(f"Missing {file_index_path}")
+
+    if manifest_path.exists() and file_index_path.exists():
+        manifest = load_json(manifest_path)
+        file_index = load_json(file_index_path)
+        configured_index = manifest.get("distribution", {}).get("file_index", "file_index.json")
+        if configured_index != "file_index.json":
+            errors.append(f"manifest distribution.file_index expected file_index.json, got {configured_index}")
+
+        index_files = file_index.get("files", [])
+        if not isinstance(index_files, list):
+            errors.append("file_index.files must be an array")
+            index_files = []
+
+        indexed_paths: set[str] = set()
+        duplicate_paths: set[str] = set()
+        for item in index_files:
+            if not isinstance(item, dict):
+                errors.append("file_index.files item must be an object")
+                continue
+            rel = item.get("path")
+            if not isinstance(rel, str) or not is_safe_package_path(rel):
+                errors.append(f"file_index has unsafe path {rel!r}")
+                continue
+            if rel in indexed_paths:
+                duplicate_paths.add(rel)
+            indexed_paths.add(rel)
+
+            path = PACKAGE_ROOT / rel
+            if not path.exists():
+                errors.append(f"file_index references missing file {rel}")
+                continue
+            if path.name == "file_index.json":
+                errors.append("file_index must not include itself")
+                continue
+
+            expected_bytes = item.get("bytes")
+            actual_bytes = path.stat().st_size
+            if expected_bytes != actual_bytes:
+                errors.append(f"{rel}: file_index bytes={expected_bytes} actual={actual_bytes}")
+
+            expected_sha256 = item.get("sha256")
+            actual_sha256 = sha256(path)
+            if expected_sha256 != actual_sha256:
+                errors.append(f"{rel}: file_index sha256 mismatch")
+
+        for rel in sorted(duplicate_paths):
+            errors.append(f"file_index duplicate path {rel}")
+
+        actual_paths = {
+            path.relative_to(PACKAGE_ROOT).as_posix()
+            for path in PACKAGE_ROOT.rglob("*")
+            if path.is_file() and path.name != "file_index.json"
+        }
+        declared_count = file_index.get("file_count")
+        if declared_count != len(index_files):
+            errors.append(f"file_index file_count={declared_count} entries={len(index_files)}")
+        if len(index_files) != len(actual_paths):
+            errors.append(f"file_index entries={len(index_files)} actual_files={len(actual_paths)}")
+
+        for rel in sorted(actual_paths - indexed_paths):
+            errors.append(f"file_index missing actual file {rel}")
+        for rel in sorted(indexed_paths - actual_paths):
+            errors.append(f"file_index has extra file {rel}")
+
+        for required in [
+            "manifest.json",
+            "subjects/high_itpmp/subject_index.json",
+            "subjects/high_itpmp/chapters/ch_01/chapter_meta.json",
+            "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.json",
+            "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.md",
+        ]:
+            if required not in indexed_paths:
+                errors.append(f"file_index missing critical file {required}")
 
     for subject_dir in subject_dirs:
         subject_index_path = subject_dir / "subject_index.json"

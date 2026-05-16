@@ -42,6 +42,7 @@ jobs:
           test -n "$ALIYUN_ACCESS_KEY_SECRET"
           test -n "$OSS_BUCKET"
           test -n "$OSS_ENDPOINT"
+          test -d "$CONTENT_PACKAGE_DIR"
 
       - name: Install ossutil
         run: |
@@ -67,4 +68,24 @@ jobs:
           else
             TARGET="oss://${OSS_BUCKET}/"
           fi
+          echo "Syncing $CONTENT_PACKAGE_DIR/ -> $TARGET"
           ossutil sync "$CONTENT_PACKAGE_DIR/" "$TARGET" --delete --force
+
+      - name: Verify key OSS objects
+        run: |
+          if [ -n "$OSS_PREFIX" ]; then
+            TARGET="oss://${OSS_BUCKET}/${OSS_PREFIX%/}/"
+          else
+            TARGET="oss://${OSS_BUCKET}/"
+          fi
+
+          for key in \
+            "public/manifest.json" \
+            "public/file_index.json" \
+            "public/subjects/high_itpmp/subject_index.json" \
+            "public/subjects/high_itpmp/chapters/ch_01/chapter_meta.json" \
+            "public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.json" \
+            "public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.md"
+          do
+            ossutil stat "${TARGET}${key}" >/dev/null
+          done

@@ -268,14 +268,14 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
 
         if shouldRefreshBeforeFirstRender {
             do {
-                print("[AtomQ][StudyData] refreshing remote content before first render")
-                try await ContentPackageRemoteStore.refreshFreeContentRequired()
+                print("[AtomQ][StudyData] refreshing remote section before first render")
+                try await ContentPackageRemoteStore.refreshContentRequired(chapterID: prevCID, sectionID: prevSID)
                 hasRefreshedRemoteContent = true
                 KnowledgeCardDataStore.invalidateCache()
-                print("[AtomQ][StudyData] initial remote refresh finished")
+                print("[AtomQ][StudyData] initial remote section refresh finished")
             } catch {
                 initialRemoteError = error
-                print("[AtomQ][StudyData] initial remote refresh failed: \(error.localizedDescription)")
+                print("[AtomQ][StudyData] initial remote section refresh failed: \(error.localizedDescription)")
             }
         }
 
@@ -309,12 +309,9 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
             return
         }
 
-        guard !shouldRefreshBeforeFirstRender else {
-            return
-        }
-
         Task.detached(priority: .background) { [weak self] in
             do {
+                print("[AtomQ][StudyData] background full content refresh start")
                 try await ContentPackageRemoteStore.refreshFreeContentRequired()
                 KnowledgeCardDataStore.invalidateCache()
                 guard let self else { return }
@@ -324,8 +321,9 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
                         self.shouldRenderAdjacentCards = true
                     }
                 }
+                print("[AtomQ][StudyData] background full content refresh finished")
             } catch {
-                // Remote update failed — local data is already shown, silently ignore
+                print("[AtomQ][StudyData] background full content refresh failed: \(error.localizedDescription)")
             }
         }
     }

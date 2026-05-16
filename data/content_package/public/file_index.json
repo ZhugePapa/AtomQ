@@ -1,12 +1,12 @@
 {
   "package_id": "atomq_public_content",
-  "version": "2026.1.0",
+  "version": "2026.05.full-color-ocr-draft.7.lazy-section-refresh",
   "file_count": 2992,
   "files": [
     {
       "path": "manifest.json",
       "bytes": 3787,
-      "sha256": "ae5ee19f4c41c13f2e2eeefdc324414f795d568d805793091fcaf42303885e52"
+      "sha256": "6ccdeb43efed4af58f2bd5865dbfa445e013f851117a091434e26da84845327f"
     },
     {
       "path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.json",
