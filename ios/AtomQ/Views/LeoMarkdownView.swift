@@ -235,6 +235,32 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
           });
         }
 
+        function encodeFocusHighlights(source, focusHighlightVisible) {
+          const stateClass = focusHighlightVisible
+            ? 'leo-markdown__focus--visible'
+            : 'leo-markdown__focus--hidden';
+          let count = 0;
+          const encodedSource = source.replace(/==([\\s\\S]+?)==/g, (_, rawText) => {
+            const index = count;
+            count += 1;
+            return `@@LEO_FOCUS_START_${index}@@${String(rawText || '')}@@LEO_FOCUS_END_${index}@@`;
+          });
+          return { source: encodedSource, count, stateClass };
+        }
+
+        function applyFocusHighlights(html, focusCount, stateClass) {
+          let nextHTML = html;
+          for (let index = 0; index < focusCount; index += 1) {
+            const startToken = `@@LEO_FOCUS_START_${index}@@`;
+            const endToken = `@@LEO_FOCUS_END_${index}@@`;
+            const startHTML = `<span class=\"leo-markdown__focus ${stateClass}\"><span class=\"leo-markdown__focus-text\">`;
+            const endHTML = '</span></span>';
+            nextHTML = nextHTML.split(startToken).join(startHTML);
+            nextHTML = nextHTML.split(endToken).join(endHTML);
+          }
+          return nextHTML;
+        }
+
         function render() {
           const content = \(markdownJSON);
           const options = {
@@ -251,12 +277,8 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
             source = escapeHtml(source);
           }
 
-          source = source.replace(/==([\\s\\S]+?)==/g, (_, rawText) => {
-            const stateClass = options.focusHighlightVisible
-              ? 'leo-markdown__focus--visible'
-              : 'leo-markdown__focus--hidden';
-            return `<span class=\"leo-markdown__focus ${stateClass}\"><span class=\"leo-markdown__focus-text\">${escapeHtml(String(rawText || ''))}</span></span>`;
-          });
+          const focusEncoding = encodeFocusHighlights(source, options.focusHighlightVisible);
+          source = focusEncoding.source;
 
           let html = '';
           if (window.marked && typeof window.marked.parse === 'function') {
@@ -266,6 +288,7 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
           }
 
           html = sanitize(html);
+          html = applyFocusHighlights(html, focusEncoding.count, focusEncoding.stateClass);
 
           const root = document.getElementById('leo-markdown-content');
           root.innerHTML = html;
@@ -559,6 +582,11 @@ private struct LeoMarkdownWebView: UIViewRepresentable {
             .leo-markdown__focus--visible .leo-markdown__focus-text {
               color: var(--ios-color-text-danger);
               opacity: 1;
+            }
+
+            .leo-markdown__focus--visible strong {
+              color: var(--ios-color-text-danger);
+              font-weight: 600;
             }
 
             .leo-markdown__focus--hidden {

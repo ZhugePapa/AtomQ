@@ -69,6 +69,8 @@
 - 若 SVG 存在缩放，必须计算渲染后描边：`renderedStroke = svgStrokeWidth * frameSize / viewBoxSize`，与 Figma 的实际描边一致才可通过。
 - 所有图标（包含红点、圆环、箭头、细线图形）必须使用 Figma 设计文件导出的 SVG 资产；禁止使用 SF Symbols、第三方图标库、或手写替代图形充当最终图标。
 - 仅在你明确授权“临时占位”时，才可使用非 Figma 图标占位；上线前必须回切为 Figma SVG。
+- iOS 单色图标必须使用官方推荐的 Asset Catalog Template Image 方式落地：Figma SVG 作为来源，放入 `Assets.xcassets/*.imageset`，运行时使用 `Image(...).renderingMode(.template)` + Token 着色；禁止用 `WKWebView` 在运行时渲染单色图标。
+- 多色、渐变、遮罩类复杂 SVG 可以保留为原始图片资源或临时 fallback，但不得影响首屏单色图标的即时渲染。
 - 禁止仅凭“变量名一致”判定通过；必须同时通过“变量一致 + 几何一致”双检查。
 - 若发现是几何问题，修复优先级高于颜色微调，避免误把几何误差当作变量错误处理。
 

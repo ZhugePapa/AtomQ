@@ -238,6 +238,13 @@ enum KnowledgeCardDataStore {
     private static func candidateRootDirectories() -> [URL] {
         var roots: [URL] = []
 
+        // Prefer refreshed content package cache so OSS updates can override bundled seed data.
+        if let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            roots.append(docs.appendingPathComponent("cache/cards/content_package/public/subjects/high_itpmp", isDirectory: true))
+            roots.append(docs.appendingPathComponent("cache/cards/subjects/high_itpmp", isDirectory: true))
+            roots.append(docs.appendingPathComponent("cache/cards", isDirectory: true))
+        }
+
         // Bundle resource paths (default_cards shipped with the app)
         // Multiple lookup strategies for different Xcode/XcodeGen bundle layouts
         let bundleSubdirs = ["default_cards", "Resources/default_cards"]
@@ -259,14 +266,6 @@ enum KnowledgeCardDataStore {
                 roots.append(defaultCards)
             }
         }
-
-        // Document directory cache paths (remote content downloads)
-        guard let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
-            return roots
-        }
-        roots.append(docs.appendingPathComponent("cache/cards/content_package/public/subjects/high_itpmp", isDirectory: true))
-        roots.append(docs.appendingPathComponent("cache/cards/subjects/high_itpmp", isDirectory: true))
-        roots.append(docs.appendingPathComponent("cache/cards", isDirectory: true))
 
         return roots
     }

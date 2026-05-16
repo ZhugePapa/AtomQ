@@ -26,6 +26,17 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
 
     typealias LoadedStudyPayload = (chapters: [KnowledgeDirectoryChapter], chapterID: String, sectionID: String, cards: [KnowledgeCardStudyContent])
 
+    struct AdjacentSectionTarget {
+        let chapterID: String
+        let sectionID: String
+        let cards: [KnowledgeCardStudyContent]
+        let cardIndex: Int
+
+        var card: KnowledgeCardStudyContent {
+            cards[cardIndex]
+        }
+    }
+
     var resolvedBackAction: () -> Void {
         if let onBack = onBack { return onBack }
         return {}
@@ -85,13 +96,50 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
     }
 
     func navigateToAdjacentSection(offset: Int, anchor: CardSelectionAnchor) {
-        let sections = orderedSections()
-        guard let index = currentSectionPosition() else { return }
-        let nextIndex = index + offset
-        guard sections.indices.contains(nextIndex) else { return }
-        let target = sections[nextIndex]
-        do { try loadSectionCards(chapterID: target.chapter.id, sectionID: target.section.id, anchor: anchor) }
+        do {
+            guard let target = try adjacentSectionTarget(offset: offset, anchor: anchor) else { return }
+            applyAdjacentSectionTarget(target)
+        }
         catch { loadErrorMessage = error.localizedDescription }
+    }
+
+    func adjacentSectionTarget(offset: Int, anchor: CardSelectionAnchor) throws -> AdjacentSectionTarget? {
+        let sections = orderedSections()
+        guard let index = currentSectionPosition() else { return nil }
+        let nextIndex = index + offset
+        guard sections.indices.contains(nextIndex) else { return nil }
+        let target = sections[nextIndex]
+        let cards = try KnowledgeCardDataStore.loadSectionCards(chapterID: target.chapter.id, sectionID: target.section.id)
+        guard !cards.isEmpty else { return nil }
+
+        let cardIndex: Int
+        switch anchor {
+        case .first:
+            cardIndex = 0
+        case .last:
+            cardIndex = cards.count - 1
+        case .firstUnmastered:
+            cardIndex = cards.firstIndex(where: { !GuestUserLocalStore.isPointMastered($0.pointID) }) ?? 0
+        }
+
+        return AdjacentSectionTarget(
+            chapterID: target.chapter.id,
+            sectionID: target.section.id,
+            cards: cards,
+            cardIndex: cardIndex
+        )
+    }
+
+    func adjacentSectionTargetIfAvailable(offset: Int, anchor: CardSelectionAnchor) -> AdjacentSectionTarget? {
+        try? adjacentSectionTarget(offset: offset, anchor: anchor)
+    }
+
+    func applyAdjacentSectionTarget(_ target: AdjacentSectionTarget) {
+        sectionCards = target.cards
+        selectedChapterID = target.chapterID
+        selectedSectionID = target.sectionID
+        currentCardIndex = target.cardIndex
+        syncCurrentCardFromIndex()
     }
 
     func goForwardCard() {
@@ -223,7 +271,14 @@ struct KnowledgeCardStudyView: View {
     var onBack: (() -> Void)? = nil
 
     @GestureState private var interactiveCardOffsetX: CGFloat = 0
+    @State private var renderedCardIndices: [Int] = []
+    @State private var renderedCardRefreshRevision = 0
+    @State private var settlingCardOffsetX: CGFloat = 0
     private let topBarHeight: CGFloat = 56
+    private let edgeSwipeActivationWidth: CGFloat = 24
+    private let edgeSwipeDistanceThreshold: CGFloat = 64
+    private let edgeSwipePredictedThreshold: CGFloat = 96
+    private let cardSwipeAnimation = Animation.spring(duration: 0.30, bounce: 0.0, blendDuration: 0.04)
 
     init(viewModel: KnowledgeCardStudyViewModel, onBack: (() -> Void)? = nil) {
         self.viewModel = viewModel
@@ -249,6 +304,7 @@ struct KnowledgeCardStudyView: View {
             .onChanged { value in
                 let horizontal = abs(value.translation.width)
                 let vertical = abs(value.translation.height)
+                if isEdgeBackSwipeCandidate(value) { return }
                 guard horizontal > vertical + 8, horizontal > activationDistance, !viewModel.isVerticalScrollActive else { return }
                 if !viewModel.isHorizontalPagingActive {
                     viewModel.isHorizontalPagingActive = true
@@ -257,17 +313,19 @@ struct KnowledgeCardStudyView: View {
             .updating($interactiveCardOffsetX) { value, state, transaction in
                 let horizontal = value.translation.width
                 let vertical = value.translation.height
+                if isEdgeBackSwipeCandidate(value) { return }
                 guard
                     !viewModel.isVerticalScrollActive,
                     abs(horizontal) > max(abs(vertical) + 8, activationDistance)
                 else { return }
-                transaction.animation = .interactiveSpring(response: 0.20, dampingFraction: 0.92)
+                transaction.disablesAnimations = true
                 state = viewModel.dampedInteractiveOffset(horizontal)
             }
             .onEnded { value in
                 defer { viewModel.isHorizontalPagingActive = false }
                 let horizontal = value.translation.width
                 let vertical = value.translation.height
+                if isEdgeBackSwipeCandidate(value) { return }
                 guard
                     !viewModel.isVerticalScrollActive,
                     abs(horizontal) > max(abs(vertical) + 8, activationDistance)
@@ -285,14 +343,101 @@ struct KnowledgeCardStudyView: View {
 
                 let resolved = abs(predicted) > abs(horizontal) ? predicted : horizontal
                 if resolved < 0 {
-                    withAnimation(.easeInOut(duration: 0.30)) {
+                    if viewModel.currentCardIndex + 1 >= viewModel.sectionCards.count {
+                        do {
+                            guard let target = try viewModel.adjacentSectionTarget(offset: 1, anchor: .first) else { return }
+                            performBoundarySectionTransition(
+                                target: target,
+                                direction: 1,
+                                pageWidth: pageWidth,
+                                startingOffset: viewModel.dampedInteractiveOffset(horizontal)
+                            )
+                        } catch {
+                            viewModel.loadErrorMessage = error.localizedDescription
+                        }
+                        return
+                    }
+                    withAnimation(cardSwipeAnimation) {
                         viewModel.goForwardCard()
                     }
                 } else {
-                    withAnimation(.easeInOut(duration: 0.30)) {
+                    if viewModel.currentCardIndex <= 0 {
+                        do {
+                            guard let target = try viewModel.adjacentSectionTarget(offset: -1, anchor: .last) else { return }
+                            performBoundarySectionTransition(
+                                target: target,
+                                direction: -1,
+                                pageWidth: pageWidth,
+                                startingOffset: viewModel.dampedInteractiveOffset(horizontal)
+                            )
+                        } catch {
+                            viewModel.loadErrorMessage = error.localizedDescription
+                        }
+                        return
+                    }
+                    withAnimation(cardSwipeAnimation) {
                         viewModel.goBackwardCard()
                     }
                 }
+            }
+    }
+
+    private func performBoundarySectionTransition(
+        target: KnowledgeCardStudyViewModel.AdjacentSectionTarget,
+        direction: Int,
+        pageWidth: CGFloat,
+        startingOffset: CGFloat
+    ) {
+        let finalOffset = direction > 0 ? -pageWidth : pageWidth
+
+        var transaction = Transaction()
+        transaction.disablesAnimations = true
+        withTransaction(transaction) {
+            settlingCardOffsetX = startingOffset
+        }
+
+        withAnimation(cardSwipeAnimation) {
+            settlingCardOffsetX = finalOffset
+        }
+
+        renderedCardRefreshRevision += 1
+        let revision = renderedCardRefreshRevision
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.34) {
+            guard renderedCardRefreshRevision == revision else { return }
+            var resetTransaction = Transaction()
+            resetTransaction.disablesAnimations = true
+            withTransaction(resetTransaction) {
+                viewModel.applyAdjacentSectionTarget(target)
+                settlingCardOffsetX = 0
+                syncRenderedCardWindow(immediate: true)
+            }
+        }
+    }
+
+    private func isEdgeBackSwipeCandidate(_ value: DragGesture.Value) -> Bool {
+        value.startLocation.x <= edgeSwipeActivationWidth && value.translation.width > 0
+    }
+
+    private var edgeBackSwipeGesture: some Gesture {
+        DragGesture(minimumDistance: 10, coordinateSpace: .local)
+            .onChanged { value in
+                guard isEdgeBackSwipeCandidate(value) else { return }
+                let horizontal = value.translation.width
+                let vertical = abs(value.translation.height)
+                if horizontal > vertical + 8 {
+                    viewModel.isHorizontalPagingActive = false
+                    viewModel.isVerticalScrollActive = false
+                }
+            }
+            .onEnded { value in
+                guard isEdgeBackSwipeCandidate(value) else { return }
+                let horizontal = value.translation.width
+                let vertical = abs(value.translation.height)
+                let predicted = value.predictedEndTranslation.width
+                let movedFarEnough = horizontal >= edgeSwipeDistanceThreshold
+                let flickedFarEnough = predicted >= edgeSwipePredictedThreshold
+                guard horizontal > vertical + 12, movedFarEnough || flickedFarEnough else { return }
+                resolvedBackAction()
             }
     }
 
@@ -312,21 +457,89 @@ struct KnowledgeCardStudyView: View {
 
     // MARK: - Card pages
 
+    private var activeRenderedCardIndices: [Int] {
+        let visible = viewModel.visibleCardIndices()
+        let candidates = renderedCardIndices.isEmpty ? visible : renderedCardIndices
+        return candidates.filter { viewModel.sectionCards.indices.contains($0) }
+    }
+
+    private func syncRenderedCardWindow(immediate: Bool = false) {
+        let visible = viewModel.visibleCardIndices()
+        guard !visible.isEmpty else {
+            renderedCardIndices = []
+            return
+        }
+
+        if immediate || renderedCardIndices.isEmpty {
+            renderedCardIndices = visible
+            return
+        }
+
+        // Keep both the outgoing and incoming cards alive until the page animation finishes.
+        renderedCardIndices = Array(Set(renderedCardIndices + visible)).sorted()
+        renderedCardRefreshRevision += 1
+        let revision = renderedCardRefreshRevision
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.34) {
+            guard renderedCardRefreshRevision == revision else { return }
+            renderedCardIndices = viewModel.visibleCardIndices()
+        }
+    }
+
     @ViewBuilder
-    private func visibleCardPages(visibleIndices: [Int], pageWidth: CGFloat) -> some View {
-        if visibleIndices.indices.contains(0) {
-            cardPage(at: visibleIndices[0], pageWidth: pageWidth)
+    private func cardPagerPages(
+        renderedIndices: Set<Int>,
+        previousBoundaryTarget: KnowledgeCardStudyViewModel.AdjacentSectionTarget?,
+        nextBoundaryTarget: KnowledgeCardStudyViewModel.AdjacentSectionTarget?,
+        pageWidth: CGFloat
+    ) -> some View {
+        if let previousBoundaryTarget {
+            cardPage(
+                card: previousBoundaryTarget.card,
+                isCurrentCard: false,
+                pageWidth: pageWidth,
+                onToggleCurrentCardMastered: {}
+            )
         }
-        if visibleIndices.indices.contains(1) {
-            cardPage(at: visibleIndices[1], pageWidth: pageWidth)
+
+        ForEach(viewModel.sectionCards.indices, id: \.self) { idx in
+            if renderedIndices.contains(idx) {
+                cardPage(at: idx, pageWidth: pageWidth)
+            } else {
+                Color.clear
+                    .frame(width: pageWidth)
+            }
         }
-        if visibleIndices.indices.contains(2) {
-            cardPage(at: visibleIndices[2], pageWidth: pageWidth)
+
+        if let nextBoundaryTarget {
+            cardPage(
+                card: nextBoundaryTarget.card,
+                isCurrentCard: false,
+                pageWidth: pageWidth,
+                onToggleCurrentCardMastered: {}
+            )
         }
     }
 
     private func cardPage(at idx: Int, pageWidth: CGFloat) -> some View {
         let card = viewModel.sectionCards[idx]
+        return cardPage(
+            card: card,
+            isCurrentCard: idx == viewModel.currentCardIndex,
+            pageWidth: pageWidth,
+            onToggleCurrentCardMastered: {
+                guard idx == viewModel.currentCardIndex else { return }
+                viewModel.toggleCurrentCardMastered()
+            }
+        )
+        .allowsHitTesting(idx == viewModel.currentCardIndex)
+    }
+
+    private func cardPage(
+        card: KnowledgeCardStudyContent,
+        isCurrentCard: Bool,
+        pageWidth: CGFloat,
+        onToggleCurrentCardMastered: @escaping () -> Void
+    ) -> some View {
         return VStack(spacing: 0) {
             ZStack(alignment: .bottom) {
                 ScrollView(.vertical, showsIndicators: false) {
@@ -413,18 +626,12 @@ struct KnowledgeCardStudyView: View {
 
             BottomActions(
                 focusHighlightVisible: $viewModel.focusHighlightVisible,
-                isCurrentCardMastered: idx == viewModel.currentCardIndex
-                    ? viewModel.isCurrentCardMastered
-                    : GuestUserLocalStore.isPointMastered(card.pointID),
-                onToggleCurrentCardMastered: {
-                    guard idx == viewModel.currentCardIndex else { return }
-                    viewModel.toggleCurrentCardMastered()
-                }
+                isCurrentCardMastered: isCurrentCard ? viewModel.isCurrentCardMastered : GuestUserLocalStore.isPointMastered(card.pointID),
+                onToggleCurrentCardMastered: onToggleCurrentCardMastered
             )
         }
         .frame(width: pageWidth)
         .contentShape(Rectangle())
-        .allowsHitTesting(idx == viewModel.currentCardIndex)
     }
 
     // MARK: - Body
@@ -449,16 +656,38 @@ struct KnowledgeCardStudyView: View {
 
                 GeometryReader { viewport in
                     let pageWidth = viewport.size.width
-                    let visibleIndices = viewModel.visibleCardIndices()
-                    let baseIndex = visibleIndices.first ?? viewModel.currentCardIndex
+                    let renderedIndices = Set(activeRenderedCardIndices)
+                    let previousBoundaryTarget = viewModel.currentCardIndex == 0
+                        ? viewModel.adjacentSectionTargetIfAvailable(offset: -1, anchor: .last)
+                        : nil
+                    let nextBoundaryTarget = viewModel.currentCardIndex == viewModel.sectionCards.count - 1
+                        ? viewModel.adjacentSectionTargetIfAvailable(offset: 1, anchor: .first)
+                        : nil
+                    let leadingBoundaryPageCount = previousBoundaryTarget == nil ? 0 : 1
+                    let totalPageCount = max(
+                        1,
+                        viewModel.sectionCards.count
+                        + leadingBoundaryPageCount
+                        + (nextBoundaryTarget == nil ? 0 : 1)
+                    )
+                    let totalPageWidth = CGFloat(totalPageCount) * pageWidth
                     ZStack {
                         ZStack {
                             HStack(spacing: 0) {
-                                visibleCardPages(visibleIndices: visibleIndices, pageWidth: pageWidth)
+                                cardPagerPages(
+                                    renderedIndices: renderedIndices,
+                                    previousBoundaryTarget: previousBoundaryTarget,
+                                    nextBoundaryTarget: nextBoundaryTarget,
+                                    pageWidth: pageWidth
+                                )
                             }
-                            .frame(width: pageWidth, alignment: .leading)
-                            .offset(x: (-CGFloat(viewModel.currentCardIndex - baseIndex) * pageWidth) + interactiveCardOffsetX)
-                            .animation(.easeInOut(duration: 0.30), value: viewModel.currentCardIndex)
+                            .frame(width: totalPageWidth, alignment: .leading)
+                            .offset(
+                                x: (-CGFloat(viewModel.currentCardIndex + leadingBoundaryPageCount) * pageWidth)
+                                + interactiveCardOffsetX
+                                + settlingCardOffsetX
+                            )
+                            .animation(cardSwipeAnimation, value: viewModel.currentCardIndex)
                         }
                     }
                     .simultaneousGesture(cardSwipeGesture(pageWidth: pageWidth))
@@ -466,6 +695,8 @@ struct KnowledgeCardStudyView: View {
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
+            .contentShape(Rectangle())
+            .simultaneousGesture(edgeBackSwipeGesture)
         }
         .sheet(isPresented: $viewModel.isDirectoryPresented) {
             DirectorySheet(viewModel: viewModel)
@@ -474,6 +705,18 @@ struct KnowledgeCardStudyView: View {
         }
         .task {
             await viewModel.loadInitialData()
+        }
+        .onAppear {
+            syncRenderedCardWindow(immediate: true)
+        }
+        .onChange(of: viewModel.currentCardIndex) { _, _ in
+            syncRenderedCardWindow()
+        }
+        .onChange(of: viewModel.shouldRenderAdjacentCards) { _, _ in
+            syncRenderedCardWindow(immediate: true)
+        }
+        .onChange(of: viewModel.sectionCards.map(\.pointID)) { _, _ in
+            syncRenderedCardWindow(immediate: true)
         }
         .alert("数据加载失败", isPresented: Binding(
             get: { viewModel.loadErrorMessage != nil },

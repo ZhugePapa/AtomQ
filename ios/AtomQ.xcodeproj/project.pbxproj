@@ -41,6 +41,7 @@
 		BE2C843D73890ED4E0DAA694 /* icon-check-circle.svg in Resources */ = {isa = PBXBuildFile; fileRef = AA8FFECAFAE9501F84AD3295 /* icon-check-circle.svg */; };
 		C0A3F5B468791ACE7803C655 /* icon-dir-x-close.svg in Resources */ = {isa = PBXBuildFile; fileRef = B99C32A70B4779C9BBB8CA0C /* icon-dir-x-close.svg */; };
 		C19F98A963310AFF45E01BD5 /* icon-target-04.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5D0622BDA7DC5A8DE2CBFAC5 /* icon-target-04.svg */; };
+		C65D08F4B6A006578484F035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E03B965CC5F502F21DDC077C /* Assets.xcassets */; };
 		CE7D8C2B5010DEE19DCB7596 /* bg-hero-subtract.svg in Resources */ = {isa = PBXBuildFile; fileRef = DB25609DD3456E611E82957C /* bg-hero-subtract.svg */; };
 		D1E909C9F7384073DE012F47 /* icon-home-line.svg in Resources */ = {isa = PBXBuildFile; fileRef = 823751386443A8A0BCEB5AAE /* icon-home-line.svg */; };
 		D6ED433F505CE173364B7C94 /* icon-red-dot.svg in Resources */ = {isa = PBXBuildFile; fileRef = 39591F509D60BD96299F14C2 /* icon-red-dot.svg */; };
@@ -50,7 +51,6 @@
 		DDF2D5CCD6C652BDF2F02598 /* icon-lightbulb-01.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7014382F98E52A1A69F23F27 /* icon-lightbulb-01.svg */; };
 		E42C4E1C9739F5130BA09C4D /* KnowledgeCardDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F36AC2BAC96EDCF4C03DF /* KnowledgeCardDataStore.swift */; };
 		EB699414FBC12C594FED27DA /* icon-uncheck-progress.svg in Resources */ = {isa = PBXBuildFile; fileRef = CDB5166B754F8253CE3FABB4 /* icon-uncheck-progress.svg */; };
-			A1B2C3D4E5F60001 /* default_cards in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002 /* default_cards */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +89,7 @@
 		D34F798EAA7D786BE8BFA915 /* ContentPackageRemoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPackageRemoteStore.swift; sourceTree = "<group>"; };
 		D62A74B784D5D9F21A02F75C /* LeoMarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeoMarkdownView.swift; sourceTree = "<group>"; };
 		DB25609DD3456E611E82957C /* bg-hero-subtract.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "bg-hero-subtract.svg"; sourceTree = "<group>"; };
+		E03B965CC5F502F21DDC077C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6F7B0DB401AB6158EECAB41 /* SVGAssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGAssetView.swift; sourceTree = "<group>"; };
 		E99289CCC89DF261EC27D646 /* icon-hero-spark.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-hero-spark.svg"; sourceTree = "<group>"; };
 		F07CA8DD0C5582F271E177A4 /* KnowledgeCardStudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeCardStudyView.swift; sourceTree = "<group>"; };
@@ -99,7 +100,6 @@
 		FADF5DC7AD330DE39A969084 /* AtomQApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomQApp.swift; sourceTree = "<group>"; };
 		FB09C949FFD7223DE2EB0D1B /* hero-decor-frame-146.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "hero-decor-frame-146.svg"; sourceTree = "<group>"; };
 		FC4F2965FBEBFDB07EB04FDD /* icon-dots-horizontal.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-dots-horizontal.svg"; sourceTree = "<group>"; };
-			A1B2C3D4E5F60002 /* default_cards */ = {isa = PBXFileReference; lastKnownFileType = folder; path = default_cards; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -114,7 +114,6 @@
 		2497C84FA147E412B36816E2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A1B2C3D4E5F60002 /* default_cards */,
 				62CB4D94BAD05B7719495344 /* Markdown */,
 				2AB2E603B926335F5BCD26C5 /* SVG */,
 			);
@@ -209,6 +208,7 @@
 		E780696AECC0B846E99587FA /* AtomQ */ = {
 			isa = PBXGroup;
 			children = (
+				E03B965CC5F502F21DDC077C /* Assets.xcassets */,
 				FADF5DC7AD330DE39A969084 /* AtomQApp.swift */,
 				729020C097E7AC92120BB9CA /* Info.plist */,
 				00F57FC796CC65A1E6023338 /* Design */,
@@ -273,7 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B2C3D4E5F60001 /* default_cards in Resources */,
+				C65D08F4B6A006578484F035 /* Assets.xcassets in Resources */,
 				CE7D8C2B5010DEE19DCB7596 /* bg-hero-subtract.svg in Resources */,
 				DB919C8E3FD08DD5180F1DB4 /* hero-decor-frame-146.svg in Resources */,
 				72382277EC3402A7330A2FC1 /* icon-arrow-forward.svg in Resources */,

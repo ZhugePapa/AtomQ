@@ -155,7 +155,9 @@ private struct ContentAreaView: View {
                             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
 
                         HStack(spacing: 8) {
-                            SVGAssetView(name: "icon-hero-spark")
+                            Image("hero-fire")
+                                .resizable()
+                                .renderingMode(.original)
                                 .frame(width: 24, height: 24)
                             Text("已完成全部任务，太棒了！")
                                 .font(.custom("PingFang SC", size: 16).weight(.medium))

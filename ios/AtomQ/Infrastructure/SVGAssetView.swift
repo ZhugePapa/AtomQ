@@ -145,8 +145,58 @@ struct SVGAssetView: View {
     }
 
     var body: some View {
-        SVGRenderView(name: name, cssVariables: cssVariables, cssValues: cssValues)
-            .allowsHitTesting(false)
+        if TemplateIconAssetRegistry.contains(name) {
+            Image(name)
+                .renderingMode(.template)
+                .resizable()
+                .foregroundStyle(templateColor)
+                .allowsHitTesting(false)
+        } else {
+            SVGRenderView(name: name, cssVariables: cssVariables, cssValues: cssValues)
+                .allowsHitTesting(false)
+        }
+    }
+
+    private var templateColor: Color {
+        cssVariables
+            .sorted { $0.key < $1.key }
+            .first?
+            .value ?? Color.primary
+    }
+}
+
+private enum TemplateIconAssetRegistry {
+    private static let names: Set<String> = [
+        "icon-arrow-forward",
+        "icon-arrow-left",
+        "icon-atom",
+        "icon-bar-chart",
+        "icon-beaker",
+        "icon-certificate",
+        "icon-check-circle",
+        "icon-chevron-forward",
+        "icon-dir-check",
+        "icon-dir-chevron-down",
+        "icon-dir-chevron-left",
+        "icon-dir-x-close",
+        "icon-dots-horizontal",
+        "icon-graduation-hat",
+        "icon-home-line",
+        "icon-lightbulb-01",
+        "icon-lightbulb-02",
+        "icon-lightbulb-03",
+        "icon-menu-03",
+        "icon-notification",
+        "icon-play-circle",
+        "icon-star-01",
+        "icon-stars-03",
+        "icon-target-04",
+        "icon-uncheck-outline",
+        "icon-user",
+    ]
+
+    static func contains(_ name: String) -> Bool {
+        names.contains(name)
     }
 }
 
