@@ -1,8 +1,8 @@
 {
   "package_id": "atomq_high_itpmp_2026_public_full",
   "subject_id": "high_itpmp",
-  "content_version": "2026.05.full-color-ocr-draft.7.lazy-section-refresh",
-  "generated_at": "2026-05-16T18:42:29+08:00",
+  "content_version": "2026.05.full-color-ocr-draft.8.ch03-curated",
+  "generated_at": "2026-05-16T19:22:04+08:00",
   "source_ids": [
     "pdf_2026_tricolor_high"
   ],
@@ -22,7 +22,7 @@
     {
       "chapter_id": "ch_03",
       "title": "信息系统治理",
-      "card_count": 62,
+      "card_count": 45,
       "question_count": 0
     },
     {
@@ -159,6 +159,6 @@
     "file_index": "file_index.json",
     "app_cache_path": "Documents/cache/cards/content_package/public"
   },
-  "updated_at": "2026-05-16T18:42:29+08:00",
-  "card_count": 1519
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "card_count": 1466
 }

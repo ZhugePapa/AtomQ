@@ -2,23 +2,23 @@
   "chapter_id": "ch_03",
   "subject_id": "high_itpmp",
   "title": "信息系统治理",
-  "description": "信息系统治理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
+  "description": "IT治理与IT审计，由 PDF 第30-36页整理为移动端知识卡片。",
   "sort_no": 3,
-  "card_count": 62,
+  "card_count": 45,
   "sections": [
     {
       "section_id": "sec_01",
       "title": "IT治理",
       "sort_no": 1,
-      "description": "信息系统治理 - IT治理",
+      "description": "IT治理目标、层次、关键决策、治理域、ITSS、COBIT、ISO/IEC 38500。",
       "card_count": 28
     },
     {
       "section_id": "sec_02",
       "title": "IT审计",
       "sort_no": 2,
-      "description": "信息系统治理 - IT审计",
-      "card_count": 34
+      "description": "IT审计目标、范围、风险、方法、技术、证据、工作底稿和审计流程。",
+      "card_count": 17
     }
   ],
   "schema_version": 2

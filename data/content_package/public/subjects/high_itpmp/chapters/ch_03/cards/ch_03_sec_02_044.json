@@ -3,11 +3,11 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_02",
-  "title": "审计流程一般分为审计准备、审计实施、审计终结",
+  "title": "审计流程四阶段",
   "card_type": "process",
-  "difficulty": 2,
-  "estimated_read_seconds": 55,
-  "has_key_content": false,
+  "difficulty": 3,
+  "estimated_read_seconds": 58,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 44,
   "content_file": "ch_03_sec_02_044.md",
@@ -15,11 +15,11 @@
   "tags": [
     "信息系统治理",
     "IT审计",
-    "审计流程一般分为审计准备、审计实"
+    "审计流程"
   ],
-  "key_points": "",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "key_points": "- 四阶段：**审计准备、审计实施、审计终结、后续审计**。\n- 后续审计关注整改措施是否落实并取得预期效果。",
+  "mnemonics": "记作：**准备、实施、终结、后续**。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "043"
   ],
@@ -33,11 +33,11 @@
       "page_label": "35"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

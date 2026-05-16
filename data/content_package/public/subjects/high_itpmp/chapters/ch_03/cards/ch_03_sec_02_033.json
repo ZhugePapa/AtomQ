@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_02",
-  "title": "IT审计风险主要包括固有风险、控制风险、检",
-  "card_type": "formula",
+  "title": "IT审计风险",
+  "card_type": "comparison",
   "difficulty": 3,
-  "estimated_read_seconds": 76,
+  "estimated_read_seconds": 59,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 33,
@@ -15,13 +15,11 @@
   "tags": [
     "信息系统治理",
     "IT审计",
-    "IT审计风险主要包括固",
-    "IT审计风险主要包括固有风险",
-    "IT审计风险主要包括固有风险、控"
+    "审计风险"
   ],
-  "key_points": "- **固有风险、控制风险、检查风险**",
+  "key_points": "- 风险类型：**固有风险、控制风险、检查风险、总体审计风险**。\n- 固有风险和控制风险主要由被审计对象决定；检查风险与审计程序和审计人员有关。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "032"
   ],
@@ -35,11 +33,11 @@
       "page_label": "32"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

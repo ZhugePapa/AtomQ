@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_01",
-  "title": "开展IT治理活动的主要任务",
-  "card_type": "concept",
-  "difficulty": 1,
+  "title": "IT治理主要任务",
+  "card_type": "formula",
+  "difficulty": 2,
   "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
@@ -15,12 +15,11 @@
   "tags": [
     "信息系统治理",
     "IT治理",
-    "开展IT治理活动的主要任务：全局",
-    "开展IT治理活动的主要任务"
+    "治理任务"
   ],
-  "key_points": "",
+  "key_points": "- 主要任务：**全局统筹、价值导向、机制保障、创新发展、文化助推**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "009"
   ],
@@ -34,11 +33,11 @@
       "page_label": "30"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

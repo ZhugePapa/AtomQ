@@ -3,23 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_01",
-  "title": "IT治理实施指南-GB/T34960.2《信",
+  "title": "管理体系治理域",
   "card_type": "concept",
   "difficulty": 2,
-  "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "estimated_read_seconds": 34,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 17,
   "content_file": "ch_03_sec_01_017.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_01_017.md",
   "tags": [
     "信息系统治理",
-    "IT治理",
-    "IT治理实施指南-GB/T349"
+    "治理域",
+    "管理体系"
   ],
-  "key_points": "",
+  "key_points": "- 管理体系治理域覆盖各种管理：**质量、项目、投资、服务、连续性、安全、风险、供方、资产**等。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "016"
   ],
@@ -33,11 +33,11 @@
       "page_label": "31"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

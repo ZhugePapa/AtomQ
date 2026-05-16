@@ -3,11 +3,11 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_01",
-  "title": "IT治理属于组织治理的重要组成部分",
+  "title": "IT治理与组织治理",
   "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 32,
-  "has_key_content": true,
+  "difficulty": 1,
+  "estimated_read_seconds": 30,
+  "has_key_content": false,
   "is_free": true,
   "sort_no": 3,
   "content_file": "ch_03_sec_01_003.md",
@@ -15,11 +15,11 @@
   "tags": [
     "信息系统治理",
     "IT治理",
-    "IT治理属于组织治理的重要组成部"
+    "组织治理"
   ],
-  "key_points": "",
+  "key_points": "- IT治理是**组织治理的重要组成部分**，不是单纯技术管理。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "002"
   ],
@@ -33,11 +33,11 @@
       "page_label": "30"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

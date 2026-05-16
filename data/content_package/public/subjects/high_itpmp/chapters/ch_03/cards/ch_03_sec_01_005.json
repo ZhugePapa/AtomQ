@@ -3,11 +3,11 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_01",
-  "title": "有效的IT治理必须关注五项关键决策",
-  "card_type": "concept",
+  "title": "五项关键决策",
+  "card_type": "formula",
   "difficulty": 2,
-  "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "estimated_read_seconds": 46,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 5,
   "content_file": "ch_03_sec_01_005.md",
@@ -15,11 +15,11 @@
   "tags": [
     "信息系统治理",
     "IT治理",
-    "有效的IT治理必须关注五项关键决"
+    "关键决策"
   ],
-  "key_points": "- **IT 基础设施、业务应用需求、IT 原则、IT架构、IT投资、优先顺序**\n- **IT**",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "key_points": "- 五项关键决策：**IT原则、IT架构、IT基础设施、业务应用需求、IT投资和优先顺序**。\n- 决策链：原则决定架构，架构决定基础设施，基础设施能力支撑业务应用。",
+  "mnemonics": "记作：**原则架构建基础，应用投资排优先**。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "004"
   ],
@@ -33,11 +33,11 @@
       "page_label": "30"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

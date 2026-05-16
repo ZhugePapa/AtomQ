@@ -3,11 +3,11 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_02",
-  "title": "审计工作底稿是指审计人员对制订的审计计划、实",
+  "title": "审计工作底稿",
   "card_type": "concept",
-  "difficulty": 2,
+  "difficulty": 1,
   "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 38,
   "content_file": "ch_03_sec_02_038.md",
@@ -15,11 +15,11 @@
   "tags": [
     "信息系统治理",
     "IT审计",
-    "审计工作底稿是指审计人员对制订的"
+    "工作底稿"
   ],
-  "key_points": "",
+  "key_points": "- 工作底稿记录计划、程序、证据和结论，是**审计证据的载体**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "037"
   ],
@@ -33,11 +33,11 @@
       "page_label": "34"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

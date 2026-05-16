@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_02",
-  "title": "审计工作底稿一般分为综合类工作底稿、业务类工",
-  "card_type": "concept",
+  "title": "工作底稿分类",
+  "card_type": "comparison",
   "difficulty": 2,
-  "estimated_read_seconds": 64,
+  "estimated_read_seconds": 43,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 40,
@@ -15,11 +15,11 @@
   "tags": [
     "信息系统治理",
     "IT审计",
-    "审计工作底稿一般分为综合类工作底"
+    "工作底稿"
   ],
-  "key_points": "- **被审计单位管理当局声明书、审计业务约定书、管理建议书、审计计划、审计总结、审计报告**\n- **符合性测试中形成的内部控制问题调查表**、**备查作用的审计工作底稿**、**流程图**",
+  "key_points": "- 三类：**综合类、业务类、备查类**。\n- 综合类用于规划控制总结，业务类用于执行具体程序，备查类用于持续备查。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "039"
   ],
@@ -33,11 +33,11 @@
       "page_label": "35"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_01",
-  "title": "管理目标分为四个领域",
+  "title": "COBIT治理目标EDM",
   "card_type": "concept",
-  "difficulty": 1,
+  "difficulty": 2,
   "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
@@ -14,12 +14,12 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_03/cards/ch_03_sec_01_021.md",
   "tags": [
     "信息系统治理",
-    "IT治理",
-    "管理目标分为四个领域"
+    "COBIT",
+    "EDM"
   ],
-  "key_points": "- **APO**、**IT**",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "key_points": "- COBIT治理目标属于 **EDM：评估、指导和监控**。\n- 治理机构评估战略方案、指导高级管理层执行、监督实施。",
+  "mnemonics": "EDM = **Evaluate、Direct、Monitor**。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "020"
   ],
@@ -33,11 +33,11 @@
       "page_label": "31"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

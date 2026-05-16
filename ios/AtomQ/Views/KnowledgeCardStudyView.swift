@@ -268,6 +268,9 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
 
         if shouldRefreshBeforeFirstRender {
             do {
+                try await Task.detached(priority: .userInitiated) {
+                    try ContentPackageRemoteStore.resetIncompatibleLocalCacheIfNeeded()
+                }.value
                 print("[AtomQ][StudyData] refreshing remote section before first render")
                 try await ContentPackageRemoteStore.refreshContentRequired(chapterID: prevCID, sectionID: prevSID)
                 hasRefreshedRemoteContent = true
@@ -292,7 +295,7 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
             if !shouldRefreshBeforeFirstRender {
                 do {
                     print("[AtomQ][StudyData] local cache exists but load failed, refreshing remote content")
-                    try await ContentPackageRemoteStore.refreshFreeContentRequired()
+                    try await ContentPackageRemoteStore.refreshFreeContentRequired(chapterID: prevCID, sectionID: prevSID)
                     KnowledgeCardDataStore.invalidateCache()
                     let refreshed = try await loadStudyPayload(fallbackChapterID: prevCID, fallbackSectionID: prevSID)
                     applyLoadedStudyPayload(refreshed)
@@ -311,8 +314,10 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
 
         Task.detached(priority: .background) { [weak self] in
             do {
+                print("[AtomQ][StudyData] background directory refresh start")
+                try await ContentPackageRemoteStore.refreshDirectoryIndexRequired()
                 print("[AtomQ][StudyData] background full content refresh start")
-                try await ContentPackageRemoteStore.refreshFreeContentRequired()
+                try await ContentPackageRemoteStore.refreshFreeContentRequired(chapterID: prevCID, sectionID: prevSID)
                 KnowledgeCardDataStore.invalidateCache()
                 guard let self else { return }
                 if let refreshed = try? await self.loadStudyPayload(fallbackChapterID: prevCID, fallbackSectionID: prevSID) {

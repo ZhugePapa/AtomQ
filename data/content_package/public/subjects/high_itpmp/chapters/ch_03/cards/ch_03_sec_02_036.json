@@ -3,7 +3,7 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_02",
-  "title": "审计证据是指由审计机构和审计人员获取",
+  "title": "审计证据",
   "card_type": "concept",
   "difficulty": 1,
   "estimated_read_seconds": 30,
@@ -15,11 +15,11 @@
   "tags": [
     "信息系统治理",
     "IT审计",
-    "审计证据是指由审计机构和审计人员"
+    "审计证据"
   ],
-  "key_points": "",
+  "key_points": "- 审计证据是形成**审计结论**的基础，也是审计意见的支柱。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "035"
   ],
@@ -33,11 +33,11 @@
       "page_label": "34"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

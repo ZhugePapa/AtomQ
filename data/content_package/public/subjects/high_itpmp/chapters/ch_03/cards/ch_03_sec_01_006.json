@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_01",
-  "title": "IT治理体系框架具体包括",
-  "card_type": "concept",
-  "difficulty": 1,
-  "estimated_read_seconds": 30,
+  "title": "IT治理体系框架",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 31,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 6,
@@ -15,12 +15,11 @@
   "tags": [
     "信息系统治理",
     "IT治理",
-    "IT治理体系框架具体包括：IT战",
-    "IT治理体系框架具体包括"
+    "治理框架"
   ],
-  "key_points": "",
+  "key_points": "- 框架组成：**战略目标、治理组织、治理机制、治理域、治理标准、绩效目标**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "005"
   ],
@@ -34,11 +33,11 @@
       "page_label": "30"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

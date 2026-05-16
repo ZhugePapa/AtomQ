@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_03",
   "section_id": "sec_01",
-  "title": "IT治理主要目标",
+  "title": "IT治理目标",
   "card_type": "concept",
   "difficulty": 1,
-  "estimated_read_seconds": 30,
+  "estimated_read_seconds": 33,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 1,
@@ -15,12 +15,11 @@
   "tags": [
     "信息系统治理",
     "IT治理",
-    "IT治理主要目标：与业务目标一致",
-    "IT治理主要目标"
+    "治理目标"
   ],
-  "key_points": "",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "key_points": "- 目标三件事：**业务一致、资源有效、风险管理**。\n- 题干问“IT治理目标”时，不要答成具体运维活动。",
+  "mnemonics": "记作：**业资风**。",
+  "warnings": "第三章已按 PDF 第30-36页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
@@ -32,11 +31,11 @@
       "page_label": "30"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-16T19:22:04+08:00",
+  "version": 3,
   "schema_version": 2
 }

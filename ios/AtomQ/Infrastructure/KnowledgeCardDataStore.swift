@@ -53,7 +53,7 @@ enum KnowledgeCardDataStore {
         chapterID: String = "ch_01",
         sectionID: String = "sec_01"
     ) async throws -> KnowledgeCardStudyContent {
-        try await ContentPackageRemoteStore.refreshFreeContentRequired()
+        try await ContentPackageRemoteStore.refreshFreeContentRequired(chapterID: chapterID, sectionID: sectionID)
         return try loadStudyContent(chapterID: chapterID, sectionID: sectionID)
     }
 
@@ -74,7 +74,7 @@ enum KnowledgeCardDataStore {
         chapterID: String = "ch_01",
         sectionID: String = "sec_01"
     ) async throws -> [KnowledgeCardStudyContent] {
-        try await ContentPackageRemoteStore.refreshFreeContentRequired()
+        try await ContentPackageRemoteStore.refreshFreeContentRequired(chapterID: chapterID, sectionID: sectionID)
         invalidateCache()
         return try loadSectionCards(chapterID: chapterID, sectionID: sectionID)
     }
