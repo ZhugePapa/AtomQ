@@ -16,6 +16,12 @@ final class HomeViewModel: ObservableObject {
     private var contentCacheObserver: NSObjectProtocol?
 
     init() {
+        do {
+            try ContentPackageRemoteStore.resetIncompatibleLocalCacheIfNeeded()
+        } catch {
+            print("[AtomQ][RemoteContent] cache schema reset failed: \(error.localizedDescription)")
+        }
+
         contentCacheObserver = NotificationCenter.default.addObserver(
             forName: ContentPackageRemoteStore.didClearLocalCacheNotification,
             object: nil,

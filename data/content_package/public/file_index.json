@@ -5,8 +5,8 @@
   "files": [
     {
       "path": "manifest.json",
-      "bytes": 3790,
-      "sha256": "99f40405050d879c8b154fd9acf06ed0abf5514418e4261655b11b758d16d55a"
+      "bytes": 3787,
+      "sha256": "ae5ee19f4c41c13f2e2eeefdc324414f795d568d805793091fcaf42303885e52"
     },
     {
       "path": "subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.json",

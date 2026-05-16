@@ -18,6 +18,8 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
     var isHorizontalPagingActive = false
     var isVerticalScrollActive = false
     var hasLoadedInitialData = false
+    private var isLoadingInitialData = false
+    private var hasRefreshedRemoteContent = false
     let topBarHeight: CGFloat = 56
     var onBack: (() -> Void)?
 
@@ -44,6 +46,25 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
 
     func presentDirectory() {
         isDirectoryPresented = true
+        Task {
+            await refreshDirectoryTreeForSheet()
+        }
+    }
+
+    private func refreshDirectoryTreeForSheet() async {
+        guard ContentPackageRemoteStore.canRefreshPublicContent else { return }
+
+        do {
+            try await ContentPackageRemoteStore.refreshDirectoryIndexRequired()
+            KnowledgeCardDataStore.invalidateCache()
+            let chapters = try await Task.detached(priority: .userInitiated) {
+                try KnowledgeCardDataStore.loadDirectoryTree()
+            }.value
+            directoryChapters = chapters
+        } catch {
+            print("[AtomQ][StudyData] directory refresh failed: \(error.localizedDescription)")
+            loadErrorMessage = error.localizedDescription
+        }
     }
 
     func selectDirectorySection(chapter: KnowledgeDirectoryChapter, section: KnowledgeDirectorySection) {
@@ -229,18 +250,27 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
     }
 
     func loadInitialData() async {
-        guard sectionCards.isEmpty else { return }
-        guard !hasLoadedInitialData else { return }
+        guard !isLoadingInitialData else { return }
+        let shouldRefreshBeforeFirstRender = ContentPackageRemoteStore.canRefreshPublicContent
+        guard sectionCards.isEmpty || (shouldRefreshBeforeFirstRender && !hasRefreshedRemoteContent) else {
+            return
+        }
+        guard !hasLoadedInitialData || (shouldRefreshBeforeFirstRender && !hasRefreshedRemoteContent) else {
+            return
+        }
+
+        isLoadingInitialData = true
+        defer { isLoadingInitialData = false }
         hasLoadedInitialData = true
         shouldRenderAdjacentCards = false
         let prevCID = selectedChapterID, prevSID = selectedSectionID
-        let shouldRefreshBeforeFirstRender = ContentPackageRemoteStore.canRefreshPublicContent
         var initialRemoteError: Error?
 
         if shouldRefreshBeforeFirstRender {
             do {
                 print("[AtomQ][StudyData] refreshing remote content before first render")
                 try await ContentPackageRemoteStore.refreshFreeContentRequired()
+                hasRefreshedRemoteContent = true
                 KnowledgeCardDataStore.invalidateCache()
                 print("[AtomQ][StudyData] initial remote refresh finished")
             } catch {
@@ -315,6 +345,7 @@ final class KnowledgeCardStudyViewModel: ObservableObject {
         currentCardIndex = 0
         shouldRenderAdjacentCards = false
         hasLoadedInitialData = false
+        hasRefreshedRemoteContent = false
         KnowledgeCardDataStore.invalidateCache()
         await loadInitialData()
     }
@@ -952,8 +983,12 @@ private struct DirectorySheet: View {
 
                 Button(action: closeSheet) {
                     directoryCloseIcon
+                        .frame(width: 24, height: 24)
+                        .frame(width: 44, height: 44)
+                        .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel("关闭目录")
             }
             .padding(20)
             .frame(height: 72)

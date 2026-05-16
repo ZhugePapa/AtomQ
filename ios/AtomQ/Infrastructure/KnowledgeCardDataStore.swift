@@ -147,6 +147,12 @@ enum KnowledgeCardDataStore {
 
                 if !contents.isEmpty {
                     print("[AtomQ][StudyData] loaded cards root=\(root.path) chapter=\(chapterID) section=\(sectionID) count=\(contents.count)")
+                    if let first = contents.first {
+                        let keyPreview = first.keyPointsMarkdown?
+                            .replacingOccurrences(of: "\n", with: " ")
+                            .prefix(80) ?? "nil"
+                        print("[AtomQ][StudyData] first card point=\(first.pointID) key_points=\(keyPreview)")
+                    }
                     return contents
                 }
             }
@@ -241,10 +247,13 @@ enum KnowledgeCardDataStore {
         var roots: [URL] = []
 
         // Prefer refreshed content package cache so OSS updates can override bundled seed data.
-        if let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+        if ContentPackageRemoteStore.hasCompatibleLocalCacheSchema,
+           let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
             roots.append(docs.appendingPathComponent("cache/cards/content_package/public/subjects/high_itpmp", isDirectory: true))
             roots.append(docs.appendingPathComponent("cache/cards/subjects/high_itpmp", isDirectory: true))
             roots.append(docs.appendingPathComponent("cache/cards", isDirectory: true))
+        } else {
+            print("[AtomQ][StudyData] skip local card cache: incompatible cache schema")
         }
 
         return roots

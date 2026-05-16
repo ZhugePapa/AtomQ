@@ -3,6 +3,8 @@ import Foundation
 
 enum ContentPackageRemoteStore {
     static let didClearLocalCacheNotification = Notification.Name("AtomQContentPackageRemoteStoreDidClearLocalCache")
+    private static let cacheSchemaVersion = "2026-05-16.remote-file-index-sha256.v2"
+    private static let cacheSchemaFileName = ".atomq_cache_schema"
 
     static var canRefreshPublicContent: Bool {
         ContentPackageConfig.publicContentCacheRoot != nil && ContentPackageConfig.remoteAccess != nil
@@ -23,6 +25,17 @@ enum ContentPackageRemoteStore {
             && localPublicContentLooksComplete(cacheRoot: cacheRoot, fileIndexURL: fileIndexURL)
     }
 
+    static var hasCompatibleLocalCacheSchema: Bool {
+        guard let cardsCacheRoot = ContentPackageConfig.cardsCacheRoot else {
+            return false
+        }
+
+        let markerURL = cardsCacheRoot.appendingPathComponent(cacheSchemaFileName)
+        let storedVersion = try? String(contentsOf: markerURL, encoding: .utf8)
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+        return storedVersion == cacheSchemaVersion
+    }
+
     static func refreshFreeContentRequired() async throws {
         guard let cacheRoot = ContentPackageConfig.publicContentCacheRoot else {
             throw RemoteStoreError.missingCacheRoot
@@ -31,22 +44,84 @@ enum ContentPackageRemoteStore {
         guard let remoteAccess = ContentPackageConfig.remoteAccess else {
             throw RemoteStoreError.missingRemoteAccess
         }
-        print("[AtomQ][RemoteContent] refresh start cache=\(cacheRoot.path)")
-        try await ContentPackageRefreshCoordinator.shared.refresh(remoteAccess: remoteAccess, cacheRoot: cacheRoot)
+        let mode = ContentPackageRefreshModeState.consumeRequestedMode()
+        print("[AtomQ][RemoteContent] refresh start cache=\(cacheRoot.path) mode=\(mode.logLabel)")
+        try await ContentPackageRefreshCoordinator.shared.refresh(
+            remoteAccess: remoteAccess,
+            cacheRoot: cacheRoot,
+            mode: mode
+        )
+        try writeCacheSchemaMarker()
         print("[AtomQ][RemoteContent] refresh success")
     }
 
+    static func refreshDirectoryIndexRequired() async throws {
+        guard let cacheRoot = ContentPackageConfig.publicContentCacheRoot else {
+            throw RemoteStoreError.missingCacheRoot
+        }
+
+        guard let remoteAccess = ContentPackageConfig.remoteAccess else {
+            throw RemoteStoreError.missingRemoteAccess
+        }
+
+        print("[AtomQ][RemoteContent] refresh directory index start cache=\(cacheRoot.path)")
+        try await PublicContentDownloader(remoteAccess: remoteAccess, cacheRoot: cacheRoot).refreshDirectoryIndexIfNeeded()
+        print("[AtomQ][RemoteContent] refresh directory index success")
+    }
+
     static func clearLocalCache() throws {
+        try removeCardsCache(reason: "user")
+        ContentPackageRefreshModeState.requestForceFullRefresh()
+        NotificationCenter.default.post(name: didClearLocalCacheNotification, object: nil)
+    }
+
+    static func resetIncompatibleLocalCacheIfNeeded() throws {
         guard let cardsCacheRoot = ContentPackageConfig.cardsCacheRoot else {
             throw RemoteStoreError.missingCacheRoot
         }
+
+        let markerURL = cardsCacheRoot.appendingPathComponent(cacheSchemaFileName)
+        let storedVersion = try? String(contentsOf: markerURL, encoding: .utf8)
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+
+        guard hasCompatibleLocalCacheSchema else {
+            print("[AtomQ][RemoteContent] incompatible cache schema local=\(storedVersion ?? "nil") required=\(cacheSchemaVersion)")
+            try removeCardsCache(reason: "schema")
+            try writeCacheSchemaMarker()
+            ContentPackageRefreshModeState.requestForceFullRefresh()
+            KnowledgeCardDataStore.invalidateCache()
+            return
+        }
+    }
+
+    private static func removeCardsCache(reason: String) throws {
+        guard let cardsCacheRoot = ContentPackageConfig.cardsCacheRoot else {
+            throw RemoteStoreError.missingCacheRoot
+        }
+
         let fm = FileManager.default
-        print("[AtomQ][RemoteContent] clear local cache root=\(cardsCacheRoot.path)")
+        print("[AtomQ][RemoteContent] clear local cache reason=\(reason) root=\(cardsCacheRoot.path)")
+        URLCache.shared.removeAllCachedResponses()
         ContentPackageCacheState.invalidate()
         if fm.fileExists(atPath: cardsCacheRoot.path) {
             try fm.removeItem(at: cardsCacheRoot)
         }
-        NotificationCenter.default.post(name: didClearLocalCacheNotification, object: nil)
+    }
+
+    private static func writeCacheSchemaMarker() throws {
+        guard let cardsCacheRoot = ContentPackageConfig.cardsCacheRoot else {
+            throw RemoteStoreError.missingCacheRoot
+        }
+
+        try FileManager.default.createDirectory(
+            at: cardsCacheRoot,
+            withIntermediateDirectories: true
+        )
+        try cacheSchemaVersion.write(
+            to: cardsCacheRoot.appendingPathComponent(cacheSchemaFileName),
+            atomically: true,
+            encoding: .utf8
+        )
     }
 
     private static func localPublicContentLooksComplete(cacheRoot: URL, fileIndexURL: URL) -> Bool {
@@ -98,14 +173,55 @@ private enum ContentPackageCacheState {
     }
 }
 
+private enum ContentPackageRefreshMode: Equatable {
+    case versioned
+    case forceFull
+
+    var logLabel: String {
+        switch self {
+        case .versioned:
+            return "versioned"
+        case .forceFull:
+            return "forceFull"
+        }
+    }
+}
+
+private enum ContentPackageRefreshModeState {
+    private static let lock = NSLock()
+    private static var forceFullRefreshRequested = false
+
+    static func requestForceFullRefresh() {
+        lock.lock()
+        forceFullRefreshRequested = true
+        lock.unlock()
+    }
+
+    static func consumeRequestedMode() -> ContentPackageRefreshMode {
+        lock.lock()
+        defer { lock.unlock() }
+        if forceFullRefreshRequested {
+            forceFullRefreshRequested = false
+            return .forceFull
+        }
+        return .versioned
+    }
+}
+
 private actor ContentPackageRefreshCoordinator {
     static let shared = ContentPackageRefreshCoordinator()
 
-    private var inFlightRefresh: (generation: Int, task: Task<Void, Error>)?
+    private var inFlightRefresh: (generation: Int, mode: ContentPackageRefreshMode, task: Task<Void, Error>)?
 
-    func refresh(remoteAccess: ContentPackageConfig.RemoteAccess, cacheRoot: URL) async throws {
+    func refresh(
+        remoteAccess: ContentPackageConfig.RemoteAccess,
+        cacheRoot: URL,
+        mode: ContentPackageRefreshMode
+    ) async throws {
         let generation = ContentPackageCacheState.currentGeneration
-        if let inFlightRefresh, inFlightRefresh.generation == generation {
+        if let inFlightRefresh,
+           inFlightRefresh.generation == generation,
+           inFlightRefresh.mode == mode {
             print("[AtomQ][RemoteContent] joining in-flight refresh")
             try await inFlightRefresh.task.value
             return
@@ -116,9 +232,10 @@ private actor ContentPackageRefreshCoordinator {
         }
 
         let task = Task {
-            try await PublicContentDownloader(remoteAccess: remoteAccess, cacheRoot: cacheRoot).refreshIfNeeded()
+            try await PublicContentDownloader(remoteAccess: remoteAccess, cacheRoot: cacheRoot)
+                .refreshIfNeeded(mode: mode)
         }
-        inFlightRefresh = (generation, task)
+        inFlightRefresh = (generation, mode, task)
 
         do {
             try await task.value
@@ -209,52 +326,110 @@ private struct PublicContentDownloader {
         self.cacheRoot = cacheRoot
         self.cacheGeneration = ContentPackageCacheState.currentGeneration
 
-        let config = URLSessionConfiguration.default
+        let config = URLSessionConfiguration.ephemeral
         config.timeoutIntervalForRequest = 15
         config.timeoutIntervalForResource = 45
+        config.requestCachePolicy = .reloadIgnoringLocalCacheData
+        config.urlCache = nil
         config.waitsForConnectivity = true
         self.session = URLSession(configuration: config)
     }
 
-    func refreshIfNeeded() async throws {
+    func refreshIfNeeded(mode: ContentPackageRefreshMode) async throws {
         print("[AtomQ][RemoteContent] fetch manifest.json")
         let remoteManifestData = try await fetch(relativePath: "manifest.json")
         let remoteManifest = try JSONDecoder().decode(ContentManifest.self, from: remoteManifestData)
         let fileIndexPath = remoteManifest.distribution?.fileIndex ?? "file_index.json"
+        let localManifest = try? loadLocalManifest()
 
         print("[AtomQ][RemoteContent] fetch \(fileIndexPath)")
         let fileIndexData = try await fetch(relativePath: fileIndexPath)
         let fileIndex = try JSONDecoder().decode(ContentFileIndex.self, from: fileIndexData)
         print("[AtomQ][RemoteContent] file count=\(fileIndex.files.count)")
 
-        if let localManifest = try? loadLocalManifest(),
-           localManifest.contentVersion == remoteManifest.contentVersion,
+        try write(remoteManifestData, to: "manifest.json")
+        try write(fileIndexData, to: fileIndexPath)
+
+        if mode == .versioned,
+           localManifest?.contentVersion == remoteManifest.contentVersion,
+           isLocalCacheCurrent(remoteFileIndex: fileIndex) {
+            print("[AtomQ][RemoteContent] cache current version=\(remoteManifest.contentVersion)")
+            return
+        }
+
+        let refreshFiles = filesToRefresh(from: fileIndex.files, mode: mode)
+
+        if localManifest?.contentVersion == remoteManifest.contentVersion,
+           refreshFiles.isEmpty,
            isLocalCacheCurrent(remoteFileIndex: fileIndex) {
             print("[AtomQ][RemoteContent] cache complete version=\(remoteManifest.contentVersion)")
             return
         }
 
-        try write(remoteManifestData, to: "manifest.json")
-        try write(fileIndexData, to: fileIndexPath)
-
-        let downloadableFiles = fileIndex.files.filter { file in
-            file.path != "manifest.json"
-                && file.path != "file_index.json"
-                && !isLocalFileCurrent(file)
-        }
-        let orderedFiles = prioritizedFiles(from: downloadableFiles)
+        let orderedFiles = prioritizedFiles(from: refreshFiles)
 
         print("[AtomQ][RemoteContent] download file count=\(orderedFiles.count)")
+        var nonCriticalFailures: [String] = []
         for (index, file) in orderedFiles.enumerated() {
-            try await download(file, progress: "\(index + 1)/\(orderedFiles.count)")
+            do {
+                try await download(file, progress: "\(index + 1)/\(orderedFiles.count)")
+            } catch {
+                guard !isInitialLoadCriticalFile(file) else {
+                    throw error
+                }
+                nonCriticalFailures.append(file.path)
+                print("[AtomQ][RemoteContent] skip non-critical download failure: \(file.path) error=\(error.localizedDescription)")
+            }
+        }
+
+        if !nonCriticalFailures.isEmpty {
+            print("[AtomQ][RemoteContent] refresh partial success skipped=\(nonCriticalFailures.count)")
         }
         print("[AtomQ][RemoteContent] refresh download complete")
     }
 
+    private func filesToRefresh(from files: [ContentFile], mode: ContentPackageRefreshMode) -> [ContentFile] {
+        files.filter { file in
+            file.path != "manifest.json"
+                && file.path != "file_index.json"
+                && shouldRefreshFile(file, mode: mode)
+        }
+    }
+
+    private func shouldRefreshFile(_ file: ContentFile, mode: ContentPackageRefreshMode) -> Bool {
+        guard isSafeRelativePath(file.path) else { return false }
+
+        if mode == .forceFull {
+            return true
+        }
+
+        return !isLocalFileCurrent(file)
+    }
+
+    func refreshDirectoryIndexIfNeeded() async throws {
+        print("[AtomQ][RemoteContent] fetch directory manifest.json")
+        let remoteManifestData = try await fetch(relativePath: "manifest.json")
+        let remoteManifest = try JSONDecoder().decode(ContentManifest.self, from: remoteManifestData)
+        let fileIndexPath = remoteManifest.distribution?.fileIndex ?? "file_index.json"
+
+        print("[AtomQ][RemoteContent] fetch directory \(fileIndexPath)")
+        let fileIndexData = try await fetch(relativePath: fileIndexPath)
+        let fileIndex = try JSONDecoder().decode(ContentFileIndex.self, from: fileIndexData)
+
+        try write(remoteManifestData, to: "manifest.json")
+        try write(fileIndexData, to: fileIndexPath)
+
+        let directoryFiles = directoryIndexFiles(from: fileIndex.files)
+            .filter { !isLocalFileCurrent($0) }
+
+        print("[AtomQ][RemoteContent] download directory file count=\(directoryFiles.count)")
+        for (index, file) in directoryFiles.enumerated() {
+            try await download(file, progress: "directory \(index + 1)/\(directoryFiles.count)")
+        }
+        print("[AtomQ][RemoteContent] refresh directory index complete")
+    }
+
     private func prioritizedFiles(from files: [ContentFile]) -> [ContentFile] {
-        let requiredPaths = Set([
-            "subjects/high_itpmp/subject_index.json"
-        ])
         var seenPaths = Set<String>()
         var prioritized: [ContentFile] = []
 
@@ -264,11 +439,8 @@ private struct PublicContentDownloader {
             prioritized.append(file)
         }
 
-        // Fetch the first screen first, then keep going until the local package is complete.
-        for file in files where requiredPaths.contains(file.path) {
-            append(file)
-        }
-        for file in files where file.path == "subjects/high_itpmp/chapters/ch_01/chapter_meta.json" {
+        // Fetch the full directory tree first, then the first screen, then the rest of the package.
+        for file in directoryIndexFiles(from: files) {
             append(file)
         }
         for file in files where file.path.hasPrefix("subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_") {
@@ -279,6 +451,33 @@ private struct PublicContentDownloader {
         }
 
         return prioritized
+    }
+
+    private func directoryIndexFiles(from files: [ContentFile]) -> [ContentFile] {
+        var seenPaths = Set<String>()
+        var prioritized: [ContentFile] = []
+
+        func append(_ file: ContentFile) {
+            guard !seenPaths.contains(file.path) else { return }
+            seenPaths.insert(file.path)
+            prioritized.append(file)
+        }
+
+        for file in files where file.path == "subjects/high_itpmp/subject_index.json" {
+            append(file)
+        }
+        for file in files where file.path.hasPrefix("subjects/high_itpmp/chapters/")
+            && file.path.hasSuffix("/chapter_meta.json") {
+            append(file)
+        }
+
+        return prioritized
+    }
+
+    private func isInitialLoadCriticalFile(_ file: ContentFile) -> Bool {
+        file.path == "subjects/high_itpmp/subject_index.json"
+            || file.path.hasSuffix("/chapter_meta.json")
+            || file.path.hasPrefix("subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_")
     }
 
     private func download(_ file: ContentFile, progress: String) async throws {
@@ -327,7 +526,12 @@ private struct PublicContentDownloader {
 
         for attempt in 1...3 {
             do {
-                let (data, response) = try await session.data(from: url)
+                var request = URLRequest(url: url)
+                request.cachePolicy = .reloadIgnoringLocalCacheData
+                request.setValue("no-cache", forHTTPHeaderField: "Cache-Control")
+                request.setValue("no-cache", forHTTPHeaderField: "Pragma")
+
+                let (data, response) = try await session.data(for: request)
                 guard let httpResponse = response as? HTTPURLResponse,
                       (200..<300).contains(httpResponse.statusCode)
                 else {
