@@ -1,0 +1,43 @@
+{
+  "point_id": "024",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "DMAIC各阶段目标",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 50,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 24,
+  "content_file": "ch_04_sec_01_024.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_024.md",
+  "tags": [
+    "信息系统管理",
+    "DMAIC",
+    "阶段目标"
+  ],
+  "key_points": "- 定义：**系统定义、核心流程定义、团队组建**。\n- 度量：**流程、指标、基线、度量系统分析**。\n- 分析：**价值流、异常源头、改进驱动因素**。",
+  "mnemonics": "",
+  "warnings": "第四章已按 PDF 第37-47页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "023"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "40"
+    }
+  ],
+  "author": "Codex curated from color OCR",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T02:22:54+08:00",
+  "version": 3,
+  "schema_version": 2
+}

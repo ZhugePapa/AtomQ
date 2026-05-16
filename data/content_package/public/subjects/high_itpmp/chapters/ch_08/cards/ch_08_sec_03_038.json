@@ -1,0 +1,41 @@
+{
+  "point_id": "038",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_03",
+  "title": "经验教训登记册",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 38,
+  "content_file": "ch_08_sec_03_038.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_03_038.md",
+  "tags": [
+    "整合管理",
+    "经验教训登记册",
+    "组织过程资产"
+  ],
+  "key_points": "- 经验教训登记册在项目早期创建，并在项目期间持续更新。\n- 项目或阶段结束时，相关信息归入**经验教训知识库**。",
+  "mnemonics": "",
+  "warnings": "第八章已按 PDF 页码 80-92 与知识卡片规范重制；页码 92 后进入第九章，本章未混入第九章内容。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "89"
+    }
+  ],
+  "author": "Codex curated from PDF notes",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T03:14:53+08:00",
+  "version": 3,
+  "schema_version": 2
+}

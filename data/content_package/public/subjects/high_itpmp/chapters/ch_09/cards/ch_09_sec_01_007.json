@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_09",
   "section_id": "sec_01",
-  "title": "需求文件",
-  "card_type": "formula",
-  "difficulty": 3,
+  "title": "预测型与适应型范围管理",
+  "card_type": "comparison",
+  "difficulty": 2,
   "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
@@ -14,16 +14,13 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_01_007.md",
   "tags": [
     "范围管理",
-    "章节核心考点",
-    "标杆对照佳实践",
-    "需求文件"
+    "预测型",
+    "适应型"
   ],
-  "key_points": "- **一系列的图像或图示来展示顺序或导航路、原型技术**\n- **为整个集体制定决策借助决策矩阵**",
+  "key_points": "- 预测型：项目开始时定义可交付成果，范围变化走整体变更控制。\n- 适应型：多次迭代开发，每次迭代开始定义并批准详细范围。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "006"
-  ],
+  "warnings": "第九章已按 PDF 页码 93-103 与知识卡片规范重制；页码 103 后进入第十章，本章未混入第十章内容。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -31,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "97,98,99"
+      "page_label": "93,94"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from PDF notes",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T03:22:27+08:00",
+  "version": 3,
   "schema_version": 2
 }

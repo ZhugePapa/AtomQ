@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_01",
-  "title": "持续时间",
-  "card_type": "formula",
-  "difficulty": 3,
+  "title": "按需进度计划",
+  "card_type": "concept",
+  "difficulty": 2,
   "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
@@ -14,16 +14,13 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_005.md",
   "tags": [
     "进度管理",
-    "章节核心考点",
-    "管理ITTO汇总*",
-    "持续时间"
+    "按需进度",
+    "看板"
   ],
-  "key_points": "",
+  "key_points": "- 按需进度计划：资源可用时，从**未完项清单/工作队列**中拉取任务。\n- 适合运营维护、持续增量交付、任务规模相近的工作。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "004"
-  ],
+  "warnings": "第十章已按 PDF 页码 104-114 与知识卡片规范重制；三点估算公式按项目管理通用口径校正。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -31,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "105,106"
+      "page_label": "104"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from PDF notes",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T03:35:54+08:00",
+  "version": 3,
   "schema_version": 2
 }

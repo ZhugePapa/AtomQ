@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_02",
-  "title": "建立任务效益评估模型、建立业务案例、建立投资",
-  "card_type": "definition",
+  "title": "DCMM能力域与能力项",
+  "card_type": "table",
   "difficulty": 3,
-  "estimated_read_seconds": 52,
+  "estimated_read_seconds": 70,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 26,
@@ -14,13 +14,12 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_026.md",
   "tags": [
     "信息系统管理",
-    "管理要点",
-    "数据管理能力成熟度评估模型DCM",
-    "建立任务效益评估模型、建立业务案"
+    "DCMM",
+    "能力项"
   ],
-  "key_points": "",
+  "key_points": "- 高频表格题：八大域与能力项一一对应。\n- 特别记：数据标准是**业务术语、参考数据和主数据、数据元、指标数据**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第四章已按 PDF 第37-47页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "025"
   ],
@@ -31,14 +30,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "40,41"
+      "page_label": "41,42"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:22:54+08:00",
+  "version": 3,
   "schema_version": 2
 }

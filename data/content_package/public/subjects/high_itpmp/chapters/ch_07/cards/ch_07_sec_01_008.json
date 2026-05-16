@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_07",
   "section_id": "sec_01",
-  "title": "通过项目实施获得的直接经济效益",
-  "card_type": "concept",
-  "difficulty": 3,
+  "title": "支出与收益分类",
+  "card_type": "comparison",
+  "difficulty": 2,
   "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
@@ -14,16 +14,13 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_008.md",
   "tags": [
     "立项管理",
-    "章节核心考点",
-    "进行项目开发的风险：②人力资源的",
-    "通过项目实施获得的直接经济效益"
+    "经济可行性",
+    "收益分析"
   ],
-  "key_points": "",
+  "key_points": "- 支出：分为**一次性支出**和**非一次性支出**。\n- 收益：分为**直接收益、间接收益、其他收益**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "007"
-  ],
+  "warnings": "第七章已按 PDF 页码 77-79 与知识卡片规范重制；页码 79 后进入第八章，本章未混入第八章内容。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -31,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "77,78"
+      "page_label": "77"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from PDF notes",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:58:43+08:00",
+  "version": 3,
   "schema_version": 2
 }

@@ -3,22 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_01",
-  "title": "进度管理基础",
-  "card_type": "definition",
-  "difficulty": 2,
+  "title": "进度管理的定位",
+  "card_type": "concept",
+  "difficulty": 1,
   "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 1,
   "content_file": "ch_10_sec_01_001.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_001.md",
   "tags": [
     "进度管理",
-    "管理基础"
+    "进度计划",
+    "进度模型"
   ],
-  "key_points": "- 进度管理主线：**定义活动、排列顺序、估算持续时间、制定进度计划、控制进度**。",
+  "key_points": "- 进度计划不是一次性文档，项目全过程都要根据**风险、知识、价值活动**持续维护。\n- 小项目中，定义活动、排序、估算持续时间、制定进度模型可由同一人短时间内完成。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第十章已按 PDF 页码 104-114 与知识卡片规范重制；三点估算公式按项目管理通用口径校正。",
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
@@ -30,11 +31,11 @@
       "page_label": "104"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from PDF notes",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T03:35:54+08:00",
+  "version": 3,
   "schema_version": 2
 }

@@ -1,0 +1,41 @@
+{
+  "point_id": "037",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_03",
+  "title": "生命周期成本风险变化",
+  "card_type": "comparison",
+  "difficulty": 3,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 37,
+  "content_file": "ch_06_sec_03_037.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_03_037.md",
+  "tags": [
+    "价值驱动",
+    "项目生命周期",
+    "风险成本"
+  ],
+  "key_points": "- 成本与人力：开始低，执行最高，结束前回落。\n- 风险与不确定性：开始最大，随决策和验收逐步降低。\n- 变更成本：越接近完成越高。",
+  "mnemonics": "",
+  "warnings": "第六章已按 PDF 第66-76页与知识卡片规范重制；第76页开始进入第七章，本章未混入第七章内容。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "71,72"
+    }
+  ],
+  "author": "Codex curated from color OCR",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T02:48:27+08:00",
+  "version": 3,
+  "schema_version": 2
+}

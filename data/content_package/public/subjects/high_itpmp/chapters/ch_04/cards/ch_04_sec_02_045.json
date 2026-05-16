@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_02",
-  "title": "自动控制根据运维决策",
-  "card_type": "formula",
-  "difficulty": 3,
+  "title": "信息安全组织机构建设",
+  "card_type": "process",
+  "difficulty": 2,
   "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
@@ -14,13 +14,12 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_045.md",
   "tags": [
     "信息系统管理",
-    "管理要点",
-    "智能运维能力框架",
-    "自动控制根据运维决策"
+    "信息安全",
+    "组织机构"
   ],
-  "key_points": "- **运维对象的多维度描述运维、运维的经验沉淀、运维技术方案、方法与步骤**\n- **开放的基础公共资源与服务**、**服务的互联互通**、**数据与流程**、**统一标准**、**规范**、**IT**",
+  "key_points": "- 建设顺序：**配备安全管理人员 -> 建立安全职能部门 -> 成立安全领导小组 -> 主要负责人出任领导 -> 建立信息安全保密管理部门**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第四章已按 PDF 第37-47页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "044"
   ],
@@ -31,14 +30,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "44,45"
+      "page_label": "44"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:22:54+08:00",
+  "version": 3,
   "schema_version": 2
 }

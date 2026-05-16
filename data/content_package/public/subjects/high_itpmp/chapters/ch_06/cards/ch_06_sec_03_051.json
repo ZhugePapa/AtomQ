@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_06",
   "section_id": "sec_03",
-  "title": "每个项目都具有独特性",
-  "card_type": "concept",
-  "difficulty": 1,
+  "title": "项目创造价值的方式",
+  "card_type": "formula",
+  "difficulty": 2,
   "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
@@ -13,16 +13,14 @@
   "content_file": "ch_06_sec_03_051.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_03_051.md",
   "tags": [
-    "项目管理概论",
-    "价值驱动的项目管理知识体系",
-    "每个项目都具有独特性"
+    "价值驱动",
+    "价值创造",
+    "项目价值"
   ],
-  "key_points": "",
+  "key_points": "- 创造价值方式：新产品/服务/结果、社会环境贡献、效率生产力提升、推动变革、维持既有收益。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "050"
-  ],
+  "warnings": "第六章已按 PDF 第66-76页与知识卡片规范重制；第76页开始进入第七章，本章未混入第七章内容。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -30,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "72"
+      "page_label": "75"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:48:27+08:00",
+  "version": 3,
   "schema_version": 2
 }

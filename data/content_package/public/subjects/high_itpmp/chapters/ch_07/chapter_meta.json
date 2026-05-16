@@ -2,23 +2,23 @@
   "chapter_id": "ch_07",
   "subject_id": "high_itpmp",
   "title": "立项管理",
-  "description": "立项管理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
+  "description": "立项管理，由 PDF 第77-79页整理为移动端知识卡片。",
   "sort_no": 7,
-  "card_count": 25,
+  "card_count": 23,
   "sections": [
     {
       "section_id": "sec_01",
       "title": "项目建议与可行性研究",
       "sort_no": 1,
-      "description": "立项管理 - 项目建议与可行性研究",
-      "card_count": 23
+      "description": "项目建议书、投资前阶段、可行性研究类型、初步可研和详细可研。",
+      "card_count": 19
     },
     {
       "section_id": "sec_02",
       "title": "项目评估与论证",
       "sort_no": 2,
-      "description": "立项管理 - 项目评估与论证",
-      "card_count": 2
+      "description": "项目评估的定义、目的、依据、成果和工作程序。",
+      "card_count": 4
     }
   ],
   "schema_version": 2

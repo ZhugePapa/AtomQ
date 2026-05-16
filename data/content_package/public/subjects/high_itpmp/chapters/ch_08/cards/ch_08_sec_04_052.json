@@ -1,0 +1,41 @@
+{
+  "point_id": "052",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_04",
+  "title": "收尾需要执行的活动",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 52,
+  "content_file": "ch_08_sec_04_052.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_04_052.md",
+  "tags": [
+    "整合管理",
+    "收尾活动",
+    "经验教训"
+  ],
+  "key_points": "- 收尾活动：满足完工/退出标准、关闭合同、收集记录、审计成败、知识分享、总结经验、归档、移交、改进建议、测量满意度。",
+  "mnemonics": "",
+  "warnings": "第八章已按 PDF 页码 80-92 与知识卡片规范重制；页码 92 后进入第九章，本章未混入第九章内容。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "91,92"
+    }
+  ],
+  "author": "Codex curated from PDF notes",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T03:14:53+08:00",
+  "version": 3,
+  "schema_version": 2
+}

@@ -43,6 +43,10 @@ jobs:
           test -n "$OSS_BUCKET"
           test -n "$OSS_ENDPOINT"
           test -d "$CONTENT_PACKAGE_DIR"
+          if [ "${OSS_PREFIX%/}" = "atomq/content_package/public" ]; then
+            echo "::error::ALIYUN_OSS_PREFIX must be atomq/content_package because CONTENT_PACKAGE_DIR is data/content_package. If it ends with /public, files are uploaded to atomq/content_package/public/public while the app reads atomq/content_package/public."
+            exit 1
+          fi
 
       - name: Install ossutil
         run: |

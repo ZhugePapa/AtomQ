@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_03",
-  "title": "面向对象设计(00D)是00A方法的延续",
-  "card_type": "concept",
-  "difficulty": 1,
+  "title": "三类设计模式清单",
+  "card_type": "formula",
+  "difficulty": 3,
   "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
@@ -13,16 +13,14 @@
   "content_file": "ch_05_sec_03_022.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_03_022.md",
   "tags": [
-    "信息系统工程",
-    "软件设计",
-    "面向对象设计(00D)是00A方"
+    "软件工程",
+    "设计模式",
+    "创建型结构型行为型"
   ],
-  "key_points": "",
+  "key_points": "- 创建型管**创建对象**；结构型管**类或对象组合**；行为型管**交互和职责分配**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "021"
-  ],
+  "warnings": "第五章已按 PDF 第48-65页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -33,11 +31,11 @@
       "page_label": "51"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:39:33+08:00",
+  "version": 3,
   "schema_version": 2
 }

@@ -3,8 +3,8 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_10",
   "section_id": "sec_01",
-  "title": "假设日志",
-  "card_type": "formula",
+  "title": "六大过程目的与时机",
+  "card_type": "comparison",
   "difficulty": 3,
   "estimated_read_seconds": 30,
   "has_key_content": true,
@@ -14,16 +14,13 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_01_007.md",
   "tags": [
     "进度管理",
-    "章节核心考点",
-    "管理ITTO汇总*",
-    "假设日志"
+    "过程目的",
+    "过程时机"
   ],
-  "key_points": "",
+  "key_points": "- 定义活动、排序、估算、控制进度一般贯穿项目期间。\n- 制定进度计划通常在规划阶段集中开展，并在需要时滚动更新。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "006"
-  ],
+  "warnings": "第十章已按 PDF 页码 104-114 与知识卡片规范重制；三点估算公式按项目管理通用口径校正。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -31,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "105,106"
+      "page_label": "105"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from PDF notes",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T03:35:54+08:00",
+  "version": 3,
   "schema_version": 2
 }

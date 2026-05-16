@@ -3,26 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_08",
   "section_id": "sec_01",
-  "title": "明确项目与组织战略目标之间的直接联系",
-  "card_type": "concept",
-  "difficulty": 1,
+  "title": "七大过程的目的",
+  "card_type": "comparison",
+  "difficulty": 3,
   "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 8,
   "content_file": "ch_08_sec_01_008.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_008.md",
   "tags": [
     "整合管理",
-    "章节核心考点",
-    "明确项目与组织战略目标之间的直接"
+    "过程目的",
+    "ITTO"
   ],
-  "key_points": "",
+  "key_points": "- 制定章程：确立正式地位。\n- 制定计划：形成综合项目管理计划。\n- 指导执行：综合管理工作和可交付成果。\n- 管理知识：复用和创造知识。\n- 监控工作：了解状态和预测未来。\n- 变更控制：综合评审变更。\n- 收尾：归档、移交、释放资源。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "007"
-  ],
+  "warnings": "第八章已按 PDF 页码 80-92 与知识卡片规范重制；页码 92 后进入第九章，本章未混入第九章内容。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -33,11 +31,11 @@
       "page_label": "81"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from PDF notes",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T03:14:53+08:00",
+  "version": 3,
   "schema_version": 2
 }

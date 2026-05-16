@@ -3,26 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_04",
-  "title": "软件配置管理活动包括软件配置管理计划、软件配",
+  "title": "软件测试目的",
   "card_type": "concept",
-  "difficulty": 2,
-  "estimated_read_seconds": 37,
+  "difficulty": 1,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 25,
   "content_file": "ch_05_sec_04_025.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_04_025.md",
   "tags": [
-    "信息系统工程",
-    "软件实现",
-    "软件配置管理活动包括软件配置管理"
+    "软件工程",
+    "软件测试",
+    "质量"
   ],
-  "key_points": "",
-  "mnemonics": "计时制，状态审计不符】",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "024"
-  ],
+  "key_points": "- 软件测试目的：验证质量要求、发现缺陷、为质量测量和评价提供依据。",
+  "mnemonics": "",
+  "warnings": "第五章已按 PDF 第48-65页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -30,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "52"
+      "page_label": "51"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:39:33+08:00",
+  "version": 3,
   "schema_version": 2
 }

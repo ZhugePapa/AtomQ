@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_01",
-  "title": "安全管理",
-  "card_type": "concept",
-  "difficulty": 2,
+  "title": "IT运行任务",
+  "card_type": "process",
+  "difficulty": 1,
   "estimated_read_seconds": 30,
   "has_key_content": false,
   "is_free": true,
@@ -14,13 +14,12 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_017.md",
   "tags": [
     "信息系统管理",
-    "管理方法",
-    "安全管理：信息安全管理可确保组织",
-    "安全管理"
+    "IT运行",
+    "运行任务"
   ],
-  "key_points": "",
+  "key_points": "- 常见任务：**执行作业、监控作业、重启失败作业、优化备份、监控可用性和性能、空闲期维护**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第四章已按 PDF 第37-47页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "016"
   ],
@@ -31,14 +30,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "40"
+      "page_label": "39"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:22:54+08:00",
+  "version": 3,
   "schema_version": 2
 }

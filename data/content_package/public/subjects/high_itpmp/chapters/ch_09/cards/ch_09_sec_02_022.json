@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_09",
   "section_id": "sec_02",
-  "title": "标杆对照",
+  "title": "需求跟踪矩阵",
   "card_type": "concept",
-  "difficulty": 3,
+  "difficulty": 2,
   "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
@@ -14,16 +14,13 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_02_022.md",
   "tags": [
     "范围管理",
-    "章节核心考点",
-    "通过确认每个可交付成果来提高最终",
-    "标杆对照"
+    "需求跟踪矩阵",
+    "可追溯性"
   ],
-  "key_points": "- 标杆对照通过比较优秀实践或类似项目，帮助发现差距和改进方向。",
+  "key_points": "- 需求跟踪矩阵把产品需求从**来源**连接到能满足需求的**可交付成果**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "021"
-  ],
+  "warnings": "第九章已按 PDF 页码 93-103 与知识卡片规范重制；页码 103 后进入第十章，本章未混入第十章内容。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -31,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "93,94,95"
+      "page_label": "98,99"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from PDF notes",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T03:22:27+08:00",
+  "version": 3,
   "schema_version": 2
 }

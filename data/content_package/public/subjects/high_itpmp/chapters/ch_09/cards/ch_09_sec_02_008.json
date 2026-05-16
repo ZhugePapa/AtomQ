@@ -1,0 +1,41 @@
+{
+  "point_id": "008",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_02",
+  "title": "规划范围管理输入输出",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 8,
+  "content_file": "ch_09_sec_02_008.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_02_008.md",
+  "tags": [
+    "范围管理",
+    "规划范围管理",
+    "ITTO"
+  ],
+  "key_points": "- 输入：**项目章程、项目管理计划、事业环境因素、组织过程资产**。\n- 输出：**范围管理计划、需求管理计划**。",
+  "mnemonics": "",
+  "warnings": "第九章已按 PDF 页码 93-103 与知识卡片规范重制；页码 103 后进入第十章，本章未混入第十章内容。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "94,95"
+    }
+  ],
+  "author": "Codex curated from PDF notes",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T03:22:27+08:00",
+  "version": 3,
+  "schema_version": 2
+}

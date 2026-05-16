@@ -3,23 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_02",
-  "title": "数据安全能力",
-  "card_type": "process",
-  "difficulty": 3,
-  "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "title": "数据架构能力域",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 49,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 29,
   "content_file": "ch_04_sec_02_029.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_029.md",
   "tags": [
     "信息系统管理",
-    "数据安全",
-    "数据生命周期"
+    "DCMM",
+    "数据架构"
   ],
-  "key_points": "- 数据安全贯穿数据生命周期，常用手段包括**分类分级、访问控制、加密、脱敏、审计、备份恢复**。",
+  "key_points": "- 数据架构四项：**数据模型、数据分布、数据集成与共享、元数据管理**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第四章已按 PDF 第37-47页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "028"
   ],
@@ -30,14 +30,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "41,42"
+      "page_label": "41"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:22:54+08:00",
+  "version": 3,
   "schema_version": 2
 }

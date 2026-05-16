@@ -3,27 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_07",
-  "title": "数据模式是数据的概念、组成、结构和相互关系的",
-  "card_type": "definition",
-  "difficulty": 3,
-  "estimated_read_seconds": 41,
+  "title": "数据标准化管理阶段",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 44,
   "content_file": "ch_05_sec_07_044.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_07_044.md",
   "tags": [
-    "信息系统工程",
+    "数据工程",
     "数据标准化",
-    "数据标准化的主要内容包括元数据标",
-    "数据模式是数据的概念、组成、结构"
+    "标准化管理"
   ],
-  "key_points": "- 数据模式是数据的概念、组成、结构和相互关系的总称。在数据共享过程中这种差异对人们进行信息的共享与交换形成了障碍。为了保证能够顺畅进行信息的共享，对特定领域而言，需要一个统一的数据模式作为数据共享与交换的基础同时也保证该领\n- 域的相关人员对统一的数据模型有准确的、无歧义的理解【规范化处理，减少冗余】2. 数据模式的描述方式主要有**图描述方法**和**数据字典方法**。**图描述方法**常用的有**IDEFIX**方法和 **UML** 图，主要用来描述数据集中的实体和实体之间的相互关系；数据字\n- 典形式用来描述模型中的数据集、单个实体、属性的摘要信息。",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "043"
-  ],
+  "key_points": "- 阶段：**确定数据需求、制定数据标准、批准数据标准、实施数据标准**。",
+  "mnemonics": "记作：**需制批实**。",
+  "warnings": "第五章已按 PDF 第48-65页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -31,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "55,56"
+      "page_label": "55"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:39:33+08:00",
+  "version": 3,
   "schema_version": 2
 }

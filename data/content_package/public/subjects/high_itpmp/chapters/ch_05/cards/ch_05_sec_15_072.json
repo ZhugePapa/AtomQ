@@ -3,8 +3,8 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_15",
-  "title": "信息安全系统工程应该吸纳安全管理的成熟规范部",
-  "card_type": "formula",
+  "title": "成熟度模型横向识别",
+  "card_type": "comparison",
   "difficulty": 3,
   "estimated_read_seconds": 30,
   "has_key_content": true,
@@ -13,16 +13,14 @@
   "content_file": "ch_05_sec_15_072.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_15_072.md",
   "tags": [
-    "信息系统工程",
     "安全工程",
-    "信息安全系统工程应该吸纳安全管理"
+    "成熟度模型",
+    "CMMI"
   ],
-  "key_points": "",
+  "key_points": "- 第 5 章末尾成熟度总结用于横向识别模型，不建议逐字背长表。\n- 高频识别：**DCMM 管数据管理能力，CSMM 管软件过程能力，ISSE-CMM 管信息安全系统工程，CMMI 管能力成熟度集成**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "071"
-  ],
+  "warnings": "第五章已按 PDF 第48-65页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -30,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "61"
+      "page_label": "62-65"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:39:33+08:00",
+  "version": 3,
   "schema_version": 2
 }

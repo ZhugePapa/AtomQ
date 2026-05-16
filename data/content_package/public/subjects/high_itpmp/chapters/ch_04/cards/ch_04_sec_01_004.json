@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_01",
-  "title": "信息系统战略三角突出了业务战略、信息系统和组",
-  "card_type": "concept",
-  "difficulty": 1,
-  "estimated_read_seconds": 37,
+  "title": "信息系统战略三角",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 40,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 4,
@@ -14,12 +14,12 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_004.md",
   "tags": [
     "信息系统管理",
-    "管理方法",
-    "信息系统战略三角突出了业务战略"
+    "战略三角",
+    "一致性"
   ],
-  "key_points": "- **控制其工作流程而做出**、**组织的设计**、**为定义设置**、**协调**",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "key_points": "- 三角：**业务战略、组织机制战略、信息系统战略**。\n- 高频词：三者之间的**必要一致性**。",
+  "mnemonics": "记作：**业组信，一致行**。",
+  "warnings": "第四章已按 PDF 第37-47页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "003"
   ],
@@ -33,11 +33,11 @@
       "page_label": "37"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:22:54+08:00",
+  "version": 3,
   "schema_version": 2
 }

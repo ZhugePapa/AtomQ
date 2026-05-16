@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_07",
   "section_id": "sec_01",
-  "title": "项目立项管理是对拟规划和实施的项目技术上的先",
+  "title": "立项管理的任务",
   "card_type": "concept",
-  "difficulty": 2,
+  "difficulty": 1,
   "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
@@ -14,12 +14,12 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_001.md",
   "tags": [
     "立项管理",
-    "章节核心考点",
-    "项目立项管理是对拟规划和实施的项"
+    "项目决策",
+    "可行性研究"
   ],
-  "key_points": "",
+  "key_points": "- 立项管理回答：项目是否**值得做、能不能做、风险是否可接受**。\n- 一般包括：**项目建议与立项申请、可行性研究、项目评估与决策**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第七章已按 PDF 页码 77-79 与知识卡片规范重制；页码 79 后进入第八章，本章未混入第八章内容。",
   "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
@@ -31,11 +31,11 @@
       "page_label": "77"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from PDF notes",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:58:43+08:00",
+  "version": 3,
   "schema_version": 2
 }

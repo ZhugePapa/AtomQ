@@ -1,0 +1,41 @@
+{
+  "point_id": "033",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_03",
+  "title": "WBS 八项注意",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 33,
+  "content_file": "ch_09_sec_03_033.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_03_033.md",
+  "tags": [
+    "范围管理",
+    "WBS",
+    "注意事项"
+  ],
+  "key_points": "- 八项：**面向可交付成果、符合范围/100%原则、底层支持计划控制、一个元素一个负责人、4-6层/每层4-7个新元素、含管理和分包工作、主要干系人参与、可修改**。",
+  "mnemonics": "",
+  "warnings": "第九章已按 PDF 页码 93-103 与知识卡片规范重制；页码 103 后进入第十章，本章未混入第十章内容。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "101"
+    }
+  ],
+  "author": "Codex curated from PDF notes",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T03:22:27+08:00",
+  "version": 3,
+  "schema_version": 2
+}

@@ -3,7 +3,7 @@ import Foundation
 
 enum ContentPackageRemoteStore {
     static let didClearLocalCacheNotification = Notification.Name("AtomQContentPackageRemoteStoreDidClearLocalCache")
-    private static let cacheSchemaVersion = "2026-05-16.remote-file-index-sha256.v2"
+    private static let cacheSchemaVersion = "2026-05-17.remote-file-index-sha256.v3"
     private static let cacheSchemaFileName = ".atomq_cache_schema"
 
     static var canRefreshPublicContent: Bool {
@@ -401,12 +401,14 @@ private struct PublicContentDownloader {
     let remoteAccess: ContentPackageConfig.RemoteAccess
     let cacheRoot: URL
     private let cacheGeneration: Int
+    private let cacheBustSeed: String
     private let session: URLSession
 
     init(remoteAccess: ContentPackageConfig.RemoteAccess, cacheRoot: URL) {
         self.remoteAccess = remoteAccess
         self.cacheRoot = cacheRoot
         self.cacheGeneration = ContentPackageCacheState.currentGeneration
+        self.cacheBustSeed = String(Int(Date().timeIntervalSince1970))
 
         let config = URLSessionConfiguration.ephemeral
         config.timeoutIntervalForRequest = 15
@@ -498,12 +500,12 @@ private struct PublicContentDownloader {
 
     private func fetchRemotePackageIndex(logPrefix: String) async throws -> RemotePackageIndex {
         print("[AtomQ][RemoteContent] fetch \(logPrefix)manifest.json")
-        let remoteManifestData = try await fetch(relativePath: "manifest.json")
+        let remoteManifestData = try await fetch(relativePath: "manifest.json", cacheBust: "index-\(cacheBustSeed)")
         let remoteManifest = try JSONDecoder().decode(ContentManifest.self, from: remoteManifestData)
         let fileIndexPath = remoteManifest.distribution?.fileIndex ?? "file_index.json"
 
         print("[AtomQ][RemoteContent] fetch \(logPrefix)\(fileIndexPath)")
-        let fileIndexData = try await fetch(relativePath: fileIndexPath)
+        let fileIndexData = try await fetch(relativePath: fileIndexPath, cacheBust: "index-\(cacheBustSeed)")
         let fileIndex = try JSONDecoder().decode(ContentFileIndex.self, from: fileIndexData)
         print("[AtomQ][RemoteContent] \(logPrefix)file count=\(fileIndex.files.count)")
 
@@ -536,12 +538,12 @@ private struct PublicContentDownloader {
 
     func refreshDirectoryIndexIfNeeded() async throws {
         print("[AtomQ][RemoteContent] fetch directory manifest.json")
-        let remoteManifestData = try await fetch(relativePath: "manifest.json")
+        let remoteManifestData = try await fetch(relativePath: "manifest.json", cacheBust: "index-\(cacheBustSeed)")
         let remoteManifest = try JSONDecoder().decode(ContentManifest.self, from: remoteManifestData)
         let fileIndexPath = remoteManifest.distribution?.fileIndex ?? "file_index.json"
 
         print("[AtomQ][RemoteContent] fetch directory \(fileIndexPath)")
-        let fileIndexData = try await fetch(relativePath: fileIndexPath)
+        let fileIndexData = try await fetch(relativePath: fileIndexPath, cacheBust: "index-\(cacheBustSeed)")
         let fileIndex = try JSONDecoder().decode(ContentFileIndex.self, from: fileIndexData)
 
         try write(remoteManifestData, to: "manifest.json")
@@ -639,11 +641,11 @@ private struct PublicContentDownloader {
 
     private func download(_ file: ContentFile, progress: String) async throws {
         print("[AtomQ][RemoteContent] downloading \(progress): \(file.path)")
-        let data = try await fetch(relativePath: file.path)
+        let data = try await fetch(relativePath: file.path, cacheBust: cacheBustValue(for: file))
         try write(data, to: file.path)
     }
 
-    private func fetch(relativePath: String) async throws -> Data {
+    private func fetch(relativePath: String, cacheBust: String? = nil) async throws -> Data {
         guard isSafeRelativePath(relativePath) else {
             throw RemoteStoreError.unsafePath(relativePath)
         }
@@ -656,7 +658,32 @@ private struct PublicContentDownloader {
         guard let baseURL = remoteAccess.publicBaseURL else {
             throw RemoteStoreError.missingRemoteAccess
         }
-        return try await fetchData(from: baseURL.appendingPathComponent(relativePath), label: relativePath)
+        return try await fetchData(
+            from: cacheBustedPublicURL(baseURL.appendingPathComponent(relativePath), cacheBust: cacheBust),
+            label: relativePath
+        )
+    }
+
+    private func cacheBustValue(for file: ContentFile) -> String? {
+        if let sha256 = file.sha256?.trimmingCharacters(in: .whitespacesAndNewlines),
+           !sha256.isEmpty {
+            return String(sha256.prefix(16))
+        }
+
+        if let bytes = file.bytes {
+            return "bytes-\(bytes)"
+        }
+
+        return nil
+    }
+
+    private func cacheBustedPublicURL(_ url: URL, cacheBust: String?) -> URL {
+        guard let cacheBust, !cacheBust.isEmpty else { return url }
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: false)
+        var queryItems = components?.queryItems ?? []
+        queryItems.append(URLQueryItem(name: "v", value: cacheBust))
+        components?.queryItems = queryItems
+        return components?.url ?? url
     }
 
     private func signedDownloadURL(for relativePath: String, signURL: URL) async throws -> URL {

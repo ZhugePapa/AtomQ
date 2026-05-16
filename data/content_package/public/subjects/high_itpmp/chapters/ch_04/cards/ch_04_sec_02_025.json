@@ -3,23 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_02",
-  "title": "数据战略实施工作要点",
-  "card_type": "definition",
-  "difficulty": 3,
-  "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "title": "DCMM八大能力域",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 33,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 25,
   "content_file": "ch_04_sec_02_025.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_02_025.md",
   "tags": [
     "信息系统管理",
-    "数据战略",
-    "实施路径"
+    "DCMM",
+    "数据管理"
   ],
-  "key_points": "- 数据战略实施抓：**评估准则、现状评估、差距分析、实施路径、保障计划、任务实施、过程监控**。",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "key_points": "- 八大能力域：**数据战略、数据治理、数据架构、数据应用、数据安全、数据质量、数据标准、数据生存周期**。",
+  "mnemonics": "记作：**战治架用，安质标生**。",
+  "warnings": "第四章已按 PDF 第37-47页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "024"
   ],
@@ -30,14 +30,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "40,41"
+      "page_label": "41"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:22:54+08:00",
+  "version": 3,
   "schema_version": 2
 }

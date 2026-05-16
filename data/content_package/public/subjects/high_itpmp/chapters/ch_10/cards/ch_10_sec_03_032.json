@@ -1,0 +1,41 @@
+{
+  "point_id": "032",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_03",
+  "title": "备选方案分析",
+  "card_type": "concept",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 32,
+  "content_file": "ch_10_sec_03_032.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_03_032.md",
+  "tags": [
+    "进度管理",
+    "备选方案分析",
+    "数据分析"
+  ],
+  "key_points": "- 备选方案分析可比较资源能力、技能水平、进度压缩方法、工具，以及创建/租赁/购买等方案。",
+  "mnemonics": "",
+  "warnings": "第十章已按 PDF 页码 104-114 与知识卡片规范重制；三点估算公式按项目管理通用口径校正。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "108"
+    }
+  ],
+  "author": "Codex curated from PDF notes",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T03:35:54+08:00",
+  "version": 3,
+  "schema_version": 2
+}

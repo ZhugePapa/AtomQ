@@ -3,26 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_14",
-  "title": "可以帮助协调连接各种应用的组件有",
-  "card_type": "definition",
-  "difficulty": 1,
+  "title": "应用集成技术要求与组件",
+  "card_type": "formula",
+  "difficulty": 2,
   "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 65,
   "content_file": "ch_05_sec_14_065.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_14_065.md",
   "tags": [
-    "信息系统工程",
+    "系统集成",
     "应用集成",
-    "可以帮助协调连接各种应用的组件有"
+    "API"
   ],
-  "key_points": "| 关键词 | 考点 |\n|:---|:---|\n| **(1)应用编程接口(API)** | API 是定义不同软件交互方式的程序和规则，可以支持应用之间相互通信。API利用特定的数据结构，帮助开发人员快速访问其他应用的功能。 |\n| **(2) 事件驱动型操作** | 当触发器(即事件)启动一个程序或一组操作时，系统就会执行事件驱动型操作。 |\n| **(3)数据映射** | 将数据从一个系统映射到另一个系统，可以定义数据的交换方式，从而简化后续的数据导出、分组或分析工作。 |",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "064"
-  ],
+  "key_points": "- 技术要求：**互操作性、可移植性、透明性**。\n- 协调组件：**API、事件驱动型操作、数据映射**。",
+  "mnemonics": "要求记：**互、移、透**。",
+  "warnings": "第五章已按 PDF 第48-65页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -30,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "60"
+      "page_label": "58,59"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:39:33+08:00",
+  "version": 3,
   "schema_version": 2
 }

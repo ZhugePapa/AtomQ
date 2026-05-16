@@ -1,0 +1,41 @@
+{
+  "point_id": "027",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_02",
+  "title": "团队管理与领导力",
+  "card_type": "comparison",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 27,
+  "content_file": "ch_06_sec_02_027.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_02_027.md",
+  "tags": [
+    "项目经理",
+    "领导力",
+    "团队管理"
+  ],
+  "key_points": "- 管理偏计划、组织、控制；领导偏愿景、激励、影响和带领。",
+  "mnemonics": "",
+  "warnings": "第六章已按 PDF 第66-76页与知识卡片规范重制；第76页开始进入第七章，本章未混入第七章内容。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "70"
+    }
+  ],
+  "author": "Codex curated from color OCR",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T02:48:27+08:00",
+  "version": 3,
+  "schema_version": 2
+}

@@ -2,114 +2,114 @@
   "chapter_id": "ch_05",
   "subject_id": "high_itpmp",
   "title": "信息系统工程",
-  "description": "信息系统工程，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
+  "description": "信息系统工程，由 PDF 第48-65页整理为移动端知识卡片。",
   "sort_no": 5,
-  "card_count": 144,
+  "card_count": 72,
   "sections": [
     {
       "section_id": "sec_01",
       "title": "架构设计",
       "sort_no": 1,
-      "description": "信息系统工程 - 架构设计",
-      "card_count": 6
+      "description": "软件架构风格、架构评估、敏感点与权衡点。",
+      "card_count": 5
     },
     {
       "section_id": "sec_02",
       "title": "需求分析",
       "sort_no": 2,
-      "description": "信息系统工程 - 需求分析",
-      "card_count": 13
+      "description": "QFD、需求开发、SA、UML、OOA 与对象关系。",
+      "card_count": 11
     },
     {
       "section_id": "sec_03",
       "title": "软件设计",
       "sort_no": 3,
-      "description": "信息系统工程 - 软件设计",
-      "card_count": 5
+      "description": "结构化设计、面向对象设计、设计原则与设计模式。",
+      "card_count": 6
     },
     {
       "section_id": "sec_04",
       "title": "软件实现",
       "sort_no": 4,
-      "description": "信息系统工程 - 软件实现",
-      "card_count": 3
+      "description": "配置管理、编码、软件测试分类与方法。",
+      "card_count": 4
     },
     {
       "section_id": "sec_05",
       "title": "部署交付",
       "sort_no": 5,
-      "description": "信息系统工程 - 部署交付",
-      "card_count": 10
+      "description": "部署交付、持续交付、持续部署、软件过程能力成熟度。",
+      "card_count": 8
     },
     {
       "section_id": "sec_06",
       "title": "数据建模",
       "sort_no": 6,
-      "description": "信息系统工程 - 数据建模",
-      "card_count": 2
+      "description": "概念模型、逻辑模型、物理模型和数据建模过程。",
+      "card_count": 4
     },
     {
       "section_id": "sec_07",
       "title": "数据标准化",
       "sort_no": 7,
-      "description": "信息系统工程 - 数据标准化",
-      "card_count": 8
+      "description": "元数据、数据元、数据模式、分类编码与标准化管理。",
+      "card_count": 6
     },
     {
       "section_id": "sec_08",
       "title": "数据运维",
       "sort_no": 8,
-      "description": "信息系统工程 - 数据运维",
-      "card_count": 7
+      "description": "数据存储、备份、容灾、数据质量和数据清理。",
+      "card_count": 5
     },
     {
       "section_id": "sec_09",
       "title": "数据开发利用",
       "sort_no": 9,
-      "description": "信息系统工程 - 数据开发利用",
-      "card_count": 1
+      "description": "数据集成、数据挖掘、数据服务、可视化和信息检索。",
+      "card_count": 5
     },
     {
       "section_id": "sec_10",
       "title": "数据库安全",
       "sort_no": 10,
-      "description": "信息系统工程 - 数据库安全",
-      "card_count": 1
+      "description": "数据库安全目标、对策与常用安全机制。",
+      "card_count": 2
     },
     {
       "section_id": "sec_11",
       "title": "网络集成",
       "sort_no": 11,
-      "description": "信息系统工程 - 网络集成",
+      "description": "网络传输、交换与系统集成基本原则。",
       "card_count": 2
     },
     {
       "section_id": "sec_12",
       "title": "数据集成",
       "sort_no": 12,
-      "description": "信息系统工程 - 数据集成",
-      "card_count": 2
+      "description": "数据集成层次、异构集成方式与数据交换格式。",
+      "card_count": 3
     },
     {
       "section_id": "sec_13",
       "title": "软件集成",
       "sort_no": 13,
-      "description": "信息系统工程 - 软件集成",
-      "card_count": 1
+      "description": "CORBA、COM、DCOM、COM+、.NET、J2EE 等构件标准。",
+      "card_count": 2
     },
     {
       "section_id": "sec_14",
       "title": "应用集成",
       "sort_no": 14,
-      "description": "信息系统工程 - 应用集成",
-      "card_count": 4
+      "description": "应用集成、互操作性、可移植性、透明性和协调组件。",
+      "card_count": 2
     },
     {
       "section_id": "sec_15",
       "title": "安全工程",
       "sort_no": 15,
-      "description": "信息系统工程 - 安全工程",
-      "card_count": 79
+      "description": "信息安全三维空间、安全机制、安全服务与 ISSE-CMM。",
+      "card_count": 7
     }
   ],
   "schema_version": 2

@@ -3,26 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_11",
-  "title": "要点数据库管理系统必须根据用户或应用的授权来",
-  "card_type": "concept",
+  "title": "网络集成传输与交换",
+  "card_type": "formula",
   "difficulty": 2,
-  "estimated_read_seconds": 59,
+  "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 57,
   "content_file": "ch_05_sec_11_057.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_11_057.md",
   "tags": [
-    "信息系统工程",
+    "系统集成",
     "网络集成",
-    "要点数据库管理系统必须根据用户或"
+    "传输介质"
   ],
-  "key_points": "- **访问控制**、**备份**、**恢复以及一些专用的安**、**完整性约束来描述**、**在修改数据时**",
+  "key_points": "- 无线介质：**无线电、微波、红外线**。\n- 有线介质：**双绞线、同轴电缆、光纤**。\n- 网络按覆盖范围：**局域网、城域网、广域网**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "056"
-  ],
+  "warnings": "第五章已按 PDF 第48-65页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -30,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "58"
+      "page_label": "57"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:39:33+08:00",
+  "version": 3,
   "schema_version": 2
 }

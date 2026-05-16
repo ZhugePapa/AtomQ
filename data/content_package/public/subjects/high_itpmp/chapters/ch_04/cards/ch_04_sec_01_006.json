@@ -3,10 +3,10 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_01",
-  "title": "开展信息系统设计和实施",
-  "card_type": "formula",
-  "difficulty": 3,
-  "estimated_read_seconds": 86,
+  "title": "业务需求到系统设计",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 39,
   "has_key_content": true,
   "is_free": true,
   "sort_no": 6,
@@ -14,12 +14,12 @@
   "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_006.md",
   "tags": [
     "信息系统管理",
-    "管理方法",
-    "开展信息系统设计和实施"
+    "系统设计",
+    "信息系统架构"
   ],
-  "key_points": "- **安全目标等事项+治理安排+权责)、考虑数据、流程需求**\n- **实际的硬件、数据、网络、软件**\n- **集中建设**、**支持和管理的模式**",
+  "key_points": "- 转换链：**业务战略 -> 业务需求 -> 信息系统架构 -> 系统设计**。\n- 架构偏蓝图，设计偏硬件、数据、网络、软件等具体规格。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "warnings": "第四章已按 PDF 第37-47页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "005"
   ],
@@ -33,11 +33,11 @@
       "page_label": "38"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:22:54+08:00",
+  "version": 3,
   "schema_version": 2
 }

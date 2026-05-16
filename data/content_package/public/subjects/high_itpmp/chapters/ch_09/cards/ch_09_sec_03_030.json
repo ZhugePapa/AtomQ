@@ -1,0 +1,41 @@
+{
+  "point_id": "030",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_09",
+  "section_id": "sec_03",
+  "title": "创建 WBS 的活动",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 30,
+  "content_file": "ch_09_sec_03_030.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_09/cards/ch_09_sec_03_030.md",
+  "tags": [
+    "范围管理",
+    "创建 WBS",
+    "分解"
+  ],
+  "key_points": "- 活动：**识别分析可交付成果和相关工作、确定 WBS 结构、逐层分解、制定标识编码、核实分解程度**。",
+  "mnemonics": "",
+  "warnings": "第九章已按 PDF 页码 93-103 与知识卡片规范重制；页码 103 后进入第十章，本章未混入第十章内容。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "100"
+    }
+  ],
+  "author": "Codex curated from PDF notes",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T03:22:27+08:00",
+  "version": 3,
+  "schema_version": 2
+}

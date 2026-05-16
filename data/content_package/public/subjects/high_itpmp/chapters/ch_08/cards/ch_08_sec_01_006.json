@@ -3,26 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_08",
   "section_id": "sec_01",
-  "title": "项目管理计划和项目文件的区别：大",
+  "title": "项目管理计划与项目文件",
   "card_type": "comparison",
   "difficulty": 2,
-  "estimated_read_seconds": 42,
-  "has_key_content": false,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 6,
   "content_file": "ch_08_sec_01_006.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_006.md",
   "tags": [
     "整合管理",
-    "章节核心考点",
-    "项目管理计划和项目文件的区别：大"
+    "项目管理计划",
+    "项目文件"
   ],
-  "key_points": "",
+  "key_points": "- 项目管理计划管**怎么执行、监控、收尾**，包含子计划、基准和其他组件。\n- 项目文件是执行中产生和维护的具体记录，如日志、清单、登记册、预测等。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "005"
-  ],
+  "warnings": "第八章已按 PDF 页码 80-92 与知识卡片规范重制；页码 92 后进入第九章，本章未混入第九章内容。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -30,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "80,81"
+      "page_label": "80"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from PDF notes",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T03:14:53+08:00",
+  "version": 3,
   "schema_version": 2
 }

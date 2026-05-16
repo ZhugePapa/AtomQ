@@ -2,37 +2,37 @@
   "chapter_id": "ch_08",
   "subject_id": "high_itpmp",
   "title": "整合管理",
-  "description": "整合管理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
+  "description": "整合管理，由 PDF 第80-92页整理为移动端知识卡片。",
   "sort_no": 8,
-  "card_count": 77,
+  "card_count": 54,
   "sections": [
     {
       "section_id": "sec_01",
-      "title": "整合管理过程",
+      "title": "管理基础与过程框架",
       "sort_no": 1,
-      "description": "整合管理 - 整合管理过程",
-      "card_count": 51
-    },
-    {
-      "section_id": "sec_02",
-      "title": "指导执行与知识管理",
-      "sort_no": 2,
-      "description": "整合管理 - 指导执行与知识管理",
-      "card_count": 9
-    },
-    {
-      "section_id": "sec_03",
-      "title": "项目章程与计划",
-      "sort_no": 3,
-      "description": "整合管理 - 项目章程与计划",
+      "description": "整合管理责任、整合层面、复杂性、发展实践、七大过程和适应型做法。",
       "card_count": 11
     },
     {
+      "section_id": "sec_02",
+      "title": "制定章程与项目管理计划",
+      "sort_no": 2,
+      "description": "制定项目章程、立项管理文件、数据收集、人际技能、项目管理计划和开工会议。",
+      "card_count": 14
+    },
+    {
+      "section_id": "sec_03",
+      "title": "指导执行与管理知识",
+      "sort_no": 3,
+      "description": "指导与管理项目工作、批准的变更请求、PMIS、工作绩效数据、变更请求和知识管理。",
+      "card_count": 13
+    },
+    {
       "section_id": "sec_04",
-      "title": "监控与变更控制",
+      "title": "监控变更与收尾",
       "sort_no": 4,
-      "description": "整合管理 - 监控与变更控制",
-      "card_count": 6
+      "description": "监控项目工作、工作绩效报告、实施整体变更控制、配置/变更管理和结束项目或阶段。",
+      "card_count": 16
     }
   ],
   "schema_version": 2

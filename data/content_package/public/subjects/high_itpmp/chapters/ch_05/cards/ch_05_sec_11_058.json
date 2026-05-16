@@ -3,9 +3,9 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_05",
   "section_id": "sec_11",
-  "title": "数据库安全机制包括用户的身份认证、存取控制",
-  "card_type": "concept",
-  "difficulty": 2,
+  "title": "系统集成基本原则",
+  "card_type": "formula",
+  "difficulty": 1,
   "estimated_read_seconds": 30,
   "has_key_content": true,
   "is_free": true,
@@ -13,16 +13,14 @@
   "content_file": "ch_05_sec_11_058.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_11_058.md",
   "tags": [
-    "信息系统工程",
-    "网络集成",
-    "数据库安全机制包括用户的身份认证"
+    "系统集成",
+    "集成原则",
+    "信息系统工程"
   ],
-  "key_points": "- **红外线等常用的有线传输介质主要包括双绞线**、**光纤等网络按所覆盖的区域可分为局域网**、**城域网交换技术**、**广域网交换技术**、**无线电波**、**同轴电缆**",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "057"
-  ],
+  "key_points": "- 系统集成技术原则：**开放性、结构化、先进性、主流化**。",
+  "mnemonics": "记作：**开结先主**。",
+  "warnings": "第五章已按 PDF 第48-65页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -30,14 +28,14 @@
   "source_refs": [
     {
       "source_id": "pdf_2026_tricolor_high",
-      "page_label": "58"
+      "page_label": "57"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:39:33+08:00",
+  "version": 3,
   "schema_version": 2
 }

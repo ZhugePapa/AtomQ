@@ -3,26 +3,24 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_08",
   "section_id": "sec_01",
-  "title": "通过成本和进度预测",
-  "card_type": "concept",
-  "difficulty": 1,
+  "title": "整合管理裁剪考虑",
+  "card_type": "formula",
+  "difficulty": 2,
   "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 10,
   "content_file": "ch_08_sec_01_010.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_010.md",
   "tags": [
     "整合管理",
-    "章节核心考点",
-    "通过成本和进度预测"
+    "裁剪",
+    "生命周期"
   ],
-  "key_points": "",
+  "key_points": "- 裁剪考虑：**项目生命周期、开发生命周期、管理方法、知识管理、变更、治理、经验教训、效益**。",
   "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
-  "prerequisite_point_ids": [
-    "009"
-  ],
+  "warnings": "第八章已按 PDF 页码 80-92 与知识卡片规范重制；页码 92 后进入第九章，本章未混入第九章内容。",
+  "prerequisite_point_ids": [],
   "related_point_ids": [],
   "related_question_ids": [],
   "source": "2026新版高项三色笔记（信息系统项目管理师）",
@@ -33,11 +31,11 @@
       "page_label": "81"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from PDF notes",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T03:14:53+08:00",
+  "version": 3,
   "schema_version": 2
 }

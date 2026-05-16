@@ -1,0 +1,43 @@
+{
+  "point_id": "023",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_04",
+  "section_id": "sec_01",
+  "title": "DMAIC与DMADV",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 48,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 23,
+  "content_file": "ch_04_sec_01_023.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_023.md",
+  "tags": [
+    "信息系统管理",
+    "持续改进",
+    "DMAIC"
+  ],
+  "key_points": "- DMAIC：**定义、度量、分析、改进、控制**。\n- DMADV：把后两步换成**设计、验证**。",
+  "mnemonics": "DMAIC 记作：**定量分改控**；DMADV 记作：**定量分设验**。",
+  "warnings": "第四章已按 PDF 第37-47页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
+  "prerequisite_point_ids": [
+    "022"
+  ],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "40"
+    }
+  ],
+  "author": "Codex curated from color OCR",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T02:22:54+08:00",
+  "version": 3,
+  "schema_version": 2
+}

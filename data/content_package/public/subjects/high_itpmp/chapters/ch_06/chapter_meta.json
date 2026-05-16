@@ -2,30 +2,30 @@
   "chapter_id": "ch_06",
   "subject_id": "high_itpmp",
   "title": "项目管理概论",
-  "description": "项目管理概论，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
+  "description": "项目管理概论，由 PDF 第66-76页整理为移动端知识卡片。",
   "sort_no": 6,
-  "card_count": 84,
+  "card_count": 52,
   "sections": [
     {
       "section_id": "sec_01",
       "title": "项目基本要素",
       "sort_no": 1,
-      "description": "项目管理概论 - 项目基本要素",
-      "card_count": 35
+      "description": "项目定义、项目管理、项目集与项目组合、组织环境、PMO 和产品管理。",
+      "card_count": 21
     },
     {
       "section_id": "sec_02",
       "title": "项目经理的角色",
       "sort_no": 2,
-      "description": "项目管理概论 - 项目经理的角色",
-      "card_count": 7
+      "description": "项目经理角色、影响力范围和项目经理能力模型。",
+      "card_count": 6
     },
     {
       "section_id": "sec_03",
       "title": "价值驱动的项目管理知识体系",
       "sort_no": 3,
-      "description": "项目管理概论 - 价值驱动的项目管理知识体系",
-      "card_count": 42
+      "description": "项目管理原则、生命周期、开发方法、过程组、绩效域和价值交付系统。",
+      "card_count": 25
     }
   ],
   "schema_version": 2

@@ -1,0 +1,41 @@
+{
+  "point_id": "036",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_10",
+  "section_id": "sec_03",
+  "title": "估算活动持续时间 ITTO",
+  "card_type": "comparison",
+  "difficulty": 3,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 36,
+  "content_file": "ch_10_sec_03_036.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_10/cards/ch_10_sec_03_036.md",
+  "tags": [
+    "进度管理",
+    "估算活动持续时间",
+    "ITTO"
+  ],
+  "key_points": "- 工具技术高频：**类比估算、参数估算、三点估算、自下而上估算、备选方案分析、储备分析**。",
+  "mnemonics": "",
+  "warnings": "第十章已按 PDF 页码 104-114 与知识卡片规范重制；三点估算公式按项目管理通用口径校正。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "108,109"
+    }
+  ],
+  "author": "Codex curated from PDF notes",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T03:35:54+08:00",
+  "version": 3,
+  "schema_version": 2
+}

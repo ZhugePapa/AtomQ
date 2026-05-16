@@ -1,0 +1,41 @@
+{
+  "point_id": "063",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_05",
+  "section_id": "sec_13",
+  "title": "构件标准易混点",
+  "card_type": "comparison",
+  "difficulty": 3,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 63,
+  "content_file": "ch_05_sec_13_063.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_05/cards/ch_05_sec_13_063.md",
+  "tags": [
+    "系统集成",
+    "软件集成",
+    "构件标准"
+  ],
+  "key_points": "- CORBA 强调平台互操作；COM 强调对象复用；DCOM 增加分布式特性；.NET 提供 CLR 和类库；J2EE 面向企业级分层应用。",
+  "mnemonics": "",
+  "warnings": "第五章已按 PDF 第48-65页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "58"
+    }
+  ],
+  "author": "Codex curated from color OCR",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T02:39:33+08:00",
+  "version": 3,
+  "schema_version": 2
+}

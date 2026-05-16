@@ -3,24 +3,23 @@
   "subject_id": "high_itpmp",
   "chapter_id": "ch_04",
   "section_id": "sec_01",
-  "title": "重新启动失败的作业和进程",
-  "card_type": "concept",
-  "difficulty": 1,
-  "estimated_read_seconds": 30,
-  "has_key_content": false,
+  "title": "IT服务管理活动",
+  "card_type": "formula",
+  "difficulty": 2,
+  "estimated_read_seconds": 36,
+  "has_key_content": true,
   "is_free": true,
   "sort_no": 13,
   "content_file": "ch_04_sec_01_013.md",
   "content_md_path": "subjects/high_itpmp/chapters/ch_04/cards/ch_04_sec_01_013.md",
   "tags": [
     "信息系统管理",
-    "管理方法",
-    "重新启动失败的作业和进程：①通过",
-    "重新启动失败的作业和进程"
+    "IT服务管理",
+    "ITSM"
   ],
-  "key_points": "",
-  "mnemonics": "",
-  "warnings": "已做 OCR 噪声、标题、重点标注和卡片粒度修复；上线前仍建议抽样核对原 PDF。",
+  "key_points": "- ITSM 活动：**服务台、事件、问题、变更、配置、发布、服务级别、财务、容量、服务连续性、可用性**。",
+  "mnemonics": "记作：**台事问变配发，级财容连可**。",
+  "warnings": "第四章已按 PDF 第37-47页与知识卡片规范重制；受 OCR 来源限制，仍建议上线前抽样核对原 PDF。",
   "prerequisite_point_ids": [
     "012"
   ],
@@ -34,11 +33,11 @@
       "page_label": "39"
     }
   ],
-  "author": "Codex color OCR 批量整理",
+  "author": "Codex curated from color OCR",
   "reviewer": "待人工复核",
   "review_status": "ai_draft",
   "created_at": "2026-05-13T00:00:00+08:00",
-  "updated_at": "2026-05-13T00:00:00+08:00",
-  "version": 2,
+  "updated_at": "2026-05-17T02:22:54+08:00",
+  "version": 3,
   "schema_version": 2
 }

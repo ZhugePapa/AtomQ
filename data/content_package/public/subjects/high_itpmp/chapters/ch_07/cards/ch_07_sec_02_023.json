@@ -1,0 +1,41 @@
+{
+  "point_id": "023",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_07",
+  "section_id": "sec_02",
+  "title": "项目评估工作程序",
+  "card_type": "process",
+  "difficulty": 2,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 23,
+  "content_file": "ch_07_sec_02_023.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_02_023.md",
+  "tags": [
+    "立项管理",
+    "项目评估",
+    "工作程序"
+  ],
+  "key_points": "- 程序：**成立评估小组 -> 调查研究 -> 分析评估 -> 编写讨论修改报告 -> 专家论证会 -> 定稿发布**。",
+  "mnemonics": "记作：**组、查、析、写、论、发**。",
+  "warnings": "第七章已按 PDF 页码 77-79 与知识卡片规范重制；页码 79 后进入第八章，本章未混入第八章内容。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "79"
+    }
+  ],
+  "author": "Codex curated from PDF notes",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T02:58:43+08:00",
+  "version": 3,
+  "schema_version": 2
+}

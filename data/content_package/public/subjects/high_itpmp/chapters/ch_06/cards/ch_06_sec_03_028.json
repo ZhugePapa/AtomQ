@@ -1,0 +1,41 @@
+{
+  "point_id": "028",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_06",
+  "section_id": "sec_03",
+  "title": "十二项项目管理原则总览",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 28,
+  "content_file": "ch_06_sec_03_028.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_06/cards/ch_06_sec_03_028.md",
+  "tags": [
+    "价值驱动",
+    "项目管理原则",
+    "PMBOK7"
+  ],
+  "key_points": "- 十二原则：**勤勉尊重关怀、协作团队、干系人参与、聚焦价值、系统交互、领导力、裁剪、质量、复杂性、风险、适应韧性、驱动变革**。",
+  "mnemonics": "",
+  "warnings": "第六章已按 PDF 第66-76页与知识卡片规范重制；第76页开始进入第七章，本章未混入第七章内容。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "70,71"
+    }
+  ],
+  "author": "Codex curated from color OCR",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T02:48:27+08:00",
+  "version": 3,
+  "schema_version": 2
+}

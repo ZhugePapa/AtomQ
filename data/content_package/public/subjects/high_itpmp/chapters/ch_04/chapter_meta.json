@@ -2,23 +2,23 @@
   "chapter_id": "ch_04",
   "subject_id": "high_itpmp",
   "title": "信息系统管理",
-  "description": "信息系统管理，由 PDF 颜色 OCR 自动整理为知识卡片草稿。",
+  "description": "信息系统管理，由 PDF 第37-47页整理为移动端知识卡片。",
   "sort_no": 4,
-  "card_count": 81,
+  "card_count": 47,
   "sections": [
     {
       "section_id": "sec_01",
       "title": "管理方法",
       "sort_no": 1,
-      "description": "信息系统管理 - 管理方法",
-      "card_count": 21
+      "description": "信息系统管理方法、战略三角、体系架构、运维服务和持续改进。",
+      "card_count": 24
     },
     {
       "section_id": "sec_02",
       "title": "管理要点",
       "sort_no": 2,
-      "description": "信息系统管理 - 管理要点",
-      "card_count": 60
+      "description": "DCMM、IT运维能力模型、智能运维、信息安全与等级保护。",
+      "card_count": 23
     }
   ],
   "schema_version": 2

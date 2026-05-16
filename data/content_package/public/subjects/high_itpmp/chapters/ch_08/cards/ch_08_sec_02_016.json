@@ -1,0 +1,41 @@
+{
+  "point_id": "016",
+  "subject_id": "high_itpmp",
+  "chapter_id": "ch_08",
+  "section_id": "sec_02",
+  "title": "项目章程内容",
+  "card_type": "formula",
+  "difficulty": 3,
+  "estimated_read_seconds": 30,
+  "has_key_content": true,
+  "is_free": true,
+  "sort_no": 16,
+  "content_file": "ch_08_sec_02_016.md",
+  "content_md_path": "subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_02_016.md",
+  "tags": [
+    "整合管理",
+    "项目章程",
+    "章程内容"
+  ],
+  "key_points": "- 章程记录高层级信息：**目的、目标、需求、描述边界、风险、里程碑、财务资源、干系人、审批要求、退出标准、项目经理、发起人职权**。",
+  "mnemonics": "记作：**目的目标需求描述，风险进度财务干系人，审批退出双职权**。",
+  "warnings": "第八章已按 PDF 页码 80-92 与知识卡片规范重制；页码 92 后进入第九章，本章未混入第九章内容。",
+  "prerequisite_point_ids": [],
+  "related_point_ids": [],
+  "related_question_ids": [],
+  "source": "2026新版高项三色笔记（信息系统项目管理师）",
+  "source_type": "exam_note",
+  "source_refs": [
+    {
+      "source_id": "pdf_2026_tricolor_high",
+      "page_label": "85"
+    }
+  ],
+  "author": "Codex curated from PDF notes",
+  "reviewer": "待人工复核",
+  "review_status": "ai_draft",
+  "created_at": "2026-05-13T00:00:00+08:00",
+  "updated_at": "2026-05-17T03:14:53+08:00",
+  "version": 3,
+  "schema_version": 2
+}
