@@ -87,5 +87,7 @@ jobs:
             "public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.json" \
             "public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.md"
           do
-            ossutil stat "${TARGET}${key}" >/dev/null
+            object="${TARGET}${key}"
+            echo "Verifying $object"
+            ossutil ls "$object" >/dev/null
           done
