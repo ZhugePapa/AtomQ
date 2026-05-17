@@ -266,7 +266,7 @@ V1 只聚焦一个科目：`高级-信息系统项目管理师`。
 #### 输入参数
 
 - 预计考试日期
-- 每周学习天数
+- 每日学习分钟数
 - 当前章节进度
 - 待复习错题量
 
@@ -367,7 +367,6 @@ V1 只聚焦一个科目：`高级-信息系统项目管理师`。
 | login_status | enum | guest / login / vip |
 | subject_id | string | 当前学习科目 ID |
 | exam_date | date | 预计考试日期 |
-| weekly_days | int | 每周学习天数 |
 | daily_minutes | int | 每日学习分钟数 |
 
 ### 12.2 知识点

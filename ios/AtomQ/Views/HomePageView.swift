@@ -122,7 +122,7 @@ private struct HeaderView: View {
             }
             .frame(width: 24, height: 24)
         }
-        .padding(.horizontal, 20)
+        .padding(.horizontal, 24)
         .padding(.bottom, 8)
         .background(Token.bgCanvas)
     }
@@ -136,81 +136,7 @@ private struct ContentAreaView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 0) {
-                GeometryReader { geometry in
-                    let ctaWidth: CGFloat = 144
-                    let ctaHeight: CGFloat = 48
-                    let iconSize: CGFloat = 24
-
-                    ZStack(alignment: .topLeading) {
-                        HeroCardCutoutShape()
-                            .fill(Token.componentsCard)
-                            .shadow(
-                                color: Token.shadowDownSm.color,
-                                radius: Token.shadowDownSm.radius,
-                                x: Token.shadowDownSm.x,
-                                y: Token.shadowDownSm.y
-                            )
-
-                        HeroDecorativeOverlay()
-                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-
-                        HStack(spacing: 8) {
-                            Image("hero-fire")
-                                .resizable()
-                                .renderingMode(.original)
-                                .frame(width: 24, height: 24)
-                            Text("已完成全部任务，太棒了！")
-                                .font(.custom("PingFang SC", size: 16).weight(.medium))
-                                .foregroundStyle(Token.textWhite)
-                                .lineLimit(1)
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.top, 20)
-                        .padding(.horizontal, 20)
-
-                        Text("学有余力？去【学习统计】看看您的知识雷达盲区，或者刷一套历年真题吧。")
-                            .font(.custom("PingFang SC", size: 12).weight(.regular))
-                            .foregroundStyle(Token.textDisabled)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 8)
-                            .background(Token.overlayHeroMask)
-                            .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
-                            .padding(.top, 56)
-                            .padding(.horizontal, 20)
-
-                        HStack(spacing: 24) {
-                            HeroMetric(title: "今日学习", value: "24", unit: "min")
-                            HeroMetric(title: "连续打卡", value: "27", unit: "day")
-                        }
-                        .frame(width: 136, alignment: .leading)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
-                        .padding(.leading, 20)
-                        .padding(.bottom, 16)
-
-                        Button {
-                        } label: {
-                            HStack(spacing: 8) {
-                                Text("继续学习")
-                                    .font(.custom("PingFang SC", size: 16).weight(.medium))
-                                    .foregroundStyle(Token.textWhite)
-                                SvgIconView(
-                                    name: "icon-play-circle",
-                                    outerWidth: iconSize,
-                                    outerHeight: iconSize,
-                                    innerInsets: SvgIconInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
-                                    imageInsets: SvgIconInsets(top: -0.0375, right: -0.0375, bottom: -0.0375, left: -0.0375),
-                                    cssVariables: ["stroke-0": Token.fgWhite]
-                                )
-                            }
-                            .frame(width: ctaWidth, height: ctaHeight)
-                            .background(Token.fgBrand)
-                            .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
-                        }
-                        .buttonStyle(.plain)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-                    }
-                }
+                HomeHeroCard(variant: .notStarted)
                 .frame(maxWidth: .infinity)
                 .frame(height: 192)
 
@@ -229,10 +155,169 @@ private struct ContentAreaView: View {
 
                 Spacer().frame(height: 24)
             }
-            .padding(.horizontal, 20)
+            .padding(.horizontal, 24)
         }
         .scrollBounceBehavior(.basedOnSize, axes: .vertical)
         .background(Token.bgCanvas)
+    }
+}
+
+// MARK: - Home Hero
+
+private enum HomeHeroVariant {
+    case completed
+    case inProgress
+    case notStarted
+
+    var background: Color {
+        switch self {
+        case .completed:
+            return Token.fgSuccess
+        case .inProgress:
+            return Token.fgWarning
+        case .notStarted:
+            return Token.fgTertiary
+        }
+    }
+
+    var iconName: String {
+        switch self {
+        case .completed:
+            return "hero-fire"
+        case .inProgress:
+            return "hero-running"
+        case .notStarted:
+            return "hero-sun"
+        }
+    }
+
+    var title: String {
+        switch self {
+        case .completed:
+            return "已完成全部任务，太棒了！"
+        case .inProgress:
+            return "学习中，坚持就是胜利！"
+        case .notStarted:
+            return "早上好，今日任务已就绪。"
+        }
+    }
+
+    var description: String {
+        switch self {
+        case .completed:
+            return "学有余力？去【学习统计】看看您的知识雷达盲区，或者刷一套历年真题吧。"
+        case .inProgress:
+            return "上次停留：[刷题任务] 十大管理域综合\n进度：第 8 题 / 共 15 题"
+        case .notStarted:
+            return "共 3 个任务，包含 5 个知识卡片，15 道新题与 10 道易错题题，预计耗时 24 分钟。"
+        }
+    }
+
+    var todayStudyValue: String {
+        self == .notStarted ? "0" : "24"
+    }
+
+    var buttonTitle: String {
+        self == .notStarted ? "开始学习" : "继续学习"
+    }
+}
+
+private struct HomeHeroCard: View {
+    let variant: HomeHeroVariant
+
+    private let ctaWidth: CGFloat = 144
+    private let ctaHeight: CGFloat = 48
+    private let iconSize: CGFloat = 24
+
+    var body: some View {
+        ZStack(alignment: .topLeading) {
+            HeroCardCutoutShape()
+                .fill(variant.background)
+                .shadow(
+                    color: Token.shadowDownSm.color,
+                    radius: Token.shadowDownSm.radius,
+                    x: Token.shadowDownSm.x,
+                    y: Token.shadowDownSm.y
+                )
+
+            HeroDecorativeOverlay()
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+
+            titleRow
+                .padding(.top, 20)
+                .padding(.horizontal, 20)
+
+            descriptionBox
+                .padding(.top, 56)
+                .padding(.horizontal, 20)
+
+            metricRow
+                .frame(width: 136, alignment: .leading)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+                .padding(.leading, 20)
+                .padding(.bottom, 16)
+
+            ctaButton
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+        }
+    }
+
+    private var titleRow: some View {
+        HStack(spacing: 8) {
+            Image(variant.iconName)
+                .resizable()
+                .renderingMode(.original)
+                .frame(width: iconSize, height: iconSize)
+
+            Text(variant.title)
+                .font(.custom("PingFang SC", size: 16).weight(.medium))
+                .foregroundStyle(Token.textWhite)
+                .lineLimit(1)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private var descriptionBox: some View {
+        Text(variant.description)
+            .font(.custom("PingFang SC", size: 12).weight(.regular))
+            .lineSpacing(0)
+            .foregroundStyle(Token.textWhite)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
+            .background(Token.overlayHeroMask)
+            .clipShape(RoundedRectangle(cornerRadius: Token.radiusXs, style: .continuous))
+    }
+
+    private var metricRow: some View {
+        HStack(spacing: 24) {
+            HeroMetric(title: "今日学习", value: variant.todayStudyValue, unit: "min")
+            HeroMetric(title: "连续打卡", value: "27", unit: "day")
+        }
+    }
+
+    private var ctaButton: some View {
+        Button {
+        } label: {
+            HStack(spacing: 8) {
+                Text(variant.buttonTitle)
+                    .font(.custom("PingFang SC", size: 16).weight(.medium))
+                    .foregroundStyle(Token.textWhite)
+
+                SvgIconView(
+                    name: "icon-play-circle",
+                    outerWidth: iconSize,
+                    outerHeight: iconSize,
+                    innerInsets: SvgIconInsets(top: 0.0833, right: 0.0833, bottom: 0.0833, left: 0.0833),
+                    imageInsets: SvgIconInsets(top: -0.0375, right: -0.0375, bottom: -0.0375, left: -0.0375),
+                    cssVariables: ["stroke-0": Token.fgWhite]
+                )
+            }
+            .frame(width: ctaWidth, height: ctaHeight)
+            .background(Token.fgPrimary)
+            .clipShape(RoundedRectangle(cornerRadius: Token.radiusSm, style: .continuous))
+        }
+        .buttonStyle(.plain)
     }
 }
 
@@ -341,7 +426,7 @@ private struct HeroMetric: View {
         VStack(alignment: .leading, spacing: 0) {
             Text(title)
                 .font(.custom("PingFang SC", size: 12).weight(.regular))
-                .foregroundStyle(Token.textTertiary)
+                .foregroundStyle(Token.componentsTextHero)
                 .lineLimit(1)
                 .frame(height: 20, alignment: .leading)
 
@@ -505,7 +590,7 @@ private struct TaskSectionView: View {
         VStack(alignment: .leading, spacing: 16) {
             HStack {
                 Text("今日任务")
-                    .font(.custom("PingFang SC", size: 20).weight(.semibold))
+                    .font(.custom("PingFang SC", size: 18).weight(.semibold))
                     .foregroundStyle(Token.textPrimary)
 
                 Spacer()
@@ -521,7 +606,7 @@ private struct TaskSectionView: View {
                 .background(Token.bgSubtle)
                 .clipShape(Capsule())
             }
-            .frame(height: 30)
+            .frame(height: 28)
 
             ForEach(tasks) { task in
                 TaskCardView(

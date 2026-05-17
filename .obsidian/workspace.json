@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "data/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.md",
+                "file": "docs/用户画像与业务流程分析.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ch_01_sec_01_001"
+              "title": "用户画像与业务流程分析"
             }
           }
         ]
@@ -185,8 +185,30 @@
   },
   "active": "14f120273f39593a",
   "lastOpenFiles": [
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_002.md",
+    "ios/AtomQ/Assets.xcassets/onboarding-logo.imageset/onboarding-logo-dark.png",
+    "ios/AtomQ/Assets.xcassets/onboarding-logo.imageset/onboarding-logo-light.png",
+    "ios/AtomQ/Views/OnboardingView.swift",
+    "ios/AtomQ/Assets.xcassets/onboarding-stars.imageset/Contents.json",
+    "ios/AtomQ/Assets.xcassets/onboarding-plan-pie.imageset/Contents.json",
+    "ios/AtomQ/Assets.xcassets/onboarding-calendar-check.imageset/Contents.json",
+    "ios/AtomQ/Assets.xcassets/onboarding-check.imageset/Contents.json",
+    "ios/AtomQ/Assets.xcassets/onboarding-feature-energy.imageset/Contents.json",
+    "ios/AtomQ/Assets.xcassets/onboarding-feature-pie.imageset/Contents.json",
+    "ios/AtomQ/Assets.xcassets/onboarding-feature-puzzle.imageset/Contents.json",
+    "ios/AtomQ/Assets.xcassets/onboarding-wordmark.imageset/Contents.json",
+    "ios/AtomQ/Assets.xcassets/onboarding-logo.imageset/Contents.json",
+    "ios/AtomQ/Assets.xcassets/onboarding-feature-puzzle.imageset/onboarding-feature-puzzle.svg",
+    "ios/AtomQ/Assets.xcassets/onboarding-stars.imageset/onboarding-stars.svg",
+    "ios/AtomQ/Assets.xcassets/onboarding-plan-pie.imageset/onboarding-plan-pie.svg",
+    "ios/AtomQ/Assets.xcassets/onboarding-calendar-check.imageset/onboarding-calendar-check.svg",
+    "ios/AtomQ/Assets.xcassets/onboarding-check.imageset/onboarding-check.svg",
+    "ios/AtomQ/Assets.xcassets/onboarding-feature-energy.imageset/onboarding-feature-energy.svg",
+    "ios/AtomQ/Assets.xcassets/onboarding-feature-pie.imageset/onboarding-feature-pie.svg",
+    "ios/AtomQ/Assets.xcassets/onboarding-wordmark.imageset/onboarding-wordmark-light.svg",
+    "ios/AtomQ/Assets.xcassets/onboarding-wordmark.imageset/onboarding-wordmark-dark.svg",
+    "docs/软考刷题App PRD V1.7.md",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_001.md",
+    "data/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_002.md",
     "data-deepseek/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_007.md",
     "data-deepseek/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_006.md",
     "data-deepseek/content_package/public/subjects/high_itpmp/chapters/ch_01/cards/ch_01_sec_01_005.md",
@@ -203,33 +225,11 @@
     "data/content_package/public/subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_04_055.md",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_03_048.md",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_18/cards/ch_18_sec_02_047.md",
-    "data/scripts/apply_markdown_h3_and_json_bold.py",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_021.json",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_021.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_020.json",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_020.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_014.json",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_014.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_011.json",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_011.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_010.json",
     "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_010.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_009.json",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_009.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_02_024.json",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_02_024.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_023.json",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_07/cards/ch_07_sec_01_023.md",
-    "data/content_package/public/subjects/high_itpmp/chapters/ch_15/cards/ch_15_sec_05_096.json",
-    "data-deepseek/test_output/page_0005-005.png",
-    "data-deepseek/ocr_output/b0221-229.png",
-    "data-deepseek/ocr_output/b0221-228.png",
-    "data-deepseek/ocr_output/b0221-227.png",
-    "data-deepseek/ocr_output/b0221-226.png",
-    "data-deepseek/ocr_output/b0221-225.png",
-    "data-deepseek/ocr_output/b0221-224.png",
-    "data-deepseek/ocr_output/b0221-223.png",
-    "data-deepseek/ocr_output/b0221-222.png",
-    "data-deepseek/ocr_output/b0221-221.png"
+    "data/content_package/public/subjects/high_itpmp/chapters/ch_08/cards/ch_08_sec_01_009.md"
   ]
 }

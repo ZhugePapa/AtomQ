@@ -133,11 +133,13 @@ Supabase 只承载云端动态数据，不承载知识库静态文件。
 
 | 表 | 来源 | 用途 |
 | :--- | :--- | :--- |
-| `users` | `data/local_store/schema.sql` | 用户身份、当前科目、考试日期、学习计划参数 |
+| `users` | `data/local_store/schema.sql` | 用户身份、当前科目、考试日期、学习计划参数、当前启用计划 |
+| `study_plans` | `data/local_store/schema.sql` | 学习计划规则、生成时内容快照、每日卡片/题目目标 |
 | `user_records` | `data/local_store/schema.sql` | 阅读/答题状态、断点续学、答题耗时 |
 | `wrong_book` | `data/local_store/schema.sql` | 错题本、错误次数、复习优先级、下次复习时间 |
 | `mastery_scores` | `data/local_store/schema.sql` | 用户对知识点的 0-100 掌握度 |
 | `daily_tasks` | `data/local_store/schema.sql` | 每日学习、练习、错题复习任务 |
+| `daily_study_stats` | `data/local_store/schema.sql` | 按天汇总学习时长、学习卡片数、刷题数、打卡状态 |
 
 建议补充的动态表：
 
@@ -185,7 +187,7 @@ Supabase 同步原则：
 
 上线 Supabase 前检查：
 
-- `users`、`user_records`、`wrong_book`、`mastery_scores`、`daily_tasks` 已建表。
+- `users`、`study_plans`、`user_records`、`wrong_book`、`mastery_scores`、`daily_tasks`、`daily_study_stats` 已建表。
 - RLS 已启用并按 `user_id` 限制访问。
 - 登录态和本地游客态有清晰合并策略。
 - App 离线时可正常学习和答题。

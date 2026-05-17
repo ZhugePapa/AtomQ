@@ -693,7 +693,7 @@ struct KnowledgeCardStudyView: View {
                             )
                         }
                     }
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 24)
                     .padding(.top, 8)
                     .padding(.bottom, 64)
                 }
@@ -733,7 +733,7 @@ struct KnowledgeCardStudyView: View {
 
             VStack(spacing: 0) {
                 ProgressHeaderView(states: viewModel.knowledgeBarStates)
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 24)
                     .padding(.top, 8)
                     .padding(.bottom, 8)
 
@@ -890,7 +890,7 @@ private struct TopActionBar: View {
                 )
                 .frame(width: 24, height: 24)
                 .contentShape(Rectangle())
-                .padding(.leading, 20)
+                .padding(.leading, 24)
                 .padding(.trailing, 12)
             }
             .buttonStyle(.plain)
@@ -917,7 +917,7 @@ private struct TopActionBar: View {
                 .frame(width: 24, height: 24)
                 .contentShape(Rectangle())
                 .padding(.leading, 12)
-                .padding(.trailing, 20)
+                .padding(.trailing, 24)
             }
             .buttonStyle(.plain)
         }
@@ -1217,7 +1217,7 @@ private struct BottomActions: View {
             .buttonStyle(.plain)
             .frame(maxWidth: .infinity)
         }
-        .padding(.horizontal, 20)
+        .padding(.horizontal, 24)
         .padding(.bottom, 12)
         .frame(maxWidth: .infinity)
         .background(Token.bgCanvas)

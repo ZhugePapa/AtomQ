@@ -48,12 +48,21 @@ final class HomeViewModel: ObservableObject {
 struct AtomQApp: App {
     @StateObject private var viewModel = HomeViewModel()
     @AppStorage("atomq.darkMode.enabled") private var isDarkMode = false
+    @AppStorage("atomq.onboarding.completed") private var hasCompletedOnboarding = false
 
     var body: some Scene {
         WindowGroup {
-            HomePageView(viewModel: viewModel)
-                .background(Token.bgCanvas)
-                .preferredColorScheme(isDarkMode ? .dark : .light)
+            Group {
+                if hasCompletedOnboarding {
+                    HomePageView(viewModel: viewModel)
+                } else {
+                    OnboardingView {
+                        hasCompletedOnboarding = true
+                    }
+                }
+            }
+            .background(Token.bgCanvas)
+            .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

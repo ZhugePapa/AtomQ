@@ -54,6 +54,11 @@ enum Token {
         }
     )
     static let componentsEmphasisInvisible = Color(lightHex: "#e9edf2", darkHex: "#404c63")
+    static let componentsTextHero = Color(
+        UIColor { _ in
+            UIColor(red: 1, green: 1, blue: 1, alpha: 0.6)
+        }
+    )
 
     static let overlayHeroMask = Color(
         UIColor { trait in
@@ -66,6 +71,7 @@ enum Token {
     static let overlaySoft = Color.black.opacity(0.05)
     static let shadowDownSm = ShadowSpec(color: overlaySoft, x: 0, y: 5, radius: 12)
 
+    static let radiusXs: CGFloat = 8
     static let radiusSm: CGFloat = 12
     static let radiusMd: CGFloat = 16
     static let radiusFull: CGFloat = 999

@@ -12,6 +12,7 @@
 		06F8C74979E99807A04E536F /* AtomQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5DC7AD330DE39A969084 /* AtomQApp.swift */; };
 		179C8061EEA26D8802226CCA /* icon-play-circle.svg in Resources */ = {isa = PBXBuildFile; fileRef = C3771682DEAFBA4319198654 /* icon-play-circle.svg */; };
 		217E3B8B84D0BC624AA135FD /* icon-dir-check.svg in Resources */ = {isa = PBXBuildFile; fileRef = 711501718C6FCF0B2B3C0207 /* icon-dir-check.svg */; };
+		22F393FCAA90AE02D4768DEB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D80F79BA8D70399A010BA7 /* OnboardingView.swift */; };
 		2ADF40258B49AEADC3E88EF4 /* icon-beaker.svg in Resources */ = {isa = PBXBuildFile; fileRef = F63AAE0DE81A9148A542DACF /* icon-beaker.svg */; };
 		37D83F274F06B04650AF9E9E /* icon-dir-chevron-left.svg in Resources */ = {isa = PBXBuildFile; fileRef = 04D44891911A66F4F1D92DEE /* icon-dir-chevron-left.svg */; };
 		3C79958E66FEFFB58B68F933 /* icon-uncheck-outline.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3AA19891637C6FBBEB88C09F /* icon-uncheck-outline.svg */; };
@@ -83,6 +84,7 @@
 		AA5BB871C8D2C3C36EB161E8 /* icon-dir-chevron-down.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-dir-chevron-down.svg"; sourceTree = "<group>"; };
 		AA8FFECAFAE9501F84AD3295 /* icon-check-circle.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-check-circle.svg"; sourceTree = "<group>"; };
 		AE3E1DF4FADEB67697E3DDCA /* status-levels.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "status-levels.svg"; sourceTree = "<group>"; };
+		B7D80F79BA8D70399A010BA7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B99C32A70B4779C9BBB8CA0C /* icon-dir-x-close.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-dir-x-close.svg"; sourceTree = "<group>"; };
 		C3771682DEAFBA4319198654 /* icon-play-circle.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-play-circle.svg"; sourceTree = "<group>"; };
 		CDB5166B754F8253CE3FABB4 /* icon-uncheck-progress.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-uncheck-progress.svg"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				FAB2363EB89042A89E798CCD /* HomePageView.swift */,
 				F07CA8DD0C5582F271E177A4 /* KnowledgeCardStudyView.swift */,
 				D62A74B784D5D9F21A02F75C /* LeoMarkdownView.swift */,
+				B7D80F79BA8D70399A010BA7 /* OnboardingView.swift */,
 				484E5E0DC393A6CA85CC3A18 /* TaskCardView.swift */,
 			);
 			path = Views;
@@ -325,6 +328,7 @@
 				E42C4E1C9739F5130BA09C4D /* KnowledgeCardDataStore.swift in Sources */,
 				9F20B72498F300CFAF8711FE /* KnowledgeCardStudyView.swift in Sources */,
 				B2C6ACD179E3725E505380E1 /* LeoMarkdownView.swift in Sources */,
+				22F393FCAA90AE02D4768DEB /* OnboardingView.swift in Sources */,
 				6910BA96A48C1165835CA468 /* SVGAssetView.swift in Sources */,
 				A5E4BEA5417D75F78CEC7140 /* TaskCardView.swift in Sources */,
 			);

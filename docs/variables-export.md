@@ -155,6 +155,8 @@
 | components/emphasis_invisible | var(--ios-color-components-emphasis-invisible) | @alias(neutral/700) | FRAME_FILL,SHAPE_FILL | Dark | Colors | VariableID:7979:872 |
 | components/overlay_hero_mask | var(--ios-color-components-overlay-hero-mask) | #ffffff@0.12 | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Light | Colors | VariableID:7891:31 |
 | components/overlay_hero_mask | var(--ios-color-components-overlay-hero-mask) | #000000@0.24 | FRAME_FILL,SHAPE_FILL,EFFECT_COLOR | Dark | Colors | VariableID:7891:31 |
+| components/text_hero | var(--ios-color-components-text-hero) | #ffffff@0.60 | TEXT_FILL | Light | Colors | VariableID:8053:637 |
+| components/text_hero | var(--ios-color-components-text-hero) | #ffffff@0.60 | TEXT_FILL | Dark | Colors | VariableID:8053:637 |
 | components/task_subtle | var(--ios-color-components-task-subtle) | @alias(neutral/0) | FRAME_FILL,SHAPE_FILL | Light | Colors | VariableID:7866:7604 |
 | components/task_subtle | var(--ios-color-components-task-subtle) | @alias(neutral/975) | FRAME_FILL,SHAPE_FILL | Dark | Colors | VariableID:7866:7604 |
 | fg/assist | var(--ios-color-fg-assist) | @alias(assist/500) | FRAME_FILL,SHAPE_FILL,STROKE_COLOR | Dark | Colors | VariableID:7836:4639 |
